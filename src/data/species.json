@@ -59,11 +59,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Trochalopteron_ngoclinhense.jpg",
-      "artist": "Naturalist Archives of Indochina",
-      "sourceBook": "Avifauna of Central Vietnam Highlands",
-      "plateNumber": "PL. 01",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/355853936/large.jpg",
+      "artist": "(c) egorbirder, some rights reserved (CC BY)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-1",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/355853936/medium.jpg",
+      "license": "cc-by",
+      "observationUrl": "https://www.inaturalist.org/taxa/339872"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC567890-Golden-winged_Laughingthrush.mp3",
@@ -154,11 +157,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chestnut-eared_Laughingthrush.jpg",
-      "artist": "John C. Anderton",
-      "sourceBook": "Bulletin of the British Ornithologists' Club 1999",
-      "plateNumber": "PL. 02",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/105778479/medium.jpeg",
+      "artist": "(c) Christoph Moning, some rights reserved (CC BY), uploaded by Christoph Moning",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-2",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/105778479/medium.jpeg",
+      "license": "cc-by",
+      "observationUrl": "https://www.inaturalist.org/taxa/339830"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC489201-Chestnut-eared_Laughingthrush.mp3",
@@ -244,11 +250,12 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Crocias_langbianis.jpg",
-      "artist": "H. Grönvold",
-      "sourceBook": "Les Oiseaux de l'Indochine Française",
-      "plateNumber": "PL. 03",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60342911/large.jpeg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60342911/medium.jpeg",
+      "artist": "(c) James Eaton (Birdtour Asia), some rights reserved (CC BY-NC)",
+      "license": "cc-by-nc",
+      "sourceBook": "iNaturalist Research Grade",
+      "observationUrl": "https://www.inaturalist.org/taxa/1289431"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC612345-Collared_Laughingthrush.mp3",
@@ -340,11 +347,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Trochalopteron_yersini_-_Collared_Laughingthrush.jpg",
-      "artist": "J. G. Keulemans",
-      "sourceBook": "Bulletin du Muséum National d'Histoire Naturelle",
-      "plateNumber": "PL. 04",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/355844998/large.jpg",
+      "artist": "(c) egorbirder, some rights reserved (CC BY)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-4",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/355844998/medium.jpg",
+      "license": "cc-by",
+      "observationUrl": "https://www.inaturalist.org/taxa/339873"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC398712-Yersins_Laughingthrush.mp3",
@@ -442,11 +452,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Black-crowned_Barwing_(Actinodura_sodangorum).jpg",
-      "artist": "John C. Anderton",
-      "sourceBook": "Ibis International Journal of Avian Science",
-      "plateNumber": "PL. 05",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/29612920/large.jpg",
+      "artist": "(c) stanlilley, some rights reserved (CC BY-NC), uploaded by stanlilley",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-5",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/29612920/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/72457"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC445566-Black-crowned_Barwing.mp3",
@@ -530,11 +543,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lophura_edwardsi_male.jpg",
-      "artist": "J. G. Keulemans",
-      "sourceBook": "Oustalet Descriptions des Oiseaux Nouveaux",
-      "plateNumber": "PL. 06",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/66143865/large.jpg",
+      "artist": "(c) \nVáclav Šilha, some rights reserved (CC BY-SA)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-6",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/66143865/medium.jpg",
+      "license": "cc-by-sa",
+      "observationUrl": "https://www.inaturalist.org/taxa/1093"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC112233-Edwards_Pheasant.mp3",
@@ -625,11 +641,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Polyplectron_germaini_-Germain's_Peacock-Pheasant_-male.jpg",
-      "artist": "J. G. Keulemans",
-      "sourceBook": "Monograph of the Phasianidae",
-      "plateNumber": "PL. 07",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/264334869/medium.jpeg",
+      "artist": "(c) TK Pham, some rights reserved (CC BY-NC-ND), uploaded by TK Pham",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-7",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/264334869/medium.jpeg",
+      "license": "cc-by-nc-nd",
+      "observationUrl": "https://www.inaturalist.org/taxa/1192"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC554433-Germains_Peacock-Pheasant.mp3",
@@ -727,11 +746,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Carduelis_monguilloti.jpg",
-      "artist": "Naturalist Editorial Archives",
-      "sourceBook": "Oiseaux de l'Indochine",
-      "plateNumber": "PL. 08",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/430256409/large.jpg",
+      "artist": "(c) matthewkwan, some rights reserved (CC BY-ND), uploaded by matthewkwan",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-8",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/430256409/medium.jpg",
+      "license": "cc-by-nd",
+      "observationUrl": "https://www.inaturalist.org/taxa/145359"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC332211-Vietnamese_Greenfinch.mp3",
@@ -815,11 +837,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Macronus_kelleyi.jpg",
-      "artist": "Delacour & Greenway",
-      "sourceBook": "Revue d'Histoire Naturelle Appliquée",
-      "plateNumber": "PL. 09",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/525598057/large.jpg",
+      "artist": "(c) quy_hoang, some rights reserved (CC BY-NC)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-9",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/525598057/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/339775"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC887766-Grey-faced_Tit-Babbler.mp3",
@@ -917,11 +942,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rimator_pasquieri.jpg",
-      "artist": "J. Delacour",
-      "sourceBook": "Bulletin du Muséum National d'Histoire Naturelle 1930",
-      "plateNumber": "PL. 10",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/465032565/medium.jpeg",
+      "artist": "(c) Marc Thibault, some rights reserved (CC BY-NC), uploaded by Marc Thibault",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-10",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/465032565/medium.jpeg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/339807"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC224466-White-throated_Wren-Babbler.mp3",
@@ -1005,11 +1033,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sooty_Babbler.jpg",
-      "artist": "Naturalist Expedition Archive",
-      "sourceBook": "Indochinese Karst Avifauna Survey",
-      "plateNumber": "PL. 11",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/155851929/large.jpg",
+      "artist": "(c) Niall Perrins, some rights reserved (CC BY-NC), uploaded by Niall Perrins",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-11",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/155851929/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/15524"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC998877-Sooty_Babbler.mp3",
@@ -1107,11 +1138,12 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Red-winged_Laughingthrush_(Trochalopteron_formosum).jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 12",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/109033324/large.jpeg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/109033324/medium.jpeg",
+      "artist": "(c) Ben Schweinhart, all rights reserved (CC BY-NC)",
+      "license": "cc-by-nc",
+      "sourceBook": "iNaturalist Research Grade",
+      "observationUrl": "https://www.inaturalist.org/taxa/144429"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC776655-Red-winged_Laughingthrush.mp3",
@@ -1209,11 +1241,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Trochalopteron_milnei_Keulemans.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 13",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/507949093/large.jpg",
+      "artist": "(c) desertnaturalist, some rights reserved (CC BY), uploaded by desertnaturalist",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-13",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/507949093/medium.jpg",
+      "license": "cc-by",
+      "observationUrl": "https://www.inaturalist.org/taxa/731791"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC334455-Red-tailed_Laughingthrush.mp3",
@@ -1311,11 +1346,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rufous-headed_Parrotbill.jpg",
-      "artist": "H. Grönvold",
-      "sourceBook": "Fauna of British India",
-      "plateNumber": "PL. 14",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/57545890/large.jpg",
+      "artist": "(c) HUANG QIN, all rights reserved, uploaded by HUANG QIN",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-14",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/57545890/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/1586092"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC123789-Rufous-headed_Parrotbill.mp3",
@@ -1412,11 +1450,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rheinardia_ocellata.jpg",
-      "artist": "J. G. Keulemans",
-      "sourceBook": "Monograph of the Phasianidae",
-      "plateNumber": "PL. 15",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/670839424/large.jpg",
+      "artist": "(c) Rose Ann Morandante Reynado, all rights reserved, uploaded by Rose Ann Morandante Reynado",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-15",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/670839424/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/1196"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC665544-Crested_Argus.mp3",
@@ -1513,11 +1554,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Garrulax_canorus_05.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 16",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/26597643/large.jpg",
+      "artist": "(c) John Clough, some rights reserved (CC BY-NC), uploaded by John Clough",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-16",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/26597643/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/15156"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC443322-Chinese_Hwamei.mp3",
@@ -1614,11 +1658,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cyornis_rubeculoides.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 17",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/167518573/medium.jpeg",
+      "artist": "(c) Atanu Modak, all rights reserved, uploaded by Atanu Modak",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-17",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/167518573/medium.jpeg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/578349"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC119988-Blue-throated_Flycatcher.mp3",
@@ -1715,11 +1762,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aethopyga_saturata.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Monograph of the Nectariniidae",
-      "plateNumber": "PL. 18",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/59895093/large.jpg",
+      "artist": "(c) Robin James, all rights reserved, uploaded by Robin James",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-18",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/59895093/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/13416"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC667788-Black-throated_Sunbird.mp3",
@@ -1816,11 +1866,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lanius_schach.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 19",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/349298427/medium.jpeg",
+      "artist": "(c) D.A. Ostiarius, some rights reserved (CC BY-NC), uploaded by D.A. Ostiarius",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-19",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/349298427/medium.jpeg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/12035"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC556677-Long-tailed_Shrike.mp3",
@@ -1917,11 +1970,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blue-winged_Pitta_Pitta_moluccensis.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Monograph of the Pittidae",
-      "plateNumber": "PL. 20",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/182302378/large.jpg",
+      "artist": "(c) Sam Hambly, some rights reserved (CC BY-NC), uploaded by Sam Hambly",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-20",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/182302378/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/14415"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC991122-Blue-winged_Pitta.mp3",
@@ -2019,11 +2075,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Black-naped_Oriole_Oriolus_chinensis.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 21",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/542108404/large.jpg",
+      "artist": "(c) Sakkarin Sansuk, all rights reserved, uploaded by Sakkarin Sansuk",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-21",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/542108404/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/7867"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC441133-Black-naped_Oriole.mp3",
@@ -2120,11 +2179,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Copsychus_malabaricus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 22",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/279082/large.jpg",
+      "artist": "(c) Vijay Anand Ismavel, some rights reserved (CC BY-NC-SA)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-22",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/279082/medium.jpg",
+      "license": "cc-by-nc-sa",
+      "observationUrl": "https://www.inaturalist.org/taxa/204490"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC227744-White-rumped_Shama.mp3",
@@ -2221,11 +2283,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dicrurus_paradiseus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 23",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/33078804/large.jpg",
+      "artist": "(c) Dmitry Ivanov, some rights reserved (CC BY-NC), uploaded by Dmitry Ivanov",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-23",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/33078804/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/204502"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC883311-Greater_Racket-tailed_Drongo.mp3",
@@ -2322,11 +2387,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Black-throated_Laughingthrush_(Garrulax_chinensis).jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 24",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/53830068/large.jpg",
+      "artist": "(c) David Beadle, all rights reserved, uploaded by David Beadle",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-24",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/53830068/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/1289402"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC336699-Black-throated_Laughingthrush.mp3",
@@ -2424,11 +2492,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Psarisomus_dalhousiae.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Icones Avium",
-      "plateNumber": "PL. 25",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/266086767/large.jpg",
+      "artist": "(c) Chan Chee Keong, all rights reserved, uploaded by Chan Chee Keong",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-25",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/266086767/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/8947"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC774411-Long-tailed_Broadbill.mp3",
@@ -2525,11 +2596,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lophura_diardi.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 26",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/255263566/medium.jpeg",
+      "artist": "(c) Геннадий Дякин, some rights reserved (CC BY-NC), uploaded by Геннадий Дякин",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-26",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/255263566/medium.jpeg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/1114"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC881100-Siamese_Fireback.mp3",
@@ -2626,11 +2700,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Polyplectron_bicalcaratum_Keulemans.jpg",
-      "artist": "J. G. Keulemans",
-      "sourceBook": "Monograph of the Phasianidae",
-      "plateNumber": "PL. 27",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/256427010/large.jpg",
+      "artist": "(c) mikeggg, all rights reserved, uploaded by mikeggg",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-27",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/256427010/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/1186"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC228899-Grey_Peacock-Pheasant.mp3",
@@ -2726,11 +2803,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Arborophila_brunneopectus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 28",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/14923794/large.jpg",
+      "artist": "(c) Ben Schweinhart, all rights reserved, uploaded by Ben Schweinhart",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-28",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/14923794/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/777"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC448822-Brown-breasted_Partridge.mp3",
@@ -2827,11 +2907,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gallus_gallus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 29",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/65623665/medium.jpeg",
+      "artist": "(c) Carlos N. G. Bocos, all rights reserved, uploaded by Carlos N. G. Bocos",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-29",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/65623665/medium.jpeg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/879"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC113355-Red_Junglefowl.mp3",
@@ -2929,11 +3012,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Buceros_bicornis_Keulemans.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Monograph of the Bucerotidae",
-      "plateNumber": "PL. 30",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/13353681/large.jpg",
+      "artist": "(c) Marc Faucher, all rights reserved, uploaded by Marc Faucher",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-30",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/13353681/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/5536"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC771122-Great_Hornbill.mp3",
@@ -3025,11 +3111,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rhyticeros_undulatus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Monograph of the Bucerotidae",
-      "plateNumber": "PL. 31",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/301434/medium.JPG",
+      "artist": "(c) Carmelo López Abad, some rights reserved (CC BY-NC), uploaded by Carmelo López Abad",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-31",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/301434/medium.JPG",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/514339"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC559900-Wreathed_Hornbill.mp3",
@@ -3125,11 +3214,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Anorrhinus_tickelli.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Monograph of the Bucerotidae",
-      "plateNumber": "PL. 32",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/38848435/large.jpg",
+      "artist": "lonelyshrimp, no known copyright restrictions (public domain)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-32",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/38848435/medium.jpg",
+      "license": "pd",
+      "observationUrl": "https://www.inaturalist.org/taxa/5544"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC331188-Tickells_Brown_Hornbill.mp3",
@@ -3228,11 +3320,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Upupa_epops.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Great Britain",
-      "plateNumber": "PL. 33",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60494705/large.jpg",
+      "artist": "(c) Andrej Chudý, some rights reserved (CC BY-NC-SA)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-33",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60494705/medium.jpg",
+      "license": "cc-by-nc-sa",
+      "observationUrl": "https://www.inaturalist.org/taxa/20969"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC225577-Eurasian_Hoopoe.mp3",
@@ -3329,11 +3424,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Megaceryle_lugubris.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Monograph of the Alcedinidae",
-      "plateNumber": "PL. 34",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/74731596/large.jpg",
+      "artist": "(c) Sankar Das, some rights reserved (CC BY-NC), uploaded by Sankar Das",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-34",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/74731596/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/2556"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC118833-Crested_Kingfisher.mp3",
@@ -3431,11 +3529,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pelargopsis_capensis.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Monograph of the Alcedinidae",
-      "plateNumber": "PL. 35",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/233705452/large.jpg",
+      "artist": "(c) Razis Nasri, all rights reserved, uploaded by Razis Nasri",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-35",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/233705452/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/2366"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC449911-Stork-billed_Kingfisher.mp3",
@@ -3532,11 +3633,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Halcyon_pileata.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Monograph of the Alcedinidae",
-      "plateNumber": "PL. 36",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/59859225/large.jpg",
+      "artist": "(c) Marc Faucher, all rights reserved, uploaded by Marc Faucher",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-36",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/59859225/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/2353"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC337722-Black-capped_Kingfisher.mp3",
@@ -3633,11 +3737,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alcedo_hercules.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Monograph of the Alcedinidae",
-      "plateNumber": "PL. 37",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/347337928/large.jpg",
+      "artist": "(c) Henry Koh, some rights reserved (CC BY)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-37",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/347337928/medium.jpg",
+      "license": "cc-by",
+      "observationUrl": "https://www.inaturalist.org/taxa/2610"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC662244-Blyths_Kingfisher.mp3",
@@ -3734,11 +3841,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Coracias_affinis.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 38",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/197472135/large.jpg",
+      "artist": "(c) Sam Hambly, some rights reserved (CC BY-NC), uploaded by Sam Hambly",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-38",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/197472135/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/485365"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC553311-Indochinese_Roller.mp3",
@@ -3837,11 +3947,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Psilopogon_haemacephalus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 39",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/184439367/large.jpg",
+      "artist": "(c) Sam Hambly, some rights reserved (CC BY-NC), uploaded by Sam Hambly",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-39",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/184439367/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/367521"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC773322-Coppersmith_Barbet.mp3",
@@ -3938,11 +4051,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Psilopogon_faber.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 40",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/116517298/medium.jpeg",
+      "artist": "(c) Oscar Ho, all rights reserved, uploaded by Oscar Ho",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-40",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/116517298/medium.jpeg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/367545"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC119944-Chinese_Barbet.mp3",
@@ -4041,11 +4157,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Picus_rabieri.jpg",
-      "artist": "Oustalet Naturalist Archive",
-      "sourceBook": "Bulletin du Muséum d'Histoire Naturelle",
-      "plateNumber": "PL. 41",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/105892361/medium.jpeg",
+      "artist": "(c) Christoph Moning, some rights reserved (CC BY), uploaded by Christoph Moning",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-41",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/105892361/medium.jpeg",
+      "license": "cc-by",
+      "observationUrl": "https://www.inaturalist.org/taxa/18327"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC882200-Red-collared_Woodpecker.mp3",
@@ -4143,11 +4262,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chrysocolaptes_guttacristatus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 42",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/347130896/large.jpg",
+      "artist": "(c) Chan Chee Keong, all rights reserved, uploaded by Chan Chee Keong",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-42",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/347130896/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/201081"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC441199-Greater_Flameback.mp3",
@@ -4245,11 +4367,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ictinaetus_malaiensis.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 43",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/30653128/large.jpg",
+      "artist": "(c) 尹若宇, some rights reserved (CC BY-SA), uploaded by 尹若宇",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-43",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/30653128/medium.jpg",
+      "license": "cc-by-sa",
+      "observationUrl": "https://www.inaturalist.org/taxa/367472"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC339911-Black_Eagle.mp3",
@@ -4346,11 +4471,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Spilornis_cheela.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 44",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/483635244/medium.jpeg",
+      "artist": "(c) Dixon Lau, some rights reserved (CC BY-NC), uploaded by Dixon Lau",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-44",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/483635244/medium.jpeg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/5158"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC221199-Crested_Serpent_Eagle.mp3",
@@ -4447,11 +4575,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pernis_ptilorhynchus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 45",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/292463004/medium.jpeg",
+      "artist": "(c) Håvard Rosenlund, all rights reserved, uploaded by Håvard Rosenlund",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-45",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/292463004/medium.jpeg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/144458"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC884433-Crested_Honey_Buzzard.mp3",
@@ -4548,11 +4679,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Elanus_caeruleus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Great Britain",
-      "plateNumber": "PL. 46",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/183749378/medium.jpeg",
+      "artist": "(c) Daniel Liepack, some rights reserved (CC BY-NC), uploaded by Daniel Liepack",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-46",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/183749378/medium.jpeg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/5275"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC661100-Black-winged_Kite.mp3",
@@ -4650,11 +4784,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ketupa_zeylonensis.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 47",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/638539387/large.jpg",
+      "artist": "(c) Шальнов Кирилл, some rights reserved (CC BY), uploaded by Шальнов Кирилл",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-47",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/638539387/medium.jpg",
+      "license": "cc-by",
+      "observationUrl": "https://www.inaturalist.org/taxa/20343"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC114488-Brown_Fish_Owl.mp3",
@@ -4753,11 +4890,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Otus_lettia.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 48",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/44097511/large.jpg",
+      "artist": "(c) matthewkwan, some rights reserved (CC BY-ND), uploaded by matthewkwan",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-48",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/44097511/medium.jpg",
+      "license": "cc-by-nd",
+      "observationUrl": "https://www.inaturalist.org/taxa/144586"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC338811-Collared_Scops_Owl.mp3",
@@ -4854,11 +4994,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Glaucidium_brodiei.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 49",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/110503572/large.jpg",
+      "artist": "(c) Morten Ross, some rights reserved (CC BY), uploaded by Morten Ross",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-49",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/110503572/medium.jpg",
+      "license": "cc-by",
+      "observationUrl": "https://www.inaturalist.org/taxa/1286804"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC992211-Collared_Owlet.mp3",
@@ -4956,11 +5099,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pseudibis_davisoni.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 50",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/178251484/large.jpg",
+      "artist": "(c) quiltedquetzal, some rights reserved (CC BY-NC), uploaded by quiltedquetzal",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-50",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/178251484/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/3762"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC112288-White-shouldered_Ibis.mp3",
@@ -5058,11 +5204,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Platalea_minor.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 51",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/365947667/large.jpg",
+      "artist": "(c) Arlango Lee, some rights reserved (CC BY-NC), uploaded by Arlango Lee",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-51",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/365947667/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/3729"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC551188-Black-faced_Spoonbill.mp3",
@@ -5161,11 +5310,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Leptoptilos_javanicus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 52",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/470186346/large.jpg",
+      "artist": "no rights reserved, uploaded by Stefan C",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-52",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/470186346/medium.jpg",
+      "license": "cc0",
+      "observationUrl": "https://www.inaturalist.org/taxa/4749"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC449933-Lesser_Adjutant.mp3",
@@ -5262,11 +5414,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gorsachius_melanolophus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 53",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60995427/medium.jpeg",
+      "artist": "no rights reserved, uploaded by 葉子",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-53",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60995427/medium.jpeg",
+      "license": "cc0",
+      "observationUrl": "https://www.inaturalist.org/taxa/5043"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC883399-Malayan_Night_Heron.mp3",
@@ -5364,11 +5519,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Antigone_antigone.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 54",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13313330/large.jpg",
+      "artist": "(c) Kevin Schafer, some rights reserved (CC BY-NC-ND), uploaded by Kevin Schafer",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-54",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13313330/medium.jpg",
+      "license": "cc-by-nc-nd",
+      "observationUrl": "https://www.inaturalist.org/taxa/508044"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC773344-Sarus_Crane.mp3",
@@ -5466,11 +5624,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rallina_fasciata.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 55",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/217584625/medium.jpeg",
+      "artist": "(c) Gaell Mainguy, some rights reserved (CC BY-NC-ND), uploaded by Gaell Mainguy",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-55",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/217584625/medium.jpeg",
+      "license": "cc-by-nc-nd",
+      "observationUrl": "https://www.inaturalist.org/taxa/288"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC224488-Red-legged_Crake.mp3",
@@ -5568,11 +5729,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Porphyrio_poliocephalus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 56",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/344911929/large.jpg",
+      "artist": "(c) cdewerowe, some rights reserved (CC BY-NC), uploaded by cdewerowe",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-56",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/344911929/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/474332"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC669922-Grey-headed_Swamphen.mp3",
@@ -5670,11 +5834,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Caloenas_nicobarica.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 57",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/57343379/large.jpg",
+      "artist": "(c) Bird Explorers, some rights reserved (CC BY-NC), uploaded by Bird Explorers",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-57",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/57343379/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/3643"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC119933-Nicobar_Pigeon.mp3",
@@ -5771,11 +5938,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ducula_badia.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 58",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/432540020/large.jpg",
+      "artist": "(c) David Bishop, some rights reserved (CC BY-NC), uploaded by David Bishop",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-58",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/432540020/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/3246"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC883344-Mountain_Imperial_Pigeon.mp3",
@@ -5872,11 +6042,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Treron_apicauda.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 59",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/9518803/medium.jpeg",
+      "artist": "(c) markus lilje, some rights reserved (CC BY-NC-ND), uploaded by markus lilje",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-59",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/9518803/medium.jpeg",
+      "license": "cc-by-nc-nd",
+      "observationUrl": "https://www.inaturalist.org/taxa/3380"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC447711-Pin-tailed_Green_Pigeon.mp3",
@@ -5973,11 +6146,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Asarcornis_scutulata.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 60",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/98380423/medium.png",
+      "artist": "(c) Ashley Coates, some rights reserved (CC BY-NC-SA)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-60",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/98380423/medium.png",
+      "license": "cc-by-nc-sa",
+      "observationUrl": "https://www.inaturalist.org/taxa/513577"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC992200-White-winged_Duck.mp3",
@@ -6074,11 +6250,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aix_galericulata.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Great Britain",
-      "plateNumber": "PL. 61",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/171955255/large.jpg",
+      "artist": "(c) Alexis Lours, some rights reserved (CC BY), uploaded by Alexis Lours",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-61",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/171955255/medium.jpg",
+      "license": "cc-by",
+      "observationUrl": "https://www.inaturalist.org/taxa/7106"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC331100-Mandarin_Duck.mp3",
@@ -6175,11 +6354,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hierococcyx_sparverioides.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 62",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/7458693/large.jpg",
+      "artist": "(c) Ben Schweinhart, all rights reserved, uploaded by Ben Schweinhart",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-62",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/7458693/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/567164"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC115599-Large_Hawk-Cuckoo.mp3",
@@ -6278,11 +6460,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Carpococcyx_renauldi.jpg",
-      "artist": "J. G. Keulemans",
-      "sourceBook": "Proceedings of the Zoological Society of London",
-      "plateNumber": "PL. 63",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/107455999/large.jpg",
+      "artist": "(c) Xavier Rufray, some rights reserved (CC BY-NC), uploaded by Xavier Rufray",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-63",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/107455999/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/1994"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC772299-Coral-billed_Ground_Cuckoo.mp3",
@@ -6380,11 +6565,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Centropus_sinensis.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 64",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/50398236/large.jpg",
+      "artist": "(c) Uday Agashe, some rights reserved (CC BY-NC), uploaded by Uday Agashe",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-64",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/50398236/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/1677"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC335588-Greater_Coucal.mp3",
@@ -6482,11 +6670,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harpactes_erythrocephalus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Monograph of the Trogonidae",
-      "plateNumber": "PL. 65",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/195285044/large.jpg",
+      "artist": "(c) Chan Chee Keong, all rights reserved, uploaded by Chan Chee Keong",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-65",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/195285044/medium.jpg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/20812"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC661133-Red-headed_Trogon.mp3",
@@ -6583,11 +6774,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harpactes_oreskios.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Monograph of the Trogonidae",
-      "plateNumber": "PL. 66",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/59781291/medium.jpeg",
+      "artist": "(c) Julia Moning, some rights reserved (CC BY), uploaded by Julia Moning",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-66",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/59781291/medium.jpeg",
+      "license": "cc-by",
+      "observationUrl": "https://www.inaturalist.org/taxa/20825"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC229988-Orange-breasted_Trogon.mp3",
@@ -6684,11 +6878,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Microhierax_melanoleucos.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Asia",
-      "plateNumber": "PL. 67",
-      "year": "1931"
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/198693685/large.jpg",
+      "artist": "(c) Savi.odl, some rights reserved (CC BY-SA)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-67",
+      "year": "1931",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/198693685/medium.jpg",
+      "license": "cc-by-sa",
+      "observationUrl": "https://www.inaturalist.org/taxa/4708"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC558822-Pied_Falconet.mp3",
@@ -6786,11 +6983,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Caprimulgus_macrurus.jpg",
-      "artist": "John Gould",
-      "sourceBook": "Birds of Australia",
-      "plateNumber": "PL. 68",
-      "year": "1931"
+      "imageUrl": "https://static.inaturalist.org/photos/347468920/medium.jpeg",
+      "artist": "(c) ThuZar, all rights reserved, uploaded by ThuZar",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-68",
+      "year": "1931",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/347468920/medium.jpeg",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/204476"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC117766-Large-tailed_Nightjar.mp3",

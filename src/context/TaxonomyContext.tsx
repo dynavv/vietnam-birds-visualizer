@@ -4,7 +4,7 @@ import rawSpecies from '../data/species.json';
 import rawTaxonomy from '../data/taxonomy.json';
 import rawEbas from '../data/ebas.json';
 
-const allSpeciesData = rawSpecies as BirdSpecies[];
+const allSpeciesData = rawSpecies as unknown as BirdSpecies[];
 const taxonomyTreeData = rawTaxonomy as TaxonomyNode;
 const ebaRegionsData = rawEbas as EBARegion[];
 

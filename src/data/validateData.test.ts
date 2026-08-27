@@ -4,7 +4,7 @@ import speciesJson from './species.json';
 import taxonomyJson from './taxonomy.json';
 import ebasJson from './ebas.json';
 
-const speciesList = speciesJson as BirdSpecies[];
+const speciesList = speciesJson as unknown as BirdSpecies[];
 const taxonomyTree = taxonomyJson as TaxonomyNode;
 const ebasList = ebasJson as EBARegion[];
 
