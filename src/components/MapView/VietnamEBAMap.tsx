@@ -189,7 +189,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
 
   return (
     <div
-      className={`relative w-full h-[calc(100vh-8.5rem)] min-h-[640px] rounded-2xl overflow-hidden border border-paper-border bg-paper-100 shadow-natural ${className}`}
+      className={`relative w-full h-full flex-1 min-h-[480px] md:min-h-0 rounded-2xl overflow-hidden border border-paper-border bg-paper-100 shadow-natural ${className}`}
       data-testid="vietnam-eba-map"
     >
       {/* Leaflet MapContainer */}

@@ -14,23 +14,23 @@ export const MainContent: React.FC = () => {
 
   return (
     <main
-      className="flex-1 w-full max-w-7xl mx-auto px-3 sm:px-6 py-4 sm:py-6"
+      className="flex-1 min-h-0 w-full max-w-7xl mx-auto px-2 sm:px-4 md:px-6 py-2 md:py-3 flex flex-col overflow-hidden"
       data-testid="main-content-area"
     >
       {activeView === 'map' && (
-        <div key="map-view" className="animate-fadeIn" data-testid="active-map-view">
-          <VietnamEBAMap />
+        <div key="map-view" className="animate-fadeIn h-full w-full flex-1 min-h-0" data-testid="active-map-view">
+          <VietnamEBAMap className="h-full w-full" />
         </div>
       )}
 
       {activeView === 'sunburst' && (
-        <div key="sunburst-view" className="animate-fadeIn" data-testid="active-sunburst-view">
+        <div key="sunburst-view" className="animate-fadeIn h-full w-full overflow-y-auto pr-1" data-testid="active-sunburst-view">
           <SunburstView onViewCurator={() => setActiveView('curator')} />
         </div>
       )}
 
       {activeView === 'curator' && (
-        <div key="curator-view" className="animate-fadeIn" data-testid="active-curator-view">
+        <div key="curator-view" className="animate-fadeIn h-full w-full overflow-y-auto pr-1" data-testid="active-curator-view">
           <CuratorView
             onViewMap={() => setActiveView('map')}
             onViewSunburst={() => setActiveView('sunburst')}
@@ -44,11 +44,11 @@ export const MainContent: React.FC = () => {
 export default function App() {
   return (
     <TaxonomyProvider>
-      <div className="min-h-screen bg-paper-50 flex flex-col font-sans text-ink-900 selection:bg-natural-moss/20 selection:text-natural-forest">
-        <MuseumHeader />
-        <SearchFilterBar />
+      <div className="min-h-screen md:h-screen md:max-h-screen bg-paper-50 flex flex-col font-sans text-ink-900 selection:bg-natural-moss/20 selection:text-natural-forest overflow-x-hidden md:overflow-hidden">
+        <MuseumHeader className="shrink-0" />
+        <SearchFilterBar className="shrink-0" />
         <MainContent />
-        <MuseumFooter />
+        <MuseumFooter className="shrink-0" />
       </div>
     </TaxonomyProvider>
   );

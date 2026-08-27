@@ -23,7 +23,7 @@ export const MuseumFooter: React.FC<MuseumFooterProps> = ({ className = '' }) =>
       {/* Collapsible Content Area */}
       <div
         className={`transition-all duration-500 overflow-hidden ${
-          isExpanded ? 'max-h-[1200px] opacity-100 py-8' : 'max-h-0 opacity-0 py-0'
+          isExpanded ? 'max-h-[60vh] overflow-y-auto opacity-100 py-6' : 'max-h-0 opacity-0 py-0'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-6">
