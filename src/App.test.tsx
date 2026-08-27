@@ -18,7 +18,7 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
 
     // Museum Header is rendered
     expect(screen.getByTestId('museum-header')).toBeDefined();
-    expect(screen.getByText('Avifauna of Vietnam')).toBeDefined();
+    expect(screen.getAllByText('Avifauna of Vietnam').length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText(/Giám tuyển & Trực quan hóa Phân loại học/i).length).toBeGreaterThan(0);
 
     // Search and filter bar is rendered

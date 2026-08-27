@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Compass, TreePine, Feather, Dices, Library } from 'lucide-react';
+import { Compass, TreePine, Feather, Dices } from 'lucide-react';
 import { useTaxonomy, ViewMode } from '../../context/TaxonomyContext';
-import { MethodologyModal } from '../Common/MethodologyModal';
 
 export interface MuseumHeaderProps {
   className?: string;
@@ -38,7 +37,6 @@ const NAV_TABS: NavTabItem[] = [
 export const MuseumHeader: React.FC<MuseumHeaderProps> = ({ className = '' }) => {
   const { activeView, setActiveView, selectRandomEndemic } = useTaxonomy();
   const [diceRolling, setDiceRolling] = useState<boolean>(false);
-  const [isMethodologyOpen, setIsMethodologyOpen] = useState<boolean>(false);
 
   const handleRandomClick = () => {
     setDiceRolling(true);
@@ -108,19 +106,8 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({ className = '' }) =>
           })}
         </nav>
 
-        {/* Right actions: Methodology Info & Random Endemic Explorer */}
+        {/* Right action: Random Endemic Bird Explorer */}
         <div className="flex items-center gap-2 self-end md:self-auto">
-          <button
-            type="button"
-            onClick={() => setIsMethodologyOpen(true)}
-            aria-label="Xem phương pháp luận và nguồn dữ liệu học thuật"
-            title="Phương pháp luận & Nguồn Dữ liệu Học thuật"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-paper-200/80 hover:bg-paper-300 text-ink-800 transition-all text-xs sm:text-sm font-medium border border-paper-border"
-          >
-            <Library className="w-4 h-4 text-natural-moss" />
-            <span className="hidden lg:inline">Phương pháp luận &amp; </span>Nguồn dữ liệu
-          </button>
-
           <button
             type="button"
             onClick={handleRandomClick}
@@ -138,12 +125,6 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({ className = '' }) =>
         </div>
 
       </div>
-
-      {/* Methodology & Data Sources Modal Dialog */}
-      <MethodologyModal
-        isOpen={isMethodologyOpen}
-        onClose={() => setIsMethodologyOpen(false)}
-      />
     </header>
   );
 };
