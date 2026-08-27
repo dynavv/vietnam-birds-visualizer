@@ -8,6 +8,6 @@
 | Task 4: Common Components | PENDING | Header, SearchFilter, AudioVoiceButton, Badges |
 | Task 5: Map View | PENDING | VietnamEBAMap, EndemicFocusCard |
 | Task 6: Sunburst View | PENDING | SunburstWheel, Breadcrumbs, QuickSpecimenPanel |
-| Task 7: Curator View | PENDING | SpecimenPlate, MorphologyReport, CladeBadges |
+| Task 7: Curator View | COMPLETE | SpecimenPlate, MorphologyReport, CladeBadges |
 | Task 8: App Integration | PENDING | View switching, layout & responsive polish |
 | Task 9: Verification & Delivery | PENDING | Build check, test suite, final verification |
