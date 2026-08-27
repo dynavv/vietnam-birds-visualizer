@@ -1,0 +1,1348 @@
+{
+  "name": "Aves",
+  "vietnameseName": "Lớp Chim",
+  "rank": "class",
+  "color": "#1C1917",
+  "children": [
+    {
+      "name": "Passeriformes",
+      "vietnameseName": "Bộ Sẻ",
+      "rank": "order",
+      "color": "#2D5A27",
+      "children": [
+        {
+          "name": "Leiothrichidae",
+          "vietnameseName": "Họ Khướu",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Trochalopteron",
+              "vietnameseName": "Chi Trochalopteron",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Trochalopteron formosum greenwayi",
+                  "vietnameseName": "Khướu hông đỏ",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "trochalopteron-formosum-greenwayi"
+                },
+                {
+                  "name": "Trochalopteron milnei sharpei",
+                  "vietnameseName": "Khướu đuôi đỏ",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "trochalopteron-milnei-sharpei"
+                },
+                {
+                  "name": "Trochalopteron ngoclinhense",
+                  "vietnameseName": "Khướu Ngọc Linh",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "trochalopteron-ngoclinhense"
+                },
+                {
+                  "name": "Trochalopteron yersini",
+                  "vietnameseName": "Khướu đầu đen má xám",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "trochalopteron-yersini"
+                }
+              ]
+            },
+            {
+              "name": "Garrulax",
+              "vietnameseName": "Chi Garrulax",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Garrulax canorus",
+                  "vietnameseName": "Họa mi",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "garrulax-canorus"
+                },
+                {
+                  "name": "Garrulax chinensis",
+                  "vietnameseName": "Khướu bạc má",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "garrulax-chinensis"
+                }
+              ]
+            },
+            {
+              "name": "Ianthocincla",
+              "vietnameseName": "Chi Ianthocincla",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Ianthocincla konkakinhensis",
+                  "vietnameseName": "Khướu Kon Ka Kinh",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "ianthocincla-konkakinhensis"
+                }
+              ]
+            },
+            {
+              "name": "Liochicla",
+              "vietnameseName": "Chi Liochicla",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Liochicla langbianis",
+                  "vietnameseName": "Mi Langbiang",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "liochicla-langbianis"
+                }
+              ]
+            },
+            {
+              "name": "Actinodura",
+              "vietnameseName": "Chi Actinodura",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Actinodura sodangorum",
+                  "vietnameseName": "Khướu vằn đầu đen",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "actinodura-sodangorum"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Timaliidae",
+          "vietnameseName": "Họ Họa mi",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Mixornis",
+              "vietnameseName": "Chi Mixornis",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Mixornis kelleyi",
+                  "vietnameseName": "Chích chạch má xám",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "macronus-kelleyi"
+                }
+              ]
+            },
+            {
+              "name": "Stachyris",
+              "vietnameseName": "Chi Stachyris",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Stachyris herberti",
+                  "vietnameseName": "Khướu đá mun",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "stachyris-herberti"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Muscicapidae",
+          "vietnameseName": "Họ Đớp ruồi",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Cyornis",
+              "vietnameseName": "Chi Cyornis",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Cyornis rubeculoides",
+                  "vietnameseName": "Đớp ruồi cằm đen",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "cyornis-rubeculoides"
+                }
+              ]
+            },
+            {
+              "name": "Copsychus",
+              "vietnameseName": "Chi Copsychus",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Copsychus malabaricus",
+                  "vietnameseName": "Chích chòe lửa",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "copsychus-malabaricus"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fringillidae",
+          "vietnameseName": "Họ Sẻ thông",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Chloris",
+              "vietnameseName": "Chi Chloris",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Chloris monguilloti",
+                  "vietnameseName": "Sẻ thông họng vàng",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "chloris-monguilloti"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pellorneidae",
+          "vietnameseName": "Họ Khướu đất",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Rimator",
+              "vietnameseName": "Chi Rimator",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Rimator pasquieri",
+                  "vietnameseName": "Họa mi đất mỏ dài",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "rimator-pasquieri"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Paradoxornithidae",
+          "vietnameseName": "Họ Khướu mỏ dẹt",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Psittiparus",
+              "vietnameseName": "Chi Psittiparus",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Psittiparus bakeri",
+                  "vietnameseName": "Khướu mỏ dẹt to",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "psittiparus-bakeri"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nectariniidae",
+          "vietnameseName": "Họ Hút mật",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Aethopyga",
+              "vietnameseName": "Chi Aethopyga",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Aethopyga saturata",
+                  "vietnameseName": "Hút mật họng đen",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "aethopyga-saturata"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Laniidae",
+          "vietnameseName": "Họ Bách thanh",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Lanius",
+              "vietnameseName": "Chi Lanius",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Lanius schach",
+                  "vietnameseName": "Bách thanh đầu đen",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "lanius-schach"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pittidae",
+          "vietnameseName": "Họ Đuôi cụt",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Pitta",
+              "vietnameseName": "Chi Pitta",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Pitta moluccensis",
+                  "vietnameseName": "Đuôi cụt cánh xanh",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "pitta-moluccensis"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Oriolidae",
+          "vietnameseName": "Họ Vàng anh",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Oriolus",
+              "vietnameseName": "Chi Oriolus",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Oriolus chinensis",
+                  "vietnameseName": "Vàng anh gáy đen",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "oriolus-chinensis"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dicruridae",
+          "vietnameseName": "Họ Chèo bẻo",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Dicrurus",
+              "vietnameseName": "Chi Dicrurus",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Dicrurus paradiseus",
+                  "vietnameseName": "Chèo bẻo đuôi cờ",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "dicrurus-paradiseus"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Eurylaimidae",
+          "vietnameseName": "Họ Mỏ rộng",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Psarisomus",
+              "vietnameseName": "Chi Psarisomus",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Psarisomus dalhousiae",
+                  "vietnameseName": "Mỏ rộng xanh",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "psarisomus-dalhousiae"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bucerotiformes",
+      "vietnameseName": "Bộ Hồng hoàng",
+      "rank": "order",
+      "color": "#D97706",
+      "children": [
+        {
+          "name": "Bucerotidae",
+          "vietnameseName": "Họ Hồng hoàng",
+          "rank": "family",
+          "color": "#D97706",
+          "children": [
+            {
+              "name": "Buceros",
+              "vietnameseName": "Chi Buceros",
+              "rank": "genus",
+              "color": "#D97706",
+              "children": [
+                {
+                  "name": "Buceros bicornis",
+                  "vietnameseName": "Hồng hoàng",
+                  "rank": "species",
+                  "color": "#D97706",
+                  "speciesId": "buceros-bicornis"
+                }
+              ]
+            },
+            {
+              "name": "Rhyticeros",
+              "vietnameseName": "Chi Rhyticeros",
+              "rank": "genus",
+              "color": "#D97706",
+              "children": [
+                {
+                  "name": "Rhyticeros undulatus",
+                  "vietnameseName": "Niệc mỏ vằn",
+                  "rank": "species",
+                  "color": "#D97706",
+                  "speciesId": "rhyticeros-undulatus"
+                }
+              ]
+            },
+            {
+              "name": "Anorrhinus",
+              "vietnameseName": "Chi Anorrhinus",
+              "rank": "genus",
+              "color": "#D97706",
+              "children": [
+                {
+                  "name": "Anorrhinus tickelli",
+                  "vietnameseName": "Niệc nâu",
+                  "rank": "species",
+                  "color": "#D97706",
+                  "speciesId": "anorrhinus-tickelli"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Upupidae",
+          "vietnameseName": "Họ Đầu rìu",
+          "rank": "family",
+          "color": "#D97706",
+          "children": [
+            {
+              "name": "Upupa",
+              "vietnameseName": "Chi Upupa",
+              "rank": "genus",
+              "color": "#D97706",
+              "children": [
+                {
+                  "name": "Upupa epops",
+                  "vietnameseName": "Đầu rìu",
+                  "rank": "species",
+                  "color": "#D97706",
+                  "speciesId": "upupa-epops"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Coraciiformes",
+      "vietnameseName": "Bộ Bói cá",
+      "rank": "order",
+      "color": "#0284C7",
+      "children": [
+        {
+          "name": "Alcedinidae",
+          "vietnameseName": "Họ Bói cá",
+          "rank": "family",
+          "color": "#0284C7",
+          "children": [
+            {
+              "name": "Megaceryle",
+              "vietnameseName": "Chi Megaceryle",
+              "rank": "genus",
+              "color": "#0284C7",
+              "children": [
+                {
+                  "name": "Megaceryle lugubris",
+                  "vietnameseName": "Bói cá lớn",
+                  "rank": "species",
+                  "color": "#0284C7",
+                  "speciesId": "megaceryle-lugubris"
+                }
+              ]
+            },
+            {
+              "name": "Pelargopsis",
+              "vietnameseName": "Chi Pelargopsis",
+              "rank": "genus",
+              "color": "#0284C7",
+              "children": [
+                {
+                  "name": "Pelargopsis capensis",
+                  "vietnameseName": "Sả mỏ rộng",
+                  "rank": "species",
+                  "color": "#0284C7",
+                  "speciesId": "pelargopsis-capensis"
+                }
+              ]
+            },
+            {
+              "name": "Halcyon",
+              "vietnameseName": "Chi Halcyon",
+              "rank": "genus",
+              "color": "#0284C7",
+              "children": [
+                {
+                  "name": "Halcyon pileata",
+                  "vietnameseName": "Sả đầu đen",
+                  "rank": "species",
+                  "color": "#0284C7",
+                  "speciesId": "halcyon-pileata"
+                }
+              ]
+            },
+            {
+              "name": "Alcedo",
+              "vietnameseName": "Chi Alcedo",
+              "rank": "genus",
+              "color": "#0284C7",
+              "children": [
+                {
+                  "name": "Alcedo hercules",
+                  "vietnameseName": "Bồng chanh rừng",
+                  "rank": "species",
+                  "color": "#0284C7",
+                  "speciesId": "alcedo-hercules"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Coraciidae",
+          "vietnameseName": "Họ Trả trảng",
+          "rank": "family",
+          "color": "#0284C7",
+          "children": [
+            {
+              "name": "Coracias",
+              "vietnameseName": "Chi Coracias",
+              "rank": "genus",
+              "color": "#0284C7",
+              "children": [
+                {
+                  "name": "Coracias affinis",
+                  "vietnameseName": "Trả trảng đầu xám",
+                  "rank": "species",
+                  "color": "#0284C7",
+                  "speciesId": "coracias-affinis"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Piciformes",
+      "vietnameseName": "Bộ Gõ kiến",
+      "rank": "order",
+      "color": "#7C2D12",
+      "children": [
+        {
+          "name": "Picidae",
+          "vietnameseName": "Họ Gõ kiến",
+          "rank": "family",
+          "color": "#7C2D12",
+          "children": [
+            {
+              "name": "Picus",
+              "vietnameseName": "Chi Picus",
+              "rank": "genus",
+              "color": "#7C2D12",
+              "children": [
+                {
+                  "name": "Picus rabieri",
+                  "vietnameseName": "Gõ kiến xanh hông đỏ",
+                  "rank": "species",
+                  "color": "#7C2D12",
+                  "speciesId": "picus-rabieri"
+                }
+              ]
+            },
+            {
+              "name": "Chrysocolaptes",
+              "vietnameseName": "Chi Chrysocolaptes",
+              "rank": "genus",
+              "color": "#7C2D12",
+              "children": [
+                {
+                  "name": "Chrysocolaptes guttacristatus",
+                  "vietnameseName": "Gõ kiến tam giác",
+                  "rank": "species",
+                  "color": "#7C2D12",
+                  "speciesId": "chrysocolaptes-guttacristatus"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Megalaimidae",
+          "vietnameseName": "Họ Cu rốc",
+          "rank": "family",
+          "color": "#7C2D12",
+          "children": [
+            {
+              "name": "Psilopogon",
+              "vietnameseName": "Chi Psilopogon",
+              "rank": "genus",
+              "color": "#7C2D12",
+              "children": [
+                {
+                  "name": "Psilopogon faber",
+                  "vietnameseName": "Cu rốc đầu đen",
+                  "rank": "species",
+                  "color": "#7C2D12",
+                  "speciesId": "psilopogon-faber"
+                },
+                {
+                  "name": "Psilopogon haemacephalus",
+                  "vietnameseName": "Cu rốc đầu đỏ",
+                  "rank": "species",
+                  "color": "#7C2D12",
+                  "speciesId": "psilopogon-haemacephalus"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pelecaniformes",
+      "vietnameseName": "Bộ Bồ nông",
+      "rank": "order",
+      "color": "#0D9488",
+      "children": [
+        {
+          "name": "Threskiornithidae",
+          "vietnameseName": "Họ Cò quăm",
+          "rank": "family",
+          "color": "#0D9488",
+          "children": [
+            {
+              "name": "Pseudibis",
+              "vietnameseName": "Chi Pseudibis",
+              "rank": "genus",
+              "color": "#0D9488",
+              "children": [
+                {
+                  "name": "Pseudibis davisoni",
+                  "vietnameseName": "Cò quăm cánh xanh",
+                  "rank": "species",
+                  "color": "#0D9488",
+                  "speciesId": "pseudibis-davisoni"
+                }
+              ]
+            },
+            {
+              "name": "Platalea",
+              "vietnameseName": "Chi Platalea",
+              "rank": "genus",
+              "color": "#0D9488",
+              "children": [
+                {
+                  "name": "Platalea minor",
+                  "vietnameseName": "Cò thìa mặt đen",
+                  "rank": "species",
+                  "color": "#0D9488",
+                  "speciesId": "platalea-minor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ardeidae",
+          "vietnameseName": "Họ Diệc",
+          "rank": "family",
+          "color": "#0D9488",
+          "children": [
+            {
+              "name": "Gorsachius",
+              "vietnameseName": "Chi Gorsachius",
+              "rank": "genus",
+              "color": "#0D9488",
+              "children": [
+                {
+                  "name": "Gorsachius melanolophus",
+                  "vietnameseName": "Vạc rừng",
+                  "rank": "species",
+                  "color": "#0D9488",
+                  "speciesId": "gorsachius-melanolophus"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gruiformes",
+      "vietnameseName": "Bộ Sếu",
+      "rank": "order",
+      "color": "#B45309",
+      "children": [
+        {
+          "name": "Rallidae",
+          "vietnameseName": "Họ Gà nước",
+          "rank": "family",
+          "color": "#B45309",
+          "children": [
+            {
+              "name": "Rallina",
+              "vietnameseName": "Chi Rallina",
+              "rank": "genus",
+              "color": "#B45309",
+              "children": [
+                {
+                  "name": "Rallina fasciata",
+                  "vietnameseName": "Cuốc ngực nâu",
+                  "rank": "species",
+                  "color": "#B45309",
+                  "speciesId": "rallina-fasciata"
+                }
+              ]
+            },
+            {
+              "name": "Porphyrio",
+              "vietnameseName": "Chi Porphyrio",
+              "rank": "genus",
+              "color": "#B45309",
+              "children": [
+                {
+                  "name": "Porphyrio poliocephalus",
+                  "vietnameseName": "Trích cồ",
+                  "rank": "species",
+                  "color": "#B45309",
+                  "speciesId": "porphyrio-poliocephalus"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gruidae",
+          "vietnameseName": "Họ Sếu",
+          "rank": "family",
+          "color": "#B45309",
+          "children": [
+            {
+              "name": "Antigone",
+              "vietnameseName": "Chi Antigone",
+              "rank": "genus",
+              "color": "#B45309",
+              "children": [
+                {
+                  "name": "Antigone antigone",
+                  "vietnameseName": "Sếu đầu đỏ",
+                  "rank": "species",
+                  "color": "#B45309",
+                  "speciesId": "antigone-antigone"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Galliformes",
+      "vietnameseName": "Bộ Gà",
+      "rank": "order",
+      "color": "#C2593F",
+      "children": [
+        {
+          "name": "Phasianidae",
+          "vietnameseName": "Họ Trĩ",
+          "rank": "family",
+          "color": "#C2593F",
+          "children": [
+            {
+              "name": "Lophura",
+              "vietnameseName": "Chi Lophura",
+              "rank": "genus",
+              "color": "#C2593F",
+              "children": [
+                {
+                  "name": "Lophura diardi",
+                  "vietnameseName": "Gà lôi hông tía",
+                  "rank": "species",
+                  "color": "#C2593F",
+                  "speciesId": "lophura-diardi"
+                },
+                {
+                  "name": "Lophura edwardsi",
+                  "vietnameseName": "Gà lôi lam mào trắng",
+                  "rank": "species",
+                  "color": "#C2593F",
+                  "speciesId": "lophura-edwardsi"
+                }
+              ]
+            },
+            {
+              "name": "Polyplectron",
+              "vietnameseName": "Chi Polyplectron",
+              "rank": "genus",
+              "color": "#C2593F",
+              "children": [
+                {
+                  "name": "Polyplectron bicalcaratum",
+                  "vietnameseName": "Gà tiền mặt vàng",
+                  "rank": "species",
+                  "color": "#C2593F",
+                  "speciesId": "polyplectron-bicalcaratum"
+                },
+                {
+                  "name": "Polyplectron germaini",
+                  "vietnameseName": "Gà tiền mặt đỏ",
+                  "rank": "species",
+                  "color": "#C2593F",
+                  "speciesId": "polyplectron-germaini"
+                }
+              ]
+            },
+            {
+              "name": "Rheinardia",
+              "vietnameseName": "Chi Rheinardia",
+              "rank": "genus",
+              "color": "#C2593F",
+              "children": [
+                {
+                  "name": "Rheinardia ocellata",
+                  "vietnameseName": "Trĩ sao",
+                  "rank": "species",
+                  "color": "#C2593F",
+                  "speciesId": "rheinardia-ocellata"
+                }
+              ]
+            },
+            {
+              "name": "Arborophila",
+              "vietnameseName": "Chi Arborophila",
+              "rank": "genus",
+              "color": "#C2593F",
+              "children": [
+                {
+                  "name": "Arborophila brunneopectus",
+                  "vietnameseName": "Gà so họng trắng",
+                  "rank": "species",
+                  "color": "#C2593F",
+                  "speciesId": "arborophila-brunneopectus"
+                }
+              ]
+            },
+            {
+              "name": "Gallus",
+              "vietnameseName": "Chi Gallus",
+              "rank": "genus",
+              "color": "#C2593F",
+              "children": [
+                {
+                  "name": "Gallus gallus",
+                  "vietnameseName": "Gà rừng tai trắng",
+                  "rank": "species",
+                  "color": "#C2593F",
+                  "speciesId": "gallus-gallus"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Accipitriformes",
+      "vietnameseName": "Bộ Ưng",
+      "rank": "order",
+      "color": "#4B5563",
+      "children": [
+        {
+          "name": "Accipitridae",
+          "vietnameseName": "Họ Ưng",
+          "rank": "family",
+          "color": "#4B5563",
+          "children": [
+            {
+              "name": "Ictinaetus",
+              "vietnameseName": "Chi Ictinaetus",
+              "rank": "genus",
+              "color": "#4B5563",
+              "children": [
+                {
+                  "name": "Ictinaetus malaiensis",
+                  "vietnameseName": "Đại bàng đen",
+                  "rank": "species",
+                  "color": "#4B5563",
+                  "speciesId": "ictinaetus-malaiensis"
+                }
+              ]
+            },
+            {
+              "name": "Spilornis",
+              "vietnameseName": "Chi Spilornis",
+              "rank": "genus",
+              "color": "#4B5563",
+              "children": [
+                {
+                  "name": "Spilornis cheela",
+                  "vietnameseName": "Diều hoa Miến Điện",
+                  "rank": "species",
+                  "color": "#4B5563",
+                  "speciesId": "spilornis-cheela"
+                }
+              ]
+            },
+            {
+              "name": "Pernis",
+              "vietnameseName": "Chi Pernis",
+              "rank": "genus",
+              "color": "#4B5563",
+              "children": [
+                {
+                  "name": "Pernis ptilorhynchus",
+                  "vietnameseName": "Diều ăn ong",
+                  "rank": "species",
+                  "color": "#4B5563",
+                  "speciesId": "pernis-ptilorhynchus"
+                }
+              ]
+            },
+            {
+              "name": "Elanus",
+              "vietnameseName": "Chi Elanus",
+              "rank": "genus",
+              "color": "#4B5563",
+              "children": [
+                {
+                  "name": "Elanus caeruleus",
+                  "vietnameseName": "Diều trắng",
+                  "rank": "species",
+                  "color": "#4B5563",
+                  "speciesId": "elanus-caeruleus"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Strigiformes",
+      "vietnameseName": "Bộ Cú",
+      "rank": "order",
+      "color": "#6B21A8",
+      "children": [
+        {
+          "name": "Strigidae",
+          "vietnameseName": "Họ Cú mèo",
+          "rank": "family",
+          "color": "#6B21A8",
+          "children": [
+            {
+              "name": "Ketupa",
+              "vietnameseName": "Chi Ketupa",
+              "rank": "genus",
+              "color": "#6B21A8",
+              "children": [
+                {
+                  "name": "Ketupa zeylonensis",
+                  "vietnameseName": "Dù dì phương Đông",
+                  "rank": "species",
+                  "color": "#6B21A8",
+                  "speciesId": "ketupa-zeylonensis"
+                }
+              ]
+            },
+            {
+              "name": "Otus",
+              "vietnameseName": "Chi Otus",
+              "rank": "genus",
+              "color": "#6B21A8",
+              "children": [
+                {
+                  "name": "Otus lettia",
+                  "vietnameseName": "Cú mèo khoang cổ",
+                  "rank": "species",
+                  "color": "#6B21A8",
+                  "speciesId": "otus-lettia"
+                }
+              ]
+            },
+            {
+              "name": "Glaucidium",
+              "vietnameseName": "Chi Glaucidium",
+              "rank": "genus",
+              "color": "#6B21A8",
+              "children": [
+                {
+                  "name": "Glaucidium brodiei",
+                  "vietnameseName": "Cú vọ mặt hung",
+                  "rank": "species",
+                  "color": "#6B21A8",
+                  "speciesId": "glaucidium-brodiei"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ciconiiformes",
+      "vietnameseName": "Bộ Hạc",
+      "rank": "order",
+      "color": "#059669",
+      "children": [
+        {
+          "name": "Ciconiidae",
+          "vietnameseName": "Họ Hạc",
+          "rank": "family",
+          "color": "#059669",
+          "children": [
+            {
+              "name": "Leptoptilos",
+              "vietnameseName": "Chi Leptoptilos",
+              "rank": "genus",
+              "color": "#059669",
+              "children": [
+                {
+                  "name": "Leptoptilos javanicus",
+                  "vietnameseName": "Già đới cổ hung",
+                  "rank": "species",
+                  "color": "#059669",
+                  "speciesId": "leptoptilos-javanicus"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Columbiformes",
+      "vietnameseName": "Bộ Bồ câu",
+      "rank": "order",
+      "color": "#9333EA",
+      "children": [
+        {
+          "name": "Columbidae",
+          "vietnameseName": "Họ Bồ câu",
+          "rank": "family",
+          "color": "#9333EA",
+          "children": [
+            {
+              "name": "Caloenas",
+              "vietnameseName": "Chi Caloenas",
+              "rank": "genus",
+              "color": "#9333EA",
+              "children": [
+                {
+                  "name": "Caloenas nicobarica",
+                  "vietnameseName": "Bồ câu Nicobar",
+                  "rank": "species",
+                  "color": "#9333EA",
+                  "speciesId": "caloenas-nicobarica"
+                }
+              ]
+            },
+            {
+              "name": "Ducula",
+              "vietnameseName": "Chi Ducula",
+              "rank": "genus",
+              "color": "#9333EA",
+              "children": [
+                {
+                  "name": "Ducula badia",
+                  "vietnameseName": "Gầm ghì lưng hung",
+                  "rank": "species",
+                  "color": "#9333EA",
+                  "speciesId": "ducula-badia"
+                }
+              ]
+            },
+            {
+              "name": "Treron",
+              "vietnameseName": "Chi Treron",
+              "rank": "genus",
+              "color": "#9333EA",
+              "children": [
+                {
+                  "name": "Treron apicauda",
+                  "vietnameseName": "Cu xanh đuôi nhọn",
+                  "rank": "species",
+                  "color": "#9333EA",
+                  "speciesId": "treron-apicauda"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Anseriformes",
+      "vietnameseName": "Bộ Vịt",
+      "rank": "order",
+      "color": "#2563EB",
+      "children": [
+        {
+          "name": "Anatidae",
+          "vietnameseName": "Họ Vịt",
+          "rank": "family",
+          "color": "#2563EB",
+          "children": [
+            {
+              "name": "Asarcornis",
+              "vietnameseName": "Chi Asarcornis",
+              "rank": "genus",
+              "color": "#2563EB",
+              "children": [
+                {
+                  "name": "Asarcornis scutulata",
+                  "vietnameseName": "Vịt cánh trắng",
+                  "rank": "species",
+                  "color": "#2563EB",
+                  "speciesId": "asarcornis-scutulata"
+                }
+              ]
+            },
+            {
+              "name": "Aix",
+              "vietnameseName": "Chi Aix",
+              "rank": "genus",
+              "color": "#2563EB",
+              "children": [
+                {
+                  "name": "Aix galericulata",
+                  "vietnameseName": "Vịt uyên ương",
+                  "rank": "species",
+                  "color": "#2563EB",
+                  "speciesId": "aix-galericulata"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cuculiformes",
+      "vietnameseName": "Bộ Cu cu",
+      "rank": "order",
+      "color": "#4338CA",
+      "children": [
+        {
+          "name": "Cuculidae",
+          "vietnameseName": "Họ Cu cu",
+          "rank": "family",
+          "color": "#4338CA",
+          "children": [
+            {
+              "name": "Hierococcyx",
+              "vietnameseName": "Chi Hierococcyx",
+              "rank": "genus",
+              "color": "#4338CA",
+              "children": [
+                {
+                  "name": "Hierococcyx sparverioides",
+                  "vietnameseName": "Cu cu vằn",
+                  "rank": "species",
+                  "color": "#4338CA",
+                  "speciesId": "hierococcyx-sparverioides"
+                }
+              ]
+            },
+            {
+              "name": "Carpococcyx",
+              "vietnameseName": "Chi Carpococcyx",
+              "rank": "genus",
+              "color": "#4338CA",
+              "children": [
+                {
+                  "name": "Carpococcyx renauldi",
+                  "vietnameseName": "Phướn đất mỏ đỏ",
+                  "rank": "species",
+                  "color": "#4338CA",
+                  "speciesId": "carpococcyx-renauldi"
+                }
+              ]
+            },
+            {
+              "name": "Centropus",
+              "vietnameseName": "Chi Centropus",
+              "rank": "genus",
+              "color": "#4338CA",
+              "children": [
+                {
+                  "name": "Centropus sinensis",
+                  "vietnameseName": "Bìm bịp lớn",
+                  "rank": "species",
+                  "color": "#4338CA",
+                  "speciesId": "centropus-sinensis"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Trogoniformes",
+      "vietnameseName": "Bộ Nuốc",
+      "rank": "order",
+      "color": "#DC2626",
+      "children": [
+        {
+          "name": "Trogonidae",
+          "vietnameseName": "Họ Nuốc",
+          "rank": "family",
+          "color": "#DC2626",
+          "children": [
+            {
+              "name": "Harpactes",
+              "vietnameseName": "Chi Harpactes",
+              "rank": "genus",
+              "color": "#DC2626",
+              "children": [
+                {
+                  "name": "Harpactes erythrocephalus",
+                  "vietnameseName": "Nuốc bụng đỏ",
+                  "rank": "species",
+                  "color": "#DC2626",
+                  "speciesId": "harpactes-erythrocephalus"
+                },
+                {
+                  "name": "Harpactes oreskios",
+                  "vietnameseName": "Nuốc đuôi vàng",
+                  "rank": "species",
+                  "color": "#DC2626",
+                  "speciesId": "harpactes-oreskios"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Falconiformes",
+      "vietnameseName": "Bộ Cắt",
+      "rank": "order",
+      "color": "#374151",
+      "children": [
+        {
+          "name": "Falconidae",
+          "vietnameseName": "Họ Cắt",
+          "rank": "family",
+          "color": "#374151",
+          "children": [
+            {
+              "name": "Microhierax",
+              "vietnameseName": "Chi Microhierax",
+              "rank": "genus",
+              "color": "#374151",
+              "children": [
+                {
+                  "name": "Microhierax melanoleucos",
+                  "vietnameseName": "Cắt nhỏ bụng trắng",
+                  "rank": "species",
+                  "color": "#374151",
+                  "speciesId": "microhierax-melanoleucos"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Caprimulgiformes",
+      "vietnameseName": "Bộ Cú muỗi",
+      "rank": "order",
+      "color": "#78350F",
+      "children": [
+        {
+          "name": "Caprimulgidae",
+          "vietnameseName": "Họ Cú muỗi",
+          "rank": "family",
+          "color": "#78350F",
+          "children": [
+            {
+              "name": "Caprimulgus",
+              "vietnameseName": "Chi Caprimulgus",
+              "rank": "genus",
+              "color": "#78350F",
+              "children": [
+                {
+                  "name": "Caprimulgus macrurus",
+                  "vietnameseName": "Cú muỗi đuôi dài",
+                  "rank": "species",
+                  "color": "#78350F",
+                  "speciesId": "caprimulgus-macrurus"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

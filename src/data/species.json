@@ -1,0 +1,4801 @@
+[
+  {
+    "id": "trochalopteron-ngoclinhense",
+    "scientificName": "Trochalopteron ngoclinhense",
+    "vietnameseName": "Khướu Ngọc Linh",
+    "englishName": "Golden-winged Laughingthrush",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Leiothrichidae",
+      "familyVietnamese": "Họ Khướu",
+      "genus": "Trochalopteron",
+      "species": "T. ngoclinhense"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "EN",
+      "vietnamRedList": "EN",
+      "description": "Loài nguy cấp (Endangered) đặc hữu hẹp của đỉnh núi Ngọc Linh và vùng phụ cận. Bị đe dọa nghiêm trọng bởi suy giảm sinh cảnh rừng lùn núi cao."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài khướu cỡ trung bình tuyệt đẹp với dải cánh màu vàng kim rực rỡ tương phản mạnh với bộ lông màu nâu hạt dẻ và chỏm đầu xám tro.",
+      "diagnosticFeatures": [
+        {
+          "part": "Vệt cánh vàng kim",
+          "description": "Lông bao cánh sơ cấp và thứ cấp có viền màu vàng kim óng ánh đặc trưng không thể nhầm lẫn."
+        },
+        {
+          "part": "Đầu và mặt",
+          "description": "Đỉnh đầu và gáy màu xám bạc, má có vệt lông sẫm màu chạy dọc quanh mắt."
+        },
+        {
+          "part": "Thân dưới",
+          "description": "Ngực và bụng phủ màu nâu hung hạt dẻ ấm áp, chuyển dần sang nâu ô-liu ở đuôi."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Kon Tum / Dãy Ngọc Linh & Kon Ka Kinh",
+      "elevation": "1.900m - 2.598m",
+      "habitats": [
+        "Rừng lùn đỉnh núi mù sương",
+        "Rừng thường xanh trên núi cao",
+        "Thảm tre nứa núi cao"
+      ],
+      "locations": [
+        "KBT Thiên nhiên Ngọc Linh (Kon Tum & Quảng Nam)",
+        "Núi Ngọc Phan"
+      ],
+      "coordinates": [
+        15.08,
+        107.98
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Golden-winged_Laughingthrush_%28Trochalopteron_ngoclinhense%29.jpg/800px-Golden-winged_Laughingthrush_%28Trochalopteron_ngoclinhense%29.jpg",
+      "artist": "Naturalist Archives of Indochina",
+      "sourceBook": "Avifauna of Central Vietnam Highlands"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC567890-Golden-winged_Laughingthrush.mp3",
+      "duration": "0:24",
+      "recordist": "Dao Van Tien",
+      "location": "Đỉnh Ngọc Linh, Kon Tum"
+    }
+  },
+  {
+    "id": "ianthocincla-konkakinhensis",
+    "scientificName": "Ianthocincla konkakinhensis",
+    "vietnameseName": "Khướu Kon Ka Kinh",
+    "englishName": "Chestnut-eared Laughingthrush",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Leiothrichidae",
+      "familyVietnamese": "Họ Khướu",
+      "genus": "Ianthocincla",
+      "species": "I. konkakinhensis"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "VU",
+      "vietnamRedList": "VU",
+      "description": "Sắp nguy cấp (Vulnerable). Loài được phát hiện năm 1999 tại Vườn Quốc Gia Kon Ka Kinh, ghi dấu mốc quan trọng cho ngành điểu học Việt Nam."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Bộ lông có hoa văn vảy phức tạp màu nâu xám, nổi bật với mảng che tai màu hạt dẻ hung đỏ rực rỡ.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mảng tai hạt dẻ",
+          "description": "Vùng lông che tai màu nâu hạt dẻ sáng nổi bật trên nền đầu màu xám hoa râm."
+        },
+        {
+          "part": "Hoa văn vảy ngực",
+          "description": "Các đốm vảy hình bán nguyệt đen tuyền viền trắng bạc phân bố dày đặc ở ngực và lưng."
+        },
+        {
+          "part": "Đuôi",
+          "description": "Đuôi dài màu nâu sẫm với chóp đuôi phớt trắng mờ."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Kon Tum / Dãy Ngọc Linh & Kon Ka Kinh",
+      "elevation": "1.200m - 1.750m",
+      "habitats": [
+        "Rừng kín thường xanh mưa ẩm nhiệt đới núi trung bình",
+        "Tầng cây bụi rậm rạp ven suối"
+      ],
+      "locations": [
+        "VQG Kon Ka Kinh (Gia Lai)",
+        "KBT An Toàn (Bình Định)"
+      ],
+      "coordinates": [
+        14.3,
+        108.38
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Chestnut-eared_Laughingthrush_at_Kon_Ka_Kinh.jpg/800px-Chestnut-eared_Laughingthrush_at_Kon_Ka_Kinh.jpg",
+      "artist": "John C. Anderton",
+      "sourceBook": "Bulletin of the British Ornithologists' Club 1999"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC489201-Chestnut-eared_Laughingthrush.mp3",
+      "duration": "0:31",
+      "recordist": "Jonathan Eames",
+      "location": "VQG Kon Ka Kinh, Gia Lai"
+    }
+  },
+  {
+    "id": "liochicla-langbianis",
+    "scientificName": "Liochicla langbianis",
+    "vietnameseName": "Mi Langbiang",
+    "englishName": "Collared Laughingthrush",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Leiothrichidae",
+      "familyVietnamese": "Họ Khướu",
+      "genus": "Liochicla",
+      "species": "L. langbianis"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "EN",
+      "vietnamRedList": "EN",
+      "description": "Nguy cấp (Endangered). Biểu tượng điểu học của Cao nguyên Lâm Viên với quần thể phân bố rất hẹp quanh khu vực Bidoup - Núi Bà."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài khướu nhỏ duyên dáng với vòng cổ màu hung cam, vệt cánh và mép đuôi màu đỏ thắm tương phản lông thân màu xám tro.",
+      "diagnosticFeatures": [
+        {
+          "part": "Vòng cổ hung đỏ",
+          "description": "Vòng lông cổ màu hạt dẻ pha cam kéo dài từ má quanh gáy tạo thành chiếc yếm rực rỡ."
+        },
+        {
+          "part": "Vệt cánh đỏ son",
+          "description": "Lông cánh ngoài có viền đỏ thắm sáng chói khi bay hoặc nhảy giữa cành cây."
+        },
+        {
+          "part": "Đỉnh đầu",
+          "description": "Trán và đỉnh đầu xám sẫm có các sọc nhạt li ti."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "elevation": "1.400m - 2.200m",
+      "habitats": [
+        "Rừng thường xanh trên núi",
+        "Khe suối rậm ẩm ướt",
+        "Tầng cây bụi dưới tán thông"
+      ],
+      "locations": [
+        "VQG Bidoup - Núi Bà (Lâm Đồng)",
+        "Đèo Ngoạn Mục",
+        "Lạc Dương"
+      ],
+      "coordinates": [
+        12.18,
+        108.66
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Collared_Laughingthrush_-_Liochicla_langbianis.jpg/800px-Collared_Laughingthrush_-_Liochicla_langbianis.jpg",
+      "artist": "H. Grönvold",
+      "sourceBook": "Les Oiseaux de l'Indochine Française"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC612345-Collared_Laughingthrush.mp3",
+      "duration": "0:19",
+      "recordist": "Craig Robson",
+      "location": "Bidoup, Lâm Đồng"
+    }
+  },
+  {
+    "id": "trochalopteron-yersini",
+    "scientificName": "Trochalopteron yersini",
+    "vietnameseName": "Khướu đầu đen má xám",
+    "englishName": "Yersin's Laughingthrush",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Leiothrichidae",
+      "familyVietnamese": "Họ Khướu",
+      "genus": "Trochalopteron",
+      "species": "T. yersini"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "EN",
+      "vietnamRedList": "EN",
+      "description": "Nguy cấp (Endangered). Đặt tên vinh danh bác sĩ Alexandre Yersin, cư trú tại các đỉnh núi cao sương mù dày đặc của dãy Bidoup và Hòn Bà."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân hình to khỏe, đầu đen tuyền, má xám bạc sáng lóa, yếm ngực cam hạt dẻ và viền lông cánh vàng cam óng ánh.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đầu và má",
+          "description": "Đầu và họng đen tuyền tương phản sắc nét với mảng má màu xám bạc ánh kim."
+        },
+        {
+          "part": "Yếm cổ và ngực",
+          "description": "Cổ áo màu cam nâu hạt dẻ đậm kéo dài xuống ngực trên."
+        },
+        {
+          "part": "Cánh và đuôi",
+          "description": "Lông cánh màu vàng ô-liu óng ánh, đuôi đen có viền vàng nhạt."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "elevation": "1.500m - 2.400m",
+      "habitats": [
+        "Rừng rêu trên núi cao",
+        "Đỉnh núi Hòn Bà và Langbiang"
+      ],
+      "locations": [
+        "VQG Bidoup - Núi Bà",
+        "KBT Hòn Bà (Khánh Hòa)",
+        "Đỉnh Langbiang"
+      ],
+      "coordinates": [
+        12.12,
+        108.72
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Trochalopteron_yersini.jpg/800px-Trochalopteron_yersini.jpg",
+      "artist": "J. G. Keulemans",
+      "sourceBook": "Bulletin du Muséum National d'Histoire Naturelle"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC398712-Yersins_Laughingthrush.mp3",
+      "duration": "0:28",
+      "recordist": "Pete Morris",
+      "location": "Đỉnh Bidoup, Lâm Đồng"
+    }
+  },
+  {
+    "id": "actinodura-sodangorum",
+    "scientificName": "Actinodura sodangorum",
+    "vietnameseName": "Khướu vằn đầu đen",
+    "englishName": "Black-crowned Barwing",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Leiothrichidae",
+      "familyVietnamese": "Họ Khướu",
+      "genus": "Actinodura",
+      "species": "A. sodangorum"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "VU",
+      "vietnamRedList": "VU",
+      "description": "Sắp nguy cấp (Vulnerable). Đặt tên theo người Xơ Đăng (Sodang) bản địa tại vùng núi Ngọc Linh, sinh sống tại các thảm rừng nguyên sinh trên núi."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Đặc trưng bởi mào đầu ngắn màu đen tuyền, cánh và đuôi có những dải vằn ngang đen trắng tinh xảo như phím đàn dương cầm.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mào đầu đen",
+          "description": "Mào ngắn màu đen tuyền tương phản với mặt và họng màu hung xám."
+        },
+        {
+          "part": "Họa tiết vằn cánh",
+          "description": "Lông cánh có các vạch vằn đen trắng xen kẽ dày đặc rất đặc trưng cho chi Actinodura."
+        },
+        {
+          "part": "Thân",
+          "description": "Thân màu xám ô-liu phớt nâu hạt dẻ ở sườn."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Kon Tum / Dãy Ngọc Linh & Kon Ka Kinh",
+      "elevation": "1.000m - 2.400m",
+      "habitats": [
+        "Rừng kín thường xanh mưa mùa núi cao",
+        "Thung lũng tre nứa rậm"
+      ],
+      "locations": [
+        "KBT Ngọc Linh (Kon Tum)",
+        "Đắk Glei",
+        "Tu Mơ Rông"
+      ],
+      "coordinates": [
+        15.02,
+        107.92
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Actinodura_sodangorum.jpg/800px-Actinodura_sodangorum.jpg",
+      "artist": "John C. Anderton",
+      "sourceBook": "Ibis International Journal of Avian Science"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC445566-Black-crowned_Barwing.mp3",
+      "duration": "0:22",
+      "recordist": "Jonathan Eames",
+      "location": "Đắk Glei, Kon Tum"
+    }
+  },
+  {
+    "id": "lophura-edwardsi",
+    "scientificName": "Lophura edwardsi",
+    "vietnameseName": "Gà lôi lam mào trắng",
+    "englishName": "Edwards's Pheasant",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Galloanserae"
+      ],
+      "order": "Galliformes",
+      "orderVietnamese": "Bộ Gà",
+      "family": "Phasianidae",
+      "familyVietnamese": "Họ Trĩ",
+      "genus": "Lophura",
+      "species": "L. edwardsi"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "CR",
+      "vietnamRedList": "CR",
+      "description": "Cực kỳ nguy cấp (Critically Endangered). Loài gà lôi đặc hữu huyền thoại của dải đất thấp miền Trung, biểu tượng bảo tồn thiên nhiên quốc tế."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Chim trống toàn thân màu xanh lam ánh thép rực rỡ, mào lông đầu trắng tinh dựng đứng và vùng da mặt quanh mắt đỏ tươi.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mào trắng",
+          "description": "Chùm lông mào trên đỉnh đầu màu trắng tinh khiết nổi bật trên nền lông xanh sẫm."
+        },
+        {
+          "part": "Bộ lông ánh kim",
+          "description": "Lông thân màu xanh tím than ánh thép metallic lấp lánh dưới ánh sáng mặt trời."
+        },
+        {
+          "part": "Da mặt đỏ cờ",
+          "description": "Mảng da trần quanh mắt có yếm thịt phát triển màu đỏ tươi."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng Đất thấp miền Trung",
+      "elevation": "50m - 300m",
+      "habitats": [
+        "Rừng thường xanh đất thấp mưa ẩm",
+        "Rừng dây leo và tre nứa ven đồi"
+      ],
+      "locations": [
+        "KBT Kẻ Gỗ (Hà Tĩnh)",
+        "KBT Đakrông (Quảng Trị)",
+        "KBT Phong Điền (Thừa Thiên Huế)"
+      ],
+      "coordinates": [
+        16.75,
+        107.15
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Lophura_edwardsi_male.jpg/800px-Lophura_edwardsi_male.jpg",
+      "artist": "J. G. Keulemans",
+      "sourceBook": "Oustalet Descriptions des Oiseaux Nouveaux"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC112233-Edwards_Pheasant.mp3",
+      "duration": "0:15",
+      "recordist": "BirdLife International Conservation Archive",
+      "location": "Kẻ Gỗ, Hà Tĩnh"
+    }
+  },
+  {
+    "id": "polyplectron-germaini",
+    "scientificName": "Polyplectron germaini",
+    "vietnameseName": "Gà tiền mặt đỏ",
+    "englishName": "Germain's Peacock-Pheasant",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Galloanserae"
+      ],
+      "order": "Galliformes",
+      "orderVietnamese": "Bộ Gà",
+      "family": "Phasianidae",
+      "familyVietnamese": "Họ Trĩ",
+      "genus": "Polyplectron",
+      "species": "P. germaini"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "NT",
+      "vietnamRedList": "VU",
+      "description": "Gần bị đe dọa (Near Threatened). Đặc hữu vùng rừng đất thấp Nam Trung Bộ và Nam Bộ, là niềm tự hào của Vườn Quốc Gia Cát Tiên."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Bộ lông màu nâu đen điểm vô số đốm mắt màu xanh lục - tím óng ánh trên cánh và đuôi xòe hình quạt tuyệt đẹp.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đốm mắt (Ocelli)",
+          "description": "Hàng trăm đốm mắt tròn màu xanh lục biếc óng ánh viền đen phủ đều khắp lông cánh và đuôi."
+        },
+        {
+          "part": "Da mặt đỏ",
+          "description": "Vùng da trần quanh mắt màu đỏ hồng tươi."
+        },
+        {
+          "part": "Mào ngắn",
+          "description": "Lông đỉnh đầu dựng ngược nhẹ tạo thành mào nhỏ mềm."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "50m - 600m",
+      "habitats": [
+        "Rừng kín nửa rụng lá ẩm nhiệt đới",
+        "Rừng tre nứa nương rẫy cũ"
+      ],
+      "locations": [
+        "VQG Cát Tiên (Đồng Nai / Lâm Đồng)",
+        "VQG Bù Gia Mập (Bình Phước)",
+        "VQG Lò Gò - Xa Mát"
+      ],
+      "coordinates": [
+        11.42,
+        107.43
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Polyplectron_germaini_-_Germain%27s_Peacock-Pheasant.jpg/800px-Polyplectron_germaini_-_Germain%27s_Peacock-Pheasant.jpg",
+      "artist": "J. G. Keulemans",
+      "sourceBook": "Monograph of the Phasianidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC554433-Germains_Peacock-Pheasant.mp3",
+      "duration": "0:20",
+      "recordist": "Frank Lambert",
+      "location": "VQG Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "chloris-monguilloti",
+    "scientificName": "Chloris monguilloti",
+    "vietnameseName": "Sẻ thông họng vàng",
+    "englishName": "Vietnamese Greenfinch",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Fringillidae",
+      "familyVietnamese": "Họ Sẻ thông",
+      "genus": "Chloris",
+      "species": "C. monguilloti"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "LR",
+      "description": "Ít quan tâm (Least Concern). Loài sẻ đặc hữu thích nghi hoàn hảo với sinh cảnh rừng thông ba lá đặc trưng của cao nguyên Đà Lạt."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Kích thước nhỏ nhắn, đầu màu đen huyền, họng và ngực màu vàng chanh tươi sáng, cánh có vệt vàng rực rỡ khi bay lượn.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đầu đen và ngực vàng",
+          "description": "Đầu màu đen bóng tương phản trực tiếp với cổ họng và ức màu vàng chanh sáng rực."
+        },
+        {
+          "part": "Mỏ hình nón",
+          "description": "Mỏ ngắn, dày và hình nón cứng cáp chuyên dụng để tách hạt thông ba lá."
+        },
+        {
+          "part": "Mảng cánh vàng",
+          "description": "Gốc lông cánh có vệt màu vàng rực rỡ tạo thành dải phát sáng khi sải cánh."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "elevation": "1.000m - 1.900m",
+      "habitats": [
+        "Rừng thông ba lá (Pinus kesiya)",
+        "Khu vực vườn đồi ven rừng Đà Lạt"
+      ],
+      "locations": [
+        "Hồ Tuyền Lâm",
+        "Đèo Prenn",
+        "Langbiang (Lâm Đồng)"
+      ],
+      "coordinates": [
+        11.92,
+        108.43
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Vietnamese_Greenfinch_%28Chloris_monguilloti%29.jpg/800px-Vietnamese_Greenfinch_%28Chloris_monguilloti%29.jpg",
+      "artist": "Naturalist Editorial Archives",
+      "sourceBook": "Oiseaux de l'Indochine"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC332211-Vietnamese_Greenfinch.mp3",
+      "duration": "0:17",
+      "recordist": "Nguyen Hoang Hao",
+      "location": "Đà Lạt, Lâm Đồng"
+    }
+  },
+  {
+    "id": "macronus-kelleyi",
+    "scientificName": "Mixornis kelleyi",
+    "vietnameseName": "Chích chạch má xám",
+    "englishName": "Grey-faced Tit-Babbler",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Timaliidae",
+      "familyVietnamese": "Họ Họa mi",
+      "genus": "Mixornis",
+      "species": "M. kelleyi"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "LR",
+      "description": "Ít quan tâm (Least Concern). Phổ biến ở các tầng cây bụi rừng đất thấp Nam Đông Dương và miền Trung Việt Nam."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân nhỏ nhanh nhẹn, đỉnh đầu màu nâu hạt dẻ, má xám bạc và ức có các vệt sọc mảnh màu ô-liu.",
+      "diagnosticFeatures": [
+        {
+          "part": "Má xám",
+          "description": "Mảng má màu xám tro nhạt tương phản với mũ đầu nâu hạt dẻ sẫm."
+        },
+        {
+          "part": "Ngực sọc mảnh",
+          "description": "Ứng ngực vàng nhạt phủ các đường vân sọc dọc mỏng màu nâu."
+        },
+        {
+          "part": "Mống mắt",
+          "description": "Mắt màu vàng rơm nhạt nổi bật."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "50m - 800m",
+      "habitats": [
+        "Tầng dưới tán rừng thường xanh đất thấp",
+        "Rừng thứ sinh và bụi rậm"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Bạch Mã",
+        "KBT Mã Đà"
+      ],
+      "coordinates": [
+        11.35,
+        107.25
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Grey-faced_Tit-Babbler.jpg/800px-Grey-faced_Tit-Babbler.jpg",
+      "artist": "Delacour & Greenway",
+      "sourceBook": "Revue d'Histoire Naturelle Appliquée"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC887766-Grey-faced_Tit-Babbler.mp3",
+      "duration": "0:25",
+      "recordist": "Peter Boesman",
+      "location": "Nam Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "rimator-pasquieri",
+    "scientificName": "Rimator pasquieri",
+    "vietnameseName": "Họa mi đất mỏ dài",
+    "englishName": "White-throated Wren-Babbler",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Pellorneidae",
+      "familyVietnamese": "Họ Khướu đất",
+      "genus": "Rimator",
+      "species": "R. pasquieri"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "EN",
+      "vietnamRedList": "EN",
+      "description": "Nguy cấp (Endangered). Loài chim mặt đất kỳ dị với chiếc mỏ dài cong đặc hữu của vùng núi Fansipan và dãy Hoàng Liên Sơn."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Đuôi cực ngắn gần như cụt, mỏ dài cong mảnh khảnh dùng để luồn sâu vào thảm rêu và vỏ cây tìm sâu bọ, họng trắng tinh.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mỏ dài cong",
+          "description": "Chiếc mỏ dài bất thường so với tỷ lệ cơ thể, hơi cong xuống dưới màu xám sừng."
+        },
+        {
+          "part": "Họng trắng tuyết",
+          "description": "Vùng họng màu trắng tinh nổi bật trên nền ngực và bụng màu nâu hung rỉ sắt."
+        },
+        {
+          "part": "Đuôi cụt",
+          "description": "Đuôi thoái hóa rất ngắn nép dưới lông bao đuôi xù phồng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "elevation": "1.400m - 2.300m",
+      "habitats": [
+        "Rừng rêu thường xanh ôn đới núi cao",
+        "Thảm mục thực vật dưới tán rừng trúc"
+      ],
+      "locations": [
+        "VQG Hoàng Liên (Sa Pa, Lào Cai)",
+        "Đèo Ô Quy Hồ",
+        "Bát Xát"
+      ],
+      "coordinates": [
+        22.31,
+        103.78
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/White-throated_Wren-Babbler.jpg/800px-White-throated_Wren-Babbler.jpg",
+      "artist": "J. Delacour",
+      "sourceBook": "Bulletin du Muséum National d'Histoire Naturelle 1930"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC224466-White-throated_Wren-Babbler.mp3",
+      "duration": "0:21",
+      "recordist": "Per Alström",
+      "location": "Sa Pa, Lào Cai"
+    }
+  },
+  {
+    "id": "stachyris-herberti",
+    "scientificName": "Stachyris herberti",
+    "vietnameseName": "Khướu đá mun",
+    "englishName": "Sooty Babbler",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Timaliidae",
+      "familyVietnamese": "Họ Họa mi",
+      "genus": "Stachyris",
+      "species": "S. herberti"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "LR",
+      "description": "Ít quan tâm (Least Concern). Chuyên biệt sinh cảnh hoàn toàn trên các vách đá vôi karst hiểm trở tại miền Trung Việt Nam."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Toàn bộ lông màu nâu tro xám đen như than mun, ngực và họng nhạt màu hơn, móng chân to khỏe bám vách đá dốc đứng.",
+      "diagnosticFeatures": [
+        {
+          "part": "Lông màu mun",
+          "description": "Bộ lông màu xám đen mờ mờ ngụy trang tuyệt hảo vào vách đá vôi ẩm ướt."
+        },
+        {
+          "part": "Móng vuốt",
+          "description": "Chân và ngón phát triển to khỏe giúp nhảy thoăn thoắt trên vách đá tai mèo."
+        },
+        {
+          "part": "Mắt sáng",
+          "description": "Vòng mắt màu xám xanh sáng tương phản với màu đầu mun."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng Đất thấp miền Trung",
+      "elevation": "100m - 600m",
+      "habitats": [
+        "Vách đá vôi Karst rậm rạp",
+        "Rừng nguyên sinh trên núi đá vôi"
+      ],
+      "locations": [
+        "VQG Phong Nha - Kẻ Bàng (Quảng Bình)",
+        "Huyện Minh Hóa",
+        "Tuyên Hóa"
+      ],
+      "coordinates": [
+        17.58,
+        106.28
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Sooty_Babbler_-_Stachyris_herberti.jpg/800px-Sooty_Babbler_-_Stachyris_herberti.jpg",
+      "artist": "Naturalist Expedition Archive",
+      "sourceBook": "Indochinese Karst Avifauna Survey"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC998877-Sooty_Babbler.mp3",
+      "duration": "0:16",
+      "recordist": "Jonathan Eames",
+      "location": "Phong Nha, Quảng Bình"
+    }
+  },
+  {
+    "id": "trochalopteron-formosum-greenwayi",
+    "scientificName": "Trochalopteron formosum greenwayi",
+    "vietnameseName": "Khướu hông đỏ",
+    "englishName": "Red-winged Laughingthrush",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Leiothrichidae",
+      "familyVietnamese": "Họ Khướu",
+      "genus": "Trochalopteron",
+      "species": "T. formosum"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "LR",
+      "description": "Ít quan tâm (Least Concern). Phân loài đặc hữu Tây Bắc Việt Nam với đôi cánh màu đỏ thắm lộng lẫy trên sườn núi Fansipan."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân hình đầy đặn, mảng cánh và đuôi có màu đỏ thắm ánh son rực rỡ, đỉnh đầu màu xám có vảy đen tinh tế.",
+      "diagnosticFeatures": [
+        {
+          "part": "Cánh đỏ thắm",
+          "description": "Lông bay và mép cánh phủ màu đỏ son tươi tắn nổi bật trên nền thân nâu sẫm."
+        },
+        {
+          "part": "Đầu và gáy",
+          "description": "Đỉnh đầu màu xám tro có vảy đen li ti, gáy hung đỏ hạt dẻ."
+        },
+        {
+          "part": "Má đen",
+          "description": "Mảng lông má và dải quanh mắt đen huyền bí."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "elevation": "1.800m - 2.800m",
+      "habitats": [
+        "Rừng đỗ quyên núi cao",
+        "Thảm cây bụi ôn đới mù sương"
+      ],
+      "locations": [
+        "VQG Hoàng Liên (Sa Pa)",
+        "Đỉnh Fansipan",
+        "Mù Cang Chải"
+      ],
+      "coordinates": [
+        22.3,
+        103.82
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Red-winged_Laughingthrush_%28Trochalopteron_formosum%29.jpg/800px-Red-winged_Laughingthrush_%28Trochalopteron_formosum%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC776655-Red-winged_Laughingthrush.mp3",
+      "duration": "0:27",
+      "recordist": "Per Alström",
+      "location": "Đèo Trạm Tôn, Sa Pa"
+    }
+  },
+  {
+    "id": "trochalopteron-milnei-sharpei",
+    "scientificName": "Trochalopteron milnei sharpei",
+    "vietnameseName": "Khướu đuôi đỏ",
+    "englishName": "Red-tailed Laughingthrush",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Leiothrichidae",
+      "familyVietnamese": "Họ Khướu",
+      "genus": "Trochalopteron",
+      "species": "T. milnei"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "LR",
+      "description": "Ít quan tâm (Least Concern). Một trong những loài khướu sặc sỡ nhất núi rừng Bắc Bộ và Tây Bắc Việt Nam."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Mũ đầu màu đỏ son sáng chói, má trắng bạc, toàn bộ cánh và đuôi màu đỏ thắm tương phản lông lưng xám vảy đen.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mũ đầu đỏ rực",
+          "description": "Đỉnh đầu phủ lớp lông màu đỏ son tươi tắn nổi bật từ xa."
+        },
+        {
+          "part": "Má trắng bạc",
+          "description": "Hai bên má có mảng lông màu trắng bạc ánh kim."
+        },
+        {
+          "part": "Đuôi và cánh đỏ",
+          "description": "Lông đuôi dài và lông bao cánh ngoài màu đỏ thắm bóng mượt."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "elevation": "1.500m - 2.500m",
+      "habitats": [
+        "Rừng thường xanh trên núi cao",
+        "Tầng cây bụi rậm ẩm ướt ven suối"
+      ],
+      "locations": [
+        "VQG Hoàng Liên",
+        "Bát Xát (Lào Cai)",
+        "KBT Mường Nhé (Điện Biên)"
+      ],
+      "coordinates": [
+        22.38,
+        103.75
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Red-tailed_Laughingthrush_%28Trochalopteron_milnei%29.jpg/800px-Red-tailed_Laughingthrush_%28Trochalopteron_milnei%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC334455-Red-tailed_Laughingthrush.mp3",
+      "duration": "0:23",
+      "recordist": "Nguyen Manh Hiep",
+      "location": "Sa Pa, Lào Cai"
+    }
+  },
+  {
+    "id": "psittiparus-bakeri",
+    "scientificName": "Psittiparus bakeri",
+    "vietnameseName": "Khướu mỏ dẹt to",
+    "englishName": "Rufous-headed Parrotbill",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Paradoxornithidae",
+      "familyVietnamese": "Họ Khướu mỏ dẹt",
+      "genus": "Psittiparus",
+      "species": "P. bakeri"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "LR",
+      "description": "Ít quan tâm (Least Concern). Đặc trưng bởi chiếc mỏ vẹt dày cộm chuyên tách thân tre nứa tìm ấu trùng bọ cánh cứng."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Đầu to màu hung đỏ, chiếc mỏ dẹt màu ngà như mỏ vẹt, thân hình tròn trĩnh đuôi dài thích nghi thảm tre nứa núi cao.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mỏ vẹt dày",
+          "description": "Mỏ hình mỏ vẹt rất cao và dày, gờ mỏ cong khỏe chuyên cắn vỡ ống nứa mục."
+        },
+        {
+          "part": "Đầu hung đỏ",
+          "description": "Toàn bộ vùng đầu, gáy và họng phủ màu nâu hung hạt dẻ đồng nhất."
+        },
+        {
+          "part": "Vòng mắt trắng",
+          "description": "Vòng lông trắng mỏng bao quanh mắt tạo vẻ mặt lanh lợi."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "elevation": "1.200m - 2.100m",
+      "habitats": [
+        "Thảm rừng tre nứa núi cao",
+        "Tầng cây bụi rậm rạp ven rừng thường xanh"
+      ],
+      "locations": [
+        "VQG Bidoup - Núi Bà",
+        "Đèo Ngoạn Mục (Lâm Đồng)",
+        "VQG Chư Yang Sin (Đắk Lắk)"
+      ],
+      "coordinates": [
+        12.22,
+        108.58
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Rufous-headed_Parrotbill.jpg/800px-Rufous-headed_Parrotbill.jpg",
+      "artist": "H. Grönvold",
+      "sourceBook": "Fauna of British India"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC123789-Rufous-headed_Parrotbill.mp3",
+      "duration": "0:18",
+      "recordist": "Craig Robson",
+      "location": "Bidoup, Lâm Đồng"
+    }
+  },
+  {
+    "id": "rheinardia-ocellata",
+    "scientificName": "Rheinardia ocellata",
+    "vietnameseName": "Trĩ sao",
+    "englishName": "Crested Argus",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Galloanserae"
+      ],
+      "order": "Galliformes",
+      "orderVietnamese": "Bộ Gà",
+      "family": "Phasianidae",
+      "familyVietnamese": "Họ Trĩ",
+      "genus": "Rheinardia",
+      "species": "R. ocellata"
+    },
+    "isEndemic": true,
+    "conservation": {
+      "iucn": "CR",
+      "vietnamRedList": "CR",
+      "description": "Cực kỳ nguy cấp (Critically Endangered). Loài trĩ huyền bí của dãy Trường Sơn với chiếc đuôi dài nhất trong thế giới loài chim hoang dã (lên tới 1.7m)."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân hình tráng lệ với bộ lông đen mun rắc hàng ngàn đốm trắng sao sa, mào lông dài dựng đứng và đuôi dài vô song uốn lượn.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đuôi sao siêu dài",
+          "description": "Lông đuôi chim trống dài tới 1.5 - 1.7m phủ dày đặc họa tiết sao trắng tròn li ti."
+        },
+        {
+          "part": "Mào gáy xòe",
+          "description": "Chùm mào lông trắng bạc ở gáy có thể dựng xòe hình quạt khi chim trống múa tán tỉnh."
+        },
+        {
+          "part": "Hoa văn thân",
+          "description": "Lông thân màu nâu sẫm lốm đốm sao nhỏ dày đặc như bầu trời đêm."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng Đất thấp miền Trung",
+      "elevation": "100m - 1.500m",
+      "habitats": [
+        "Rừng nguyên sinh thường xanh ẩm Trường Sơn",
+        "Các thung lũng nguyên sơ hẻo lánh"
+      ],
+      "locations": [
+        "VQG Bạch Mã (Thừa Thiên Huế)",
+        "VQG Vũ Quang (Hà Tĩnh)",
+        "VQG Phong Nha - Kẻ Bàng"
+      ],
+      "coordinates": [
+        16.2,
+        107.85
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Rheinardia_ocellata_-_Crested_Argus.jpg/800px-Rheinardia_ocellata_-_Crested_Argus.jpg",
+      "artist": "J. G. Keulemans",
+      "sourceBook": "Monograph of the Phasianidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC665544-Crested_Argus.mp3",
+      "duration": "0:35",
+      "recordist": "BirdLife Indochina Field Team",
+      "location": "VQG Bạch Mã, Thừa Thiên Huế"
+    }
+  },
+  {
+    "id": "garrulax-canorus",
+    "scientificName": "Garrulax canorus",
+    "vietnameseName": "Họa mi",
+    "englishName": "Chinese Hwamei",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Leiothrichidae",
+      "familyVietnamese": "Họ Khướu",
+      "genus": "Garrulax",
+      "species": "G. canorus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Ca sĩ rừng già phương Bắc nổi tiếng với giọng hót thánh thót, đa cung bậc và viền mắt trắng kéo dài ra sau như lông mi."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu nâu vàng ô-liu, ức có vệt sọc dọc mờ, nổi tiếng với viền mắt trắng kéo dài về phía sau gáy như nét vẽ điêu khắc.",
+      "diagnosticFeatures": [
+        {
+          "part": "Viền mắt trắng mi",
+          "description": "Vòng viền mắt màu trắng tinh khiết kéo dài một vệt thẳng về phía gáy rất đặc trưng."
+        },
+        {
+          "part": "Lông thân",
+          "description": "Toàn thân phủ màu nâu vàng hung ấm áp với các vân mỏng trên lưng và ngực."
+        },
+        {
+          "part": "Mỏ vàng sừng",
+          "description": "Mỏ nhọn màu vàng ngà chắc khỏe."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "elevation": "200m - 1.500m",
+      "habitats": [
+        "Rừng thứ sinh cây bụi",
+        "Bìa rừng và đồi cỏ ven núi"
+      ],
+      "locations": [
+        "VQG Ba Bể (Bắc Kạn)",
+        "VQG Tam Đảo (Vĩnh Phúc)",
+        "KBT Na Hang (Tuyên Quang)"
+      ],
+      "coordinates": [
+        22.42,
+        105.62
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Chinese_Hwamei_%28Garrulax_canorus%29.jpg/800px-Chinese_Hwamei_%28Garrulax_canorus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC443322-Chinese_Hwamei.mp3",
+      "duration": "0:30",
+      "recordist": "Ding Chen",
+      "location": "Ba Bể, Bắc Kạn"
+    }
+  },
+  {
+    "id": "cyornis-rubeculoides",
+    "scientificName": "Cyornis rubeculoides",
+    "vietnameseName": "Đớp ruồi cằm đen",
+    "englishName": "Blue-throated Blue Flycatcher",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Muscicapidae",
+      "familyVietnamese": "Họ Đớp ruồi",
+      "genus": "Cyornis",
+      "species": "C. rubeculoides"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Loài đớp ruồi rừng nhiệt đới tuyệt đẹp với bộ lông xanh biếc sapphire và ngực màu cam tươi."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Mặt lưng màu xanh lam đậm ánh kim, ngực màu cam rực rỡ tương phản với cằm màu xanh đen và bụng trắng.",
+      "diagnosticFeatures": [
+        {
+          "part": "Cằm xanh đen",
+          "description": "Họng và cằm màu xanh lam thẫm hình chữ V lấn nhẹ vào vùng ức cam."
+        },
+        {
+          "part": "Ngực cam sáng",
+          "description": "Ứng màu cam tươi sáng chuyển dần sang màu trắng tinh ở bụng."
+        },
+        {
+          "part": "Lưng xanh lam",
+          "description": "Toàn bộ lưng, cánh và đuôi có màu xanh lam sáng bóng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "50m - 1.200m",
+      "habitats": [
+        "Rừng thường xanh mưa ẩm",
+        "Tầng tán giữa nhiều bóng râm"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Cúc Phương",
+        "VQG Bạch Mã"
+      ],
+      "coordinates": [
+        11.45,
+        107.41
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Blue-throated_Blue_Flycatcher.jpg/800px-Blue-throated_Blue_Flycatcher.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC119988-Blue-throated_Flycatcher.mp3",
+      "duration": "0:14",
+      "recordist": "David Farrow",
+      "location": "Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "aethopyga-saturata",
+    "scientificName": "Aethopyga saturata",
+    "vietnameseName": "Hút mật họng đen",
+    "englishName": "Black-throated Sunbird",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Nectariniidae",
+      "familyVietnamese": "Họ Hút mật",
+      "genus": "Aethopyga",
+      "species": "A. saturata"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Loài chim hút mật vùng núi cao sặc sỡ với họng đen ánh tím than và hai sợi lông đuôi giữa dài thướt tha."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân hình nhỏ nhắn như ngón tay, ngực và họng đen tuyền ánh tím kim loại, vệt hông vàng chanh sáng chói và lưng đỏ thẫm.",
+      "diagnosticFeatures": [
+        {
+          "part": "Họng đen ánh tím",
+          "description": "Cổ họng đen tuyền có viền tím xanh ánh kim metallic lấp lánh."
+        },
+        {
+          "part": "Dải hông vàng",
+          "description": "Vệt ngang màu vàng chanh sáng ở phần hông tương phản với lưng đỏ thẫm."
+        },
+        {
+          "part": "Đuôi dài nhọn",
+          "description": "Hai cọng lông đuôi giữa màu xanh ánh tím vươn dài thanh thoát."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "elevation": "1.000m - 2.600m",
+      "habitats": [
+        "Rừng thường xanh trên núi",
+        "Các bụi cây hoa dại đỗ quyên"
+      ],
+      "locations": [
+        "VQG Hoàng Liên (Sa Pa)",
+        "VQG Bidoup - Núi Bà",
+        "VQG Bạch Mã"
+      ],
+      "coordinates": [
+        22.34,
+        103.8
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Black-throated_Sunbird_%28Aethopyga_saturata%29.jpg/800px-Black-throated_Sunbird_%28Aethopyga_saturata%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Monograph of the Nectariniidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC667788-Black-throated_Sunbird.mp3",
+      "duration": "0:12",
+      "recordist": "Per Alström",
+      "location": "Hoàng Liên Sơn, Sa Pa"
+    }
+  },
+  {
+    "id": "lanius-schach",
+    "scientificName": "Lanius schach",
+    "vietnameseName": "Bách thanh đầu đen",
+    "englishName": "Long-tailed Shrike",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Laniidae",
+      "familyVietnamese": "Họ Bách thanh",
+      "genus": "Lanius",
+      "species": "L. schach"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Tay săn mồi dũng mãnh của trảng cỏ với chiếc mỏ móc khoằm và chiếc mặt nạ đen uy quyền."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Đầu và mặt nạ màu đen bóng, lưng và hông màu hung cam ấm, mỏ có móc khoằm sắc bén như chim săn mồi.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mặt nạ đen",
+          "description": "Dải lông đen nhánh che kín trán, mắt và hai bên má như mặt nạ sát thủ."
+        },
+        {
+          "part": "Mỏ móc",
+          "description": "Mỏ màu đen cứng cáp có mấu răng nhọn ở mép mỏ trên để xé con mồi."
+        },
+        {
+          "part": "Đuôi dài đen",
+          "description": "Đuôi dài màu đen viền hung thướt tha khi đậu trên đầu ngọn cọc."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 1.200m",
+      "habitats": [
+        "Đồng cỏ trống",
+        "Bờ ruộng và bụi rậm vùng đồng bằng"
+      ],
+      "locations": [
+        "Đồng bằng Sông Hồng",
+        "Đồng bằng Sông Cửu Long",
+        "VQG Ba Vì"
+      ],
+      "coordinates": [
+        21.05,
+        105.35
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Long-tailed_Shrike_%28Lanius_schach%29.jpg/800px-Long-tailed_Shrike_%28Lanius_schach%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC556677-Long-tailed_Shrike.mp3",
+      "duration": "0:21",
+      "recordist": "Nguyen Van Thang",
+      "location": "Hà Nội"
+    }
+  },
+  {
+    "id": "pitta-moluccensis",
+    "scientificName": "Pitta moluccensis",
+    "vietnameseName": "Đuôi cụt cánh xanh",
+    "englishName": "Blue-winged Pitta",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Pittidae",
+      "familyVietnamese": "Họ Đuôi cụt",
+      "genus": "Pitta",
+      "species": "P. moluccensis"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Viên ngọc sắc màu lộng lẫy dưới nền rừng nhiệt đới với mảng cánh xanh coban và bụng đỏ son."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Viên ngọc rừng nhiệt đới với lưng xanh ngọc, mảng cánh xanh coban phát sáng, bụng vàng hung và vệt đỏ thắm ở hậu môn.",
+      "diagnosticFeatures": [
+        {
+          "part": "Cánh xanh coban",
+          "description": "Lông bao cánh màu xanh biếc rực rỡ lấp lánh khi có ánh nắng xuyên tán rừng."
+        },
+        {
+          "part": "Mặt nạ đen",
+          "description": "Dải đen đậm bao quanh mắt tương phản với vệt lông mày màu nâu vàng."
+        },
+        {
+          "part": "Bụng đỏ thắm",
+          "description": "Chính giữa bụng dưới và dưới đuôi có mảng màu đỏ son tươi tắn."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 800m",
+      "habitats": [
+        "Rừng kín thường xanh ẩm",
+        "Rừng thứ sinh và tre nứa ven suối"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Cúc Phương",
+        "VQG U Minh Thượng"
+      ],
+      "coordinates": [
+        11.43,
+        107.42
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Blue-winged_Pitta_%28Pitta_moluccensis%29.jpg/800px-Blue-winged_Pitta_%28Pitta_moluccensis%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Monograph of the Pittidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC991122-Blue-winged_Pitta.mp3",
+      "duration": "0:16",
+      "recordist": "Frank Lambert",
+      "location": "Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "oriolus-chinensis",
+    "scientificName": "Oriolus chinensis",
+    "vietnameseName": "Vàng anh gáy đen",
+    "englishName": "Black-naped Oriole",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Oriolidae",
+      "familyVietnamese": "Họ Vàng anh",
+      "genus": "Oriolus",
+      "species": "O. chinensis"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Biểu tượng hoàng gia trong văn hóa cổ truyền Việt Nam với bộ lông vàng óng ả và tiếng hót mê ly."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Toàn thân màu vàng hoàng yến rực rỡ, mỏ hồng san hô, dải lông đen hình móng ngựa vắt qua gáy nối liền hai bên mắt.",
+      "diagnosticFeatures": [
+        {
+          "part": "Dải gáy đen",
+          "description": "Dải lông đen tuyền vắt qua sau gáy nối hai mắt rất đặc trưng."
+        },
+        {
+          "part": "Bộ lông vàng chanh",
+          "description": "Toàn thân màu vàng óng ả tuyệt đẹp trên vòm lá xanh."
+        },
+        {
+          "part": "Mỏ hồng",
+          "description": "Mỏ hình nón nhọn màu hồng thịt sáng bóng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 1.000m",
+      "habitats": [
+        "Vòm tán rừng thưa",
+        "Công viên cây xanh và vườn cây ăn trái"
+      ],
+      "locations": [
+        "Hà Nội",
+        "TP. Hồ Chí Minh",
+        "VQG Cát Tiên",
+        "VQG Ba Vì"
+      ],
+      "coordinates": [
+        21.03,
+        105.85
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Black-naped_Oriole_%28Oriolus_chinensis%29.jpg/800px-Black-naped_Oriole_%28Oriolus_chinensis%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC441133-Black-naped_Oriole.mp3",
+      "duration": "0:20",
+      "recordist": "Nguyen Van Thang",
+      "location": "Ba Vì, Hà Nội"
+    }
+  },
+  {
+    "id": "copsychus-malabaricus",
+    "scientificName": "Copsychus malabaricus",
+    "vietnameseName": "Chích chòe lửa",
+    "englishName": "White-rumped Shama",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Muscicapidae",
+      "familyVietnamese": "Họ Đớp ruồi",
+      "genus": "Copsychus",
+      "species": "C. malabaricus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Nghệ sĩ hót tài ba của rừng rậm nhiệt đới với chiếc đuôi dài thướt tha và bụng đỏ hung."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Đầu và lưng đen nhánh ánh thép bóng mượt, ngực và bụng màu cam đỏ hạt dẻ ấm áp, mảng hông trắng tuyết và đuôi cực dài.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mảng hông trắng",
+          "description": "Vệt lông trắng muốt ở phần hông nổi bật khi chim giương đuôi đứng hót."
+        },
+        {
+          "part": "Đuôi dài cong",
+          "description": "Đuôi đen dài bậc thang với các lông ngoài cùng màu trắng tinh."
+        },
+        {
+          "part": "Bụng đỏ cam",
+          "description": "Màu cam đậm rực rỡ từ ngực dưới trải dài đến đuôi."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "50m - 900m",
+      "habitats": [
+        "Rừng thứ sinh tre nứa",
+        "Tầng cây bụi rậm ven suối ẩm"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Bến En (Thanh Hóa)",
+        "VQG Cúc Phương"
+      ],
+      "coordinates": [
+        11.41,
+        107.39
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/White-rumped_Shama_%28Copsychus_malabaricus%29.jpg/800px-White-rumped_Shama_%28Copsychus_malabaricus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC227744-White-rumped_Shama.mp3",
+      "duration": "0:26",
+      "recordist": "David Farrow",
+      "location": "Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "dicrurus-paradiseus",
+    "scientificName": "Dicrurus paradiseus",
+    "vietnameseName": "Chèo bẻo đuôi cờ",
+    "englishName": "Greater Racket-tailed Drongo",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Dicruridae",
+      "familyVietnamese": "Họ Chèo bẻo",
+      "genus": "Dicrurus",
+      "species": "D. paradiseus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Bậc thầy bắt chước âm thanh với hai sợi lông đuôi dài mang hình lá cờ uốn lượn kỳ ảo khi bay lượn."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Toàn thân màu đen ánh kim xanh tím rực rỡ, mào lông cong ngược về sau trên trán và hai chiếc đuôi cờ dài uốn lượn trong gió.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đuôi cờ (Rackets)",
+          "description": "Hai cọng lông đuôi ngoài cùng kéo dài tít tắp với phiến lông xoắn hình chiếc vợt ở chóp đuôi."
+        },
+        {
+          "part": "Mào trán xoăn",
+          "description": "Chùm lông mào trên trán uốn cong ngược ra sau duyên dáng."
+        },
+        {
+          "part": "Lông ánh thép",
+          "description": "Toàn bộ lông phủ sắc xanh lục - tím ánh kim dưới nắng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "50m - 1.200m",
+      "habitats": [
+        "Tầng tán rừng nhiệt đới mưa ẩm",
+        "Bìa rừng và nương rẫy"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Pù Mát (Nghệ An)",
+        "VQG Cúc Phương"
+      ],
+      "coordinates": [
+        11.44,
+        107.44
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Greater_Racket-tailed_Drongo_%28Dicrurus_paradiseus%29.jpg/800px-Greater_Racket-tailed_Drongo_%28Dicrurus_paradiseus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC883311-Greater_Racket-tailed_Drongo.mp3",
+      "duration": "0:25",
+      "recordist": "Frank Lambert",
+      "location": "Pù Mát, Nghệ An"
+    }
+  },
+  {
+    "id": "garrulax-chinensis",
+    "scientificName": "Garrulax chinensis",
+    "vietnameseName": "Khướu bạc má",
+    "englishName": "Black-throated Laughingthrush",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Leiothrichidae",
+      "familyVietnamese": "Họ Khướu",
+      "genus": "Garrulax",
+      "species": "G. chinensis"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Khướu rừng đá vôi với mảng má trắng tinh khiết nổi bật trên nền họng đen tuyền và tiếng hót vang dội."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu xám ô-liu, họng và trán màu đen tuyền, hai bên má có mảng trắng muốt như phấn vôi sáng chói.",
+      "diagnosticFeatures": [
+        {
+          "part": "Má trắng tinh",
+          "description": "Mảng lông má trắng tuyết tương phản tuyệt đối với mặt nạ đen tuyền."
+        },
+        {
+          "part": "Họng đen",
+          "description": "Cổ họng và ngực trên màu đen tuyền kéo dài xuống ức."
+        },
+        {
+          "part": "Mỏ đen nhọn",
+          "description": "Mỏ cứng cáp màu đen bóng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "elevation": "100m - 1.400m",
+      "habitats": [
+        "Rừng rậm trên núi đá vôi",
+        "Tầng cây bụi rậm rạp"
+      ],
+      "locations": [
+        "VQG Cúc Phương (Ninh Bình)",
+        "VQG Ba Bể (Bắc Kạn)",
+        "KBT Hữu Liên (Lạng Sơn)"
+      ],
+      "coordinates": [
+        20.32,
+        105.61
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Black-throated_Laughingthrush_%28Garrulax_chinensis%29.jpg/800px-Black-throated_Laughingthrush_%28Garrulax_chinensis%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC336699-Black-throated_Laughingthrush.mp3",
+      "duration": "0:22",
+      "recordist": "Pete Morris",
+      "location": "Cúc Phương, Ninh Bình"
+    }
+  },
+  {
+    "id": "psarisomus-dalhousiae",
+    "scientificName": "Psarisomus dalhousiae",
+    "vietnameseName": "Mỏ rộng xanh",
+    "englishName": "Long-tailed Broadbill",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Eurylaimidae",
+      "familyVietnamese": "Họ Mỏ rộng",
+      "genus": "Psarisomus",
+      "species": "P. dalhousiae"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Kiệt tác màu sắc của thiên nhiên với chiếc mũ phi công xanh - vàng, thân xanh lục bảo và đuôi xanh biếc dài."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu xanh lục bảo non, đỉnh đầu đen có đốm xanh da trời và vàng nghệ như chiếc mũ bảo hiểm phi công, chiếc đuôi xanh coban dài thon.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đầu mũ phi công",
+          "description": "Mũ đầu đen bóng điểm đốm tròn xanh lam trên đỉnh và hai vệt vàng nghệ bên gáy."
+        },
+        {
+          "part": "Mỏ dẹt rộng",
+          "description": "Mỏ to bản màu xanh lục nhạt phớt vàng đặc trưng cho họ Mỏ rộng."
+        },
+        {
+          "part": "Đuôi xanh coban",
+          "description": "Đuôi dài thon thả màu xanh nước biển đậm."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "elevation": "400m - 1.800m",
+      "habitats": [
+        "Tầng tán rừng nguyên sinh thường xanh",
+        "Khe suối ẩm trong rừng nhiệt đới"
+      ],
+      "locations": [
+        "VQG Tam Đảo (Vĩnh Phúc)",
+        "VQG Ba Vì",
+        "VQG Bạch Mã",
+        "VQG Cúc Phương"
+      ],
+      "coordinates": [
+        21.46,
+        105.65
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Long-tailed_Broadbill_%28Psarisomus_dalhousiae%29.jpg/800px-Long-tailed_Broadbill_%28Psarisomus_dalhousiae%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Icones Avium"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC774411-Long-tailed_Broadbill.mp3",
+      "duration": "0:19",
+      "recordist": "David Farrow",
+      "location": "Tam Đảo, Vĩnh Phúc"
+    }
+  },
+  {
+    "id": "lophura-diardi",
+    "scientificName": "Lophura diardi",
+    "vietnameseName": "Gà lôi hông tía",
+    "englishName": "Siamese Fireback",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Galloanserae"
+      ],
+      "order": "Galliformes",
+      "orderVietnamese": "Bộ Gà",
+      "family": "Phasianidae",
+      "familyVietnamese": "Họ Trĩ",
+      "genus": "Lophura",
+      "species": "L. diardi"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "VU",
+      "description": "Ít quan tâm (Least Concern). Loài gà lôi tráng lệ với mảng hông màu đỏ tía rực như than hồng và đuôi cong cong hình lưỡi liềm cong vút."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu xám tro vân mịn, mảng lưng dưới màu vàng rơm và hông đỏ tía rực lửa, mào đầu xoăn đen tím và mặt đỏ tươi.",
+      "diagnosticFeatures": [
+        {
+          "part": "Hông đỏ tía (Fireback)",
+          "description": "Mảng lông lưng dưới và hông có màu đỏ tía pha vàng rực cháy như ngọn lửa."
+        },
+        {
+          "part": "Đuôi cong lưỡi liềm",
+          "description": "Lông đuôi uốn cong hình vòm màu xanh đen ánh kim."
+        },
+        {
+          "part": "Mặt nạ thịt đỏ",
+          "description": "Yếm thịt quanh mắt màu đỏ thắm nở rộng khi chim trống phô trương sức mạnh."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "50m - 600m",
+      "habitats": [
+        "Rừng thường xanh và nửa rụng lá đất thấp",
+        "Rừng tre nứa ven bờ sông Đồng Nai"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "KBT Vĩnh Cửu (Đồng Nai)",
+        "VQG Lò Gò - Xa Mát"
+      ],
+      "coordinates": [
+        11.46,
+        107.45
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Siamese_Fireback_male.jpg/800px-Siamese_Fireback_male.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC881100-Siamese_Fireback.mp3",
+      "duration": "0:18",
+      "recordist": "Frank Lambert",
+      "location": "Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "polyplectron-bicalcaratum",
+    "scientificName": "Polyplectron bicalcaratum",
+    "vietnameseName": "Gà tiền mặt vàng",
+    "englishName": "Grey Peacock-Pheasant",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Galloanserae"
+      ],
+      "order": "Galliformes",
+      "orderVietnamese": "Bộ Gà",
+      "family": "Phasianidae",
+      "familyVietnamese": "Họ Trĩ",
+      "genus": "Polyplectron",
+      "species": "P. bicalcaratum"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "VU",
+      "description": "Ít quan tâm (Least Concern). Chim trống sở hữu bộ cánh đốm mắt xanh lục ngọc bích lấp lánh như khổng tước thu nhỏ."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu xám tro rắc hạt mịn, phủ dày đặc các đốm mắt tròn màu xanh lục ngọc bích óng ánh viền trắng và đen trên đuôi và cánh.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đốm mắt xanh ngọc",
+          "description": "Các đốm tròn lớn óng ánh xanh ngọc phủ kín phiến lông đuôi và bao cánh."
+        },
+        {
+          "part": "Mào đầu râm",
+          "description": "Chùm lông mào xù xám trắng trên đỉnh đầu."
+        },
+        {
+          "part": "Da mặt vàng ngà",
+          "description": "Vùng da trần quanh mắt màu vàng nhạt hoặc hồng nhạt."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "elevation": "100m - 1.200m",
+      "habitats": [
+        "Rừng nguyên sinh ẩm thường xanh",
+        "Thung lũng rậm rạp chân núi đá vôi"
+      ],
+      "locations": [
+        "VQG Cúc Phương (Ninh Bình)",
+        "VQG Pù Mát",
+        "VQG Ba Bể"
+      ],
+      "coordinates": [
+        20.3,
+        105.6
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Grey_Peacock-Pheasant_%28Polyplectron_bicalcaratum%29.jpg/800px-Grey_Peacock-Pheasant_%28Polyplectron_bicalcaratum%29.jpg",
+      "artist": "J. G. Keulemans",
+      "sourceBook": "Monograph of the Phasianidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC228899-Grey_Peacock-Pheasant.mp3",
+      "duration": "0:24",
+      "recordist": "Per Alström",
+      "location": "Cúc Phương, Ninh Bình"
+    }
+  },
+  {
+    "id": "arborophila-brunneopectus",
+    "scientificName": "Arborophila brunneopectus",
+    "vietnameseName": "Gà so họng trắng",
+    "englishName": "Brown-breasted Partridge",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Galloanserae"
+      ],
+      "order": "Galliformes",
+      "orderVietnamese": "Bộ Gà",
+      "family": "Phasianidae",
+      "familyVietnamese": "Họ Trĩ",
+      "genus": "Arborophila",
+      "species": "A. brunneopectus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Loài gà so duyên dáng của thảm mục rừng thường xanh với tiếng hót đối ca rộn rã lúc bình minh."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân tròn mập, trán và lông mày màu hung vàng, họng trắng viền đen hạt tiêu và ức có mảng màu nâu hạt dẻ đậm.",
+      "diagnosticFeatures": [
+        {
+          "part": "Họng trắng điểm đen",
+          "description": "Vùng cổ họng trắng muốt lấm tấm các đốm đen nhỏ li ti như hạt vừng."
+        },
+        {
+          "part": "Ức nâu hạt dẻ",
+          "description": "Dải ngực trên màu nâu ấm áp tương phản với sườn có các đốm trắng đen."
+        },
+        {
+          "part": "Lông mày hung vàng",
+          "description": "Vệt lông mày màu vàng cam nổi bật phía trên mắt."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Kon Tum / Dãy Ngọc Linh & Kon Ka Kinh",
+      "elevation": "500m - 1.800m",
+      "habitats": [
+        "Thảm mục lá rừng thường xanh trên núi",
+        "Khe thung lũng ẩm ướt"
+      ],
+      "locations": [
+        "VQG Kon Ka Kinh",
+        "VQG Bạch Mã",
+        "VQG Bidoup - Núi Bà"
+      ],
+      "coordinates": [
+        14.33,
+        108.35
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Brown-breasted_Partridge_%28Arborophila_brunneopectus%29.jpg/800px-Brown-breasted_Partridge_%28Arborophila_brunneopectus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC448822-Brown-breasted_Partridge.mp3",
+      "duration": "0:27",
+      "recordist": "Jonathan Eames",
+      "location": "Kon Ka Kinh, Gia Lai"
+    }
+  },
+  {
+    "id": "gallus-gallus",
+    "scientificName": "Gallus gallus",
+    "vietnameseName": "Gà rừng tai trắng",
+    "englishName": "Red Junglefowl",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Galloanserae"
+      ],
+      "order": "Galliformes",
+      "orderVietnamese": "Bộ Gà",
+      "family": "Phasianidae",
+      "familyVietnamese": "Họ Trĩ",
+      "genus": "Gallus",
+      "species": "G. gallus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Tổ tiên hoang dã của loài gà nhà toàn cầu, rực rỡ với mào cờ đỏ tươi và đôi dái tai màu trắng tuyết."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Chim trống oai vệ với lông cổ màu vàng cam óng ả, lưng đỏ sẫm, đuôi xanh đen ánh kim cong vút và dái tai màu trắng tinh khiết.",
+      "diagnosticFeatures": [
+        {
+          "part": "Dái tai trắng",
+          "description": "Mảng da trần dái tai màu trắng tuyết phân biệt rõ phân loài Đông Dương với gà nhà."
+        },
+        {
+          "part": "Lông bờm cổ vàng",
+          "description": "Chùm lông bờm cổ thon nhọn màu vàng óng ánh xòe phủ kín gáy."
+        },
+        {
+          "part": "Mào cờ đỏ",
+          "description": "Mào thịt cờ đỏ tươi có nhiều răng cưa sắc nhọn dựng đứng trên đầu."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 1.500m",
+      "habitats": [
+        "Rừng thứ sinh",
+        "Rừng tre nứa ven rẫy",
+        "Trảng cỏ rừng khộp"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Yok Đôn (Đắk Lắk)",
+        "VQG Cúc Phương"
+      ],
+      "coordinates": [
+        12.85,
+        107.8
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Red_Junglefowl_male.jpg/800px-Red_Junglefowl_male.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC113355-Red_Junglefowl.mp3",
+      "duration": "0:15",
+      "recordist": "Nguyen Hoang Hao",
+      "location": "Yok Đôn, Đắk Lắk"
+    }
+  },
+  {
+    "id": "buceros-bicornis",
+    "scientificName": "Buceros bicornis",
+    "vietnameseName": "Hồng hoàng",
+    "englishName": "Great Hornbill",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Coraciimorphae"
+      ],
+      "order": "Bucerotiformes",
+      "orderVietnamese": "Bộ Hồng hoàng",
+      "family": "Bucerotidae",
+      "familyVietnamese": "Họ Hồng hoàng",
+      "genus": "Buceros",
+      "species": "B. bicornis"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "VU",
+      "vietnamRedList": "EN",
+      "description": "Sắp nguy cấp (Vulnerable). Chúa tể vòm tán rừng nhiệt đới với chiếc mũ sừng khổng lồ màu vàng rực và sải cánh khổng lồ dài 1.5m."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân hình to lớn đồ sộ, chiếc mỏ vàng khổng lồ đội mũ sừng hai sừng phía trước, dải cánh đen trắng và đuôi trắng có dải băng đen lớn.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mũ sừng vàng đôi",
+          "description": "Chiếc mũ sừng rỗng màu vàng chanh pha cam có hai mấu nhọn ở đỉnh trước mỏ."
+        },
+        {
+          "part": "Dải băng đuôi đen",
+          "description": "Đuôi dài màu trắng muốt cắt ngang bởi dải băng đen tuyền bản rộng gần chóp đuôi."
+        },
+        {
+          "part": "Cổ vàng rực",
+          "description": "Cổ và gáy phủ màu vàng nghệ ấm áp nhờ chất dầu tiết ra từ tuyến phao câu."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "50m - 1.000m",
+      "habitats": [
+        "Rừng già nguyên sinh đất thấp với nhiều cây đa cổ thụ",
+        "Vòm tán rừng rậm"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Pù Mát",
+        "VQG Phong Nha - Kẻ Bàng"
+      ],
+      "coordinates": [
+        11.47,
+        107.46
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Great_Hornbill_%28Buceros_bicornis%29.jpg/800px-Great_Hornbill_%28Buceros_bicornis%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Monograph of the Bucerotidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC771122-Great_Hornbill.mp3",
+      "duration": "0:25",
+      "recordist": "Frank Lambert",
+      "location": "Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "rhyticeros-undulatus",
+    "scientificName": "Rhyticeros undulatus",
+    "vietnameseName": "Niệc mỏ vằn",
+    "englishName": "Wreathed Hornbill",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Coraciimorphae"
+      ],
+      "order": "Bucerotiformes",
+      "orderVietnamese": "Bộ Hồng hoàng",
+      "family": "Bucerotidae",
+      "familyVietnamese": "Họ Hồng hoàng",
+      "genus": "Rhyticeros",
+      "species": "R. undulatus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "VU",
+      "vietnamRedList": "VU",
+      "description": "Sắp nguy cấp (Vulnerable). Nổi tiếng với túi da họng màu vàng chanh có dải vạch đen ngang và gốc mỏ có nhiều nếp nhăn lượn sóng."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu đen tuyền, đuôi trắng tinh hoàn toàn, chim trống có đầu hung đỏ, túi họng vàng chói và gốc mỏ có các nếp gấp lượn sóng.",
+      "diagnosticFeatures": [
+        {
+          "part": "Túi họng vàng vạch đen",
+          "description": "Túi da trần ở họng màu vàng tươi có một đường sọc đen xanh vắt ngang chính giữa."
+        },
+        {
+          "part": "Nếp nhăn gốc mỏ",
+          "description": "Mũ mỏ thấp có nhiều đường gờ nếp nhăn uốn lượn xếp tầng ở gốc mỏ trên."
+        },
+        {
+          "part": "Đuôi trắng tuyết",
+          "description": "Toàn bộ lông đuôi màu trắng muốt không tì vết tương phản với thân đen."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "50m - 1.200m",
+      "habitats": [
+        "Rừng thường xanh mưa ẩm nhiệt đới",
+        "Thung lũng cây quả mọng cổ thụ"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Bạch Mã",
+        "VQG Pù Mát"
+      ],
+      "coordinates": [
+        11.48,
+        107.47
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Wreathed_Hornbill_%28Rhyticeros_undulatus%29.jpg/800px-Wreathed_Hornbill_%28Rhyticeros_undulatus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Monograph of the Bucerotidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC559900-Wreathed_Hornbill.mp3",
+      "duration": "0:21",
+      "recordist": "Peter Boesman",
+      "location": "Bạch Mã, Thừa Thiên Huế"
+    }
+  },
+  {
+    "id": "anorrhinus-tickelli",
+    "scientificName": "Anorrhinus tickelli",
+    "vietnameseName": "Niệc nâu",
+    "englishName": "Tickell's Brown Hornbill",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Coraciimorphae"
+      ],
+      "order": "Bucerotiformes",
+      "orderVietnamese": "Bộ Hồng hoàng",
+      "family": "Bucerotidae",
+      "familyVietnamese": "Họ Hồng hoàng",
+      "genus": "Anorrhinus",
+      "species": "A. tickelli"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "NT",
+      "description": "Gần bị đe dọa (Near Threatened). Loài niệc sống theo bầy đàn gia đình gắn kết, hỗ trợ nhau ấp trứng và nuôi con trong hốc cây cổ thụ."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu nâu xám sẫm, họng và ngực chim trống màu nâu hung vàng, mỏ màu vàng ngà có chóp đuôi trắng nhạt.",
+      "diagnosticFeatures": [
+        {
+          "part": "Bộ lông nâu ấm",
+          "description": "Lông thân màu nâu xám ô-liu phủ đều từ lưng tới bụng."
+        },
+        {
+          "part": "Mỏ vàng ngà",
+          "description": "Mỏ sừng nhỏ gọn màu vàng ngà không có mũ sừng nhô cao."
+        },
+        {
+          "part": "Mắt xanh lơ",
+          "description": "Vùng da trần quanh mắt có màu xanh lơ nhạt duyên dáng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng Đất thấp miền Trung",
+      "elevation": "100m - 1.000m",
+      "habitats": [
+        "Rừng nguyên sinh ẩm thường xanh dãy Trường Sơn"
+      ],
+      "locations": [
+        "VQG Bạch Mã",
+        "VQG Vũ Quang",
+        "VQG Phong Nha - Kẻ Bàng"
+      ],
+      "coordinates": [
+        16.22,
+        107.86
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Tickell%27s_Brown_Hornbill.jpg/800px-Tickell%27s_Brown_Hornbill.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Monograph of the Bucerotidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC331188-Tickells_Brown_Hornbill.mp3",
+      "duration": "0:23",
+      "recordist": "Jonathan Eames",
+      "location": "Bạch Mã, Thừa Thiên Huế"
+    }
+  },
+  {
+    "id": "upupa-epops",
+    "scientificName": "Upupa epops",
+    "vietnameseName": "Đầu rìu",
+    "englishName": "Eurasian Hoopoe",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Coraciimorphae"
+      ],
+      "order": "Bucerotiformes",
+      "orderVietnamese": "Bộ Hồng hoàng",
+      "family": "Upupidae",
+      "familyVietnamese": "Họ Đầu rìu",
+      "genus": "Upupa",
+      "species": "U. epops"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Nổi tiếng với chiếc mào lông xòe hình quạt chấm đen và tiếng kêu trầm ấm 'úp-úp-úp' lúc trưa hè."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu hồng nâu hạt dẻ, cánh và đuôi có các dải vằn đen trắng rộng tương phản mạnh, mào lông đầu xòe quạt và mỏ dài mảnh cong nhẹ.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mào xòe quạt",
+          "description": "Chùm lông mào màu cam nâu dài có thể dựng xòe hình quạt tròn với các chóp đen tuyền."
+        },
+        {
+          "part": "Cánh vằn đen trắng",
+          "description": "Lông cánh có các dải sọc vằn đen trắng ngang nổi bật khi bay lượn như cánh bướm."
+        },
+        {
+          "part": "Mỏ cong dài",
+          "description": "Mỏ mảnh mai cong nhẹ chuyên dụng để xoi sâu vào lòng đất gắp ấu trùng sùng đất."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 800m",
+      "habitats": [
+        "Vườn cây ven làng quê",
+        "Đồng cỏ khô thoáng",
+        "Bìa rừng thưa"
+      ],
+      "locations": [
+        "Hà Nội",
+        "Đà Lạt",
+        "VQG Yok Đôn",
+        "Ninh Thuận"
+      ],
+      "coordinates": [
+        11.6,
+        108.95
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eurasian_Hoopoe_%28Upupa_epops%29.jpg/800px-Eurasian_Hoopoe_%28Upupa_epops%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Great Britain"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC225577-Eurasian_Hoopoe.mp3",
+      "duration": "0:17",
+      "recordist": "David Farrow",
+      "location": "Yok Đôn, Đắk Lắk"
+    }
+  },
+  {
+    "id": "megaceryle-lugubris",
+    "scientificName": "Megaceryle lugubris",
+    "vietnameseName": "Bói cá lớn",
+    "englishName": "Crested Kingfisher",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Coraciimorphae"
+      ],
+      "order": "Coraciiformes",
+      "orderVietnamese": "Bộ Bói cá",
+      "family": "Alcedinidae",
+      "familyVietnamese": "Họ Bói cá",
+      "genus": "Megaceryle",
+      "species": "M. lugubris"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Khổng lồ trong thế giới bói cá Việt Nam với chiếc mào lông bờm xù hoa râm và tài lao vút bắt cá suối ghềnh."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân hình to lớn, bộ lông hoa râm vằn đen trắng như áo dệt thổ cẩm, mào lông đầu dựng đứng bờm xờm và chiếc mỏ đen sắc như mũi giáo.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mào đầu xù",
+          "description": "Chùm lông mào lớn lốm đốm đen trắng dựng ngược bờm xờm phía sau đầu."
+        },
+        {
+          "part": "Họa tiết thổ cẩm",
+          "description": "Toàn bộ lông lưng và cánh có hoa văn đốm trắng trên nền đen xám dệt mịn."
+        },
+        {
+          "part": "Mỏ giáo đen",
+          "description": "Chiếc mỏ đen tuyền khổng lồ, dày khỏe chuyên đâm xuyên cá suối lớn."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "elevation": "300m - 1.800m",
+      "habitats": [
+        "Sông suối ghềnh thác nước chảy xiết vùng núi",
+        "Lòng suối đá cuội"
+      ],
+      "locations": [
+        "VQG Hoàng Liên (Sa Pa)",
+        "VQG Pù Mát (Nghệ An)",
+        "VQG Ba Bể"
+      ],
+      "coordinates": [
+        22.35,
+        103.85
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Crested_Kingfisher_%28Megaceryle_lugubris%29.jpg/800px-Crested_Kingfisher_%28Megaceryle_lugubris%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Monograph of the Alcedinidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC118833-Crested_Kingfisher.mp3",
+      "duration": "0:14",
+      "recordist": "Per Alström",
+      "location": "Sa Pa, Lào Cai"
+    }
+  },
+  {
+    "id": "pelargopsis-capensis",
+    "scientificName": "Pelargopsis capensis",
+    "vietnameseName": "Sả mỏ rộng",
+    "englishName": "Stork-billed Kingfisher",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Coraciimorphae"
+      ],
+      "order": "Coraciiformes",
+      "orderVietnamese": "Bộ Bói cá",
+      "family": "Alcedinidae",
+      "familyVietnamese": "Họ Bói cá",
+      "genus": "Pelargopsis",
+      "species": "P. capensis"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Đồ sộ với chiếc mỏ đỏ thắm khổng lồ như mỏ hạc, lưng xanh ngọc biếc và tiếng kêu cười vang vọng mặt nước."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Đầu màu nâu xám, ức và bụng màu vàng nghệ rực rỡ, lưng xanh ngọc ánh lam chói lọi và mỏ đỏ tươi như ớt chín.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mỏ đỏ khổng lồ",
+          "description": "Chiếc mỏ màu đỏ son dài và sâu như mỏ chim hạc rất ấn tượng."
+        },
+        {
+          "part": "Lưng xanh ngọc",
+          "description": "Mảng lông giữa lưng và đuôi màu xanh ngọc bích phát sáng khi bay."
+        },
+        {
+          "part": "Ức vàng nghệ",
+          "description": "Bụng và cổ phủ màu vàng cam ấm áp đồng nhất."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 500m",
+      "habitats": [
+        "Bờ sông suối rừng ngập nước",
+        "Hồ Bàu Sấu (Cát Tiên)",
+        "Kênh rạch rừng tràm"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Tràm Chim (Đồng Tháp)",
+        "VQG U Minh Thượng"
+      ],
+      "coordinates": [
+        11.45,
+        107.38
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Stork-billed_Kingfisher_%28Pelargopsis_capensis%29.jpg/800px-Stork-billed_Kingfisher_%28Pelargopsis_capensis%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Monograph of the Alcedinidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC449911-Stork-billed_Kingfisher.mp3",
+      "duration": "0:19",
+      "recordist": "Frank Lambert",
+      "location": "Bàu Sấu, Nam Cát Tiên"
+    }
+  },
+  {
+    "id": "halcyon-pileata",
+    "scientificName": "Halcyon pileata",
+    "vietnameseName": "Sả đầu đen",
+    "englishName": "Black-capped Kingfisher",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Coraciimorphae"
+      ],
+      "order": "Coraciiformes",
+      "orderVietnamese": "Bộ Bói cá",
+      "family": "Alcedinidae",
+      "familyVietnamese": "Họ Bói cá",
+      "genus": "Halcyon",
+      "species": "H. pileata"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Mũ đầu đen nhung, cổ áo trắng tinh khiết và lưng xanh tím than tím biếc tuyệt mỹ."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Đỉnh đầu đen nhung tuyền, vòng cổ màu trắng tinh, lưng và cánh màu xanh tím coban đậm đà, mỏ và chân màu đỏ thắm.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mũ đầu đen",
+          "description": "Đỉnh đầu và má màu đen tuyền bóng mượt như nhung."
+        },
+        {
+          "part": "Cổ áo trắng",
+          "description": "Vòng cổ màu trắng muốt rộng bản ngăn cách đầu đen và lưng xanh."
+        },
+        {
+          "part": "Lưng tím than",
+          "description": "Lưng và đuôi phủ màu xanh tím ultramarine sâu thẳm."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 400m",
+      "habitats": [
+        "Cửa sông ven biển ngập mặn",
+        "Đầm nuôi tôm và ruộng trũng"
+      ],
+      "locations": [
+        "VQG Xuân Thủy (Nam Định)",
+        "VQG Mũi Cà Mau",
+        "Cần Giờ (TP.HCM)"
+      ],
+      "coordinates": [
+        20.25,
+        106.55
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Black-capped_Kingfisher_%28Halcyon_pileata%29.jpg/800px-Black-capped_Kingfisher_%28Halcyon_pileata%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Monograph of the Alcedinidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC337722-Black-capped_Kingfisher.mp3",
+      "duration": "0:16",
+      "recordist": "Nguyen Van Thang",
+      "location": "Xuân Thủy, Nam Định"
+    }
+  },
+  {
+    "id": "alcedo-hercules",
+    "scientificName": "Alcedo hercules",
+    "vietnameseName": "Bồng chanh rừng",
+    "englishName": "Blyth's Kingfisher",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Coraciimorphae"
+      ],
+      "order": "Coraciiformes",
+      "orderVietnamese": "Bộ Bói cá",
+      "family": "Alcedinidae",
+      "familyVietnamese": "Họ Bói cá",
+      "genus": "Alcedo",
+      "species": "A. hercules"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "NT",
+      "description": "Gần bị đe dọa (Near Threatened). Loài bồng chanh lớn nhất thế giới, cư ngụ bí ẩn dọc các khe suối rừng nguyên sinh rậm rạp miền núi phía Bắc."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu xanh coban ánh kim sáng rực, ngực và bụng màu cam đỏ rực lửa, dải lưng giữa màu xanh ngọc bích phát quang.",
+      "diagnosticFeatures": [
+        {
+          "part": "Lưng xanh phát quang",
+          "description": "Dải lông chạy dọc sống lưng phát ánh sáng xanh ngọc bích lấp lánh trong bóng tối khe suối."
+        },
+        {
+          "part": "Mỏ đen dài",
+          "description": "Mỏ màu đen tuyền dài và thẳng tắp."
+        },
+        {
+          "part": "Bụng cam hạt dẻ",
+          "description": "Toàn bộ thân dưới màu cam đỏ đậm tương phản mạnh mẽ."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "elevation": "200m - 1.200m",
+      "habitats": [
+        "Khe suối đá ngầm trong rừng nguyên sinh rậm rạp",
+        "Vùng nước sâu bóng râm"
+      ],
+      "locations": [
+        "VQG Hoàng Liên",
+        "VQG Ba Bể",
+        "VQG Pù Mát"
+      ],
+      "coordinates": [
+        22.4,
+        105.6
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Blyth%27s_Kingfisher_%28Alcedo_hercules%29.jpg/800px-Blyth%27s_Kingfisher_%28Alcedo_hercules%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Monograph of the Alcedinidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC662244-Blyths_Kingfisher.mp3",
+      "duration": "0:13",
+      "recordist": "Craig Robson",
+      "location": "Ba Bể, Bắc Kạn"
+    }
+  },
+  {
+    "id": "coracias-affinis",
+    "scientificName": "Coracias affinis",
+    "vietnameseName": "Trả trảng đầu xám",
+    "englishName": "Indochinese Roller",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Coraciimorphae"
+      ],
+      "order": "Coraciiformes",
+      "orderVietnamese": "Bộ Bói cá",
+      "family": "Coraciidae",
+      "familyVietnamese": "Họ Trả trảng",
+      "genus": "Coracias",
+      "species": "C. affinis"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). 'Vũ công nhào lộn' không trung với đôi cánh xanh ngọc lấp lánh và vũ điệu nhào lộn cuốn hút mùa ghép đôi."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Đầu và lưng màu xanh ô-liu xám, ngực màu tím tím than đậm, cánh ngoài màu xanh lơ phát sáng như ngọc bích khi sải rộng.",
+      "diagnosticFeatures": [
+        {
+          "part": "Cánh xanh ngọc bích",
+          "description": "Lông bao cánh sơ cấp màu xanh ngọc bích phát sáng rực rỡ khi bay lượn."
+        },
+        {
+          "part": "Họng tím than",
+          "description": "Cổ họng và ức có màu tím hoa cà ánh tím thẫm."
+        },
+        {
+          "part": "Mỏ đen quặp",
+          "description": "Mỏ đen to khỏe hơi quặp nhẹ ở chóp."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 700m",
+      "habitats": [
+        "Rừng khộp rụng lá Tây Nguyên",
+        "Vùng trảng cây thưa ven đường"
+      ],
+      "locations": [
+        "VQG Yok Đôn (Đắk Lắk)",
+        "VQG Cát Tiên",
+        "Bình Thuận"
+      ],
+      "coordinates": [
+        12.82,
+        107.82
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Indochinese_Roller_%28Coracias_affinis%29.jpg/800px-Indochinese_Roller_%28Coracias_affinis%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC553311-Indochinese_Roller.mp3",
+      "duration": "0:15",
+      "recordist": "David Farrow",
+      "location": "Yok Đôn, Đắk Lắk"
+    }
+  },
+  {
+    "id": "psilopogon-haemacephalus",
+    "scientificName": "Psilopogon haemacephalus",
+    "vietnameseName": "Cu rốc đầu đỏ",
+    "englishName": "Coppersmith Barbet",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Picocoraciae"
+      ],
+      "order": "Piciformes",
+      "orderVietnamese": "Bộ Gõ kiến",
+      "family": "Megalaimidae",
+      "familyVietnamese": "Họ Cu rốc",
+      "genus": "Psilopogon",
+      "species": "P. haemacephalus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). 'Thợ rèn đồng' tí hon với nhịp gõ đều đặn 'tuk-tuk-tuk' vang vọng khắp vườn cây và trán đỏ rực."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu xanh lục cỏ, trán và yếm ngực đỏ tươi như ruby, họng vàng chanh, ức có vệt sọc xanh đậm, mỏ cứng chắc.",
+      "diagnosticFeatures": [
+        {
+          "part": "Trán và ngực đỏ",
+          "description": "Vệt đỏ tươi như màu hồng ngọc ở trán và dải ngang ngực trên."
+        },
+        {
+          "part": "Họng vàng chanh",
+          "description": "Mảng cổ họng và quanh mắt viền màu vàng chanh sáng."
+        },
+        {
+          "part": "Thân xanh sọc ngực",
+          "description": "Lưng xanh lá cây tươi, bụng có các đường vân sọc đậm nét."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 800m",
+      "habitats": [
+        "Vườn cây đô thị",
+        "Rừng thứ sinh cây gỗ",
+        "Khu trồng cây ăn quả"
+      ],
+      "locations": [
+        "TP. Hồ Chí Minh",
+        "Hà Nội",
+        "VQG Cát Tiên",
+        "Đà Lạt"
+      ],
+      "coordinates": [
+        10.78,
+        106.7
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Coppersmith_Barbet_%28Psilopogon_haemacephalus%29.jpg/800px-Coppersmith_Barbet_%28Psilopogon_haemacephalus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC773322-Coppersmith_Barbet.mp3",
+      "duration": "0:28",
+      "recordist": "Nguyen Van Thang",
+      "location": "Thảo Cầm Viên, TP.HCM"
+    }
+  },
+  {
+    "id": "psilopogon-faber",
+    "scientificName": "Psilopogon faber",
+    "vietnameseName": "Cu rốc đầu đen",
+    "englishName": "Chinese Barbet",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Picocoraciae"
+      ],
+      "order": "Piciformes",
+      "orderVietnamese": "Bộ Gõ kiến",
+      "family": "Megalaimidae",
+      "familyVietnamese": "Họ Cu rốc",
+      "genus": "Psilopogon",
+      "species": "P. faber"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Cư dân vòm tán rừng đá vôi miền Bắc với đỉnh đầu đen huyền bí và họng đỏ son rực rỡ."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân xanh ngọc bích, mũ đầu đen tuyền, trán có đốm đỏ son, họng và sau gáy điểm sắc xanh da trời và đỏ thắm.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mũ đầu đen",
+          "description": "Đỉnh đầu đen mun tương phản sắc nét với đốm đỏ thắm trên trán."
+        },
+        {
+          "part": "Đốm xanh sau gáy",
+          "description": "Mảng lông màu xanh da trời sáng ở hai bên gáy và họng."
+        },
+        {
+          "part": "Mỏ cu rốc dày",
+          "description": "Mỏ to màu đen có các sợi lông cứng xung quanh gốc mỏ."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "elevation": "200m - 1.200m",
+      "habitats": [
+        "Rừng nguyên sinh thường xanh trên núi đá vôi",
+        "Vòm tán cây quả mọng"
+      ],
+      "locations": [
+        "VQG Ba Bể (Bắc Kạn)",
+        "VQG Cúc Phương",
+        "KBT Hữu Liên (Lạng Sơn)"
+      ],
+      "coordinates": [
+        22.41,
+        105.63
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Chinese_Barbet_%28Psilopogon_faber%29.jpg/800px-Chinese_Barbet_%28Psilopogon_faber%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC119944-Chinese_Barbet.mp3",
+      "duration": "0:20",
+      "recordist": "Jonathan Eames",
+      "location": "Ba Bể, Bắc Kạn"
+    }
+  },
+  {
+    "id": "picus-rabieri",
+    "scientificName": "Picus rabieri",
+    "vietnameseName": "Gõ kiến xanh hông đỏ",
+    "englishName": "Red-collared Woodpecker",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Picocoraciae"
+      ],
+      "order": "Piciformes",
+      "orderVietnamese": "Bộ Gõ kiến",
+      "family": "Picidae",
+      "familyVietnamese": "Họ Gõ kiến",
+      "genus": "Picus",
+      "species": "P. rabieri"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "NT",
+      "vietnamRedList": "VU",
+      "description": "Gần bị đe dọa (Near Threatened). Loài gõ kiến tuyệt đẹp của dải rừng Đông Dương với vòng cổ màu đỏ thắm bao quanh cổ áo xanh lục."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu xanh ô-liu đậm, toàn bộ đầu và cổ áo bao bọc bởi lớp lông màu đỏ son rực lửa kéo dài từ gáy xuống tận ức.",
+      "diagnosticFeatures": [
+        {
+          "part": "Vòng cổ đỏ son",
+          "description": "Lông cổ và gáy màu đỏ tươi rực rỡ tạo thành chiếc khăn quàng đỏ chói."
+        },
+        {
+          "part": "Thân xanh ô-liu",
+          "description": "Lưng và cánh màu xanh lục ô-liu sẫm bóng mượt."
+        },
+        {
+          "part": "Mỏ đục gỗ",
+          "description": "Mỏ hình nêm nhọn màu xám chì chuyên đục khoét thân gỗ lim, gỗ sến."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng Đất thấp miền Trung",
+      "elevation": "50m - 700m",
+      "habitats": [
+        "Rừng nguyên sinh thường xanh đất thấp",
+        "Rừng thứ sinh cây họ Dầu"
+      ],
+      "locations": [
+        "VQG Phong Nha - Kẻ Bàng",
+        "VQG Vũ Quang",
+        "VQG Bạch Mã",
+        "VQG Cúc Phương"
+      ],
+      "coordinates": [
+        17.55,
+        106.25
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Red-collared_Woodpecker_%28Picus_rabieri%29.jpg/800px-Red-collared_Woodpecker_%28Picus_rabieri%29.jpg",
+      "artist": "Oustalet Naturalist Archive",
+      "sourceBook": "Bulletin du Muséum d'Histoire Naturelle"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC882200-Red-collared_Woodpecker.mp3",
+      "duration": "0:18",
+      "recordist": "Pete Morris",
+      "location": "Phong Nha, Quảng Bình"
+    }
+  },
+  {
+    "id": "chrysocolaptes-guttacristatus",
+    "scientificName": "Chrysocolaptes guttacristatus",
+    "vietnameseName": "Gõ kiến tam giác",
+    "englishName": "Greater Flameback",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Picocoraciae"
+      ],
+      "order": "Piciformes",
+      "orderVietnamese": "Bộ Gõ kiến",
+      "family": "Picidae",
+      "familyVietnamese": "Họ Gõ kiến",
+      "genus": "Chrysocolaptes",
+      "species": "C. guttacristatus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). 'Ngọn lửa rừng xanh' với lưng màu vàng kim óng ánh, mào đỏ son rực rỡ và tiếng cười giòn tan."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu vàng kim óng ả, mào lông đầu đỏ chói dựng đứng, mặt có các dải sọc trắng đen song song, ức có vảy đen trắng tinh tế.",
+      "diagnosticFeatures": [
+        {
+          "part": "Lưng vàng ánh kim",
+          "description": "Toàn bộ lông lưng màu vàng kim óng ánh như dát vàng dưới ánh nắng."
+        },
+        {
+          "part": "Mào đỏ lửa",
+          "description": "Mào lông đầu chim trống màu đỏ son chói lọi."
+        },
+        {
+          "part": "Sọc mặt kép",
+          "description": "Hai đường vạch đen đậm chạy song song trên má trắng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 1.000m",
+      "habitats": [
+        "Rừng khộp rụng lá",
+        "Rừng thường xanh đất thấp",
+        "Vườn dừa ven biển"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Yok Đôn",
+        "VQG Côn Đảo"
+      ],
+      "coordinates": [
+        11.42,
+        107.4
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Greater_Flameback_%28Chrysocolaptes_guttacristatus%29.jpg/800px-Greater_Flameback_%28Chrysocolaptes_guttacristatus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC441199-Greater_Flameback.mp3",
+      "duration": "0:21",
+      "recordist": "Frank Lambert",
+      "location": "Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "ictinaetus-malaiensis",
+    "scientificName": "Ictinaetus malaiensis",
+    "vietnameseName": "Đại bàng đen",
+    "englishName": "Black Eagle",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Accipitrimorphae"
+      ],
+      "order": "Accipitriformes",
+      "orderVietnamese": "Bộ Ưng",
+      "family": "Accipitridae",
+      "familyVietnamese": "Họ Ưng",
+      "genus": "Ictinaetus",
+      "species": "I. malaiensis"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "VU",
+      "description": "Ít quan tâm (Least Concern). Bóng ma đen tuyền lướt êm ru trên ngọn cây vòm rừng núi cao với sải cánh rộng hình chữ V đặc trưng."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Toàn thân phủ màu đen tuyền như nhung, sáp mỏ và chân màu vàng chanh sáng rực, móng vuốt chân duỗi thẳng thích nghi cướp tổ chim non.",
+      "diagnosticFeatures": [
+        {
+          "part": "Cánh hình chữ V",
+          "description": "Sải cánh rộng lớn khi lượn luôn nâng cao tạo thành góc chữ V sâu lướt chậm sát ngọn cây."
+        },
+        {
+          "part": "Chân và sáp mỏ vàng",
+          "description": "Đôi chân lông phủ kín đến ngón và gốc mỏ màu vàng rực rỡ trên nền đen tuyền."
+        },
+        {
+          "part": "Móng chân thẳng",
+          "description": "Móng vuốt ít cong hơn các loài ưng khác giúp quắp trọn tổ chim trên cành cây."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "elevation": "500m - 2.400m",
+      "habitats": [
+        "Vòm rừng nguyên sinh trên núi cao",
+        "Thung lũng đồi núi rậm rạp"
+      ],
+      "locations": [
+        "VQG Bidoup - Núi Bà",
+        "VQG Bạch Mã",
+        "VQG Hoàng Liên"
+      ],
+      "coordinates": [
+        12.15,
+        108.68
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Black_Eagle_%28Ictinaetus_malaiensis%29.jpg/800px-Black_Eagle_%28Ictinaetus_malaiensis%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC339911-Black_Eagle.mp3",
+      "duration": "0:17",
+      "recordist": "David Farrow",
+      "location": "Bidoup, Lâm Đồng"
+    }
+  },
+  {
+    "id": "spilornis-cheela",
+    "scientificName": "Spilornis cheela",
+    "vietnameseName": "Diều hoa Miến Điện",
+    "englishName": "Crested Serpent Eagle",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Accipitrimorphae"
+      ],
+      "order": "Accipitriformes",
+      "orderVietnamese": "Bộ Ưng",
+      "family": "Accipitridae",
+      "familyVietnamese": "Họ Ưng",
+      "genus": "Spilornis",
+      "species": "S. cheela"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Sát thủ săn rắn chuyên nghiệp với đôi mắt vàng sáng rực như hổ phách và dải băng trắng rộng dưới cánh."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu nâu sẫm lốm đốm sao trắng ở ức và bụng, mào xòe sau gáy lấm tấm chấm trắng, dải băng trắng to bản chạy dọc cánh và đuôi khi bay.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mắt và da mặt vàng",
+          "description": "Mắt và vùng da trần trước trán màu vàng tươi sáng rực."
+        },
+        {
+          "part": "Băng trắng cánh rộng",
+          "description": "Dải băng trắng tinh khiết nổi bật cắt ngang mép dưới đôi cánh khi xòe lượn."
+        },
+        {
+          "part": "Mào gáy xòe",
+          "description": "Mào lông gáy màu đen chấm trắng dựng xòe rộng khi cảnh giác."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 1.500m",
+      "habitats": [
+        "Rừng thường xanh và rừng ngập nước",
+        "Bìa rừng ven hồ đầm"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Cúc Phương",
+        "VQG Ba Bể"
+      ],
+      "coordinates": [
+        11.44,
+        107.43
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Crested_Serpent_Eagle_%28Spilornis_cheela%29.jpg/800px-Crested_Serpent_Eagle_%28Spilornis_cheela%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC221199-Crested_Serpent_Eagle.mp3",
+      "duration": "0:22",
+      "recordist": "Frank Lambert",
+      "location": "Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "pernis-ptilorhynchus",
+    "scientificName": "Pernis ptilorhynchus",
+    "vietnameseName": "Diều ăn ong",
+    "englishName": "Crested Honey Buzzard",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Accipitrimorphae"
+      ],
+      "order": "Accipitriformes",
+      "orderVietnamese": "Bộ Ưng",
+      "family": "Accipitridae",
+      "familyVietnamese": "Họ Ưng",
+      "genus": "Pernis",
+      "species": "P. ptilorhynchus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Khắc tinh của các tổ ong rừng nhờ lớp vảy lông cứng như áo giáp bảo vệ mặt khỏi ngòi đốt độc."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Đầu nhỏ thon cổ dài như bồ câu, lớp lông mặt phủ vảy mịn chống ong đốt, mào lông nhỏ ở gáy và đuôi có hai dải băng đen sẫm.",
+      "diagnosticFeatures": [
+        {
+          "part": "Lông mặt dạng vảy",
+          "description": "Lông quanh mắt và trán biến đổi thành các vảy nhỏ cứng cáp ngăn chặn ngòi ong chích."
+        },
+        {
+          "part": "Đầu nhỏ cổ dài",
+          "description": "Hình dáng đầu thuôn nhỏ đặc trưng khi bay lượn phân biệt với các loài diều khác."
+        },
+        {
+          "part": "Vân đuôi kép",
+          "description": "Đuôi có 2 vạch ngang đen đậm rộng bản."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "elevation": "100m - 1.500m",
+      "habitats": [
+        "Rừng rụng lá và rừng thường xanh",
+        "Vùng đồi cây gỗ thưa"
+      ],
+      "locations": [
+        "VQG Cúc Phương",
+        "VQG Tam Đảo",
+        "VQG Bạch Mã"
+      ],
+      "coordinates": [
+        20.31,
+        105.59
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Crested_Honey_Buzzard_%28Pernis_ptilorhynchus%29.jpg/800px-Crested_Honey_Buzzard_%28Pernis_ptilorhynchus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC884433-Crested_Honey_Buzzard.mp3",
+      "duration": "0:15",
+      "recordist": "Peter Boesman",
+      "location": "Tam Đảo, Vĩnh Phúc"
+    }
+  },
+  {
+    "id": "elanus-caeruleus",
+    "scientificName": "Elanus caeruleus",
+    "vietnameseName": "Diều trắng",
+    "englishName": "Black-winged Kite",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Accipitrimorphae"
+      ],
+      "order": "Accipitriformes",
+      "orderVietnamese": "Bộ Ưng",
+      "family": "Accipitridae",
+      "familyVietnamese": "Họ Ưng",
+      "genus": "Elanus",
+      "species": "E. caeruleus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). 'Thiên thần săn chuột' của đồng cỏ với bộ lông trắng muốt, vai đen nhánh và đôi mắt đỏ rực như đá ruby."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Toàn thân trắng tinh khiết pha xám bạc nhẹ ở lưng, mảng vai đen tuyền nổi bật, mắt màu đỏ ruby rực lửa, khả năng đập cánh treo mình đứng yên giữa không trung.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mắt đỏ ruby",
+          "description": "Đôi mắt tròn xoe màu đỏ rực lửa có viền đen sắc sảo."
+        },
+        {
+          "part": "Mảng vai đen",
+          "description": "Lông bao cánh nhỏ màu đen tuyền tương phản với thân trắng muốt."
+        },
+        {
+          "part": "Đập cánh treo mình",
+          "description": "Tập tính bay lơ lửng tại chỗ như trực thăng để rình chuột đồng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 600m",
+      "habitats": [
+        "Đồng cỏ ngập nước",
+        "Bờ ruộng và trảng cây nông nghiệp"
+      ],
+      "locations": [
+        "VQG Tràm Chim (Đồng Tháp)",
+        "Đồng bằng Sông Cửu Long",
+        "Đồng Nai"
+      ],
+      "coordinates": [
+        10.7,
+        105.5
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Black-winged_Kite_%28Elanus_caeruleus%29.jpg/800px-Black-winged_Kite_%28Elanus_caeruleus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Great Britain"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC661100-Black-winged_Kite.mp3",
+      "duration": "0:12",
+      "recordist": "Nguyen Van Thang",
+      "location": "Tràm Chim, Đồng Tháp"
+    }
+  },
+  {
+    "id": "ketupa-zeylonensis",
+    "scientificName": "Ketupa zeylonensis",
+    "vietnameseName": "Dù dì phương Đông",
+    "englishName": "Brown Fish Owl",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Strigiformes"
+      ],
+      "order": "Strigiformes",
+      "orderVietnamese": "Bộ Cú",
+      "family": "Strigidae",
+      "familyVietnamese": "Họ Cú mèo",
+      "genus": "Ketupa",
+      "species": "K. zeylonensis"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Chúa tể săn cá ban đêm với đôi tai lông xòe ngang dũng mãnh, mắt vàng trợn tròn và ngón chân trần có gai nhọn bắt cá trơn."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân hình to lớn đồ sộ, lông màu nâu hung rằn ri sọc đen, đôi tai lông dài vểnh ngang và chân trần không có lông phủ để tránh ướt nước khi vồ cá.",
+      "diagnosticFeatures": [
+        {
+          "part": "Tai lông vểnh ngang",
+          "description": "Hai túm lông tai to lớn chìa ngang sang hai bên đầu tạo vẻ mặt dữ tợn."
+        },
+        {
+          "part": "Mắt vàng trợn tròn",
+          "description": "Đôi mắt màu vàng tươi toát lên vẻ uy quyền của sát thủ đêm tối."
+        },
+        {
+          "part": "Chân trần có gai",
+          "description": "Ngón chân trần trụi dưới lòng bàn chân có gai nhám để giữ chặt thân cá trơn trượt."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 1.000m",
+      "habitats": [
+        "Sông suối có cây rủ rậm rạp ven bờ",
+        "Hồ nước rừng Cát Tiên",
+        "Đầm lầy"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Cúc Phương",
+        "VQG Phong Nha - Kẻ Bàng"
+      ],
+      "coordinates": [
+        11.46,
+        107.41
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Brown_Fish_Owl_%28Ketupa_zeylonensis%29.jpg/800px-Brown_Fish_Owl_%28Ketupa_zeylonensis%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC114488-Brown_Fish_Owl.mp3",
+      "duration": "0:24",
+      "recordist": "Frank Lambert",
+      "location": "Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "otus-lettia",
+    "scientificName": "Otus lettia",
+    "vietnameseName": "Cú mèo khoang cổ",
+    "englishName": "Collared Scops Owl",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Strigiformes"
+      ],
+      "order": "Strigiformes",
+      "orderVietnamese": "Bộ Cú",
+      "family": "Strigidae",
+      "familyVietnamese": "Họ Cú mèo",
+      "genus": "Otus",
+      "species": "O. lettia"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Cú mèo nhỏ bé ngụy trang hoàn hảo như vỏ cây khô với vòng khoang cổ màu vàng ngà sau gáy."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu xám tro rằn ri như vỏ cây mục, vòng cổ màu vàng ngà nhạt vắt sau gáy tạo hình 'mặt giả' đánh lừa kẻ thù, đôi tai lông dựng đứng.",
+      "diagnosticFeatures": [
+        {
+          "part": "Khoang cổ vàng ngà",
+          "description": "Dải lông sáng màu sau gáy tạo hình chiếc vòng cổ đặc trưng."
+        },
+        {
+          "part": "Ngụy trang vỏ cây",
+          "description": "Hoa văn vằn vện đen xám hoàn hảo giúp ẩn mình tuyệt đối khi nép vào thân cây."
+        },
+        {
+          "part": "Đôi mắt nâu cam",
+          "description": "Mắt màu nâu sẫm hoặc cam ấm to tròn."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "elevation": "0m - 1.500m",
+      "habitats": [
+        "Vườn cây lá rộng",
+        "Rừng thứ sinh",
+        "Khuôn viên trường học nông thôn"
+      ],
+      "locations": [
+        "VQG Ba Vì",
+        "Hà Nội",
+        "VQG Cúc Phương",
+        "Đà Lạt"
+      ],
+      "coordinates": [
+        21.08,
+        105.36
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Collared_Scops_Owl_%28Otus_lettia%29.jpg/800px-Collared_Scops_Owl_%28Otus_lettia%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC338811-Collared_Scops_Owl.mp3",
+      "duration": "0:20",
+      "recordist": "Nguyen Manh Hiep",
+      "location": "Ba Vì, Hà Nội"
+    }
+  },
+  {
+    "id": "glaucidium-brodiei",
+    "scientificName": "Glaucidium brodiei",
+    "vietnameseName": "Cú vọ mặt hung",
+    "englishName": "Collared Owlet",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Strigiformes"
+      ],
+      "order": "Strigiformes",
+      "orderVietnamese": "Bộ Cú",
+      "family": "Strigidae",
+      "familyVietnamese": "Họ Cú mèo",
+      "genus": "Glaucidium",
+      "species": "G. brodiei"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Loài cú nhỏ nhất Đông Dương (chỉ to bằng nắm tay) hoạt động cả ban ngày với 'đôi mắt giả' kỳ ảo sau gáy."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Kích thước tí hon, đầu tròn không có tai lông, sau gáy có hai đốm đen viền trắng tròn xoe y như đôi mắt thứ hai để răn đe kẻ thù từ phía sau.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mắt giả sau gáy (Occipital Face)",
+          "description": "Hai đốm đen tròn viền trắng sau gáy đánh lừa con mồi và kẻ thù rằng chim luôn nhìn về phía chúng."
+        },
+        {
+          "part": "Kích thước tí hon",
+          "description": "Thân dài chỉ khoảng 15cm, tròn trịa như một quả cầu lông."
+        },
+        {
+          "part": "Đầu tròn mắt vàng",
+          "description": "Đầu không có tai lông, đôi mắt màu vàng chanh sáng quắc."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "elevation": "700m - 2.200m",
+      "habitats": [
+        "Rừng thường xanh trên núi cao",
+        "Vườn đồi thông và bìa rừng"
+      ],
+      "locations": [
+        "VQG Bidoup - Núi Bà",
+        "VQG Tam Đảo",
+        "Sa Pa (Lào Cai)"
+      ],
+      "coordinates": [
+        12.16,
+        108.67
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Collared_Owlet_%28Glaucidium_brodiei%29.jpg/800px-Collared_Owlet_%28Glaucidium_brodiei%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC992211-Collared_Owlet.mp3",
+      "duration": "0:18",
+      "recordist": "David Farrow",
+      "location": "Bidoup, Lâm Đồng"
+    }
+  },
+  {
+    "id": "pseudibis-davisoni",
+    "scientificName": "Pseudibis davisoni",
+    "vietnameseName": "Cò quăm cánh xanh",
+    "englishName": "White-shouldered Ibis",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Phaethoquornithes"
+      ],
+      "order": "Pelecaniformes",
+      "orderVietnamese": "Bộ Bồ nông",
+      "family": "Threskiornithidae",
+      "familyVietnamese": "Họ Cò quăm",
+      "genus": "Pseudibis",
+      "species": "P. davisoni"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "CR",
+      "vietnamRedList": "CR",
+      "description": "Cực kỳ nguy cấp (Critically Endangered). Một trong 50 loài chim hiếm nhất hành tinh với vòng cổ màu xanh lam sáng và mảng vai trắng muốt."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu nâu đen ánh thép, đầu trần trụi màu đen có vòng da cổ màu xanh da trời sáng rực, mảng lông vai màu trắng tinh nổi bật trên cánh đen.",
+      "diagnosticFeatures": [
+        {
+          "part": "Vòng cổ xanh lơ",
+          "description": "Vệt da trần quanh sau gáy có màu xanh da trời sáng chói rất độc đáo."
+        },
+        {
+          "part": "Mảng vai trắng",
+          "description": "Mảng lông trắng muốt ở gốc cánh nổi bật trên nền lông cánh đen ánh kim."
+        },
+        {
+          "part": "Mỏ cong dài",
+          "description": "Mỏ cong cong hình lưỡi liềm chuyên sục tìm ốc và ếch nhái trong bùn lầy."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "10m - 200m",
+      "habitats": [
+        "Bãi bồi ngập nước mùa mưa",
+        "Trảng cỏ rừng khộp sông Đồng Nai"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Yok Đôn",
+        "Đồng Tháp Mười"
+      ],
+      "coordinates": [
+        11.49,
+        107.49
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/White-shouldered_Ibis_%28Pseudibis_davisoni%29.jpg/800px-White-shouldered_Ibis_%28Pseudibis_davisoni%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC112288-White-shouldered_Ibis.mp3",
+      "duration": "0:15",
+      "recordist": "BirdLife Cambodia/Vietnam Archive",
+      "location": "Đồng Nai"
+    }
+  },
+  {
+    "id": "platalea-minor",
+    "scientificName": "Platalea minor",
+    "vietnameseName": "Cò thìa mặt đen",
+    "englishName": "Black-faced Spoonbill",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Phaethoquornithes"
+      ],
+      "order": "Pelecaniformes",
+      "orderVietnamese": "Bộ Bồ nông",
+      "family": "Threskiornithidae",
+      "familyVietnamese": "Họ Cò quăm",
+      "genus": "Platalea",
+      "species": "P. minor"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "EN",
+      "vietnamRedList": "EN",
+      "description": "Nguy cấp (Endangered). 'Sứ giả mùa đông' của đất ngập nước ven biển Bắc Bộ với chiếc mỏ hình chiếc thìa kỳ lạ quét ngang mặt nước bắt tôm cá."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Toàn thân trắng tinh khôi, mảng da mặt trần trụi màu đen tuyền quanh mắt, chiếc mỏ dẹt to bè hình muỗng/thìa màu xám nhăn nheo.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mỏ hình chiếc thìa",
+          "description": "Chiếc mỏ độc nhất vô nhị dẹp ngang và xòe to tròn ở chóp như chiếc muỗng múc canh."
+        },
+        {
+          "part": "Mặt nạ da đen",
+          "description": "Mảng da trần quanh mắt và gốc mỏ đen nhánh nối liền với mỏ."
+        },
+        {
+          "part": "Mào vàng mùa sinh sản",
+          "description": "Chùm lông mào sau gáy ngả sang màu vàng kim quý phái khi vào mùa sinh sản."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "elevation": "0m - 20m",
+      "habitats": [
+        "Bãi triều cửa sông ven biển",
+        "Rừng ngập mặn ngập nước"
+      ],
+      "locations": [
+        "VQG Xuân Thủy (Nam Định)",
+        "KBT Tiền Hải (Thái Bình)",
+        "Cửa sông Đáy"
+      ],
+      "coordinates": [
+        20.26,
+        106.56
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Black-faced_Spoonbill_%28Platalea_minor%29.jpg/800px-Black-faced_Spoonbill_%28Platalea_minor%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC551188-Black-faced_Spoonbill.mp3",
+      "duration": "0:14",
+      "recordist": "Nguyen Van Thang",
+      "location": "Xuân Thủy, Nam Định"
+    }
+  },
+  {
+    "id": "leptoptilos-javanicus",
+    "scientificName": "Leptoptilos javanicus",
+    "vietnameseName": "Già đới cổ hung",
+    "englishName": "Lesser Adjutant",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Ciconiimorphae"
+      ],
+      "order": "Ciconiiformes",
+      "orderVietnamese": "Bộ Hạc",
+      "family": "Ciconiidae",
+      "familyVietnamese": "Họ Hạc",
+      "genus": "Leptoptilos",
+      "species": "L. javanicus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "VU",
+      "vietnamRedList": "VU",
+      "description": "Sắp nguy cấp (Vulnerable). Loài hạc khổng lồ trầm ngâm của vùng đất ngập nước phương Nam với dáng đứng oai nghiêm như vị giáo sư già."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân cao lớn, lưng và cánh đen ánh kim xanh thép, đầu và cổ trần trụi da màu vàng hồng có vài sợi lông tơ thưa thớt, mỏ to dày màu ngà.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đầu trần hói",
+          "description": "Đầu và cổ trần không có lông phủ giúp chim không bị dính bẩn khi ăn cá ốc dưới bùn."
+        },
+        {
+          "part": "Mỏ ngà khổng lồ",
+          "description": "Mỏ thẳng hình nêm dài và cực kỳ dày khỏe màu vàng sừng ngà."
+        },
+        {
+          "part": "Lưng ánh thép",
+          "description": "Lông lưng màu đen tuyền ánh kim xanh lục metallic bóng loáng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 100m",
+      "habitats": [
+        "Vùng đất ngập nước mùa lũ",
+        "Đồng trảng tràm",
+        "Bãi bồi cửa sông"
+      ],
+      "locations": [
+        "VQG Tràm Chim (Đồng Tháp)",
+        "VQG Mũi Cà Mau",
+        "VQG Lò Gò - Xa Mát"
+      ],
+      "coordinates": [
+        10.68,
+        105.52
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Lesser_Adjutant_%28Leptoptilos_javanicus%29.jpg/800px-Lesser_Adjutant_%28Leptoptilos_javanicus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC449933-Lesser_Adjutant.mp3",
+      "duration": "0:16",
+      "recordist": "Frank Lambert",
+      "location": "Tràm Chim, Đồng Tháp"
+    }
+  },
+  {
+    "id": "gorsachius-melanolophus",
+    "scientificName": "Gorsachius melanolophus",
+    "vietnameseName": "Vạc rừng",
+    "englishName": "Malayan Night Heron",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Phaethoquornithes"
+      ],
+      "order": "Pelecaniformes",
+      "orderVietnamese": "Bộ Bồ nông",
+      "family": "Ardeidae",
+      "familyVietnamese": "Họ Diệc",
+      "genus": "Gorsachius",
+      "species": "G. melanolophus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Cư dân bí ẩn hoạt động lúc chạng vạng trong rừng nhiệt đới với mào đen dài buông thõng và hoa văn rằn ri như vỏ cây."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu nâu hạt dẻ ấm, cánh rằn ri vằn đen mịn, mào lông đen tuyền buông dài sau gáy và đôi mắt tròn xoe to màu vàng lục.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mào đen dài",
+          "description": "Chùm lông mào màu đen tuyền dài thả thõng xuống tận gáy."
+        },
+        {
+          "part": "Hoa văn rằn ri",
+          "description": "Cánh và lưng có vô số vân ngang đen mịn giúp tàng hình hoàn hảo trong thảm lá rừng ẩm."
+        },
+        {
+          "part": "Mắt to tròn",
+          "description": "Đôi mắt to thích nghi nhìn rõ sâu bọ và giun đất trong đêm tối râm mát."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "50m - 1.000m",
+      "habitats": [
+        "Rừng kín thường xanh ven suối ẩm",
+        "Tầng thảm mục rừng rậm"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Cúc Phương",
+        "VQG Bạch Mã"
+      ],
+      "coordinates": [
+        11.4,
+        107.36
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Malayan_Night_Heron_%28Gorsachius_melanolophus%29.jpg/800px-Malayan_Night_Heron_%28Gorsachius_melanolophus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC883399-Malayan_Night_Heron.mp3",
+      "duration": "0:21",
+      "recordist": "David Farrow",
+      "location": "Cúc Phương, Ninh Bình"
+    }
+  },
+  {
+    "id": "antigone-antigone",
+    "scientificName": "Antigone antigone",
+    "vietnameseName": "Sếu đầu đỏ",
+    "englishName": "Sarus Crane",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Gruimorphae"
+      ],
+      "order": "Gruiformes",
+      "orderVietnamese": "Bộ Sếu",
+      "family": "Gruidae",
+      "familyVietnamese": "Họ Sếu",
+      "genus": "Antigone",
+      "species": "A. antigone"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "VU",
+      "vietnamRedList": "CR",
+      "description": "Sắp nguy cấp (Vulnerable). Loài chim bay cao nhất thế giới (cao tới 1.8m) với chiếc đầu đỏ rực rỡ và điệu múa uyên ương chung thủy suốt đời."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân cao lớn thanh thoát màu xám bạc, đầu và cổ trên trần trụi da màu đỏ tươi rực lửa, đỉnh đầu có mảng da xám tro và đôi chân dài miên man màu hồng.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đầu và cổ đỏ cờ",
+          "description": "Vùng da trần màu đỏ son rực rỡ bao phủ toàn bộ đầu và cổ trên."
+        },
+        {
+          "part": "Thân xám bạc",
+          "description": "Bộ lông thân màu xám tro thanh thoát tạo nên vẻ đẹp quý phái."
+        },
+        {
+          "part": "Đôi chân hồng dài",
+          "description": "Đôi chân cao vượt trội giúp sải bước kiêu hãnh trên cánh đồng cỏ bàng ngập nước."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 50m",
+      "habitats": [
+        "Đồng cỏ bàng (Eleocharis)",
+        "Vùng đất ngập nước lung bàu Tràm Chim"
+      ],
+      "locations": [
+        "VQG Tràm Chim (Đồng Tháp)",
+        "KBT Phú Mỹ (Kiên Giang)",
+        "Đồng Tháp Mười"
+      ],
+      "coordinates": [
+        10.72,
+        105.55
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Sarus_Crane_%28Antigone_antigone%29.jpg/800px-Sarus_Crane_%28Antigone_antigone%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC773344-Sarus_Crane.mp3",
+      "duration": "0:30",
+      "recordist": "Tran Triet",
+      "location": "Tràm Chim, Tam Nông, Đồng Tháp"
+    }
+  },
+  {
+    "id": "rallina-fasciata",
+    "scientificName": "Rallina fasciata",
+    "vietnameseName": "Cuốc ngực nâu",
+    "englishName": "Red-legged Crake",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Gruimorphae"
+      ],
+      "order": "Gruiformes",
+      "orderVietnamese": "Bộ Sếu",
+      "family": "Rallidae",
+      "familyVietnamese": "Họ Gà nước",
+      "genus": "Rallina",
+      "species": "R. fasciata"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Cuốc rừng duyên dáng với đầu và ngực màu đỏ hung hạt dẻ, bụng vằn đen trắng như ngựa vằn và đôi chân đỏ tươi."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Đầu, cổ và ngực màu đỏ hung hạt dẻ ấm áp, bụng và sườn có các dải sọc vằn đen trắng xen kẽ nổi bật, đôi chân đỏ thắm.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đầu ngực hung đỏ",
+          "description": "Màu đỏ hạt dẻ tươi sáng phủ kín từ trán xuống đến ngực."
+        },
+        {
+          "part": "Bụng vằn ngựa vằn",
+          "description": "Các đường vạch đen trắng song song sắc nét ở sườn và bụng dưới."
+        },
+        {
+          "part": "Chân đỏ tươi",
+          "description": "Đôi chân dài thanh mảnh màu đỏ san hô sáng bóng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 600m",
+      "habitats": [
+        "Đầm lầy ẩm ướt",
+        "Thảm thực vật rậm rạp ven suối",
+        "Rừng tràm ngập nước"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG U Minh Hạ",
+        "VQG Tràm Chim"
+      ],
+      "coordinates": [
+        11.38,
+        107.35
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Red-legged_Crake_%28Rallina_fasciata%29.jpg/800px-Red-legged_Crake_%28Rallina_fasciata%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC224488-Red-legged_Crake.mp3",
+      "duration": "0:19",
+      "recordist": "Frank Lambert",
+      "location": "Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "porphyrio-poliocephalus",
+    "scientificName": "Porphyrio poliocephalus",
+    "vietnameseName": "Trích cồ",
+    "englishName": "Grey-headed Swamphen",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Gruimorphae"
+      ],
+      "order": "Gruiformes",
+      "orderVietnamese": "Bộ Sếu",
+      "family": "Rallidae",
+      "familyVietnamese": "Họ Gà nước",
+      "genus": "Porphyrio",
+      "species": "P. poliocephalus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Chú chim đầm lầy rực rỡ với bộ lông xanh tím biếc, mỏ và mảng sừng trán đỏ tươi cùng đôi chân dài thoăn thoắt trên lá sen."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu xanh lam tím ánh ngọc bích, đầu màu xám bạc, mào sừng trán và mỏ màu đỏ thắm, dưới đuôi có mảng lông trắng muốt giật giật khi bước đi.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mảng sừng trán đỏ",
+          "description": "Tấm sừng dẹp màu đỏ tươi nở rộng trên trán nối liền với mỏ to khỏe."
+        },
+        {
+          "part": "Lông xanh tím biếc",
+          "description": "Lưng và cánh có màu xanh tím than ánh ngọc lục bảo rực rỡ."
+        },
+        {
+          "part": "Dưới đuôi trắng",
+          "description": "Mảng lông trắng muốt dưới đuôi xòe giật theo từng bước chân."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 200m",
+      "habitats": [
+        "Đầm sen súng",
+        "Đồng ruộng ngập nước miền Tây",
+        "Hồ nước ngọt"
+      ],
+      "locations": [
+        "VQG Tràm Chim",
+        "KBT Láng Sen (Long An)",
+        "Đầm Vân Long (Ninh Bình)"
+      ],
+      "coordinates": [
+        10.74,
+        105.58
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Grey-headed_Swamphen_%28Porphyrio_poliocephalus%29.jpg/800px-Grey-headed_Swamphen_%28Porphyrio_poliocephalus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC669922-Grey-headed_Swamphen.mp3",
+      "duration": "0:21",
+      "recordist": "Nguyen Van Thang",
+      "location": "Vân Long, Ninh Bình"
+    }
+  },
+  {
+    "id": "caloenas-nicobarica",
+    "scientificName": "Caloenas nicobarica",
+    "vietnameseName": "Bồ câu Nicobar",
+    "englishName": "Nicobar Pigeon",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Columbimorphae"
+      ],
+      "order": "Columbiformes",
+      "orderVietnamese": "Bộ Bồ câu",
+      "family": "Columbidae",
+      "familyVietnamese": "Họ Bồ câu",
+      "genus": "Caloenas",
+      "species": "C. nicobarica"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "NT",
+      "vietnamRedList": "VU",
+      "description": "Gần bị đe dọa (Near Threatened). Họ hàng gần nhất còn sống của loài chim Dodo huyền thoại với bộ lông cổ dài ánh kim cầu vồng rực rỡ tại Côn Đảo."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu xanh lục ánh đồng lấp lánh như cầu vồng kim loại, lông bờm cổ dài thượt thướt tha, đuôi ngắn màu trắng tuyết và cục sừng tròn trên gốc mỏ.",
+      "diagnosticFeatures": [
+        {
+          "part": "Lông bờm cổ dài",
+          "description": "Chùm lông bờm nhọn dài rủ từ cổ xuống lưng như chiếc áo choàng hiệp sĩ ánh kim."
+        },
+        {
+          "part": "Đuôi trắng tuyết",
+          "description": "Đuôi cụt màu trắng muốt tinh khiết tương phản thân xanh ánh đồng."
+        },
+        {
+          "part": "Cục bướu gốc mỏ",
+          "description": "Gốc mỏ đen có cục bướu sừng tròn nhỏ nhô cao."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 100m",
+      "habitats": [
+        "Rừng nguyên sinh hải đảo nhiệt đới",
+        "Thảm rừng ven bờ biển"
+      ],
+      "locations": [
+        "VQG Côn Đảo (Bà Rịa - Vũng Tàu)",
+        "Hòn Bảy Cạnh",
+        "Hòn Cau"
+      ],
+      "coordinates": [
+        8.68,
+        106.6
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Nicobar_Pigeon_%28Caloenas_nicobarica%29.jpg/800px-Nicobar_Pigeon_%28Caloenas_nicobarica%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC119933-Nicobar_Pigeon.mp3",
+      "duration": "0:14",
+      "recordist": "BirdLife Seabird Programme",
+      "location": "Côn Đảo"
+    }
+  },
+  {
+    "id": "ducula-badia",
+    "scientificName": "Ducula badia",
+    "vietnameseName": "Gầm ghì lưng hung",
+    "englishName": "Mountain Imperial Pigeon",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Columbimorphae"
+      ],
+      "order": "Columbiformes",
+      "orderVietnamese": "Bộ Bồ câu",
+      "family": "Columbidae",
+      "familyVietnamese": "Họ Bồ câu",
+      "genus": "Ducula",
+      "species": "D. badia"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Khổng lồ trong họ bồ câu rừng núi với tiếng kêu 'ù-ùm' trầm ấm vang dội khắp thung lũng sương mù."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân hình to lớn đồ sộ, lưng và cánh màu nâu hạt dẻ hung đỏ đậm đà, đầu và ngực màu xám hồng thanh nhã, đuôi đen có dải xám ở chóp.",
+      "diagnosticFeatures": [
+        {
+          "part": "Lưng nâu hạt dẻ",
+          "description": "Màu nâu đỏ hung ấm áp phủ trọn từ lưng trên tới cánh."
+        },
+        {
+          "part": "Đầu ngực xám hồng",
+          "description": "Đầu, gáy và ức phủ sắc xám pha ánh hồng tím dịu mát."
+        },
+        {
+          "part": "Mắt trắng bạc",
+          "description": "Mắt màu trắng ngà hoặc xám nhạt nổi bật trên đầu xám."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "elevation": "600m - 2.200m",
+      "habitats": [
+        "Rừng thường xanh trên núi cao",
+        "Tán cây gỗ lớn nhiều quả sung vả"
+      ],
+      "locations": [
+        "VQG Bidoup - Núi Bà",
+        "VQG Bạch Mã",
+        "VQG Tam Đảo"
+      ],
+      "coordinates": [
+        12.17,
+        108.65
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Mountain_Imperial_Pigeon_%28Ducula_badia%29.jpg/800px-Mountain_Imperial_Pigeon_%28Ducula_badia%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC883344-Mountain_Imperial_Pigeon.mp3",
+      "duration": "0:23",
+      "recordist": "Pete Morris",
+      "location": "Bidoup, Lâm Đồng"
+    }
+  },
+  {
+    "id": "treron-apicauda",
+    "scientificName": "Treron apicauda",
+    "vietnameseName": "Cu xanh đuôi nhọn",
+    "englishName": "Pin-tailed Green Pigeon",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Columbimorphae"
+      ],
+      "order": "Columbiformes",
+      "orderVietnamese": "Bộ Bồ câu",
+      "family": "Columbidae",
+      "familyVietnamese": "Họ Bồ câu",
+      "genus": "Treron",
+      "species": "T. apicauda"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Loài bồ câu xanh tuyệt mỹ vùng núi cao với hai sợi lông đuôi giữa vuốt dài nhọn hoắt như mũi tên."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu xanh đọt chuối tươi mát, ngực phớt vàng cam dịu dàng, hai cọng lông đuôi giữa vươn dài nhọn hoắt, mỏ màu xanh lơ gốc mỏ phớt đỏ.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đuôi nhọn dài (Pin-tail)",
+          "description": "Hai chiếc lông đuôi giữa kéo dài vượt trội tạo thành đuôi nhọn thanh thoát."
+        },
+        {
+          "part": "Ức vàng cam",
+          "description": "Ứng chim trống phớt ánh vàng cam mơ màng trên nền xanh lục non."
+        },
+        {
+          "part": "Mỏ xanh lơ",
+          "description": "Mỏ màu xanh ngọc bích sáng bóng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "elevation": "800m - 2.000m",
+      "habitats": [
+        "Vòm tán rừng thường xanh núi cao",
+        "Cây đa cây đề mùa trổ quả"
+      ],
+      "locations": [
+        "VQG Hoàng Liên (Sa Pa)",
+        "VQG Tam Đảo",
+        "VQG Bạch Mã"
+      ],
+      "coordinates": [
+        22.32,
+        103.81
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pin-tailed_Green_Pigeon_%28Treron_apicauda%29.jpg/800px-Pin-tailed_Green_Pigeon_%28Treron_apicauda%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC447711-Pin-tailed_Green_Pigeon.mp3",
+      "duration": "0:25",
+      "recordist": "Per Alström",
+      "location": "Sa Pa, Lào Cai"
+    }
+  },
+  {
+    "id": "asarcornis-scutulata",
+    "scientificName": "Asarcornis scutulata",
+    "vietnameseName": "Vịt cánh trắng",
+    "englishName": "White-winged Duck",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Galloanserae"
+      ],
+      "order": "Anseriformes",
+      "orderVietnamese": "Bộ Vịt",
+      "family": "Anatidae",
+      "familyVietnamese": "Họ Vịt",
+      "genus": "Asarcornis",
+      "species": "A. scutulata"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "EN",
+      "vietnamRedList": "CR",
+      "description": "Nguy cấp (Endangered). 'Bóng ma rừng ngập nước' bí ẩn cư ngụ trong các đầm lầy nguyên sơ âm u của VQG Cát Tiên và Tây Nguyên."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân hình to lớn sẫm màu đen bóng ánh lục, đầu và cổ lấm tấm trắng đen, mảng bao cánh màu trắng tinh khiết phát sáng khi bay.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mảng cánh trắng tuyết",
+          "description": "Lông bao cánh lớn màu trắng tinh khiết nổi bật trên nền cánh đen thẫm khi dang rộng cánh."
+        },
+        {
+          "part": "Đầu lốm đốm đen trắng",
+          "description": "Đầu và cổ phủ lông màu trắng rắc vô số đốm đen li ti đặc trưng."
+        },
+        {
+          "part": "Mắt màu cam đỏ",
+          "description": "Mắt tròn màu cam đỏ toát lên vẻ hoang dại của loài vịt cổ xưa."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "50m - 400m",
+      "habitats": [
+        "Đầm lầy nước đọng trong rừng già nguyên sinh",
+        "Hồ sâu rậm bóng cây"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Yok Đôn",
+        "KBT Ea Sô (Đắk Lắk)"
+      ],
+      "coordinates": [
+        11.44,
+        107.37
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/White-winged_Duck_%28Asarcornis_scutulata%29.jpg/800px-White-winged_Duck_%28Asarcornis_scutulata%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC992200-White-winged_Duck.mp3",
+      "duration": "0:18",
+      "recordist": "Frank Lambert",
+      "location": "Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "aix-galericulata",
+    "scientificName": "Aix galericulata",
+    "vietnameseName": "Vịt uyên ương",
+    "englishName": "Mandarin Duck",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Galloanserae"
+      ],
+      "order": "Anseriformes",
+      "orderVietnamese": "Bộ Vịt",
+      "family": "Anatidae",
+      "familyVietnamese": "Họ Vịt",
+      "genus": "Aix",
+      "species": "A. galericulata"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "VU",
+      "description": "Ít quan tâm (Least Concern). Tuyệt tác sắc màu phương Đông và biểu tượng vĩnh cửu của tình yêu đôi lứa thủy chung."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Chim trống là bản giao hưởng màu sắc rực rỡ với mào lông tím - xanh, đôi 'cánh buồm' màu cam dựng đứng ở lưng và chiếc mỏ đỏ san hô.",
+      "diagnosticFeatures": [
+        {
+          "part": "Cánh buồm cam (Sail Feathers)",
+          "description": "Hai lông cánh thứ cấp mở rộng vểnh cao màu cam sáng như hai cánh buồm lướt sóng."
+        },
+        {
+          "part": "Mào gáy đa sắc",
+          "description": "Mào lông dài rủ từ đỉnh đầu xuống gáy đổi màu từ xanh lục, tím than đến nâu hung."
+        },
+        {
+          "part": "Mỏ đỏ san hô",
+          "description": "Mỏ màu đỏ tươi có móng mỏ màu trắng ngà."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "elevation": "50m - 1.000m",
+      "habitats": [
+        "Hồ nước ngọt vùng núi có rừng bao bọc",
+        "Khe sông êm ả"
+      ],
+      "locations": [
+        "Hồ Ba Bể (Bắc Kạn)",
+        "Hồ Núi Cốc (Thái Nguyên)",
+        "Sông Gâm"
+      ],
+      "coordinates": [
+        22.43,
+        105.61
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mandarin_Duck_%28Aix_galericulata%29_male.jpg/800px-Mandarin_Duck_%28Aix_galericulata%29_male.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Great Britain"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC331100-Mandarin_Duck.mp3",
+      "duration": "0:16",
+      "recordist": "Per Alström",
+      "location": "Ba Bể, Bắc Kạn"
+    }
+  },
+  {
+    "id": "hierococcyx-sparverioides",
+    "scientificName": "Hierococcyx sparverioides",
+    "vietnameseName": "Cu cu vằn",
+    "englishName": "Large Hawk-Cuckoo",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Otidimorphae"
+      ],
+      "order": "Cuculiformes",
+      "orderVietnamese": "Bộ Cu cu",
+      "family": "Cuculidae",
+      "familyVietnamese": "Họ Cu cu",
+      "genus": "Hierococcyx",
+      "species": "H. sparverioides"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). 'Kẻ giả dạng chim ưng' với tiếng kêu não nùng vang dội khắp núi rừng lúc đêm khuya mùa hạ."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Hình dáng và bộ lông sao chép hoàn hảo loài chim ưng với lưng xám tro, ức vằn đen trắng và mắt có vòng vàng sáng giúp xua đuổi chim chủ nhà khi đẻ trứng nhờ.",
+      "diagnosticFeatures": [
+        {
+          "part": "Ngụy trang chim ưng",
+          "description": "Lưng xám và ngực vằn ngang giống hệt chim ưng nhằm dọa nạt các loài chim khác rời tổ."
+        },
+        {
+          "part": "Vòng mắt vàng",
+          "description": "Vòng mí mắt màu vàng chanh sáng rực."
+        },
+        {
+          "part": "Mỏ cong nhọn",
+          "description": "Mỏ màu xanh xám sừng sắc sảo."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "elevation": "500m - 2.200m",
+      "habitats": [
+        "Tầng tán rừng thường xanh trên núi",
+        "Rừng thông và rừng hỗn giao"
+      ],
+      "locations": [
+        "VQG Hoàng Liên",
+        "VQG Tam Đảo",
+        "VQG Bidoup - Núi Bà"
+      ],
+      "coordinates": [
+        22.33,
+        103.83
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Large_Hawk-Cuckoo_%28Hierococcyx_sparverioides%29.jpg/800px-Large_Hawk-Cuckoo_%28Hierococcyx_sparverioides%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC115599-Large_Hawk-Cuckoo.mp3",
+      "duration": "0:29",
+      "recordist": "Pete Morris",
+      "location": "Sa Pa, Lào Cai"
+    }
+  },
+  {
+    "id": "carpococcyx-renauldi",
+    "scientificName": "Carpococcyx renauldi",
+    "vietnameseName": "Phướn đất mỏ đỏ",
+    "englishName": "Coral-billed Ground Cuckoo",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Otidimorphae"
+      ],
+      "order": "Cuculiformes",
+      "orderVietnamese": "Bộ Cu cu",
+      "family": "Cuculidae",
+      "familyVietnamese": "Họ Cu cu",
+      "genus": "Carpococcyx",
+      "species": "C. renauldi"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "VU",
+      "vietnamRedList": "VU",
+      "description": "Sắp nguy cấp (Vulnerable). Loài cu cu chạy đất khổng lồ tuyệt đẹp với chiếc mỏ đỏ san hô, da mặt tím xanh và đôi chân dài thoăn thoắt."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân to lớn đuôi dài màu xanh tím than ánh kim, ngực màu xám bạc tương phản với bụng đen, mỏ và chân đỏ san hô tươi tắn, da mặt xanh tím.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mỏ đỏ san hô",
+          "description": "Chiếc mỏ to khỏe màu đỏ san hô rực rỡ không thể nhầm lẫn."
+        },
+        {
+          "part": "Da mặt xanh tím",
+          "description": "Vùng da trần quanh mắt màu xanh lơ pha tím than rất kỳ ảo."
+        },
+        {
+          "part": "Chân chạy đất đỏ",
+          "description": "Đôi chân dài màu đỏ tươi giúp chạy thoăn thoắt trên nền rừng mục."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng Đất thấp miền Trung",
+      "elevation": "50m - 900m",
+      "habitats": [
+        "Rừng kín thường xanh mưa ẩm nhiệt đới",
+        "Thảm mục rừng nguyên sơ"
+      ],
+      "locations": [
+        "VQG Bạch Mã",
+        "VQG Cát Tiên",
+        "VQG Phong Nha - Kẻ Bàng",
+        "VQG Cúc Phương"
+      ],
+      "coordinates": [
+        16.21,
+        107.84
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Coral-billed_Ground_Cuckoo_%28Carpococcyx_renauldi%29.jpg/800px-Coral-billed_Ground_Cuckoo_%28Carpococcyx_renauldi%29.jpg",
+      "artist": "J. G. Keulemans",
+      "sourceBook": "Proceedings of the Zoological Society of London"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC772299-Coral-billed_Ground_Cuckoo.mp3",
+      "duration": "0:26",
+      "recordist": "Jonathan Eames",
+      "location": "Bạch Mã, Thừa Thiên Huế"
+    }
+  },
+  {
+    "id": "centropus-sinensis",
+    "scientificName": "Centropus sinensis",
+    "vietnameseName": "Bìm bịp lớn",
+    "englishName": "Greater Coucal",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Otidimorphae"
+      ],
+      "order": "Cuculiformes",
+      "orderVietnamese": "Bộ Cu cu",
+      "family": "Cuculidae",
+      "familyVietnamese": "Họ Cu cu",
+      "genus": "Centropus",
+      "species": "C. sinensis"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Âm thanh quen thuộc 'bịp-bịp' của đồng quê Việt Nam với đôi cánh màu hung đỏ hạt dẻ và mắt đỏ rực."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu đen ánh tím than, cánh màu nâu hạt dẻ hung đỏ sáng, đôi mắt đỏ rực như than hồng và chiếc đuôi đen dài bóng mượt.",
+      "diagnosticFeatures": [
+        {
+          "part": "Cánh hung đỏ hạt dẻ",
+          "description": "Toàn bộ lông cánh màu nâu hạt dẻ sáng tương phản với thân đen tuyền."
+        },
+        {
+          "part": "Mắt đỏ ruby",
+          "description": "Đôi mắt tròn xoe màu đỏ tươi rực sáng."
+        },
+        {
+          "part": "Móng sau dài thẳng",
+          "description": "Móng của ngón chân sau dài và thẳng như cựa gà giúp leo trèo bụi rậm."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 1.200m",
+      "habitats": [
+        "Bụi rậm ngập nước",
+        "Bờ ruộng và bìa rừng thứ sinh",
+        "Ven sông rạch"
+      ],
+      "locations": [
+        "Đồng bằng Sông Hồng",
+        "Đồng bằng Sông Cửu Long",
+        "VQG Cát Tiên"
+      ],
+      "coordinates": [
+        10.5,
+        106.2
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Greater_Coucal_%28Centropus_sinensis%29.jpg/800px-Greater_Coucal_%28Centropus_sinensis%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC335588-Greater_Coucal.mp3",
+      "duration": "0:21",
+      "recordist": "Nguyen Van Thang",
+      "location": "Đồng Nai"
+    }
+  },
+  {
+    "id": "harpactes-erythrocephalus",
+    "scientificName": "Harpactes erythrocephalus",
+    "vietnameseName": "Nuốc bụng đỏ",
+    "englishName": "Red-headed Trogon",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Trogoniformes"
+      ],
+      "order": "Trogoniformes",
+      "orderVietnamese": "Bộ Nuốc",
+      "family": "Trogonidae",
+      "familyVietnamese": "Họ Nuốc",
+      "genus": "Harpactes",
+      "species": "H. erythrocephalus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Viên hồng ngọc lộng lẫy của rừng nhiệt đới với đầu và bụng màu đỏ thắm rực rỡ và vòng mắt xanh coban."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Đầu và toàn bộ bụng màu đỏ thắm chói lọi, vòng cổ màu trắng mảnh, lưng màu nâu quế ấm áp, vòng mi mắt trần màu xanh coban kỳ ảo.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đầu và bụng đỏ son",
+          "description": "Màu đỏ thắm rực rỡ phủ trọn từ đỉnh đầu, họng đến toàn bộ bụng dưới."
+        },
+        {
+          "part": "Vòng cổ trắng mảnh",
+          "description": "Vạch viền trắng tinh khiết ngăn cách ngực đỏ và bụng đỏ."
+        },
+        {
+          "part": "Vòng mắt xanh coban",
+          "description": "Mảng da trần quanh mắt có màu xanh da trời biếc lộng lẫy."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "elevation": "300m - 1.800m",
+      "habitats": [
+        "Tầng giữa rừng nguyên sinh ẩm nhiệt đới",
+        "Khe thung lũng râm mát"
+      ],
+      "locations": [
+        "VQG Tam Đảo (Vĩnh Phúc)",
+        "VQG Cúc Phương",
+        "VQG Bạch Mã",
+        "VQG Bidoup - Núi Bà"
+      ],
+      "coordinates": [
+        21.45,
+        105.64
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Red-headed_Trogon_%28Harpactes_erythrocephalus%29.jpg/800px-Red-headed_Trogon_%28Harpactes_erythrocephalus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Monograph of the Trogonidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC661133-Red-headed_Trogon.mp3",
+      "duration": "0:20",
+      "recordist": "David Farrow",
+      "location": "Tam Đảo, Vĩnh Phúc"
+    }
+  },
+  {
+    "id": "harpactes-oreskios",
+    "scientificName": "Harpactes oreskios",
+    "vietnameseName": "Nuốc đuôi vàng",
+    "englishName": "Orange-breasted Trogon",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Trogoniformes"
+      ],
+      "order": "Trogoniformes",
+      "orderVietnamese": "Bộ Nuốc",
+      "family": "Trogonidae",
+      "familyVietnamese": "Họ Nuốc",
+      "genus": "Harpactes",
+      "species": "H. oreskios"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Nuốc rừng đất thấp với ức màu cam rực lửa chuyển dần sang vàng chanh tươi sáng ở bụng."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Đầu màu xanh ô-liu ánh vàng, ngực màu cam tươi rực rỡ, bụng màu vàng chanh, lưng nâu hạt dẻ và vòng mắt màu xanh lơ.",
+      "diagnosticFeatures": [
+        {
+          "part": "Ức cam rực lửa",
+          "description": "Mảng ngực màu cam tươi chuyển mềm mại sang màu vàng chanh ở bụng dưới."
+        },
+        {
+          "part": "Đầu xanh ô-liu",
+          "description": "Đầu và cổ phủ màu xanh ô-liu phớt vàng ánh kim."
+        },
+        {
+          "part": "Cánh vằn đen trắng",
+          "description": "Lông cánh thứ cấp có các đường vạch ngang đen trắng mịn màng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "50m - 1.000m",
+      "habitats": [
+        "Rừng thường xanh đất thấp",
+        "Rừng tre nứa ven bờ suối"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Bù Gia Mập",
+        "VQG Bạch Mã"
+      ],
+      "coordinates": [
+        11.43,
+        107.41
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Orange-breasted_Trogon_%28Harpactes_oreskios%29.jpg/800px-Orange-breasted_Trogon_%28Harpactes_oreskios%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Monograph of the Trogonidae"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC229988-Orange-breasted_Trogon.mp3",
+      "duration": "0:17",
+      "recordist": "Frank Lambert",
+      "location": "Cát Tiên, Đồng Nai"
+    }
+  },
+  {
+    "id": "microhierax-melanoleucos",
+    "scientificName": "Microhierax melanoleucos",
+    "vietnameseName": "Cắt nhỏ bụng trắng",
+    "englishName": "Pied Falconet",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Falconimorphae"
+      ],
+      "order": "Falconiformes",
+      "orderVietnamese": "Bộ Cắt",
+      "family": "Falconidae",
+      "familyVietnamese": "Họ Cắt",
+      "genus": "Microhierax",
+      "species": "M. melanoleucos"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Loài chim săn mồi tí hon nhất thế giới (chỉ dài 15cm) nhưng săn bướm và chuồn chuồn với tốc độ tên lửa."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu đen bóng tương phản với bụng và họng trắng tinh khiết, mặt nạ đen vắt qua mắt, mỏ quặp sắc lẻm như đại bàng thu nhỏ.",
+      "diagnosticFeatures": [
+        {
+          "part": "Tương phản đen trắng",
+          "description": "Lưng đen nhánh bóng mượt tương phản trực diện với bụng trắng tuyết."
+        },
+        {
+          "part": "Mặt nạ đen",
+          "description": "Dải lông đen quanh mắt kéo dài ra sau đầu."
+        },
+        {
+          "part": "Kích thước tí hon",
+          "description": "Toàn thân chỉ to bằng nắm tay người lớn nhưng mang đầy đủ vũ khí của loài chim ưng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "elevation": "100m - 1.000m",
+      "habitats": [
+        "Khoảng rừng trống ven sông",
+        "Cành cây khô ngọn cây cao đón nắng"
+      ],
+      "locations": [
+        "VQG Cúc Phương (Ninh Bình)",
+        "VQG Ba Bể",
+        "VQG Bạch Mã"
+      ],
+      "coordinates": [
+        20.29,
+        105.58
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Pied_Falconet_%28Microhierax_melanoleucos%29.jpg/800px-Pied_Falconet_%28Microhierax_melanoleucos%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Asia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC558822-Pied_Falconet.mp3",
+      "duration": "0:13",
+      "recordist": "Pete Morris",
+      "location": "Cúc Phương, Ninh Bình"
+    }
+  },
+  {
+    "id": "caprimulgus-macrurus",
+    "scientificName": "Caprimulgus macrurus",
+    "vietnameseName": "Cú muỗi đuôi dài",
+    "englishName": "Large-tailed Nightjar",
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Caprimulgimorphae"
+      ],
+      "order": "Caprimulgiformes",
+      "orderVietnamese": "Bộ Cú muỗi",
+      "family": "Caprimulgidae",
+      "familyVietnamese": "Họ Cú muỗi",
+      "genus": "Caprimulgus",
+      "species": "C. macrurus"
+    },
+    "isEndemic": false,
+    "conservation": {
+      "iucn": "LC",
+      "description": "Ít quan tâm (Least Concern). Bậc thầy tàng hình với tiếng gõ đều đặn 'chúc-chúc-chúc' như tiếng đóng cọc vào đêm trăng thanh."
+    },
+    "morphologicalAnalysis": {
+      "overview": "Thân màu nâu xám rằn ri như lá khô mục, miệng rộng hoác có ria mép dài bắt côn trùng khi bay đêm, đuôi dài có chóp trắng lớn ở góc đuôi.",
+      "diagnosticFeatures": [
+        {
+          "part": "Ngụy trang lá mục",
+          "description": "Họa tiết đốm nâu đen xám hòa lẫn tuyệt đối vào thảm lá rụng ban ngày."
+        },
+        {
+          "part": "Miệng rộng có ria",
+          "description": "Khoang miệng mở rộng với hàng lông ria cứng quanh mép như chiếc vợt bắt muỗi."
+        },
+        {
+          "part": "Đốm trắng đuôi và cánh",
+          "description": "Mảng trắng lớn ở chóp cánh và hai góc đuôi phát sáng khi chim bay trong đêm."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "elevation": "0m - 1.200m",
+      "habitats": [
+        "Đường mòn ven rừng",
+        "Trảng cây bụi khô ven biển",
+        "Bìa rừng cao su"
+      ],
+      "locations": [
+        "VQG Cát Tiên",
+        "VQG Côn Đảo",
+        "VQG Yok Đôn"
+      ],
+      "coordinates": [
+        11.41,
+        107.38
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Large-tailed_Nightjar_%28Caprimulgus_macrurus%29.jpg/800px-Large-tailed_Nightjar_%28Caprimulgus_macrurus%29.jpg",
+      "artist": "John Gould",
+      "sourceBook": "Birds of Australia"
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC117766-Large-tailed_Nightjar.mp3",
+      "duration": "0:25",
+      "recordist": "David Farrow",
+      "location": "Cát Tiên, Đồng Nai"
+    }
+  }
+]
