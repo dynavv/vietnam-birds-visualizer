@@ -5,7 +5,6 @@ import 'leaflet/dist/leaflet.css';
 import {
   Compass,
   Layers,
-  Sparkles,
   Trees,
   ChevronRight
 } from 'lucide-react';
@@ -202,11 +201,11 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         className="w-full h-full z-0"
         style={{ height: '100%', width: '100%', background: '#FAF8F5' }}
       >
-        {/* OpenStreetMap Clean TileLayer */}
+        {/* CartoDB Voyager TileLayer */}
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          subdomains={['a', 'b', 'c']}
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+          subdomains={['a', 'b', 'c', 'd']}
         />
 
         <MapFlyToController target={flyTarget} />
@@ -364,17 +363,17 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         )}
       </MapContainer>
 
-      {/* Floating Left Panel: Endemic Focus Card (Desktop) */}
-      <div className="hidden md:block absolute top-4 left-4 z-10 max-w-sm lg:max-w-md pointer-events-auto">
-        <EndemicFocusCard />
-      </div>
-
-      {/* Floating Right Panel: EBA Region Legend (Desktop) */}
-      <div className="hidden lg:block absolute top-4 right-4 z-10 max-w-xs lg:max-w-sm pointer-events-auto">
+      {/* Floating Left Panel: EBA Region Legend (Desktop) */}
+      <div className="hidden lg:block absolute top-4 left-4 z-10 max-w-xs lg:max-w-sm pointer-events-auto">
         <EBARegionLegend
           selectedRegionId={selectedEBARegionId}
           onSelectRegion={handleSelectRegion}
         />
+      </div>
+
+      {/* Floating Right Panel: Endemic Focus Card (Desktop) */}
+      <div className="hidden md:block absolute top-4 right-4 z-10 max-w-sm lg:max-w-md pointer-events-auto">
+        <EndemicFocusCard />
       </div>
 
       {/* Mobile Drawer Floating Panel */}
@@ -463,12 +462,6 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
           >
             6 Vùng EBA
           </button>
-        </div>
-
-        {/* Right Corner Naturalist Badge */}
-        <div className="hidden sm:flex items-center gap-1.5 pointer-events-auto bg-paper-100/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-paper-border shadow-paper-card text-[11px] text-ink-600 font-serif italic">
-          <Sparkles className="w-3.5 h-3.5 text-natural-ochre flex-shrink-0" />
-          <span>Bản đồ Điểu học Việt Nam</span>
         </div>
 
       </div>
