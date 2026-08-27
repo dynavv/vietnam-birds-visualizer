@@ -58,8 +58,7 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({ className = '' }) =>
           type="button"
           onClick={() => setActiveView('map')}
           aria-label="Quay về trang chính Bản đồ Sinh thái EBA"
-          title="Quay về trang chính (Bản đồ Sinh thái EBA)"
-          className="flex items-center space-x-3.5 self-start md:self-auto text-left group cursor-pointer transition-all hover:opacity-95 focus:outline-none"
+          className="flex items-center space-x-3.5 self-start md:self-auto text-left group cursor-pointer transition-all hover:opacity-95 outline-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 active:outline-none select-none border-0 bg-transparent p-0"
         >
           <div className="p-2.5 bg-natural-moss/10 group-hover:bg-natural-moss/20 rounded-xl text-natural-moss border border-natural-moss/20 shadow-sm flex items-center justify-center transition-colors">
             <Feather className="w-6 h-6 transform -rotate-12 group-hover:scale-110 transition-transform" />
