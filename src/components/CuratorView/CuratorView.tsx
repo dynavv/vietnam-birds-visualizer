@@ -18,6 +18,7 @@ import { SpecimenPlate } from './SpecimenPlate';
 import { CladeBadgeSequence } from './CladeBadgeSequence';
 import { MorphologyReport } from './MorphologyReport';
 import { RelatedSpeciesTabs } from './RelatedSpeciesTabs';
+import { AcademicReferences } from './AcademicReferences';
 
 export interface CuratorViewProps {
   species?: BirdSpecies | null;
@@ -286,6 +287,9 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
           <div className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card">
             <MorphologyReport species={species} />
           </div>
+
+          {/* Academic Identifiers & Primary Literature References */}
+          <AcademicReferences species={species} />
         </div>
       </div>
     </div>

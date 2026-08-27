@@ -68,6 +68,29 @@
       "duration": "0:24",
       "recordist": "Dao Van Tien",
       "location": "Đỉnh Ngọc Linh, Kon Tum"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
+      "avibaseId": "AVIBASE-TROCHALOPTERON-NGOCLINHENSE",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Trochalopteron%20ngoclinhense",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Trochalopteron%20ngoclinhense",
+      "primaryLiterature": [
+        {
+          "authors": "Eames, J. C., Le Trong Trai, & Nguyen Cu",
+          "year": 1999,
+          "title": "A new species of Laughingthrush (Passeriformes: Garrulacinae) from the Western Highlands of Vietnam",
+          "journalOrBook": "Bulletin of the British Ornithologists' Club",
+          "volumeOrPages": "119(4): 216-224",
+          "doiOrUrl": "https://www.biodiversitylibrary.org/part/109724"
+        },
+        {
+          "authors": "Collar, N. J. & Robson, C.",
+          "year": 2007,
+          "title": "Family Timaliidae (Babblers)",
+          "journalOrBook": "Handbook of the Birds of the World, Vol. 12: Picathartes to Tits and Chickadees",
+          "volumeOrPages": "pp. 70-291, Lynx Edicions"
+        }
+      ]
     }
   },
   {
@@ -138,6 +161,22 @@
       "duration": "0:31",
       "recordist": "Jonathan Eames",
       "location": "VQG Kon Ka Kinh, Gia Lai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-IANTHOCI",
+      "avibaseId": "AVIBASE-IANTHOCINCLA-KONKAKINHENSIS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Ianthocincla%20konkakinhensis",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Ianthocincla%20konkakinhensis",
+      "primaryLiterature": [
+        {
+          "authors": "Eames, J. C. & Eames, C.",
+          "year": 2001,
+          "title": "A new species of Laughingthrush (Passeriformes: Garrulacinae) from the Central Highlands of Vietnam",
+          "journalOrBook": "Bulletin of the British Ornithologists' Club",
+          "volumeOrPages": "121(1): 10-23",
+          "doiOrUrl": "https://www.biodiversitylibrary.org/part/109765"
+        }
+      ]
     }
   },
   {
@@ -210,6 +249,29 @@
       "duration": "0:19",
       "recordist": "Craig Robson",
       "location": "Bidoup, Lâm Đồng"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-LIOCHICL",
+      "avibaseId": "AVIBASE-LIOCHICLA-LANGBIANIS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Liochicla%20langbianis",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Liochicla%20langbianis",
+      "primaryLiterature": [
+        {
+          "authors": "Gyldenstolpe, N.",
+          "year": 1939,
+          "title": "On a remarkable new Babbler from French Indo-China",
+          "journalOrBook": "Arkiv för Zoologi",
+          "volumeOrPages": "31B(3): 1-4"
+        },
+        {
+          "authors": "Eames, J. C., Nguyen Cu, Le Trong Trai, & Eve, R.",
+          "year": 1995,
+          "title": "Rediscovery of the Grey-crowned Crocias Crocias langbianis in Vietnam",
+          "journalOrBook": "Bird Conservation International",
+          "volumeOrPages": "5(4): 523-535",
+          "doiOrUrl": "https://doi.org/10.1017/S095927090000122X"
+        }
+      ]
     }
   },
   {
@@ -281,6 +343,35 @@
       "duration": "0:28",
       "recordist": "Pete Morris",
       "location": "Đỉnh Bidoup, Lâm Đồng"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
+      "avibaseId": "AVIBASE-TROCHALOPTERON-YERSINI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Trochalopteron%20yersini",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Trochalopteron%20yersini",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -352,6 +443,22 @@
       "duration": "0:22",
       "recordist": "Jonathan Eames",
       "location": "Đắk Glei, Kon Tum"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-ACTINODU",
+      "avibaseId": "AVIBASE-ACTINODURA-SODANGORUM",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Actinodura%20sodangorum",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Actinodura%20sodangorum",
+      "primaryLiterature": [
+        {
+          "authors": "Eames, J. C., Le Trong Trai, Nguyen Cu, & Eve, R.",
+          "year": 1999,
+          "title": "New species of Barwing Actinodura (Passeriformes: Sylviinae: Timaliini) from the Western Highlands of Vietnam",
+          "journalOrBook": "Ibis (International Journal of Avian Science)",
+          "volumeOrPages": "141(1): 1-10",
+          "doiOrUrl": "https://doi.org/10.1111/j.1474-919X.1999.tb04257.x"
+        }
+      ]
     }
   },
   {
@@ -422,6 +529,29 @@
       "duration": "0:15",
       "recordist": "BirdLife International Conservation Archive",
       "location": "Kẻ Gỗ, Hà Tĩnh"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-GAL-LOPHURA-",
+      "avibaseId": "AVIBASE-LOPHURA-EDWARDSI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Lophura%20edwardsi",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Lophura%20edwardsi",
+      "primaryLiterature": [
+        {
+          "authors": "Oustalet, E.",
+          "year": 1896,
+          "title": "Description de cinq espèces nouvelles d'oiseaux appartenant au Muséum d'histoire naturelle et provenant de la Chine et de l'Indo-Chine",
+          "journalOrBook": "Bulletin du Muséum d'Histoire Naturelle",
+          "volumeOrPages": "2(7): 314-317",
+          "doiOrUrl": "https://www.biodiversitylibrary.org/page/5028445"
+        },
+        {
+          "authors": "Delacour, J. & Jabouille, P.",
+          "year": 1931,
+          "title": "Les Oiseaux de l'Indochine Française",
+          "journalOrBook": "Exposition Coloniale Internationale, Paris",
+          "volumeOrPages": "Tome I, pp. 248-254"
+        }
+      ]
     }
   },
   {
@@ -492,6 +622,35 @@
       "duration": "0:20",
       "recordist": "Frank Lambert",
       "location": "VQG Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-GAL-POLYPLEC",
+      "avibaseId": "AVIBASE-POLYPLECTRON-GERMAINI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Polyplectron%20germaini",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Polyplectron%20germaini",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -563,6 +722,21 @@
       "duration": "0:17",
       "recordist": "Nguyen Hoang Hao",
       "location": "Đà Lạt, Lâm Đồng"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-CHLORIS-",
+      "avibaseId": "AVIBASE-CHLORIS-MONGUILLOTI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Chloris%20monguilloti",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Chloris%20monguilloti",
+      "primaryLiterature": [
+        {
+          "authors": "Delacour, J.",
+          "year": 1926,
+          "title": "Descriptions of fifteen new species and subspecies of birds from Annam and Tonkin",
+          "journalOrBook": "Bulletin of the British Ornithologists' Club",
+          "volumeOrPages": "47: 8-22"
+        }
+      ]
     }
   },
   {
@@ -634,6 +808,35 @@
       "duration": "0:25",
       "recordist": "Peter Boesman",
       "location": "Nam Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-MACRONUS",
+      "avibaseId": "AVIBASE-MACRONUS-KELLEYI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Mixornis%20kelleyi",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Mixornis%20kelleyi",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -705,6 +908,21 @@
       "duration": "0:21",
       "recordist": "Per Alström",
       "location": "Sa Pa, Lào Cai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-RIMATOR-",
+      "avibaseId": "AVIBASE-RIMATOR-PASQUIERI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Rimator%20pasquieri",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Rimator%20pasquieri",
+      "primaryLiterature": [
+        {
+          "authors": "Delacour, J.",
+          "year": 1930,
+          "title": "Description de trente oiseaux de l'Indochine Française",
+          "journalOrBook": "L'Oiseau et la Revue Française d'Ornithologie",
+          "volumeOrPages": "11: 611-699"
+        }
+      ]
     }
   },
   {
@@ -776,6 +994,35 @@
       "duration": "0:16",
       "recordist": "Jonathan Eames",
       "location": "Phong Nha, Quảng Bình"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-STACHYRI",
+      "avibaseId": "AVIBASE-STACHYRIS-HERBERTI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Stachyris%20herberti",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Stachyris%20herberti",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -847,6 +1094,35 @@
       "duration": "0:27",
       "recordist": "Per Alström",
       "location": "Đèo Trạm Tôn, Sa Pa"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
+      "avibaseId": "AVIBASE-TROCHALOPTERON-FORMOSUM-GREENWAYI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Trochalopteron%20formosum%20greenwayi",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Trochalopteron%20formosum%20greenwayi",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -918,6 +1194,35 @@
       "duration": "0:23",
       "recordist": "Nguyen Manh Hiep",
       "location": "Sa Pa, Lào Cai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
+      "avibaseId": "AVIBASE-TROCHALOPTERON-MILNEI-SHARPEI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Trochalopteron%20milnei%20sharpei",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Trochalopteron%20milnei%20sharpei",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -989,6 +1294,35 @@
       "duration": "0:18",
       "recordist": "Craig Robson",
       "location": "Bidoup, Lâm Đồng"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-PSITTIPA",
+      "avibaseId": "AVIBASE-PSITTIPARUS-BAKERI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Psittiparus%20bakeri",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Psittiparus%20bakeri",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1059,6 +1393,35 @@
       "duration": "0:35",
       "recordist": "BirdLife Indochina Field Team",
       "location": "VQG Bạch Mã, Thừa Thiên Huế"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-GAL-RHEINARD",
+      "avibaseId": "AVIBASE-RHEINARDIA-OCELLATA",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Rheinardia%20ocellata",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Rheinardia%20ocellata",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1129,6 +1492,35 @@
       "duration": "0:30",
       "recordist": "Ding Chen",
       "location": "Ba Bể, Bắc Kạn"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-GARRULAX",
+      "avibaseId": "AVIBASE-GARRULAX-CANORUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Garrulax%20canorus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Garrulax%20canorus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1199,6 +1591,35 @@
       "duration": "0:14",
       "recordist": "David Farrow",
       "location": "Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-CYORNIS-",
+      "avibaseId": "AVIBASE-CYORNIS-RUBECULOIDES",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Cyornis%20rubeculoides",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Cyornis%20rubeculoides",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1269,6 +1690,35 @@
       "duration": "0:12",
       "recordist": "Per Alström",
       "location": "Hoàng Liên Sơn, Sa Pa"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-AETHOPYG",
+      "avibaseId": "AVIBASE-AETHOPYGA-SATURATA",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Aethopyga%20saturata",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Aethopyga%20saturata",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1339,6 +1789,35 @@
       "duration": "0:21",
       "recordist": "Nguyen Van Thang",
       "location": "Hà Nội"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-LANIUS-S",
+      "avibaseId": "AVIBASE-LANIUS-SCHACH",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Lanius%20schach",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Lanius%20schach",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1409,6 +1888,35 @@
       "duration": "0:16",
       "recordist": "Frank Lambert",
       "location": "Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-PITTA-MO",
+      "avibaseId": "AVIBASE-PITTA-MOLUCCENSIS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Pitta%20moluccensis",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Pitta%20moluccensis",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1480,6 +1988,35 @@
       "duration": "0:20",
       "recordist": "Nguyen Van Thang",
       "location": "Ba Vì, Hà Nội"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-ORIOLUS-",
+      "avibaseId": "AVIBASE-ORIOLUS-CHINENSIS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Oriolus%20chinensis",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Oriolus%20chinensis",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1550,6 +2087,35 @@
       "duration": "0:26",
       "recordist": "David Farrow",
       "location": "Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-COPSYCHU",
+      "avibaseId": "AVIBASE-COPSYCHUS-MALABARICUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Copsychus%20malabaricus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Copsychus%20malabaricus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1620,6 +2186,35 @@
       "duration": "0:25",
       "recordist": "Frank Lambert",
       "location": "Pù Mát, Nghệ An"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-DICRURUS",
+      "avibaseId": "AVIBASE-DICRURUS-PARADISEUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Dicrurus%20paradiseus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Dicrurus%20paradiseus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1690,6 +2285,35 @@
       "duration": "0:22",
       "recordist": "Pete Morris",
       "location": "Cúc Phương, Ninh Bình"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-GARRULAX",
+      "avibaseId": "AVIBASE-GARRULAX-CHINENSIS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Garrulax%20chinensis",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Garrulax%20chinensis",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1761,6 +2385,35 @@
       "duration": "0:19",
       "recordist": "David Farrow",
       "location": "Tam Đảo, Vĩnh Phúc"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-PSARISOM",
+      "avibaseId": "AVIBASE-PSARISOMUS-DALHOUSIAE",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Psarisomus%20dalhousiae",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Psarisomus%20dalhousiae",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1831,6 +2484,35 @@
       "duration": "0:18",
       "recordist": "Frank Lambert",
       "location": "Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-GAL-LOPHURA-",
+      "avibaseId": "AVIBASE-LOPHURA-DIARDI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Lophura%20diardi",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Lophura%20diardi",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1901,6 +2583,35 @@
       "duration": "0:24",
       "recordist": "Per Alström",
       "location": "Cúc Phương, Ninh Bình"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-GAL-POLYPLEC",
+      "avibaseId": "AVIBASE-POLYPLECTRON-BICALCARATUM",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Polyplectron%20bicalcaratum",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Polyplectron%20bicalcaratum",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -1970,6 +2681,35 @@
       "duration": "0:27",
       "recordist": "Jonathan Eames",
       "location": "Kon Ka Kinh, Gia Lai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-GAL-ARBOROPH",
+      "avibaseId": "AVIBASE-ARBOROPHILA-BRUNNEOPECTUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Arborophila%20brunneopectus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Arborophila%20brunneopectus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2040,6 +2780,35 @@
       "duration": "0:15",
       "recordist": "Nguyen Hoang Hao",
       "location": "Yok Đôn, Đắk Lắk"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-GAL-GALLUS-G",
+      "avibaseId": "AVIBASE-GALLUS-GALLUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Gallus%20gallus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Gallus%20gallus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2111,6 +2880,29 @@
       "duration": "0:25",
       "recordist": "Frank Lambert",
       "location": "Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-BUC-BUCEROS-",
+      "avibaseId": "AVIBASE-BUCEROS-BICORNIS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Buceros%20bicornis",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Buceros%20bicornis",
+      "primaryLiterature": [
+        {
+          "authors": "Linnaeus, C.",
+          "year": 1758,
+          "title": "Systema Naturae per regna tria naturae, secundum classes, ordines, genera, species",
+          "journalOrBook": "Laurentii Salvii, Holmiae (Stockholm)",
+          "volumeOrPages": "Ed. 10, Tomus I: 104",
+          "doiOrUrl": "https://doi.org/10.5962/bhl.title.542"
+        },
+        {
+          "authors": "Kemp, A. C.",
+          "year": 1995,
+          "title": "The Hornbills: Bucerotiformes",
+          "journalOrBook": "Bird Families of the World, Oxford University Press",
+          "volumeOrPages": "pp. 176-183"
+        }
+      ]
     }
   },
   {
@@ -2182,6 +2974,35 @@
       "duration": "0:21",
       "recordist": "Peter Boesman",
       "location": "Bạch Mã, Thừa Thiên Huế"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-BUC-RHYTICER",
+      "avibaseId": "AVIBASE-RHYTICEROS-UNDULATUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Rhyticeros%20undulatus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Rhyticeros%20undulatus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2251,6 +3072,35 @@
       "duration": "0:23",
       "recordist": "Jonathan Eames",
       "location": "Bạch Mã, Thừa Thiên Huế"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-BUC-ANORRHIN",
+      "avibaseId": "AVIBASE-ANORRHINUS-TICKELLI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Anorrhinus%20tickelli",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Anorrhinus%20tickelli",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2323,6 +3173,35 @@
       "duration": "0:17",
       "recordist": "David Farrow",
       "location": "Yok Đôn, Đắk Lắk"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-BUC-UPUPA-EP",
+      "avibaseId": "AVIBASE-UPUPA-EPOPS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Upupa%20epops",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Upupa%20epops",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2393,6 +3272,35 @@
       "duration": "0:14",
       "recordist": "Per Alström",
       "location": "Sa Pa, Lào Cai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-COR-MEGACERY",
+      "avibaseId": "AVIBASE-MEGACERYLE-LUGUBRIS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Megaceryle%20lugubris",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Megaceryle%20lugubris",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2464,6 +3372,35 @@
       "duration": "0:19",
       "recordist": "Frank Lambert",
       "location": "Bàu Sấu, Nam Cát Tiên"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-COR-PELARGOP",
+      "avibaseId": "AVIBASE-PELARGOPSIS-CAPENSIS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Pelargopsis%20capensis",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Pelargopsis%20capensis",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2534,6 +3471,35 @@
       "duration": "0:16",
       "recordist": "Nguyen Van Thang",
       "location": "Xuân Thủy, Nam Định"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-COR-HALCYON-",
+      "avibaseId": "AVIBASE-HALCYON-PILEATA",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Halcyon%20pileata",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Halcyon%20pileata",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2604,6 +3570,35 @@
       "duration": "0:13",
       "recordist": "Craig Robson",
       "location": "Ba Bể, Bắc Kạn"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-COR-ALCEDO-H",
+      "avibaseId": "AVIBASE-ALCEDO-HERCULES",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Alcedo%20hercules",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Alcedo%20hercules",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2674,6 +3669,35 @@
       "duration": "0:15",
       "recordist": "David Farrow",
       "location": "Yok Đôn, Đắk Lắk"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-COR-CORACIAS",
+      "avibaseId": "AVIBASE-CORACIAS-AFFINIS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Coracias%20affinis",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Coracias%20affinis",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2746,6 +3770,35 @@
       "duration": "0:28",
       "recordist": "Nguyen Van Thang",
       "location": "Thảo Cầm Viên, TP.HCM"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PIC-PSILOPOG",
+      "avibaseId": "AVIBASE-PSILOPOGON-HAEMACEPHALUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Psilopogon%20haemacephalus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Psilopogon%20haemacephalus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2816,6 +3869,35 @@
       "duration": "0:20",
       "recordist": "Jonathan Eames",
       "location": "Ba Bể, Bắc Kạn"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PIC-PSILOPOG",
+      "avibaseId": "AVIBASE-PSILOPOGON-FABER",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Psilopogon%20faber",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Psilopogon%20faber",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2888,6 +3970,35 @@
       "duration": "0:18",
       "recordist": "Pete Morris",
       "location": "Phong Nha, Quảng Bình"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PIC-PICUS-RA",
+      "avibaseId": "AVIBASE-PICUS-RABIERI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Picus%20rabieri",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Picus%20rabieri",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -2959,6 +4070,35 @@
       "duration": "0:21",
       "recordist": "Frank Lambert",
       "location": "Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PIC-CHRYSOCO",
+      "avibaseId": "AVIBASE-CHRYSOCOLAPTES-GUTTACRISTATUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Chrysocolaptes%20guttacristatus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Chrysocolaptes%20guttacristatus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3030,6 +4170,35 @@
       "duration": "0:17",
       "recordist": "David Farrow",
       "location": "Bidoup, Lâm Đồng"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-ACC-ICTINAET",
+      "avibaseId": "AVIBASE-ICTINAETUS-MALAIENSIS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Ictinaetus%20malaiensis",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Ictinaetus%20malaiensis",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3100,6 +4269,35 @@
       "duration": "0:22",
       "recordist": "Frank Lambert",
       "location": "Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-ACC-SPILORNI",
+      "avibaseId": "AVIBASE-SPILORNIS-CHEELA",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Spilornis%20cheela",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Spilornis%20cheela",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3170,6 +4368,35 @@
       "duration": "0:15",
       "recordist": "Peter Boesman",
       "location": "Tam Đảo, Vĩnh Phúc"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-ACC-PERNIS-P",
+      "avibaseId": "AVIBASE-PERNIS-PTILORHYNCHUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Pernis%20ptilorhynchus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Pernis%20ptilorhynchus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3240,6 +4467,35 @@
       "duration": "0:12",
       "recordist": "Nguyen Van Thang",
       "location": "Tràm Chim, Đồng Tháp"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-ACC-ELANUS-C",
+      "avibaseId": "AVIBASE-ELANUS-CAERULEUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Elanus%20caeruleus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Elanus%20caeruleus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3311,6 +4567,35 @@
       "duration": "0:24",
       "recordist": "Frank Lambert",
       "location": "Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-STR-KETUPA-Z",
+      "avibaseId": "AVIBASE-KETUPA-ZEYLONENSIS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Ketupa%20zeylonensis",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Ketupa%20zeylonensis",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3383,6 +4668,35 @@
       "duration": "0:20",
       "recordist": "Nguyen Manh Hiep",
       "location": "Ba Vì, Hà Nội"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-STR-OTUS-LET",
+      "avibaseId": "AVIBASE-OTUS-LETTIA",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Otus%20lettia",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Otus%20lettia",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3453,6 +4767,35 @@
       "duration": "0:18",
       "recordist": "David Farrow",
       "location": "Bidoup, Lâm Đồng"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-STR-GLAUCIDI",
+      "avibaseId": "AVIBASE-GLAUCIDIUM-BRODIEI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Glaucidium%20brodiei",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Glaucidium%20brodiei",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3524,6 +4867,35 @@
       "duration": "0:15",
       "recordist": "BirdLife Cambodia/Vietnam Archive",
       "location": "Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PEL-PSEUDIBI",
+      "avibaseId": "AVIBASE-PSEUDIBIS-DAVISONI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Pseudibis%20davisoni",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Pseudibis%20davisoni",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3595,6 +4967,35 @@
       "duration": "0:14",
       "recordist": "Nguyen Van Thang",
       "location": "Xuân Thủy, Nam Định"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PEL-PLATALEA",
+      "avibaseId": "AVIBASE-PLATALEA-MINOR",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Platalea%20minor",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Platalea%20minor",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3667,6 +5068,35 @@
       "duration": "0:16",
       "recordist": "Frank Lambert",
       "location": "Tràm Chim, Đồng Tháp"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-CIC-LEPTOPTI",
+      "avibaseId": "AVIBASE-LEPTOPTILOS-JAVANICUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Leptoptilos%20javanicus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Leptoptilos%20javanicus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3737,6 +5167,35 @@
       "duration": "0:21",
       "recordist": "David Farrow",
       "location": "Cúc Phương, Ninh Bình"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PEL-GORSACHI",
+      "avibaseId": "AVIBASE-GORSACHIUS-MELANOLOPHUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Gorsachius%20melanolophus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Gorsachius%20melanolophus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3808,6 +5267,35 @@
       "duration": "0:30",
       "recordist": "Tran Triet",
       "location": "Tràm Chim, Tam Nông, Đồng Tháp"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-GRU-ANTIGONE",
+      "avibaseId": "AVIBASE-ANTIGONE-ANTIGONE",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Antigone%20antigone",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Antigone%20antigone",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3879,6 +5367,35 @@
       "duration": "0:19",
       "recordist": "Frank Lambert",
       "location": "Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-GRU-RALLINA-",
+      "avibaseId": "AVIBASE-RALLINA-FASCIATA",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Rallina%20fasciata",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Rallina%20fasciata",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -3950,6 +5467,35 @@
       "duration": "0:21",
       "recordist": "Nguyen Van Thang",
       "location": "Vân Long, Ninh Bình"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-GRU-PORPHYRI",
+      "avibaseId": "AVIBASE-PORPHYRIO-POLIOCEPHALUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Porphyrio%20poliocephalus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Porphyrio%20poliocephalus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -4021,6 +5567,35 @@
       "duration": "0:14",
       "recordist": "BirdLife Seabird Programme",
       "location": "Côn Đảo"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-COL-CALOENAS",
+      "avibaseId": "AVIBASE-CALOENAS-NICOBARICA",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Caloenas%20nicobarica",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Caloenas%20nicobarica",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -4091,6 +5666,35 @@
       "duration": "0:23",
       "recordist": "Pete Morris",
       "location": "Bidoup, Lâm Đồng"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-COL-DUCULA-B",
+      "avibaseId": "AVIBASE-DUCULA-BADIA",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Ducula%20badia",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Ducula%20badia",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -4161,6 +5765,35 @@
       "duration": "0:25",
       "recordist": "Per Alström",
       "location": "Sa Pa, Lào Cai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-COL-TRERON-A",
+      "avibaseId": "AVIBASE-TRERON-APICAUDA",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Treron%20apicauda",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Treron%20apicauda",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -4231,6 +5864,35 @@
       "duration": "0:18",
       "recordist": "Frank Lambert",
       "location": "Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-ANS-ASARCORN",
+      "avibaseId": "AVIBASE-ASARCORNIS-SCUTULATA",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Asarcornis%20scutulata",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Asarcornis%20scutulata",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -4301,6 +5963,35 @@
       "duration": "0:16",
       "recordist": "Per Alström",
       "location": "Ba Bể, Bắc Kạn"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-ANS-AIX-GALE",
+      "avibaseId": "AVIBASE-AIX-GALERICULATA",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Aix%20galericulata",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Aix%20galericulata",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -4371,6 +6062,35 @@
       "duration": "0:29",
       "recordist": "Pete Morris",
       "location": "Sa Pa, Lào Cai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-CUC-HIEROCOC",
+      "avibaseId": "AVIBASE-HIEROCOCCYX-SPARVERIOIDES",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Hierococcyx%20sparverioides",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Hierococcyx%20sparverioides",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -4443,6 +6163,35 @@
       "duration": "0:26",
       "recordist": "Jonathan Eames",
       "location": "Bạch Mã, Thừa Thiên Huế"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-CUC-CARPOCOC",
+      "avibaseId": "AVIBASE-CARPOCOCCYX-RENAULDI",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Carpococcyx%20renauldi",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Carpococcyx%20renauldi",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -4514,6 +6263,35 @@
       "duration": "0:21",
       "recordist": "Nguyen Van Thang",
       "location": "Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-CUC-CENTROPU",
+      "avibaseId": "AVIBASE-CENTROPUS-SINENSIS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Centropus%20sinensis",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Centropus%20sinensis",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -4585,6 +6363,35 @@
       "duration": "0:20",
       "recordist": "David Farrow",
       "location": "Tam Đảo, Vĩnh Phúc"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-TRO-HARPACTE",
+      "avibaseId": "AVIBASE-HARPACTES-ERYTHROCEPHALUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Harpactes%20erythrocephalus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Harpactes%20erythrocephalus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -4655,6 +6462,35 @@
       "duration": "0:17",
       "recordist": "Frank Lambert",
       "location": "Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-TRO-HARPACTE",
+      "avibaseId": "AVIBASE-HARPACTES-ORESKIOS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Harpactes%20oreskios",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Harpactes%20oreskios",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -4725,6 +6561,35 @@
       "duration": "0:13",
       "recordist": "Pete Morris",
       "location": "Cúc Phương, Ninh Bình"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-FAL-MICROHIE",
+      "avibaseId": "AVIBASE-MICROHIERAX-MELANOLEUCOS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Microhierax%20melanoleucos",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Microhierax%20melanoleucos",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   },
   {
@@ -4796,6 +6661,35 @@
       "duration": "0:25",
       "recordist": "David Farrow",
       "location": "Cát Tiên, Đồng Nai"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-CAP-CAPRIMUL",
+      "avibaseId": "AVIBASE-CAPRIMULGUS-MACRURUS",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Caprimulgus%20macrurus",
+      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Caprimulgus%20macrurus",
+      "primaryLiterature": [
+        {
+          "authors": "Craik, R. C. & Le Manh Hung",
+          "year": 2018,
+          "title": "Birds of Vietnam",
+          "journalOrBook": "Helm Wildlife Guides, Bloomsbury Publishing",
+          "volumeOrPages": "400 pp. ISBN 9781472941541"
+        },
+        {
+          "authors": "Vo Quy & Nguyen Cu",
+          "year": 1995,
+          "title": "Danh lục Chim Việt Nam (Checklist of the Birds of Vietnam)",
+          "journalOrBook": "NXB Nông Nghiệp, Hà Nội",
+          "volumeOrPages": "584 trang"
+        },
+        {
+          "authors": "Gill, F., Donsker, D., & Rasmussen, P. (Eds.)",
+          "year": 2024,
+          "title": "IOC World Bird List (v14.1)",
+          "journalOrBook": "International Ornithological Union",
+          "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
     }
   }
 ]

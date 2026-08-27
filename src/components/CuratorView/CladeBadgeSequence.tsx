@@ -51,7 +51,7 @@ export const CladeBadgeSequence: React.FC<CladeBadgeSequenceProps> = ({
 
   // 2. Intermediate Clades (Neognathae, Neoaves, Passerea, etc.)
   const rawClades = taxonomy.clade || [];
-  rawClades.forEach((cladeName) => {
+  rawClades.forEach((cladeName: string) => {
     if (cladeName.toLowerCase() === 'aves') return; // already added
     steps.push({
       rankKey: 'clade',

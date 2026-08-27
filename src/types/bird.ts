@@ -1,22 +1,8 @@
-/**
- * Avifauna of Vietnam - TypeScript Interfaces & Types
- * Taxonomy, Species and Endemic Bird Areas data definitions.
- */
-
 export type IUCNStatus = 'CR' | 'EN' | 'VU' | 'NT' | 'LC';
 export type VietnamRedListStatus = 'CR' | 'EN' | 'VU' | 'R' | 'LR';
+export type TaxonomyRank = 'class' | 'order' | 'family' | 'genus' | 'species';
 
-export interface DiagnosticFeature {
-  part: string;
-  description: string;
-}
-
-export interface MorphologicalAnalysis {
-  overview: string;
-  diagnosticFeatures: DiagnosticFeature[];
-}
-
-export interface SpeciesTaxonomy {
+export interface TaxonomicHierarchy {
   clade: string[];
   order: string;
   orderVietnamese: string;
@@ -26,24 +12,33 @@ export interface SpeciesTaxonomy {
   species: string;
 }
 
-export interface ConservationStatus {
-  iucn: IUCNStatus;
-  vietnamRedList?: VietnamRedListStatus;
+export type SpeciesTaxonomy = TaxonomicHierarchy;
+
+export interface DiagnosticFeature {
+  part: string;
   description: string;
 }
 
-export interface DistributionInfo {
+export interface MorphologicalAnalysis {
+  overview: string;
+  diagnosticFeatures: DiagnosticFeature[];
+  taxonomicRationale?: string;
+}
+
+export interface GeographicDistribution {
   ebaRegion: string;
   elevation: string;
   habitats: string[];
   locations: string[];
-  coordinates: [number, number]; // [Latitude, Longitude]
+  coordinates: [number, number];
 }
 
 export interface IllustrationInfo {
   imageUrl: string;
   artist: string;
   sourceBook?: string;
+  plateNumber?: string;
+  year?: string;
 }
 
 export interface AudioCallInfo {
@@ -51,6 +46,25 @@ export interface AudioCallInfo {
   duration?: string;
   recordist?: string;
   location?: string;
+  license?: string;
+  xenoCantoId?: string;
+}
+
+export interface AcademicReference {
+  authors: string;
+  year: number | string;
+  title: string;
+  journalOrBook: string;
+  doiOrUrl?: string;
+  volumeOrPages?: string;
+}
+
+export interface AcademicIdentifiers {
+  iocTaxonCode?: string;
+  avibaseId?: string;
+  iucnUrl?: string;
+  gbifTaxonKey?: string;
+  primaryLiterature?: AcademicReference[];
 }
 
 export interface BirdSpecies {
@@ -58,16 +72,19 @@ export interface BirdSpecies {
   scientificName: string;
   vietnameseName: string;
   englishName: string;
-  taxonomy: SpeciesTaxonomy;
+  taxonomy: TaxonomicHierarchy;
   isEndemic: boolean;
-  conservation: ConservationStatus;
+  conservation: {
+    iucn: IUCNStatus;
+    vietnamRedList?: VietnamRedListStatus;
+    description: string;
+  };
   morphologicalAnalysis: MorphologicalAnalysis;
-  distribution: DistributionInfo;
+  distribution: GeographicDistribution;
   illustration: IllustrationInfo;
   audioCall?: AudioCallInfo;
+  academic?: AcademicIdentifiers;
 }
-
-export type TaxonomyRank = 'class' | 'order' | 'family' | 'genus' | 'species';
 
 export interface TaxonomyNode {
   name: string;
@@ -83,7 +100,7 @@ export interface EBARegion {
   name: string;
   vietnameseName: string;
   description: string;
-  coordinates: [number, number]; // [Latitude, Longitude]
+  coordinates: [number, number];
   zoomLevel: number;
   keySpeciesIds: string[];
   habitats: string[];
