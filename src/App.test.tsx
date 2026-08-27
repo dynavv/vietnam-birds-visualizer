@@ -189,6 +189,6 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     // Endemic focus card should display an active endemic species
     const focusCard = screen.getByTestId('endemic-focus-card');
     expect(focusCard).toBeDefined();
-    expect(within(focusCard).getByText(/ĐẶC HỮU/i)).toBeDefined();
+    expect(within(focusCard).getAllByText(/ĐẶC HỮU/i).length).toBeGreaterThanOrEqual(1);
   });
 });

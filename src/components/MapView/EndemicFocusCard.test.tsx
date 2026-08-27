@@ -70,8 +70,8 @@ describe('EndemicFocusCard Component', () => {
     );
 
     // Trilingual names
-    expect(screen.getByText('Khướu Ngọc Linh')).toBeDefined();
-    expect(screen.getByText('Trochalopteron ngoclinhense')).toBeDefined();
+    expect(screen.getAllByText('Khướu Ngọc Linh').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('Trochalopteron ngoclinhense').length).toBeGreaterThanOrEqual(1);
     expect(screen.getByText('Golden-winged Laughingthrush')).toBeDefined();
 
     // Taxonomy badges
@@ -150,7 +150,7 @@ describe('EndemicFocusCard Component', () => {
     );
 
     const toggleBtn = screen.getByLabelText(/Thu gọn thẻ thông tin/i);
-    expect(screen.getByText('Khướu Ngọc Linh')).toBeDefined();
+    expect(screen.getAllByText('Khướu Ngọc Linh').length).toBeGreaterThanOrEqual(1);
 
     fireEvent.click(toggleBtn);
     // After collapse button clicked

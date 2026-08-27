@@ -12,6 +12,7 @@ import {
 import type { BirdSpecies } from '../../types/bird';
 import { AudioVoiceButton } from '../Common/AudioVoiceButton';
 import { EndemicBadge } from '../Common/EndemicBadge';
+import { BirdPlateImage } from '../Common/BirdPlateImage';
 
 export interface SpecimenPlateProps {
   species?: BirdSpecies | null;
@@ -209,34 +210,21 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
               }
             }}
           >
-            {!imageError && species.illustration?.imageUrl ? (
-              <img
-                src={species.illustration.imageUrl}
-                alt={`Tranh khắc bản in mẫu vật ${species.vietnameseName} (${species.scientificName})`}
-                className="w-full h-full object-contain sm:object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
-                onError={() => setImageError(true)}
-                loading="eager"
-              />
-            ) : (
-              <div className="flex flex-col items-center justify-center p-8 text-center text-ink-500 space-y-2">
-                <Feather className="w-12 h-12 text-natural-moss/60 animate-pulse" />
-                <span className="font-serif italic text-sm font-medium">
-                  Bản tranh khắc điểu học lưu trữ
-                </span>
-                <span className="text-[11px] font-sans text-ink-400">
-                  {species.scientificName}
-                </span>
-              </div>
-            )}
+            <BirdPlateImage
+              species={species}
+              aspectRatio="cover"
+              className="w-full h-full"
+              imageClassName="w-full h-full object-contain sm:object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            />
 
             {/* Hover Floating Inspection Badge */}
-            <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-paper-100/95 backdrop-blur-sm border border-paper-border text-ink-800 px-2.5 py-1 rounded-lg text-xs font-medium shadow-md flex items-center gap-1.5 pointer-events-none">
+            <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-paper-100/95 backdrop-blur-sm border border-paper-border text-ink-800 px-2.5 py-1 rounded-lg text-xs font-medium shadow-md flex items-center gap-1.5 pointer-events-none z-20">
               <Maximize2 className="w-3.5 h-3.5 text-natural-moss" />
               <span>Phóng to quan sát</span>
             </div>
 
             {/* Archival Museum Seal Stamp in Corner */}
-            <div className="absolute top-3 left-3 bg-paper-100/85 backdrop-blur-xs border border-paper-border px-2 py-0.5 rounded text-[9px] font-mono tracking-wider text-ink-600 uppercase select-none pointer-events-none">
+            <div className="absolute top-3 left-3 bg-paper-100/85 backdrop-blur-xs border border-paper-border px-2 py-0.5 rounded text-[9px] font-mono tracking-wider text-ink-600 uppercase select-none pointer-events-none z-20">
               ★ INDOCHINA SPECIMEN
             </div>
           </div>

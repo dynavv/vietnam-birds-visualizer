@@ -98,8 +98,8 @@ describe('RelatedSpeciesTabs Component', () => {
 
     expect(screen.getByTestId('related-species-tabs')).toBeDefined();
     // Same genus species (Khướu Đuôi Đỏ) should appear
-    expect(screen.getByText('Khướu Đuôi Đỏ')).toBeDefined();
-    expect(screen.getByText('Trochalopteron milnei')).toBeDefined();
+    expect(screen.getAllByText('Khướu Đuôi Đỏ').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('Trochalopteron milnei').length).toBeGreaterThanOrEqual(1);
   });
 
   it('allows switching between Genus, Family and All tabs', () => {
@@ -117,8 +117,8 @@ describe('RelatedSpeciesTabs Component', () => {
     fireEvent.click(familyTab);
 
     // Both Khướu Đuôi Đỏ and Khướu Kon Ka Kinh should be in the same family
-    expect(screen.getByText('Khướu Kon Ka Kinh')).toBeDefined();
-    expect(screen.getByText('Khướu Đuôi Đỏ')).toBeDefined();
+    expect(screen.getAllByText('Khướu Kon Ka Kinh').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('Khướu Đuôi Đỏ').length).toBeGreaterThanOrEqual(1);
   });
 
   it('triggers onSelectSpecies when a related species card is clicked', () => {

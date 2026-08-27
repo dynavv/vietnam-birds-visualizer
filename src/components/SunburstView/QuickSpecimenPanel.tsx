@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Feather,
   Sparkles,
@@ -13,6 +13,7 @@ import { useTaxonomy } from '../../context/TaxonomyContext';
 import { ConservationBadge } from '../Common/ConservationBadge';
 import { EndemicBadge } from '../Common/EndemicBadge';
 import { AudioVoiceButton } from '../Common/AudioVoiceButton';
+import { BirdPlateImage } from '../Common/BirdPlateImage';
 
 export interface QuickSpecimenPanelProps {
   species?: BirdSpecies | null;
@@ -28,8 +29,6 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
   isHoverPreview = false
 }) => {
   const { selectedSpecies: contextSpecies, setActiveView } = useTaxonomy();
-  const [imageError, setImageError] = useState(false);
-
   const species = propSpecies !== undefined ? propSpecies : contextSpecies;
 
   const handleSwitchToCurator = () => {
@@ -101,28 +100,12 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
       <div className="p-4 sm:p-5 space-y-4 overflow-y-auto max-h-[calc(100vh-13rem)]">
         {/* Classic Naturalist Artwork Plate */}
         <div className="relative group rounded-xl overflow-hidden border-2 border-paper-300 bg-paper-200/60 p-1.5 shadow-inner">
-          <div className="relative w-full h-44 sm:h-48 rounded-lg overflow-hidden bg-paper-300/40 flex items-center justify-center">
-            {!imageError && species.illustration.imageUrl ? (
-              <img
-                src={species.illustration.imageUrl}
-                alt={`Họa đồ phân loại loài ${species.vietnameseName} (${species.scientificName})`}
-                className="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out group-hover:scale-105"
-                onError={() => setImageError(true)}
-                loading="lazy"
-              />
-            ) : (
-              <div className="flex flex-col items-center justify-center p-6 text-center text-ink-500 space-y-2">
-                <Feather className="w-8 h-8 text-natural-moss/60" />
-                <span className="font-serif italic text-xs">Bản họa đồ điểu học lưu trữ</span>
-              </div>
-            )}
-
-            {/* Specimen Badge Overlay */}
-            <div className="absolute top-2 left-2 bg-paper-100/90 backdrop-blur-sm border border-paper-border px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider text-ink-700 shadow-sm flex items-center gap-1">
-              <span>Mã ID:</span>
-              <span className="font-bold text-natural-forest">{species.id}</span>
-            </div>
-          </div>
+          <BirdPlateImage
+            species={species}
+            aspectRatio="cover"
+            className="w-full h-44 sm:h-48 rounded-lg"
+            imageClassName="group-hover:scale-105 transition-transform duration-500"
+          />
 
           {/* Plate Artist Caption */}
           <div className="pt-2 px-1 text-center border-t border-paper-border/50 mt-1">

@@ -6,7 +6,6 @@ import {
   MapPin,
   Trees,
   Dices,
-  Sparkles,
   ChevronRight,
   ChevronDown,
   ChevronUp,
@@ -18,6 +17,7 @@ import { useTaxonomy } from '../../context/TaxonomyContext';
 import { ConservationBadge } from '../Common/ConservationBadge';
 import { EndemicBadge } from '../Common/EndemicBadge';
 import { AudioVoiceButton } from '../Common/AudioVoiceButton';
+import { BirdPlateImage } from '../Common/BirdPlateImage';
 
 export interface EndemicFocusCardProps {
   species?: BirdSpecies | null;
@@ -45,7 +45,6 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
   } = useTaxonomy();
 
   const [internalCollapsed, setInternalCollapsed] = useState(false);
-  const [imageError, setImageError] = useState(false);
   const [diceRolling, setDiceRolling] = useState(false);
 
   const isCollapsed = controlledCollapsed !== undefined ? controlledCollapsed : internalCollapsed;
@@ -162,28 +161,12 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
           
           {/* Classic Naturalist Artwork Plate Frame */}
           <div className="relative group rounded-xl overflow-hidden border-2 border-paper-300 bg-paper-200/50 p-1.5 shadow-inner">
-            <div className="relative w-full h-44 sm:h-52 rounded-lg overflow-hidden bg-paper-300/40 flex items-center justify-center">
-              {!imageError && species.illustration.imageUrl ? (
-                <img
-                  src={species.illustration.imageUrl}
-                  alt={`Minh họa khoa học loài ${species.vietnameseName} (${species.scientificName})`}
-                  className="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out group-hover:scale-105"
-                  onError={() => setImageError(true)}
-                  loading="lazy"
-                />
-              ) : (
-                <div className="flex flex-col items-center justify-center p-6 text-center text-ink-500 space-y-2">
-                  <Feather className="w-8 h-8 text-natural-moss/60" />
-                  <span className="font-serif italic text-xs">Bản họa đồ điểu học lưu trữ</span>
-                </div>
-              )}
-
-              {/* Naturalist Tag overlay */}
-              <div className="absolute top-2 left-2 bg-paper-100/90 backdrop-blur-sm border border-paper-border px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider text-ink-700 shadow-sm flex items-center gap-1">
-                <Sparkles className="w-3 h-3 text-natural-ochre" />
-                <span>Mẫu vật Điểu học</span>
-              </div>
-            </div>
+            <BirdPlateImage
+              species={species}
+              aspectRatio="cover"
+              className="w-full h-44 sm:h-52 rounded-lg"
+              imageClassName="group-hover:scale-105 transition-transform duration-500"
+            />
 
             {/* Naturalist Plate Caption */}
             <div className="pt-2 px-1 text-center border-t border-paper-border/50 mt-1">

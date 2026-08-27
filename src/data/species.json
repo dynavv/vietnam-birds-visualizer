@@ -59,9 +59,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Golden-winged_Laughingthrush_%28Trochalopteron_ngoclinhense%29.jpg/800px-Golden-winged_Laughingthrush_%28Trochalopteron_ngoclinhense%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Trochalopteron_ngoclinhense.jpg",
       "artist": "Naturalist Archives of Indochina",
-      "sourceBook": "Avifauna of Central Vietnam Highlands"
+      "sourceBook": "Avifauna of Central Vietnam Highlands",
+      "plateNumber": "PL. 01",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC567890-Golden-winged_Laughingthrush.mp3",
@@ -152,9 +154,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Chestnut-eared_Laughingthrush_at_Kon_Ka_Kinh.jpg/800px-Chestnut-eared_Laughingthrush_at_Kon_Ka_Kinh.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chestnut-eared_Laughingthrush.jpg",
       "artist": "John C. Anderton",
-      "sourceBook": "Bulletin of the British Ornithologists' Club 1999"
+      "sourceBook": "Bulletin of the British Ornithologists' Club 1999",
+      "plateNumber": "PL. 02",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC489201-Chestnut-eared_Laughingthrush.mp3",
@@ -240,9 +244,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Collared_Laughingthrush_-_Liochicla_langbianis.jpg/800px-Collared_Laughingthrush_-_Liochicla_langbianis.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Crocias_langbianis.jpg",
       "artist": "H. Grönvold",
-      "sourceBook": "Les Oiseaux de l'Indochine Française"
+      "sourceBook": "Les Oiseaux de l'Indochine Française",
+      "plateNumber": "PL. 03",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC612345-Collared_Laughingthrush.mp3",
@@ -334,9 +340,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Trochalopteron_yersini.jpg/800px-Trochalopteron_yersini.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Trochalopteron_yersini_-_Collared_Laughingthrush.jpg",
       "artist": "J. G. Keulemans",
-      "sourceBook": "Bulletin du Muséum National d'Histoire Naturelle"
+      "sourceBook": "Bulletin du Muséum National d'Histoire Naturelle",
+      "plateNumber": "PL. 04",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC398712-Yersins_Laughingthrush.mp3",
@@ -434,9 +442,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Actinodura_sodangorum.jpg/800px-Actinodura_sodangorum.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Black-crowned_Barwing_(Actinodura_sodangorum).jpg",
       "artist": "John C. Anderton",
-      "sourceBook": "Ibis International Journal of Avian Science"
+      "sourceBook": "Ibis International Journal of Avian Science",
+      "plateNumber": "PL. 05",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC445566-Black-crowned_Barwing.mp3",
@@ -520,9 +530,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Lophura_edwardsi_male.jpg/800px-Lophura_edwardsi_male.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lophura_edwardsi_male.jpg",
       "artist": "J. G. Keulemans",
-      "sourceBook": "Oustalet Descriptions des Oiseaux Nouveaux"
+      "sourceBook": "Oustalet Descriptions des Oiseaux Nouveaux",
+      "plateNumber": "PL. 06",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC112233-Edwards_Pheasant.mp3",
@@ -613,9 +625,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Polyplectron_germaini_-_Germain%27s_Peacock-Pheasant.jpg/800px-Polyplectron_germaini_-_Germain%27s_Peacock-Pheasant.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Polyplectron_germaini_-Germain's_Peacock-Pheasant_-male.jpg",
       "artist": "J. G. Keulemans",
-      "sourceBook": "Monograph of the Phasianidae"
+      "sourceBook": "Monograph of the Phasianidae",
+      "plateNumber": "PL. 07",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC554433-Germains_Peacock-Pheasant.mp3",
@@ -713,9 +727,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Vietnamese_Greenfinch_%28Chloris_monguilloti%29.jpg/800px-Vietnamese_Greenfinch_%28Chloris_monguilloti%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Carduelis_monguilloti.jpg",
       "artist": "Naturalist Editorial Archives",
-      "sourceBook": "Oiseaux de l'Indochine"
+      "sourceBook": "Oiseaux de l'Indochine",
+      "plateNumber": "PL. 08",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC332211-Vietnamese_Greenfinch.mp3",
@@ -799,9 +815,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Grey-faced_Tit-Babbler.jpg/800px-Grey-faced_Tit-Babbler.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Macronus_kelleyi.jpg",
       "artist": "Delacour & Greenway",
-      "sourceBook": "Revue d'Histoire Naturelle Appliquée"
+      "sourceBook": "Revue d'Histoire Naturelle Appliquée",
+      "plateNumber": "PL. 09",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC887766-Grey-faced_Tit-Babbler.mp3",
@@ -899,9 +917,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/White-throated_Wren-Babbler.jpg/800px-White-throated_Wren-Babbler.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rimator_pasquieri.jpg",
       "artist": "J. Delacour",
-      "sourceBook": "Bulletin du Muséum National d'Histoire Naturelle 1930"
+      "sourceBook": "Bulletin du Muséum National d'Histoire Naturelle 1930",
+      "plateNumber": "PL. 10",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC224466-White-throated_Wren-Babbler.mp3",
@@ -985,9 +1005,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Sooty_Babbler_-_Stachyris_herberti.jpg/800px-Sooty_Babbler_-_Stachyris_herberti.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sooty_Babbler.jpg",
       "artist": "Naturalist Expedition Archive",
-      "sourceBook": "Indochinese Karst Avifauna Survey"
+      "sourceBook": "Indochinese Karst Avifauna Survey",
+      "plateNumber": "PL. 11",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC998877-Sooty_Babbler.mp3",
@@ -1085,9 +1107,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Red-winged_Laughingthrush_%28Trochalopteron_formosum%29.jpg/800px-Red-winged_Laughingthrush_%28Trochalopteron_formosum%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Red-winged_Laughingthrush_(Trochalopteron_formosum).jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 12",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC776655-Red-winged_Laughingthrush.mp3",
@@ -1185,9 +1209,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Red-tailed_Laughingthrush_%28Trochalopteron_milnei%29.jpg/800px-Red-tailed_Laughingthrush_%28Trochalopteron_milnei%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Trochalopteron_milnei_Keulemans.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 13",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC334455-Red-tailed_Laughingthrush.mp3",
@@ -1285,9 +1311,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Rufous-headed_Parrotbill.jpg/800px-Rufous-headed_Parrotbill.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rufous-headed_Parrotbill.jpg",
       "artist": "H. Grönvold",
-      "sourceBook": "Fauna of British India"
+      "sourceBook": "Fauna of British India",
+      "plateNumber": "PL. 14",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC123789-Rufous-headed_Parrotbill.mp3",
@@ -1384,9 +1412,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Rheinardia_ocellata_-_Crested_Argus.jpg/800px-Rheinardia_ocellata_-_Crested_Argus.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rheinardia_ocellata.jpg",
       "artist": "J. G. Keulemans",
-      "sourceBook": "Monograph of the Phasianidae"
+      "sourceBook": "Monograph of the Phasianidae",
+      "plateNumber": "PL. 15",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC665544-Crested_Argus.mp3",
@@ -1483,9 +1513,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Chinese_Hwamei_%28Garrulax_canorus%29.jpg/800px-Chinese_Hwamei_%28Garrulax_canorus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Garrulax_canorus_05.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 16",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC443322-Chinese_Hwamei.mp3",
@@ -1582,9 +1614,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Blue-throated_Blue_Flycatcher.jpg/800px-Blue-throated_Blue_Flycatcher.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cyornis_rubeculoides.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 17",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC119988-Blue-throated_Flycatcher.mp3",
@@ -1681,9 +1715,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Black-throated_Sunbird_%28Aethopyga_saturata%29.jpg/800px-Black-throated_Sunbird_%28Aethopyga_saturata%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aethopyga_saturata.jpg",
       "artist": "John Gould",
-      "sourceBook": "Monograph of the Nectariniidae"
+      "sourceBook": "Monograph of the Nectariniidae",
+      "plateNumber": "PL. 18",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC667788-Black-throated_Sunbird.mp3",
@@ -1780,9 +1816,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Long-tailed_Shrike_%28Lanius_schach%29.jpg/800px-Long-tailed_Shrike_%28Lanius_schach%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lanius_schach.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 19",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC556677-Long-tailed_Shrike.mp3",
@@ -1879,9 +1917,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Blue-winged_Pitta_%28Pitta_moluccensis%29.jpg/800px-Blue-winged_Pitta_%28Pitta_moluccensis%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Blue-winged_Pitta_Pitta_moluccensis.jpg",
       "artist": "John Gould",
-      "sourceBook": "Monograph of the Pittidae"
+      "sourceBook": "Monograph of the Pittidae",
+      "plateNumber": "PL. 20",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC991122-Blue-winged_Pitta.mp3",
@@ -1979,9 +2019,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Black-naped_Oriole_%28Oriolus_chinensis%29.jpg/800px-Black-naped_Oriole_%28Oriolus_chinensis%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Black-naped_Oriole_Oriolus_chinensis.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 21",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC441133-Black-naped_Oriole.mp3",
@@ -2078,9 +2120,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/White-rumped_Shama_%28Copsychus_malabaricus%29.jpg/800px-White-rumped_Shama_%28Copsychus_malabaricus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Copsychus_malabaricus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 22",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC227744-White-rumped_Shama.mp3",
@@ -2177,9 +2221,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Greater_Racket-tailed_Drongo_%28Dicrurus_paradiseus%29.jpg/800px-Greater_Racket-tailed_Drongo_%28Dicrurus_paradiseus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dicrurus_paradiseus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 23",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC883311-Greater_Racket-tailed_Drongo.mp3",
@@ -2276,9 +2322,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Black-throated_Laughingthrush_%28Garrulax_chinensis%29.jpg/800px-Black-throated_Laughingthrush_%28Garrulax_chinensis%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Black-throated_Laughingthrush_(Garrulax_chinensis).jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 24",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC336699-Black-throated_Laughingthrush.mp3",
@@ -2376,9 +2424,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Long-tailed_Broadbill_%28Psarisomus_dalhousiae%29.jpg/800px-Long-tailed_Broadbill_%28Psarisomus_dalhousiae%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Psarisomus_dalhousiae.jpg",
       "artist": "John Gould",
-      "sourceBook": "Icones Avium"
+      "sourceBook": "Icones Avium",
+      "plateNumber": "PL. 25",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC774411-Long-tailed_Broadbill.mp3",
@@ -2475,9 +2525,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Siamese_Fireback_male.jpg/800px-Siamese_Fireback_male.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lophura_diardi.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 26",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC881100-Siamese_Fireback.mp3",
@@ -2574,9 +2626,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Grey_Peacock-Pheasant_%28Polyplectron_bicalcaratum%29.jpg/800px-Grey_Peacock-Pheasant_%28Polyplectron_bicalcaratum%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Polyplectron_bicalcaratum_Keulemans.jpg",
       "artist": "J. G. Keulemans",
-      "sourceBook": "Monograph of the Phasianidae"
+      "sourceBook": "Monograph of the Phasianidae",
+      "plateNumber": "PL. 27",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC228899-Grey_Peacock-Pheasant.mp3",
@@ -2672,9 +2726,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Brown-breasted_Partridge_%28Arborophila_brunneopectus%29.jpg/800px-Brown-breasted_Partridge_%28Arborophila_brunneopectus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Arborophila_brunneopectus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 28",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC448822-Brown-breasted_Partridge.mp3",
@@ -2771,9 +2827,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Red_Junglefowl_male.jpg/800px-Red_Junglefowl_male.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gallus_gallus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 29",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC113355-Red_Junglefowl.mp3",
@@ -2871,9 +2929,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Great_Hornbill_%28Buceros_bicornis%29.jpg/800px-Great_Hornbill_%28Buceros_bicornis%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Buceros_bicornis_Keulemans.jpg",
       "artist": "John Gould",
-      "sourceBook": "Monograph of the Bucerotidae"
+      "sourceBook": "Monograph of the Bucerotidae",
+      "plateNumber": "PL. 30",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC771122-Great_Hornbill.mp3",
@@ -2965,9 +3025,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Wreathed_Hornbill_%28Rhyticeros_undulatus%29.jpg/800px-Wreathed_Hornbill_%28Rhyticeros_undulatus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rhyticeros_undulatus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Monograph of the Bucerotidae"
+      "sourceBook": "Monograph of the Bucerotidae",
+      "plateNumber": "PL. 31",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC559900-Wreathed_Hornbill.mp3",
@@ -3063,9 +3125,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Tickell%27s_Brown_Hornbill.jpg/800px-Tickell%27s_Brown_Hornbill.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Anorrhinus_tickelli.jpg",
       "artist": "John Gould",
-      "sourceBook": "Monograph of the Bucerotidae"
+      "sourceBook": "Monograph of the Bucerotidae",
+      "plateNumber": "PL. 32",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC331188-Tickells_Brown_Hornbill.mp3",
@@ -3164,9 +3228,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eurasian_Hoopoe_%28Upupa_epops%29.jpg/800px-Eurasian_Hoopoe_%28Upupa_epops%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Upupa_epops.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Great Britain"
+      "sourceBook": "Birds of Great Britain",
+      "plateNumber": "PL. 33",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC225577-Eurasian_Hoopoe.mp3",
@@ -3263,9 +3329,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Crested_Kingfisher_%28Megaceryle_lugubris%29.jpg/800px-Crested_Kingfisher_%28Megaceryle_lugubris%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Megaceryle_lugubris.jpg",
       "artist": "John Gould",
-      "sourceBook": "Monograph of the Alcedinidae"
+      "sourceBook": "Monograph of the Alcedinidae",
+      "plateNumber": "PL. 34",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC118833-Crested_Kingfisher.mp3",
@@ -3363,9 +3431,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Stork-billed_Kingfisher_%28Pelargopsis_capensis%29.jpg/800px-Stork-billed_Kingfisher_%28Pelargopsis_capensis%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pelargopsis_capensis.jpg",
       "artist": "John Gould",
-      "sourceBook": "Monograph of the Alcedinidae"
+      "sourceBook": "Monograph of the Alcedinidae",
+      "plateNumber": "PL. 35",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC449911-Stork-billed_Kingfisher.mp3",
@@ -3462,9 +3532,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Black-capped_Kingfisher_%28Halcyon_pileata%29.jpg/800px-Black-capped_Kingfisher_%28Halcyon_pileata%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Halcyon_pileata.jpg",
       "artist": "John Gould",
-      "sourceBook": "Monograph of the Alcedinidae"
+      "sourceBook": "Monograph of the Alcedinidae",
+      "plateNumber": "PL. 36",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC337722-Black-capped_Kingfisher.mp3",
@@ -3561,9 +3633,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Blyth%27s_Kingfisher_%28Alcedo_hercules%29.jpg/800px-Blyth%27s_Kingfisher_%28Alcedo_hercules%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alcedo_hercules.jpg",
       "artist": "John Gould",
-      "sourceBook": "Monograph of the Alcedinidae"
+      "sourceBook": "Monograph of the Alcedinidae",
+      "plateNumber": "PL. 37",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC662244-Blyths_Kingfisher.mp3",
@@ -3660,9 +3734,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Indochinese_Roller_%28Coracias_affinis%29.jpg/800px-Indochinese_Roller_%28Coracias_affinis%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Coracias_affinis.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 38",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC553311-Indochinese_Roller.mp3",
@@ -3761,9 +3837,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Coppersmith_Barbet_%28Psilopogon_haemacephalus%29.jpg/800px-Coppersmith_Barbet_%28Psilopogon_haemacephalus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Psilopogon_haemacephalus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 39",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC773322-Coppersmith_Barbet.mp3",
@@ -3860,9 +3938,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Chinese_Barbet_%28Psilopogon_faber%29.jpg/800px-Chinese_Barbet_%28Psilopogon_faber%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Psilopogon_faber.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 40",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC119944-Chinese_Barbet.mp3",
@@ -3961,9 +4041,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Red-collared_Woodpecker_%28Picus_rabieri%29.jpg/800px-Red-collared_Woodpecker_%28Picus_rabieri%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Picus_rabieri.jpg",
       "artist": "Oustalet Naturalist Archive",
-      "sourceBook": "Bulletin du Muséum d'Histoire Naturelle"
+      "sourceBook": "Bulletin du Muséum d'Histoire Naturelle",
+      "plateNumber": "PL. 41",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC882200-Red-collared_Woodpecker.mp3",
@@ -4061,9 +4143,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Greater_Flameback_%28Chrysocolaptes_guttacristatus%29.jpg/800px-Greater_Flameback_%28Chrysocolaptes_guttacristatus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chrysocolaptes_guttacristatus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 42",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC441199-Greater_Flameback.mp3",
@@ -4161,9 +4245,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Black_Eagle_%28Ictinaetus_malaiensis%29.jpg/800px-Black_Eagle_%28Ictinaetus_malaiensis%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ictinaetus_malaiensis.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 43",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC339911-Black_Eagle.mp3",
@@ -4260,9 +4346,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Crested_Serpent_Eagle_%28Spilornis_cheela%29.jpg/800px-Crested_Serpent_Eagle_%28Spilornis_cheela%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Spilornis_cheela.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 44",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC221199-Crested_Serpent_Eagle.mp3",
@@ -4359,9 +4447,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Crested_Honey_Buzzard_%28Pernis_ptilorhynchus%29.jpg/800px-Crested_Honey_Buzzard_%28Pernis_ptilorhynchus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pernis_ptilorhynchus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 45",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC884433-Crested_Honey_Buzzard.mp3",
@@ -4458,9 +4548,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Black-winged_Kite_%28Elanus_caeruleus%29.jpg/800px-Black-winged_Kite_%28Elanus_caeruleus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Elanus_caeruleus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Great Britain"
+      "sourceBook": "Birds of Great Britain",
+      "plateNumber": "PL. 46",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC661100-Black-winged_Kite.mp3",
@@ -4558,9 +4650,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Brown_Fish_Owl_%28Ketupa_zeylonensis%29.jpg/800px-Brown_Fish_Owl_%28Ketupa_zeylonensis%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ketupa_zeylonensis.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 47",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC114488-Brown_Fish_Owl.mp3",
@@ -4659,9 +4753,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Collared_Scops_Owl_%28Otus_lettia%29.jpg/800px-Collared_Scops_Owl_%28Otus_lettia%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Otus_lettia.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 48",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC338811-Collared_Scops_Owl.mp3",
@@ -4758,9 +4854,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Collared_Owlet_%28Glaucidium_brodiei%29.jpg/800px-Collared_Owlet_%28Glaucidium_brodiei%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Glaucidium_brodiei.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 49",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC992211-Collared_Owlet.mp3",
@@ -4858,9 +4956,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/White-shouldered_Ibis_%28Pseudibis_davisoni%29.jpg/800px-White-shouldered_Ibis_%28Pseudibis_davisoni%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pseudibis_davisoni.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 50",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC112288-White-shouldered_Ibis.mp3",
@@ -4958,9 +5058,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Black-faced_Spoonbill_%28Platalea_minor%29.jpg/800px-Black-faced_Spoonbill_%28Platalea_minor%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Platalea_minor.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 51",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC551188-Black-faced_Spoonbill.mp3",
@@ -5059,9 +5161,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Lesser_Adjutant_%28Leptoptilos_javanicus%29.jpg/800px-Lesser_Adjutant_%28Leptoptilos_javanicus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Leptoptilos_javanicus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 52",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC449933-Lesser_Adjutant.mp3",
@@ -5158,9 +5262,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Malayan_Night_Heron_%28Gorsachius_melanolophus%29.jpg/800px-Malayan_Night_Heron_%28Gorsachius_melanolophus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gorsachius_melanolophus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 53",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC883399-Malayan_Night_Heron.mp3",
@@ -5258,9 +5364,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Sarus_Crane_%28Antigone_antigone%29.jpg/800px-Sarus_Crane_%28Antigone_antigone%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Antigone_antigone.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 54",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC773344-Sarus_Crane.mp3",
@@ -5358,9 +5466,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Red-legged_Crake_%28Rallina_fasciata%29.jpg/800px-Red-legged_Crake_%28Rallina_fasciata%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rallina_fasciata.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 55",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC224488-Red-legged_Crake.mp3",
@@ -5458,9 +5568,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Grey-headed_Swamphen_%28Porphyrio_poliocephalus%29.jpg/800px-Grey-headed_Swamphen_%28Porphyrio_poliocephalus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Porphyrio_poliocephalus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 56",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC669922-Grey-headed_Swamphen.mp3",
@@ -5558,9 +5670,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Nicobar_Pigeon_%28Caloenas_nicobarica%29.jpg/800px-Nicobar_Pigeon_%28Caloenas_nicobarica%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Caloenas_nicobarica.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 57",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC119933-Nicobar_Pigeon.mp3",
@@ -5657,9 +5771,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Mountain_Imperial_Pigeon_%28Ducula_badia%29.jpg/800px-Mountain_Imperial_Pigeon_%28Ducula_badia%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ducula_badia.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 58",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC883344-Mountain_Imperial_Pigeon.mp3",
@@ -5756,9 +5872,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pin-tailed_Green_Pigeon_%28Treron_apicauda%29.jpg/800px-Pin-tailed_Green_Pigeon_%28Treron_apicauda%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Treron_apicauda.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 59",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC447711-Pin-tailed_Green_Pigeon.mp3",
@@ -5855,9 +5973,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/White-winged_Duck_%28Asarcornis_scutulata%29.jpg/800px-White-winged_Duck_%28Asarcornis_scutulata%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Asarcornis_scutulata.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 60",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC992200-White-winged_Duck.mp3",
@@ -5954,9 +6074,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mandarin_Duck_%28Aix_galericulata%29_male.jpg/800px-Mandarin_Duck_%28Aix_galericulata%29_male.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aix_galericulata.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Great Britain"
+      "sourceBook": "Birds of Great Britain",
+      "plateNumber": "PL. 61",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC331100-Mandarin_Duck.mp3",
@@ -6053,9 +6175,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Large_Hawk-Cuckoo_%28Hierococcyx_sparverioides%29.jpg/800px-Large_Hawk-Cuckoo_%28Hierococcyx_sparverioides%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hierococcyx_sparverioides.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 62",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC115599-Large_Hawk-Cuckoo.mp3",
@@ -6154,9 +6278,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Coral-billed_Ground_Cuckoo_%28Carpococcyx_renauldi%29.jpg/800px-Coral-billed_Ground_Cuckoo_%28Carpococcyx_renauldi%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Carpococcyx_renauldi.jpg",
       "artist": "J. G. Keulemans",
-      "sourceBook": "Proceedings of the Zoological Society of London"
+      "sourceBook": "Proceedings of the Zoological Society of London",
+      "plateNumber": "PL. 63",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC772299-Coral-billed_Ground_Cuckoo.mp3",
@@ -6254,9 +6380,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Greater_Coucal_%28Centropus_sinensis%29.jpg/800px-Greater_Coucal_%28Centropus_sinensis%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Centropus_sinensis.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 64",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC335588-Greater_Coucal.mp3",
@@ -6354,9 +6482,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Red-headed_Trogon_%28Harpactes_erythrocephalus%29.jpg/800px-Red-headed_Trogon_%28Harpactes_erythrocephalus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harpactes_erythrocephalus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Monograph of the Trogonidae"
+      "sourceBook": "Monograph of the Trogonidae",
+      "plateNumber": "PL. 65",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC661133-Red-headed_Trogon.mp3",
@@ -6453,9 +6583,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Orange-breasted_Trogon_%28Harpactes_oreskios%29.jpg/800px-Orange-breasted_Trogon_%28Harpactes_oreskios%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harpactes_oreskios.jpg",
       "artist": "John Gould",
-      "sourceBook": "Monograph of the Trogonidae"
+      "sourceBook": "Monograph of the Trogonidae",
+      "plateNumber": "PL. 66",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC229988-Orange-breasted_Trogon.mp3",
@@ -6552,9 +6684,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Pied_Falconet_%28Microhierax_melanoleucos%29.jpg/800px-Pied_Falconet_%28Microhierax_melanoleucos%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Microhierax_melanoleucos.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Asia"
+      "sourceBook": "Birds of Asia",
+      "plateNumber": "PL. 67",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/VOLRFTLILA/XC558822-Pied_Falconet.mp3",
@@ -6652,9 +6786,11 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Large-tailed_Nightjar_%28Caprimulgus_macrurus%29.jpg/800px-Large-tailed_Nightjar_%28Caprimulgus_macrurus%29.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Caprimulgus_macrurus.jpg",
       "artist": "John Gould",
-      "sourceBook": "Birds of Australia"
+      "sourceBook": "Birds of Australia",
+      "plateNumber": "PL. 68",
+      "year": "1931"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/sounds/uploaded/FOUBQKCSQW/XC117766-Large-tailed_Nightjar.mp3",

@@ -1,9 +1,10 @@
 import React, { useState, useMemo } from 'react';
-import { Layers, Sparkles, Feather, ChevronRight } from 'lucide-react';
+import { Layers, Sparkles, ChevronRight } from 'lucide-react';
 import type { BirdSpecies } from '../../types/bird';
 import { useTaxonomy } from '../../context/TaxonomyContext';
 import { ConservationBadge } from '../Common/ConservationBadge';
 import { EndemicBadge } from '../Common/EndemicBadge';
+import { BirdPlateImage } from '../Common/BirdPlateImage';
 
 export interface RelatedSpeciesTabsProps {
   currentSpecies: BirdSpecies;
@@ -172,22 +173,12 @@ export const RelatedSpeciesTabs: React.FC<RelatedSpeciesTabsProps> = ({
                 data-testid={`related-species-card-${bird.id}`}
                 title={`Xem mẫu vật loài ${bird.vietnameseName} (${bird.scientificName})`}
               >
-                {/* Thumbnail */}
-                <div className="w-12 h-12 rounded-lg bg-paper-200/80 border border-paper-border overflow-hidden flex-shrink-0 flex items-center justify-center">
-                  {bird.illustration?.imageUrl ? (
-                    <img
-                      src={bird.illustration.imageUrl}
-                      alt={bird.vietnameseName}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                      loading="lazy"
-                      onError={(e) => {
-                        (e.target as HTMLElement).style.display = 'none';
-                      }}
-                    />
-                  ) : (
-                    <Feather className="w-5 h-5 text-natural-moss/50" />
-                  )}
-                </div>
+                {/* Thumbnail Naturalist Plate */}
+                <BirdPlateImage
+                  species={bird}
+                  className="w-12 h-12 flex-shrink-0 rounded-lg"
+                  imageClassName="group-hover:scale-110 transition-transform duration-300"
+                />
 
                 {/* Info */}
                 <div className="min-w-0 flex-1 space-y-0.5">
