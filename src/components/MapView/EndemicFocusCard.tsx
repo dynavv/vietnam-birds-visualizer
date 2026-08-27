@@ -111,13 +111,13 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
 
   return (
     <article
-      className={`bg-paper-100/95 backdrop-blur-md border border-paper-border rounded-2xl shadow-natural-lg overflow-hidden transition-all duration-300 max-w-md w-full ${className}`}
+      className={`bg-paper-100/95 backdrop-blur-md border border-paper-border rounded-2xl shadow-natural-lg overflow-hidden transition-all duration-300 max-w-md w-full max-h-[calc(100vh-140px)] flex flex-col ${className}`}
       data-testid="endemic-focus-card"
       aria-label={`Hồ sơ chi tiết loài ${species.vietnameseName}`}
     >
       {/* Header Bar */}
-      <div className="px-4 pt-3.5 pb-2.5 sm:px-5 flex items-center justify-between border-b border-paper-border/60 bg-paper-200/40">
-        <div className="flex items-center gap-2 flex-wrap min-w-0">
+      <div className="px-3.5 pt-3 pb-2 sm:px-4 flex items-center justify-between border-b border-paper-border/60 bg-paper-200/40 shrink-0">
+        <div className="flex items-center gap-1.5 flex-wrap min-w-0">
           {species.isEndemic && (
             <EndemicBadge size="sm" />
           )}
@@ -128,16 +128,16 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
           />
         </div>
 
-        <div className="flex items-center gap-1.5 flex-shrink-0">
+        <div className="flex items-center gap-1 flex-shrink-0">
           <button
             type="button"
             onClick={handleRandomClick}
             aria-label="Đổi loài ngẫu nhiên"
             title="Đổi loài ngẫu nhiên (Random Species)"
-            className="p-1.5 rounded-lg bg-paper-100 hover:bg-natural-moss/15 text-ink-700 hover:text-natural-moss border border-paper-border transition-all"
+            className="p-1 rounded-lg bg-paper-100 hover:bg-natural-moss/15 text-ink-700 hover:text-natural-moss border border-paper-border transition-all"
           >
             <Dices
-              className={`w-4 h-4 transition-transform duration-500 ${
+              className={`w-3.5 h-3.5 transition-transform duration-500 ${
                 diceRolling ? 'rotate-180 scale-110 text-natural-moss' : ''
               }`}
             />
@@ -148,23 +148,23 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
             onClick={toggleCollapse}
             aria-label={isCollapsed ? 'Mở rộng thẻ thông tin' : 'Thu gọn thẻ thông tin'}
             title={isCollapsed ? 'Mở rộng' : 'Thu gọn'}
-            className="p-1.5 rounded-lg bg-paper-100 hover:bg-paper-200 text-ink-600 border border-paper-border transition-all"
+            className="p-1 rounded-lg bg-paper-100 hover:bg-paper-200 text-ink-600 border border-paper-border transition-all"
           >
-            {isCollapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
+            {isCollapsed ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronUp className="w-3.5 h-3.5" />}
           </button>
         </div>
       </div>
 
       {/* Main Content (collapsible on mobile/toggle) */}
-      <div className={`transition-all duration-300 ${isCollapsed ? 'hidden' : 'block'}`}>
-        <div className="p-4 sm:p-5 space-y-4 max-h-[calc(100vh-14rem)] overflow-y-auto">
+      <div className={`transition-all duration-300 flex-1 min-h-0 ${isCollapsed ? 'hidden' : 'flex flex-col overflow-hidden'}`}>
+        <div className="p-3.5 sm:p-4 space-y-3 flex-1 overflow-y-auto pr-1.5">
           
           {/* Classic Naturalist Artwork Plate Frame */}
-          <div className="relative group rounded-xl overflow-hidden border-2 border-paper-300 bg-paper-200/50 p-1.5 shadow-inner">
+          <div className="relative group rounded-xl overflow-hidden border-2 border-paper-300 bg-paper-200/50 p-1 shadow-inner shrink-0">
             <BirdPlateImage
               species={species}
               aspectRatio="cover"
-              className="w-full h-44 sm:h-52 rounded-lg"
+              className="w-full h-36 sm:h-44 rounded-lg"
               imageClassName="group-hover:scale-105 transition-transform duration-500"
             />
 

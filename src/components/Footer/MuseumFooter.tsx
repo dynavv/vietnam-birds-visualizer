@@ -120,10 +120,10 @@ export const MuseumFooter: React.FC<MuseumFooterProps> = ({ className = '' }) =>
       </div>
 
       {/* Persistent Bottom Bar with Prominent Expand/Collapse Trigger */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 py-2 flex flex-col md:flex-row items-center justify-between gap-2 text-[11px] sm:text-xs">
         {/* Left: Copyright & Mission Statement */}
         <div className="flex items-center space-x-2 text-ink-700 text-center md:text-left">
-          <Sparkles className="w-4 h-4 text-natural-moss shrink-0 hidden sm:inline" />
+          <Sparkles className="w-3.5 h-3.5 text-natural-moss shrink-0 hidden sm:inline" />
           <p>
             <strong className="font-serif font-bold text-ink-900">Avifauna of Vietnam</strong> &copy; {new Date().getFullYear()} — Giám tuyển &amp; Trực quan hóa Phân loại học Điểu học Việt Nam
           </p>
@@ -136,13 +136,13 @@ export const MuseumFooter: React.FC<MuseumFooterProps> = ({ className = '' }) =>
             onClick={() => setIsExpanded(!isExpanded)}
             aria-expanded={isExpanded}
             aria-label={isExpanded ? 'Thu gọn phương pháp luận và nguồn dữ liệu' : 'Mở rộng xem phương pháp luận và nguồn dữ liệu học thuật'}
-            className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-xl bg-paper-200 hover:bg-paper-300 text-ink-900 font-medium border border-paper-border shadow-sm transition-all"
+            className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-lg bg-paper-200 hover:bg-paper-300 text-ink-900 font-medium border border-paper-border shadow-sm transition-all text-[11px]"
           >
-            <Library className="w-3.5 h-3.5 text-natural-moss" />
+            <Library className="w-3 h-3 text-natural-moss" />
             <span>
               {isExpanded
-                ? '▲ Thu gọn thông tin'
-                : '📖 Phương pháp luận & Nguồn Dữ liệu (Bản quyền, Phân loại, Sinh thái) ▼'}
+                ? '▲ Thu gọn'
+                : '📖 Phương pháp luận & Nguồn Dữ liệu ▼'}
             </span>
           </button>
         </div>
