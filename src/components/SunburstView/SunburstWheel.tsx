@@ -340,7 +340,7 @@ export const SunburstWheel: React.FC<SunburstWheelProps> = ({
     // Attach click events
     path.on('click', clicked);
 
-    // Hover Highlight Interactivity
+    // Hover Highlight Interactivity (Gentle Tooltip & Lineage Illumination Only)
     path
       .on('mouseenter', (_event, d) => {
         const ancestors = d.ancestors();
@@ -354,16 +354,7 @@ export const SunburstWheel: React.FC<SunburstWheelProps> = ({
           setHoveredTaxonNode(d.data);
         }
 
-        // If species, preview it
-        if (d.data.speciesId) {
-          if (onSelectSpecies) {
-            onSelectSpecies(d.data.speciesId);
-          } else {
-            selectSpecies(d.data.speciesId);
-          }
-        }
-
-        // Highlight lineage, dim others
+        // Highlight lineage, dim others gently
         path
           .attr('fill-opacity', node => (ancestorNames.includes(node.data.name) ? 1.0 : 0.25))
           .attr('stroke', node => (ancestorNames.includes(node.data.name) ? '#FFFFFF' : '#FAF8F5'))

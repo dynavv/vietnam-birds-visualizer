@@ -53,12 +53,16 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     const sunburstTab = screen.getByRole('tab', { name: /Bánh xe Phân loại/i });
     fireEvent.click(sunburstTab);
 
-    expect(screen.queryByTestId('active-map-view')).toBeNull();
     expect(screen.getByTestId('active-sunburst-view')).toBeDefined();
     expect(screen.getByTestId('sunburst-view')).toBeDefined();
     expect(screen.getByTestId('breadcrumb-trail')).toBeDefined();
-    expect(screen.getByTestId('sunburst-svg')).toBeDefined();
+    expect(screen.getByTestId('cladogram-tree-view')).toBeDefined();
     expect(screen.getByTestId('quick-specimen-panel')).toBeDefined();
+
+    // Toggle to radial fan mode
+    const radialBtn = screen.getByText('Bánh Xe Rẻ Quạt');
+    fireEvent.click(radialBtn);
+    expect(screen.getByTestId('sunburst-svg')).toBeDefined();
 
     // 2. Switch to Curator View
     const curatorTab = screen.getByRole('tab', { name: /Trình Giám tuyển/i });

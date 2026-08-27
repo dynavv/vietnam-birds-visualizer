@@ -183,7 +183,7 @@ describe('SunburstWheel Component', () => {
 });
 
 describe('SunburstView Layout Component', () => {
-  it('renders complete phylogenetic sunburst view with wheel, breadcrumb, and side panel', () => {
+  it('renders complete phylogenetic taxonomy view with dual-mode, breadcrumb, and side panel', () => {
     render(
       <TaxonomyProvider>
         <SunburstView />
@@ -191,9 +191,13 @@ describe('SunburstView Layout Component', () => {
     );
 
     expect(screen.getByTestId('sunburst-view')).toBeDefined();
-    expect(screen.getByText('Bánh Xe Phân Loại Học Chim Việt Nam')).toBeDefined();
+    expect(screen.getByText(/Phân Loại Học Chim Việt Nam/i)).toBeDefined();
     expect(screen.getByTestId('breadcrumb-trail')).toBeDefined();
-    expect(screen.getByTestId('sunburst-svg')).toBeDefined();
     expect(screen.getByTestId('quick-specimen-panel')).toBeDefined();
+
+    // Toggle to radial fan mode to verify wheel SVG
+    const radialBtn = screen.getByText('Bánh Xe Rẻ Quạt');
+    fireEvent.click(radialBtn);
+    expect(screen.getByTestId('sunburst-svg')).toBeDefined();
   });
 });
