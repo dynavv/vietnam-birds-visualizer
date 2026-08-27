@@ -68,4 +68,19 @@ describe('MuseumHeader Component', () => {
     const currentSpecies = screen.getByTestId('current-species').textContent;
     expect(currentSpecies).toBeTruthy();
   });
+
+  it('navigates back to map view when clicking brand logo / title button', () => {
+    render(
+      <TaxonomyProvider initialView="curator">
+        <TestHeaderContainer />
+      </TaxonomyProvider>
+    );
+
+    expect(screen.getByTestId('current-view').textContent).toBe('curator');
+
+    const brandBtn = screen.getByLabelText(/Quay về trang chính/i);
+    fireEvent.click(brandBtn);
+
+    expect(screen.getByTestId('current-view').textContent).toBe('map');
+  });
 });

@@ -10,7 +10,7 @@ describe('ConservationBadge Component', () => {
     { code: 'EN', vi: 'Nguy cấp' },
     { code: 'VU', vi: 'Sắp nguy cấp' },
     { code: 'NT', vi: 'Gần bị đe dọa' },
-    { code: 'LC', vi: 'Ít quan tâm' }
+    { code: 'LC', vi: 'Nguy cơ thấp' }
   ];
 
   statuses.forEach(({ code, vi }) => {

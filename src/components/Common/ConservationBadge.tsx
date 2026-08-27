@@ -58,7 +58,7 @@ const STATUS_CONFIG: Record<string, StatusMeta> = {
   },
   LC: {
     code: 'LC',
-    nameVi: 'Ít quan tâm',
+    nameVi: 'Nguy cơ thấp',
     nameEn: 'Least Concern',
     bgColor: 'bg-emerald-950/10 text-emerald-900 border-emerald-700/40',
     textColor: 'text-emerald-900',

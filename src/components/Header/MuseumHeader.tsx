@@ -53,14 +53,20 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({ className = '' }) =>
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         
-        {/* Brand / Emblem & Title */}
-        <div className="flex items-center space-x-3.5 self-start md:self-auto">
-          <div className="p-2.5 bg-natural-moss/10 rounded-xl text-natural-moss border border-natural-moss/20 shadow-sm flex items-center justify-center">
-            <Feather className="w-6 h-6 transform -rotate-12" />
+        {/* Brand / Emblem & Title — Click to return to MainPage (EBA Map) */}
+        <button
+          type="button"
+          onClick={() => setActiveView('map')}
+          aria-label="Quay về trang chính Bản đồ Sinh thái EBA"
+          title="Quay về trang chính (Bản đồ Sinh thái EBA)"
+          className="flex items-center space-x-3.5 self-start md:self-auto text-left group cursor-pointer transition-all hover:opacity-95 focus:outline-none"
+        >
+          <div className="p-2.5 bg-natural-moss/10 group-hover:bg-natural-moss/20 rounded-xl text-natural-moss border border-natural-moss/20 shadow-sm flex items-center justify-center transition-colors">
+            <Feather className="w-6 h-6 transform -rotate-12 group-hover:scale-110 transition-transform" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="text-xl sm:text-2xl font-serif font-bold text-ink-900 tracking-wide">
+              <h1 className="text-xl sm:text-2xl font-serif font-bold text-ink-900 tracking-wide group-hover:text-natural-forest transition-colors">
                 Avifauna of Vietnam
               </h1>
               <span className="hidden sm:inline-block px-2 py-0.5 rounded text-[10px] uppercase font-mono font-semibold tracking-wider bg-natural-moss/10 text-natural-moss border border-natural-moss/20">
@@ -71,7 +77,7 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({ className = '' }) =>
               Giám tuyển &amp; Trực quan hóa Phân loại học Chim Việt Nam
             </p>
           </div>
-        </div>
+        </button>
 
         {/* Center: 3-View Navigation Tabs */}
         <nav

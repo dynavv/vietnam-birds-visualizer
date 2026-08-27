@@ -12,7 +12,7 @@ const IUCN_OPTIONS: { value: string; label: string }[] = [
   { value: 'EN', label: 'EN • Nguy cấp' },
   { value: 'VU', label: 'VU • Sắp nguy cấp' },
   { value: 'NT', label: 'NT • Gần bị đe dọa' },
-  { value: 'LC', label: 'LC • Ít quan tâm' }
+  { value: 'LC', label: 'LC • Nguy cơ thấp' }
 ];
 
 export const SearchFilterBar: React.FC<SearchFilterBarProps> = ({ className = '' }) => {
