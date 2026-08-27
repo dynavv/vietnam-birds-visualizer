@@ -65,10 +65,10 @@ export const SearchFilterBar: React.FC<SearchFilterBarProps> = ({ className = ''
 
   return (
     <div
-      className={`bg-paper-100/95 border-b border-paper-border py-3 px-4 sm:px-6 shadow-sm backdrop-blur-sm transition-all ${className}`}
+      className={`bg-paper-100/95 border-b border-paper-border py-2 px-3 sm:px-6 shadow-sm backdrop-blur-sm transition-all ${className}`}
       data-testid="search-filter-bar"
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch md:items-center justify-between gap-2.5">
         
         {/* Search input with quick clear */}
         <div className="relative flex-1 min-w-[240px] max-w-xl">

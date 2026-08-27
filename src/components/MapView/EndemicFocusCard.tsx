@@ -111,12 +111,12 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
 
   return (
     <article
-      className={`bg-paper-100/95 backdrop-blur-md border border-paper-border rounded-2xl shadow-natural-lg overflow-hidden transition-all duration-300 max-w-md w-full max-h-[calc(100vh-140px)] flex flex-col ${className}`}
+      className={`bg-paper-100/95 backdrop-blur-md border border-paper-border rounded-2xl shadow-natural-lg overflow-hidden transition-all duration-300 max-w-sm lg:max-w-md w-full max-h-[calc(100vh-185px)] flex flex-col ${className}`}
       data-testid="endemic-focus-card"
       aria-label={`Hồ sơ chi tiết loài ${species.vietnameseName}`}
     >
       {/* Header Bar */}
-      <div className="px-3.5 pt-3 pb-2 sm:px-4 flex items-center justify-between border-b border-paper-border/60 bg-paper-200/40 shrink-0">
+      <div className="px-3 pt-2.5 pb-2 sm:px-3.5 flex items-center justify-between border-b border-paper-border/60 bg-paper-200/40 shrink-0">
         <div className="flex items-center gap-1.5 flex-wrap min-w-0">
           {species.isEndemic && (
             <EndemicBadge size="sm" />
@@ -157,14 +157,14 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
 
       {/* Main Content (collapsible on mobile/toggle) */}
       <div className={`transition-all duration-300 flex-1 min-h-0 ${isCollapsed ? 'hidden' : 'flex flex-col overflow-hidden'}`}>
-        <div className="p-3.5 sm:p-4 space-y-3 flex-1 overflow-y-auto pr-1.5">
+        <div className="p-3 sm:p-3.5 space-y-2.5 flex-1 overflow-y-auto pr-1.5">
           
           {/* Classic Naturalist Artwork Plate Frame */}
           <div className="relative group rounded-xl overflow-hidden border-2 border-paper-300 bg-paper-200/50 p-1 shadow-inner shrink-0">
             <BirdPlateImage
               species={species}
               aspectRatio="cover"
-              className="w-full h-36 sm:h-44 rounded-lg"
+              className="w-full h-32 sm:h-38 rounded-lg"
               imageClassName="group-hover:scale-105 transition-transform duration-500"
             />
 
