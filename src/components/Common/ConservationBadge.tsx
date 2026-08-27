@@ -9,8 +9,8 @@ export interface ConservationBadgeProps {
   className?: string;
 }
 
-interface IUCNMeta {
-  code: IUCNStatus;
+interface StatusMeta {
+  code: string;
   nameVi: string;
   nameEn: string;
   bgColor: string;
@@ -19,12 +19,12 @@ interface IUCNMeta {
   dotColor: string;
 }
 
-const IUCN_CONFIG: Record<IUCNStatus, IUCNMeta> = {
+const STATUS_CONFIG: Record<string, StatusMeta> = {
   CR: {
     code: 'CR',
     nameVi: 'Cực kỳ nguy cấp',
     nameEn: 'Critically Endangered',
-    bgColor: 'bg-red-950/10',
+    bgColor: 'bg-red-950/10 text-red-900 border-red-800/40',
     textColor: 'text-red-900',
     borderColor: 'border-red-800/40',
     dotColor: 'bg-[#991B1B]'
@@ -33,7 +33,7 @@ const IUCN_CONFIG: Record<IUCNStatus, IUCNMeta> = {
     code: 'EN',
     nameVi: 'Nguy cấp',
     nameEn: 'Endangered',
-    bgColor: 'bg-orange-950/10',
+    bgColor: 'bg-orange-950/10 text-orange-900 border-orange-800/40',
     textColor: 'text-orange-900',
     borderColor: 'border-orange-800/40',
     dotColor: 'bg-[#C2410C]'
@@ -42,7 +42,7 @@ const IUCN_CONFIG: Record<IUCNStatus, IUCNMeta> = {
     code: 'VU',
     nameVi: 'Sắp nguy cấp',
     nameEn: 'Vulnerable',
-    bgColor: 'bg-amber-950/10',
+    bgColor: 'bg-amber-950/10 text-amber-900 border-amber-700/40',
     textColor: 'text-amber-900',
     borderColor: 'border-amber-700/40',
     dotColor: 'bg-[#D97706]'
@@ -51,7 +51,7 @@ const IUCN_CONFIG: Record<IUCNStatus, IUCNMeta> = {
     code: 'NT',
     nameVi: 'Gần bị đe dọa',
     nameEn: 'Near Threatened',
-    bgColor: 'bg-yellow-950/10',
+    bgColor: 'bg-yellow-950/10 text-yellow-900 border-yellow-700/40',
     textColor: 'text-yellow-900',
     borderColor: 'border-yellow-700/40',
     dotColor: 'bg-[#854D0E]'
@@ -60,7 +60,7 @@ const IUCN_CONFIG: Record<IUCNStatus, IUCNMeta> = {
     code: 'LC',
     nameVi: 'Ít quan tâm',
     nameEn: 'Least Concern',
-    bgColor: 'bg-emerald-950/10',
+    bgColor: 'bg-emerald-950/10 text-emerald-900 border-emerald-700/40',
     textColor: 'text-emerald-900',
     borderColor: 'border-emerald-700/40',
     dotColor: 'bg-[#166534]'
@@ -92,16 +92,16 @@ export const ConservationBadge: React.FC<ConservationBadgeProps> = ({
   size = 'md',
   className = ''
 }) => {
-  const meta = IUCN_CONFIG[status] || IUCN_CONFIG.LC;
+  // Ưu tiên Sách Đỏ Việt Nam làm bậc phân hạng chính nếu có
+  const primaryCode = vietnamRedList || status;
+  const meta = STATUS_CONFIG[primaryCode] || STATUS_CONFIG.LC;
   const sizeStyle = SIZE_STYLES[size];
 
-  const tooltipText = `IUCN: ${meta.nameVi} (${meta.nameEn})${
-    vietnamRedList ? ` • Sách Đỏ VN: ${vietnamRedList}` : ''
-  }`;
+  const tooltipText = `Sách Đỏ VN: ${vietnamRedList || meta.code} (${meta.nameVi}) • IUCN Toàn cầu: ${status}`;
 
   return (
     <div
-      className={`inline-flex items-center rounded-md border font-sans font-medium transition-colors ${meta.bgColor} ${meta.textColor} ${meta.borderColor} ${sizeStyle.container} ${className}`}
+      className={`inline-flex items-center rounded-md border font-sans font-medium transition-colors ${meta.bgColor} ${sizeStyle.container} ${className}`}
       title={tooltipText}
       aria-label={tooltipText}
     >
@@ -109,18 +109,20 @@ export const ConservationBadge: React.FC<ConservationBadgeProps> = ({
         className={`rounded-full flex-shrink-0 ${meta.dotColor} ${sizeStyle.dot}`}
         aria-hidden="true"
       />
-      <span className={sizeStyle.code}>{meta.code}</span>
+      {/* Primary: Vietnam Red List Code & Label */}
+      <span className={sizeStyle.code}>
+        {vietnamRedList ? `VN:${vietnamRedList}` : meta.code}
+      </span>
       {showLabel && (
         <>
           <span className="text-ink-muted/50 font-normal select-none" aria-hidden="true">|</span>
-          <span className="truncate max-w-[140px] sm:max-w-[180px]">{meta.nameVi}</span>
+          <span className="truncate max-w-[140px] sm:max-w-[180px] font-semibold">{meta.nameVi}</span>
         </>
       )}
-      {vietnamRedList && (
-        <span className="ml-0.5 px-1 py-0.2 rounded bg-black/5 text-[10px] uppercase font-mono tracking-tighter">
-          VN:{vietnamRedList}
-        </span>
-      )}
+      {/* Secondary: Global IUCN tag */}
+      <span className="ml-0.5 px-1 py-0.2 rounded bg-black/5 text-[10px] uppercase font-mono tracking-tighter text-ink-600">
+        IUCN:{status}
+      </span>
     </div>
   );
 };

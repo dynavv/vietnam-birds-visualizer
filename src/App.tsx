@@ -14,7 +14,9 @@ export const MainContent: React.FC = () => {
 
   return (
     <main
-      className="flex-1 min-h-0 w-full max-w-7xl mx-auto px-2 sm:px-4 md:px-6 py-2 md:py-3 flex flex-col overflow-hidden"
+      className={`flex-1 min-h-0 w-full flex flex-col overflow-hidden ${
+        activeView === 'map' ? 'p-0 max-w-none' : 'max-w-7xl mx-auto px-2 sm:px-4 md:px-6 py-2 md:py-3'
+      }`}
       data-testid="main-content-area"
     >
       {activeView === 'map' && (

@@ -99,7 +99,7 @@ describe('EndemicFocusCard Component', () => {
     );
 
     expect(screen.getByText(/Đặc hữu Việt Nam/i)).toBeDefined();
-    expect(screen.getByText('EN')).toBeDefined();
+    expect(screen.getByText('VN:EN')).toBeDefined();
   });
 
   it('calls navigation callbacks when clicking switch view buttons', () => {

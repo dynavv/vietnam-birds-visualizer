@@ -47,14 +47,15 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
   initialView = 'map'
 }) => {
   // Find default endemic species if no initial ID is passed
-  const defaultEndemicId = useMemo(() => {
-    const firstEndemic = allSpeciesData.find(s => s.isEndemic);
-    return firstEndemic ? firstEndemic.id : (allSpeciesData[0]?.id ?? '');
-  }, []);
-
-  const [selectedSpeciesId, setSelectedSpeciesId] = useState<string>(
-    initialSpeciesId ?? defaultEndemicId
-  );
+  const [selectedSpeciesId, setSelectedSpeciesId] = useState<string>(() => {
+    if (initialSpeciesId) return initialSpeciesId;
+    const endemics = allSpeciesData.filter(s => s.isEndemic);
+    if (endemics.length > 0) {
+      const idx = Math.floor(Math.random() * endemics.length);
+      return endemics[idx].id;
+    }
+    return allSpeciesData[0]?.id ?? '';
+  });
   const [activeView, setActiveView] = useState<ViewMode>(initialView);
   const [hoveredTaxonNode, setHoveredTaxonNode] = useState<TaxonomyNode | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');

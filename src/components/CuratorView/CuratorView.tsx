@@ -111,7 +111,7 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-ink-600 font-sans mt-0.5">
-                Specimen &amp; Morphological Curator Archive — Khám phá chi tiết giải phẫu học, bản vẽ khắc cổ điển và lập luận tiến hóa
+                Specimen &amp; Morphological Curator Archive — Khám phá chi tiết giải phẫu học, ảnh thực địa iNaturalist và lập luận tiến hóa
               </p>
             </div>
           </div>
@@ -141,78 +141,16 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
         </div>
       </div>
 
-      {/* Main 2-Column Academic Editorial Layout */}
+      {/* Main Balanced 2-Column Academic Editorial Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        {/* Left Column (Columns 1-7): Visual Plate & Evolutionary Context */}
-        <div className="lg:col-span-7 space-y-6">
-          {/* Specimen Illustration Plate with Victorian Double Border */}
+        {/* Left Column (Columns 1-6): Visual Plate, Ecology & Academic Citations */}
+        <div className="lg:col-span-6 space-y-6">
+          {/* Specimen Illustration Plate */}
           <SpecimenPlate species={species} />
-
-          {/* Connected Evolutionary Phylogenetic Clade Badges */}
-          <CladeBadgeSequence taxonomy={species.taxonomy} />
-
-          {/* Related / Candidate Species Switcher Tabs */}
-          <RelatedSpeciesTabs
-            currentSpecies={species}
-            allSpecies={allSpecies}
-          />
-        </div>
-
-        {/* Right Column (Columns 8-12): Academic Nomenclature, Distribution & Morphology Report */}
-        <div className="lg:col-span-5 space-y-6">
-          {/* Trilingual Nomenclature & Conservation Overview Card */}
-          <section
-            className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card space-y-4"
-            aria-label="Thông tin danh pháp và tình trạng bảo tồn"
-          >
-            <div className="flex items-center justify-between gap-2 border-b border-paper-border pb-3">
-              <span className="font-mono text-[11px] uppercase font-bold text-natural-bark flex items-center gap-1">
-                <Sparkles className="w-3 h-3 text-natural-ochre" />
-                Hồ Sơ Mẫu Vật Điểu Học
-              </span>
-
-              <span className="font-mono text-[11px] text-ink-500 bg-paper-200/80 px-2 py-0.5 rounded border border-paper-border">
-                ID: {species.id}
-              </span>
-            </div>
-
-            {/* Trilingual Names */}
-            <div className="space-y-1.5">
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-ink-900 tracking-tight leading-tight">
-                {species.vietnameseName}
-              </h2>
-
-              <p className="font-serif italic text-base sm:text-lg font-bold text-natural-forest">
-                {species.scientificName}
-              </p>
-
-              <p className="font-sans text-xs sm:text-sm text-ink-600 font-medium">
-                Tên tiếng Anh: <span className="text-ink-800 font-semibold">{species.englishName}</span>
-              </p>
-            </div>
-
-            {/* Badges Matrix */}
-            <div className="flex flex-wrap items-center gap-2 pt-1">
-              {species.isEndemic && <EndemicBadge size="md" />}
-              <ConservationBadge
-                status={species.conservation.iucn}
-                vietnamRedList={species.conservation.vietnamRedList}
-                size="md"
-              />
-            </div>
-
-            {/* Conservation Status Text */}
-            {species.conservation.description && (
-              <div className="p-3 rounded-xl bg-paper-50 border border-paper-border text-xs text-ink-700 leading-relaxed font-sans">
-                <span className="font-semibold text-ink-900">Tình trạng bảo tồn: </span>
-                {species.conservation.description}
-              </div>
-            )}
-          </section>
 
           {/* Distribution & Ecological Habitat Card */}
           <section
-            className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card space-y-3.5"
+            className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 shadow-paper-card space-y-3.5"
             aria-label="Phân bố địa lý và sinh cảnh tại Việt Nam"
           >
             <div className="flex items-center justify-between pb-2 border-b border-paper-border">
@@ -283,13 +221,75 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
             </div>
           </section>
 
+          {/* Academic Identifiers & Primary Literature References */}
+          <AcademicReferences species={species} />
+        </div>
+
+        {/* Right Column (Columns 7-12): Nomenclature, Morphology & Related Species */}
+        <div className="lg:col-span-6 space-y-6">
+          {/* Trilingual Nomenclature & Conservation Overview Card */}
+          <section
+            className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card space-y-4"
+            aria-label="Thông tin danh pháp và tình trạng bảo tồn"
+          >
+            <div className="flex items-center justify-between gap-2 border-b border-paper-border pb-3">
+              <span className="font-mono text-[11px] uppercase font-bold text-natural-bark flex items-center gap-1">
+                <Sparkles className="w-3 h-3 text-natural-ochre" />
+                Hồ Sơ Mẫu Vật Điểu Học
+              </span>
+
+              <span className="font-mono text-[11px] text-ink-500 bg-paper-200/80 px-2 py-0.5 rounded border border-paper-border">
+                ID: {species.id}
+              </span>
+            </div>
+
+            {/* Trilingual Names */}
+            <div className="space-y-1.5">
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-ink-900 tracking-tight leading-tight">
+                {species.vietnameseName}
+              </h2>
+
+              <p className="font-serif italic text-base sm:text-lg font-bold text-natural-forest">
+                {species.scientificName}
+              </p>
+
+              <p className="font-sans text-xs sm:text-sm text-ink-600 font-medium">
+                Tên tiếng Anh: <span className="text-ink-800 font-semibold">{species.englishName}</span>
+              </p>
+            </div>
+
+            {/* Badges Matrix */}
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              {species.isEndemic && <EndemicBadge size="md" />}
+              <ConservationBadge
+                status={species.conservation.iucn}
+                vietnamRedList={species.conservation.vietnamRedList}
+                size="md"
+              />
+            </div>
+
+            {/* Conservation Status Text */}
+            {species.conservation.description && (
+              <div className="p-3 rounded-xl bg-paper-50 border border-paper-border text-xs text-ink-700 leading-relaxed font-sans">
+                <span className="font-semibold text-ink-900">Tình trạng bảo tồn: </span>
+                {species.conservation.description}
+              </div>
+            )}
+          </section>
+
           {/* Deep Morphological Analysis & Curatorial Report */}
           <div className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card">
             <MorphologyReport species={species} />
           </div>
 
-          {/* Academic Identifiers & Primary Literature References */}
-          <AcademicReferences species={species} />
+          {/* Connected Evolutionary Phylogenetic Clade Badges */}
+          <CladeBadgeSequence taxonomy={species.taxonomy} />
+
+          {/* Related / Candidate Species Switcher Tabs */}
+          <RelatedSpeciesTabs
+            currentSpecies={species}
+            allSpecies={allSpecies}
+          />
         </div>
       </div>
     </div>

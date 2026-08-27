@@ -79,7 +79,7 @@ describe('QuickSpecimenPanel Component', () => {
 
     // Badges
     expect(screen.getAllByText(/Đặc hữu/i).length).toBeGreaterThanOrEqual(1);
-    expect(screen.getByText('EN')).toBeDefined();
+    expect(screen.getByText('VN:EN')).toBeDefined();
   });
 
   it('renders phylogenetic clade sequence tags', () => {
