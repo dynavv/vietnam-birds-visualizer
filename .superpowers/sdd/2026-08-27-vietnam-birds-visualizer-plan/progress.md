@@ -2,7 +2,7 @@
 
 | Task | Status | Details |
 |------|--------|---------|
-| Task 1: Scaffolding & Setup | PENDING | Vite + React + TS + Tailwind + D3 + Leaflet |
+| Task 1: Scaffolding & Setup | COMPLETE | Vite + React + TS + Tailwind + D3 + Leaflet |
 | Task 2: Schema & Data Curation | PENDING | species.json, taxonomy.json, ebas.json & tests |
 | Task 3: State Management | PENDING | TaxonomyContext.tsx |
 | Task 4: Common Components | PENDING | Header, SearchFilter, AudioVoiceButton, Badges |
