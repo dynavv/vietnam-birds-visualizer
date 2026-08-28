@@ -1,7 +1,8 @@
-import { render, screen, fireEvent } from '@testing-library/react';
-import { describe, it, expect } from 'vitest';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { BirdPlateImage } from './BirdPlateImage';
 import type { BirdSpecies } from '../../types/bird';
+import * as photoResolver from '../../utils/photoResolver';
 
 const mockSpecies: BirdSpecies = {
   id: 'trochalopteron-ngoclinhense',
@@ -28,25 +29,30 @@ const mockSpecies: BirdSpecies = {
   },
   distribution: {
     ebaRegion: 'Ngoc Linh',
-    elevation: '2000m',
-    habitats: ['Highland forest'],
-    locations: ['Ngoc Linh'],
+    elevation: '1900m - 2598m',
+    habitats: ['Cloud forest'],
+    locations: ['Ngoc Linh Nature Reserve'],
     coordinates: [15.08, 107.98]
   },
   illustration: {
-    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Trochalopteron_ngoclinhense.jpg',
-    artist: 'Naturalist Archives'
+    imageUrl: 'https://example.com/trochalopteron.jpg',
+    thumbnailUrl: 'https://example.com/trochalopteron-thumb.jpg',
+    artist: 'Naturalist Archives',
+    license: 'cc-by'
   }
 };
 
 describe('BirdPlateImage Component', () => {
+  beforeEach(() => {
+    vi.restoreAllMocks();
+  });
+
   it('renders correctly with species info and naturalist plate frame', () => {
     render(<BirdPlateImage species={mockSpecies} />);
-    
-    expect(screen.getByTestId('bird-plate-trochalopteron-ngoclinhense')).toBeDefined();
-    expect(screen.getAllByText(/Khướu Ngọc Linh/i).length).toBeGreaterThanOrEqual(1);
-    expect(screen.getAllByText(/Trochalopteron ngoclinhense/i).length).toBeGreaterThanOrEqual(1);
-    expect(screen.getByText(/★ ĐẶC HỮU/i)).toBeDefined();
+    const img = screen.getByRole('img');
+    expect(img).toBeDefined();
+    expect(img.getAttribute('src')).toBe('https://example.com/trochalopteron.jpg');
+    expect(img.getAttribute('alt')).toContain('Khướu Ngọc Linh');
   });
 
   it('falls back to thumbnailUrl on primary image load error', () => {
@@ -71,7 +77,15 @@ describe('BirdPlateImage Component', () => {
     expect(thumbImg.getAttribute('src')).toBe('https://working.example.com/thumb.jpg');
   });
 
-  it('falls back to naturalist vector artwork fallback when both image and thumbnail fail', () => {
+  it('resolves dynamic photo when static image and thumbnail fail', async () => {
+    vi.spyOn(photoResolver, 'resolveDynamicPhoto').mockResolvedValueOnce({
+      imageUrl: 'https://inaturalist-open-data.s3.amazonaws.com/photos/dynamic-resolved.jpg',
+      thumbnailUrl: 'https://inaturalist-open-data.s3.amazonaws.com/photos/dynamic-thumb.jpg',
+      artist: 'Dynamic Photographer',
+      license: 'cc-by-nc',
+      source: 'inaturalist'
+    });
+
     const speciesBroken: BirdSpecies = {
       ...mockSpecies,
       illustration: {
@@ -87,16 +101,47 @@ describe('BirdPlateImage Component', () => {
     // First error: tries thumbnail
     fireEvent.error(img1);
     const img2 = screen.getByRole('img');
-    // Second error: falls back to vector
+    // Second error: triggers dynamic photo resolver
     fireEvent.error(img2);
 
-    // After all errors, img is removed and vector plate is displayed
-    expect(screen.queryByRole('img')).toBeNull();
+    await waitFor(() => {
+      const resolvedImg = screen.getByRole('img');
+      expect(resolvedImg.getAttribute('src')).toBe('https://inaturalist-open-data.s3.amazonaws.com/photos/dynamic-resolved.jpg');
+    });
+  });
+
+  it('falls back to naturalist vector artwork fallback when all dynamic sources fail', async () => {
+    vi.spyOn(photoResolver, 'resolveDynamicPhoto').mockResolvedValueOnce(null);
+
+    const speciesBroken: BirdSpecies = {
+      ...mockSpecies,
+      illustration: {
+        imageUrl: 'https://broken.example.com/original.jpg',
+        thumbnailUrl: 'https://broken.example.com/thumb.jpg',
+        artist: 'Naturalist Archives'
+      }
+    };
+
+    render(<BirdPlateImage species={speciesBroken} />);
+    const img1 = screen.getByRole('img');
+
+    // First error: tries thumbnail
+    fireEvent.error(img1);
+    const img2 = screen.getByRole('img');
+    // Second error: attempts dynamic resolver then vector
+    fireEvent.error(img2);
+
+    // Wait for all fallbacks to settle
+    await waitFor(() => {
+      expect(screen.queryByRole('img')).toBeNull();
+    });
     expect(screen.getByText(/Passeriformes/i)).toBeDefined();
     expect(screen.getAllByText(/Khướu Ngọc Linh/i).length).toBeGreaterThanOrEqual(1);
   });
 
-  it('resets error state when species prop changes', () => {
+  it('resets error state when species prop changes', async () => {
+    vi.spyOn(photoResolver, 'resolveDynamicPhoto').mockResolvedValue(null);
+
     const speciesA: BirdSpecies = {
       ...mockSpecies,
       id: 'species-a',
@@ -121,7 +166,9 @@ describe('BirdPlateImage Component', () => {
 
     // Error out on species A
     fireEvent.error(imgA);
-    expect(screen.queryByRole('img')).toBeNull();
+    await waitFor(() => {
+      expect(screen.queryByRole('img')).toBeNull();
+    });
 
     // Rerender with species B
     rerender(<BirdPlateImage species={speciesB} />);

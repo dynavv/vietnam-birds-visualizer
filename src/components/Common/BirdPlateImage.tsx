@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BirdSpecies } from '../../types/bird';
+import { resolveDynamicPhoto, ResolvedPhotoInfo } from '../../utils/photoResolver';
 
 interface BirdPlateImageProps {
   species: BirdSpecies;
@@ -35,6 +36,8 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
 }) => {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const [useThumbnailFallback, setUseThumbnailFallback] = useState<boolean>(false);
+  const [dynamicPhoto, setDynamicPhoto] = useState<ResolvedPhotoInfo | null>(null);
+  const [attemptedDynamic, setAttemptedDynamic] = useState<boolean>(false);
   const [hasAllErrors, setHasAllErrors] = useState<boolean>(false);
 
   const rawImageUrl = species.illustration?.imageUrl;
@@ -44,6 +47,8 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
   React.useEffect(() => {
     setIsLoaded(false);
     setUseThumbnailFallback(false);
+    setDynamicPhoto(null);
+    setAttemptedDynamic(false);
     setHasAllErrors(false);
   }, [species.id, rawImageUrl, thumbnailUrl]);
 
@@ -68,15 +73,37 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
   };
 
   // Determine current active image source
-  const currentSrc = !useThumbnailFallback && rawImageUrl ? rawImageUrl : thumbnailUrl || '';
+  let currentSrc = '';
+  if (dynamicPhoto) {
+    currentSrc = dynamicPhoto.imageUrl || dynamicPhoto.thumbnailUrl;
+  } else if (!useThumbnailFallback && rawImageUrl) {
+    currentSrc = rawImageUrl;
+  } else if (thumbnailUrl) {
+    currentSrc = thumbnailUrl;
+  }
+
   const canAttemptImage = Boolean(currentSrc) && !hasAllErrors;
 
   const handleImageError = () => {
     if (!useThumbnailFallback && thumbnailUrl && thumbnailUrl !== rawImageUrl) {
-      // 2-stage fallback: Try thumbnailUrl before falling back to SVG vector
+      // Step 2: Try static thumbnail
       setUseThumbnailFallback(true);
       setIsLoaded(false);
+    } else if (!attemptedDynamic && species.scientificName) {
+      // Step 3: Self-Healing Dynamic Resolver via iNaturalist / Wikipedia
+      setAttemptedDynamic(true);
+      resolveDynamicPhoto(species.scientificName).then((resolved) => {
+        if (resolved) {
+          setDynamicPhoto(resolved);
+          setIsLoaded(false);
+        } else {
+          setHasAllErrors(true);
+        }
+      }).catch(() => {
+        setHasAllErrors(true);
+      });
     } else {
+      // Step 4: Fallback to Victorian Naturalist Vector Plate
       setHasAllErrors(true);
     }
   };
