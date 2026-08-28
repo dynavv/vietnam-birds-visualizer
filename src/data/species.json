@@ -73,7 +73,7 @@
       "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
       "avibaseId": "A37EB5E58B60CBA5",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Trochalopteron%20ngoclinhense",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Trochalopteron%20ngoclinhense",
+      "gbifTaxonKey": "6101121",
       "primaryLiterature": [
         {
           "authors": "Eames, J. C., Le Trong Trai, & Nguyen Cu",
@@ -166,7 +166,7 @@
       "iocTaxonCode": "IOC-AV-PAS-IANTHOCI",
       "avibaseId": "566F8C8C529D965A",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Ianthocincla%20konkakinhensis",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Ianthocincla%20konkakinhensis",
+      "gbifTaxonKey": "7411687",
       "primaryLiterature": [
         {
           "authors": "Eames, J. C. & Eames, C.",
@@ -252,7 +252,7 @@
       "iocTaxonCode": "IOC-AV-PAS-LIOCHICL",
       "avibaseId": "8D9E3FCFD54565C9",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Liochicla%20langbianis",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Liochicla%20langbianis",
+      "gbifTaxonKey": "5231339",
       "primaryLiterature": [
         {
           "authors": "Gyldenstolpe, N.",
@@ -346,7 +346,7 @@
       "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
       "avibaseId": "C798D90149654C02",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Trochalopteron%20yersini",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Trochalopteron%20yersini",
+      "gbifTaxonKey": "6101122",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -454,7 +454,7 @@
       "iocTaxonCode": "IOC-AV-PAS-ACTINODU",
       "avibaseId": "E5AD68C4DF5205FF",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Actinodura%20sodangorum",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Actinodura%20sodangorum",
+      "gbifTaxonKey": "5788984",
       "primaryLiterature": [
         {
           "authors": "Eames, J. C., Le Trong Trai, Nguyen Cu, & Eve, R.",
@@ -540,7 +540,7 @@
       "iocTaxonCode": "IOC-AV-GAL-LOPHURA-",
       "avibaseId": "7F93B0675875E230",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Lophura%20edwardsi",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Lophura%20edwardsi",
+      "gbifTaxonKey": "5227960",
       "primaryLiterature": [
         {
           "authors": "Oustalet, E.",
@@ -641,7 +641,7 @@
       "iocTaxonCode": "IOC-AV-GAL-POLYPLEC",
       "avibaseId": "9BB6A6B4D6A606F3",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Polyplectron%20germaini",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Polyplectron%20germaini",
+      "gbifTaxonKey": "2474078",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -749,7 +749,7 @@
       "iocTaxonCode": "IOC-AV-PAS-CHLORIS-",
       "avibaseId": "8875A64470CD0749",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Chloris%20monguilloti",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Chloris%20monguilloti",
+      "gbifTaxonKey": "6093200",
       "primaryLiterature": [
         {
           "authors": "Delacour, J.",
@@ -843,7 +843,7 @@
       "iocTaxonCode": "IOC-AV-PAS-MACRONUS",
       "avibaseId": "2804840DEE8E6A0B",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Mixornis%20kelleyi",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Mixornis%20kelleyi",
+      "gbifTaxonKey": "7581340",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -943,7 +943,7 @@
       "iocTaxonCode": "IOC-AV-PAS-RIMATOR-",
       "avibaseId": "8E29E9C510F38307",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Rimator%20pasquieri",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Rimator%20pasquieri",
+      "gbifTaxonKey": "5788967",
       "primaryLiterature": [
         {
           "authors": "Delacour, J.",
@@ -1037,7 +1037,7 @@
       "iocTaxonCode": "IOC-AV-PAS-STACHYRI",
       "avibaseId": "14D824462C74AE03",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Stachyris%20herberti",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Stachyris%20herberti",
+      "gbifTaxonKey": "2493422",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -1143,7 +1143,7 @@
       "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
       "avibaseId": "2C87AFACCFC02D67",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Trochalopteron%20formosum%20greenwayi",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Trochalopteron%20formosum%20greenwayi",
+      "gbifTaxonKey": "8272298",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -1251,7 +1251,7 @@
       "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
       "avibaseId": "3F5E062B3F312BDA",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Trochalopteron%20milnei%20sharpei",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Trochalopteron%20milnei%20sharpei",
+      "gbifTaxonKey": "7755506",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -1359,7 +1359,7 @@
       "iocTaxonCode": "IOC-AV-PAS-PSITTIPA",
       "avibaseId": "C89C9217A9ECCE9C",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Psittiparus%20bakeri",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Psittiparus%20bakeri",
+      "gbifTaxonKey": "6100913",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -1466,7 +1466,7 @@
       "iocTaxonCode": "IOC-AV-GAL-RHEINARD",
       "avibaseId": "77CB201DDFCC3109",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Rheinardia%20ocellata",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Rheinardia%20ocellata",
+      "gbifTaxonKey": "2473776",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -1565,7 +1565,7 @@
       "iocTaxonCode": "IOC-AV-PAS-GARRULAX",
       "avibaseId": "71D4A2090891D13C",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Garrulax%20canorus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Garrulax%20canorus",
+      "gbifTaxonKey": "2493479",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -1672,7 +1672,7 @@
       "iocTaxonCode": "IOC-AV-PAS-CYORNIS-",
       "avibaseId": "AFB7FD39275123D2",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Cyornis%20rubeculoides",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Cyornis%20rubeculoides",
+      "gbifTaxonKey": "2492434",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -1779,7 +1779,7 @@
       "iocTaxonCode": "IOC-AV-PAS-AETHOPYG",
       "avibaseId": "4B8F99839735D1C3",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Aethopyga%20saturata",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Aethopyga%20saturata",
+      "gbifTaxonKey": "2484682",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -1878,7 +1878,7 @@
       "iocTaxonCode": "IOC-AV-PAS-LANIUS-S",
       "avibaseId": "69FC190B",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Lanius%20schach",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Lanius%20schach",
+      "gbifTaxonKey": "9273219",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -1985,7 +1985,7 @@
       "iocTaxonCode": "IOC-AV-PAS-PITTA-MO",
       "avibaseId": "AA127B894EAD689E",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Pitta%20moluccensis",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Pitta%20moluccensis",
+      "gbifTaxonKey": "2489520",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -2085,7 +2085,7 @@
       "iocTaxonCode": "IOC-AV-PAS-ORIOLUS-",
       "avibaseId": "CC216A71A3F24E79",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Oriolus%20chinensis",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Oriolus%20chinensis",
+      "gbifTaxonKey": "9750846",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -2184,7 +2184,7 @@
       "iocTaxonCode": "IOC-AV-PAS-COPSYCHU",
       "avibaseId": "0E5168F9",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Copsychus%20malabaricus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Copsychus%20malabaricus",
+      "gbifTaxonKey": "2492675",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -2291,7 +2291,7 @@
       "iocTaxonCode": "IOC-AV-PAS-DICRURUS",
       "avibaseId": "2042CD4209B252E5",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Dicrurus%20paradiseus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Dicrurus%20paradiseus",
+      "gbifTaxonKey": "2493969",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -2390,7 +2390,7 @@
       "iocTaxonCode": "IOC-AV-PAS-GARRULAX",
       "avibaseId": "C7221A3D80B22C99",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Garrulax%20chinensis",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Garrulax%20chinensis",
+      "gbifTaxonKey": "2493448",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -2498,7 +2498,7 @@
       "iocTaxonCode": "IOC-AV-PAS-PSARISOM",
       "avibaseId": "63944E031BC7D37B",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Psarisomus%20dalhousiae",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Psarisomus%20dalhousiae",
+      "gbifTaxonKey": "2484526",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -2597,7 +2597,7 @@
       "iocTaxonCode": "IOC-AV-GAL-LOPHURA-",
       "avibaseId": "6805AC5A7415198C",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Lophura%20diardi",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Lophura%20diardi",
+      "gbifTaxonKey": "5227987",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -2704,7 +2704,7 @@
       "iocTaxonCode": "IOC-AV-GAL-POLYPLEC",
       "avibaseId": "824E5471AC97F6CD",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Polyplectron%20bicalcaratum",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Polyplectron%20bicalcaratum",
+      "gbifTaxonKey": "2474079",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -2810,7 +2810,7 @@
       "iocTaxonCode": "IOC-AV-GAL-ARBOROPH",
       "avibaseId": "B05BB1498F89112D",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Arborophila%20brunneopectus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Arborophila%20brunneopectus",
+      "gbifTaxonKey": "2473629",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -2917,7 +2917,7 @@
       "iocTaxonCode": "IOC-AV-GAL-GALLUS-G",
       "avibaseId": "3749777E14C923E9",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Gallus%20gallus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Gallus%20gallus",
+      "gbifTaxonKey": "9326020",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -3025,7 +3025,7 @@
       "iocTaxonCode": "IOC-AV-BUC-BUCEROS-",
       "avibaseId": "A9D587B9931AD694",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Buceros%20bicornis",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Buceros%20bicornis",
+      "gbifTaxonKey": "2476012",
       "primaryLiterature": [
         {
           "authors": "Linnaeus, C.",
@@ -3127,7 +3127,7 @@
       "iocTaxonCode": "IOC-AV-BUC-RHYTICER",
       "avibaseId": "3C98DDBC",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Rhyticeros%20undulatus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Rhyticeros%20undulatus",
+      "gbifTaxonKey": "2475916",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -3233,7 +3233,7 @@
       "iocTaxonCode": "IOC-AV-BUC-ANORRHIN",
       "avibaseId": "8454CE686FB04E6B",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Anorrhinus%20tickelli",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Anorrhinus%20tickelli",
+      "gbifTaxonKey": "2475927",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -3342,7 +3342,7 @@
       "iocTaxonCode": "IOC-AV-BUC-UPUPA-EP",
       "avibaseId": "FA2F9125",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Upupa%20epops",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Upupa%20epops",
+      "gbifTaxonKey": "2498415",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -3449,7 +3449,7 @@
       "iocTaxonCode": "IOC-AV-COR-MEGACERY",
       "avibaseId": "BE8DC16C2498D5D0",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Megaceryle%20lugubris",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Megaceryle%20lugubris",
+      "gbifTaxonKey": "2475476",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -3557,7 +3557,7 @@
       "iocTaxonCode": "IOC-AV-COR-PELARGOP",
       "avibaseId": "2B0E883A7691DF70",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Pelargopsis%20capensis",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Pelargopsis%20capensis",
+      "gbifTaxonKey": "5228417",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -3664,7 +3664,7 @@
       "iocTaxonCode": "IOC-AV-COR-HALCYON-",
       "avibaseId": "6B292CA05BDA4273",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Halcyon%20pileata",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Halcyon%20pileata",
+      "gbifTaxonKey": "5228310",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -3771,7 +3771,7 @@
       "iocTaxonCode": "IOC-AV-COR-ALCEDO-H",
       "avibaseId": "56A1C8E5B82959EF",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Alcedo%20hercules",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Alcedo%20hercules",
+      "gbifTaxonKey": "2475519",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -3878,7 +3878,7 @@
       "iocTaxonCode": "IOC-AV-COR-CORACIAS",
       "avibaseId": "E931F073AAC6F085",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Coracias%20affinis",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Coracias%20affinis",
+      "gbifTaxonKey": "10963770",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -3987,7 +3987,7 @@
       "iocTaxonCode": "IOC-AV-PIC-PSILOPOG",
       "avibaseId": "2B7AC50ED78F524F",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Psilopogon%20haemacephalus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Psilopogon%20haemacephalus",
+      "gbifTaxonKey": "7691806",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -4094,7 +4094,7 @@
       "iocTaxonCode": "IOC-AV-PIC-PSILOPOG",
       "avibaseId": "FF5877D770D7F51E",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Psilopogon%20faber",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Psilopogon%20faber",
+      "gbifTaxonKey": "7501799",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -4203,7 +4203,7 @@
       "iocTaxonCode": "IOC-AV-PIC-PICUS-RA",
       "avibaseId": "B8B84180A8AC837E",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Picus%20rabieri",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Picus%20rabieri",
+      "gbifTaxonKey": "2478511",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -4311,7 +4311,7 @@
       "iocTaxonCode": "IOC-AV-PIC-CHRYSOCO",
       "avibaseId": "B82693BCD2372924",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Chrysocolaptes%20guttacristatus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Chrysocolaptes%20guttacristatus",
+      "gbifTaxonKey": "7387276",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -4419,7 +4419,7 @@
       "iocTaxonCode": "IOC-AV-ACC-ICTINAET",
       "avibaseId": "28D7E7CCE03B9442",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Ictinaetus%20malaiensis",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Ictinaetus%20malaiensis",
+      "gbifTaxonKey": "5229198",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -4526,7 +4526,7 @@
       "iocTaxonCode": "IOC-AV-ACC-SPILORNI",
       "avibaseId": "3EEEE78AD951A97B",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Spilornis%20cheela",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Spilornis%20cheela",
+      "gbifTaxonKey": "2480433",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -4633,7 +4633,7 @@
       "iocTaxonCode": "IOC-AV-ACC-PERNIS-P",
       "avibaseId": "1192205BDCBB11D2",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Pernis%20ptilorhynchus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Pernis%20ptilorhynchus",
+      "gbifTaxonKey": "5793241",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -4740,7 +4740,7 @@
       "iocTaxonCode": "IOC-AV-ACC-ELANUS-C",
       "avibaseId": "97C47F3E1BA4129A",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Elanus%20caeruleus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Elanus%20caeruleus",
+      "gbifTaxonKey": "2480372",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -4848,7 +4848,7 @@
       "iocTaxonCode": "IOC-AV-STR-KETUPA-Z",
       "avibaseId": "CFDF9E89DD4CE1D4",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Ketupa%20zeylonensis",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Ketupa%20zeylonensis",
+      "gbifTaxonKey": "5232229",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -4957,7 +4957,7 @@
       "iocTaxonCode": "IOC-AV-STR-OTUS-LET",
       "avibaseId": "DAC707E07C7C1838",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Otus%20lettia",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Otus%20lettia",
+      "gbifTaxonKey": "7340196",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -5056,7 +5056,7 @@
       "iocTaxonCode": "IOC-AV-STR-GLAUCIDI",
       "avibaseId": "BD6F35612B009315",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Glaucidium%20brodiei",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Glaucidium%20brodiei",
+      "gbifTaxonKey": "5232113",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -5164,7 +5164,7 @@
       "iocTaxonCode": "IOC-AV-PEL-PSEUDIBI",
       "avibaseId": "9FDF4A2E30DEDDC6",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Pseudibis%20davisoni",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Pseudibis%20davisoni",
+      "gbifTaxonKey": "2480777",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -5272,7 +5272,7 @@
       "iocTaxonCode": "IOC-AV-PEL-PLATALEA",
       "avibaseId": "DFD1DDFF11A7DE43",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Platalea%20minor",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Platalea%20minor",
+      "gbifTaxonKey": "2480805",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -5381,7 +5381,7 @@
       "iocTaxonCode": "IOC-AV-CIC-LEPTOPTI",
       "avibaseId": "749071549152A82B",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Leptoptilos%20javanicus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Leptoptilos%20javanicus",
+      "gbifTaxonKey": "2481947",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -5488,7 +5488,7 @@
       "iocTaxonCode": "IOC-AV-PEL-GORSACHI",
       "avibaseId": "DC10105A2C4B24A4",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Gorsachius%20melanolophus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Gorsachius%20melanolophus",
+      "gbifTaxonKey": "2480841",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -5596,7 +5596,7 @@
       "iocTaxonCode": "IOC-AV-GRU-ANTIGONE",
       "avibaseId": "8D891DB7520688E0",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Antigone%20antigone",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Antigone%20antigone",
+      "gbifTaxonKey": "9606460",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -5704,7 +5704,7 @@
       "iocTaxonCode": "IOC-AV-GRU-RALLINA-",
       "avibaseId": "1DFAA1B704669A12",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Rallina%20fasciata",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Rallina%20fasciata",
+      "gbifTaxonKey": "2474481",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -5812,7 +5812,7 @@
       "iocTaxonCode": "IOC-AV-GRU-PORPHYRI",
       "avibaseId": "C2397CB5DBBA145C",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Porphyrio%20poliocephalus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Porphyrio%20poliocephalus",
+      "gbifTaxonKey": "5739284",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -5920,7 +5920,7 @@
       "iocTaxonCode": "IOC-AV-COL-CALOENAS",
       "avibaseId": "0FFC77EF1BC55357",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Caloenas%20nicobarica",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Caloenas%20nicobarica",
+      "gbifTaxonKey": "5231891",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -6027,7 +6027,7 @@
       "iocTaxonCode": "IOC-AV-COL-DUCULA-B",
       "avibaseId": "FD2D7608F56A1F76",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Ducula%20badia",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Ducula%20badia",
+      "gbifTaxonKey": "2495993",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -6134,7 +6134,7 @@
       "iocTaxonCode": "IOC-AV-COL-TRERON-A",
       "avibaseId": "CB6653B400E3BD5C",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Treron%20apicauda",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Treron%20apicauda",
+      "gbifTaxonKey": "2495726",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -6241,7 +6241,7 @@
       "iocTaxonCode": "IOC-AV-ANS-ASARCORN",
       "avibaseId": "FDB6503BA6873DFA",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Asarcornis%20scutulata",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Asarcornis%20scutulata",
+      "gbifTaxonKey": "2498183",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -6348,7 +6348,7 @@
       "iocTaxonCode": "IOC-AV-ANS-AIX-GALE",
       "avibaseId": "E1714A09EA1DFD1D",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Aix%20galericulata",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Aix%20galericulata",
+      "gbifTaxonKey": "2498388",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -6455,7 +6455,7 @@
       "iocTaxonCode": "IOC-AV-CUC-HIEROCOC",
       "avibaseId": "CC033E8154BF486F",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Hierococcyx%20sparverioides",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Hierococcyx%20sparverioides",
+      "gbifTaxonKey": "7340214",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -6564,7 +6564,7 @@
       "iocTaxonCode": "IOC-AV-CUC-CARPOCOC",
       "avibaseId": "15594C1714C05135",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Carpococcyx%20renauldi",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Carpococcyx%20renauldi",
+      "gbifTaxonKey": "2496390",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -6672,7 +6672,7 @@
       "iocTaxonCode": "IOC-AV-CUC-CENTROPU",
       "avibaseId": "F5F991ACE09A8601",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Centropus%20sinensis",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Centropus%20sinensis",
+      "gbifTaxonKey": "5232005",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -6780,7 +6780,7 @@
       "iocTaxonCode": "IOC-AV-TRO-HARPACTE",
       "avibaseId": "B8B765D8D01C96E7",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Harpactes%20erythrocephalus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Harpactes%20erythrocephalus",
+      "gbifTaxonKey": "5232031",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -6887,7 +6887,7 @@
       "iocTaxonCode": "IOC-AV-TRO-HARPACTE",
       "avibaseId": "F663214EC2B901F8",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Harpactes%20oreskios",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Harpactes%20oreskios",
+      "gbifTaxonKey": "5232055",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -6994,7 +6994,7 @@
       "iocTaxonCode": "IOC-AV-FAL-MICROHIE",
       "avibaseId": "767A595EA44683EA",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Microhierax%20melanoleucos",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Microhierax%20melanoleucos",
+      "gbifTaxonKey": "2481079",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
@@ -7102,7 +7102,7 @@
       "iocTaxonCode": "IOC-AV-CAP-CAPRIMUL",
       "avibaseId": "04DDADF0515EECDA",
       "iucnUrl": "https://www.iucnredlist.org/search?query=Caprimulgus%20macrurus",
-      "gbifTaxonKey": "https://www.gbif.org/species/search?q=Caprimulgus%20macrurus",
+      "gbifTaxonKey": "2496890",
       "primaryLiterature": [
         {
           "authors": "Craik, R. C. & Le Manh Hung",
