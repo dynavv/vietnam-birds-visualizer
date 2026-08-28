@@ -14,8 +14,12 @@ export const MainContent: React.FC = () => {
 
   return (
     <main
-      className={`flex-1 min-h-0 w-full flex flex-col overflow-hidden ${
-        activeView === 'map' ? 'p-0 max-w-none' : 'max-w-7xl mx-auto px-2 sm:px-4 md:px-6 py-2 md:py-3'
+      className={`flex-1 min-h-0 w-full flex flex-col ${
+        activeView === 'map'
+          ? 'p-0 max-w-none overflow-hidden'
+          : activeView === 'sunburst'
+          ? 'max-w-7xl mx-auto px-2 sm:px-4 md:px-6 py-1.5 md:py-2 h-full overflow-hidden'
+          : 'max-w-7xl mx-auto px-2 sm:px-4 md:px-6 py-2 md:py-3 overflow-y-auto'
       }`}
       data-testid="main-content-area"
     >
@@ -26,8 +30,8 @@ export const MainContent: React.FC = () => {
       )}
 
       {activeView === 'sunburst' && (
-        <div key="sunburst-view" className="animate-fadeIn h-full w-full overflow-y-auto pr-1" data-testid="active-sunburst-view">
-          <SunburstView onViewCurator={() => setActiveView('curator')} />
+        <div key="sunburst-view" className="animate-fadeIn h-full w-full flex flex-col min-h-0 overflow-y-auto lg:overflow-hidden" data-testid="active-sunburst-view">
+          <SunburstView onViewCurator={() => setActiveView('curator')} className="h-full" />
         </div>
       )}
 

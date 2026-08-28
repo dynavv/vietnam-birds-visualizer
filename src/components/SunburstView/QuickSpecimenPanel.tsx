@@ -5,7 +5,6 @@ import {
   ChevronRight,
   Info,
   Layers,
-  HelpCircle,
   Eye
 } from 'lucide-react';
 import type { BirdSpecies } from '../../types/bird';
@@ -43,7 +42,7 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
   if (!species) {
     return (
       <aside
-        className={`bg-paper-100/95 backdrop-blur-md border border-paper-border rounded-2xl p-6 shadow-paper-card flex flex-col items-center justify-center text-center space-y-4 ${className}`}
+        className={`bg-paper-100/95 backdrop-blur-md border border-paper-border rounded-2xl p-6 shadow-paper-card flex flex-col items-center justify-center text-center space-y-4 h-full min-h-0 ${className}`}
         data-testid="quick-specimen-panel-empty"
         aria-label="Thẻ mẫu vật trống"
       >
@@ -58,22 +57,18 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
             Rê chuột vào các nan quạt trên bánh xe hoặc nhấp chọn một loài chim để xem hồ sơ giám tuyển &amp; giải phẫu hình thái học tức thì.
           </p>
         </div>
-        <div className="p-3 bg-paper-200/60 rounded-xl border border-paper-border text-[11px] text-ink-500 font-sans flex items-center gap-2">
-          <HelpCircle className="w-4 h-4 text-natural-terracotta flex-shrink-0" />
-          <span>Mẹo: Nhấp vào Bộ/Họ/Chi để phóng to chi tiết nhánh tiến hóa.</span>
-        </div>
       </aside>
     );
   }
 
   return (
     <aside
-      className={`bg-paper-100/95 backdrop-blur-md border border-paper-border rounded-2xl shadow-paper-card overflow-hidden transition-all duration-300 flex flex-col ${className}`}
+      className={`bg-paper-100/95 backdrop-blur-md border border-paper-border rounded-2xl shadow-paper-card overflow-hidden transition-all duration-300 flex flex-col h-full min-h-0 ${className}`}
       data-testid="quick-specimen-panel"
       aria-label={`Thẻ mẫu vật giám tuyển loài ${species.vietnameseName}`}
     >
       {/* Top Header Bar */}
-      <div className="px-4 py-2.5 bg-paper-200/50 border-b border-paper-border flex items-center justify-between gap-2">
+      <div className="px-4 py-2 bg-paper-200/50 border-b border-paper-border flex items-center justify-between gap-2 shrink-0">
         <div className="flex items-center gap-1.5 flex-wrap">
           {isHoverPreview ? (
             <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-natural-ochre/20 text-natural-ochre border border-natural-ochre/40 text-[10px] font-mono font-bold uppercase tracking-wider">
@@ -98,7 +93,7 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
       </div>
 
       {/* Main Scrollable Body */}
-      <div className="p-4 sm:p-5 space-y-4 overflow-y-auto max-h-[660px]">
+      <div className="p-3 sm:p-4 space-y-3.5 flex-1 min-h-0 overflow-y-auto scrollbar-thin">
         {/* Classic Naturalist Artwork Plate */}
         <div className="relative group rounded-xl overflow-hidden border-2 border-paper-300 bg-paper-200/60 p-1.5 shadow-inner">
           <BirdPlateImage
