@@ -17,9 +17,17 @@ import { vietnamBoundaryData } from '../../data';
 import { EndemicFocusCard } from './EndemicFocusCard';
 import { EBARegionLegend } from './EBARegionLegend';
 
-// Center and zoom defaults for Vietnam overview
+// Center, zoom and bounds defaults for Vietnam overview
 const VIETNAM_CENTER: [number, number] = [16.0, 107.5];
 const VIETNAM_DEFAULT_ZOOM = 6;
+const VIETNAM_MIN_ZOOM = 6; // Zoom out tối đa vừa vặn toàn cảnh Việt Nam (theo ảnh)
+const VIETNAM_MAX_ZOOM = 16; // Giữ nguyên độ zoom in chi tiết
+
+// Giới hạn phạm vi kéo bản đồ quanh Việt Nam và Biển Đông
+const VIETNAM_MAX_BOUNDS: [[number, number], [number, number]] = [
+  [4.0, 97.0],  // Tây Nam (Bao gồm vịnh Thái Lan, Cà Mau, Trường Sa)
+  [26.5, 118.0] // Đông Bắc (Bao gồm Hà Giang, Hoàng Sa, Vịnh Bắc Bộ)
+];
 
 // Sovereign maritime territories of Vietnam
 const SOVEREIGNTY_POINTS = [
@@ -288,8 +296,10 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
       <MapContainer
         center={VIETNAM_CENTER}
         zoom={VIETNAM_DEFAULT_ZOOM}
-        minZoom={5}
-        maxZoom={16}
+        minZoom={VIETNAM_MIN_ZOOM}
+        maxZoom={VIETNAM_MAX_ZOOM}
+        maxBounds={VIETNAM_MAX_BOUNDS}
+        maxBoundsViscosity={0.85}
         scrollWheelZoom={true}
         className="w-full h-full z-0"
         style={{ height: '100%', width: '100%', background: '#FAF8F5' }}
