@@ -28,9 +28,9 @@ export const getIucnUrl = (species: BirdSpecies): string => {
  */
 export const getAvibaseUrl = (species: BirdSpecies): string => {
   const avibaseId = species.academic?.avibaseId?.trim();
-  // Nếu là mã 16 ký tự hex hợp lệ của Avibase (không phải dummy slug 'AVIBASE-...')
-  if (avibaseId && /^[A-F0-9]{16}$/i.test(avibaseId)) {
-    return `https://avibase.bsc-eoc.org/species.jsp?avibaseid=${avibaseId}&lang=EN`;
+  // Nếu là mã 8-16 ký tự hex hợp lệ của Avibase (không phải dummy slug 'AVIBASE-...')
+  if (avibaseId && /^[A-F0-9]{8,16}$/i.test(avibaseId)) {
+    return `https://avibase.bsc-eoc.org/species.jsp?lang=EN&avibaseid=${avibaseId}`;
   }
   const cleanName = species.scientificName ? species.scientificName.trim() : '';
   return `https://avibase.bsc-eoc.org/species.jsp?lang=EN&sec=summary&qstr=${encodeURIComponent(cleanName)}`;

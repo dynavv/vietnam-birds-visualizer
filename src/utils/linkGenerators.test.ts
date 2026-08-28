@@ -74,7 +74,7 @@ describe('linkGenerators Utility', () => {
           avibaseId: '8C7C7DF4704BE0BA'
         }
       };
-      expect(getAvibaseUrl(species)).toBe('https://avibase.bsc-eoc.org/species.jsp?avibaseid=8C7C7DF4704BE0BA&lang=EN');
+      expect(getAvibaseUrl(species)).toBe('https://avibase.bsc-eoc.org/species.jsp?lang=EN&avibaseid=8C7C7DF4704BE0BA');
     });
 
     it('falls back to scientific name search when avibaseId is dummy slug', () => {

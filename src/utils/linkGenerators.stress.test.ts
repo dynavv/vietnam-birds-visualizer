@@ -112,21 +112,21 @@ describe('Adversarial Stress Test: linkGenerators', () => {
         ...dummySpecies,
         academic: { avibaseId: '  8c7c7df4704be0ba  ' }
       };
-      expect(getAvibaseUrl(sp)).toBe('https://avibase.bsc-eoc.org/species.jsp?avibaseid=8c7c7df4704be0ba&lang=EN');
+      expect(getAvibaseUrl(sp)).toBe('https://avibase.bsc-eoc.org/species.jsp?lang=EN&avibaseid=8c7c7df4704be0ba');
     });
 
-    it('rejects invalid hex lengths (15 chars, 17 chars) and falls back to search', () => {
-      const sp15: BirdSpecies = {
+    it('rejects invalid hex lengths (7 chars, 17 chars) and falls back to search', () => {
+      const sp7: BirdSpecies = {
         ...dummySpecies,
         scientificName: 'Actinodura sodangorum',
-        academic: { avibaseId: '8C7C7DF4704BE0B' } // 15 chars
+        academic: { avibaseId: '8C7C7DF' } // 7 chars (< 8)
       };
-      expect(getAvibaseUrl(sp15)).toBe('https://avibase.bsc-eoc.org/species.jsp?lang=EN&sec=summary&qstr=Actinodura%20sodangorum');
+      expect(getAvibaseUrl(sp7)).toBe('https://avibase.bsc-eoc.org/species.jsp?lang=EN&sec=summary&qstr=Actinodura%20sodangorum');
 
       const sp17: BirdSpecies = {
         ...dummySpecies,
         scientificName: 'Actinodura sodangorum',
-        academic: { avibaseId: '8C7C7DF4704BE0BAA' } // 17 chars
+        academic: { avibaseId: '8C7C7DF4704BE0BAA' } // 17 chars (> 16)
       };
       expect(getAvibaseUrl(sp17)).toBe('https://avibase.bsc-eoc.org/species.jsp?lang=EN&sec=summary&qstr=Actinodura%20sodangorum');
     });
