@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Volume2, VolumeX, Pause, Play, AlertCircle } from 'lucide-react';
+import { Volume2, VolumeX, Pause, Play, AlertCircle, Loader2 } from 'lucide-react';
 import type { AudioCallInfo } from '../../types/bird';
 import { audioManager, AudioPlaybackState } from '../../utils/audioManager';
 
@@ -221,6 +221,8 @@ export const AudioVoiceButtonComponent: React.FC<AudioVoiceButtonProps> = ({
     >
       {isError ? (
         <AlertCircle className={`${config.iconSize} text-red-600 flex-shrink-0`} />
+      ) : isLoading ? (
+        <Loader2 className={`${config.iconSize} flex-shrink-0 text-natural-moss animate-spin`} />
       ) : isPlaying ? (
         <Pause className={`${config.iconSize} flex-shrink-0`} />
       ) : (
@@ -230,6 +232,8 @@ export const AudioVoiceButtonComponent: React.FC<AudioVoiceButtonProps> = ({
       <span className="font-sans text-xs">
         {isError
           ? 'Lỗi âm thanh'
+          : isLoading
+          ? 'Đang tải âm...'
           : isPlaying
           ? 'Đang phát...'
           : 'Nghe tiếng hót'}
