@@ -18,7 +18,6 @@ import { ConservationBadge } from '../Common/ConservationBadge';
 import { EndemicBadge } from '../Common/EndemicBadge';
 import { AudioVoiceButton } from '../Common/AudioVoiceButton';
 import { BirdPlateImage } from '../Common/BirdPlateImage';
-import { getIucnUrl, getAvibaseUrl, getGbifUrl } from '../../utils/linkGenerators';
 
 export interface EndemicFocusCardProps {
   species?: BirdSpecies | null;
@@ -165,7 +164,7 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
             <BirdPlateImage
               species={species}
               aspectRatio="cover"
-              className="w-full h-32 sm:h-38 rounded-lg"
+              className="w-full aspect-[16/10] min-h-[175px] max-h-[225px] rounded-lg"
               imageClassName="group-hover:scale-105 transition-transform duration-500"
             />
 
@@ -272,40 +271,6 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
                 ))}
               </div>
             )}
-          </div>
-
-          {/* Academic Identifiers Quick Links */}
-          <div className="flex items-center justify-between gap-1.5 text-[11px] text-ink-600 bg-paper-50 p-2 rounded-lg border border-paper-border">
-            <span className="font-semibold text-ink-700">Tra cứu học thuật:</span>
-            <div className="flex items-center gap-1.5">
-              <a
-                href={getIucnUrl(species)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-1.5 py-0.5 rounded bg-paper-200 hover:bg-natural-moss/20 hover:text-natural-moss font-mono text-[10px] transition-colors"
-                title="Hồ sơ bảo tồn IUCN Red List"
-              >
-                IUCN ↗
-              </a>
-              <a
-                href={getAvibaseUrl(species)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-1.5 py-0.5 rounded bg-paper-200 hover:bg-natural-moss/20 hover:text-natural-moss font-mono text-[10px] transition-colors"
-                title="Hồ sơ danh lục Avibase"
-              >
-                Avibase ↗
-              </a>
-              <a
-                href={getGbifUrl(species)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-1.5 py-0.5 rounded bg-paper-200 hover:bg-natural-moss/20 hover:text-natural-moss font-mono text-[10px] transition-colors"
-                title="Bản đồ ghi nhận mẫu GBIF"
-              >
-                GBIF ↗
-              </a>
-            </div>
           </div>
 
           {/* Action Navigation Buttons */}
