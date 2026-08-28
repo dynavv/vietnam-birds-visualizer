@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, CircleMarker, GeoJSON, useMap, Tooltip } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, Circle, GeoJSON, useMap, Tooltip } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import {
@@ -346,17 +346,17 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
 
           return (
             <React.Fragment key={region.id}>
-              {/* Soft ecological boundary halo */}
+              {/* Geographic ecological boundary circle (in meters, scales naturally with map zoom) */}
               {showEBACircles && (
-                <CircleMarker
+                <Circle
                   center={region.coordinates}
-                  radius={isSelected ? 45 : 32}
+                  radius={region.radiusMeters || 50000}
                   pathOptions={{
                     color: isSelected ? '#C2593F' : '#2D5A27',
                     fillColor: isSelected ? '#C2593F' : '#2D5A27',
-                    fillOpacity: isSelected ? 0.18 : 0.08,
-                    weight: isSelected ? 2.5 : 1.5,
-                    dashArray: isSelected ? undefined : '4, 4'
+                    fillOpacity: isSelected ? 0.15 : 0.06,
+                    weight: isSelected ? 2.5 : 1.8,
+                    dashArray: isSelected ? undefined : '6, 6'
                   }}
                   eventHandlers={{
                     click: () => handleSelectRegion(region)
@@ -370,7 +370,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
                       {region.keySpeciesIds.length} loài đặc hữu &amp; tiêu biểu
                     </div>
                   </Tooltip>
-                </CircleMarker>
+                </Circle>
               )}
 
               {/* EBA Center Icon Marker */}

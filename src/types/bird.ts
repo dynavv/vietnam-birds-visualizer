@@ -104,6 +104,7 @@ export interface EBARegion {
   vietnameseName: string;
   description: string;
   coordinates: [number, number];
+  radiusMeters?: number;
   zoomLevel: number;
   keySpeciesIds: string[];
   habitats: string[];
