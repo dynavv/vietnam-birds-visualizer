@@ -221,11 +221,20 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
             </div>
           </section>
 
+          {/* Connected Evolutionary Phylogenetic Clade Badges */}
+          <CladeBadgeSequence taxonomy={species.taxonomy} />
+
+          {/* Related / Candidate Species Switcher Tabs */}
+          <RelatedSpeciesTabs
+            currentSpecies={species}
+            allSpecies={allSpecies}
+          />
+
           {/* Academic Identifiers & Primary Literature References */}
           <AcademicReferences species={species} />
         </div>
 
-        {/* Right Column (Columns 7-12): Nomenclature, Morphology & Related Species */}
+        {/* Right Column (Columns 7-12): Nomenclature & Morphology */}
         <div className="lg:col-span-6 space-y-6">
           {/* Trilingual Nomenclature & Conservation Overview Card */}
           <section
@@ -281,15 +290,6 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
           <div className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card">
             <MorphologyReport species={species} />
           </div>
-
-          {/* Connected Evolutionary Phylogenetic Clade Badges */}
-          <CladeBadgeSequence taxonomy={species.taxonomy} />
-
-          {/* Related / Candidate Species Switcher Tabs */}
-          <RelatedSpeciesTabs
-            currentSpecies={species}
-            allSpecies={allSpecies}
-          />
         </div>
       </div>
     </div>
