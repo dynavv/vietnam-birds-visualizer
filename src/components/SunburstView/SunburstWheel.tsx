@@ -73,6 +73,7 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
 
   const svgRef = useRef<SVGSVGElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const d3ZoomHandlerRef = useRef<((node: TaxonomyNode) => void) | null>(null);
 
   const rawTreeData = propData || taxonomyTree;
 
@@ -98,10 +99,14 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
   // Zoom to a specific node function
   const zoomToNode = useCallback(
     (node: TaxonomyNode) => {
-      setCurrentZoomNode(node);
-      setIsZoomed(node !== rawTreeData && node.name !== rawTreeData.name);
-      if (onZoomNode) {
-        onZoomNode(node);
+      if (d3ZoomHandlerRef.current) {
+        d3ZoomHandlerRef.current(node);
+      } else {
+        setCurrentZoomNode(node);
+        setIsZoomed(node !== rawTreeData && node.name !== rawTreeData.name);
+        if (onZoomNode) {
+          onZoomNode(node);
+        }
       }
     },
     [rawTreeData, onZoomNode]
@@ -112,9 +117,11 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
     zoomToNode(rawTreeData);
   }, [rawTreeData, zoomToNode]);
 
-  // Handle external focus node prop change
+  // Reactive listener for activeFocusNode prop change to trigger D3 zoom animation
   useEffect(() => {
-    if (activeFocusNode) {
+    if (activeFocusNode && d3ZoomHandlerRef.current) {
+      d3ZoomHandlerRef.current(activeFocusNode);
+    } else if (activeFocusNode) {
       setCurrentZoomNode(activeFocusNode);
       setIsZoomed(activeFocusNode !== rawTreeData && activeFocusNode.name !== rawTreeData.name);
     }
@@ -397,16 +404,26 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
           .attr('stroke-width', d => (d.data.rank === 'order' ? '1.5px' : '0.8px'));
       });
 
-    // If external activeFocusNode changed, zoom to it
-    if (currentZoomNode && currentZoomNode.name !== rawTreeData.name) {
-      const matchNode = partitionRoot.descendants().find(d => d.data.name === currentZoomNode.name);
+    // Expose programmatic zoom handler to external callers
+    d3ZoomHandlerRef.current = (targetNode: TaxonomyNode) => {
+      const matchNode = partitionRoot.descendants().find(
+        d => d.data.name === targetNode.name || (targetNode.speciesId && d.data.speciesId === targetNode.speciesId)
+      );
       if (matchNode) {
         clicked(new MouseEvent('click'), matchNode);
+      } else {
+        clicked(new MouseEvent('click'), partitionRoot);
       }
+    };
+
+    // If external activeFocusNode changed on mount, zoom to it
+    if (activeFocusNode && activeFocusNode.name !== rawTreeData.name) {
+      d3ZoomHandlerRef.current(activeFocusNode);
     }
 
     // Cleanup: Interrupt running transitions on unmount
     return () => {
+      d3ZoomHandlerRef.current = null;
       if (svgRef.current) {
         d3.select(svgRef.current).selectAll('*').interrupt();
       }

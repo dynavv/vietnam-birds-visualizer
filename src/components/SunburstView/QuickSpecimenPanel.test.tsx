@@ -82,19 +82,6 @@ describe('QuickSpecimenPanel Component', () => {
     expect(screen.getByText('VN:EN')).toBeDefined();
   });
 
-  it('renders phylogenetic clade sequence tags', () => {
-    render(
-      <TaxonomyProvider>
-        <QuickSpecimenPanel species={mockBird} />
-      </TaxonomyProvider>
-    );
-
-    expect(screen.getByText('Chuỗi Phân loại Tiến hóa (Clade)')).toBeDefined();
-    expect(screen.getByText('Aves')).toBeDefined();
-    expect(screen.getByText('Neognathae')).toBeDefined();
-    expect(screen.getByText('Passerea')).toBeDefined();
-  });
-
   it('renders curatorial overview quote and diagnostic features', () => {
     render(
       <TaxonomyProvider>

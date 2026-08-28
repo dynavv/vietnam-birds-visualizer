@@ -4,33 +4,33 @@ import { SunburstView } from './SunburstView';
 import { TaxonomyProvider } from '../../context/TaxonomyContext';
 
 describe('SunburstView Component Dual-Mode', () => {
-  it('renders dual-mode switchers and defaults to Cladogram Tree mode', () => {
+  it('renders dual-mode switchers and defaults to Radial Fan (Bánh xe) mode', () => {
     render(
       <TaxonomyProvider>
         <SunburstView />
       </TaxonomyProvider>
     );
 
-    expect(screen.getByText('Cây Phân Nhánh')).toBeDefined();
     expect(screen.getByText('Bánh Xe Rẻ Quạt')).toBeDefined();
-    expect(screen.getByTestId('cladogram-tree-view')).toBeDefined();
+    expect(screen.getByText('Cây Phân Nhánh')).toBeDefined();
+    expect(screen.getByTestId('sunburst-wheel-container')).toBeDefined();
   });
 
-  it('switches between Tree and Radial Fan views on toggle', () => {
+  it('switches between Radial Fan and Tree views on toggle', () => {
     render(
       <TaxonomyProvider>
         <SunburstView />
       </TaxonomyProvider>
     );
-
-    const radialBtn = screen.getByText('Bánh Xe Rẻ Quạt');
-    fireEvent.click(radialBtn);
-
-    expect(screen.getByTestId('sunburst-wheel-container')).toBeDefined();
 
     const treeBtn = screen.getByText('Cây Phân Nhánh');
     fireEvent.click(treeBtn);
 
     expect(screen.getByTestId('cladogram-tree-view')).toBeDefined();
+
+    const radialBtn = screen.getByText('Bánh Xe Rẻ Quạt');
+    fireEvent.click(radialBtn);
+
+    expect(screen.getByTestId('sunburst-wheel-container')).toBeDefined();
   });
 });

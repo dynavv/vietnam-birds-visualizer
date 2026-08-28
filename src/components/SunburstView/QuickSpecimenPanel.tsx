@@ -139,32 +139,6 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
           />
         </div>
 
-        {/* Phylogenetic Clade Sequence */}
-        <div className="space-y-1.5">
-          <h3 className="text-[11px] font-mono uppercase tracking-wider text-ink-500 font-bold flex items-center gap-1">
-            <Layers className="w-3.5 h-3.5 text-natural-moss" />
-            <span>Chuỗi Phân loại Tiến hóa (Clade)</span>
-          </h3>
-
-          <div className="flex flex-wrap gap-1 p-2 bg-paper-200/50 rounded-xl border border-paper-border">
-            {species.taxonomy.clade && species.taxonomy.clade.length > 0 ? (
-              species.taxonomy.clade.map((cladeName, idx) => (
-                <span
-                  key={idx}
-                  className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-paper-100 border border-paper-border text-[11px] font-mono text-ink-700"
-                >
-                  <span className="text-natural-moss font-semibold">#{idx + 1}</span>
-                  <span>{cladeName}</span>
-                </span>
-              ))
-            ) : (
-              <span className="text-xs text-ink-500 italic">
-                {species.taxonomy.order} › {species.taxonomy.family} › {species.taxonomy.genus}
-              </span>
-            )}
-          </div>
-        </div>
-
         {/* Curatorial & Morphological Reasoning */}
         {species.morphologicalAnalysis && (
           <div className="space-y-2">

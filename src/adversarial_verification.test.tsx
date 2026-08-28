@@ -123,6 +123,9 @@ describe('Adversarial Verification Suite — Challenger 2', () => {
 
       expect(screen.getByTestId('current-view').textContent).toBe('sunburst');
 
+      // Switch to Cladogram Tree mode
+      fireEvent.click(screen.getByText('Cây Phân Nhánh'));
+
       // Expand Columbiformes (Bộ Bồ câu) in Cladogram Tree
       const columbiformesText = screen.getByText(/Bộ Bồ câu/i);
       expect(columbiformesText).toBeDefined();
@@ -145,6 +148,9 @@ describe('Adversarial Verification Suite — Challenger 2', () => {
       fireEvent.click(screen.getByTestId('btn-sunburst'));
       expect(screen.getByTestId('current-view').textContent).toBe('sunburst');
 
+      // Switch back to Cladogram Tree view
+      fireEvent.click(screen.getByText('Cây Phân Nhánh'));
+
       // Verify Họ Bồ câu is STILL expanded!
       expect(screen.getByText(/Họ Bồ câu/i)).toBeDefined();
     });
@@ -158,6 +164,9 @@ describe('Adversarial Verification Suite — Challenger 2', () => {
 
       // In Map view, switch to Sunburst tab
       fireEvent.click(screen.getByTestId('btn-sunburst'));
+
+      // Switch to Cladogram Tree
+      fireEvent.click(screen.getByText('Cây Phân Nhánh'));
 
       // Look for Lophura edwardsi or select through tree
       const lophuraSpecies = screen.getByTestId('tree-species-lophura-edwardsi');
@@ -174,6 +183,9 @@ describe('Adversarial Verification Suite — Challenger 2', () => {
       // Switch back to Sunburst
       fireEvent.click(screen.getByTestId('btn-sunburst'));
 
+      // Switch to Cladogram Tree
+      fireEvent.click(screen.getByText('Cây Phân Nhánh'));
+
       // Both Galliformes and Phasianidae should remain expanded and species should remain selected
       const remountedLophura = screen.getByTestId('tree-species-lophura-edwardsi');
       expect(remountedLophura).toBeDefined();
@@ -186,6 +198,9 @@ describe('Adversarial Verification Suite — Challenger 2', () => {
           <TabSwitchSimulator />
         </TaxonomyProvider>
       );
+
+      // Switch to Cladogram Tree
+      fireEvent.click(screen.getByText('Cây Phân Nhánh'));
 
       // Click Expand All
       const expandAllBtn = screen.getByText(/Mở rộng tất cả/i);
@@ -202,6 +217,9 @@ describe('Adversarial Verification Suite — Challenger 2', () => {
       // Switch back to Sunburst
       fireEvent.click(screen.getByTestId('btn-sunburst'));
 
+      // Switch to Cladogram Tree
+      fireEvent.click(screen.getByText('Cây Phân Nhánh'));
+
       // Both should still be expanded
       expect(screen.getByText(/Họ Bồ câu/i)).toBeDefined();
       expect(screen.getByText(/Họ Cu cu/i)).toBeDefined();
@@ -213,6 +231,9 @@ describe('Adversarial Verification Suite — Challenger 2', () => {
       // Switch to Map and back
       fireEvent.click(screen.getByTestId('btn-map'));
       fireEvent.click(screen.getByTestId('btn-sunburst'));
+
+      // Switch to Cladogram Tree
+      fireEvent.click(screen.getByText('Cây Phân Nhánh'));
 
       // Families should be collapsed (not in document)
       expect(screen.queryByText(/Họ Bồ câu/i)).toBeNull();

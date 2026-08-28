@@ -32,7 +32,7 @@ export const SunburstView: React.FC<SunburstViewProps> = ({
     selectSpecies
   } = useTaxonomy();
 
-  const [chartMode, setChartMode] = useState<TaxonomyChartMode>('tree');
+  const [chartMode, setChartMode] = useState<TaxonomyChartMode>('radial');
   const [activeFocusNode, setActiveFocusNode] = useState<TaxonomyNode | null>(null);
 
   // Compute active phylogenetic lineage for the breadcrumb trail
@@ -86,13 +86,29 @@ export const SunburstView: React.FC<SunburstViewProps> = ({
             </p>
           </div>
 
-          {/* Mode Switcher: Cladogram Tree vs Radial Fan */}
+          {/* Mode Switcher: Radial Fan vs Cladogram Tree (Radial as Default) */}
           <div className="flex items-center gap-2 self-start sm:self-auto flex-wrap shrink-0">
             <div
               className="inline-flex p-1 rounded-xl bg-paper-200 border border-paper-border text-xs font-semibold shadow-inner"
               role="radiogroup"
               aria-label="Kiểu biểu đồ phân loại"
             >
+              <button
+                type="button"
+                role="radio"
+                aria-checked={chartMode === 'radial'}
+                onClick={() => setChartMode('radial')}
+                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-lg transition-all ${
+                  chartMode === 'radial'
+                    ? 'bg-paper-50 text-natural-forest font-bold shadow-sm border border-paper-border/80'
+                    : 'text-ink-600 hover:text-ink-900'
+                }`}
+                title="Xem dạng Bánh Xe Rẻ Quạt (Radial Fan / Sunburst)"
+              >
+                <CircleDot className="w-3.5 h-3.5" />
+                <span>Bánh Xe Rẻ Quạt</span>
+              </button>
+
               <button
                 type="button"
                 role="radio"
@@ -107,22 +123,6 @@ export const SunburstView: React.FC<SunburstViewProps> = ({
               >
                 <GitBranch className="w-3.5 h-3.5" />
                 <span>Cây Phân Nhánh</span>
-              </button>
-
-              <button
-                type="button"
-                role="radio"
-                aria-checked={chartMode === 'radial'}
-                onClick={() => setChartMode('radial')}
-                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-lg transition-all ${
-                  chartMode === 'radial'
-                    ? 'bg-paper-50 text-natural-forest font-bold shadow-sm border border-paper-border/80'
-                    : 'text-ink-600 hover:text-ink-900'
-                }`}
-                title="Xem dạng Biểu Đồ Rẻ Quạt (Radial Fan / Sunburst)"
-              >
-                <CircleDot className="w-3.5 h-3.5" />
-                <span>Bánh Xe Rẻ Quạt</span>
               </button>
             </div>
           </div>
