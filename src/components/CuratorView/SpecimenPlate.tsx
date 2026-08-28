@@ -231,14 +231,14 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
 
           {/* Archival Victorian Inscription Plate Footer */}
           <div className="mt-3.5 pt-3 border-t border-paper-300/80 text-center space-y-1">
-            <h2 className="font-serif text-xl sm:text-2xl font-bold italic text-ink-900 tracking-wide">
-              {species.scientificName}
+            <h2 className="font-serif text-xl sm:text-2xl font-bold text-ink-900 tracking-tight">
+              {species.vietnameseName}
             </h2>
 
-            <p className="font-sans text-xs sm:text-sm font-semibold uppercase tracking-widest text-natural-forest">
-              {species.vietnameseName}
-              <span className="text-ink-400 font-normal lowercase tracking-normal ml-2">
-                ({species.englishName})
+            <p className="font-serif text-xs sm:text-sm italic text-natural-forest">
+              {species.scientificName}
+              <span className="font-sans not-italic text-ink-600 font-medium ml-2">
+                • {species.englishName}
               </span>
             </p>
 
