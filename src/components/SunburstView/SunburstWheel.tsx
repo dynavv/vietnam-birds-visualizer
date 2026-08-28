@@ -34,24 +34,24 @@ interface SunburstHierarchyNode extends d3.HierarchyRectangularNode<TaxonomyNode
   };
 }
 
-// Visual color palette for orders
+// Heritage Naturalist Chromatics Palette for 16 Orders
 const ORDER_COLOR_MAP: Record<string, string> = {
-  Passeriformes: '#2D5A27', // Forest Moss
-  Piciformes: '#8B4513',    // Bark Brown
-  Bucerotiformes: '#B45309', // Ochre Amber
-  Coraciiformes: '#0284C7', // Sky Azure
-  Strigiformes: '#4338CA',  // Indigo Night
-  Accipitriformes: '#991B1B', // Cinnabar Red
-  Falconiformes: '#7F1D1D',  // Crimson
-  Galliformes: '#A16207',   // Golden Olive
-  Columbiformes: '#64748B', // Slate Grey
-  Gruiformes: '#0D9488',    // Deep Teal
-  Charadriiformes: '#0369A1', // Ocean Blue
-  Pelecaniformes: '#0F766E', // Emerald Cyan
-  Ciconiiformes: '#475569', // Iron Grey
-  Anseriformes: '#15803D',  // Meadow Green
-  Cuculiformes: '#D97706',  // Amber Terracotta
-  Caprimulgiformes: '#78350F' // Chestnut
+  Passeriformes: '#1E4D2B',    // British Racing / Forest Moss
+  Galliformes: '#C26700',      // Warm Amber Gold
+  Bucerotiformes: '#C2410C',   // Burnt Terracotta
+  Coraciiformes: '#0284C7',    // Sky Azure / Aegean
+  Piciformes: '#78350F',       // Antique Bark
+  Accipitriformes: '#991B1B',  // Crimson Clay
+  Falconiformes: '#881337',   // Claret Garnet
+  Strigiformes: '#3730A3',     // Midnight Indigo
+  Pelecaniformes: '#0F766E',   // Deep Ocean Teal
+  Gruiformes: '#047857',       // Jade Emerald
+  Columbiformes: '#475569',    // Heather Slate
+  Anseriformes: '#166534',     // Pine Laurel
+  Cuculiformes: '#B45309',     // Spiced Ochre
+  Trogoniformes: '#0D9488',    // Persian Green
+  Caprimulgiformes: '#713F12', // Tawny Chestnut
+  Charadriiformes: '#0369A1'   // Cerulean Blue
 };
 
 export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
@@ -92,7 +92,7 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
 
   // Radius configuration
   const radius = width / 2;
-  const centerRadius = radius * 0.22;
+  const centerRadius = radius * 0.23;
   const ringWidth = (radius - centerRadius) / 4;
 
   // Zoom to a specific node function
@@ -158,24 +158,24 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
     // Helper: Compute radial distance from depth
     const getInnerRadius = (depth: number) => {
       if (depth === 0) return 0;
+      if (depth === 1) return centerRadius;
       return centerRadius + (depth - 1) * ringWidth;
     };
 
     const getOuterRadius = (depth: number) => {
       if (depth === 0) return centerRadius;
-      return centerRadius + depth * ringWidth - 1.5;
+      return centerRadius + depth * ringWidth - 1;
     };
 
-    // Arc Generator
+    // D3 Arc Generator
     const arc = d3
       .arc<SunburstHierarchyNode['current']>()
       .startAngle(d => d.x0)
       .endAngle(d => d.x1)
-      .innerRadius(d => Math.max(0, getInnerRadius(d.y0)))
-      .outerRadius(d => Math.max(0, getOuterRadius(d.y0)))
-      .padAngle(d => (d.y0 > 1 ? 0.003 : 0.005))
+      .padAngle(d => Math.min((d.x1 - d.x0) / 2, 0.004))
       .padRadius(radius / 2)
-      .cornerRadius(2);
+      .innerRadius(d => getInnerRadius(d.y0))
+      .outerRadius(d => Math.max(getInnerRadius(d.y0), getOuterRadius(d.y0)));
 
     // Filter descendants (exclude root depth 0 from outer rings)
     const descendants = partitionRoot.descendants().slice(1) as SunburstHierarchyNode[];
@@ -183,33 +183,52 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
     // Main Group Container centered at (0, 0)
     const g = svg
       .attr('viewBox', `-${radius} -${radius} ${width} ${height}`)
-      .style('font-family', 'ui-serif, Georgia, Cambria, serif')
+      .style('font-family', 'Cormorant Garamond, ui-serif, Georgia, serif')
       .append('g');
 
-    // Node Color Resolver
-    const getNodeColor = (d: SunburstHierarchyNode) => {
-      // Find ancestor order
+    // Advanced Multi-Dimensional Hierarchical Color Resolver
+    const getNodeColor = (d: SunburstHierarchyNode): string => {
       const ancestors = d.ancestors();
       const orderNode = ancestors.find(a => a.data.rank === 'order');
       const orderName = orderNode ? orderNode.data.name : d.data.name;
-      const baseColor =
-        ORDER_COLOR_MAP[orderName] ||
-        d.data.color ||
-        (orderNode ? orderNode.data.color : '#2D5A27') ||
-        '#2D5A27';
+      const baseColor = ORDER_COLOR_MAP[orderName] || d.data.color || '#2D5A27';
 
-      // Vary tone slightly per rank depth
-      if (d.data.rank === 'order') return baseColor;
-      if (d.data.rank === 'family') return d3.color(baseColor)?.brighter(0.2)?.formatHex() || baseColor;
-      if (d.data.rank === 'genus') return d3.color(baseColor)?.brighter(0.45)?.formatHex() || baseColor;
+      // 1. Order level: Pure base tone
+      if (d.data.rank === 'order') {
+        return baseColor;
+      }
+
+      // 2. Family level: Introduce sibling hue variance to prevent massive monotonic blocks
+      if (d.data.rank === 'family') {
+        const parent = d.parent;
+        const siblingIndex = parent && parent.children ? parent.children.indexOf(d) : 0;
+        const totalSiblings = parent && parent.children ? parent.children.length : 1;
+        const hueShift = totalSiblings > 1 ? (siblingIndex / (totalSiblings - 1) - 0.5) * 28 : 0;
+        const hsl = d3.hsl(baseColor);
+        hsl.h = (hsl.h + hueShift + 360) % 360;
+        hsl.l = Math.min(0.72, Math.max(0.28, hsl.l + 0.08));
+        return hsl.formatHex();
+      }
+
+      // 3. Genus level: Lighter tone
+      if (d.data.rank === 'genus') {
+        const familyNode = ancestors.find(a => a.data.rank === 'family');
+        const familyColor = familyNode ? getNodeColor(familyNode) : baseColor;
+        return d3.color(familyColor)?.brighter(0.35)?.formatHex() || baseColor;
+      }
+
+      // 4. Species level: Endemic highlight or luminous specimen tint
       if (d.data.rank === 'species') {
-        // Highlight endemic species with golden warmth
         const sp = d.data.speciesId ? speciesMap.get(d.data.speciesId) : null;
         if (sp?.isEndemic) {
-          return d3.interpolateRgb(baseColor, '#D97706')(0.4);
+          // Warm gold endemic radiance
+          return '#D97706';
         }
-        return d3.color(baseColor)?.brighter(0.65)?.formatHex() || baseColor;
+        const genusNode = ancestors.find(a => a.data.rank === 'genus');
+        const genusColor = genusNode ? getNodeColor(genusNode) : baseColor;
+        return d3.color(genusColor)?.brighter(0.55)?.formatHex() || baseColor;
       }
+
       return baseColor;
     };
 
@@ -220,15 +239,15 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
       .selectAll<SVGPathElement, SunburstHierarchyNode>('path')
       .data(descendants)
       .join('path')
-      .attr('class', 'sunburst-arc cursor-pointer transition-opacity duration-200')
+      .attr('class', 'sunburst-arc cursor-pointer transition-all duration-200')
       .attr('data-testid', 'sunburst-arc')
       .attr('data-rank', d => d.data.rank)
       .attr('data-name', d => d.data.name)
       .attr('data-species-id', d => d.data.speciesId || '')
       .attr('fill', d => getNodeColor(d))
-      .attr('fill-opacity', 0.9)
-      .attr('stroke', '#FAF8F5')
-      .attr('stroke-width', d => (d.data.rank === 'order' ? '1.5px' : '0.8px'))
+      .attr('fill-opacity', 0.92)
+      .attr('stroke', '#FAF7F0')
+      .attr('stroke-width', d => (d.data.rank === 'order' ? '1.2px' : '0.6px'))
       .attr('d', d => arc(d.current));
 
     // Render Labels Group
@@ -238,7 +257,7 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
       // Must be at visible depth and angle width threshold per depth
       const isVisibleDepth = d.y0 >= 1 && d.y0 <= 4;
       const angleWidth = d.x1 - d.x0;
-      const minAngle = d.y0 === 1 ? 0.08 : d.y0 === 2 ? 0.06 : 0.045;
+      const minAngle = d.y0 === 1 ? 0.09 : d.y0 === 2 ? 0.07 : 0.055;
       return isVisibleDepth && angleWidth > minAngle;
     };
 
@@ -258,22 +277,21 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
       .attr('text-anchor', 'middle')
       .attr('dominant-baseline', 'middle')
       .attr('font-size', d => {
-        if (d.data.rank === 'order') return '10.5px';
+        if (d.data.rank === 'order') return '11px';
         if (d.data.rank === 'family') return '9.5px';
         if (d.data.rank === 'genus') return '8.5px';
         return '8px';
       })
-      .attr('font-weight', d => (d.data.rank === 'order' || d.data.rank === 'species' ? '600' : '400'))
+      .attr('font-weight', d => (d.data.rank === 'order' || d.data.rank === 'species' ? '600' : '500'))
       .attr('fill', '#FFFFFF')
-      .style('text-shadow', '0 1px 3px rgba(0,0,0,0.8), 0 0 2px rgba(0,0,0,0.6)')
+      .style('text-shadow', '0 1px 2.5px rgba(0,0,0,0.85), 0 0 2px rgba(0,0,0,0.7)')
       .style('user-select', 'none')
       .attr('transform', d => labelTransform(d.current))
       .attr('opacity', d => (labelVisible(d.current) ? 1 : 0))
       .text(d => {
-        // Tight length bounds to prevent text bleeding across concentric rings
         const vi = d.data.vietnameseName;
         const name = vi || d.data.name;
-        const maxLen = d.data.rank === 'order' ? 12 : d.data.rank === 'family' ? 10 : 9;
+        const maxLen = d.data.rank === 'order' ? 14 : d.data.rank === 'family' ? 11 : 9;
         return name.length > maxLen ? `${name.slice(0, maxLen - 1)}…` : name;
       });
 

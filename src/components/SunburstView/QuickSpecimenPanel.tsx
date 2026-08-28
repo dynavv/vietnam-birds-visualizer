@@ -98,7 +98,7 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
       </div>
 
       {/* Main Scrollable Body */}
-      <div className="p-4 sm:p-5 space-y-4 overflow-y-auto max-h-[calc(100vh-13rem)]">
+      <div className="p-4 sm:p-5 space-y-4 overflow-y-auto max-h-[660px]">
         {/* Classic Naturalist Artwork Plate */}
         <div className="relative group rounded-xl overflow-hidden border-2 border-paper-300 bg-paper-200/60 p-1.5 shadow-inner">
           <BirdPlateImage

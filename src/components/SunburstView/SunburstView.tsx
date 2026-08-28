@@ -142,22 +142,22 @@ export const SunburstView: React.FC<SunburstViewProps> = ({
         {/* Left 7-8 Columns: Visualization Canvas */}
         <div className="lg:col-span-7 xl:col-span-8">
           {chartMode === 'tree' ? (
-            <div className="h-[620px] max-h-[75vh]">
+            <div className="h-[640px] max-h-[78vh]">
               <CladogramTreeView />
             </div>
           ) : (
-            <div className="bg-paper-100/90 backdrop-blur-sm border border-paper-border rounded-2xl p-4 sm:p-6 shadow-paper-card flex flex-col items-center justify-center relative min-h-[500px]">
+            <div className="bg-paper-100/90 backdrop-blur-sm border border-paper-border rounded-2xl p-3 sm:p-5 shadow-paper-card flex flex-col items-center justify-center relative">
               {/* Wheel Graphic */}
               <SunburstWheel
                 data={taxonomyTree}
                 activeFocusNode={activeFocusNode}
                 onZoomNode={handleWheelZoom}
                 onSelectSpecies={selectSpecies}
-                className="w-full max-w-[620px]"
+                className="w-full max-w-[560px]"
               />
 
               {/* Bottom Interactive Order Chips Legend */}
-              <div className="w-full pt-4 mt-2 border-t border-paper-border/60">
+              <div className="w-full pt-3 mt-1 border-t border-paper-border/60">
                 <div className="flex items-center justify-between gap-2 mb-2">
                   <span className="text-[11px] font-mono uppercase tracking-wider font-bold text-ink-500 flex items-center gap-1">
                     <Layers className="w-3.5 h-3.5 text-natural-moss" />
