@@ -2,8 +2,6 @@ import React, { useState, useMemo } from 'react';
 import { Layers, Sparkles, ChevronRight } from 'lucide-react';
 import type { BirdSpecies } from '../../types/bird';
 import { useTaxonomy } from '../../context/TaxonomyContext';
-import { ConservationBadge } from '../Common/ConservationBadge';
-import { EndemicBadge } from '../Common/EndemicBadge';
 import { BirdPlateImage } from '../Common/BirdPlateImage';
 
 export interface RelatedSpeciesTabsProps {
@@ -153,12 +151,14 @@ export const RelatedSpeciesTabsComponent: React.FC<RelatedSpeciesTabsProps> = ({
       {/* List of related species cards */}
       {displayedSpecies.length > 0 ? (
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 pt-1 max-h-72 overflow-y-auto pr-1"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 max-h-80 overflow-y-auto pr-1 scrollbar-thin"
           role="list"
           aria-label="Danh sách loài chim tương cận"
         >
           {displayedSpecies.map((bird) => {
             const isSelected = bird.id === currentSpecies.id;
+            const iucnStatus = bird.conservation.iucn;
+            const vnStatus = bird.conservation.vietnamRedList;
 
             return (
               <div
@@ -168,37 +168,57 @@ export const RelatedSpeciesTabsComponent: React.FC<RelatedSpeciesTabsProps> = ({
                 className={`group p-2.5 rounded-xl border transition-all duration-200 cursor-pointer flex items-center gap-2.5 ${
                   isSelected
                     ? 'bg-natural-moss/10 border-natural-moss ring-2 ring-natural-moss/30 shadow-sm'
-                    : 'bg-paper-50 hover:bg-paper-200/70 border-paper-border hover:border-natural-moss/40 hover:shadow-sm'
+                    : 'bg-paper-50 hover:bg-paper-200/80 border-paper-border hover:border-natural-moss/40 hover:shadow-sm'
                 }`}
                 data-testid={`related-species-card-${bird.id}`}
                 title={`Xem mẫu vật loài ${bird.vietnameseName} (${bird.scientificName})`}
               >
-                {/* Thumbnail Naturalist Plate */}
-                <BirdPlateImage
-                  species={bird}
-                  className="w-12 h-12 flex-shrink-0 rounded-lg"
-                  imageClassName="group-hover:scale-110 transition-transform duration-300"
-                />
+                {/* Thumbnail Naturalist Plate Container */}
+                <div className="w-13 h-13 w-[52px] h-[52px] shrink-0 rounded-lg overflow-hidden border border-paper-300 bg-paper-200 shadow-inner relative">
+                  <BirdPlateImage
+                    species={bird}
+                    aspectRatio="square"
+                    className="w-full h-full"
+                    imageClassName="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
 
-                {/* Info */}
+                {/* Info Container */}
                 <div className="min-w-0 flex-1 space-y-0.5">
                   <div className="flex items-center justify-between gap-1">
-                    <h5 className="font-serif font-bold text-xs text-ink-900 truncate">
+                    <h5 className="font-serif font-bold text-xs text-ink-900 truncate leading-tight group-hover:text-natural-forest transition-colors">
                       {bird.vietnameseName}
                     </h5>
-                    <ConservationBadge status={bird.conservation.iucn} showLabel={false} size="sm" />
+                    <span
+                      className={`px-1.5 py-0.2 rounded text-[9.5px] font-mono font-bold uppercase shrink-0 ${
+                        iucnStatus === 'CR' || iucnStatus === 'EN' || vnStatus === 'CR' || vnStatus === 'EN'
+                          ? 'bg-red-950/10 text-red-900 border border-red-800/30'
+                          : iucnStatus === 'VU' || iucnStatus === 'NT'
+                          ? 'bg-amber-950/10 text-amber-900 border border-amber-700/30'
+                          : 'bg-emerald-950/10 text-emerald-900 border border-emerald-700/30'
+                      }`}
+                    >
+                      {vnStatus ? `VN:${vnStatus}` : iucnStatus}
+                    </span>
                   </div>
 
                   <p className="font-serif italic text-[11px] text-natural-forest truncate">
                     {bird.scientificName}
                   </p>
 
-                  <div className="flex items-center gap-1 pt-0.5">
-                    {bird.isEndemic && <EndemicBadge size="sm" compact />}
+                  <div className="flex items-center gap-1.5 pt-0.5">
+                    {bird.isEndemic && (
+                      <span className="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded bg-amber-500/15 text-amber-900 border border-amber-500/30 text-[9.5px] font-semibold shrink-0">
+                        ★ Đặc hữu
+                      </span>
+                    )}
+                    <span className="text-[10.5px] text-ink-500 font-sans truncate">
+                      {bird.englishName}
+                    </span>
                   </div>
                 </div>
 
-                <ChevronRight className="w-3.5 h-3.5 text-ink-400 group-hover:text-natural-moss group-hover:translate-x-0.5 transition-all flex-shrink-0" />
+                <ChevronRight className="w-3.5 h-3.5 text-ink-400 group-hover:text-natural-moss group-hover:translate-x-0.5 transition-all shrink-0" />
               </div>
             );
           })}
