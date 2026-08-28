@@ -67,6 +67,21 @@ export const RelatedSpeciesTabsComponent: React.FC<RelatedSpeciesTabsProps> = ({
   const familyName =
     currentSpecies.taxonomy.familyVietnamese || currentSpecies.taxonomy.family;
 
+  const handleSelectRelatedSpecies = (birdId: string) => {
+    selectSpecies?.(birdId);
+    const mainEl = document.querySelector('main');
+    if (mainEl && typeof mainEl.scrollTo === 'function') {
+      mainEl.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    const curatorContainer = document.querySelector('[data-testid="active-curator-view"]');
+    if (curatorContainer && typeof curatorContainer.scrollTo === 'function') {
+      curatorContainer.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <section
       className={`bg-paper-100/90 border border-paper-border rounded-2xl p-4 sm:p-5 shadow-paper-card space-y-3.5 ${className}`}
@@ -164,7 +179,7 @@ export const RelatedSpeciesTabsComponent: React.FC<RelatedSpeciesTabsProps> = ({
               <div
                 key={bird.id}
                 role="listitem"
-                onClick={() => selectSpecies?.(bird.id)}
+                onClick={() => handleSelectRelatedSpecies(bird.id)}
                 className={`group p-2.5 rounded-xl border transition-all duration-200 cursor-pointer flex items-center gap-2.5 ${
                   isSelected
                     ? 'bg-natural-moss/10 border-natural-moss ring-2 ring-natural-moss/30 shadow-sm'

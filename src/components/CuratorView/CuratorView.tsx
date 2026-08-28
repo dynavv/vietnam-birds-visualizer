@@ -41,6 +41,27 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
   } = useTaxonomy();
 
   const species = propSpecies !== undefined ? propSpecies : contextSpecies;
+  const topAnchorRef = React.useRef<HTMLDivElement | null>(null);
+
+  // Smoothly scroll container to top whenever species changes
+  React.useEffect(() => {
+    if (species?.id) {
+      if (topAnchorRef.current && typeof topAnchorRef.current.scrollIntoView === 'function') {
+        topAnchorRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      const mainEl = document.querySelector('main');
+      if (mainEl && typeof mainEl.scrollTo === 'function') {
+        mainEl.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      const curatorContainer = document.querySelector('[data-testid="active-curator-view"]');
+      if (curatorContainer && typeof curatorContainer.scrollTo === 'function') {
+        curatorContainer.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  }, [species?.id]);
 
   const handleSwitchToMap = () => {
     if (onViewMap) {
@@ -94,6 +115,9 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
       className={`w-full max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6 ${className}`}
       data-testid="curator-view"
     >
+      {/* Scroll Anchor to top */}
+      <div ref={topAnchorRef} aria-hidden="true" className="h-0 w-0 opacity-0 pointer-events-none" />
+
       {/* Top Editorial Banner */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-paper-border">
         <div>
