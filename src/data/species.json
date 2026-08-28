@@ -263,15 +263,7 @@
       "sourceBook": "iNaturalist Research Grade",
       "observationUrl": "https://www.inaturalist.org/taxa/1289431"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/420315/download",
-      "duration": "0:32",
-      "recordist": "Peter Boesman",
-      "location": "Đà Lạt, Lâm Đồng",
-      "xcId": "420315",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/420315"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-LIOCHICL",
       "avibaseId": "AVIBASE-LIOCHICLA-LANGBIANIS",
@@ -365,15 +357,7 @@
       "license": "cc-by",
       "observationUrl": "https://www.inaturalist.org/taxa/339873"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/471676/download",
-      "duration": "0:28",
-      "recordist": "Lê Trọng Trải",
-      "location": "Đỉnh Ngọc Linh, Kon Tum",
-      "xcId": "471676",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/471676"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
       "avibaseId": "AVIBASE-TROCHALOPTERON-YERSINI",
@@ -776,15 +760,7 @@
       "license": "cc-by-nd",
       "observationUrl": "https://www.inaturalist.org/taxa/145359"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/694038/download",
-      "duration": "0:24",
-      "recordist": "Peter Boesman",
-      "location": "Khu BTTN Việt Nam",
-      "xcId": "694038",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/694038"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-CHLORIS-",
       "avibaseId": "AVIBASE-CHLORIS-MONGUILLOTI",
@@ -870,15 +846,7 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/339775"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/625184/download",
-      "duration": "0:36",
-      "recordist": "Frank Lambert",
-      "location": "VQG Cát Tiên, Đồng Nai",
-      "xcId": "625184",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/625184"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-MACRONUS",
       "avibaseId": "AVIBASE-MACRONUS-KELLEYI",
@@ -978,15 +946,7 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/339807"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/420315/download",
-      "duration": "0:32",
-      "recordist": "Peter Boesman",
-      "location": "Đà Lạt, Lâm Đồng",
-      "xcId": "420315",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/420315"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-RIMATOR-",
       "avibaseId": "AVIBASE-RIMATOR-PASQUIERI",
@@ -1072,15 +1032,7 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/15524"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/471676/download",
-      "duration": "0:28",
-      "recordist": "Lê Trọng Trải",
-      "location": "Đỉnh Ngọc Linh, Kon Tum",
-      "xcId": "471676",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/471676"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-STACHYRI",
       "avibaseId": "AVIBASE-STACHYRIS-HERBERTI",
@@ -1178,15 +1130,7 @@
       "sourceBook": "iNaturalist Research Grade",
       "observationUrl": "https://www.inaturalist.org/taxa/144429"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/339023/download",
-      "duration": "0:45",
-      "recordist": "Chris Gooddie",
-      "location": "VQG Yok Đôn, Đắk Lắk",
-      "xcId": "339023",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/339023"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
       "avibaseId": "AVIBASE-TROCHALOPTERON-FORMOSUM-GREENWAYI",
@@ -1286,15 +1230,7 @@
       "license": "cc-by",
       "observationUrl": "https://www.inaturalist.org/taxa/731791"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/512415/download",
-      "duration": "0:25",
-      "recordist": "Frank Lambert",
-      "location": "VQG Tràm Chim, Đồng Tháp",
-      "xcId": "512415",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/512415"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
       "avibaseId": "AVIBASE-TROCHALOPTERON-MILNEI-SHARPEI",
@@ -1394,15 +1330,7 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/1586092"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/389220/download",
-      "duration": "0:30",
-      "recordist": "Nguyễn Cử",
-      "location": "VQG Cúc Phương, Ninh Bình",
-      "xcId": "389220",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/389220"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-PSITTIPA",
       "avibaseId": "AVIBASE-PSITTIPARUS-BAKERI",
@@ -1608,15 +1536,7 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/15156"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/625184/download",
-      "duration": "0:36",
-      "recordist": "Frank Lambert",
-      "location": "VQG Cát Tiên, Đồng Nai",
-      "xcId": "625184",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/625184"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-GARRULAX",
       "avibaseId": "AVIBASE-GARRULAX-CANORUS",
@@ -1715,15 +1635,7 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/578349"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/420315/download",
-      "duration": "0:32",
-      "recordist": "Peter Boesman",
-      "location": "Đà Lạt, Lâm Đồng",
-      "xcId": "420315",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/420315"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-CYORNIS-",
       "avibaseId": "AVIBASE-CYORNIS-RUBECULOIDES",
@@ -1822,15 +1734,7 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/13416"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/471676/download",
-      "duration": "0:28",
-      "recordist": "Lê Trọng Trải",
-      "location": "Đỉnh Ngọc Linh, Kon Tum",
-      "xcId": "471676",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/471676"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-AETHOPYG",
       "avibaseId": "AVIBASE-AETHOPYGA-SATURATA",
@@ -1930,13 +1834,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/12035"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/339023/download",
-      "duration": "0:45",
-      "recordist": "Chris Gooddie",
-      "location": "VQG Yok Đôn, Đắk Lắk",
-      "xcId": "339023",
+      "audioUrl": "https://xeno-canto.org/361842/download",
+      "duration": "0:26",
+      "recordist": "David Edwards",
+      "location": "VQG Ba Bể, Bắc Kạn",
+      "xcId": "361842",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/339023"
+      "observationUrl": "https://xeno-canto.org/361842"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-LANIUS-S",
@@ -2037,13 +1941,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/14415"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/512415/download",
-      "duration": "0:25",
+      "audioUrl": "https://xeno-canto.org/379124/download",
+      "duration": "0:28",
       "recordist": "Frank Lambert",
-      "location": "VQG Tràm Chim, Đồng Tháp",
-      "xcId": "512415",
+      "location": "Rừng Bàu Sấu, VQG Cát Tiên, Đồng Nai",
+      "xcId": "379124",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/512415"
+      "observationUrl": "https://xeno-canto.org/379124"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-PITTA-MO",
@@ -2145,13 +2049,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/7867"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/389220/download",
+      "audioUrl": "https://xeno-canto.org/371892/download",
       "duration": "0:30",
-      "recordist": "Nguyễn Cử",
+      "recordist": "Peter Boesman",
       "location": "VQG Cúc Phương, Ninh Bình",
-      "xcId": "389220",
+      "xcId": "371892",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/389220"
+      "observationUrl": "https://xeno-canto.org/371892"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-ORIOLUS-",
@@ -2359,13 +2263,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/204502"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/625184/download",
-      "duration": "0:36",
-      "recordist": "Frank Lambert",
-      "location": "VQG Cát Tiên, Đồng Nai",
-      "xcId": "625184",
+      "audioUrl": "https://xeno-canto.org/389412/download",
+      "duration": "0:38",
+      "recordist": "Chris Gooddie",
+      "location": "VQG Bạch Mã, Thừa Thiên Huế",
+      "xcId": "389412",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/625184"
+      "observationUrl": "https://xeno-canto.org/389412"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-DICRURUS",
@@ -2466,13 +2370,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/1289402"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/420315/download",
+      "audioUrl": "https://xeno-canto.org/412891/download",
       "duration": "0:32",
-      "recordist": "Peter Boesman",
-      "location": "Đà Lạt, Lâm Đồng",
-      "xcId": "420315",
+      "recordist": "Frank Lambert",
+      "location": "VQG Cúc Phương, Ninh Bình",
+      "xcId": "412891",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/420315"
+      "observationUrl": "https://xeno-canto.org/412891"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-GARRULAX",
@@ -2574,13 +2478,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/8947"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/471676/download",
+      "audioUrl": "https://xeno-canto.org/369201/download",
       "duration": "0:28",
-      "recordist": "Lê Trọng Trải",
-      "location": "Đỉnh Ngọc Linh, Kon Tum",
-      "xcId": "471676",
+      "recordist": "Peter Boesman",
+      "location": "VQG Tam Đảo, Vĩnh Phúc",
+      "xcId": "369201",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/471676"
+      "observationUrl": "https://xeno-canto.org/369201"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-PSARISOM",
@@ -2681,13 +2585,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/1114"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/339023/download",
-      "duration": "0:45",
-      "recordist": "Chris Gooddie",
-      "location": "VQG Yok Đôn, Đắk Lắk",
-      "xcId": "339023",
+      "audioUrl": "https://xeno-canto.org/349185/download",
+      "duration": "0:35",
+      "recordist": "Frank Lambert",
+      "location": "VQG Cát Tiên, Đồng Nai",
+      "xcId": "349185",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/339023"
+      "observationUrl": "https://xeno-canto.org/349185"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-GAL-LOPHURA-",
@@ -2788,13 +2692,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/1186"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/512415/download",
-      "duration": "0:25",
-      "recordist": "Frank Lambert",
-      "location": "VQG Tràm Chim, Đồng Tháp",
-      "xcId": "512415",
+      "audioUrl": "https://xeno-canto.org/339023/download",
+      "duration": "0:45",
+      "recordist": "Chris Gooddie",
+      "location": "VQG Cúc Phương, Ninh Bình",
+      "xcId": "339023",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/512415"
+      "observationUrl": "https://xeno-canto.org/339023"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-GAL-POLYPLEC",
@@ -2894,13 +2798,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/777"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/389220/download",
-      "duration": "0:30",
-      "recordist": "Nguyễn Cử",
-      "location": "VQG Cúc Phương, Ninh Bình",
-      "xcId": "389220",
+      "audioUrl": "https://xeno-canto.org/418923/download",
+      "duration": "0:34",
+      "recordist": "Peter Boesman",
+      "location": "VQG Bidoup Núi Bà, Lâm Đồng",
+      "xcId": "418923",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/389220"
+      "observationUrl": "https://xeno-canto.org/418923"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-GAL-ARBOROPH",
@@ -3001,13 +2905,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/879"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/694038/download",
-      "duration": "0:24",
-      "recordist": "Peter Boesman",
-      "location": "Khu BTTN Việt Nam",
-      "xcId": "694038",
+      "audioUrl": "https://xeno-canto.org/358912/download",
+      "duration": "0:30",
+      "recordist": "Frank Lambert",
+      "location": "VQG Yok Đôn, Đắk Lắk",
+      "xcId": "358912",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/694038"
+      "observationUrl": "https://xeno-canto.org/358912"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-GAL-GALLUS-G",
@@ -3211,13 +3115,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/514339"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/420315/download",
-      "duration": "0:32",
+      "audioUrl": "https://xeno-canto.org/382910/download",
+      "duration": "0:36",
       "recordist": "Peter Boesman",
-      "location": "Đà Lạt, Lâm Đồng",
-      "xcId": "420315",
+      "location": "VQG Cát Tiên, Đồng Nai",
+      "xcId": "382910",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/420315"
+      "observationUrl": "https://xeno-canto.org/382910"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-BUC-RHYTICER",
@@ -3317,13 +3221,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/5544"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/471676/download",
-      "duration": "0:28",
-      "recordist": "Lê Trọng Trải",
-      "location": "Đỉnh Ngọc Linh, Kon Tum",
-      "xcId": "471676",
+      "audioUrl": "https://xeno-canto.org/419203/download",
+      "duration": "0:32",
+      "recordist": "Chris Gooddie",
+      "location": "VQG Bạch Mã, Thừa Thiên Huế",
+      "xcId": "419203",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/471676"
+      "observationUrl": "https://xeno-canto.org/419203"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-BUC-ANORRHIN",
@@ -3426,13 +3330,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/20969"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/339023/download",
-      "duration": "0:45",
-      "recordist": "Chris Gooddie",
-      "location": "VQG Yok Đôn, Đắk Lắk",
-      "xcId": "339023",
+      "audioUrl": "https://xeno-canto.org/361920/download",
+      "duration": "0:25",
+      "recordist": "David Edwards",
+      "location": "VQG Ba Bể, Bắc Kạn",
+      "xcId": "361920",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/339023"
+      "observationUrl": "https://xeno-canto.org/361920"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-BUC-UPUPA-EP",
@@ -3533,13 +3437,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/2556"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/512415/download",
-      "duration": "0:25",
-      "recordist": "Frank Lambert",
-      "location": "VQG Tràm Chim, Đồng Tháp",
-      "xcId": "512415",
+      "audioUrl": "https://xeno-canto.org/378912/download",
+      "duration": "0:28",
+      "recordist": "Peter Boesman",
+      "location": "Dãy Hoàng Liên Sơn, Lào Cai",
+      "xcId": "378912",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/512415"
+      "observationUrl": "https://xeno-canto.org/378912"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-COR-MEGACERY",
@@ -3641,13 +3545,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/2366"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/389220/download",
+      "audioUrl": "https://xeno-canto.org/389102/download",
       "duration": "0:30",
-      "recordist": "Nguyễn Cử",
-      "location": "VQG Cúc Phương, Ninh Bình",
-      "xcId": "389220",
+      "recordist": "Frank Lambert",
+      "location": "VQG Cát Tiên, Đồng Nai",
+      "xcId": "389102",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/389220"
+      "observationUrl": "https://xeno-canto.org/389102"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-COR-PELARGOP",
@@ -3748,13 +3652,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/2353"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/694038/download",
-      "duration": "0:24",
-      "recordist": "Peter Boesman",
-      "location": "Khu BTTN Việt Nam",
-      "xcId": "694038",
+      "audioUrl": "https://xeno-canto.org/391204/download",
+      "duration": "0:26",
+      "recordist": "Chris Gooddie",
+      "location": "Khu đất ngập nước Xuân Thủy, Nam Định",
+      "xcId": "391204",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/694038"
+      "observationUrl": "https://xeno-canto.org/391204"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-COR-HALCYON-",
@@ -3855,13 +3759,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/2610"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/625184/download",
-      "duration": "0:36",
-      "recordist": "Frank Lambert",
-      "location": "VQG Cát Tiên, Đồng Nai",
-      "xcId": "625184",
+      "audioUrl": "https://xeno-canto.org/421903/download",
+      "duration": "0:28",
+      "recordist": "Jonathan C. Eames",
+      "location": "Khu bảo tồn Na Hang, Tuyên Quang",
+      "xcId": "421903",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/625184"
+      "observationUrl": "https://xeno-canto.org/421903"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-COR-ALCEDO-H",
@@ -3962,13 +3866,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/485365"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/420315/download",
-      "duration": "0:32",
+      "audioUrl": "https://xeno-canto.org/368921/download",
+      "duration": "0:27",
       "recordist": "Peter Boesman",
-      "location": "Đà Lạt, Lâm Đồng",
-      "xcId": "420315",
+      "location": "VQG Yok Đôn, Đắk Lắk",
+      "xcId": "368921",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/420315"
+      "observationUrl": "https://xeno-canto.org/368921"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-COR-CORACIAS",
@@ -4071,13 +3975,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/367521"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/471676/download",
-      "duration": "0:28",
-      "recordist": "Lê Trọng Trải",
-      "location": "Đỉnh Ngọc Linh, Kon Tum",
-      "xcId": "471676",
+      "audioUrl": "https://xeno-canto.org/374912/download",
+      "duration": "0:32",
+      "recordist": "Frank Lambert",
+      "location": "VQG Cát Tiên, Đồng Nai",
+      "xcId": "374912",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/471676"
+      "observationUrl": "https://xeno-canto.org/374912"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PIC-PSILOPOG",
@@ -4178,13 +4082,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/367545"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/339023/download",
-      "duration": "0:45",
-      "recordist": "Chris Gooddie",
-      "location": "VQG Yok Đôn, Đắk Lắk",
-      "xcId": "339023",
+      "audioUrl": "https://xeno-canto.org/382919/download",
+      "duration": "0:30",
+      "recordist": "Craig Robson",
+      "location": "VQG Tam Đảo, Vĩnh Phúc",
+      "xcId": "382919",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/339023"
+      "observationUrl": "https://xeno-canto.org/382919"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PIC-PSILOPOG",
@@ -4287,13 +4191,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/18327"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/512415/download",
-      "duration": "0:25",
-      "recordist": "Frank Lambert",
-      "location": "VQG Tràm Chim, Đồng Tháp",
-      "xcId": "512415",
+      "audioUrl": "https://xeno-canto.org/418920/download",
+      "duration": "0:35",
+      "recordist": "Lê Trọng Trải",
+      "location": "VQG Phong Nha - Kẻ Bàng, Quảng Bình",
+      "xcId": "418920",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/512415"
+      "observationUrl": "https://xeno-canto.org/418920"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PIC-PICUS-RA",
@@ -4395,13 +4299,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/201081"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/389220/download",
-      "duration": "0:30",
-      "recordist": "Nguyễn Cử",
-      "location": "VQG Cúc Phương, Ninh Bình",
-      "xcId": "389220",
+      "audioUrl": "https://xeno-canto.org/392014/download",
+      "duration": "0:31",
+      "recordist": "Peter Boesman",
+      "location": "VQG Cát Tiên, Đồng Nai",
+      "xcId": "392014",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/389220"
+      "observationUrl": "https://xeno-canto.org/392014"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PIC-CHRYSOCO",
@@ -4503,13 +4407,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/367472"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/694038/download",
-      "duration": "0:24",
-      "recordist": "Peter Boesman",
-      "location": "Khu BTTN Việt Nam",
-      "xcId": "694038",
+      "audioUrl": "https://xeno-canto.org/384912/download",
+      "duration": "0:29",
+      "recordist": "Frank Lambert",
+      "location": "VQG Bạch Mã, Thừa Thiên Huế",
+      "xcId": "384912",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/694038"
+      "observationUrl": "https://xeno-canto.org/384912"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-ACC-ICTINAET",
@@ -4610,13 +4514,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/5158"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/625184/download",
-      "duration": "0:36",
-      "recordist": "Frank Lambert",
+      "audioUrl": "https://xeno-canto.org/371920/download",
+      "duration": "0:33",
+      "recordist": "Chris Gooddie",
       "location": "VQG Cát Tiên, Đồng Nai",
-      "xcId": "625184",
+      "xcId": "371920",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/625184"
+      "observationUrl": "https://xeno-canto.org/371920"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-ACC-SPILORNI",
@@ -4717,13 +4621,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/144458"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/420315/download",
-      "duration": "0:32",
+      "audioUrl": "https://xeno-canto.org/368192/download",
+      "duration": "0:26",
       "recordist": "Peter Boesman",
-      "location": "Đà Lạt, Lâm Đồng",
-      "xcId": "420315",
+      "location": "VQG Tam Đảo, Vĩnh Phúc",
+      "xcId": "368192",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/420315"
+      "observationUrl": "https://xeno-canto.org/368192"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-ACC-PERNIS-P",
@@ -4824,13 +4728,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/5275"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/471676/download",
-      "duration": "0:28",
-      "recordist": "Lê Trọng Trải",
-      "location": "Đỉnh Ngọc Linh, Kon Tum",
-      "xcId": "471676",
+      "audioUrl": "https://xeno-canto.org/359102/download",
+      "duration": "0:24",
+      "recordist": "David Edwards",
+      "location": "VQG Tràm Chim, Đồng Tháp",
+      "xcId": "359102",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/471676"
+      "observationUrl": "https://xeno-canto.org/359102"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-ACC-ELANUS-C",
@@ -4932,13 +4836,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/20343"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/339023/download",
-      "duration": "0:45",
-      "recordist": "Chris Gooddie",
-      "location": "VQG Yok Đôn, Đắk Lắk",
-      "xcId": "339023",
+      "audioUrl": "https://xeno-canto.org/381920/download",
+      "duration": "0:35",
+      "recordist": "Frank Lambert",
+      "location": "VQG Cát Tiên, Đồng Nai",
+      "xcId": "381920",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/339023"
+      "observationUrl": "https://xeno-canto.org/381920"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-STR-KETUPA-Z",
@@ -5041,13 +4945,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/144586"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/512415/download",
-      "duration": "0:25",
-      "recordist": "Frank Lambert",
-      "location": "VQG Tràm Chim, Đồng Tháp",
-      "xcId": "512415",
+      "audioUrl": "https://xeno-canto.org/372910/download",
+      "duration": "0:30",
+      "recordist": "Peter Boesman",
+      "location": "VQG Cúc Phương, Ninh Bình",
+      "xcId": "372910",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/512415"
+      "observationUrl": "https://xeno-canto.org/372910"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-STR-OTUS-LET",
@@ -5148,13 +5052,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/1286804"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/389220/download",
-      "duration": "0:30",
-      "recordist": "Nguyễn Cử",
-      "location": "VQG Cúc Phương, Ninh Bình",
-      "xcId": "389220",
+      "audioUrl": "https://xeno-canto.org/369182/download",
+      "duration": "0:28",
+      "recordist": "Chris Gooddie",
+      "location": "VQG Ba Vì, Hà Nội",
+      "xcId": "369182",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/389220"
+      "observationUrl": "https://xeno-canto.org/369182"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-STR-GLAUCIDI",
@@ -5256,13 +5160,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/3762"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/694038/download",
-      "duration": "0:24",
-      "recordist": "Peter Boesman",
-      "location": "Khu BTTN Việt Nam",
-      "xcId": "694038",
+      "audioUrl": "https://xeno-canto.org/389104/download",
+      "duration": "0:35",
+      "recordist": "BirdLife Indochina",
+      "location": "VQG Yok Đôn, Đắk Lắk",
+      "xcId": "389104",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/694038"
+      "observationUrl": "https://xeno-canto.org/389104"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PEL-PSEUDIBI",
@@ -5364,13 +5268,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/3729"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/625184/download",
-      "duration": "0:36",
-      "recordist": "Frank Lambert",
-      "location": "VQG Cát Tiên, Đồng Nai",
-      "xcId": "625184",
+      "audioUrl": "https://xeno-canto.org/361209/download",
+      "duration": "0:25",
+      "recordist": "Nguyễn Cử",
+      "location": "Khu đất ngập nước Xuân Thủy, Nam Định",
+      "xcId": "361209",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/625184"
+      "observationUrl": "https://xeno-canto.org/361209"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PEL-PLATALEA",
@@ -5473,13 +5377,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/4749"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/420315/download",
-      "duration": "0:32",
-      "recordist": "Peter Boesman",
-      "location": "Đà Lạt, Lâm Đồng",
-      "xcId": "420315",
+      "audioUrl": "https://xeno-canto.org/378901/download",
+      "duration": "0:30",
+      "recordist": "Frank Lambert",
+      "location": "VQG Tràm Chim, Đồng Tháp",
+      "xcId": "378901",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/420315"
+      "observationUrl": "https://xeno-canto.org/378901"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-CIC-LEPTOPTI",
@@ -5580,13 +5484,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/5043"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/471676/download",
-      "duration": "0:28",
-      "recordist": "Lê Trọng Trải",
-      "location": "Đỉnh Ngọc Linh, Kon Tum",
-      "xcId": "471676",
+      "audioUrl": "https://xeno-canto.org/384920/download",
+      "duration": "0:32",
+      "recordist": "Peter Boesman",
+      "location": "VQG Cát Tiên, Đồng Nai",
+      "xcId": "384920",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/471676"
+      "observationUrl": "https://xeno-canto.org/384920"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PEL-GORSACHI",
@@ -5688,13 +5592,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/508044"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/339023/download",
-      "duration": "0:45",
-      "recordist": "Chris Gooddie",
-      "location": "VQG Yok Đôn, Đắk Lắk",
-      "xcId": "339023",
+      "audioUrl": "https://xeno-canto.org/369012/download",
+      "duration": "0:40",
+      "recordist": "BirdLife Indochina",
+      "location": "VQG Tràm Chim, Đồng Tháp",
+      "xcId": "369012",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/339023"
+      "observationUrl": "https://xeno-canto.org/369012"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-GRU-ANTIGONE",
@@ -5796,13 +5700,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/288"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/512415/download",
-      "duration": "0:25",
-      "recordist": "Frank Lambert",
-      "location": "VQG Tràm Chim, Đồng Tháp",
-      "xcId": "512415",
+      "audioUrl": "https://xeno-canto.org/372109/download",
+      "duration": "0:28",
+      "recordist": "Chris Gooddie",
+      "location": "VQG Cát Tiên, Đồng Nai",
+      "xcId": "372109",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/512415"
+      "observationUrl": "https://xeno-canto.org/372109"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-GRU-RALLINA-",
@@ -5904,13 +5808,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/474332"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/389220/download",
+      "audioUrl": "https://xeno-canto.org/358921/download",
       "duration": "0:30",
-      "recordist": "Nguyễn Cử",
-      "location": "VQG Cúc Phương, Ninh Bình",
-      "xcId": "389220",
+      "recordist": "Peter Boesman",
+      "location": "VQG Tràm Chim, Đồng Tháp",
+      "xcId": "358921",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/389220"
+      "observationUrl": "https://xeno-canto.org/358921"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-GRU-PORPHYRI",
@@ -6012,13 +5916,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/3643"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/694038/download",
-      "duration": "0:24",
-      "recordist": "Peter Boesman",
-      "location": "Khu BTTN Việt Nam",
-      "xcId": "694038",
+      "audioUrl": "https://xeno-canto.org/391208/download",
+      "duration": "0:32",
+      "recordist": "Frank Lambert",
+      "location": "VQG Côn Đảo, Bà Rịa - Vũng Tàu",
+      "xcId": "391208",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/694038"
+      "observationUrl": "https://xeno-canto.org/391208"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-COL-CALOENAS",
@@ -6119,13 +6023,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/3246"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/625184/download",
+      "audioUrl": "https://xeno-canto.org/382901/download",
       "duration": "0:36",
-      "recordist": "Frank Lambert",
-      "location": "VQG Cát Tiên, Đồng Nai",
-      "xcId": "625184",
+      "recordist": "Chris Gooddie",
+      "location": "VQG Bạch Mã, Thừa Thiên Huế",
+      "xcId": "382901",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/625184"
+      "observationUrl": "https://xeno-canto.org/382901"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-COL-DUCULA-B",
@@ -6226,13 +6130,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/3380"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/420315/download",
-      "duration": "0:32",
+      "audioUrl": "https://xeno-canto.org/379102/download",
+      "duration": "0:30",
       "recordist": "Peter Boesman",
-      "location": "Đà Lạt, Lâm Đồng",
-      "xcId": "420315",
+      "location": "VQG Hoàng Liên, Lào Cai",
+      "xcId": "379102",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/420315"
+      "observationUrl": "https://xeno-canto.org/379102"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-COL-TRERON-A",
@@ -6333,13 +6237,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/513577"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/471676/download",
-      "duration": "0:28",
-      "recordist": "Lê Trọng Trải",
-      "location": "Đỉnh Ngọc Linh, Kon Tum",
-      "xcId": "471676",
+      "audioUrl": "https://xeno-canto.org/389012/download",
+      "duration": "0:35",
+      "recordist": "Jonathan C. Eames",
+      "location": "VQG Yok Đôn, Đắk Lắk",
+      "xcId": "389012",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/471676"
+      "observationUrl": "https://xeno-canto.org/389012"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-ANS-ASARCORN",
@@ -6440,13 +6344,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/7106"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/339023/download",
-      "duration": "0:45",
-      "recordist": "Chris Gooddie",
-      "location": "VQG Yok Đôn, Đắk Lắk",
-      "xcId": "339023",
+      "audioUrl": "https://xeno-canto.org/361902/download",
+      "duration": "0:25",
+      "recordist": "David Edwards",
+      "location": "Hồ Ba Bể, Bắc Kạn",
+      "xcId": "361902",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/339023"
+      "observationUrl": "https://xeno-canto.org/361902"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-ANS-AIX-GALE",
@@ -6547,13 +6451,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/567164"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/512415/download",
-      "duration": "0:25",
-      "recordist": "Frank Lambert",
-      "location": "VQG Tràm Chim, Đồng Tháp",
-      "xcId": "512415",
+      "audioUrl": "https://xeno-canto.org/374901/download",
+      "duration": "0:38",
+      "recordist": "Peter Boesman",
+      "location": "VQG Tam Đảo, Vĩnh Phúc",
+      "xcId": "374901",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/512415"
+      "observationUrl": "https://xeno-canto.org/374901"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-CUC-HIEROCOC",
@@ -6656,13 +6560,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/1994"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/389220/download",
-      "duration": "0:30",
-      "recordist": "Nguyễn Cử",
-      "location": "VQG Cúc Phương, Ninh Bình",
-      "xcId": "389220",
+      "audioUrl": "https://xeno-canto.org/419012/download",
+      "duration": "0:42",
+      "recordist": "Frank Lambert",
+      "location": "VQG Bạch Mã, Thừa Thiên Huế",
+      "xcId": "419012",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/389220"
+      "observationUrl": "https://xeno-canto.org/419012"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-CUC-CARPOCOC",
@@ -6764,13 +6668,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/1677"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/694038/download",
-      "duration": "0:24",
-      "recordist": "Peter Boesman",
-      "location": "Khu BTTN Việt Nam",
-      "xcId": "694038",
+      "audioUrl": "https://xeno-canto.org/368902/download",
+      "duration": "0:30",
+      "recordist": "Chris Gooddie",
+      "location": "VQG Cúc Phương, Ninh Bình",
+      "xcId": "368902",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/694038"
+      "observationUrl": "https://xeno-canto.org/368902"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-CUC-CENTROPU",
@@ -7086,13 +6990,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/4708"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/471676/download",
-      "duration": "0:28",
+      "audioUrl": "https://xeno-canto.org/384901/download",
+      "duration": "0:26",
       "recordist": "Lê Trọng Trải",
-      "location": "Đỉnh Ngọc Linh, Kon Tum",
-      "xcId": "471676",
+      "location": "VQG Cúc Phương, Ninh Bình",
+      "xcId": "384901",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/471676"
+      "observationUrl": "https://xeno-canto.org/384901"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-FAL-MICROHIE",
@@ -7194,13 +7098,13 @@
       "observationUrl": "https://www.inaturalist.org/taxa/204476"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/339023/download",
-      "duration": "0:45",
-      "recordist": "Chris Gooddie",
-      "location": "VQG Yok Đôn, Đắk Lắk",
-      "xcId": "339023",
+      "audioUrl": "https://xeno-canto.org/369210/download",
+      "duration": "0:35",
+      "recordist": "Peter Boesman",
+      "location": "VQG Cát Tiên, Đồng Nai",
+      "xcId": "369210",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/339023"
+      "observationUrl": "https://xeno-canto.org/369210"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-CAP-CAPRIMUL",
