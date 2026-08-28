@@ -28,6 +28,7 @@ describe('VietnamEBAMap Component', () => {
     expect(screen.getByLabelText('Toàn cảnh Việt Nam')).toBeDefined();
     expect(screen.getByLabelText('Ẩn vùng EBA')).toBeDefined();
     expect(screen.getByLabelText('Ẩn các điểm loài')).toBeDefined();
+    expect(screen.getByLabelText('Ẩn ranh giới VN')).toBeDefined();
   });
 
   it('toggles map layers when clicking control buttons', () => {
@@ -44,6 +45,10 @@ describe('VietnamEBAMap Component', () => {
     const toggleSpeciesBtn = screen.getByLabelText('Ẩn các điểm loài');
     fireEvent.click(toggleSpeciesBtn);
     expect(screen.getByLabelText('Hiện tất cả điểm loài')).toBeDefined();
+
+    const toggleBoundaryBtn = screen.getByLabelText('Ẩn ranh giới VN');
+    fireEvent.click(toggleBoundaryBtn);
+    expect(screen.getByLabelText('Hiện ranh giới VN')).toBeDefined();
   });
 
   it('resets map view when clicking Toàn cảnh VN button', () => {

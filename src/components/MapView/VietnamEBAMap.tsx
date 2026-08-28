@@ -1,15 +1,19 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, CircleMarker, useMap, Tooltip } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, CircleMarker, GeoJSON, useMap, Tooltip } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import {
   Compass,
   Layers,
   Trees,
+  MapPin,
+  Plus,
+  Minus,
   ChevronRight
 } from 'lucide-react';
 import type { BirdSpecies, EBARegion } from '../../types/bird';
 import { useTaxonomy } from '../../context/TaxonomyContext';
+import { vietnamBoundaryData } from '../../data';
 import { EndemicFocusCard } from './EndemicFocusCard';
 import { EBARegionLegend } from './EBARegionLegend';
 
@@ -187,6 +191,36 @@ const MapFlyToController: React.FC<MapFlyToControllerProps> = ({ target }) => {
   return null;
 };
 
+// Interactive Zoom In / Zoom Out controller using Leaflet map instance
+const MapZoomControls: React.FC = () => {
+  const map = useMap();
+  return (
+    <div
+      className="absolute bottom-20 left-4 z-[400] hidden md:flex flex-col gap-1.5 bg-paper-100/90 backdrop-blur-md p-1.5 rounded-xl border border-paper-border shadow-paper-card pointer-events-auto"
+      data-testid="map-zoom-controls"
+    >
+      <button
+        type="button"
+        onClick={() => map.zoomIn()}
+        title="Phóng to (+)"
+        aria-label="Phóng to bản đồ"
+        className="w-8 h-8 flex items-center justify-center rounded-lg bg-paper-200/80 hover:bg-natural-moss hover:text-paper-50 text-ink-800 text-sm font-bold transition-all border border-paper-border shadow-xs active:scale-95 cursor-pointer"
+      >
+        <Plus className="w-4 h-4" />
+      </button>
+      <button
+        type="button"
+        onClick={() => map.zoomOut()}
+        title="Thu nhỏ (-)"
+        aria-label="Thu nhỏ bản đồ"
+        className="w-8 h-8 flex items-center justify-center rounded-lg bg-paper-200/80 hover:bg-natural-moss hover:text-paper-50 text-ink-800 text-sm font-bold transition-all border border-paper-border shadow-xs active:scale-95 cursor-pointer"
+      >
+        <Minus className="w-4 h-4" />
+      </button>
+    </div>
+  );
+};
+
 export interface VietnamEBAMapProps {
   className?: string;
 }
@@ -202,6 +236,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
   const [selectedEBARegionId, setSelectedEBARegionId] = useState<string | null>(null);
   const [showEBACircles, setShowEBACircles] = useState<boolean>(true);
   const [showAllSpeciesPins, setShowAllSpeciesPins] = useState<boolean>(true);
+  const [showNationalBoundary, setShowNationalBoundary] = useState<boolean>(true);
   const [flyTarget, setFlyTarget] = useState<{
     coordinates: [number, number];
     zoom: number;
@@ -255,7 +290,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         zoom={VIETNAM_DEFAULT_ZOOM}
         minZoom={5}
         maxZoom={16}
-        scrollWheelZoom={false}
+        scrollWheelZoom={true}
         className="w-full h-full z-0"
         style={{ height: '100%', width: '100%', background: '#FAF8F5' }}
       >
@@ -267,6 +302,23 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         />
 
         <MapFlyToController target={flyTarget} />
+        <MapZoomControls />
+
+        {/* High-visibility Vietnam National Boundary Layer */}
+        {showNationalBoundary && (
+          <GeoJSON
+            data={vietnamBoundaryData as any}
+            style={{
+              color: '#2D5A27',
+              weight: 2,
+              opacity: 0.85,
+              fillColor: '#D4A373',
+              fillOpacity: 0.08,
+              dashArray: '3, 2'
+            }}
+            interactive={false}
+          />
+        )}
 
         {/* Sovereignty Island Markers (Hoàng Sa & Trường Sa) */}
         {SOVEREIGNTY_POINTS.map((point, idx) => (
@@ -511,6 +563,21 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
             }`}
           >
             <Trees className="w-3.5 h-3.5" />
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setShowNationalBoundary(prev => !prev)}
+            title={showNationalBoundary ? 'Ẩn ranh giới VN' : 'Hiện ranh giới VN'}
+            aria-label={showNationalBoundary ? 'Ẩn ranh giới VN' : 'Hiện ranh giới VN'}
+            className={`p-1.5 rounded-lg border text-xs transition-all flex items-center gap-1 ${
+              showNationalBoundary
+                ? 'bg-natural-moss/10 text-natural-forest border-natural-moss/30 font-semibold'
+                : 'bg-paper-200/60 text-ink-500 border-paper-border'
+            }`}
+          >
+            <MapPin className="w-3.5 h-3.5" />
+            <span className="hidden lg:inline">Ranh giới VN</span>
           </button>
         </div>
 
