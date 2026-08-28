@@ -25,6 +25,11 @@ export interface TaxonomyContextType {
   allSpecies: BirdSpecies[];
   taxonomyTree: TaxonomyNode;
   ebaRegions: EBARegion[];
+  expandedNodes: Set<string>;
+  setExpandedNodes: React.Dispatch<React.SetStateAction<Set<string>>>;
+  toggleExpandedNode: (nodeName: string) => void;
+  expandAllNodes: () => void;
+  collapseAllNodes: () => void;
 }
 
 export const TaxonomyContext = createContext<TaxonomyContextType | undefined>(undefined);
@@ -44,11 +49,7 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
   const [selectedSpeciesId, setSelectedSpeciesId] = useState<string>(() => {
     if (initialSpeciesId) return initialSpeciesId;
     const endemics = allSpeciesData.filter(s => s.isEndemic);
-    if (endemics.length > 0) {
-      const idx = Math.floor(Math.random() * endemics.length);
-      return endemics[idx].id;
-    }
-    return allSpeciesData[0]?.id ?? '';
+    return endemics[0]?.id || allSpeciesData[0]?.id || '';
   });
   const [activeView, setActiveView] = useState<ViewMode>(initialView);
   const [hoveredTaxonNode, setHoveredTaxonNode] = useState<TaxonomyNode | null>(null);
@@ -57,8 +58,27 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
   const [selectedOrder, setSelectedOrder] = useState<string>('all');
   const [selectedConservation, setSelectedConservation] = useState<string>('all');
 
+  // Persistent Cladogram expanded nodes state
+  const [expandedNodes, setExpandedNodes] = useState<Set<string>>(() => {
+    const initial = new Set<string>();
+    initial.add('Passeriformes');
+    initial.add('Galliformes');
+    initial.add('Leiothrichidae');
+    initial.add('Phasianidae');
+    return initial;
+  });
+
   const selectSpecies = useCallback((id: string) => {
     setSelectedSpeciesId(id);
+    const sp = allSpeciesData.find(s => s.id === id);
+    if (sp?.taxonomy) {
+      setExpandedNodes(prev => {
+        const next = new Set(prev);
+        if (sp.taxonomy.order) next.add(sp.taxonomy.order);
+        if (sp.taxonomy.family) next.add(sp.taxonomy.family);
+        return next;
+      });
+    }
   }, []);
 
   const selectRandomEndemic = useCallback(() => {
@@ -71,6 +91,46 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
   const selectedSpecies = useMemo(() => {
     return allSpeciesData.find(s => s.id === selectedSpeciesId) || null;
   }, [selectedSpeciesId]);
+
+  // Auto-expand tree branch to selected species
+  React.useEffect(() => {
+    if (selectedSpecies?.taxonomy) {
+      setExpandedNodes(prev => {
+        const next = new Set(prev);
+        if (selectedSpecies.taxonomy.order) next.add(selectedSpecies.taxonomy.order);
+        if (selectedSpecies.taxonomy.family) next.add(selectedSpecies.taxonomy.family);
+        return next;
+      });
+    }
+  }, [selectedSpecies]);
+
+  const toggleExpandedNode = useCallback((nodeName: string) => {
+    setExpandedNodes(prev => {
+      const next = new Set(prev);
+      if (next.has(nodeName)) {
+        next.delete(nodeName);
+      } else {
+        next.add(nodeName);
+      }
+      return next;
+    });
+  }, []);
+
+  const expandAllNodes = useCallback(() => {
+    const all = new Set<string>();
+    function traverse(node: TaxonomyNode) {
+      if (node.children && node.children.length > 0) {
+        all.add(node.name);
+        node.children.forEach(traverse);
+      }
+    }
+    traverse(taxonomyTreeData);
+    setExpandedNodes(all);
+  }, []);
+
+  const collapseAllNodes = useCallback(() => {
+    setExpandedNodes(new Set());
+  }, []);
 
   const filteredSpecies = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
@@ -126,7 +186,12 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
       selectRandomEndemic,
       allSpecies: allSpeciesData,
       taxonomyTree: taxonomyTreeData,
-      ebaRegions: ebaRegionsData
+      ebaRegions: ebaRegionsData,
+      expandedNodes,
+      setExpandedNodes,
+      toggleExpandedNode,
+      expandAllNodes,
+      collapseAllNodes
     }),
     [
       selectedSpeciesId,
@@ -139,7 +204,11 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
       selectedOrder,
       selectedConservation,
       filteredSpecies,
-      selectRandomEndemic
+      selectRandomEndemic,
+      expandedNodes,
+      toggleExpandedNode,
+      expandAllNodes,
+      collapseAllNodes
     ]
   );
 
@@ -157,3 +226,4 @@ export const useTaxonomy = (): TaxonomyContextType => {
   }
   return context;
 };
+

@@ -37,7 +37,7 @@ const RANK_LABELS: Record<TaxonomyRank, { labelVi: string; shortVi: string; badg
   }
 };
 
-export const BreadcrumbTrail: React.FC<BreadcrumbTrailProps> = ({
+export const BreadcrumbTrailComponent: React.FC<BreadcrumbTrailProps> = ({
   lineage,
   onNodeClick,
   className = ''
@@ -131,4 +131,6 @@ export const BreadcrumbTrail: React.FC<BreadcrumbTrailProps> = ({
   );
 };
 
+export const BreadcrumbTrail = React.memo(BreadcrumbTrailComponent);
 export default BreadcrumbTrail;
+

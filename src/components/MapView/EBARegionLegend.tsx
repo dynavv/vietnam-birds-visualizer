@@ -19,7 +19,7 @@ export interface EBARegionLegendProps {
   onToggleCollapse?: () => void;
 }
 
-export const EBARegionLegend: React.FC<EBARegionLegendProps> = ({
+export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
   className = '',
   selectedRegionId: controlledSelectedRegionId,
   onSelectRegion,
@@ -325,4 +325,6 @@ export const EBARegionLegend: React.FC<EBARegionLegendProps> = ({
   );
 };
 
+export const EBARegionLegend = React.memo(EBARegionLegendComponent);
 export default EBARegionLegend;
+

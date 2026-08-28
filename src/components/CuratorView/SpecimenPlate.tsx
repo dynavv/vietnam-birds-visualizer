@@ -242,8 +242,31 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
               </span>
             </p>
 
-            <div className="pt-1 text-[11px] font-serif text-ink-600 flex items-center justify-center gap-2 flex-wrap">
-              <span className="italic">{artist} ad nat. del.</span>
+            <div className="pt-1 text-[11px] text-ink-600 flex items-center justify-center gap-2 flex-wrap">
+              {(!species.illustration?.license && !species.illustration?.observationUrl && !artist.includes('(c)')) ? (
+                <span className="italic font-serif">{artist} ad nat. del.</span>
+              ) : (
+                <span className="font-sans text-[11px] font-medium text-ink-700 inline-flex items-center gap-1.5 flex-wrap justify-center">
+                  <span>{artist}</span>
+                  {species.illustration?.license && (
+                    <span className="px-1.5 py-0.2 rounded bg-paper-200 border border-paper-border text-[9px] font-mono text-ink-600">
+                      {species.illustration.license}
+                    </span>
+                  )}
+                  {species.illustration?.observationUrl && (
+                    <a
+                      href={species.illustration.observationUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-natural-moss hover:text-stone-900 inline-flex items-center gap-0.5 text-[10px] underline ml-1"
+                      title="Xem quan sát gốc trên iNaturalist"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <span>iNaturalist ↗</span>
+                    </a>
+                  )}
+                </span>
+              )}
               <span className="text-ink-400">•</span>
               <span className="font-sans text-[10px] text-ink-500 font-medium tracking-tight">
                 {sourceBook}

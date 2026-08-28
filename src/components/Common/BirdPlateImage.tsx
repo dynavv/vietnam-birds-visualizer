@@ -26,7 +26,7 @@ const ORDER_COLOR_PALETTES: Record<string, { primary: string; secondary: string;
   Trogoniformes: { primary: '#047857', secondary: '#DC2626', accent: '#F59E0B', bg: '#FEF2F2' }  // Bộ Nuốc: Xanh lục, bụng đỏ
 };
 
-export const BirdPlateImage: React.FC<BirdPlateImageProps> = ({
+export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
   species,
   className = '',
   imageClassName = '',
@@ -34,7 +34,18 @@ export const BirdPlateImage: React.FC<BirdPlateImageProps> = ({
   onClick
 }) => {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
-  const [hasError, setHasError] = useState<boolean>(false);
+  const [useThumbnailFallback, setUseThumbnailFallback] = useState<boolean>(false);
+  const [hasAllErrors, setHasAllErrors] = useState<boolean>(false);
+
+  const rawImageUrl = species.illustration?.imageUrl;
+  const thumbnailUrl = species.illustration?.thumbnailUrl;
+
+  // Reset lifecycle states whenever species or URLs change
+  React.useEffect(() => {
+    setIsLoaded(false);
+    setUseThumbnailFallback(false);
+    setHasAllErrors(false);
+  }, [species.id, rawImageUrl, thumbnailUrl]);
 
   const orderName = species.taxonomy?.order || 'Passeriformes';
   const palette = ORDER_COLOR_PALETTES[orderName] || {
@@ -56,7 +67,19 @@ export const BirdPlateImage: React.FC<BirdPlateImageProps> = ({
     }
   };
 
-  const rawImageUrl = species.illustration?.imageUrl;
+  // Determine current active image source
+  const currentSrc = !useThumbnailFallback && rawImageUrl ? rawImageUrl : thumbnailUrl || '';
+  const canAttemptImage = Boolean(currentSrc) && !hasAllErrors;
+
+  const handleImageError = () => {
+    if (!useThumbnailFallback && thumbnailUrl && thumbnailUrl !== rawImageUrl) {
+      // 2-stage fallback: Try thumbnailUrl before falling back to SVG vector
+      setUseThumbnailFallback(true);
+      setIsLoaded(false);
+    } else {
+      setHasAllErrors(true);
+    }
+  };
 
   return (
     <div
@@ -64,25 +87,26 @@ export const BirdPlateImage: React.FC<BirdPlateImageProps> = ({
       className={`relative w-full overflow-hidden bg-paper-100 border border-paper-border rounded-lg ${getAspectRatioClass()} ${className}`}
       data-testid={`bird-plate-${species.id}`}
     >
-      {/* 1. Main Image (nếu có URL hợp lệ và tải thành công) */}
-      {rawImageUrl && !hasError && (
+      {/* 1. Main Image / Secondary Thumbnail (nếu có URL hợp lệ và chưa lỗi hoàn toàn) */}
+      {canAttemptImage && (
         <img
-          src={rawImageUrl}
+          key={`${species.id}-${currentSrc}`}
+          src={currentSrc}
           alt={`Minh họa loài ${species.vietnameseName} (${species.scientificName})`}
           className={`w-full h-full object-cover transition-all duration-500 ${
             isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           } ${imageClassName}`}
           loading="lazy"
           onLoad={() => setIsLoaded(true)}
-          onError={() => setHasError(true)}
+          onError={handleImageError}
         />
       )}
 
       {/* 2. Naturalist Botanical Vector Plate Artwork (Hiển thị khi ảnh đang tải hoặc ảnh lỗi/chưa có ảnh) */}
-      {(!rawImageUrl || hasError || !isLoaded) && (
+      {(!canAttemptImage || !isLoaded) && (
         <div
           className={`absolute inset-0 flex flex-col items-center justify-between p-3 select-none transition-opacity duration-300 ${
-            isLoaded && !hasError ? 'opacity-0 pointer-events-none' : 'opacity-100'
+            isLoaded && canAttemptImage ? 'opacity-0 pointer-events-none' : 'opacity-100'
           }`}
           style={{ backgroundColor: '#FAF7F0' }}
         >
@@ -215,4 +239,6 @@ export const BirdPlateImage: React.FC<BirdPlateImageProps> = ({
   );
 };
 
+export const BirdPlateImage = React.memo(BirdPlateImageComponent);
 export default BirdPlateImage;
+

@@ -1,12 +1,19 @@
 import React from 'react';
-import { BookOpen, ExternalLink, Database, FileText, CheckCircle2 } from 'lucide-react';
+import { BookOpen, ExternalLink, Database, FileText, CheckCircle2, Globe } from 'lucide-react';
 import { BirdSpecies } from '../../types/bird';
+import {
+  getIucnUrl,
+  getAvibaseUrl,
+  getGbifUrl,
+  getInaturalistUrl,
+  resolveAcademicRefLink
+} from '../../utils/linkGenerators';
 
 interface AcademicReferencesProps {
   species: BirdSpecies;
 }
 
-export const AcademicReferences: React.FC<AcademicReferencesProps> = ({ species }) => {
+export const AcademicReferencesComponent: React.FC<AcademicReferencesProps> = ({ species }) => {
   const academic = species.academic;
 
   return (
@@ -30,10 +37,10 @@ export const AcademicReferences: React.FC<AcademicReferencesProps> = ({ species 
           <Database className="w-3.5 h-3.5 mr-1.5 text-stone-600" />
           Mã định danh trong các Cơ sở Dữ liệu Quốc tế
         </h4>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
           {/* IUCN Link */}
           <a
-            href={academic?.iucnUrl || `https://www.iucnredlist.org/search?query=${encodeURIComponent(species.scientificName)}`}
+            href={getIucnUrl(species)}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-between p-2.5 rounded-lg bg-stone-100/80 hover:bg-stone-200/80 border border-stone-200 transition-colors text-xs group"
@@ -42,12 +49,12 @@ export const AcademicReferences: React.FC<AcademicReferencesProps> = ({ species 
               <span className="font-semibold text-stone-800 block">IUCN Red List</span>
               <span className="text-stone-500 text-[11px]">Hồ sơ đánh giá bảo tồn</span>
             </div>
-            <ExternalLink className="w-3.5 h-3.5 text-stone-400 group-hover:text-natural-terracotta transition-colors" />
+            <ExternalLink className="w-3.5 h-3.5 text-stone-400 group-hover:text-natural-terracotta transition-colors shrink-0" />
           </a>
 
           {/* Avibase Link */}
           <a
-            href={academic?.avibaseId ? `https://avibase.bsc-eoc.org/species.jsp?lang=EN&avibaseid=&sec=summary&qstr=${encodeURIComponent(species.scientificName)}` : `https://avibase.bsc-eoc.org/`}
+            href={getAvibaseUrl(species)}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-between p-2.5 rounded-lg bg-stone-100/80 hover:bg-stone-200/80 border border-stone-200 transition-colors text-xs group"
@@ -56,21 +63,35 @@ export const AcademicReferences: React.FC<AcademicReferencesProps> = ({ species 
               <span className="font-semibold text-stone-800 block">Avibase Checklist</span>
               <span className="text-stone-500 text-[11px]">Cơ sở dữ liệu chim thế giới</span>
             </div>
-            <ExternalLink className="w-3.5 h-3.5 text-stone-400 group-hover:text-natural-moss transition-colors" />
+            <ExternalLink className="w-3.5 h-3.5 text-stone-400 group-hover:text-natural-moss transition-colors shrink-0" />
           </a>
 
           {/* GBIF Link */}
           <a
-            href={academic?.gbifTaxonKey || `https://www.gbif.org/species/search?q=${encodeURIComponent(species.scientificName)}`}
+            href={getGbifUrl(species)}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-between p-2.5 rounded-lg bg-stone-100/80 hover:bg-stone-200/80 border border-stone-200 transition-colors text-xs group"
           >
             <div>
               <span className="font-semibold text-stone-800 block">GBIF Biodiversity</span>
-              <span className="text-stone-500 text-[11px]">Bản đồ ghi nhận mẫu thực địa</span>
+              <span className="text-stone-500 text-[11px]">Bản đồ ghi nhận mẫu</span>
             </div>
-            <ExternalLink className="w-3.5 h-3.5 text-stone-400 group-hover:text-natural-indigo transition-colors" />
+            <ExternalLink className="w-3.5 h-3.5 text-stone-400 group-hover:text-natural-indigo transition-colors shrink-0" />
+          </a>
+
+          {/* iNaturalist Link */}
+          <a
+            href={getInaturalistUrl(species)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-between p-2.5 rounded-lg bg-stone-100/80 hover:bg-stone-200/80 border border-stone-200 transition-colors text-xs group"
+          >
+            <div>
+              <span className="font-semibold text-stone-800 block">iNaturalist</span>
+              <span className="text-stone-500 text-[11px]">Quan sát cộng đồng</span>
+            </div>
+            <Globe className="w-3.5 h-3.5 text-stone-400 group-hover:text-emerald-600 transition-colors shrink-0" />
           </a>
         </div>
       </div>
@@ -84,31 +105,33 @@ export const AcademicReferences: React.FC<AcademicReferencesProps> = ({ species 
 
         <div className="space-y-2.5 mt-2">
           {academic?.primaryLiterature && academic.primaryLiterature.length > 0 ? (
-            academic.primaryLiterature.map((ref, idx) => (
-              <div
-                key={idx}
-                className="p-3 rounded-lg bg-stone-50 border border-stone-200/80 text-xs text-stone-800 space-y-1"
-              >
-                <div className="flex items-start justify-between">
-                  <span className="font-semibold text-stone-900">{ref.authors} ({ref.year}).</span>
-                  {ref.doiOrUrl && (
+            academic.primaryLiterature.map((ref, idx) => {
+              const resolved = resolveAcademicRefLink(ref);
+              return (
+                <div
+                  key={idx}
+                  className="p-3 rounded-lg bg-stone-50 border border-stone-200/80 text-xs text-stone-800 space-y-1"
+                >
+                  <div className="flex items-start justify-between">
+                    <span className="font-semibold text-stone-900">{ref.authors} ({ref.year}).</span>
                     <a
-                      href={ref.doiOrUrl}
+                      href={resolved.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center space-x-1 text-natural-moss hover:text-stone-900 font-medium ml-2 shrink-0"
+                      title={resolved.isDirect ? 'Truy cập tài liệu gốc' : 'Tra cứu tài liệu học thuật'}
                     >
-                      <span>Tài liệu gốc</span>
+                      <span>{resolved.label}</span>
                       <ExternalLink className="w-3 h-3" />
                     </a>
-                  )}
+                  </div>
+                  <div className="italic text-stone-700 font-serif">"{ref.title}."</div>
+                  <div className="text-stone-500 text-[11px]">
+                    {ref.journalOrBook}{ref.volumeOrPages ? `, ${ref.volumeOrPages}` : ''}.
+                  </div>
                 </div>
-                <div className="italic text-stone-700 font-serif">"{ref.title}."</div>
-                <div className="text-stone-500 text-[11px]">
-                  {ref.journalOrBook}{ref.volumeOrPages ? `, ${ref.volumeOrPages}` : ''}.
-                </div>
-              </div>
-            ))
+              );
+            })
           ) : (
             <div className="text-xs text-stone-500 italic p-3 bg-stone-50 rounded border border-stone-200">
               Craik, R. C. & Le Manh Hung (2018). Birds of Vietnam. Helm Wildlife Guides.
@@ -119,3 +142,6 @@ export const AcademicReferences: React.FC<AcademicReferencesProps> = ({ species 
     </div>
   );
 };
+
+export const AcademicReferences = React.memo(AcademicReferencesComponent);
+

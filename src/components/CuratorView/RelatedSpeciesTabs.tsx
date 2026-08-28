@@ -15,7 +15,7 @@ export interface RelatedSpeciesTabsProps {
 
 type FilterTab = 'genus' | 'family' | 'all';
 
-export const RelatedSpeciesTabs: React.FC<RelatedSpeciesTabsProps> = ({
+export const RelatedSpeciesTabsComponent: React.FC<RelatedSpeciesTabsProps> = ({
   currentSpecies,
   allSpecies: propAllSpecies,
   onSelectSpecies: propOnSelectSpecies,
@@ -218,4 +218,6 @@ export const RelatedSpeciesTabs: React.FC<RelatedSpeciesTabsProps> = ({
   );
 };
 
+export const RelatedSpeciesTabs = React.memo(RelatedSpeciesTabsComponent);
 export default RelatedSpeciesTabs;
+

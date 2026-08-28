@@ -3,8 +3,9 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import React from 'react';
 import { EBARegionLegend } from './EBARegionLegend';
 import { TaxonomyProvider, useTaxonomy } from '../../context/TaxonomyContext';
+import type { EBARegion } from '../../types/bird';
 
-const TestLegendConsumer: React.FC<{ onSelectRegion?: (r: any) => void }> = ({ onSelectRegion }) => {
+const TestLegendConsumer: React.FC<{ onSelectRegion?: (r: EBARegion) => void }> = ({ onSelectRegion }) => {
   const { selectedSpecies } = useTaxonomy();
   return (
     <div>

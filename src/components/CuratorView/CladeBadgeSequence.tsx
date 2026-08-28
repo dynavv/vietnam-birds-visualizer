@@ -30,7 +30,7 @@ const CLADE_VIETNAMESE_NAMES: Record<string, string> = {
   Columbaves: 'Nhánh Bồ Câu & Tương Cận'
 };
 
-export const CladeBadgeSequence: React.FC<CladeBadgeSequenceProps> = ({
+export const CladeBadgeSequenceComponent: React.FC<CladeBadgeSequenceProps> = ({
   taxonomy,
   className = '',
   onCladeClick
@@ -191,4 +191,6 @@ export const CladeBadgeSequence: React.FC<CladeBadgeSequenceProps> = ({
   );
 };
 
+export const CladeBadgeSequence = React.memo(CladeBadgeSequenceComponent);
 export default CladeBadgeSequence;
+

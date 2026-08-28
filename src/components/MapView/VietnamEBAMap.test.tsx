@@ -57,4 +57,29 @@ describe('VietnamEBAMap Component', () => {
     fireEvent.click(resetBtn);
     expect(resetBtn).toBeDefined();
   });
+
+  it('selects and toggles EBA region from legend', () => {
+    render(
+      <TaxonomyProvider>
+        <VietnamEBAMap />
+      </TaxonomyProvider>
+    );
+
+    const regionCard = screen.getByTestId('eba-region-card-dalat-plateau');
+    const firstRegionBtn = regionCard.querySelector('button');
+    expect(firstRegionBtn).not.toBeNull();
+
+    if (firstRegionBtn) {
+      // First click: select/expand
+      fireEvent.click(firstRegionBtn);
+      expect(firstRegionBtn.getAttribute('aria-expanded')).toBe('true');
+
+      // Second click: toggle/unselect
+      fireEvent.click(firstRegionBtn);
+      expect(firstRegionBtn.getAttribute('aria-expanded')).toBe('false');
+    }
+  });
 });
+
+
+

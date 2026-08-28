@@ -54,7 +54,7 @@ const ORDER_COLOR_MAP: Record<string, string> = {
   Caprimulgiformes: '#78350F' // Chestnut
 };
 
-export const SunburstWheel: React.FC<SunburstWheelProps> = ({
+export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
   data: propData,
   width = 750,
   height = 750,
@@ -235,10 +235,11 @@ export const SunburstWheel: React.FC<SunburstWheelProps> = ({
     const labelGroup = g.append('g').attr('class', 'sunburst-labels').attr('pointer-events', 'none');
 
     const labelVisible = (d: SunburstHierarchyNode['current']) => {
-      // Must be at visible depth and angle width > 0.07 rad
+      // Must be at visible depth and angle width threshold per depth
       const isVisibleDepth = d.y0 >= 1 && d.y0 <= 4;
       const angleWidth = d.x1 - d.x0;
-      return isVisibleDepth && angleWidth > 0.075;
+      const minAngle = d.y0 === 1 ? 0.08 : d.y0 === 2 ? 0.06 : 0.045;
+      return isVisibleDepth && angleWidth > minAngle;
     };
 
     const labelTransform = (d: SunburstHierarchyNode['current']) => {
@@ -257,10 +258,10 @@ export const SunburstWheel: React.FC<SunburstWheelProps> = ({
       .attr('text-anchor', 'middle')
       .attr('dominant-baseline', 'middle')
       .attr('font-size', d => {
-        if (d.data.rank === 'order') return '11px';
-        if (d.data.rank === 'family') return '10px';
-        if (d.data.rank === 'genus') return '9px';
-        return '8.5px';
+        if (d.data.rank === 'order') return '10.5px';
+        if (d.data.rank === 'family') return '9.5px';
+        if (d.data.rank === 'genus') return '8.5px';
+        return '8px';
       })
       .attr('font-weight', d => (d.data.rank === 'order' || d.data.rank === 'species' ? '600' : '400'))
       .attr('fill', '#FFFFFF')
@@ -269,12 +270,11 @@ export const SunburstWheel: React.FC<SunburstWheelProps> = ({
       .attr('transform', d => labelTransform(d.current))
       .attr('opacity', d => (labelVisible(d.current) ? 1 : 0))
       .text(d => {
-        // Shorter labels for compact display
+        // Tight length bounds to prevent text bleeding across concentric rings
         const vi = d.data.vietnameseName;
-        if (vi) {
-          return vi.length > 18 ? `${vi.slice(0, 16)}…` : vi;
-        }
-        return d.data.name.length > 16 ? `${d.data.name.slice(0, 14)}…` : d.data.name;
+        const name = vi || d.data.name;
+        const maxLen = d.data.rank === 'order' ? 12 : d.data.rank === 'family' ? 10 : 9;
+        return name.length > maxLen ? `${name.slice(0, maxLen - 1)}…` : name;
       });
 
     // Zoom Handler Function
@@ -316,15 +316,16 @@ export const SunburstWheel: React.FC<SunburstWheelProps> = ({
 
       // Transition paths
       path
-        .transition(transition as any)
+        .transition(transition as unknown as d3.Transition<d3.BaseType, unknown, null, undefined>)
         .tween('data', d => {
           const i = d3.interpolate(d.current, d.target);
           return t => {
             d.current = i(t);
           };
         })
-        .filter(function (d) {
-          return Boolean(+(this as SVGPathElement).getAttribute('fill-opacity')!) || d.target.y0 >= 1;
+        .filter(function (this: SVGPathElement, d) {
+          const currentOpacity = +(this.getAttribute('fill-opacity') ?? '0');
+          return currentOpacity > 0 || d.target.y0 >= 1;
         })
         .attr('fill-opacity', d => (d.target.y0 >= 1 && d.target.y0 <= 4 ? 0.9 : 0))
         .attr('pointer-events', d => (d.target.y0 >= 1 && d.target.y0 <= 4 ? 'auto' : 'none'))
@@ -332,7 +333,7 @@ export const SunburstWheel: React.FC<SunburstWheelProps> = ({
 
       // Transition labels
       labels
-        .transition(transition as any)
+        .transition(transition as unknown as d3.Transition<d3.BaseType, unknown, null, undefined>)
         .attr('opacity', d => (labelVisible(d.target) ? 1 : 0))
         .attrTween('transform', d => () => labelTransform(d.current));
     }
@@ -340,7 +341,7 @@ export const SunburstWheel: React.FC<SunburstWheelProps> = ({
     // Attach click events
     path.on('click', clicked);
 
-    // Hover Highlight Interactivity (Gentle Tooltip & Lineage Illumination Only)
+    // Hover Highlight Interactivity (Filtered to visible arcs only to prevent ghost arcs)
     path
       .on('mouseenter', (_event, d) => {
         const ancestors = d.ancestors();
@@ -354,8 +355,9 @@ export const SunburstWheel: React.FC<SunburstWheelProps> = ({
           setHoveredTaxonNode(d.data);
         }
 
-        // Highlight lineage, dim others gently
+        // Highlight lineage on visible arcs only
         path
+          .filter(node => node.target.y0 >= 1 && node.target.y0 <= 4)
           .attr('fill-opacity', node => (ancestorNames.includes(node.data.name) ? 1.0 : 0.25))
           .attr('stroke', node => (ancestorNames.includes(node.data.name) ? '#FFFFFF' : '#FAF8F5'))
           .attr('stroke-width', node => (ancestorNames.includes(node.data.name) ? '2px' : '0.8px'));
@@ -369,8 +371,9 @@ export const SunburstWheel: React.FC<SunburstWheelProps> = ({
           setHoveredTaxonNode(null);
         }
 
-        // Restore normal opacity
+        // Restore normal opacity on visible arcs only
         path
+          .filter(node => node.target.y0 >= 1 && node.target.y0 <= 4)
           .attr('fill-opacity', 0.9)
           .attr('stroke', '#FAF8F5')
           .attr('stroke-width', d => (d.data.rank === 'order' ? '1.5px' : '0.8px'));
@@ -383,6 +386,13 @@ export const SunburstWheel: React.FC<SunburstWheelProps> = ({
         clicked(new MouseEvent('click'), matchNode);
       }
     }
+
+    // Cleanup: Interrupt running transitions on unmount
+    return () => {
+      if (svgRef.current) {
+        d3.select(svgRef.current).selectAll('*').interrupt();
+      }
+    };
   }, [rawTreeData, width, height, radius, centerRadius, ringWidth, speciesMap, onSelectSpecies, onHoverNode, onZoomNode, selectSpecies, setHoveredTaxonNode]);
 
   // Center Circle Content Resolver
@@ -506,4 +516,6 @@ export const SunburstWheel: React.FC<SunburstWheelProps> = ({
   );
 };
 
+export const SunburstWheel = React.memo(SunburstWheelComponent);
 export default SunburstWheel;
+

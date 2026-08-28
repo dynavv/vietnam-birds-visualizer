@@ -41,6 +41,14 @@ describe('TaxonomyContext & useTaxonomy Hook', () => {
     expect(result.current.selectedSpecies?.isEndemic).toBe(true);
   });
 
+  it('should deterministically initialize selectedSpeciesId across multiple renders without initialSpeciesId', () => {
+    const hook1 = renderHook(() => useTaxonomy(), { wrapper });
+    const hook2 = renderHook(() => useTaxonomy(), { wrapper });
+
+    expect(hook1.result.current.selectedSpeciesId).toBe(hook2.result.current.selectedSpeciesId);
+    expect(hook1.result.current.selectedSpeciesId).toBe('trochalopteron-ngoclinhense');
+  });
+
   it('should allow selecting a species by ID', () => {
     const { result } = renderHook(() => useTaxonomy(), { wrapper });
 
@@ -194,4 +202,61 @@ describe('TaxonomyContext & useTaxonomy Hook', () => {
       }
     });
   });
+
+  describe('Cladogram Tree Expansion State & Auto-expansion', () => {
+    it('initializes with default expanded orders (Passeriformes, Galliformes)', () => {
+      const { result } = renderHook(() => useTaxonomy(), { wrapper });
+      expect(result.current.expandedNodes.has('Passeriformes')).toBe(true);
+      expect(result.current.expandedNodes.has('Galliformes')).toBe(true);
+    });
+
+    it('toggles node expansion state correctly', () => {
+      const { result } = renderHook(() => useTaxonomy(), { wrapper });
+
+      // Toggle off Passeriformes
+      act(() => {
+        result.current.toggleExpandedNode('Passeriformes');
+      });
+      expect(result.current.expandedNodes.has('Passeriformes')).toBe(false);
+
+      // Toggle on Passeriformes
+      act(() => {
+        result.current.toggleExpandedNode('Passeriformes');
+      });
+      expect(result.current.expandedNodes.has('Passeriformes')).toBe(true);
+    });
+
+    it('expands and collapses all tree nodes', () => {
+      const { result } = renderHook(() => useTaxonomy(), { wrapper });
+
+      act(() => {
+        result.current.expandAllNodes();
+      });
+      expect(result.current.expandedNodes.size).toBeGreaterThan(16);
+
+      act(() => {
+        result.current.collapseAllNodes();
+      });
+      expect(result.current.expandedNodes.size).toBe(0);
+    });
+
+    it('automatically expands order and family when a species is selected', () => {
+      const { result } = renderHook(() => useTaxonomy(), { wrapper });
+
+      // Clear all
+      act(() => {
+        result.current.collapseAllNodes();
+      });
+      expect(result.current.expandedNodes.size).toBe(0);
+
+      // Select Lophura edwardsi (Galliformes -> Phasianidae)
+      act(() => {
+        result.current.selectSpecies('lophura-edwardsi');
+      });
+
+      expect(result.current.expandedNodes.has('Galliformes')).toBe(true);
+      expect(result.current.expandedNodes.has('Phasianidae')).toBe(true);
+    });
+  });
 });
+

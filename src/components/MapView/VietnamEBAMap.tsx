@@ -31,82 +31,124 @@ const SOVEREIGNTY_POINTS = [
   }
 ];
 
-// Helper to create custom Leaflet divIcon for sovereign markers
-const createSovereigntyDivIcon = (name: string, subname: string) => {
-  return L.divIcon({
-    className: 'custom-sovereignty-marker',
-    html: `
-      <div class="bg-paper-100/90 backdrop-blur-sm border border-paper-border/90 px-2.5 py-1 rounded-lg shadow-sm text-center pointer-events-none select-none">
-        <div class="font-serif font-bold text-xs text-ink-900 tracking-wide">${name}</div>
-        <div class="font-sans text-[10px] text-natural-forest font-semibold italic">${subname}</div>
-      </div>
-    `,
-    iconSize: [140, 36],
-    iconAnchor: [70, 18]
-  });
-};
+// DivIcon Caches to eliminate memory churn and DOM recreation thrashing
+const iconCache = new Map<string, L.DivIcon>();
 
-// Helper to create custom EBA DivIcon
-const createEBADivIcon = (regionName: string, index: number, isSelected: boolean) => {
-  return L.divIcon({
-    className: 'custom-eba-marker',
-    html: `
-      <div class="relative group cursor-pointer flex flex-col items-center">
-        <div class="w-8 h-8 rounded-full ${
-          isSelected
-            ? 'bg-natural-terracotta ring-4 ring-natural-terracotta/30 scale-110'
-            : 'bg-natural-moss ring-2 ring-paper-50'
-        } shadow-natural text-paper-50 flex items-center justify-center font-serif font-bold text-xs transform transition-transform hover:scale-115">
-          ${index + 1}
+// Helper to create custom Leaflet divIcon for sovereign markers (cached)
+const getSovereigntyDivIcon = (name: string, subname: string) => {
+  const key = `sov-${name}-${subname}`;
+  let icon = iconCache.get(key);
+  if (!icon) {
+    icon = L.divIcon({
+      className: 'custom-sovereignty-marker',
+      html: `
+        <div class="bg-paper-100/90 backdrop-blur-sm border border-paper-border/90 px-2.5 py-1 rounded-lg shadow-sm text-center pointer-events-none select-none">
+          <div class="font-serif font-bold text-xs text-ink-900 tracking-wide">${name}</div>
+          <div class="font-sans text-[10px] text-natural-forest font-semibold italic">${subname}</div>
         </div>
-        <div class="mt-1 bg-paper-100/95 backdrop-blur-sm border border-paper-border px-2 py-0.5 rounded shadow-sm text-[11px] font-serif font-semibold text-ink-900 whitespace-nowrap pointer-events-none opacity-90 group-hover:opacity-100">
-          ${regionName}
+      `,
+      iconSize: [140, 36],
+      iconAnchor: [70, 18]
+    });
+    iconCache.set(key, icon);
+  }
+  return icon;
+};
+
+// Helper to create custom EBA DivIcon (cached)
+const getEBADivIcon = (regionName: string, index: number, isSelected: boolean) => {
+  const key = `eba-${regionName}-${index}-${isSelected}`;
+  let icon = iconCache.get(key);
+  if (!icon) {
+    icon = L.divIcon({
+      className: 'custom-eba-marker',
+      html: `
+        <div class="relative group cursor-pointer flex flex-col items-center">
+          <div class="w-8 h-8 rounded-full ${
+            isSelected
+              ? 'bg-natural-terracotta ring-4 ring-natural-terracotta/30 scale-110'
+              : 'bg-natural-moss ring-2 ring-paper-50'
+          } shadow-natural text-paper-50 flex items-center justify-center font-serif font-bold text-xs transform transition-transform hover:scale-115">
+            ${index + 1}
+          </div>
+          <div class="mt-1 bg-paper-100/95 backdrop-blur-sm border border-paper-border px-2 py-0.5 rounded shadow-sm text-[11px] font-serif font-semibold text-ink-900 whitespace-nowrap pointer-events-none opacity-90 group-hover:opacity-100">
+            ${regionName}
+          </div>
         </div>
-      </div>
-    `,
-    iconSize: [32, 48],
-    iconAnchor: [16, 16],
-    popupAnchor: [0, -18]
-  });
+      `,
+      iconSize: [32, 48],
+      iconAnchor: [16, 16],
+      popupAnchor: [0, -18]
+    });
+    iconCache.set(key, icon);
+  }
+  return icon;
 };
 
-// Helper to create Selected Species DivIcon
-const createSelectedSpeciesDivIcon = (species: BirdSpecies) => {
-  return L.divIcon({
-    className: 'custom-species-selected-marker',
-    html: `
-      <div class="relative flex items-center justify-center">
-        <span class="absolute -inset-2.5 rounded-full bg-natural-ochre/40 animate-ping"></span>
-        <span class="absolute -inset-1 rounded-full bg-natural-ochre/30"></span>
-        <div class="relative w-10 h-10 rounded-full bg-natural-ochre border-2 border-paper-50 shadow-natural-lg flex items-center justify-center text-paper-50 text-base transform hover:scale-110 transition-transform">
-          ${species.isEndemic ? '⭐' : '🪶'}
+// Helper to create Selected Species DivIcon (cached)
+const getSelectedSpeciesDivIcon = (species: BirdSpecies) => {
+  const key = `sel-${species.id}-${species.isEndemic}`;
+  let icon = iconCache.get(key);
+  if (!icon) {
+    icon = L.divIcon({
+      className: 'custom-species-selected-marker',
+      html: `
+        <div class="relative flex items-center justify-center">
+          <span class="absolute -inset-2.5 rounded-full bg-natural-ochre/40 animate-ping"></span>
+          <span class="absolute -inset-1 rounded-full bg-natural-ochre/30"></span>
+          <div class="relative w-10 h-10 rounded-full bg-natural-ochre border-2 border-paper-50 shadow-natural-lg flex items-center justify-center text-paper-50 text-base transform hover:scale-110 transition-transform">
+            ${species.isEndemic ? '⭐' : '🪶'}
+          </div>
         </div>
-      </div>
-    `,
-    iconSize: [40, 40],
-    iconAnchor: [20, 20],
-    popupAnchor: [0, -20]
-  });
+      `,
+      iconSize: [40, 40],
+      iconAnchor: [20, 20],
+      popupAnchor: [0, -20]
+    });
+    iconCache.set(key, icon);
+  }
+  return icon;
 };
 
-// Helper to create regular Species DivIcon
-const createSpeciesDivIcon = (species: BirdSpecies) => {
-  return L.divIcon({
-    className: 'custom-species-marker',
-    html: `
-      <div class="w-6 h-6 rounded-full ${
-        species.isEndemic ? 'bg-natural-terracotta ring-1 ring-natural-ochre' : 'bg-natural-forest'
-      } border-2 border-paper-50 shadow-md flex items-center justify-center text-paper-50 text-[10px] transform hover:scale-125 transition-transform cursor-pointer">
-        ${species.isEndemic ? '★' : '•'}
-      </div>
-    `,
-    iconSize: [24, 24],
-    iconAnchor: [12, 12],
-    popupAnchor: [0, -12]
-  });
+// Helper to create regular Species DivIcon (cached)
+const getSpeciesDivIcon = (species: BirdSpecies) => {
+  const key = `sp-${species.id}-${species.isEndemic}`;
+  let icon = iconCache.get(key);
+  if (!icon) {
+    icon = L.divIcon({
+      className: 'custom-species-marker',
+      html: `
+        <div class="w-6 h-6 rounded-full ${
+          species.isEndemic ? 'bg-natural-terracotta ring-1 ring-natural-ochre' : 'bg-natural-forest'
+        } border-2 border-paper-50 shadow-md flex items-center justify-center text-paper-50 text-[10px] transform hover:scale-125 transition-transform cursor-pointer">
+          ${species.isEndemic ? '★' : '•'}
+        </div>
+      `,
+      iconSize: [24, 24],
+      iconAnchor: [12, 12],
+      popupAnchor: [0, -12]
+    });
+    iconCache.set(key, icon);
+  }
+  return icon;
 };
 
-// Inner Map Controller component to handle flyTo animations
+// Helper to disperse overlapping markers in a spider radial pattern
+export const calculateSpiderOffset = (
+  coords: [number, number],
+  index: number,
+  totalAtCoord: number
+): [number, number] => {
+  if (totalAtCoord <= 1) return coords;
+  // Offset radius in degrees (~4-8km geographically)
+  const angle = (2 * Math.PI / totalAtCoord) * index;
+  const radius = 0.045 + (index % 2 === 1 ? 0.015 : 0);
+  const latOffset = Math.sin(angle) * radius;
+  const lngOffset = Math.cos(angle) * radius;
+  return [coords[0] + latOffset, coords[1] + lngOffset];
+};
+
+// Inner Map Controller component to handle flyTo animations with cancellation
 interface MapFlyToControllerProps {
   target: {
     coordinates: [number, number];
@@ -119,11 +161,27 @@ const MapFlyToController: React.FC<MapFlyToControllerProps> = ({ target }) => {
 
   useEffect(() => {
     if (target) {
-      map.flyTo(target.coordinates, target.zoom, {
-        duration: 1.4,
-        easeLinearity: 0.25
-      });
+      try {
+        if (map && (map as unknown as { _mapPane?: HTMLElement })._mapPane) {
+          map.stop();
+        }
+        map.flyTo(target.coordinates, target.zoom, {
+          duration: 1.2,
+          easeLinearity: 0.25
+        });
+      } catch {
+        // Safe fallback if map is being initialized
+      }
     }
+    return () => {
+      try {
+        if (map && (map as unknown as { _mapPane?: HTMLElement })._mapPane) {
+          map.stop();
+        }
+      } catch {
+        // Safe fallback if map unmounted
+      }
+    };
   }, [map, target]);
 
   return null;
@@ -164,7 +222,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
 
   // Handle region select from legend or map
   const handleSelectRegion = useCallback((region: EBARegion) => {
-    setSelectedEBARegionId(region.id);
+    setSelectedEBARegionId(prev => prev === region.id ? null : region.id);
     setFlyTarget({
       coordinates: region.coordinates,
       zoom: region.zoomLevel
@@ -197,7 +255,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         zoom={VIETNAM_DEFAULT_ZOOM}
         minZoom={5}
         maxZoom={16}
-        scrollWheelZoom={true}
+        scrollWheelZoom={false}
         className="w-full h-full z-0"
         style={{ height: '100%', width: '100%', background: '#FAF8F5' }}
       >
@@ -215,7 +273,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
           <Marker
             key={`sov-${idx}`}
             position={point.coordinates}
-            icon={createSovereigntyDivIcon(point.name, point.subname)}
+            icon={getSovereigntyDivIcon(point.name, point.subname)}
             interactive={false}
           />
         ))}
@@ -256,7 +314,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
               {/* EBA Center Icon Marker */}
               <Marker
                 position={region.coordinates}
-                icon={createEBADivIcon(region.vietnameseName, index, isSelected)}
+                icon={getEBADivIcon(region.vietnameseName, index, isSelected)}
                 eventHandlers={{
                   click: () => handleSelectRegion(region)
                 }}
@@ -265,16 +323,33 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
           );
         })}
 
-        {/* Other Filtered Species Pins */}
-        {showAllSpeciesPins &&
-          otherSpeciesList.map(species => {
+        {/* Other Filtered Species Pins with Spiderfier Radial Offset */}
+        {showAllSpeciesPins && (() => {
+          // Precalculate coordinate groups for spider offset
+          const coordCounts = new Map<string, number>();
+          otherSpeciesList.forEach(s => {
+            if (s.distribution?.coordinates) {
+              const k = `${s.distribution.coordinates[0].toFixed(2)},${s.distribution.coordinates[1].toFixed(2)}`;
+              coordCounts.set(k, (coordCounts.get(k) || 0) + 1);
+            }
+          });
+          const coordTrackers = new Map<string, number>();
+
+          return otherSpeciesList.map(species => {
             if (!species.distribution?.coordinates) return null;
+            const originalCoords = species.distribution.coordinates;
+            const k = `${originalCoords[0].toFixed(2)},${originalCoords[1].toFixed(2)}`;
+            const total = coordCounts.get(k) || 1;
+            const currentIdx = coordTrackers.get(k) || 0;
+            coordTrackers.set(k, currentIdx + 1);
+
+            const displayCoords = calculateSpiderOffset(originalCoords, currentIdx, total);
 
             return (
               <Marker
                 key={species.id}
-                position={species.distribution.coordinates}
-                icon={createSpeciesDivIcon(species)}
+                position={displayCoords}
+                icon={getSpeciesDivIcon(species)}
                 eventHandlers={{
                   click: () => selectSpecies(species.id)
                 }}
@@ -318,13 +393,14 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
                 </Popup>
               </Marker>
             );
-          })}
+          });
+        })()}
 
         {/* Currently Selected Species Pin (Highlighted / Animated) */}
         {selectedSpecies?.distribution?.coordinates && (
           <Marker
             position={selectedSpecies.distribution.coordinates}
-            icon={createSelectedSpeciesDivIcon(selectedSpecies)}
+            icon={getSelectedSpeciesDivIcon(selectedSpecies)}
             zIndexOffset={1000}
           >
             <Popup className="naturalist-map-popup" autoPan={false}>
@@ -363,16 +439,16 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         )}
       </MapContainer>
 
-      {/* Floating Left Panel: EBA Region Legend (Desktop) */}
-      <div className="hidden lg:block absolute top-4 left-4 z-10 max-w-xs lg:max-w-sm pointer-events-auto">
+      {/* Floating Left Panel: EBA Region Legend (Desktop & Tablet: md:block) */}
+      <div className="hidden md:block absolute top-4 left-4 z-10 max-w-xs lg:max-w-sm pointer-events-auto">
         <EBARegionLegend
           selectedRegionId={selectedEBARegionId}
           onSelectRegion={handleSelectRegion}
         />
       </div>
 
-      {/* Floating Right Panel: Endemic Focus Card (Desktop) */}
-      <div className="hidden md:block absolute top-4 right-4 z-10 max-w-sm lg:max-w-md pointer-events-auto">
+      {/* Floating Right Panel: Endemic Focus Card (Desktop & Tablet: md:block) */}
+      <div className="hidden md:block absolute top-4 right-4 z-10 max-w-xs lg:max-w-md pointer-events-auto">
         <EndemicFocusCard />
       </div>
 
@@ -469,4 +545,5 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
   );
 };
 
-export default VietnamEBAMap;
+export default React.memo(VietnamEBAMap);
+

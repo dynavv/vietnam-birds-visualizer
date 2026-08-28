@@ -91,7 +91,7 @@ const generateTaxonomicRationale = (species: BirdSpecies): string => {
   }`;
 };
 
-export const MorphologyReport: React.FC<MorphologyReportProps> = ({
+export const MorphologyReportComponent: React.FC<MorphologyReportProps> = ({
   species,
   className = ''
 }) => {
@@ -273,4 +273,6 @@ export const MorphologyReport: React.FC<MorphologyReportProps> = ({
   );
 };
 
+export const MorphologyReport = React.memo(MorphologyReportComponent);
 export default MorphologyReport;
+

@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import {
   ChevronRight,
   ChevronDown,
@@ -16,24 +16,17 @@ export interface CladogramTreeViewProps {
   className?: string;
 }
 
-export const CladogramTreeView: React.FC<CladogramTreeViewProps> = ({ className = '' }) => {
+export const CladogramTreeViewComponent: React.FC<CladogramTreeViewProps> = ({ className = '' }) => {
   const {
     taxonomyTree,
     selectedSpeciesId,
     selectSpecies,
-    allSpecies
+    allSpecies,
+    expandedNodes,
+    toggleExpandedNode,
+    expandAllNodes,
+    collapseAllNodes
   } = useTaxonomy();
-
-  // Set of expanded node keys (order or family names)
-  const [expandedNodes, setExpandedNodes] = useState<Set<string>>(() => {
-    const initial = new Set<string>();
-    // Default: expand Passeriformes and Galliformes for welcoming view
-    initial.add('Passeriformes');
-    initial.add('Galliformes');
-    initial.add('Leiothrichidae');
-    initial.add('Phasianidae');
-    return initial;
-  });
 
   // Map of species id -> BirdSpecies for quick metadata lookup
   const speciesMap = useMemo(() => {
@@ -44,38 +37,11 @@ export const CladogramTreeView: React.FC<CladogramTreeViewProps> = ({ className 
     return map;
   }, [allSpecies]);
 
-  const toggleNode = (nodeName: string) => {
-    setExpandedNodes(prev => {
-      const next = new Set(prev);
-      if (next.has(nodeName)) {
-        next.delete(nodeName);
-      } else {
-        next.add(nodeName);
-      }
-      return next;
-    });
-  };
-
-  const expandAll = () => {
-    const all = new Set<string>();
-    function traverse(node: TaxonomyNode) {
-      if (node.children && node.children.length > 0) {
-        all.add(node.name);
-        node.children.forEach(traverse);
-      }
-    }
-    traverse(taxonomyTree);
-    setExpandedNodes(all);
-  };
-
-  const collapseAll = () => {
-    setExpandedNodes(new Set());
-  };
-
   // Orders list
   const orders = useMemo(() => {
     return (taxonomyTree.children || []).filter(c => c.rank === 'order');
   }, [taxonomyTree]);
+
 
   return (
     <div
@@ -94,7 +60,7 @@ export const CladogramTreeView: React.FC<CladogramTreeViewProps> = ({ className 
         <div className="flex items-center gap-2">
           <button
             type="button"
-            onClick={expandAll}
+            onClick={expandAllNodes}
             className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-paper-200 hover:bg-paper-300 text-ink-800 text-[11px] font-semibold border border-paper-border transition-all shadow-sm"
             title="Mở rộng toàn bộ cây phân loại"
           >
@@ -104,7 +70,7 @@ export const CladogramTreeView: React.FC<CladogramTreeViewProps> = ({ className 
 
           <button
             type="button"
-            onClick={collapseAll}
+            onClick={collapseAllNodes}
             className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-paper-200 hover:bg-paper-300 text-ink-800 text-[11px] font-semibold border border-paper-border transition-all shadow-sm"
             title="Thu gọn về danh sách 16 Bộ"
           >
@@ -137,7 +103,7 @@ export const CladogramTreeView: React.FC<CladogramTreeViewProps> = ({ className 
             >
               {/* Order Header Row */}
               <div
-                onClick={() => toggleNode(order.name)}
+                onClick={() => toggleExpandedNode(order.name)}
                 className="flex items-center gap-2.5 cursor-pointer select-none group py-0.5"
                 role="button"
                 tabIndex={0}
@@ -185,7 +151,7 @@ export const CladogramTreeView: React.FC<CladogramTreeViewProps> = ({ className 
                       <div key={fam.name} className="space-y-1.5 py-0.5">
                         {/* Family Header Row */}
                         <div
-                          onClick={() => toggleNode(fam.name)}
+                          onClick={() => toggleExpandedNode(fam.name)}
                           className="flex items-center gap-2 cursor-pointer select-none group"
                           role="button"
                           tabIndex={0}
@@ -287,4 +253,6 @@ export const CladogramTreeView: React.FC<CladogramTreeViewProps> = ({ className 
   );
 };
 
+export const CladogramTreeView = React.memo(CladogramTreeViewComponent);
 export default CladogramTreeView;
+

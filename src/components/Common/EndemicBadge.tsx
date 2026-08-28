@@ -23,7 +23,7 @@ const SIZE_STYLES = {
   }
 };
 
-export const EndemicBadge: React.FC<EndemicBadgeProps> = ({
+export const EndemicBadgeComponent: React.FC<EndemicBadgeProps> = ({
   size = 'md',
   compact = false,
   useStarIcon = false,
@@ -49,4 +49,6 @@ export const EndemicBadge: React.FC<EndemicBadgeProps> = ({
   );
 };
 
+export const EndemicBadge = React.memo(EndemicBadgeComponent);
 export default EndemicBadge;
+

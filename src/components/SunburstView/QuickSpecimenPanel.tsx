@@ -14,6 +14,7 @@ import { ConservationBadge } from '../Common/ConservationBadge';
 import { EndemicBadge } from '../Common/EndemicBadge';
 import { AudioVoiceButton } from '../Common/AudioVoiceButton';
 import { BirdPlateImage } from '../Common/BirdPlateImage';
+import { getIucnUrl, getAvibaseUrl, getGbifUrl } from '../../utils/linkGenerators';
 
 export interface QuickSpecimenPanelProps {
   species?: BirdSpecies | null;
@@ -215,7 +216,7 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
           <span className="font-semibold text-ink-700 text-[10px] uppercase font-mono">Tra cứu:</span>
           <div className="flex items-center gap-1">
             <a
-              href={species.academic?.iucnUrl || `https://www.iucnredlist.org/search?query=${encodeURIComponent(species.scientificName)}`}
+              href={getIucnUrl(species)}
               target="_blank"
               rel="noopener noreferrer"
               className="px-1.5 py-0.5 rounded bg-paper-200 hover:bg-natural-moss/20 hover:text-natural-moss font-mono text-[10px] transition-colors"
@@ -224,7 +225,7 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
               IUCN ↗
             </a>
             <a
-              href={species.academic?.avibaseId ? `https://avibase.bsc-eoc.org/species.jsp?lang=EN&avibaseid=&sec=summary&qstr=${encodeURIComponent(species.scientificName)}` : `https://avibase.bsc-eoc.org/`}
+              href={getAvibaseUrl(species)}
               target="_blank"
               rel="noopener noreferrer"
               className="px-1.5 py-0.5 rounded bg-paper-200 hover:bg-natural-moss/20 hover:text-natural-moss font-mono text-[10px] transition-colors"
@@ -233,7 +234,7 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
               Avibase ↗
             </a>
             <a
-              href={species.academic?.gbifTaxonKey || `https://www.gbif.org/species/search?q=${encodeURIComponent(species.scientificName)}`}
+              href={getGbifUrl(species)}
               target="_blank"
               rel="noopener noreferrer"
               className="px-1.5 py-0.5 rounded bg-paper-200 hover:bg-natural-moss/20 hover:text-natural-moss font-mono text-[10px] transition-colors"
@@ -263,4 +264,5 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
   );
 };
 
-export default QuickSpecimenPanel;
+export default React.memo(QuickSpecimenPanel);
+

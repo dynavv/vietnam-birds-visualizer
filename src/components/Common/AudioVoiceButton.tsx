@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Volume2, VolumeX, Pause, Play, AlertCircle } from 'lucide-react';
 import type { AudioCallInfo } from '../../types/bird';
+import { audioManager, AudioPlaybackState } from '../../utils/audioManager';
 
 export interface AudioVoiceButtonProps {
   audioInfo?: AudioCallInfo | null;
@@ -29,7 +30,7 @@ const SIZE_CONFIG = {
   }
 };
 
-export const AudioVoiceButton: React.FC<AudioVoiceButtonProps> = ({
+export const AudioVoiceButtonComponent: React.FC<AudioVoiceButtonProps> = ({
   audioInfo,
   birdName,
   size = 'md',
@@ -37,36 +38,21 @@ export const AudioVoiceButton: React.FC<AudioVoiceButtonProps> = ({
   showDetails = true,
   className = ''
 }) => {
-  const [isPlaying, setIsPlaying] = useState<boolean>(false);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [isError, setIsError] = useState<boolean>(false);
-  const [audioDuration, setAudioDuration] = useState<string>(audioInfo?.duration || '');
-
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [playbackState, setPlaybackState] = useState<AudioPlaybackState>(() => audioManager.getState());
   const config = SIZE_CONFIG[size];
 
-  // Stop and clean up audio when audioUrl changes or component unmounts
   useEffect(() => {
-    // Reset state on url change
-    setIsPlaying(false);
-    setIsLoading(false);
-    setIsError(false);
-    setAudioDuration(audioInfo?.duration || '');
+    const unsubscribe = audioManager.subscribe((state) => {
+      setPlaybackState(state);
+    });
+    return unsubscribe;
+  }, []);
 
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
-      audioRef.current = null;
-    }
-
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-        audioRef.current = null;
-      }
-    };
-  }, [audioInfo?.audioUrl, audioInfo?.duration]);
+  const isCurrentAudio = audioInfo?.audioUrl ? playbackState.currentUrl === audioInfo.audioUrl : false;
+  const isPlaying = isCurrentAudio && playbackState.isPlaying;
+  const isLoading = isCurrentAudio && playbackState.isLoading;
+  const isError = isCurrentAudio && playbackState.isError;
+  const audioDuration = (isCurrentAudio && playbackState.durationFormatted) || audioInfo?.duration || '';
 
   const handleTogglePlay = useCallback(
     async (e: React.MouseEvent) => {
@@ -76,67 +62,11 @@ export const AudioVoiceButton: React.FC<AudioVoiceButtonProps> = ({
         return;
       }
 
-      // If currently playing, pause it
-      if (isPlaying && audioRef.current) {
-        audioRef.current.pause();
-        setIsPlaying(false);
-        return;
-      }
-
-      // If not playing, start playback
-      try {
-        setIsLoading(true);
-        setIsError(false);
-
-        if (!audioRef.current) {
-          const audio = new Audio(audioInfo.audioUrl);
-          audio.preload = 'auto';
-
-          audio.onplay = () => {
-            setIsLoading(false);
-            setIsPlaying(true);
-          };
-
-          audio.onpause = () => {
-            setIsPlaying(false);
-          };
-
-          audio.onended = () => {
-            setIsPlaying(false);
-            if (audioRef.current) {
-              audioRef.current.currentTime = 0;
-            }
-          };
-
-          audio.onerror = () => {
-            setIsError(true);
-            setIsLoading(false);
-            setIsPlaying(false);
-          };
-
-          audio.onloadedmetadata = () => {
-            if (audio.duration && !isNaN(audio.duration)) {
-              const mins = Math.floor(audio.duration / 60);
-              const secs = Math.floor(audio.duration % 60);
-              setAudioDuration(`${mins}:${secs < 10 ? '0' : ''}${secs}`);
-            }
-          };
-
-          audioRef.current = audio;
-        }
-
-        await audioRef.current.play();
-        setIsPlaying(true);
-        setIsLoading(false);
-      } catch (err) {
-        console.warn('Audio playback error:', err);
-        setIsError(true);
-        setIsLoading(false);
-        setIsPlaying(false);
-      }
+      await audioManager.toggle(audioInfo.audioUrl);
     },
-    [audioInfo?.audioUrl, isPlaying]
+    [audioInfo?.audioUrl]
   );
+
 
   // If no audio info or empty URL
   if (!audioInfo || !audioInfo.audioUrl) {
@@ -316,4 +246,6 @@ export const AudioVoiceButton: React.FC<AudioVoiceButtonProps> = ({
   );
 };
 
+export const AudioVoiceButton = React.memo(AudioVoiceButtonComponent);
 export default AudioVoiceButton;
+

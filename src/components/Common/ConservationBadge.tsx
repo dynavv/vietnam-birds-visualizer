@@ -85,7 +85,7 @@ const SIZE_STYLES = {
   }
 };
 
-export const ConservationBadge: React.FC<ConservationBadgeProps> = ({
+export const ConservationBadgeComponent: React.FC<ConservationBadgeProps> = ({
   status,
   vietnamRedList,
   showLabel = true,
@@ -127,4 +127,6 @@ export const ConservationBadge: React.FC<ConservationBadgeProps> = ({
   );
 };
 
+export const ConservationBadge = React.memo(ConservationBadgeComponent);
 export default ConservationBadge;
+
