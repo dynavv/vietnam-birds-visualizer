@@ -120,7 +120,7 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
           key={`${species.id}-${currentSrc}`}
           src={currentSrc}
           alt={`Minh họa loài ${species.vietnameseName} (${species.scientificName})`}
-          className={`w-full h-full object-cover transition-all duration-500 ${
+          className={`w-full h-full object-cover object-[center_25%] transition-all duration-500 ${
             isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           } ${imageClassName}`}
           loading="lazy"

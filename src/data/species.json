@@ -2269,14 +2269,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/33078804/large.jpg",
-      "artist": "(c) Dmitry Ivanov, some rights reserved (CC BY-NC), uploaded by Dmitry Ivanov",
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/381289317/large.jpg",
+      "artist": "(c) sunnyjosef, some rights reserved (CC BY), uploaded by sunnyjosef",
       "sourceBook": "iNaturalist Biodiversity Archive",
       "plateNumber": "INAT-23",
       "year": "1931",
-      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/33078804/medium.jpg",
-      "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/204502"
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/381289317/medium.jpg",
+      "license": "CC BY 4.0",
+      "observationUrl": "https://www.inaturalist.org/observations/209930810"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1166145/download",
@@ -4072,14 +4072,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://static.inaturalist.org/photos/116517298/medium.jpeg",
-      "artist": "(c) Oscar Ho, all rights reserved, uploaded by Oscar Ho",
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/261553110/large.jpg",
+      "artist": "(c) Kelvin Joshua Che, some rights reserved (CC BY-NC), uploaded by Kelvin Joshua Che",
       "sourceBook": "iNaturalist Biodiversity Archive",
       "plateNumber": "INAT-40",
       "year": "1931",
-      "thumbnailUrl": "https://static.inaturalist.org/photos/116517298/medium.jpeg",
-      "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/367545"
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/261553110/medium.jpg",
+      "license": "CC BY-NC 4.0",
+      "observationUrl": "https://www.inaturalist.org/observations/151321458"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1067790/download",
@@ -6758,14 +6758,14 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://static.inaturalist.org/photos/195285044/large.jpg",
-      "artist": "(c) Chan Chee Keong, all rights reserved, uploaded by Chan Chee Keong",
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/230370185/large.jpg",
+      "artist": "(c) Martin Walsh, some rights reserved (CC BY-NC-ND), uploaded by Martin Walsh",
       "sourceBook": "iNaturalist Biodiversity Archive",
       "plateNumber": "INAT-65",
       "year": "1931",
-      "thumbnailUrl": "https://static.inaturalist.org/photos/195285044/medium.jpg",
-      "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/20812"
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/230370185/medium.jpg",
+      "license": "CC BY-NC-ND 4.0",
+      "observationUrl": "https://www.inaturalist.org/observations/135092232"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/988467/download",
