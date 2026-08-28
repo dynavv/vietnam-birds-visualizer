@@ -1,12 +1,6 @@
 import React, { createContext, useContext, useState, useMemo, useCallback } from 'react';
-import type { BirdSpecies, TaxonomyNode, EBARegion } from '../types/bird';
-import rawSpecies from '../data/species.json';
-import rawTaxonomy from '../data/taxonomy.json';
-import rawEbas from '../data/ebas.json';
-
-const allSpeciesData = rawSpecies as unknown as BirdSpecies[];
-const taxonomyTreeData = rawTaxonomy as TaxonomyNode;
-const ebaRegionsData = rawEbas as EBARegion[];
+import type { BirdSpecies, TaxonomyNode, EBARegion } from '../types';
+import { speciesData as allSpeciesData, taxonomyData as taxonomyTreeData, ebasData as ebaRegionsData } from '../data';
 
 export type ViewMode = 'map' | 'sunburst' | 'curator';
 

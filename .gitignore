@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.tmp
+*.bak
+
+# Temporary / Cache / Internal tools
+.superpowers
+.turbo
+coverage
+.eslintcache
