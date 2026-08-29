@@ -1,12 +1,11 @@
 import React from 'react';
 import {
   Feather,
+  BookOpen,
   Compass,
-  TreePine,
   Mountain,
   MapPin,
   Trees,
-  Dices,
   Sparkles,
   Globe2
 } from 'lucide-react';
@@ -18,7 +17,25 @@ import { SpecimenPlate } from './SpecimenPlate';
 import { CladeBadgeSequence } from './CladeBadgeSequence';
 import { MorphologyReport } from './MorphologyReport';
 import { RelatedSpeciesTabs } from './RelatedSpeciesTabs';
-import { AcademicReferences } from './AcademicReferences';
+import { TaxonRegistriesCard, PrimaryLiteratureCard } from './AcademicReferences';
+
+const VIETNAM_RED_LIST_NAMES: Record<string, string> = {
+  CR: 'Cực kỳ nguy cấp (CR)',
+  EN: 'Nguy cấp (EN)',
+  VU: 'Sắp nguy cấp (VU)',
+  R: 'Hiếm (R)',
+  LR: 'Nguy cơ thấp (LR)',
+  LC: 'Nguy cơ thấp (LC)'
+};
+
+function cleanHookText(rawDescription: string): string {
+  if (!rawDescription) return '';
+  const cleaned = rawDescription
+    .replace(/^(Loài\s+)?(Cực kỳ nguy cấp|Nguy cấp|Sắp nguy cấp|Gần bị đe dọa|Nguy cơ thấp|Ít lo ngại)\s*\([^)]+\)[\s.:,-]*/i, '')
+    .trim();
+  if (!cleaned) return rawDescription;
+  return cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
+}
 
 export interface CuratorViewProps {
   species?: BirdSpecies | null;
@@ -30,12 +47,12 @@ export interface CuratorViewProps {
 export const CuratorView: React.FC<CuratorViewProps> = ({
   species: propSpecies,
   className = '',
-  onViewMap,
-  onViewSunburst
+  onViewMap: _onViewMap,
+  onViewSunburst: _onViewSunburst
 }) => {
   const {
     selectedSpecies: contextSpecies,
-    setActiveView,
+    setActiveView: _setActiveView,
     selectRandomEndemic,
     allSpecies
   } = useTaxonomy();
@@ -63,47 +80,30 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
     }
   }, [species?.id]);
 
-  const handleSwitchToMap = () => {
-    if (onViewMap) {
-      onViewMap();
-    } else {
-      setActiveView('map');
-    }
-  };
-
-  const handleSwitchToSunburst = () => {
-    if (onViewSunburst) {
-      onViewSunburst();
-    } else {
-      setActiveView('sunburst');
-    }
-  };
-
   if (!species) {
     return (
       <div
         className={`w-full max-w-4xl mx-auto px-4 py-16 text-center space-y-6 ${className}`}
         data-testid="curator-view-empty"
       >
-        <div className="w-20 h-20 mx-auto rounded-full bg-natural-moss/10 border-2 border-natural-moss/20 flex items-center justify-center text-natural-moss shadow-sm">
-          <Feather className="w-10 h-10 animate-bounce" />
+        <div className="w-16 h-16 rounded-2xl bg-natural-moss/10 text-natural-moss border border-natural-moss/20 flex items-center justify-center mx-auto shadow-sm">
+          <Feather className="w-8 h-8 transform -rotate-45" />
         </div>
-        <div className="space-y-2 max-w-md mx-auto">
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-ink-900">
-            Phòng Giám Tuyển Mẫu Vật Điểu Học
+        <div className="space-y-2">
+          <h2 className="text-xl sm:text-2xl font-serif font-bold text-ink-900">
+            Chưa Chọn Mẫu Vật Điểu Học
           </h2>
-          <p className="text-sm text-ink-600 leading-relaxed font-sans">
-            Chưa có mẫu vật nào được chọn. Hãy khám phá ngẫu nhiên một loài chim đặc hữu hoặc mở bản đồ sinh thái để bắt đầu giám tuyển.
+          <p className="text-sm text-ink-600 max-w-md mx-auto">
+            Vui lòng chọn một loài chim từ Bản đồ Sinh thái, Cây Phả hệ hoặc khám phá ngẫu nhiên một loài đặc hữu Việt Nam.
           </p>
         </div>
-        <div className="flex items-center justify-center gap-3">
+        <div>
           <button
             type="button"
             onClick={selectRandomEndemic}
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-natural-moss text-paper-50 hover:bg-natural-forest transition-all text-sm font-semibold shadow-sm"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-natural-moss text-paper-50 hover:bg-natural-forest text-sm font-semibold transition-all shadow-sm cursor-pointer"
           >
-            <Dices className="w-4 h-4" />
-            <span>Xem một loài ngẫu nhiên</span>
+            <span>🎲 Khám phá ngẫu nhiên loài đặc hữu</span>
           </button>
         </div>
       </div>
@@ -112,63 +112,36 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
 
   return (
     <div
-      className={`w-full max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6 ${className}`}
+      className={`w-full ${className}`}
       data-testid="curator-view"
     >
       {/* Scroll Anchor to top */}
       <div ref={topAnchorRef} aria-hidden="true" className="h-0 w-0 opacity-0 pointer-events-none" />
 
-      {/* Top Editorial Banner */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-paper-border">
-        <div>
-          <div className="flex items-center gap-2.5">
-            <div className="p-2 rounded-xl bg-natural-moss/10 text-natural-moss border border-natural-moss/20 shadow-sm">
-              <Feather className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h1 className="text-2xl sm:text-3xl font-serif font-bold text-ink-900 tracking-tight">
-                  Phòng Giám Tuyển Mẫu Vật &amp; Hình Thái Học
-                </h1>
-                <span className="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider bg-natural-moss/10 text-natural-forest border border-natural-moss/20">
-                  Curator Specimen
-                </span>
+      {/* Top Section: Header Banner (Setting identical to SunburstView) */}
+      <div className="space-y-2 mb-2.5 shrink-0">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <div className="flex items-center gap-2">
+              <div className="p-1.5 rounded-lg bg-natural-moss/10 text-natural-moss">
+                <BookOpen className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <p className="text-xs sm:text-sm text-ink-600 font-sans mt-0.5">
-                Specimen &amp; Morphological Curator Archive — Khám phá chi tiết giải phẫu học, ảnh thực địa iNaturalist và lập luận tiến hóa
-              </p>
+              <h1 className="text-lg sm:text-2xl font-serif font-bold text-ink-900 tracking-tight">
+                Cẩm Nang Nhận Dạng &amp; Hình Thái Học
+              </h1>
             </div>
+            <p className="text-xs text-ink-600 font-sans mt-0.5 hidden sm:block">
+              Khám phá giải phẫu học, nhận diện thực địa và phân tích tiến hóa các loài chim Việt Nam
+            </p>
           </div>
-        </div>
-
-        {/* Quick View Navigation Switchers */}
-        <div className="flex items-center gap-2 self-start md:self-auto flex-wrap">
-          <button
-            type="button"
-            onClick={handleSwitchToMap}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-paper-100 hover:bg-paper-200 text-ink-800 border border-paper-border text-xs font-medium transition-all shadow-sm"
-            title="Xem vị trí phân bố trên Bản đồ Sinh thái EBA"
-          >
-            <Compass className="w-3.5 h-3.5 text-natural-moss" />
-            <span>Bản đồ EBA</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={handleSwitchToSunburst}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-paper-100 hover:bg-paper-200 text-ink-800 border border-paper-border text-xs font-medium transition-all shadow-sm"
-            title="Khám phá vị trí trên Bánh xe Phân loại học"
-          >
-            <TreePine className="w-3.5 h-3.5 text-natural-moss" />
-            <span>Bánh xe Phân loại</span>
-          </button>
         </div>
       </div>
 
       {/* Main Balanced 2-Column Academic Editorial Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        {/* Left Column (Columns 1-6): Visual Plate, Ecology & Academic Citations */}
-        <div className="lg:col-span-6 space-y-6">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+        
+        {/* Left Column (Columns 1-6): Visual Plate, Ecology, Related Species & Taxon Registries */}
+        <div className="lg:col-span-6 space-y-5">
           {/* Specimen Illustration Plate */}
           <SpecimenPlate species={species} />
 
@@ -245,21 +218,21 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
             </div>
           </section>
 
-          {/* Connected Evolutionary Phylogenetic Clade Badges */}
-          <CladeBadgeSequence taxonomy={species.taxonomy} />
-
           {/* Related / Candidate Species Switcher Tabs */}
           <RelatedSpeciesTabs
             currentSpecies={species}
             allSpecies={allSpecies}
           />
 
-          {/* Academic Identifiers & Primary Literature References */}
-          <AcademicReferences species={species} />
+          {/* Connected Evolutionary Phylogenetic Clade Badges */}
+          <CladeBadgeSequence taxonomy={species.taxonomy} />
+
+          {/* Global Taxon Registries (IUCN, Avibase, GBIF, iNaturalist) */}
+          <TaxonRegistriesCard species={species} />
         </div>
 
-        {/* Right Column (Columns 7-12): Nomenclature & Morphology */}
-        <div className="lg:col-span-6 space-y-6">
+        {/* Right Column (Columns 7-12): Nomenclature, Morphology & Literature */}
+        <div className="lg:col-span-6 space-y-5">
           {/* Trilingual Nomenclature & Conservation Overview Card */}
           <section
             className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card space-y-4"
@@ -301,20 +274,34 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
               />
             </div>
 
-            {/* Conservation Status Text */}
-            {species.conservation.description && (
-              <div className="p-3 rounded-xl bg-paper-50 border border-paper-border text-xs text-ink-700 leading-relaxed font-sans">
-                <span className="font-semibold text-ink-900">Tình trạng bảo tồn: </span>
-                {species.conservation.description}
+            {/* Conservation Status Card: Vietnam Red Data Book on Top, Hook Quote Below (No IUCN in text) */}
+            <div className="p-3.5 sm:p-4 rounded-xl bg-paper-50 border border-paper-border space-y-2 font-sans">
+              <div className="flex items-baseline gap-2 text-ink-900 flex-wrap">
+                <span className="font-bold text-sm text-natural-forest shrink-0">🇻🇳 Sách Đỏ Việt Nam:</span>
+                <span className="font-semibold text-sm text-ink-900">
+                  {species.conservation.vietnamRedList
+                    ? VIETNAM_RED_LIST_NAMES[species.conservation.vietnamRedList] || `Bậc ${species.conservation.vietnamRedList}`
+                    : 'Nguy cơ thấp / Chưa xếp hạng (LC)'}
+                </span>
               </div>
-            )}
+
+              {species.conservation.description && (
+                <div className="pl-3 border-l-2 border-natural-ochre/80 text-ink-800 font-serif italic text-sm leading-relaxed">
+                  "{cleanHookText(species.conservation.description)}"
+                </div>
+              )}
+            </div>
           </section>
 
           {/* Deep Morphological Analysis & Curatorial Report */}
           <div className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card">
             <MorphologyReport species={species} />
           </div>
+
+          {/* Primary Literature & Research Citations */}
+          <PrimaryLiteratureCard species={species} />
         </div>
+
       </div>
     </div>
   );
