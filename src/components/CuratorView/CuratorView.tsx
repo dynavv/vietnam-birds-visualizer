@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Feather,
   BookOpen,
@@ -7,10 +7,7 @@ import {
   MapPin,
   Trees,
   Sparkles,
-  Globe2,
-  Microscope,
-  Dna,
-  GraduationCap
+  Globe2
 } from 'lucide-react';
 import type { BirdSpecies } from '../../types/bird';
 import { useTaxonomy } from '../../context/TaxonomyContext';
@@ -62,7 +59,6 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
 
   const species = propSpecies !== undefined ? propSpecies : contextSpecies;
   const topAnchorRef = React.useRef<HTMLDivElement | null>(null);
-  const [activeCuratorTab, setActiveCuratorTab] = useState<'morphology' | 'phylogeny' | 'academic'>('morphology');
 
   // Smoothly scroll container to top whenever species changes
   React.useEffect(() => {
@@ -122,7 +118,7 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
       {/* Scroll Anchor to top */}
       <div ref={topAnchorRef} aria-hidden="true" className="h-0 w-0 opacity-0 pointer-events-none" />
 
-      {/* Top Section: Header Banner */}
+      {/* Top Section: Header Banner (Setting identical to SunburstView) */}
       <div className="space-y-2 mb-2.5 shrink-0">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
           <div>
@@ -144,7 +140,7 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
       {/* Main Balanced 2-Column Academic Editorial Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
         
-        {/* Left Column (Columns 1-6): Visual Plate & Ecology/Distribution */}
+        {/* Left Column (Columns 1-6): Visual Plate, Ecology, Related Species & Taxon Registries */}
         <div className="lg:col-span-6 space-y-5">
           {/* Specimen Illustration Plate */}
           <SpecimenPlate species={species} />
@@ -221,9 +217,21 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
               )}
             </div>
           </section>
+
+          {/* Related / Candidate Species Switcher Tabs */}
+          <RelatedSpeciesTabs
+            currentSpecies={species}
+            allSpecies={allSpecies}
+          />
+
+          {/* Connected Evolutionary Phylogenetic Clade Badges */}
+          <CladeBadgeSequence taxonomy={species.taxonomy} />
+
+          {/* Global Taxon Registries (IUCN, Avibase, GBIF, iNaturalist) */}
+          <TaxonRegistriesCard species={species} />
         </div>
 
-        {/* Right Column (Columns 7-12): Nomenclature & Unified Multi-Tab Curatorial Dossier */}
+        {/* Right Column (Columns 7-12): Nomenclature, Morphology & Literature */}
         <div className="lg:col-span-6 space-y-5">
           {/* Trilingual Nomenclature & Conservation Overview Card */}
           <section
@@ -266,7 +274,7 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
               />
             </div>
 
-            {/* Conservation Status Card: Vietnam Red Data Book on Top, Hook Quote Below */}
+            {/* Conservation Status Card: Vietnam Red Data Book on Top, Hook Quote Below (No IUCN in text) */}
             <div className="p-3.5 sm:p-4 rounded-xl bg-paper-50 border border-paper-border space-y-2 font-sans">
               <div className="flex items-baseline gap-2 text-ink-900 flex-wrap">
                 <span className="font-bold text-sm text-natural-forest shrink-0">🇻🇳 Sách Đỏ Việt Nam:</span>
@@ -285,83 +293,13 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
             </div>
           </section>
 
-          {/* Unified Curatorial Dossier Card with 3 Smart Tabs */}
-          <div className="bg-paper-100/95 border border-paper-border rounded-2xl shadow-paper-card overflow-hidden">
-            {/* Segmented Museum Tab Navigation */}
-            <div
-              className="flex items-center border-b border-paper-border bg-paper-200/60 p-1.5 gap-1 text-xs font-medium"
-              role="tablist"
-              aria-label="Các mục hồ sơ chuyên sâu"
-            >
-              <button
-                type="button"
-                role="tab"
-                aria-selected={activeCuratorTab === 'morphology'}
-                onClick={() => setActiveCuratorTab('morphology')}
-                className={`flex-1 flex items-center justify-center gap-1.5 py-2 px-2.5 rounded-xl transition-all font-sans cursor-pointer whitespace-nowrap ${
-                  activeCuratorTab === 'morphology'
-                    ? 'bg-paper-50 text-ink-900 shadow-sm font-semibold border border-paper-border text-natural-forest'
-                    : 'text-ink-600 hover:text-ink-900 hover:bg-paper-100/70'
-                }`}
-              >
-                <Microscope className="w-3.5 h-3.5 shrink-0" />
-                <span className="font-medium">Hình thái học</span>
-              </button>
-
-              <button
-                type="button"
-                role="tab"
-                aria-selected={activeCuratorTab === 'phylogeny'}
-                onClick={() => setActiveCuratorTab('phylogeny')}
-                className={`flex-1 flex items-center justify-center gap-1.5 py-2 px-2.5 rounded-xl transition-all font-sans cursor-pointer whitespace-nowrap ${
-                  activeCuratorTab === 'phylogeny'
-                    ? 'bg-paper-50 text-ink-900 shadow-sm font-semibold border border-paper-border text-natural-forest'
-                    : 'text-ink-600 hover:text-ink-900 hover:bg-paper-100/70'
-                }`}
-              >
-                <Dna className="w-3.5 h-3.5 shrink-0" />
-                <span className="font-medium">Phân loại &amp; Tiến hóa</span>
-              </button>
-
-              <button
-                type="button"
-                role="tab"
-                aria-selected={activeCuratorTab === 'academic'}
-                onClick={() => setActiveCuratorTab('academic')}
-                className={`flex-1 flex items-center justify-center gap-1.5 py-2 px-2.5 rounded-xl transition-all font-sans cursor-pointer whitespace-nowrap ${
-                  activeCuratorTab === 'academic'
-                    ? 'bg-paper-50 text-ink-900 shadow-sm font-semibold border border-paper-border text-natural-forest'
-                    : 'text-ink-600 hover:text-ink-900 hover:bg-paper-100/70'
-                }`}
-              >
-                <GraduationCap className="w-3.5 h-3.5 shrink-0" />
-                <span className="font-medium">Học thuật &amp; Trích dẫn</span>
-              </button>
-            </div>
-
-            {/* Tab Panels */}
-            <div className="p-5 sm:p-6 space-y-5">
-              {/* Tab 1: Morphology & Anatomical Diagnostics */}
-              <div className={activeCuratorTab === 'morphology' ? 'block animate-fadeIn' : 'hidden'}>
-                <MorphologyReport species={species} />
-              </div>
-
-              {/* Tab 2: Evolutionary Lineage & Related Species Switcher */}
-              <div className={activeCuratorTab === 'phylogeny' ? 'block animate-fadeIn space-y-5' : 'hidden'}>
-                <CladeBadgeSequence taxonomy={species.taxonomy} />
-                <RelatedSpeciesTabs
-                  currentSpecies={species}
-                  allSpecies={allSpecies}
-                />
-              </div>
-
-              {/* Tab 3: International Registries & Primary Research Literature */}
-              <div className={activeCuratorTab === 'academic' ? 'block animate-fadeIn space-y-5' : 'hidden'}>
-                <TaxonRegistriesCard species={species} />
-                <PrimaryLiteratureCard species={species} />
-              </div>
-            </div>
+          {/* Deep Morphological Analysis & Curatorial Report */}
+          <div className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card">
+            <MorphologyReport species={species} />
           </div>
+
+          {/* Primary Literature & Research Citations */}
+          <PrimaryLiteratureCard species={species} />
         </div>
 
       </div>
