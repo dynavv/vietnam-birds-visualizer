@@ -103,7 +103,7 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
         setHasAllErrors(true);
       });
     } else {
-      // Step 4: Fallback to Victorian Naturalist Vector Plate
+      // Step 4: Fallback to Archival Vector Plate
       setHasAllErrors(true);
     }
   };
@@ -137,7 +137,7 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
           }`}
           style={{ backgroundColor: '#FAF7F0' }}
         >
-          {/* Double Victorian Plate Inset Border */}
+          {/* Double Archival Plate Inset Border */}
           <div className="absolute inset-1.5 border border-stone-300/80 rounded pointer-events-none" />
           <div className="absolute inset-2 border border-dashed border-stone-200/90 rounded pointer-events-none" />
 

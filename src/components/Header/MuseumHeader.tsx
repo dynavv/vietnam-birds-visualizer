@@ -3,9 +3,7 @@ import { Compass, TreePine, Feather, Dices, Search, X } from 'lucide-react';
 import { useTaxonomy, ViewMode } from '../../context/TaxonomyContext';
 
 export interface MuseumHeaderProps {
-  className?: string;
-  onOpenVisionDetector?: () => void;
-}
+  className?: string;}
 
 interface NavTabItem {
   id: ViewMode;

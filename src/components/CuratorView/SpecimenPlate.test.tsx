@@ -66,7 +66,7 @@ describe('SpecimenPlate Component', () => {
     expect(screen.getByText(/Chưa chọn bản tranh mẫu vật/i)).toBeDefined();
   });
 
-  it('renders Victorian archival plate details correctly', () => {
+  it('renders archival plate details correctly', () => {
     render(<SpecimenPlate species={mockSpecies} plateNumber="PL. TAB. 24" />);
 
     expect(screen.getByTestId('specimen-plate')).toBeDefined();

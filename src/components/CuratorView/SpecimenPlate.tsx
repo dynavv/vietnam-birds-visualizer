@@ -155,7 +155,7 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
         data-testid="specimen-plate"
         aria-label={`Bản tranh mẫu vật giám tuyển loài ${species.vietnameseName}`}
       >
-        {/* Victorian Double-Lined Archival Mat & Frame */}
+        {/* Double-Lined Archival Mat & Frame */}
         <div className="border-2 border-paper-400/70 p-3 sm:p-4 rounded-xl bg-paper-200/30 relative">
           {/* Corner Flourish Accents */}
           <span className="absolute -top-1.5 -left-1.5 text-natural-moss text-xs font-serif select-none" aria-hidden="true">✦</span>
@@ -229,7 +229,7 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
             </div>
           </div>
 
-          {/* Archival Victorian Inscription Plate Footer */}
+          {/* Archival Inscription Plate Footer */}
           <div className="mt-3.5 pt-3 border-t border-paper-300/80 text-center space-y-1">
             <h2 className="font-serif text-xl sm:text-2xl font-bold text-ink-900 tracking-tight">
               {species.vietnameseName}

@@ -8,7 +8,7 @@
 **Vietnam Birds Visualizer** là ứng dụng chuyên khảo tự nhiên học và trực quan hóa dữ liệu đa chiều về 60+ loài chim tiêu biểu và đặc hữu tại Việt Nam. Ứng dụng tích hợp 3 góc nhìn tương tác chuyên sâu:
 1. **Bản đồ GIS Sinh thái (VietnamEBAMap)**: Trực quan hóa 6 Vùng Chim Đặc hữu (Endemic Bird Areas - EBAs do BirdLife International xác định) cùng các tọa độ ghi nhận loài thực địa.
 2. **Bánh xe Phân loại học D3 (SunburstWheel & CladogramTreeView)**: Trực quan hóa cây phát sinh chủng loại 16 Bộ, Họ, Chi và Loài chim theo hệ thống phân loại chuẩn quốc tế (IOC World Bird List & Clements).
-3. **Phòng Giám tuyển Mẫu vật (CuratorView)**: Trình bày bản khắc cổ điển (Victorian Naturalist Plate), báo cáo giải phẫu hình thái, âm thanh tiếng hót thực địa (Xeno-canto) và tài liệu trích dẫn khoa học chuẩn mực.
+3. **Phòng Giám tuyển Mẫu vật (CuratorView)**: Trình bày bản khắc cổ điển (Archival Specimen Plate), báo cáo giải phẫu hình thái, âm thanh tiếng hót thực địa (Xeno-canto) và tài liệu trích dẫn khoa học chuẩn mực.
 
 Quá trình kiểm toán kỹ thuật toàn diện (Adversarial Audit) đã phát hiện các điểm nghẽn về tính ổn định, trải nghiệm thiết bị và liên kết học thuật. Đợt nâng cấp này đã giải quyết triệt để 100% các lỗ hổng đã được xác định.
 
