@@ -17,7 +17,8 @@ describe('GeminiFloatingButton Component Tests', () => {
 
     const btn = screen.getByTestId('gemini-fab-button');
     expect(btn).toBeDefined();
-    expect(btn.getAttribute('aria-label')).toBe('Mở Trợ lý Điểu học Gemini AI');
+    expect(screen.getByText('Avian AI')).toBeDefined();
+    expect(btn.getAttribute('aria-label')).toBe('Mở Trợ lý Điểu học Avian AI');
 
     const container = screen.getByTestId('gemini-floating-container');
     expect(container.className).toContain('left-1/2');

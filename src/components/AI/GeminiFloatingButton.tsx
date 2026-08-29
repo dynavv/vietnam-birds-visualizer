@@ -27,9 +27,9 @@ export const GeminiFloatingButton: React.FC<GeminiFloatingButtonProps> = ({ clas
         <button
           type="button"
           onClick={() => openModal('chat')}
-          aria-label="Mở Trợ lý Điểu học Gemini AI"
-          title="Mở Trợ lý Điểu học Gemini AI (Hỏi đáp & Nhận diện ảnh)"
-          className="group relative w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-[#163813] via-[#1F4E1B] to-[#2B6825] hover:from-[#122E10] hover:to-[#22551D] text-paper-50 shadow-lg hover:shadow-2xl hover:shadow-natural-moss/50 border-2 border-emerald-400/50 hover:border-emerald-300 transition-all duration-300 transform hover:scale-110 active:scale-95 flex items-center justify-center cursor-pointer overflow-hidden"
+          aria-label="Mở Trợ lý Điểu học Avian AI"
+          title="Trò chuyện & Nhận diện hình ảnh cùng Avian AI (Gemini 3.7 Flash)"
+          className="group relative inline-flex items-center gap-2 px-4 py-2 sm:px-4.5 sm:py-2.5 rounded-full bg-gradient-to-r from-[#163813] via-[#1F4E1B] to-[#2B6825] hover:from-[#122E10] hover:to-[#22551D] text-paper-50 shadow-lg hover:shadow-2xl hover:shadow-natural-moss/50 border border-emerald-400/50 hover:border-emerald-300 transition-all duration-300 transform hover:scale-105 active:scale-95 cursor-pointer overflow-hidden"
           data-testid="gemini-fab-button"
         >
           {/* Shimmer Ambient Sweep */}
@@ -37,17 +37,22 @@ export const GeminiFloatingButton: React.FC<GeminiFloatingButtonProps> = ({ clas
             className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/25 to-transparent animate-shimmer-sweep pointer-events-none"
           />
 
-          {/* Ambient Radiant Glow Ring */}
-          <span className="absolute -inset-1 rounded-full bg-amber-400/25 animate-ping opacity-75 pointer-events-none" />
+          {/* Ambient Radiant Glow Ring (GPU Hardware Accelerated on Hover) */}
+          <span className="absolute -inset-0.5 rounded-full bg-emerald-400/30 opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300 pointer-events-none" />
 
           {/* Sparkles Icon */}
-          <Sparkles className="w-5 h-5 text-amber-300 drop-shadow-sm transition-transform duration-300 group-hover:rotate-45 group-hover:scale-110" />
+          <Sparkles className="w-4 h-4 text-amber-300 drop-shadow-sm transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 shrink-0" />
+
+          {/* Button Text */}
+          <span className="font-serif font-bold text-xs sm:text-sm tracking-wide text-paper-50 select-none">
+            Avian AI
+          </span>
 
           {/* Unconfigured Dot Badge */}
           {!isConfigured && (
             <span
               title="Chưa cấu hình API Key"
-              className="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-amber-400 ring-2 ring-emerald-950"
+              className="w-2 h-2 rounded-full bg-amber-400 ring-2 ring-emerald-950 shrink-0 ml-0.5"
             />
           )}
         </button>

@@ -6,6 +6,7 @@ export type ViewMode = 'map' | 'sunburst' | 'curator';
 
 const STORAGE_KEY_DISCOVERED = 'agy_avifauna_discovered_ids';
 const STORAGE_KEY_SHUFFLE_POOL = 'agy_avifauna_shuffle_pool';
+const STORAGE_KEY_LAST_SELECTED = 'agy_avifauna_last_selected_species';
 
 // Helper to shuffle an array with Fisher-Yates algorithm
 function shuffleArray<T>(array: T[]): T[] {
@@ -123,10 +124,20 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
 
   const initialUrlParams = useMemo(() => getUrlParams(), []);
 
-  // Pick initial species: prop > URL param > shuffle deck
+  // Pick initial species: prop > URL param > localStorage > shuffle deck
   const [selectedSpeciesId, setSelectedSpeciesIdState] = useState<string>(() => {
     if (initialSpeciesId) return initialSpeciesId;
     if (initialUrlParams.speciesId) return initialUrlParams.speciesId;
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        const saved = window.localStorage.getItem(STORAGE_KEY_LAST_SELECTED);
+        if (saved && allSpeciesData.some(s => s.id === saved)) {
+          return saved;
+        }
+      }
+    } catch {
+      // Safe fallback
+    }
     // Pick first candidate from current shuffle deck
     const currentPool = shufflePool.length > 0 ? shufflePool : generateShuffledDeck(allSpeciesData);
     return currentPool[0] || allSpeciesData[0]?.id || '';
@@ -200,6 +211,13 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
     setSelectedSpeciesIdState(id);
     markSpeciesDiscovered(id);
     syncHistoryState(activeView, id, false);
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        window.localStorage.setItem(STORAGE_KEY_LAST_SELECTED, id);
+      }
+    } catch {
+      // Safe fallback
+    }
     const sp = allSpeciesData.find(s => s.id === id);
     if (sp?.taxonomy) {
       setExpandedNodes(prev => {
