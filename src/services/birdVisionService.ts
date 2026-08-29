@@ -90,28 +90,118 @@ export function parseGeminiResponse(data: any): BirdVisionResult {
   }
 }
 
+export async function convertImageUrlToBase64(
+  imageUrl: string,
+  maxWidth = 1024
+): Promise<{ dataUrl: string; mimeType: string }> {
+  if (imageUrl.startsWith('data:')) {
+    const mimeMatch = imageUrl.match(/^data:([^;]+);/);
+    return {
+      dataUrl: imageUrl,
+      mimeType: mimeMatch ? mimeMatch[1] : 'image/jpeg'
+    };
+  }
+
+  // If running in browser environment with Image & Canvas
+  if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+    try {
+      const result = await new Promise<{ dataUrl: string; mimeType: string }>((resolve, reject) => {
+        const img = new Image();
+        img.crossOrigin = 'anonymous';
+        img.onload = () => {
+          try {
+            const canvas = document.createElement('canvas');
+            let { width, height } = img;
+            if (width > maxWidth || height > maxWidth) {
+              if (width > height) {
+                height = Math.round((height * maxWidth) / width);
+                width = maxWidth;
+              } else {
+                width = Math.round((width * maxWidth) / height);
+                height = maxWidth;
+              }
+            }
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+            if (!ctx) {
+              throw new Error('Canvas 2D context not available');
+            }
+            ctx.drawImage(img, 0, 0, width, height);
+            const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
+            resolve({
+              dataUrl,
+              mimeType: 'image/jpeg'
+            });
+          } catch (err) {
+            reject(err);
+          }
+        };
+        img.onerror = () => {
+          reject(new Error('Image failed to load in browser element'));
+        };
+        img.src = imageUrl;
+      });
+      return result;
+    } catch {
+      // Fallback to fetch blob
+    }
+  }
+
+  // Fallback using fetch blob
+  try {
+    const res = await fetch(imageUrl);
+    if (!res.ok) {
+      throw new Error(`Không thể tải ảnh mẫu (${res.status}): ${res.statusText}`);
+    }
+    const blob = await res.blob();
+    const mimeType = blob.type || 'image/jpeg';
+    return await new Promise<{ dataUrl: string; mimeType: string }>((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        resolve({
+          dataUrl: reader.result as string,
+          mimeType
+        });
+      };
+      reader.onerror = () => reject(new Error('Không thể đọc dữ liệu blob của ảnh.'));
+      reader.readAsDataURL(blob);
+    });
+  } catch (fetchErr: any) {
+    throw new Error(`Không thể chuyển đổi ảnh mẫu sang định dạng Base64: ${fetchErr?.message || fetchErr}`);
+  }
+}
+
 export async function analyzeBirdImage(
-  base64DataUrl: string,
+  imageSource: string,
   mimeType: string = 'image/jpeg',
   apiKeyOverride?: string
 ): Promise<BirdVisionResult> {
   const metaEnv = typeof import.meta !== 'undefined' ? (import.meta as any).env : undefined;
-  const apiKey = apiKeyOverride || (metaEnv ? metaEnv.VITE_GEMINI_API_KEY : '') || '';
+  const envKey = metaEnv ? metaEnv.VITE_GEMINI_API_KEY : '';
+  const apiKey = (apiKeyOverride !== undefined ? apiKeyOverride : envKey) || '';
 
   if (!apiKey || !apiKey.trim()) {
     throw new Error('Chưa cấu hình VITE_GEMINI_API_KEY trong hệ thống.');
   }
 
-  let base64Data = base64DataUrl;
+  let base64Data = imageSource;
   let resolvedMimeType = mimeType;
 
-  if (base64DataUrl.startsWith('data:')) {
-    const match = base64DataUrl.match(/^data:([^;]+);base64,(.*)$/);
+  // Auto-convert remote URLs (http, https, blob) to Base64
+  if (imageSource.startsWith('http://') || imageSource.startsWith('https://') || imageSource.startsWith('blob:')) {
+    const converted = await convertImageUrlToBase64(imageSource);
+    base64Data = converted.dataUrl;
+    resolvedMimeType = converted.mimeType;
+  }
+
+  if (base64Data.startsWith('data:')) {
+    const match = base64Data.match(/^data:([^;]+);base64,(.*)$/);
     if (match) {
-      resolvedMimeType = mimeType || match[1];
+      resolvedMimeType = resolvedMimeType || match[1];
       base64Data = match[2];
-    } else if (base64DataUrl.includes(',')) {
-      base64Data = base64DataUrl.split(',')[1];
+    } else if (base64Data.includes(',')) {
+      base64Data = base64Data.split(',')[1];
     }
   }
 
