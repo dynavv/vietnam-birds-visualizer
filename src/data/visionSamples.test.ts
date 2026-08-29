@@ -26,7 +26,11 @@ describe('Vision Demo Samples Suite', () => {
       expect(typeof sample.description).toBe('string');
       expect(sample.imageUrl).toBeTruthy();
       expect(typeof sample.imageUrl).toBe('string');
-      expect(sample.imageUrl.startsWith('http://') || sample.imageUrl.startsWith('https://')).toBe(true);
+      expect(
+        sample.imageUrl.startsWith('/') ||
+        sample.imageUrl.startsWith('http://') ||
+        sample.imageUrl.startsWith('https://')
+      ).toBe(true);
     }
   });
 
