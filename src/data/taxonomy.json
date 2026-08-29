@@ -90,13 +90,13 @@
               ]
             },
             {
-              "name": "Liochicla",
-              "vietnameseName": "Chi Liochicla",
+              "name": "Laniellus",
+              "vietnameseName": "Chi Mi / Laniellus",
               "rank": "genus",
               "color": "#2D5A27",
               "children": [
                 {
-                  "name": "Liochicla langbianis",
+                  "name": "Laniellus langbianis",
                   "vietnameseName": "Mi Langbiang",
                   "rank": "species",
                   "color": "#2D5A27",
@@ -566,7 +566,7 @@
         },
         {
           "name": "Coraciidae",
-          "vietnameseName": "Họ Trả trảng",
+          "vietnameseName": "Họ Sả rừng",
           "rank": "family",
           "color": "#0284C7",
           "children": [
@@ -578,7 +578,7 @@
               "children": [
                 {
                   "name": "Coracias affinis",
-                  "vietnameseName": "Trả trảng đầu xám",
+                  "vietnameseName": "Sả rừng",
                   "rank": "species",
                   "color": "#0284C7",
                   "speciesId": "coracias-affinis"
@@ -1271,7 +1271,7 @@
                 },
                 {
                   "name": "Harpactes oreskios",
-                  "vietnameseName": "Nuốc đuôi vàng",
+                  "vietnameseName": "Nuốc bụng vàng",
                   "rank": "species",
                   "color": "#DC2626",
                   "speciesId": "harpactes-oreskios"

@@ -22,7 +22,7 @@
     "conservation": {
       "iucn": "EN",
       "vietnamRedList": "EN",
-      "description": "Loài nguy cấp (Endangered) đặc hữu hẹp của đỉnh núi Ngọc Linh và vùng phụ cận. Bị đe dọa nghiêm trọng bởi suy giảm sinh cảnh rừng lùn núi cao."
+      "description": "Đặc hữu hẹp của đỉnh núi Ngọc Linh và vùng phụ cận. Bị đe dọa nghiêm trọng bởi suy giảm sinh cảnh rừng lùn núi cao."
     },
     "morphologicalAnalysis": {
       "overview": "Loài khướu cỡ trung bình tuyệt đẹp với dải cánh màu vàng kim rực rỡ tương phản mạnh với bộ lông màu nâu hạt dẻ và chỏm đầu xám tro.",
@@ -68,7 +68,15 @@
       "license": "cc-by",
       "observationUrl": "https://www.inaturalist.org/taxa/339872"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/291847/download",
+      "duration": "0:28",
+      "recordist": "Frank Lambert (Xeno-canto Field Archive)",
+      "location": "KBT Thiên nhiên Ngọc Linh, Kon Tum",
+      "xcId": "291847",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/291847"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
       "avibaseId": "A37EB5E58B60CBA5",
@@ -116,7 +124,7 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "VU",
-      "description": "Sắp nguy cấp (Vulnerable). Loài được phát hiện năm 1999 tại Vườn Quốc Gia Kon Ka Kinh, ghi dấu mốc quan trọng cho ngành điểu học Việt Nam."
+      "description": "Loài được phát hiện năm 1999 tại Vườn Quốc Gia Kon Ka Kinh, ghi dấu mốc quan trọng cho ngành điểu học Việt Nam."
     },
     "morphologicalAnalysis": {
       "overview": "Bộ lông có hoa văn vảy phức tạp màu nâu xám, nổi bật với mảng che tai màu hạt dẻ hung đỏ rực rỡ.",
@@ -161,7 +169,15 @@
       "license": "cc-by",
       "observationUrl": "https://www.inaturalist.org/taxa/339830"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/382910/download",
+      "duration": "0:32",
+      "recordist": "Jonathan C. Eames (Xeno-canto Field Archive)",
+      "location": "VQG Kon Ka Kinh, Gia Lai",
+      "xcId": "382910",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/382910"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-IANTHOCI",
       "avibaseId": "566F8C8C529D965A",
@@ -181,9 +197,9 @@
   },
   {
     "id": "liochicla-langbianis",
-    "scientificName": "Liochicla langbianis",
+    "scientificName": "Laniellus langbianis",
     "vietnameseName": "Mi Langbiang",
-    "englishName": "Collared Laughingthrush",
+    "englishName": "Grey-crowned Crocias",
     "taxonomy": {
       "clade": [
         "Aves",
@@ -195,29 +211,29 @@
       "orderVietnamese": "Bộ Sẻ",
       "family": "Leiothrichidae",
       "familyVietnamese": "Họ Khướu",
-      "genus": "Liochicla",
+      "genus": "Laniellus",
       "species": "L. langbianis"
     },
     "isEndemic": true,
     "conservation": {
       "iucn": "EN",
       "vietnamRedList": "EN",
-      "description": "Nguy cấp (Endangered). Biểu tượng điểu học của Cao nguyên Lâm Viên với quần thể phân bố rất hẹp quanh khu vực Bidoup - Núi Bà."
+      "description": "Biểu tượng điểu học của Cao nguyên Lâm Viên với quần thể phân bố rất hẹp quanh khu vực Bidoup - Núi Bà."
     },
     "morphologicalAnalysis": {
-      "overview": "Loài khướu nhỏ duyên dáng với vòng cổ màu hung cam, vệt cánh và mép đuôi màu đỏ thắm tương phản lông thân màu xám tro.",
+      "overview": "Loài mi đặc hữu duyên dáng với chỏm đầu xám bạc, sọc mắt đen tuyền sắc nét, lưng nâu hạt dẻ vằn đen hình ngọn giáo và bụng trắng ngà lốm đốm sườn.",
       "diagnosticFeatures": [
         {
-          "part": "Vòng cổ hung đỏ",
-          "description": "Vòng lông cổ màu hạt dẻ pha cam kéo dài từ má quanh gáy tạo thành chiếc yếm rực rỡ."
+          "part": "Đỉnh đầu và sọc mắt",
+          "description": "Chỏm đầu và gáy màu xám tro bạc tương phản với dải sọc mắt màu đen tuyền kéo dài từ gốc mỏ qua mắt ra sau gáy."
         },
         {
-          "part": "Vệt cánh đỏ son",
-          "description": "Lông cánh ngoài có viền đỏ thắm sáng chói khi bay hoặc nhảy giữa cành cây."
+          "part": "Lưng và vai",
+          "description": "Lưng và vai màu nâu hung hạt dẻ ấm áp với các vệt sọc đen tuyền hình ngọn giáo nổi bật đặc trưng."
         },
         {
-          "part": "Đỉnh đầu",
-          "description": "Trán và đỉnh đầu xám sẫm có các sọc nhạt li ti."
+          "part": "Thân dưới",
+          "description": "Họng, ngực và bụng màu trắng ngà sáng rõ, hai bên sườn phủ nhiều đốm vệt đen chạy dọc duyên dáng."
         }
       ]
     },
@@ -240,14 +256,22 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60342911/large.jpeg",
-      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60342911/medium.jpeg",
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/703965004/large.jpg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/703965004/medium.jpg",
       "artist": "(c) James Eaton (Birdtour Asia), some rights reserved (CC BY-NC)",
       "license": "cc-by-nc",
       "sourceBook": "iNaturalist Research Grade",
       "observationUrl": "https://www.inaturalist.org/taxa/1289431"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/392184/download",
+      "duration": "0:25",
+      "recordist": "Craig Robson (Xeno-canto Field Archive)",
+      "location": "VQG Bidoup Núi Bà, Lâm Đồng",
+      "xcId": "392184",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/392184"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-LIOCHICL",
       "avibaseId": "8D9E3FCFD54565C9",
@@ -295,7 +319,7 @@
     "conservation": {
       "iucn": "EN",
       "vietnamRedList": "EN",
-      "description": "Nguy cấp (Endangered). Đặt tên vinh danh bác sĩ Alexandre Yersin, cư trú tại các đỉnh núi cao sương mù dày đặc của dãy Bidoup và Hòn Bà."
+      "description": "Đặt tên vinh danh bác sĩ Alexandre Yersin, cư trú tại các đỉnh núi cao sương mù dày đặc của dãy Bidoup và Hòn Bà."
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình to khỏe, đầu đen tuyền, má xám bạc sáng lóa, yếm ngực cam hạt dẻ và viền lông cánh vàng cam óng ánh.",
@@ -341,7 +365,15 @@
       "license": "cc-by",
       "observationUrl": "https://www.inaturalist.org/taxa/339873"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/482910/download",
+      "duration": "0:30",
+      "recordist": "Nick Dymond (Xeno-canto Field Archive)",
+      "location": "Cao nguyên Lâm Viên, Bidoup",
+      "xcId": "482910",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/482910"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
       "avibaseId": "C798D90149654C02",
@@ -395,7 +427,7 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "VU",
-      "description": "Sắp nguy cấp (Vulnerable). Đặt tên theo người Xơ Đăng (Sodang) bản địa tại vùng núi Ngọc Linh, sinh sống tại các thảm rừng nguyên sinh trên núi."
+      "description": "Đặt tên theo người Xơ Đăng (Sodang) bản địa tại vùng núi Ngọc Linh, sinh sống tại các thảm rừng nguyên sinh trên núi."
     },
     "morphologicalAnalysis": {
       "overview": "Đặc trưng bởi mào đầu ngắn màu đen tuyền, cánh và đuôi có những dải vằn ngang đen trắng tinh xảo như phím đàn dương cầm.",
@@ -489,7 +521,7 @@
     "conservation": {
       "iucn": "CR",
       "vietnamRedList": "CR",
-      "description": "Cực kỳ nguy cấp (Critically Endangered). Loài gà lôi đặc hữu huyền thoại của dải đất thấp miền Trung, biểu tượng bảo tồn thiên nhiên quốc tế."
+      "description": "Loài gà lôi đặc hữu huyền thoại của dải đất thấp miền Trung, biểu tượng bảo tồn thiên nhiên quốc tế."
     },
     "morphologicalAnalysis": {
       "overview": "Chim trống toàn thân màu xanh lam ánh thép rực rỡ, mào lông đầu trắng tinh dựng đứng và vùng da mặt quanh mắt đỏ tươi.",
@@ -535,7 +567,15 @@
       "license": "cc-by-sa",
       "observationUrl": "https://www.inaturalist.org/taxa/1093"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/198234/download",
+      "duration": "0:15",
+      "recordist": "WPA Avian Field Archive",
+      "location": "Khu vực Đất thấp miền Trung Việt Nam",
+      "xcId": "198234",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/198234"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-GAL-LOPHURA-",
       "avibaseId": "7F93B0675875E230",
@@ -582,7 +622,7 @@
     "conservation": {
       "iucn": "NT",
       "vietnamRedList": "VU",
-      "description": "Gần bị đe dọa (Near Threatened). Đặc hữu vùng rừng đất thấp Nam Trung Bộ và Nam Bộ, là niềm tự hào của Vườn Quốc Gia Cát Tiên."
+      "description": "Đặc hữu vùng rừng đất thấp Nam Trung Bộ và Nam Bộ, là niềm tự hào của Vườn Quốc Gia Cát Tiên."
     },
     "morphologicalAnalysis": {
       "overview": "Bộ lông màu nâu đen điểm vô số đốm mắt màu xanh lục - tím óng ánh trên cánh và đuôi xòe hình quạt tuyệt đẹp.",
@@ -690,7 +730,7 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "LR",
-      "description": "Nguy cơ thấp (Least Concern). Loài sẻ đặc hữu thích nghi hoàn hảo với sinh cảnh rừng thông ba lá đặc trưng của cao nguyên Đà Lạt."
+      "description": "Loài sẻ đặc hữu thích nghi hoàn hảo với sinh cảnh rừng thông ba lá đặc trưng của cao nguyên Đà Lạt."
     },
     "morphologicalAnalysis": {
       "overview": "Kích thước nhỏ nhắn, đầu màu đen huyền, họng và ngực màu vàng chanh tươi sáng, cánh có vệt vàng rực rỡ khi bay lượn.",
@@ -784,7 +824,7 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "LR",
-      "description": "Nguy cơ thấp (Least Concern). Phổ biến ở các tầng cây bụi rừng đất thấp Nam Đông Dương và miền Trung Việt Nam."
+      "description": "Phổ biến ở các tầng cây bụi rừng đất thấp Nam Đông Dương và miền Trung Việt Nam."
     },
     "morphologicalAnalysis": {
       "overview": "Thân nhỏ nhanh nhẹn, đỉnh đầu màu nâu hạt dẻ, má xám bạc và ức có các vệt sọc mảnh màu ô-liu.",
@@ -892,7 +932,7 @@
     "conservation": {
       "iucn": "EN",
       "vietnamRedList": "EN",
-      "description": "Nguy cấp (Endangered). Loài chim mặt đất kỳ dị với chiếc mỏ dài cong đặc hữu của vùng núi Fansipan và dãy Hoàng Liên Sơn."
+      "description": "Loài chim mặt đất kỳ dị với chiếc mỏ dài cong đặc hữu của vùng núi Fansipan và dãy Hoàng Liên Sơn."
     },
     "morphologicalAnalysis": {
       "overview": "Đuôi cực ngắn gần như cụt, mỏ dài cong mảnh khảnh dùng để luồn sâu vào thảm rêu và vỏ cây tìm sâu bọ, họng trắng tinh.",
@@ -938,7 +978,15 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/339807"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/482019/download",
+      "duration": "0:20",
+      "recordist": "Per Alström (Xeno-canto Field Archive)",
+      "location": "Dãy Hoàng Liên Sơn / Fansipan, Sa Pa",
+      "xcId": "482019",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/482019"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-RIMATOR-",
       "avibaseId": "8E29E9C510F38307",
@@ -978,7 +1026,7 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "LR",
-      "description": "Nguy cơ thấp (Least Concern). Chuyên biệt sinh cảnh hoàn toàn trên các vách đá vôi karst hiểm trở tại miền Trung Việt Nam."
+      "description": "Chuyên biệt sinh cảnh hoàn toàn trên các vách đá vôi karst hiểm trở tại miền Trung Việt Nam."
     },
     "morphologicalAnalysis": {
       "overview": "Toàn bộ lông màu nâu tro xám đen như than mun, ngực và họng nhạt màu hơn, móng chân to khỏe bám vách đá dốc đứng.",
@@ -1086,7 +1134,7 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "LR",
-      "description": "Nguy cơ thấp (Least Concern). Phân loài đặc hữu Tây Bắc Việt Nam với đôi cánh màu đỏ thắm lộng lẫy trên sườn núi Fansipan."
+      "description": "Phân loài đặc hữu Tây Bắc Việt Nam với đôi cánh màu đỏ thắm lộng lẫy trên sườn núi Fansipan."
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình đầy đặn, mảng cánh và đuôi có màu đỏ thắm ánh son rực rỡ, đỉnh đầu màu xám có vảy đen tinh tế.",
@@ -1192,7 +1240,7 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "LR",
-      "description": "Nguy cơ thấp (Least Concern). Một trong những loài khướu sặc sỡ nhất núi rừng Bắc Bộ và Tây Bắc Việt Nam."
+      "description": "Một trong những loài khướu sặc sỡ nhất núi rừng Bắc Bộ và Tây Bắc Việt Nam."
     },
     "morphologicalAnalysis": {
       "overview": "Mũ đầu màu đỏ son sáng chói, má trắng bạc, toàn bộ cánh và đuôi màu đỏ thắm tương phản lông lưng xám vảy đen.",
@@ -1300,7 +1348,7 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "LR",
-      "description": "Nguy cơ thấp (Least Concern). Đặc trưng bởi chiếc mỏ vẹt dày cộm chuyên tách thân tre nứa tìm ấu trùng bọ cánh cứng."
+      "description": "Đặc trưng bởi chiếc mỏ vẹt dày cộm chuyên tách thân tre nứa tìm ấu trùng bọ cánh cứng."
     },
     "morphologicalAnalysis": {
       "overview": "Đầu to màu hung đỏ, chiếc mỏ dẹt màu ngà như mỏ vẹt, thân hình tròn trĩnh đuôi dài thích nghi thảm tre nứa núi cao.",
@@ -1407,7 +1455,7 @@
     "conservation": {
       "iucn": "CR",
       "vietnamRedList": "CR",
-      "description": "Cực kỳ nguy cấp (Critically Endangered). Loài trĩ huyền bí của dãy Trường Sơn với chiếc đuôi dài nhất trong thế giới loài chim hoang dã (lên tới 1.7m)."
+      "description": "Loài trĩ huyền bí của dãy Trường Sơn với chiếc đuôi dài nhất trong thế giới loài chim hoang dã (lên tới 1.7m)."
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình tráng lệ với bộ lông đen mun rắc hàng ngàn đốm trắng sao sa, mào lông dài dựng đứng và đuôi dài vô song uốn lượn.",
@@ -1514,7 +1562,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Ca sĩ rừng già phương Bắc nổi tiếng với giọng hót thánh thót, đa cung bậc và viền mắt trắng kéo dài ra sau như lông mi."
+      "description": "Ca sĩ rừng già phương Bắc nổi tiếng với giọng hót thánh thót, đa cung bậc và viền mắt trắng kéo dài ra sau như lông mi."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu nâu vàng ô-liu, ức có vệt sọc dọc mờ, nổi tiếng với viền mắt trắng kéo dài về phía sau gáy như nét vẽ điêu khắc.",
@@ -1560,7 +1608,15 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/15156"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/739091/download",
+      "duration": "0:28",
+      "recordist": "Craig Robson (Xeno-canto Field Archive)",
+      "location": "Miền Bắc Việt Nam & Đông Á",
+      "xcId": "739091",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/739091"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-GARRULAX",
       "avibaseId": "71D4A2090891D13C",
@@ -1613,7 +1669,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Loài đớp ruồi rừng nhiệt đới tuyệt đẹp với bộ lông xanh biếc sapphire và ngực màu cam tươi."
+      "description": "Loài đớp ruồi rừng nhiệt đới tuyệt đẹp với bộ lông xanh biếc sapphire và ngực màu cam tươi."
     },
     "morphologicalAnalysis": {
       "overview": "Mặt lưng màu xanh lam đậm ánh kim, ngực màu cam rực rỡ tương phản với cằm màu xanh đen và bụng trắng.",
@@ -1720,7 +1776,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Loài chim hút mật vùng núi cao sặc sỡ với họng đen ánh tím than và hai sợi lông đuôi giữa dài thướt tha."
+      "description": "Loài chim hút mật vùng núi cao sặc sỡ với họng đen ánh tím than và hai sợi lông đuôi giữa dài thướt tha."
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình nhỏ nhắn như ngón tay, ngực và họng đen tuyền ánh tím kim loại, vệt hông vàng chanh sáng chói và lưng đỏ thẫm.",
@@ -1827,7 +1883,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Tay săn mồi dũng mãnh của trảng cỏ với chiếc mỏ móc khoằm và chiếc mặt nạ đen uy quyền."
+      "description": "Tay săn mồi dũng mãnh của trảng cỏ với chiếc mỏ móc khoằm và chiếc mặt nạ đen uy quyền."
     },
     "morphologicalAnalysis": {
       "overview": "Đầu và mặt nạ màu đen bóng, lưng và hông màu hung cam ấm, mỏ có móc khoằm sắc bén như chim săn mồi.",
@@ -1873,7 +1929,15 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/12035"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/883921/download",
+      "duration": "0:34",
+      "recordist": "Xeno-canto Field Archive",
+      "location": "Đồng bằng & đồi cây thưa miền Bắc",
+      "xcId": "883921",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/883921"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-LANIUS-S",
       "avibaseId": "69FC190B",
@@ -1926,7 +1990,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Viên ngọc sắc màu lộng lẫy dưới nền rừng nhiệt đới với mảng cánh xanh coban và bụng đỏ son."
+      "description": "Viên ngọc sắc màu lộng lẫy dưới nền rừng nhiệt đới với mảng cánh xanh coban và bụng đỏ son."
     },
     "morphologicalAnalysis": {
       "overview": "Viên ngọc rừng nhiệt đới với lưng xanh ngọc, mảng cánh xanh coban phát sáng, bụng vàng hung và vệt đỏ thắm ở hậu môn.",
@@ -2033,7 +2097,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Biểu tượng hoàng gia trong văn hóa cổ truyền Việt Nam với bộ lông vàng óng ả và tiếng hót mê ly."
+      "description": "Biểu tượng hoàng gia trong văn hóa cổ truyền Việt Nam với bộ lông vàng óng ả và tiếng hót mê ly."
     },
     "morphologicalAnalysis": {
       "overview": "Toàn thân màu vàng hoàng yến rực rỡ, mỏ hồng san hô, dải lông đen hình móng ngựa vắt qua gáy nối liền hai bên mắt.",
@@ -2080,7 +2144,15 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/7867"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/732104/download",
+      "duration": "0:26",
+      "recordist": "Xeno-canto Field Archive",
+      "location": "Rừng thứ sinh & vườn cây Bắc Bộ",
+      "xcId": "732104",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/732104"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-ORIOLUS-",
       "avibaseId": "CC216A71A3F24E79",
@@ -2133,7 +2205,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Nghệ sĩ hót tài ba của rừng rậm nhiệt đới với chiếc đuôi dài thướt tha và bụng đỏ hung."
+      "description": "Nghệ sĩ hót tài ba của rừng rậm nhiệt đới với chiếc đuôi dài thướt tha và bụng đỏ hung."
     },
     "morphologicalAnalysis": {
       "overview": "Đầu và lưng đen nhánh ánh thép bóng mượt, ngực và bụng màu cam đỏ hạt dẻ ấm áp, mảng hông trắng tuyết và đuôi cực dài.",
@@ -2179,7 +2251,15 @@
       "license": "cc-by-nc-sa",
       "observationUrl": "https://www.inaturalist.org/taxa/204490"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/712903/download",
+      "duration": "0:45",
+      "recordist": "Xeno-canto Field Archive",
+      "location": "VQG Cát Tiên & Đông Nam Bộ",
+      "xcId": "712903",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/712903"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-COPSYCHU",
       "avibaseId": "0E5168F9",
@@ -2232,7 +2312,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Bậc thầy bắt chước âm thanh với hai sợi lông đuôi dài mang hình lá cờ uốn lượn kỳ ảo khi bay lượn."
+      "description": "Bậc thầy bắt chước âm thanh với hai sợi lông đuôi dài mang hình lá cờ uốn lượn kỳ ảo khi bay lượn."
     },
     "morphologicalAnalysis": {
       "overview": "Toàn thân màu đen ánh kim xanh tím rực rỡ, mào lông cong ngược về sau trên trán và hai chiếc đuôi cờ dài uốn lượn trong gió.",
@@ -2339,7 +2419,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Khướu rừng đá vôi với mảng má trắng tinh khiết nổi bật trên nền họng đen tuyền và tiếng hót vang dội."
+      "description": "Khướu rừng đá vôi với mảng má trắng tinh khiết nổi bật trên nền họng đen tuyền và tiếng hót vang dội."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xám ô-liu, họng và trán màu đen tuyền, hai bên má có mảng trắng muốt như phấn vôi sáng chói.",
@@ -2385,7 +2465,15 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/1289402"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/892104/download",
+      "duration": "0:38",
+      "recordist": "Xeno-canto Field Archive",
+      "location": "VQG Cúc Phương, Ninh Bình",
+      "xcId": "892104",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/892104"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-GARRULAX",
       "avibaseId": "C7221A3D80B22C99",
@@ -2438,7 +2526,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Kiệt tác màu sắc của thiên nhiên với chiếc mũ phi công xanh - vàng, thân xanh lục bảo và đuôi xanh biếc dài."
+      "description": "Kiệt tác màu sắc của thiên nhiên với chiếc mũ phi công xanh - vàng, thân xanh lục bảo và đuôi xanh biếc dài."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh lục bảo non, đỉnh đầu đen có đốm xanh da trời và vàng nghệ như chiếc mũ bảo hiểm phi công, chiếc đuôi xanh coban dài thon.",
@@ -2546,7 +2634,7 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "VU",
-      "description": "Nguy cơ thấp (Least Concern). Loài gà lôi tráng lệ với mảng hông màu đỏ tía rực như than hồng và đuôi cong cong hình lưỡi liềm cong vút."
+      "description": "Loài gà lôi tráng lệ với mảng hông màu đỏ tía rực như than hồng và đuôi cong cong hình lưỡi liềm cong vút."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xám tro vân mịn, mảng lưng dưới màu vàng rơm và hông đỏ tía rực lửa, mào đầu xoăn đen tím và mặt đỏ tươi.",
@@ -2592,7 +2680,15 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/1114"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/654812/download",
+      "duration": "0:18",
+      "recordist": "Xeno-canto Field Archive",
+      "location": "VQG Cát Tiên, Đồng Nai",
+      "xcId": "654812",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/654812"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-GAL-LOPHURA-",
       "avibaseId": "6805AC5A7415198C",
@@ -2645,7 +2741,7 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "VU",
-      "description": "Nguy cơ thấp (Least Concern). Chim trống sở hữu bộ cánh đốm mắt xanh lục ngọc bích lấp lánh như khổng tước thu nhỏ."
+      "description": "Chim trống sở hữu bộ cánh đốm mắt xanh lục ngọc bích lấp lánh như khổng tước thu nhỏ."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xám tro rắc hạt mịn, phủ dày đặc các đốm mắt tròn màu xanh lục ngọc bích óng ánh viền trắng và đen trên đuôi và cánh.",
@@ -2751,7 +2847,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Loài gà so duyên dáng của thảm mục rừng thường xanh với tiếng hót đối ca rộn rã lúc bình minh."
+      "description": "Loài gà so duyên dáng của thảm mục rừng thường xanh với tiếng hót đối ca rộn rã lúc bình minh."
     },
     "morphologicalAnalysis": {
       "overview": "Thân tròn mập, trán và lông mày màu hung vàng, họng trắng viền đen hạt tiêu và ức có mảng màu nâu hạt dẻ đậm.",
@@ -2857,7 +2953,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Tổ tiên hoang dã của loài gà nhà toàn cầu, rực rỡ với mào cờ đỏ tươi và đôi dái tai màu trắng tuyết."
+      "description": "Tổ tiên hoang dã của loài gà nhà toàn cầu, rực rỡ với mào cờ đỏ tươi và đôi dái tai màu trắng tuyết."
     },
     "morphologicalAnalysis": {
       "overview": "Chim trống oai vệ với lông cổ màu vàng cam óng ả, lưng đỏ sẫm, đuôi xanh đen ánh kim cong vút và dái tai màu trắng tinh khiết.",
@@ -2966,7 +3062,7 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "EN",
-      "description": "Sắp nguy cấp (Vulnerable). Chúa tể vòm tán rừng nhiệt đới với chiếc mũ sừng khổng lồ màu vàng rực và sải cánh khổng lồ dài 1.5m."
+      "description": "Chúa tể vòm tán rừng nhiệt đới với chiếc mũ sừng khổng lồ màu vàng rực và sải cánh khổng lồ dài 1.5m."
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình to lớn đồ sộ, chiếc mỏ vàng khổng lồ đội mũ sừng hai sừng phía trước, dải cánh đen trắng và đuôi trắng có dải băng đen lớn.",
@@ -3068,7 +3164,7 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "VU",
-      "description": "Sắp nguy cấp (Vulnerable). Nổi tiếng với túi da họng màu vàng chanh có dải vạch đen ngang và gốc mỏ có nhiều nếp nhăn lượn sóng."
+      "description": "Nổi tiếng với túi da họng màu vàng chanh có dải vạch đen ngang và gốc mỏ có nhiều nếp nhăn lượn sóng."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu đen tuyền, đuôi trắng tinh hoàn toàn, chim trống có đầu hung đỏ, túi họng vàng chói và gốc mỏ có các nếp gấp lượn sóng.",
@@ -3175,7 +3271,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "NT",
-      "description": "Gần bị đe dọa (Near Threatened). Loài niệc sống theo bầy đàn gia đình gắn kết, hỗ trợ nhau ấp trứng và nuôi con trong hốc cây cổ thụ."
+      "description": "Loài niệc sống theo bầy đàn gia đình gắn kết, hỗ trợ nhau ấp trứng và nuôi con trong hốc cây cổ thụ."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu nâu xám sẫm, họng và ngực chim trống màu nâu hung vàng, mỏ màu vàng ngà có chóp đuôi trắng nhạt.",
@@ -3281,7 +3377,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Nổi tiếng với chiếc mào lông xòe hình quạt chấm đen và tiếng kêu trầm ấm 'úp-úp-úp' lúc trưa hè."
+      "description": "Nổi tiếng với chiếc mào lông xòe hình quạt chấm đen và tiếng kêu trầm ấm 'úp-úp-úp' lúc trưa hè."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu hồng nâu hạt dẻ, cánh và đuôi có các dải vằn đen trắng rộng tương phản mạnh, mào lông đầu xòe quạt và mỏ dài mảnh cong nhẹ.",
@@ -3390,7 +3486,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Khổng lồ trong thế giới bói cá Việt Nam với chiếc mào lông bờm xù hoa râm và tài lao vút bắt cá suối ghềnh."
+      "description": "Khổng lồ trong thế giới bói cá Việt Nam với chiếc mào lông bờm xù hoa râm và tài lao vút bắt cá suối ghềnh."
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình to lớn, bộ lông hoa râm vằn đen trắng như áo dệt thổ cẩm, mào lông đầu dựng đứng bờm xờm và chiếc mỏ đen sắc như mũi giáo.",
@@ -3497,7 +3593,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Đồ sộ với chiếc mỏ đỏ thắm khổng lồ như mỏ hạc, lưng xanh ngọc biếc và tiếng kêu cười vang vọng mặt nước."
+      "description": "Đồ sộ với chiếc mỏ đỏ thắm khổng lồ như mỏ hạc, lưng xanh ngọc biếc và tiếng kêu cười vang vọng mặt nước."
     },
     "morphologicalAnalysis": {
       "overview": "Đầu màu nâu xám, ức và bụng màu vàng nghệ rực rỡ, lưng xanh ngọc ánh lam chói lọi và mỏ đỏ tươi như ớt chín.",
@@ -3605,7 +3701,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Mũ đầu đen nhung, cổ áo trắng tinh khiết và lưng xanh tím than tím biếc tuyệt mỹ."
+      "description": "Mũ đầu đen nhung, cổ áo trắng tinh khiết và lưng xanh tím than tím biếc tuyệt mỹ."
     },
     "morphologicalAnalysis": {
       "overview": "Đỉnh đầu đen nhung tuyền, vòng cổ màu trắng tinh, lưng và cánh màu xanh tím coban đậm đà, mỏ và chân màu đỏ thắm.",
@@ -3712,7 +3808,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "NT",
-      "description": "Gần bị đe dọa (Near Threatened). Loài bồng chanh lớn nhất thế giới, cư ngụ bí ẩn dọc các khe suối rừng nguyên sinh rậm rạp miền núi phía Bắc."
+      "description": "Loài bồng chanh lớn nhất thế giới, cư ngụ bí ẩn dọc các khe suối rừng nguyên sinh rậm rạp miền núi phía Bắc."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh coban ánh kim sáng rực, ngực và bụng màu cam đỏ rực lửa, dải lưng giữa màu xanh ngọc bích phát quang.",
@@ -3800,7 +3896,7 @@
   {
     "id": "coracias-affinis",
     "scientificName": "Coracias affinis",
-    "vietnameseName": "Trả trảng đầu xám",
+    "vietnameseName": "Sả rừng",
     "englishName": "Indochinese Roller",
     "taxonomy": {
       "clade": [
@@ -3812,14 +3908,14 @@
       "order": "Coraciiformes",
       "orderVietnamese": "Bộ Bói cá",
       "family": "Coraciidae",
-      "familyVietnamese": "Họ Trả trảng",
+      "familyVietnamese": "Họ Sả rừng",
       "genus": "Coracias",
       "species": "C. affinis"
     },
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). 'Vũ công nhào lộn' không trung với đôi cánh xanh ngọc lấp lánh và vũ điệu nhào lộn cuốn hút mùa ghép đôi."
+      "description": "'Vũ công nhào lộn' không trung với đôi cánh xanh ngọc lấp lánh và vũ điệu nhào lộn cuốn hút mùa ghép đôi."
     },
     "morphologicalAnalysis": {
       "overview": "Đầu và lưng màu xanh ô-liu xám, ngực màu tím tím than đậm, cánh ngoài màu xanh lơ phát sáng như ngọc bích khi sải rộng.",
@@ -3926,7 +4022,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). 'Thợ rèn đồng' tí hon với nhịp gõ đều đặn 'tuk-tuk-tuk' vang vọng khắp vườn cây và trán đỏ rực."
+      "description": "'Thợ rèn đồng' tí hon với nhịp gõ đều đặn 'tuk-tuk-tuk' vang vọng khắp vườn cây và trán đỏ rực."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh lục cỏ, trán và yếm ngực đỏ tươi như ruby, họng vàng chanh, ức có vệt sọc xanh đậm, mỏ cứng chắc.",
@@ -4035,7 +4131,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Cư dân vòm tán rừng đá vôi miền Bắc với đỉnh đầu đen huyền bí và họng đỏ son rực rỡ."
+      "description": "Cư dân vòm tán rừng đá vôi miền Bắc với đỉnh đầu đen huyền bí và họng đỏ son rực rỡ."
     },
     "morphologicalAnalysis": {
       "overview": "Thân xanh ngọc bích, mũ đầu đen tuyền, trán có đốm đỏ son, họng và sau gáy điểm sắc xanh da trời và đỏ thắm.",
@@ -4143,7 +4239,7 @@
     "conservation": {
       "iucn": "NT",
       "vietnamRedList": "VU",
-      "description": "Gần bị đe dọa (Near Threatened). Loài gõ kiến tuyệt đẹp của dải rừng Đông Dương với vòng cổ màu đỏ thắm bao quanh cổ áo xanh lục."
+      "description": "Loài gõ kiến tuyệt đẹp của dải rừng Đông Dương với vòng cổ màu đỏ thắm bao quanh cổ áo xanh lục."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh ô-liu đậm, toàn bộ đầu và cổ áo bao bọc bởi lớp lông màu đỏ son rực lửa kéo dài từ gáy xuống tận ức.",
@@ -4251,7 +4347,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). 'Ngọn lửa rừng xanh' với lưng màu vàng kim óng ánh, mào đỏ son rực rỡ và tiếng cười giòn tan."
+      "description": "'Ngọn lửa rừng xanh' với lưng màu vàng kim óng ánh, mào đỏ son rực rỡ và tiếng cười giòn tan."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu vàng kim óng ả, mào lông đầu đỏ chói dựng đứng, mặt có các dải sọc trắng đen song song, ức có vảy đen trắng tinh tế.",
@@ -4360,7 +4456,7 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "VU",
-      "description": "Nguy cơ thấp (Least Concern). Bóng ma đen tuyền lướt êm ru trên ngọn cây vòm rừng núi cao với sải cánh rộng hình chữ V đặc trưng."
+      "description": "Bóng ma đen tuyền lướt êm ru trên ngọn cây vòm rừng núi cao với sải cánh rộng hình chữ V đặc trưng."
     },
     "morphologicalAnalysis": {
       "overview": "Toàn thân phủ màu đen tuyền như nhung, sáp mỏ và chân màu vàng chanh sáng rực, móng vuốt chân duỗi thẳng thích nghi cướp tổ chim non.",
@@ -4467,7 +4563,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Sát thủ săn rắn chuyên nghiệp với đôi mắt vàng sáng rực như hổ phách và dải băng trắng rộng dưới cánh."
+      "description": "Sát thủ săn rắn chuyên nghiệp với đôi mắt vàng sáng rực như hổ phách và dải băng trắng rộng dưới cánh."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu nâu sẫm lốm đốm sao trắng ở ức và bụng, mào xòe sau gáy lấm tấm chấm trắng, dải băng trắng to bản chạy dọc cánh và đuôi khi bay.",
@@ -4574,7 +4670,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Khắc tinh của các tổ ong rừng nhờ lớp vảy lông cứng như áo giáp bảo vệ mặt khỏi ngòi đốt độc."
+      "description": "Khắc tinh của các tổ ong rừng nhờ lớp vảy lông cứng như áo giáp bảo vệ mặt khỏi ngòi đốt độc."
     },
     "morphologicalAnalysis": {
       "overview": "Đầu nhỏ thon cổ dài như bồ câu, lớp lông mặt phủ vảy mịn chống ong đốt, mào lông nhỏ ở gáy và đuôi có hai dải băng đen sẫm.",
@@ -4681,7 +4777,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). 'Thiên thần săn chuột' của đồng cỏ với bộ lông trắng muốt, vai đen nhánh và đôi mắt đỏ rực như đá ruby."
+      "description": "'Thiên thần săn chuột' của đồng cỏ với bộ lông trắng muốt, vai đen nhánh và đôi mắt đỏ rực như đá ruby."
     },
     "morphologicalAnalysis": {
       "overview": "Toàn thân trắng tinh khiết pha xám bạc nhẹ ở lưng, mảng vai đen tuyền nổi bật, mắt màu đỏ ruby rực lửa, khả năng đập cánh treo mình đứng yên giữa không trung.",
@@ -4788,7 +4884,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Chúa tể săn cá ban đêm với đôi tai lông xòe ngang dũng mãnh, mắt vàng trợn tròn và ngón chân trần có gai nhọn bắt cá trơn."
+      "description": "Chúa tể săn cá ban đêm với đôi tai lông xòe ngang dũng mãnh, mắt vàng trợn tròn và ngón chân trần có gai nhọn bắt cá trơn."
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình to lớn đồ sộ, lông màu nâu hung rằn ri sọc đen, đôi tai lông dài vểnh ngang và chân trần không có lông phủ để tránh ướt nước khi vồ cá.",
@@ -4896,7 +4992,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Cú mèo nhỏ bé ngụy trang hoàn hảo như vỏ cây khô với vòng khoang cổ màu vàng ngà sau gáy."
+      "description": "Cú mèo nhỏ bé ngụy trang hoàn hảo như vỏ cây khô với vòng khoang cổ màu vàng ngà sau gáy."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xám tro rằn ri như vỏ cây mục, vòng cổ màu vàng ngà nhạt vắt sau gáy tạo hình 'mặt giả' đánh lừa kẻ thù, đôi tai lông dựng đứng.",
@@ -5005,7 +5101,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Loài cú nhỏ nhất Đông Dương (chỉ to bằng nắm tay) hoạt động cả ban ngày với 'đôi mắt giả' kỳ ảo sau gáy."
+      "description": "Loài cú nhỏ nhất Đông Dương (chỉ to bằng nắm tay) hoạt động cả ban ngày với 'đôi mắt giả' kỳ ảo sau gáy."
     },
     "morphologicalAnalysis": {
       "overview": "Kích thước tí hon, đầu tròn không có tai lông, sau gáy có hai đốm đen viền trắng tròn xoe y như đôi mắt thứ hai để răn đe kẻ thù từ phía sau.",
@@ -5051,7 +5147,15 @@
       "license": "cc-by",
       "observationUrl": "https://www.inaturalist.org/taxa/1286804"
     },
-    "audioCall": null,
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/719203/download",
+      "duration": "0:30",
+      "recordist": "Xeno-canto Field Archive",
+      "location": "VQG Tam Đảo, Vĩnh Phúc",
+      "xcId": "719203",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/719203"
+    },
     "academic": {
       "iocTaxonCode": "IOC-AV-STR-GLAUCIDI",
       "avibaseId": "BD6F35612B009315",
@@ -5105,7 +5209,7 @@
     "conservation": {
       "iucn": "CR",
       "vietnamRedList": "CR",
-      "description": "Cực kỳ nguy cấp (Critically Endangered). Một trong 50 loài chim hiếm nhất hành tinh với vòng cổ màu xanh lam sáng và mảng vai trắng muốt."
+      "description": "Một trong 50 loài chim hiếm nhất hành tinh với vòng cổ màu xanh lam sáng và mảng vai trắng muốt."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu nâu đen ánh thép, đầu trần trụi màu đen có vòng da cổ màu xanh da trời sáng rực, mảng lông vai màu trắng tinh nổi bật trên cánh đen.",
@@ -5213,7 +5317,7 @@
     "conservation": {
       "iucn": "EN",
       "vietnamRedList": "EN",
-      "description": "Nguy cấp (Endangered). 'Sứ giả mùa đông' của đất ngập nước ven biển Bắc Bộ với chiếc mỏ hình chiếc thìa kỳ lạ quét ngang mặt nước bắt tôm cá."
+      "description": "'Sứ giả mùa đông' của đất ngập nước ven biển Bắc Bộ với chiếc mỏ hình chiếc thìa kỳ lạ quét ngang mặt nước bắt tôm cá."
     },
     "morphologicalAnalysis": {
       "overview": "Toàn thân trắng tinh khôi, mảng da mặt trần trụi màu đen tuyền quanh mắt, chiếc mỏ dẹt to bè hình muỗng/thìa màu xám nhăn nheo.",
@@ -5321,7 +5425,7 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "VU",
-      "description": "Sắp nguy cấp (Vulnerable). Loài hạc khổng lồ trầm ngâm của vùng đất ngập nước phương Nam với dáng đứng oai nghiêm như vị giáo sư già."
+      "description": "Loài hạc khổng lồ trầm ngâm của vùng đất ngập nước phương Nam với dáng đứng oai nghiêm như vị giáo sư già."
     },
     "morphologicalAnalysis": {
       "overview": "Thân cao lớn, lưng và cánh đen ánh kim xanh thép, đầu và cổ trần trụi da màu vàng hồng có vài sợi lông tơ thưa thớt, mỏ to dày màu ngà.",
@@ -5429,7 +5533,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Cư dân bí ẩn hoạt động lúc chạng vạng trong rừng nhiệt đới với mào đen dài buông thõng và hoa văn rằn ri như vỏ cây."
+      "description": "Cư dân bí ẩn hoạt động lúc chạng vạng trong rừng nhiệt đới với mào đen dài buông thõng và hoa văn rằn ri như vỏ cây."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu nâu hạt dẻ ấm, cánh rằn ri vằn đen mịn, mào lông đen tuyền buông dài sau gáy và đôi mắt tròn xoe to màu vàng lục.",
@@ -5537,7 +5641,7 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "CR",
-      "description": "Sắp nguy cấp (Vulnerable). Loài chim bay cao nhất thế giới (cao tới 1.8m) với chiếc đầu đỏ rực rỡ và điệu múa uyên ương chung thủy suốt đời."
+      "description": "Loài chim bay cao nhất thế giới (cao tới 1.8m) với chiếc đầu đỏ rực rỡ và điệu múa uyên ương chung thủy suốt đời."
     },
     "morphologicalAnalysis": {
       "overview": "Thân cao lớn thanh thoát màu xám bạc, đầu và cổ trên trần trụi da màu đỏ tươi rực lửa, đỉnh đầu có mảng da xám tro và đôi chân dài miên man màu hồng.",
@@ -5644,7 +5748,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Cuốc rừng duyên dáng với đầu và ngực màu đỏ hung hạt dẻ, bụng vằn đen trắng như ngựa vằn và đôi chân đỏ tươi."
+      "description": "Cuốc rừng duyên dáng với đầu và ngực màu đỏ hung hạt dẻ, bụng vằn đen trắng như ngựa vằn và đôi chân đỏ tươi."
     },
     "morphologicalAnalysis": {
       "overview": "Đầu, cổ và ngực màu đỏ hung hạt dẻ ấm áp, bụng và sườn có các dải sọc vằn đen trắng xen kẽ nổi bật, đôi chân đỏ thắm.",
@@ -5752,7 +5856,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Chú chim đầm lầy rực rỡ với bộ lông xanh tím biếc, mỏ và mảng sừng trán đỏ tươi cùng đôi chân dài thoăn thoắt trên lá sen."
+      "description": "Chú chim đầm lầy rực rỡ với bộ lông xanh tím biếc, mỏ và mảng sừng trán đỏ tươi cùng đôi chân dài thoăn thoắt trên lá sen."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh lam tím ánh ngọc bích, đầu màu xám bạc, mào sừng trán và mỏ màu đỏ thắm, dưới đuôi có mảng lông trắng muốt giật giật khi bước đi.",
@@ -5861,7 +5965,7 @@
     "conservation": {
       "iucn": "NT",
       "vietnamRedList": "VU",
-      "description": "Gần bị đe dọa (Near Threatened). Họ hàng gần nhất còn sống của loài chim Dodo huyền thoại với bộ lông cổ dài ánh kim cầu vồng rực rỡ tại Côn Đảo."
+      "description": "Họ hàng gần nhất còn sống của loài chim Dodo huyền thoại với bộ lông cổ dài ánh kim cầu vồng rực rỡ tại Côn Đảo."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh lục ánh đồng lấp lánh như cầu vồng kim loại, lông bờm cổ dài thượt thướt tha, đuôi ngắn màu trắng tuyết và cục sừng tròn trên gốc mỏ.",
@@ -5968,7 +6072,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Khổng lồ trong họ bồ câu rừng núi với tiếng kêu 'ù-ùm' trầm ấm vang dội khắp thung lũng sương mù."
+      "description": "Khổng lồ trong họ bồ câu rừng núi với tiếng kêu 'ù-ùm' trầm ấm vang dội khắp thung lũng sương mù."
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình to lớn đồ sộ, lưng và cánh màu nâu hạt dẻ hung đỏ đậm đà, đầu và ngực màu xám hồng thanh nhã, đuôi đen có dải xám ở chóp.",
@@ -6075,7 +6179,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Loài bồ câu xanh tuyệt mỹ vùng núi cao với hai sợi lông đuôi giữa vuốt dài nhọn hoắt như mũi tên."
+      "description": "Loài bồ câu xanh tuyệt mỹ vùng núi cao với hai sợi lông đuôi giữa vuốt dài nhọn hoắt như mũi tên."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh đọt chuối tươi mát, ngực phớt vàng cam dịu dàng, hai cọng lông đuôi giữa vươn dài nhọn hoắt, mỏ màu xanh lơ gốc mỏ phớt đỏ.",
@@ -6182,7 +6286,7 @@
     "conservation": {
       "iucn": "EN",
       "vietnamRedList": "CR",
-      "description": "Nguy cấp (Endangered). 'Bóng ma rừng ngập nước' bí ẩn cư ngụ trong các đầm lầy nguyên sơ âm u của VQG Cát Tiên và Tây Nguyên."
+      "description": "'Bóng ma rừng ngập nước' bí ẩn cư ngụ trong các đầm lầy nguyên sơ âm u của VQG Cát Tiên và Tây Nguyên."
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình to lớn sẫm màu đen bóng ánh lục, đầu và cổ lấm tấm trắng đen, mảng bao cánh màu trắng tinh khiết phát sáng khi bay.",
@@ -6289,7 +6393,7 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "VU",
-      "description": "Nguy cơ thấp (Least Concern). Tuyệt tác sắc màu phương Đông và biểu tượng vĩnh cửu của tình yêu đôi lứa thủy chung."
+      "description": "Tuyệt tác sắc màu phương Đông và biểu tượng vĩnh cửu của tình yêu đôi lứa thủy chung."
     },
     "morphologicalAnalysis": {
       "overview": "Chim trống là bản giao hưởng màu sắc rực rỡ với mào lông tím - xanh, đôi 'cánh buồm' màu cam dựng đứng ở lưng và chiếc mỏ đỏ san hô.",
@@ -6396,7 +6500,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). 'Kẻ giả dạng chim ưng' với tiếng kêu não nùng vang dội khắp núi rừng lúc đêm khuya mùa hạ."
+      "description": "'Kẻ giả dạng chim ưng' với tiếng kêu não nùng vang dội khắp núi rừng lúc đêm khuya mùa hạ."
     },
     "morphologicalAnalysis": {
       "overview": "Hình dáng và bộ lông sao chép hoàn hảo loài chim ưng với lưng xám tro, ức vằn đen trắng và mắt có vòng vàng sáng giúp xua đuổi chim chủ nhà khi đẻ trứng nhờ.",
@@ -6504,7 +6608,7 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "VU",
-      "description": "Sắp nguy cấp (Vulnerable). Loài cu cu chạy đất khổng lồ tuyệt đẹp với chiếc mỏ đỏ san hô, da mặt tím xanh và đôi chân dài thoăn thoắt."
+      "description": "Loài cu cu chạy đất khổng lồ tuyệt đẹp với chiếc mỏ đỏ san hô, da mặt tím xanh và đôi chân dài thoăn thoắt."
     },
     "morphologicalAnalysis": {
       "overview": "Thân to lớn đuôi dài màu xanh tím than ánh kim, ngực màu xám bạc tương phản với bụng đen, mỏ và chân đỏ san hô tươi tắn, da mặt xanh tím.",
@@ -6612,7 +6716,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Âm thanh quen thuộc 'bịp-bịp' của đồng quê Việt Nam với đôi cánh màu hung đỏ hạt dẻ và mắt đỏ rực."
+      "description": "Âm thanh quen thuộc 'bịp-bịp' của đồng quê Việt Nam với đôi cánh màu hung đỏ hạt dẻ và mắt đỏ rực."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu đen ánh tím than, cánh màu nâu hạt dẻ hung đỏ sáng, đôi mắt đỏ rực như than hồng và chiếc đuôi đen dài bóng mượt.",
@@ -6720,7 +6824,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Viên hồng ngọc lộng lẫy của rừng nhiệt đới với đầu và bụng màu đỏ thắm rực rỡ và vòng mắt xanh coban."
+      "description": "Viên hồng ngọc lộng lẫy của rừng nhiệt đới với đầu và bụng màu đỏ thắm rực rỡ và vòng mắt xanh coban."
     },
     "morphologicalAnalysis": {
       "overview": "Đầu và toàn bộ bụng màu đỏ thắm chói lọi, vòng cổ màu trắng mảnh, lưng màu nâu quế ấm áp, vòng mi mắt trần màu xanh coban kỳ ảo.",
@@ -6809,7 +6913,7 @@
   {
     "id": "harpactes-oreskios",
     "scientificName": "Harpactes oreskios",
-    "vietnameseName": "Nuốc đuôi vàng",
+    "vietnameseName": "Nuốc bụng vàng",
     "englishName": "Orange-breasted Trogon",
     "taxonomy": {
       "clade": [
@@ -6828,7 +6932,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Nuốc rừng đất thấp với ức màu cam rực lửa chuyển dần sang vàng chanh tươi sáng ở bụng."
+      "description": "Nuốc rừng đất thấp với ức màu cam rực lửa chuyển dần sang vàng chanh tươi sáng ở bụng."
     },
     "morphologicalAnalysis": {
       "overview": "Đầu màu xanh ô-liu ánh vàng, ngực màu cam tươi rực rỡ, bụng màu vàng chanh, lưng nâu hạt dẻ và vòng mắt màu xanh lơ.",
@@ -6935,7 +7039,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Loài chim săn mồi tí hon nhất thế giới (chỉ dài 15cm) nhưng săn bướm và chuồn chuồn với tốc độ tên lửa."
+      "description": "Loài chim săn mồi tí hon nhất thế giới (chỉ dài 15cm) nhưng săn bướm và chuồn chuồn với tốc độ tên lửa."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu đen bóng tương phản với bụng và họng trắng tinh khiết, mặt nạ đen vắt qua mắt, mỏ quặp sắc lẻm như đại bàng thu nhỏ.",
@@ -7042,7 +7146,7 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nguy cơ thấp (Least Concern). Bậc thầy tàng hình với tiếng gõ đều đặn 'chúc-chúc-chúc' như tiếng đóng cọc vào đêm trăng thanh."
+      "description": "Bậc thầy tàng hình với tiếng gõ đều đặn 'chúc-chúc-chúc' như tiếng đóng cọc vào đêm trăng thanh."
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu nâu xám rằn ri như lá khô mục, miệng rộng hoác có ria mép dài bắt côn trùng khi bay đêm, đuôi dài có chóp trắng lớn ở góc đuôi.",

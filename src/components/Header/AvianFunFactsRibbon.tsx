@@ -34,8 +34,8 @@ const AVIAN_FACTS: AvianFact[] = [
   {
     "speciesId": "liochicla-langbianis",
     "speciesName": "Mi Langbiang",
-    "scientificName": "Liochicla langbianis",
-    "fact": "Mi Langbiang là báu vật đặc hữu độc bản của Việt Nam — Loài khướu nhỏ duyên dáng với vòng cổ màu hung cam, vệt cánh và mép đuôi màu đỏ thắm tương phản lông thân màu xám tro.",
+    "scientificName": "Laniellus langbianis",
+    "fact": "Mi Langbiang là báu vật đặc hữu độc bản của Việt Nam — Loài mi duyên dáng với chỏm đầu xám bạc, sọc mắt đen sắc nét, lưng nâu hạt dẻ vằn đen hình ngọn giáo và bụng trắng ngà lốm đốm.",
     "eba": "Cao nguyên Đà Lạt / Lâm Viên",
     "isEndemic": true,
     "iucn": "EN"
