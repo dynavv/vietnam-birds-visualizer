@@ -188,8 +188,15 @@ export async function analyzeBirdImage(
   let base64Data = imageSource;
   let resolvedMimeType = mimeType;
 
-  // Auto-convert remote URLs (http, https, blob) to Base64
-  if (imageSource.startsWith('http://') || imageSource.startsWith('https://') || imageSource.startsWith('blob:')) {
+  // Auto-convert any URL or relative path (starts with /, http://, https://, blob:, etc.) to Base64
+  if (
+    !imageSource.startsWith('data:') &&
+    (imageSource.startsWith('/') ||
+      imageSource.startsWith('http://') ||
+      imageSource.startsWith('https://') ||
+      imageSource.startsWith('blob:') ||
+      imageSource.includes('/'))
+  ) {
     const converted = await convertImageUrlToBase64(imageSource);
     base64Data = converted.dataUrl;
     resolvedMimeType = converted.mimeType;
