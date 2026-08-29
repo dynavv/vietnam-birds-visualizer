@@ -20,7 +20,7 @@ describe('BirdVisionModal Component', () => {
     expect(screen.getByText(/Giám Định Loài Chim Bằng Thị Giác AI/i)).toBeDefined();
     expect(screen.getByText(/Kéo & thả ảnh chim vào đây/i)).toBeDefined();
     expect(screen.getByText(/Ảnh Mẫu Thử Nghiệm Nhanh/i)).toBeDefined();
-    expect(screen.getAllByText(/Gemini 2.5 Flash/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Google Gemini AI/i).length).toBeGreaterThan(0);
   });
 
   it('renders nothing when isOpen is false', () => {

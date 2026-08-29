@@ -204,7 +204,7 @@ export const BirdVisionModal: React.FC<BirdVisionModalProps> = ({
                   Giám Định Loài Chim Bằng Thị Giác AI
                 </h2>
                 <span className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-natural-moss/10 text-natural-moss border border-natural-moss/20">
-                  <Sparkles className="w-2.5 h-2.5" /> Gemini 2.5 Flash
+                  <Sparkles className="w-2.5 h-2.5" /> Google Gemini AI
                 </span>
               </div>
               <p className="text-[11px] sm:text-xs text-ink-600 font-sans mt-0.5">
@@ -394,7 +394,7 @@ export const BirdVisionModal: React.FC<BirdVisionModalProps> = ({
                   <span>{analysisStep}</span>
                 </div>
                 <p className="text-xs text-ink-600">
-                  Mô hình Gemini 2.5 Flash đang đối chiếu mẫu giải phẫu với danh lục 68 loài chim đặc hữu Việt Nam.
+                  Mô hình Google Gemini AI đang đối chiếu mẫu giải phẫu với danh lục 68 loài chim đặc hữu Việt Nam.
                 </p>
               </div>
             </div>
@@ -631,7 +631,7 @@ export const BirdVisionModal: React.FC<BirdVisionModalProps> = ({
 
         {/* Minimalist Flat Status Footer */}
         <div className="px-5 sm:px-6 py-2.5 bg-paper-100/90 border-t border-paper-border flex items-center justify-between text-[11px] text-ink-500 font-mono shrink-0">
-          <span>Avifauna of Vietnam AI Vision Curator • Gemini 2.5 Flash</span>
+          <span>Avifauna of Vietnam AI Vision Curator • Google Gemini AI</span>
           <span className="hidden sm:inline">Nhấn ESC hoặc click ngoài để đóng</span>
         </div>
       </div>

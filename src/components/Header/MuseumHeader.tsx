@@ -162,7 +162,7 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
             type="button"
             onClick={onOpenVisionDetector}
             aria-label="Nhận diện loài chim qua ảnh AI"
-            title="Giám định loài chim bằng Thị giác AI (Gemini 2.5 Flash)"
+            title="Giám định loài chim bằng Thị giác AI (Google Gemini AI)"
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-paper-100 hover:bg-paper-200 text-ink-800 border border-paper-border hover:border-natural-moss/40 text-xs font-semibold shadow-2xs transition-all cursor-pointer group"
           >
             <Camera className="w-3.5 h-3.5 text-natural-moss group-hover:scale-110 transition-transform" />
