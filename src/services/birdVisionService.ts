@@ -172,6 +172,35 @@ export async function convertImageUrlToBase64(
   }
 }
 
+// Active working model cache in-memory
+let activeWorkingModel = '';
+
+export function getCandidateModels(): string[] {
+  const metaEnv = typeof import.meta !== 'undefined' ? (import.meta as any).env : undefined;
+  const envModel = metaEnv?.VITE_GEMINI_MODEL;
+
+  const models = [
+    activeWorkingModel,
+    envModel,
+    'gemini-3.7-flash',
+    'gemini-3.6-flash',
+    'gemini-flash',
+    'gemini-2.0-flash'
+  ].filter(Boolean) as string[];
+
+  // Remove duplicates while preserving priority order
+  return Array.from(new Set(models));
+}
+
+export function extractSuggestedModelFromError(errorBody: string): string | null {
+  if (!errorBody) return null;
+  const match = errorBody.match(/models\/([a-zA-Z0-9._-]+)/);
+  if (match && match[1] && !match[1].includes('2.5')) {
+    return match[1];
+  }
+  return null;
+}
+
 export async function analyzeBirdImage(
   imageSource: string,
   mimeType: string = 'image/jpeg',
@@ -212,8 +241,6 @@ export async function analyzeBirdImage(
     }
   }
 
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${encodeURIComponent(apiKey.trim())}`;
-
   const payload = {
     contents: [
       {
@@ -234,22 +261,39 @@ export async function analyzeBirdImage(
     }
   };
 
-  const response = await fetch(endpoint, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload)
-  });
+  const candidateModels = getCandidateModels();
+  let lastError: Error | null = null;
 
-  if (!response.ok) {
-    let errorBody = '';
+  for (let i = 0; i < candidateModels.length; i++) {
+    const model = candidateModels[i];
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(apiKey.trim())}`;
+
     try {
-      errorBody = await response.text();
-    } catch {
-      // ignore
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (response.ok) {
+        activeWorkingModel = model;
+        const jsonResult = await response.json();
+        return parseGeminiResponse(jsonResult);
+      }
+
+      const errorBody = await response.text().catch(() => '');
+
+      // Check if Google explicitly suggests a newer model in the error message
+      const suggestedModel = extractSuggestedModelFromError(errorBody);
+      if (suggestedModel && !candidateModels.includes(suggestedModel)) {
+        candidateModels.splice(i + 1, 0, suggestedModel);
+      }
+
+      lastError = new Error(`Lỗi từ Gemini Vision API [${model}] (${response.status}): ${errorBody || response.statusText}`);
+    } catch (fetchErr: any) {
+      lastError = new Error(`Lỗi kết nối Gemini Vision API [${model}]: ${fetchErr?.message || fetchErr}`);
     }
-    throw new Error(`Lỗi từ Gemini Vision API (${response.status}): ${errorBody || response.statusText}`);
   }
 
-  const jsonResult = await response.json();
-  return parseGeminiResponse(jsonResult);
+  throw lastError || new Error('Không thể kết nối đến bất kỳ mô hình Gemini Vision nào.');
 }

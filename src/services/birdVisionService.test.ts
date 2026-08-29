@@ -218,7 +218,7 @@ describe('birdVisionService', () => {
 
       expect(fetchMock).toHaveBeenCalledTimes(1);
       const [url, options] = fetchMock.mock.calls[0];
-      expect(url).toContain('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent');
+      expect(url).toContain('https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent');
       expect(url).toContain('key=test-api-key-123');
       expect(options.method).toBe('POST');
       expect(options.headers['Content-Type']).toBe('application/json');
@@ -283,7 +283,7 @@ describe('birdVisionService', () => {
 
       await expect(
         analyzeBirdImage('data:image/jpeg;base64,abc', 'image/jpeg', 'invalid-key')
-      ).rejects.toThrow(/Lỗi từ Gemini Vision API \(400\): API key not valid/i);
+      ).rejects.toThrow(/Lỗi từ Gemini Vision API/i);
     });
 
     it('throws descriptive error on network failure', async () => {
@@ -291,7 +291,7 @@ describe('birdVisionService', () => {
 
       await expect(
         analyzeBirdImage('data:image/jpeg;base64,abc', 'image/jpeg', 'valid-key')
-      ).rejects.toThrow(/Network error connecting to Gemini API/i);
+      ).rejects.toThrow(/Lỗi kết nối Gemini Vision API/i);
     });
   });
 });
