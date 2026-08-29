@@ -89,6 +89,8 @@ export interface BirdSpecies {
   academic?: AcademicIdentifiers;
 }
 
+export type Species = BirdSpecies;
+
 export interface TaxonomyNode {
   name: string;
   vietnameseName?: string;
@@ -100,6 +102,7 @@ export interface TaxonomyNode {
 
 export interface EBARegion {
   id: string;
+  code?: string;
   name: string;
   vietnameseName: string;
   description: string;
