@@ -43,7 +43,8 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
     allSpecies,
     selectSpecies,
     searchQuery,
-    setSearchQuery
+    setSearchQuery,
+    discoveredSpeciesIds
   } = useTaxonomy();
 
   const [diceRolling, setDiceRolling] = useState<boolean>(false);
@@ -243,7 +244,7 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
             onClick={handleRandomClick}
             aria-label="Khám phá ngẫu nhiên một loài chim"
             title="Khám phá ngẫu nhiên báu vật chim quý Việt Nam"
-            className="group relative inline-flex items-center gap-2 px-4 py-1.5 rounded-xl bg-gradient-to-r from-[#1B4317] via-[#245A20] to-[#2E6F28] hover:from-[#163813] hover:to-[#255C20] text-paper-50 active:scale-95 transition-all duration-300 text-xs font-semibold border border-emerald-400/30 hover:border-emerald-300/70 shadow-md hover:shadow-lg shadow-natural-moss/25 cursor-pointer overflow-hidden whitespace-nowrap shrink-0"
+            className="group relative inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-xl bg-gradient-to-r from-[#1B4317] via-[#245A20] to-[#2E6F28] hover:from-[#163813] hover:to-[#255C20] text-paper-50 active:scale-95 transition-all duration-300 text-xs font-semibold border border-emerald-400/30 hover:border-emerald-300/70 shadow-md hover:shadow-lg shadow-natural-moss/25 cursor-pointer overflow-hidden whitespace-nowrap shrink-0"
           >
             {/* Periodic Golden Shimmer Sweep Animation */}
             <span
@@ -259,6 +260,19 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
               Khám phá ngẫu nhiên
             </span>
           </button>
+
+          {/* Discovery Counter Badge (Placed directly to the right of Random Discovery button) */}
+          <div
+            className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-paper-200/90 hover:bg-paper-200 border border-paper-border text-xs font-mono font-medium text-ink-700 shadow-2xs shrink-0 select-none transition-colors"
+            title={`Bộ sưu tập: Đã khám phá ${discoveredSpeciesIds.length} trên tổng số ${allSpecies.length} loài chim`}
+            data-testid="header-discovery-counter"
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse shrink-0" />
+            <span className="font-bold text-natural-forest">{discoveredSpeciesIds.length}</span>
+            <span className="text-ink-400 font-sans">/</span>
+            <span className="text-ink-600">{allSpecies.length}</span>
+            <span className="hidden md:inline text-[11px] font-sans text-ink-500">đã khám phá</span>
+          </div>
         </div>
 
       </div>

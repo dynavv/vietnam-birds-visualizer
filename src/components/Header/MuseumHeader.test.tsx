@@ -32,9 +32,10 @@ describe('MuseumHeader Component', () => {
     expect(screen.getByText('Cây Phả hệ')).toBeDefined();
     expect(screen.getByText('Cẩm nang Nhận dạng')).toBeDefined();
 
-    // Random button & Search
+    // Random button & Search & Discovery Counter
     expect(screen.getByLabelText(/Khám phá ngẫu nhiên/i)).toBeDefined();
     expect(screen.getByLabelText(/Tìm kiếm loài chim/i)).toBeDefined();
+    expect(screen.getByTestId('header-discovery-counter')).toBeDefined();
   });
 
   it('switches views when clicking tabs', () => {
