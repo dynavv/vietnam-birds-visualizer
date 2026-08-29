@@ -315,12 +315,23 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
     return filteredSpecies.filter(s => s.id !== selectedSpecies.id);
   }, [filteredSpecies, selectedSpecies]);
 
+  // Safe canvas detection: enables GPU Canvas in real browsers while keeping jsdom tests safe
+  const isCanvasSupported = useMemo(() => {
+    if (typeof window === 'undefined') return false;
+    try {
+      const canvas = document.createElement('canvas');
+      return !!(canvas.getContext && canvas.getContext('2d'));
+    } catch {
+      return false;
+    }
+  }, []);
+
   return (
     <div
       className={`relative w-full h-full flex-1 min-h-[480px] md:min-h-0 overflow-hidden bg-paper-100 ${className}`}
       data-testid="vietnam-eba-map"
     >
-      {/* Leaflet MapContainer */}
+      {/* Leaflet MapContainer with GPU-accelerated Canvas rendering */}
       <MapContainer
         center={VIETNAM_CENTER}
         zoom={VIETNAM_DEFAULT_ZOOM}
@@ -330,14 +341,18 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         maxBoundsViscosity={0.2}
         scrollWheelZoom={true}
         zoomControl={false}
+        preferCanvas={isCanvasSupported}
         className="w-full h-full z-0"
         style={{ height: '100%', width: '100%', background: '#FAF8F5' }}
       >
-        {/* CartoDB Voyager TileLayer with authorized API key from environment */}
+        {/* CartoDB Voyager TileLayer with authorized API key and smart caching */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
           url={`https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=${import.meta.env.VITE_CARTO_API_KEY || 'cb1_2fry_1_3e9fcd71ed08a90121c82244'}`}
           subdomains={['a', 'b', 'c', 'd']}
+          updateWhenIdle={true}
+          keepBuffer={2}
+          updateInterval={150}
         />
 
         <MapFlyToController target={flyTarget} />

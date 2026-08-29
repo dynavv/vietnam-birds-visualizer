@@ -37,8 +37,8 @@ export const GeminiFloatingButton: React.FC<GeminiFloatingButtonProps> = ({ clas
             className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/25 to-transparent animate-shimmer-sweep pointer-events-none"
           />
 
-          {/* Ambient Radiant Glow Ring */}
-          <span className="absolute -inset-1 rounded-full bg-amber-400/25 animate-ping opacity-75 pointer-events-none" />
+          {/* Ambient Radiant Glow Ring (GPU Hardware Accelerated on Hover) */}
+          <span className="absolute -inset-0.5 rounded-full bg-emerald-400/30 opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 pointer-events-none" />
 
           {/* Sparkles Icon */}
           <Sparkles className="w-5 h-5 text-amber-300 drop-shadow-sm transition-transform duration-300 group-hover:rotate-45 group-hover:scale-110" />
