@@ -273,10 +273,10 @@
       "observationUrl": "https://xeno-canto.org/392184"
     },
     "academic": {
-      "iocTaxonCode": "IOC-AV-PAS-LIOCHICL",
-      "avibaseId": "8D9E3FCFD54565C9",
-      "iucnUrl": "https://www.iucnredlist.org/species/22715750/277586782",
-      "gbifTaxonKey": "5231339",
+      "iocTaxonCode": "IOC-AV-PAS-LANIELL",
+      "avibaseId": "D8B781BA0E7321F5",
+      "iucnUrl": "https://www.iucnredlist.org/species/22716690/111108713",
+      "gbifTaxonKey": "9390237",
       "primaryLiterature": [
         {
           "authors": "Gyldenstolpe, N.",
