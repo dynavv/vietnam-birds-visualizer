@@ -261,7 +261,9 @@
       "artist": "(c) James Eaton (Birdtour Asia), some rights reserved (CC BY-NC)",
       "license": "cc-by-nc",
       "sourceBook": "iNaturalist Research Grade",
-      "observationUrl": "https://www.inaturalist.org/taxa/1289431"
+      "observationUrl": "https://www.inaturalist.org/taxa/1289431",
+      "photoLocation": "VQG Bidoup - Núi Bà, Lâm Đồng",
+      "isShotInVietnam": true
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/392184/download",
@@ -363,7 +365,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/355844998/medium.jpg",
       "license": "cc-by",
-      "observationUrl": "https://www.inaturalist.org/taxa/339873"
+      "observationUrl": "https://www.inaturalist.org/taxa/339873",
+      "photoLocation": "KBT Thiên nhiên Hòn Bà, Khánh Hòa",
+      "isShotInVietnam": true
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/482910/download",
@@ -774,7 +778,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/430256409/medium.jpg",
       "license": "cc-by-nd",
-      "observationUrl": "https://www.inaturalist.org/taxa/145359"
+      "observationUrl": "https://www.inaturalist.org/taxa/145359",
+      "photoLocation": "Rừng thông Đà Lạt, Lâm Đồng",
+      "isShotInVietnam": true
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/986021/download",
@@ -868,7 +874,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/525598057/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/339775"
+      "observationUrl": "https://www.inaturalist.org/taxa/339775",
+      "photoLocation": "VQG Cát Tiên, Đồng Nai",
+      "isShotInVietnam": true
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/126379/download",
@@ -1070,7 +1078,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/155851929/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/15524"
+      "observationUrl": "https://www.inaturalist.org/taxa/15524",
+      "photoLocation": "VQG Phong Nha - Kẻ Bàng, Quảng Bình",
+      "isShotInVietnam": true
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/914097/download",
@@ -5901,7 +5911,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/344911929/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/474332"
+      "observationUrl": "https://www.inaturalist.org/taxa/474332",
+      "photoLocation": "VQG Tràm Chim, Đồng Tháp",
+      "isShotInVietnam": true
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1077335/download",
@@ -6009,7 +6021,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/57343379/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/3643"
+      "observationUrl": "https://www.inaturalist.org/taxa/3643",
+      "photoLocation": "VQG Côn Đảo, Bà Rịa - Vũng Tàu",
+      "isShotInVietnam": true
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/654856/download",
@@ -6976,7 +6990,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/59781291/medium.jpeg",
       "license": "cc-by",
-      "observationUrl": "https://www.inaturalist.org/taxa/20825"
+      "observationUrl": "https://www.inaturalist.org/taxa/20825",
+      "photoLocation": "VQG Cát Tiên, Đồng Nai",
+      "isShotInVietnam": true
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1065959/download",

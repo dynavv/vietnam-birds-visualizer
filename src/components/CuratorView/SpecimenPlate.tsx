@@ -144,9 +144,9 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
       .toString()
       .padStart(2, '0')}`;
 
-  const artist = species.illustration?.artist || 'H. Grönvold / Naturalist Classic Archive';
+  const artist = species.illustration?.artist || 'iNaturalist & Wildlife Photographers';
   const sourceBook =
-    species.illustration?.sourceBook || "Les Oiseaux de l'Indochine Française";
+    species.illustration?.sourceBook || "iNaturalist Open Biodiversity Repository";
 
   return (
     <>
@@ -266,6 +266,15 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
                     </a>
                   )}
                 </span>
+              )}
+              {species.illustration?.photoLocation && (
+                <>
+                  <span className="text-ink-400">•</span>
+                  <span className="inline-flex items-center gap-1 text-[10.5px] font-sans font-medium text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200/70 whitespace-nowrap shadow-2xs">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+                    <span>📍 Chụp tại: {species.illustration.photoLocation}</span>
+                  </span>
+                </>
               )}
               <span className="text-ink-400">•</span>
               <span className="font-sans text-[10px] text-ink-500 font-medium tracking-tight">

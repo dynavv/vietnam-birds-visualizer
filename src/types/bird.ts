@@ -42,6 +42,8 @@ export interface IllustrationInfo {
   year?: string;
   license?: string;
   observationUrl?: string;
+  photoLocation?: string;
+  isShotInVietnam?: boolean;
 }
 
 export interface AudioCallInfo {
