@@ -276,10 +276,14 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
                   </span>
                 </>
               )}
-              <span className="text-ink-400">•</span>
-              <span className="font-sans text-[10px] text-ink-500 font-medium tracking-tight">
-                {sourceBook}
-              </span>
+              {sourceBook && !sourceBook.toLowerCase().includes('inaturalist') && (
+                <>
+                  <span className="text-ink-400">•</span>
+                  <span className="font-sans text-[10px] text-ink-500 font-medium tracking-tight">
+                    {sourceBook}
+                  </span>
+                </>
+              )}
             </div>
           </div>
         </div>
