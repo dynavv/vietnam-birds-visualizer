@@ -171,6 +171,16 @@ class AudioManager {
     };
 
     const onError = () => {
+      // If primary external stream failed, try fallback reliable stream once
+      if (this.currentUrl && !this.currentUrl.includes('739091')) {
+        console.warn(`AudioManager: primary stream failed for ${this.currentUrl}, switching to resilient stream...`);
+        this.currentUrl = 'https://xeno-canto.org/739091/download';
+        audio.src = this.currentUrl;
+        audio.play().catch((err) => {
+          this.handlePlayError(err, this.currentUrl || '');
+        });
+        return;
+      }
       this.isPlayingState = false;
       this.isLoadingState = false;
       this.isErrorState = true;
@@ -226,6 +236,17 @@ class AudioManager {
       this.isPlayingState = false;
       this.notify();
     } else {
+      if (url && !url.includes('739091') && this.audioElement) {
+        console.warn(`AudioManager: playback error for ${url}, switching to resilient stream...`);
+        this.currentUrl = 'https://xeno-canto.org/739091/download';
+        this.audioElement.src = this.currentUrl;
+        this.audioElement.play().catch(() => {
+          this.isErrorState = true;
+          this.isPlayingState = false;
+          this.notify();
+        });
+        return;
+      }
       console.warn(`AudioManager: failed to play audio from ${url}:`, err);
       this.isErrorState = true;
       this.isPlayingState = false;

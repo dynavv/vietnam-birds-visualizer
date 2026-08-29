@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Star } from 'lucide-react';
+import { Bird } from 'lucide-react';
 
 export interface EndemicBadgeProps {
   size?: 'sm' | 'md' | 'lg';
@@ -26,11 +26,9 @@ const SIZE_STYLES = {
 export const EndemicBadgeComponent: React.FC<EndemicBadgeProps> = ({
   size = 'md',
   compact = false,
-  useStarIcon = false,
   className = ''
 }) => {
   const sizeStyle = SIZE_STYLES[size];
-  const IconComponent = useStarIcon ? Star : Sparkles;
   const labelText = compact ? 'Đặc hữu' : 'Đặc hữu Việt Nam';
   const tooltipText = 'Loài chim phân bố giới hạn và đặc hữu tại lãnh thổ Việt Nam';
 
@@ -40,8 +38,8 @@ export const EndemicBadgeComponent: React.FC<EndemicBadgeProps> = ({
       title={tooltipText}
       aria-label="Loài chim đặc hữu Việt Nam"
     >
-      <IconComponent
-        className={`text-amber-600 fill-amber-500/30 flex-shrink-0 ${sizeStyle.icon}`}
+      <Bird
+        className={`text-amber-600 fill-amber-500/40 flex-shrink-0 ${sizeStyle.icon}`}
         aria-hidden="true"
       />
       <span className="font-semibold tracking-tight">{labelText}</span>

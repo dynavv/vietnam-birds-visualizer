@@ -6,7 +6,8 @@ import {
   Trees,
   Layers,
   ZoomIn,
-  Sparkles
+  Sparkles,
+  Bird
 } from 'lucide-react';
 import type { EBARegion, BirdSpecies } from '../../types/bird';
 import { useTaxonomy } from '../../context/TaxonomyContext';
@@ -71,21 +72,21 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
 
   return (
     <div
-      className={`bg-paper-100/95 backdrop-blur-md border border-paper-border rounded-2xl shadow-natural-lg overflow-hidden transition-all duration-300 max-w-md w-full ${className}`}
+      className={`bg-paper-100/90 backdrop-blur-xl border border-paper-border/80 rounded-2xl shadow-2xl shadow-ink-900/10 ring-1 ring-black/[0.04] overflow-hidden transition-all duration-300 w-full flex flex-col max-h-full ${className}`}
       data-testid="eba-region-legend"
       aria-label="Danh mục 6 Vùng Chim Đặc hữu Việt Nam"
     >
       {/* Header */}
-      <div className="px-4 py-3 sm:px-5 flex items-center justify-between border-b border-paper-border/60 bg-paper-200/40">
-        <div className="flex items-center gap-2 min-w-0">
-          <div className="w-7 h-7 rounded-lg bg-natural-moss/10 text-natural-moss flex items-center justify-center flex-shrink-0 border border-natural-moss/20">
+      <div className="px-3.5 py-2.5 sm:px-4 sm:py-3 flex items-center justify-between border-b border-paper-border/70 bg-paper-200/50 shrink-0">
+        <div className="flex items-center gap-2.5 min-w-0">
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-natural-moss/20 to-natural-forest/15 text-natural-forest flex items-center justify-center flex-shrink-0 border border-natural-moss/30 shadow-2xs">
             <Layers className="w-4 h-4" />
           </div>
           <div>
-            <h3 className="font-serif text-sm sm:text-base font-bold text-ink-900 leading-tight truncate">
+            <h3 className="font-serif text-sm sm:text-base font-bold text-ink-900 leading-tight truncate tracking-tight">
               Vùng Chim Đặc hữu Việt Nam
             </h3>
-            <p className="text-[10px] sm:text-[11px] text-ink-500 font-mono uppercase tracking-wider">
+            <p className="text-[10px] text-ink-500 font-mono font-medium uppercase tracking-wider">
               6 EBAs • BirdLife International
             </p>
           </div>
@@ -96,17 +97,17 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
           onClick={toggleCollapse}
           aria-label={isCollapsed ? 'Mở rộng bảng vùng đặc hữu' : 'Thu gọn bảng vùng đặc hữu'}
           title={isCollapsed ? 'Mở rộng' : 'Thu gọn'}
-          className="p-1.5 rounded-lg bg-paper-100 hover:bg-paper-200 text-ink-600 border border-paper-border transition-all flex-shrink-0"
+          className="w-7 h-7 flex items-center justify-center rounded-lg bg-paper-100 hover:bg-paper-300/70 text-ink-600 border border-paper-border/80 transition-all flex-shrink-0 cursor-pointer shadow-2xs"
         >
-          {isCollapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
+          {isCollapsed ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronUp className="w-3.5 h-3.5" />}
         </button>
       </div>
 
       {/* Accordion Region List */}
-      <div className={`transition-all duration-300 ${isCollapsed ? 'hidden' : 'block'}`}>
-        <div className="p-3 sm:p-4 space-y-2.5 max-h-[calc(100vh-16rem)] overflow-y-auto">
+      <div className={`transition-all duration-300 flex-1 overflow-hidden flex flex-col ${isCollapsed ? 'hidden' : 'flex'}`}>
+        <div className="p-3 sm:p-3.5 space-y-2 overflow-y-auto flex-1 scrollbar-thin">
           
-          <p className="text-xs text-ink-600 leading-relaxed font-sans px-1">
+          <p className="text-[11.5px] text-ink-600 leading-relaxed font-sans px-0.5">
             Chọn một vùng sinh thái để phóng to bản đồ và khám phá các loài chim đặc hữu, quý hiếm phân bố tại khu vực đó:
           </p>
 
@@ -123,9 +124,9 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
                   key={region.id}
                   className={`rounded-xl border transition-all duration-200 overflow-hidden ${
                     isExpanded
-                      ? 'bg-paper-50 border-natural-moss/60 shadow-sm'
+                      ? 'bg-paper-50 border-natural-amber/60 shadow-sm'
                       : hasCurrentSpecies
-                      ? 'bg-natural-moss/5 border-natural-moss/30 hover:border-natural-moss/50'
+                      ? 'bg-natural-amber/5 border-natural-amber/30 hover:border-natural-amber/50'
                       : 'bg-paper-200/40 border-paper-border hover:bg-paper-200/70 hover:border-paper-300'
                   }`}
                   data-testid={`eba-region-card-${region.id}`}
@@ -134,16 +135,16 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
                   <button
                     type="button"
                     onClick={() => handleRegionClick(region)}
-                    className="w-full px-3.5 py-2.5 flex items-start justify-between gap-2.5 text-left focus:outline-none focus:bg-paper-200/60 transition-colors"
+                    className="w-full px-3.5 py-2.5 flex items-start justify-between gap-2.5 text-left focus:outline-none focus:bg-paper-200/60 transition-colors cursor-pointer"
                     aria-expanded={isExpanded}
                   >
                     <div className="flex items-start gap-2.5 min-w-0">
                       {/* Region Index Badge */}
                       <span className={`flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-mono font-bold mt-0.5 ${
                         isExpanded
-                          ? 'bg-natural-moss text-paper-50'
+                          ? 'bg-natural-amber text-paper-50'
                           : hasCurrentSpecies
-                          ? 'bg-natural-moss/20 text-natural-moss font-semibold'
+                          ? 'bg-natural-amber/20 text-natural-amber font-semibold'
                           : 'bg-paper-300 text-ink-700'
                       }`}>
                         {index + 1}
@@ -154,6 +155,11 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
                           <h4 className="font-serif font-bold text-sm text-ink-900 leading-snug">
                             {region.vietnameseName}
                           </h4>
+                          {region.code && (
+                            <span className="px-1.5 py-0.2 rounded text-[9.5px] font-mono font-bold uppercase bg-natural-amber/15 text-natural-amber border border-natural-amber/30">
+                              {region.code}
+                            </span>
+                          )}
                           {hasCurrentSpecies && (
                             <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-sans font-medium bg-natural-moss/15 text-natural-forest border border-natural-moss/25">
                               <Sparkles className="w-2.5 h-2.5 text-natural-ochre" />
@@ -174,7 +180,7 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
                       </span>
                       <ChevronDown
                         className={`w-4 h-4 text-ink-400 transform transition-transform duration-200 ${
-                          isExpanded ? 'rotate-180 text-natural-moss' : ''
+                          isExpanded ? 'rotate-180 text-natural-amber' : ''
                         }`}
                       />
                     </div>
@@ -272,8 +278,8 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
                                         {species.vietnameseName}
                                       </p>
                                       {species.isEndemic && (
-                                        <span className="text-[10px] flex-shrink-0 text-natural-ochre">
-                                          ⭐
+                                        <span title="Loài đặc hữu Việt Nam" className="inline-flex items-center flex-shrink-0">
+                                          <Bird className="w-3.5 h-3.5 text-amber-500 fill-amber-400/40" />
                                         </span>
                                       )}
                                     </div>

@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scrollbar-gutter: stable;
+  }
+
   body {
     background-color: #FAF8F5;
     color: #1C1917;
@@ -57,4 +61,53 @@
 
 .animate-fadeIn {
   animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Idle Living CTA Animation for Discovery Button */
+@keyframes shimmerSweep {
+  0%, 70% {
+    transform: translateX(-150%);
+  }
+  85%, 100% {
+    transform: translateX(150%);
+  }
+}
+
+@keyframes diceWobble {
+  0%, 75%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  80% {
+    transform: rotate(-14deg) scale(1.15);
+  }
+  85% {
+    transform: rotate(14deg) scale(1.15);
+  }
+  90% {
+    transform: rotate(-8deg) scale(1.08);
+  }
+  95% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes breathingGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(45, 90, 39, 0.25), 0 2px 4px 0 rgba(28, 25, 23, 0.08);
+  }
+  50% {
+    box-shadow: 0 0 16px 2px rgba(217, 119, 6, 0.35), 0 4px 8px 0 rgba(28, 25, 23, 0.12);
+  }
+}
+
+.animate-shimmer-sweep {
+  animation: shimmerSweep 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-dice-wobble {
+  animation: diceWobble 4.5s ease-in-out infinite;
+}
+
+.animate-breathing-glow {
+  animation: breathingGlow 3.5s ease-in-out infinite;
 }

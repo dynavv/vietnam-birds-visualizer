@@ -111,12 +111,13 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
 
   return (
     <article
-      className={`bg-paper-100/95 backdrop-blur-md border border-paper-border rounded-2xl shadow-natural-lg overflow-hidden transition-all duration-300 max-w-sm lg:max-w-md w-full max-h-[calc(100vh-185px)] flex flex-col ${className}`}
+      key={species.id}
+      className={`bg-paper-100/90 backdrop-blur-xl border border-paper-border/80 rounded-2xl shadow-2xl shadow-ink-900/10 ring-1 ring-black/[0.04] overflow-hidden transition-all duration-300 max-w-sm lg:max-w-md w-full max-h-full flex flex-col animate-in fade-in-50 duration-300 ${className}`}
       data-testid="endemic-focus-card"
       aria-label={`Hồ sơ chi tiết loài ${species.vietnameseName}`}
     >
       {/* Header Bar */}
-      <div className="px-3 pt-2.5 pb-2 sm:px-3.5 flex items-center justify-between border-b border-paper-border/60 bg-paper-200/40 shrink-0">
+      <div className="px-3 py-2 sm:px-3.5 sm:py-2.5 flex items-center justify-between border-b border-paper-border/70 bg-paper-200/50 shrink-0">
         <div className="flex items-center gap-1.5 flex-wrap min-w-0">
           {species.isEndemic && (
             <EndemicBadge size="sm" />
@@ -132,13 +133,13 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
           <button
             type="button"
             onClick={handleRandomClick}
-            aria-label="Đổi loài ngẫu nhiên"
-            title="Đổi loài ngẫu nhiên (Random Species)"
-            className="p-1 rounded-lg bg-paper-100 hover:bg-natural-moss/15 text-ink-700 hover:text-natural-moss border border-paper-border transition-all"
+            aria-label="Đổi loài ngẫu nhiên (R)"
+            title="Đổi loài ngẫu nhiên (Phím tắt: R)"
+            className="w-7 h-7 flex items-center justify-center rounded-lg bg-paper-100 hover:bg-natural-amber/20 text-ink-700 hover:text-natural-amber border border-paper-border/80 transition-all cursor-pointer shadow-2xs"
           >
             <Dices
               className={`w-3.5 h-3.5 transition-transform duration-500 ${
-                diceRolling ? 'rotate-180 scale-110 text-natural-moss' : ''
+                diceRolling ? 'rotate-180 scale-110 text-natural-amber' : ''
               }`}
             />
           </button>
@@ -148,7 +149,7 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
             onClick={toggleCollapse}
             aria-label={isCollapsed ? 'Mở rộng thẻ thông tin' : 'Thu gọn thẻ thông tin'}
             title={isCollapsed ? 'Mở rộng' : 'Thu gọn'}
-            className="p-1 rounded-lg bg-paper-100 hover:bg-paper-200 text-ink-600 border border-paper-border transition-all"
+            className="w-7 h-7 flex items-center justify-center rounded-lg bg-paper-100 hover:bg-paper-300/70 text-ink-600 border border-paper-border/80 transition-all flex-shrink-0 cursor-pointer shadow-2xs"
           >
             {isCollapsed ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronUp className="w-3.5 h-3.5" />}
           </button>
@@ -157,52 +158,91 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
 
       {/* Main Content (collapsible on mobile/toggle) */}
       <div className={`transition-all duration-300 flex-1 min-h-0 ${isCollapsed ? 'hidden' : 'flex flex-col overflow-hidden'}`}>
-        <div className="p-3 sm:p-3.5 space-y-2.5 flex-1 overflow-y-auto pr-1.5">
+        <div className="p-3 sm:p-3.5 space-y-2.5 flex-1 overflow-y-auto pr-1.5 scrollbar-thin">
           
-          {/* Classic Naturalist Artwork Plate Frame */}
-          <div className="relative group rounded-xl overflow-hidden border-2 border-paper-300 bg-paper-200/50 p-1 shadow-inner shrink-0">
+          {/* Frameless Modern Artwork Plate Frame — Clickable to open Curator Guide */}
+          <div
+            onClick={handleSwitchToCurator}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleSwitchToCurator();
+              }
+            }}
+            title={`Nhấp để mở Cẩm nang nhận dạng chi tiết của loài ${species.vietnameseName}`}
+            aria-label={`Nhấp để xem hồ sơ cẩm nang loài ${species.vietnameseName}`}
+            className="relative group rounded-xl overflow-hidden border border-paper-border hover:border-natural-moss/60 bg-paper-200/40 p-1 shadow-inner shrink-0 ring-1 ring-black/[0.03] cursor-pointer transition-all duration-300 active:scale-[0.99]"
+            data-testid="specimen-plate-clickable"
+          >
             <BirdPlateImage
               species={species}
               aspectRatio="cover"
-              className="w-full aspect-[16/10] min-h-[175px] max-h-[225px] rounded-lg"
+              className="w-full aspect-[16/10] min-h-[145px] max-h-[180px] rounded-lg"
               imageClassName="group-hover:scale-105 transition-transform duration-500"
             />
 
+            {/* Hover overlay hint */}
+            <div className="absolute top-2.5 right-2.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black/60 backdrop-blur-sm text-paper-50 text-[10.5px] font-sans font-medium px-2 py-0.5 rounded-full shadow-md pointer-events-none flex items-center gap-1">
+              <span>Mở Cẩm nang</span>
+              <span>›</span>
+            </div>
+
             {/* Naturalist Plate Caption */}
-            <div className="pt-2 px-1 text-center border-t border-paper-border/50 mt-1">
-              <p className="text-[11px] text-ink-600 font-serif italic truncate">
-                {species.illustration.artist || 'Naturalist Archives of Indochina'}
+            <div className="pt-1.5 px-1 text-center border-t border-paper-border/40 mt-1">
+              <p className="text-[10.5px] text-ink-500 font-serif italic truncate">
+                {species.illustration.artist || 'iNaturalist & Wildlife Photographers'}
                 {species.illustration.sourceBook ? ` — ${species.illustration.sourceBook}` : ''}
               </p>
             </div>
           </div>
 
-          {/* Trilingual Species Title & Taxonomy */}
+          {/* Trilingual Species Title & Taxonomy — Clickable to open Curator Guide */}
           <div className="space-y-1">
-            <div className="flex items-baseline justify-between gap-2 flex-wrap">
-              <h2 className="font-serif text-2xl font-bold text-ink-900 leading-tight tracking-tight">
-                {species.vietnameseName}
-              </h2>
-            </div>
-            
-            <div className="flex items-center gap-2 flex-wrap">
-              <p className="font-serif italic text-sm sm:text-base font-semibold text-natural-forest">
-                {species.scientificName}
-              </p>
-              <span className="text-ink-400 text-xs">•</span>
-              <p className="font-sans text-xs sm:text-sm text-ink-600">
-                {species.englishName}
-              </p>
+            <div
+              onClick={handleSwitchToCurator}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  handleSwitchToCurator();
+                }
+              }}
+              title={`Nhấp để mở Cẩm nang nhận dạng loài ${species.vietnameseName}`}
+              aria-label={`Nhấp để mở Cẩm nang nhận dạng loài ${species.vietnameseName}`}
+              className="group cursor-pointer text-left block focus:outline-none"
+              data-testid="species-name-clickable"
+            >
+              <div className="flex items-baseline justify-between gap-2 flex-wrap">
+                <h2 className="font-serif text-2xl font-bold text-ink-900 group-hover:text-natural-forest transition-colors leading-tight tracking-tight flex items-center gap-1.5">
+                  <span>{species.vietnameseName}</span>
+                  <span className="text-xs text-natural-moss opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all">
+                    ›
+                  </span>
+                </h2>
+              </div>
+              
+              <div className="flex items-center gap-2 flex-wrap pt-0.5">
+                <p className="font-serif italic text-sm sm:text-base font-semibold text-natural-forest group-hover:underline decoration-natural-forest/40 underline-offset-2">
+                  {species.scientificName}
+                </p>
+                <span className="text-ink-400 text-xs">•</span>
+                <p className="font-sans text-xs sm:text-sm text-ink-600">
+                  {species.englishName}
+                </p>
+              </div>
             </div>
 
             {/* Taxonomy Hierarchy Summary */}
             <div className="pt-1 flex items-center gap-1.5 text-xs text-ink-500 font-sans">
               <span className="inline-block px-2 py-0.5 bg-paper-200/80 rounded border border-paper-border font-medium text-[11px] text-ink-700">
-                Bộ {species.taxonomy.orderVietnamese || species.taxonomy.order}
+                {species.taxonomy.orderVietnamese || `Bộ ${species.taxonomy.order}`}
               </span>
               <span className="text-ink-400">›</span>
               <span className="inline-block px-2 py-0.5 bg-paper-200/80 rounded border border-paper-border font-medium text-[11px] text-ink-700">
-                Họ {species.taxonomy.familyVietnamese || species.taxonomy.family}
+                {species.taxonomy.familyVietnamese || `Họ ${species.taxonomy.family}`}
               </span>
             </div>
           </div>
@@ -220,7 +260,7 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
 
           {/* Morphological Overview Note Box */}
           {species.morphologicalAnalysis?.overview && (
-            <div className="bg-paper-50 border border-paper-border rounded-xl p-3 text-xs text-ink-700 shadow-paper-card relative">
+            <div className="bg-paper-50/80 border-l-2 border-natural-ochre border-y border-r border-paper-border/60 rounded-xl p-3 text-xs text-ink-700 shadow-2xs relative">
               <div className="flex items-start gap-2">
                 <Info className="w-3.5 h-3.5 text-natural-moss mt-0.5 flex-shrink-0" />
                 <p className="leading-relaxed font-sans text-ink-800 italic">
@@ -231,11 +271,11 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
           )}
 
           {/* Habitat, Elevation & Distribution Matrix */}
-          <div className="bg-paper-200/50 rounded-xl p-3.5 border border-paper-border space-y-2.5 text-xs">
+          <div className="bg-paper-200/40 rounded-xl p-3 border border-paper-border/70 space-y-2 text-xs">
             <div className="flex items-center gap-2 text-ink-800">
               <Mountain className="w-3.5 h-3.5 text-natural-bark flex-shrink-0" />
               <span className="font-semibold text-ink-700">Độ cao sinh sống:</span>
-              <span className="font-mono text-ink-900 bg-paper-100 px-1.5 py-0.2 rounded border border-paper-border">
+              <span className="font-mono text-ink-900 bg-paper-100/90 px-1.5 py-0.2 rounded border border-paper-border text-[11px]">
                 {species.distribution.elevation || 'Chưa ghi nhận'}
               </span>
             </div>
@@ -260,11 +300,11 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
 
             {/* Habitats Tags */}
             {species.distribution.habitats && species.distribution.habitats.length > 0 && (
-              <div className="pt-1.5 flex flex-wrap gap-1">
+              <div className="pt-1 flex flex-wrap gap-1">
                 {species.distribution.habitats.map((habitat, idx) => (
                   <span
                     key={idx}
-                    className="inline-block px-2 py-0.5 bg-paper-100 text-[11px] text-ink-700 rounded-md border border-paper-border"
+                    className="inline-block px-2 py-0.5 bg-paper-100/90 text-[10.5px] text-ink-700 rounded-md border border-paper-border/80"
                   >
                     {habitat}
                   </span>
@@ -274,29 +314,29 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
           </div>
 
           {/* Action Navigation Buttons */}
-          <div className="pt-1 space-y-2">
+          <div className="pt-0.5 space-y-1.5">
             <button
               type="button"
               onClick={handleSwitchToSunburst}
-              className="w-full group flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-paper-200/80 hover:bg-natural-moss hover:text-paper-50 text-ink-900 border border-paper-border hover:border-natural-moss transition-all text-xs font-semibold shadow-sm"
+              className="w-full group flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-paper-200/70 hover:bg-natural-moss hover:text-paper-50 text-ink-900 border border-paper-border/80 hover:border-natural-moss transition-all text-xs font-semibold shadow-2xs cursor-pointer active:scale-[0.99]"
             >
               <div className="flex items-center gap-2">
                 <TreePine className="w-4 h-4 text-natural-moss group-hover:text-paper-50 transition-colors" />
-                <span>🌐 Khám phá trên Bánh xe Phân loại học</span>
+                <span>Khám phá trên Cây Phả hệ</span>
               </div>
-              <ChevronRight className="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform" />
+              <ChevronRight className="w-3.5 h-3.5 transform group-hover:translate-x-0.5 transition-transform opacity-70 group-hover:opacity-100" />
             </button>
 
             <button
               type="button"
               onClick={handleSwitchToCurator}
-              className="w-full group flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-paper-200/80 hover:bg-natural-moss hover:text-paper-50 text-ink-900 border border-paper-border hover:border-natural-moss transition-all text-xs font-semibold shadow-sm"
+              className="w-full group flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-paper-200/70 hover:bg-natural-forest hover:text-paper-50 text-ink-900 border border-paper-border/80 hover:border-natural-forest transition-all text-xs font-semibold shadow-2xs cursor-pointer active:scale-[0.99]"
             >
               <div className="flex items-center gap-2">
                 <Feather className="w-4 h-4 text-natural-terracotta group-hover:text-paper-50 transition-colors" />
-                <span>📜 Xem phân tích hình thái học</span>
+                <span>Mở Cẩm nang Nhận dạng</span>
               </div>
-              <ChevronRight className="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform" />
+              <ChevronRight className="w-3.5 h-3.5 transform group-hover:translate-x-0.5 transition-transform opacity-70 group-hover:opacity-100" />
             </button>
           </div>
 

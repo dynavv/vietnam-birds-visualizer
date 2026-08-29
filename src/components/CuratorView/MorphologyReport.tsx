@@ -181,13 +181,10 @@ export const MorphologyReportComponent: React.FC<MorphologyReportProps> = ({
             <Sparkles className="w-3.5 h-3.5 text-natural-ochre" />
             <span>2. Bảng Đặc Điểm Nhận Dạng Then Chốt (Diagnostic Features)</span>
           </h4>
-          <span className="text-[11px] font-mono text-ink-500">
-            {diagnosticFeatures.length} đặc điểm ghi nhận
-          </span>
         </div>
 
         {diagnosticFeatures.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div className="space-y-2.5">
             {diagnosticFeatures.map((feat, idx) => {
               const meta = getAnatomicalMeta(feat.part, feat.description);
               const IconComp = meta.icon;
@@ -195,40 +192,29 @@ export const MorphologyReportComponent: React.FC<MorphologyReportProps> = ({
               return (
                 <div
                   key={idx}
-                  className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-200 hover:shadow-md space-y-2 flex flex-col justify-between ${meta.colorClass}`}
+                  className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-200 hover:shadow-xs flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 ${meta.colorClass}`}
                   data-testid="diagnostic-feature-card"
                 >
-                  <div className="space-y-1.5">
-                    {/* Anatomical Region Header */}
-                    <div className="flex items-center justify-between gap-2">
-                      <span
-                        className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase border ${meta.badgeClass}`}
-                      >
-                        <IconComp className="w-3 h-3" />
-                        <span>{meta.categoryNameVi}</span>
-                      </span>
+                  {/* Anatomical Region Header (Vertically Centered) */}
+                  <div className="shrink-0 sm:w-48 flex items-center">
+                    <span
+                      className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-[11px] font-mono font-bold uppercase border tracking-wide leading-snug w-full justify-start ${meta.badgeClass}`}
+                    >
+                      <IconComp className="w-3.5 h-3.5 shrink-0" />
+                      <span>{meta.categoryNameVi}</span>
+                    </span>
+                  </div>
 
-                      <span className="text-[10px] font-mono text-ink-400">
-                        KEY #{idx + 1}
-                      </span>
-                    </div>
-
-                    {/* Part Title */}
+                  {/* Content: Title + Description */}
+                  <div className="min-w-0 flex-1 space-y-1">
                     <h5 className="font-serif font-bold text-sm text-ink-900 flex items-center gap-1.5">
-                      <span className="w-2 h-2 rounded-full bg-natural-forest" />
+                      <span className="w-2 h-2 rounded-full bg-natural-forest shrink-0" />
                       {feat.part}
                     </h5>
 
-                    {/* Description */}
                     <p className="text-xs text-ink-700 leading-relaxed font-sans pl-3.5">
                       {feat.description}
                     </p>
-                  </div>
-
-                  {/* Diagnostic Field Mark Marker */}
-                  <div className="pt-2 border-t border-paper-border/50 text-[10px] font-mono text-ink-500 flex items-center justify-between">
-                    <span>DẤU HIỆU THỰC ĐỊA</span>
-                    <span className="text-natural-forest font-semibold">Độ tin cậy 100%</span>
                   </div>
                 </div>
               );

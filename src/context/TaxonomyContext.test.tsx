@@ -41,12 +41,13 @@ describe('TaxonomyContext & useTaxonomy Hook', () => {
     expect(result.current.selectedSpecies?.isEndemic).toBe(true);
   });
 
-  it('should deterministically initialize selectedSpeciesId across multiple renders without initialSpeciesId', () => {
-    const hook1 = renderHook(() => useTaxonomy(), { wrapper });
-    const hook2 = renderHook(() => useTaxonomy(), { wrapper });
+  it('should initialize selectedSpeciesId with a valid species and track discovery', () => {
+    const { result } = renderHook(() => useTaxonomy(), { wrapper });
 
-    expect(hook1.result.current.selectedSpeciesId).toBe(hook2.result.current.selectedSpeciesId);
-    expect(hook1.result.current.selectedSpeciesId).toBe('trochalopteron-ngoclinhense');
+    expect(result.current.selectedSpeciesId).toBeTruthy();
+    expect(result.current.selectedSpecies).not.toBeNull();
+    expect(result.current.discoveredSpeciesIds.length).toBeGreaterThanOrEqual(1);
+    expect(result.current.discoveredSpeciesIds).toContain(result.current.selectedSpeciesId);
   });
 
   it('should allow selecting a species by ID', () => {

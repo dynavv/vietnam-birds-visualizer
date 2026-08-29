@@ -6,7 +6,6 @@ import {
   Compass,
   Layers,
   Trees,
-  MapPin,
   Plus,
   Minus,
   ChevronRight
@@ -20,13 +19,13 @@ import { EBARegionLegend } from './EBARegionLegend';
 // Center, zoom and bounds defaults for Vietnam overview
 const VIETNAM_CENTER: [number, number] = [16.0, 107.5];
 const VIETNAM_DEFAULT_ZOOM = 6;
-const VIETNAM_MIN_ZOOM = 6; // Zoom out tối đa vừa vặn toàn cảnh Việt Nam (theo ảnh)
-const VIETNAM_MAX_ZOOM = 16; // Giữ nguyên độ zoom in chi tiết
+const VIETNAM_MIN_ZOOM = 6; // Zoom out toàn cảnh Việt Nam
+const VIETNAM_MAX_ZOOM = 13; // Zoom in cấp độ sinh cảnh vùng/khu bảo tồn (tránh hiểu lầm tọa độ)
 
-// Giới hạn phạm vi kéo bản đồ quanh Việt Nam và Biển Đông
+// Phạm vi kéo mở rộng thoải mái cho toàn bộ vùng Tây Bắc, Đông Bắc, Biển Đông và Tây Nam Bộ
 const VIETNAM_MAX_BOUNDS: [[number, number], [number, number]] = [
-  [4.0, 97.0],  // Tây Nam (Bao gồm vịnh Thái Lan, Cà Mau, Trường Sa)
-  [26.5, 118.0] // Đông Bắc (Bao gồm Hà Giang, Hoàng Sa, Vịnh Bắc Bộ)
+  [4.0, 96.0], // Tây Nam (Vịnh Thái Lan, Cà Mau, Biển Tây)
+  [27.0, 122.0] // Đông Bắc (Điện Biên, Fansipan, Hà Giang, Hoàng Sa, Trường Sa)
 ];
 
 // Sovereign maritime territories of Vietnam
@@ -106,10 +105,28 @@ const getSelectedSpeciesDivIcon = (species: BirdSpecies) => {
       className: 'custom-species-selected-marker',
       html: `
         <div class="relative flex items-center justify-center">
-          <span class="absolute -inset-2.5 rounded-full bg-natural-ochre/40 animate-ping"></span>
-          <span class="absolute -inset-1 rounded-full bg-natural-ochre/30"></span>
-          <div class="relative w-10 h-10 rounded-full bg-natural-ochre border-2 border-paper-50 shadow-natural-lg flex items-center justify-center text-paper-50 text-base transform hover:scale-110 transition-transform">
-            ${species.isEndemic ? '⭐' : '🪶'}
+          <span class="absolute -inset-2.5 rounded-full ${species.isEndemic ? 'bg-amber-400/40' : 'bg-natural-moss/40'} animate-ping"></span>
+          <span class="absolute -inset-1 rounded-full ${species.isEndemic ? 'bg-amber-400/30' : 'bg-natural-moss/30'}"></span>
+          <div class="relative w-10 h-10 rounded-full ${
+            species.isEndemic
+              ? 'bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 ring-2 ring-amber-300'
+              : 'bg-gradient-to-br from-natural-moss to-natural-forest ring-2 ring-natural-moss/50'
+          } border-2 border-paper-50 shadow-natural-lg flex items-center justify-center text-paper-50 transform hover:scale-110 transition-transform">
+            ${
+              species.isEndemic
+                ? `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-white drop-shadow-sm">
+                    <path d="M16 7h.01"/>
+                    <path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 18z"/>
+                    <path d="m2 18 7-7"/>
+                    <path d="m5 18 5-5"/>
+                    <path d="m8 18 3-3"/>
+                  </svg>`
+                : `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="transform -rotate-12">
+                    <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
+                    <line x1="16" y1="8" x2="2" y2="22"/>
+                    <line x1="17.5" y1="15" x2="9" y2="15"/>
+                  </svg>`
+            }
           </div>
         </div>
       `,
@@ -131,9 +148,20 @@ const getSpeciesDivIcon = (species: BirdSpecies) => {
       className: 'custom-species-marker',
       html: `
         <div class="w-6 h-6 rounded-full ${
-          species.isEndemic ? 'bg-natural-terracotta ring-1 ring-natural-ochre' : 'bg-natural-forest'
-        } border-2 border-paper-50 shadow-md flex items-center justify-center text-paper-50 text-[10px] transform hover:scale-125 transition-transform cursor-pointer">
-          ${species.isEndemic ? '★' : '•'}
+          species.isEndemic ? 'bg-gradient-to-br from-amber-400 to-amber-600 ring-1.5 ring-amber-300' : 'bg-natural-forest'
+        } border-2 border-paper-50 shadow-md flex items-center justify-center text-paper-50 transform hover:scale-125 transition-transform cursor-pointer">
+          ${
+            species.isEndemic
+              ? `<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 7h.01"/>
+                  <path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 18z"/>
+                </svg>`
+              : `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform -rotate-12">
+                  <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
+                  <line x1="16" y1="8" x2="2" y2="22"/>
+                  <line x1="17.5" y1="15" x2="9" y2="15"/>
+                </svg>`
+          }
         </div>
       `,
       iconSize: [24, 24],
@@ -244,7 +272,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
   const [selectedEBARegionId, setSelectedEBARegionId] = useState<string | null>(null);
   const [showEBACircles, setShowEBACircles] = useState<boolean>(true);
   const [showAllSpeciesPins, setShowAllSpeciesPins] = useState<boolean>(true);
-  const [showNationalBoundary, setShowNationalBoundary] = useState<boolean>(true);
+  const showNationalBoundary = true;
   const [flyTarget, setFlyTarget] = useState<{
     coordinates: [number, number];
     zoom: number;
@@ -299,15 +327,16 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         minZoom={VIETNAM_MIN_ZOOM}
         maxZoom={VIETNAM_MAX_ZOOM}
         maxBounds={VIETNAM_MAX_BOUNDS}
-        maxBoundsViscosity={0.85}
+        maxBoundsViscosity={0.2}
         scrollWheelZoom={true}
+        zoomControl={false}
         className="w-full h-full z-0"
         style={{ height: '100%', width: '100%', background: '#FAF8F5' }}
       >
-        {/* CartoDB Voyager TileLayer with authorized API key */}
+        {/* CartoDB Voyager TileLayer with authorized API key from environment */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=cb1_2fry_1_3e9fcd71ed08a90121c82244"
+          url={`https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=${import.meta.env.VITE_CARTO_API_KEY || 'cb1_2fry_1_3e9fcd71ed08a90121c82244'}`}
           subdomains={['a', 'b', 'c', 'd']}
         />
 
@@ -352,10 +381,10 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
                   center={region.coordinates}
                   radius={region.radiusMeters || 50000}
                   pathOptions={{
-                    color: isSelected ? '#C2593F' : '#2D5A27',
-                    fillColor: isSelected ? '#C2593F' : '#2D5A27',
-                    fillOpacity: isSelected ? 0.15 : 0.06,
-                    weight: isSelected ? 2.5 : 1.8,
+                    color: isSelected ? '#D97706' : '#2D5A27',
+                    fillColor: isSelected ? '#F59E0B' : '#2D5A27',
+                    fillOpacity: isSelected ? 0.09 : 0.05,
+                    weight: isSelected ? 2.2 : 1.6,
                     dashArray: isSelected ? undefined : '6, 6'
                   }}
                   eventHandlers={{
@@ -501,16 +530,16 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         )}
       </MapContainer>
 
-      {/* Floating Left Panel: EBA Region Legend (Desktop & Tablet: md:block) */}
-      <div className="hidden md:block absolute top-4 left-4 z-10 max-w-xs lg:max-w-sm pointer-events-auto">
+      {/* Floating Left Panel: EBA Region Legend (Desktop & Tablet: md:flex) */}
+      <div className="hidden md:flex flex-col absolute top-3 left-3 bottom-14 max-h-[calc(100%-56px)] z-10 w-80 lg:w-[360px] pointer-events-auto">
         <EBARegionLegend
           selectedRegionId={selectedEBARegionId}
           onSelectRegion={handleSelectRegion}
         />
       </div>
 
-      {/* Floating Right Panel: Endemic Focus Card (Desktop & Tablet: md:block) */}
-      <div className="hidden md:block absolute top-4 right-4 z-10 max-w-xs lg:max-w-md pointer-events-auto">
+      {/* Floating Right Panel: Endemic Focus Card (Desktop & Tablet: md:flex) */}
+      <div className="hidden md:flex flex-col absolute top-3 right-3 bottom-14 max-h-[calc(100%-56px)] z-10 w-80 lg:w-[360px] pointer-events-auto">
         <EndemicFocusCard />
       </div>
 
@@ -532,19 +561,19 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
       </div>
 
       {/* Bottom Controls Bar (Map Tools & Mobile Tabs) */}
-      <div className="absolute bottom-4 left-4 right-4 z-10 flex items-center justify-between gap-2 pointer-events-none">
+      <div className="absolute bottom-2.5 left-3 right-3 z-10 flex items-center justify-between gap-2 pointer-events-none">
         
-        {/* Left Map Controls */}
-        <div className="flex items-center gap-2 pointer-events-auto bg-paper-100/90 backdrop-blur-md p-1.5 rounded-xl border border-paper-border shadow-paper-card">
+        {/* Left Map Controls: Low profile and ultra-compact */}
+        <div className="flex items-center gap-1.5 pointer-events-auto bg-paper-100/95 backdrop-blur-md p-1 rounded-xl border border-paper-border shadow-paper-card text-xs">
           <button
             type="button"
             onClick={handleResetOverview}
             title="Toàn cảnh Việt Nam"
-            aria-label="Toàn cảnh Việt Nam"
-            className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-paper-200/80 hover:bg-natural-moss hover:text-paper-50 text-ink-800 text-xs font-semibold transition-all border border-paper-border"
+            aria-label="Toàn cảnh"
+            className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-paper-200/80 hover:bg-natural-moss hover:text-paper-50 text-ink-800 text-xs font-semibold transition-all border border-paper-border cursor-pointer shadow-2xs"
           >
             <Compass className="w-3.5 h-3.5 text-natural-moss" />
-            <span className="hidden sm:inline">Toàn cảnh VN</span>
+            <span>Toàn cảnh</span>
           </button>
 
           <button
@@ -552,7 +581,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
             onClick={() => setShowEBACircles(prev => !prev)}
             title={showEBACircles ? 'Ẩn vùng EBA' : 'Hiện vùng EBA'}
             aria-label={showEBACircles ? 'Ẩn vùng EBA' : 'Hiện vùng EBA'}
-            className={`p-1.5 rounded-lg border text-xs transition-all ${
+            className={`p-1.5 rounded-lg border text-xs transition-all cursor-pointer ${
               showEBACircles
                 ? 'bg-natural-moss/10 text-natural-forest border-natural-moss/30 font-semibold'
                 : 'bg-paper-200/60 text-ink-500 border-paper-border'
@@ -566,28 +595,13 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
             onClick={() => setShowAllSpeciesPins(prev => !prev)}
             title={showAllSpeciesPins ? 'Ẩn các điểm loài' : 'Hiện tất cả điểm loài'}
             aria-label={showAllSpeciesPins ? 'Ẩn các điểm loài' : 'Hiện tất cả điểm loài'}
-            className={`p-1.5 rounded-lg border text-xs transition-all ${
+            className={`p-1.5 rounded-lg border text-xs transition-all cursor-pointer ${
               showAllSpeciesPins
                 ? 'bg-natural-moss/10 text-natural-forest border-natural-moss/30 font-semibold'
                 : 'bg-paper-200/60 text-ink-500 border-paper-border'
             }`}
           >
             <Trees className="w-3.5 h-3.5" />
-          </button>
-
-          <button
-            type="button"
-            onClick={() => setShowNationalBoundary(prev => !prev)}
-            title={showNationalBoundary ? 'Ẩn ranh giới VN' : 'Hiện ranh giới VN'}
-            aria-label={showNationalBoundary ? 'Ẩn ranh giới VN' : 'Hiện ranh giới VN'}
-            className={`p-1.5 rounded-lg border text-xs transition-all flex items-center gap-1 ${
-              showNationalBoundary
-                ? 'bg-natural-moss/10 text-natural-forest border-natural-moss/30 font-semibold'
-                : 'bg-paper-200/60 text-ink-500 border-paper-border'
-            }`}
-          >
-            <MapPin className="w-3.5 h-3.5" />
-            <span className="hidden lg:inline">Ranh giới VN</span>
           </button>
         </div>
 

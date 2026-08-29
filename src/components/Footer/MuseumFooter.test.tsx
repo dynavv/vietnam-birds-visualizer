@@ -1,37 +1,36 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, within } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { MuseumFooter } from './MuseumFooter';
 
 describe('MuseumFooter Component', () => {
-  it('renders collapsed footer initially with expand button', () => {
+  it('renders flat minimalist non-profit footer bar with copyright and 3 links', () => {
     render(<MuseumFooter />);
     expect(screen.getByTestId('museum-footer')).toBeDefined();
     expect(screen.getByText(/Avifauna of Vietnam/)).toBeDefined();
-    expect(screen.getByText(/Phương pháp luận & Nguồn Dữ liệu/)).toBeDefined();
+    expect(screen.getByText(/Dự án Giáo dục & Lưu trữ Số/)).toBeDefined();
+
+    expect(screen.getByText('Giới thiệu')).toBeDefined();
+    expect(screen.getByText('Nguồn dữ liệu & Danh pháp')).toBeDefined();
+    expect(screen.getByText('Bản quyền & Tuyên bố')).toBeDefined();
   });
 
-  it('expands to reveal 3 grouped academic cards when clicked', () => {
+  it('opens methodology modal when clicking footer links', () => {
     render(<MuseumFooter />);
-    const toggleBtn = screen.getByRole('button', { name: /Mở rộng xem phương pháp luận/i });
-    fireEvent.click(toggleBtn);
+    const aboutBtn = screen.getByRole('button', { name: /Giới thiệu/i });
+    fireEvent.click(aboutBtn);
 
-    expect(screen.getByText(/1. Hệ Thống Phân Loại & Danh Pháp/)).toBeDefined();
-    expect(screen.getByText(/2. Vùng Sinh Thái & Bảo Tồn/)).toBeDefined();
-    expect(screen.getByText(/3. Bản Quyền & Tư Liệu Mở/)).toBeDefined();
-    expect(screen.getByText(/IOC World Bird List/)).toBeDefined();
-    expect(screen.getByText(/BirdLife International/)).toBeDefined();
-    expect(screen.getByText(/Xeno-canto Foundation/)).toBeDefined();
-  });
+    const modal = screen.getByTestId('methodology-modal');
+    expect(modal).toBeDefined();
+    expect(within(modal).getByText(/Sứ Mệnh Giáo Dục & Tôn Vinh Thiên Nhiên Việt Nam/i)).toBeDefined();
 
-  it('collapses when clicking the collapse button', () => {
-    render(<MuseumFooter />);
-    const toggleBtn = screen.getByRole('button', { name: /Mở rộng xem phương pháp luận/i });
-    fireEvent.click(toggleBtn);
+    // Switch to data tab inside modal
+    const dataTabBtn = within(modal).getByRole('button', { name: /Nguồn Dữ Liệu & Danh Pháp/i });
+    fireEvent.click(dataTabBtn);
+    expect(within(modal).getByText(/Tiêu Chuẩn Phân Loại Học/i)).toBeDefined();
 
-    const collapseBtns = screen.getAllByRole('button', { name: /Thu gọn/i });
-    expect(collapseBtns.length).toBeGreaterThan(0);
-    fireEvent.click(collapseBtns[0]);
-
-    expect(screen.getByText(/Phương pháp luận & Nguồn Dữ liệu/)).toBeDefined();
+    // Close modal
+    const closeBtns = within(modal).getAllByRole('button', { name: /Đóng cửa sổ/i });
+    fireEvent.click(closeBtns[0]);
+    expect(screen.queryByTestId('methodology-modal')).toBeNull();
   });
 });

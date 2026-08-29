@@ -116,13 +116,21 @@ describe('EndemicFocusCard Component', () => {
       </TaxonomyProvider>
     );
 
-    const sunburstBtn = screen.getByText(/Khám phá trên Bánh xe Phân loại học/i);
+    const sunburstBtn = screen.getByText(/Khám phá trên Cây Phả hệ/i);
     fireEvent.click(sunburstBtn);
     expect(handleSunburst).toHaveBeenCalledTimes(1);
 
-    const curatorBtn = screen.getByText(/Xem phân tích hình thái học/i);
+    const curatorBtn = screen.getByText(/Mở Cẩm nang Nhận dạng/i);
     fireEvent.click(curatorBtn);
     expect(handleCurator).toHaveBeenCalledTimes(1);
+
+    const plateClickable = screen.getByTestId('specimen-plate-clickable');
+    fireEvent.click(plateClickable);
+    expect(handleCurator).toHaveBeenCalledTimes(2);
+
+    const nameClickable = screen.getByTestId('species-name-clickable');
+    fireEvent.click(nameClickable);
+    expect(handleCurator).toHaveBeenCalledTimes(3);
   });
 
   it('calls random callback when clicking random dice button', () => {

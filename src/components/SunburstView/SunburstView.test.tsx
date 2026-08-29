@@ -4,15 +4,15 @@ import { SunburstView } from './SunburstView';
 import { TaxonomyProvider } from '../../context/TaxonomyContext';
 
 describe('SunburstView Component Dual-Mode', () => {
-  it('renders dual-mode switchers and defaults to Radial Fan (Bánh xe) mode', () => {
+  it('renders dual-mode switchers and defaults to Radial Fan (Phả hệ vòng) mode', () => {
     render(
       <TaxonomyProvider>
         <SunburstView />
       </TaxonomyProvider>
     );
 
-    expect(screen.getByText('Bánh Xe Rẻ Quạt')).toBeDefined();
-    expect(screen.getByText('Cây Phân Nhánh')).toBeDefined();
+    expect(screen.getByText('Phả Hệ Vòng Tròn')).toBeDefined();
+    expect(screen.getByText('Phả Hệ Phân Nhánh')).toBeDefined();
     expect(screen.getByTestId('sunburst-wheel-container')).toBeDefined();
   });
 
@@ -23,12 +23,12 @@ describe('SunburstView Component Dual-Mode', () => {
       </TaxonomyProvider>
     );
 
-    const treeBtn = screen.getByText('Cây Phân Nhánh');
+    const treeBtn = screen.getByText('Phả Hệ Phân Nhánh');
     fireEvent.click(treeBtn);
 
     expect(screen.getByTestId('cladogram-tree-view')).toBeDefined();
 
-    const radialBtn = screen.getByText('Bánh Xe Rẻ Quạt');
+    const radialBtn = screen.getByText('Phả Hệ Vòng Tròn');
     fireEvent.click(radialBtn);
 
     expect(screen.getByTestId('sunburst-wheel-container')).toBeDefined();

@@ -98,15 +98,15 @@ export const SunburstView: React.FC<SunburstViewProps> = ({
                 role="radio"
                 aria-checked={chartMode === 'radial'}
                 onClick={() => setChartMode('radial')}
-                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-lg transition-all ${
+                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-lg transition-all cursor-pointer ${
                   chartMode === 'radial'
                     ? 'bg-paper-50 text-natural-forest font-bold shadow-sm border border-paper-border/80'
                     : 'text-ink-600 hover:text-ink-900'
                 }`}
-                title="Xem dạng Bánh Xe Rẻ Quạt (Radial Fan / Sunburst)"
+                title="Xem dạng Phả Hệ Vòng Tròn (Radial Sunburst)"
               >
                 <CircleDot className="w-3.5 h-3.5" />
-                <span>Bánh Xe Rẻ Quạt</span>
+                <span>Phả Hệ Vòng Tròn</span>
               </button>
 
               <button
@@ -114,15 +114,15 @@ export const SunburstView: React.FC<SunburstViewProps> = ({
                 role="radio"
                 aria-checked={chartMode === 'tree'}
                 onClick={() => setChartMode('tree')}
-                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-lg transition-all ${
+                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-lg transition-all cursor-pointer ${
                   chartMode === 'tree'
                     ? 'bg-paper-50 text-natural-forest font-bold shadow-sm border border-paper-border/80'
                     : 'text-ink-600 hover:text-ink-900'
                 }`}
-                title="Xem dạng Cây Phân Nhánh Ngang (Collapsible Tree)"
+                title="Xem dạng Phả Hệ Phân Nhánh (Cladogram Tree)"
               >
                 <GitBranch className="w-3.5 h-3.5" />
-                <span>Cây Phân Nhánh</span>
+                <span>Phả Hệ Phân Nhánh</span>
               </button>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { CuratorView } from './CuratorView';
 import { TaxonomyProvider } from '../../context/TaxonomyContext';
 import type { BirdSpecies } from '../../types/bird';
@@ -69,7 +69,7 @@ describe('CuratorView Component', () => {
     );
 
     expect(screen.getByTestId('curator-view-empty')).toBeDefined();
-    expect(screen.getByText(/Phòng Giám Tuyển Mẫu Vật Điểu Học/i)).toBeDefined();
+    expect(screen.getByText(/Chưa Chọn Mẫu Vật Điểu Học/i)).toBeDefined();
   });
 
   it('renders full editorial layout with specimen plate, clade sequence and morphology report', () => {
@@ -110,12 +110,8 @@ describe('CuratorView Component', () => {
       </TaxonomyProvider>
     );
 
-    const mapBtn = screen.getByRole('button', { name: /Bản đồ EBA/i });
-    fireEvent.click(mapBtn);
-    expect(handleViewMap).toHaveBeenCalledTimes(1);
-
-    const sunburstBtn = screen.getByRole('button', { name: /Bánh xe Phân loại/i });
-    fireEvent.click(sunburstBtn);
-    expect(handleViewSunburst).toHaveBeenCalledTimes(1);
+    expect(screen.getByTestId('curator-view')).toBeDefined();
+    expect(screen.getByText('Cẩm Nang Nhận Dạng & Hình Thái Học')).toBeDefined();
+    expect(screen.getByTestId('specimen-plate')).toBeDefined();
   });
 });

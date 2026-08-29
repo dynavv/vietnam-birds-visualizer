@@ -196,7 +196,7 @@ describe('SunburstView Layout Component', () => {
     expect(screen.getByTestId('quick-specimen-panel')).toBeDefined();
 
     // Toggle to radial fan mode to verify wheel SVG
-    const radialBtn = screen.getByText('Bánh Xe Rẻ Quạt');
+    const radialBtn = screen.getByText('Phả Hệ Vòng Tròn');
     fireEvent.click(radialBtn);
     expect(screen.getByTestId('sunburst-svg')).toBeDefined();
   });
