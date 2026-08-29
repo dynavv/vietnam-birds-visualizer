@@ -41,7 +41,18 @@ export function getGeminiApiKey(): string {
     }
   }
   const envKey = import.meta.env.VITE_GEMINI_API_KEY;
-  return (envKey && typeof envKey === 'string') ? envKey.trim() : '';
+  if (envKey && typeof envKey === 'string') {
+    const trimmed = envKey.trim();
+    if (
+      trimmed &&
+      trimmed !== 'your_gemini_api_key_here' &&
+      trimmed !== 'your_api_key_here' &&
+      !trimmed.startsWith('your_')
+    ) {
+      return trimmed;
+    }
+  }
+  return '';
 }
 
 /**

@@ -1,0 +1,6 @@
+{
+  "name": "Avifauna of Vietnam",
+  "description": "Interactive museum curation, taxonomy sunburst visualization, and EBA distribution map of Vietnam's bird species with AI naturalist assistant",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
