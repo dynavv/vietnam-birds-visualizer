@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import React from 'react';
 import { MuseumHeader } from './MuseumHeader';
@@ -85,19 +85,18 @@ describe('MuseumHeader Component', () => {
     expect(screen.getByTestId('current-view').textContent).toBe('map');
   });
 
-  it('triggers onOpenVisionDetector callback when clicking Nhận Diện AI button', () => {
-    const onOpenVisionDetector = vi.fn();
+  it('toggles search input bar when clicking search button', () => {
     render(
       <TaxonomyProvider>
-        <MuseumHeader onOpenVisionDetector={onOpenVisionDetector} />
+        <TestHeaderContainer />
       </TaxonomyProvider>
     );
 
-    const visionBtn = screen.getByRole('button', { name: /Nhận diện/i });
-    expect(visionBtn).toBeDefined();
-    expect(screen.getByText('Nhận Diện AI')).toBeDefined();
+    const searchBtn = screen.getByLabelText(/Tìm kiếm loài chim/i);
+    expect(searchBtn).toBeDefined();
 
-    fireEvent.click(visionBtn);
-    expect(onOpenVisionDetector).toHaveBeenCalledTimes(1);
+    fireEvent.click(searchBtn);
+    const searchInput = screen.getByPlaceholderText(/Tìm tên chim/i);
+    expect(searchInput).toBeDefined();
   });
 });

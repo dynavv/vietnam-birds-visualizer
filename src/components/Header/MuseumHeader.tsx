@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Compass, TreePine, Feather, Dices, Search, X, Camera } from 'lucide-react';
+import { Compass, TreePine, Feather, Dices, Search, X } from 'lucide-react';
 import { useTaxonomy, ViewMode } from '../../context/TaxonomyContext';
 
 export interface MuseumHeaderProps {
@@ -36,8 +36,7 @@ const NAV_TABS: NavTabItem[] = [
 ];
 
 export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
-  className = '',
-  onOpenVisionDetector
+  className = ''
 }) => {
   const {
     activeView,
@@ -91,31 +90,31 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
 
   return (
     <header
-      className={`border-b border-paper-border bg-paper-100/90 backdrop-blur-md px-3 sm:px-6 py-2 sm:py-2.5 sticky top-0 z-40 shadow-paper-card ${className}`}
+      className={`border-b border-paper-border bg-paper-100/95 backdrop-blur-md px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 sticky top-0 z-40 shadow-paper-card w-full ${className}`}
       data-testid="museum-header"
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+      <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 md:gap-6 flex-nowrap w-full">
         
         {/* Brand / Emblem & Title — Click to return to MainPage (EBA Map) */}
         <button
           type="button"
           onClick={() => setActiveView('map')}
           aria-label="Quay về trang chính Bản đồ Sinh thái EBA"
-          className="flex items-center space-x-3 self-start md:self-auto text-left group cursor-pointer transition-all hover:opacity-95 outline-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 active:outline-none select-none border-0 bg-transparent p-0"
+          className="flex items-center space-x-3 shrink-0 text-left group cursor-pointer transition-all hover:opacity-95 outline-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 active:outline-none select-none border-0 bg-transparent p-0"
         >
-          <div className="p-2 bg-natural-moss/10 group-hover:bg-natural-moss/20 rounded-xl text-natural-moss border border-natural-moss/20 shadow-sm flex items-center justify-center transition-colors">
+          <div className="p-2 bg-natural-moss/10 group-hover:bg-natural-moss/20 rounded-xl text-natural-moss border border-natural-moss/20 shadow-xs flex items-center justify-center transition-colors shrink-0">
             <Feather className="w-5 h-5 transform -rotate-12 group-hover:scale-110 transition-transform" />
           </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <h1 className="text-lg sm:text-xl font-serif font-bold text-ink-900 tracking-wide group-hover:text-natural-forest transition-colors">
+          <div className="flex flex-col justify-center min-w-0">
+            <div className="flex items-center gap-2 whitespace-nowrap">
+              <h1 className="text-base sm:text-lg md:text-xl font-serif font-bold text-ink-900 tracking-wide group-hover:text-natural-forest transition-colors whitespace-nowrap">
                 Avifauna of Vietnam
               </h1>
-              <span className="hidden sm:inline-block px-1.5 py-0.2 rounded text-[9.5px] uppercase font-mono font-semibold tracking-wider bg-natural-moss/10 text-natural-moss border border-natural-moss/20">
+              <span className="hidden lg:inline-block px-1.5 py-0.5 rounded text-[9.5px] uppercase font-mono font-semibold tracking-wider bg-natural-moss/10 text-natural-moss border border-natural-moss/20 whitespace-nowrap">
                 Archive &amp; Specimen
               </span>
             </div>
-            <p className="text-[10px] sm:text-[11px] text-ink-600 font-sans tracking-wider uppercase font-medium">
+            <p className="text-[10px] sm:text-[11px] text-ink-600 font-sans tracking-wide uppercase font-medium whitespace-nowrap hidden sm:block">
               Giám tuyển &amp; Trực quan hóa Phân loại học Chim Việt Nam
             </p>
           </div>
@@ -123,7 +122,7 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
 
         {/* Center: 3-View Navigation Tabs */}
         <nav
-          className="flex items-center bg-paper-200/70 p-0.5 rounded-xl border border-paper-border text-xs font-medium shadow-inner"
+          className="flex items-center bg-paper-200/80 p-1 rounded-xl border border-paper-border text-xs font-medium shadow-inner shrink-0"
           role="tablist"
           aria-label="Chế độ xem trực quan hóa"
         >
@@ -137,42 +136,30 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
                 role="tab"
                 aria-selected={isActive}
                 onClick={() => setActiveView(tab.id)}
-                className={`flex items-center space-x-1.5 px-3 py-1 rounded-lg text-xs font-medium transition-all cursor-pointer ${
+                className={`flex items-center space-x-1.5 px-3 sm:px-4 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer whitespace-nowrap ${
                   isActive
                     ? 'bg-paper-50 text-ink-900 shadow-sm font-semibold border border-paper-border/80'
                     : 'text-ink-600 hover:text-ink-900 hover:bg-paper-100/80'
                 }`}
               >
                 <Icon
-                  className={`w-3.5 h-3.5 ${
+                  className={`w-3.5 h-3.5 shrink-0 ${
                     isActive ? 'text-natural-moss' : 'text-ink-500'
                   }`}
                 />
-                <span>{tab.label}</span>
+                <span className="whitespace-nowrap font-sans">{tab.label}</span>
               </button>
             );
           })}
         </nav>
 
-        {/* Right Actions: Vision AI, Search & Random Discovery Hook */}
-        <div className="flex items-center gap-2 self-end md:self-auto relative">
-          
-          {/* Bird Vision AI Detector Trigger Button */}
-          <button
-            type="button"
-            onClick={onOpenVisionDetector}
-            aria-label="Nhận diện loài chim qua ảnh AI"
-            title="Giám định loài chim bằng Thị giác AI (Google Gemini AI)"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-paper-100 hover:bg-paper-200 text-ink-800 border border-paper-border hover:border-natural-moss/40 text-xs font-semibold shadow-2xs transition-all cursor-pointer group"
-          >
-            <Camera className="w-3.5 h-3.5 text-natural-moss group-hover:scale-110 transition-transform" />
-            <span>Nhận Diện AI</span>
-          </button>
+        {/* Right Actions: Search & Eye-Catching Random Discovery CTA */}
+        <div className="flex items-center gap-2.5 sm:gap-3 shrink-0 relative">
           
           {/* Expandable Live Search Bar */}
           <div className="relative">
             {isSearchOpen ? (
-              <div className="flex items-center bg-paper-50 border border-natural-moss/40 rounded-xl px-2.5 py-1 shadow-paper-card w-48 sm:w-64 transition-all duration-300">
+              <div className="flex items-center bg-paper-50 border border-natural-moss/40 rounded-xl px-2.5 py-1.5 shadow-paper-card w-48 sm:w-64 transition-all duration-300">
                 <Search className="w-3.5 h-3.5 text-natural-moss shrink-0 mr-1.5" />
                 <input
                   ref={searchInputRef}
@@ -180,7 +167,7 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Tìm tên chim..."
-                  className="w-full bg-transparent text-xs text-ink-900 placeholder:text-ink-400 outline-none border-none p-0"
+                  className="w-full bg-transparent text-xs text-ink-900 placeholder:text-ink-400 outline-none border-none p-0 whitespace-nowrap"
                   autoFocus
                 />
                 {/* Single Smart X Button: Clears query if text exists, closes if empty */}
@@ -193,7 +180,7 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
                       setIsSearchOpen(false);
                     }
                   }}
-                  className="p-0.5 text-ink-400 hover:text-ink-800 transition-colors cursor-pointer"
+                  className="p-0.5 text-ink-400 hover:text-ink-800 transition-colors cursor-pointer shrink-0"
                   title={searchQuery ? 'Xóa từ khóa' : 'Đóng tìm kiếm (ESC)'}
                   aria-label={searchQuery ? 'Xóa từ khóa' : 'Đóng tìm kiếm'}
                 >
@@ -207,12 +194,12 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
                   setIsSearchOpen(true);
                   setTimeout(() => searchInputRef.current?.focus(), 50);
                 }}
-                title="Tìm kiếm loài chim"
+                title="Tìm kiếm loài chim (Ctrl+K)"
                 aria-label="Tìm kiếm loài chim"
-                className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-paper-100 hover:bg-paper-200 text-ink-700 border border-paper-border text-xs transition-all cursor-pointer shadow-xs"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-paper-100 hover:bg-paper-200 text-ink-700 border border-paper-border text-xs transition-all cursor-pointer shadow-xs whitespace-nowrap"
               >
-                <Search className="w-3.5 h-3.5 text-natural-moss" />
-                <span className="hidden lg:inline text-ink-600 font-sans">Tìm kiếm</span>
+                <Search className="w-3.5 h-3.5 text-natural-moss shrink-0" />
+                <span className="hidden md:inline text-ink-600 font-sans whitespace-nowrap">Tìm kiếm</span>
               </button>
             )}
 
@@ -252,26 +239,26 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
             )}
           </div>
 
-          {/* Random Discovery Button (Living CTA with Ambient Glow & Shimmer) */}
+          {/* Random Discovery Button (Living Eye-Catching CTA with Premium Gradient & Shimmer) */}
           <button
             type="button"
             onClick={handleRandomClick}
             aria-label="Khám phá ngẫu nhiên một loài chim"
             title="Khám phá ngẫu nhiên báu vật chim quý Việt Nam"
-            className="group relative inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-natural-moss text-paper-50 hover:bg-natural-forest active:scale-95 transition-all text-xs font-semibold border border-natural-moss/60 cursor-pointer overflow-hidden animate-breathing-glow"
+            className="group relative inline-flex items-center gap-2 px-4 py-1.5 rounded-xl bg-gradient-to-r from-[#1B4317] via-[#245A20] to-[#2E6F28] hover:from-[#163813] hover:to-[#255C20] text-paper-50 active:scale-95 transition-all duration-300 text-xs font-semibold border border-emerald-400/30 hover:border-emerald-300/70 shadow-md hover:shadow-lg shadow-natural-moss/25 cursor-pointer overflow-hidden whitespace-nowrap shrink-0"
           >
             {/* Periodic Golden Shimmer Sweep Animation */}
             <span
-              className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer-sweep pointer-events-none"
+              className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/25 to-transparent animate-shimmer-sweep pointer-events-none"
             />
 
             <Dices
-              className={`w-3.5 h-3.5 transition-transform duration-500 animate-dice-wobble ${
-                diceRolling ? 'rotate-180 scale-125 text-natural-amber' : 'group-hover:rotate-45'
+              className={`w-4 h-4 text-amber-300 transition-transform duration-500 shrink-0 ${
+                diceRolling ? 'rotate-180 scale-125 text-yellow-200' : 'group-hover:rotate-45 group-hover:scale-110'
               }`}
             />
-            <span className="tracking-wide">
-              <span className="hidden sm:inline">Khám phá</span> ngẫu nhiên
+            <span className="tracking-wide whitespace-nowrap font-sans text-paper-50 drop-shadow-xs">
+              Khám phá ngẫu nhiên
             </span>
           </button>
         </div>

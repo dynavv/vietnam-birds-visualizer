@@ -131,28 +131,4 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     const focusCard = screen.getByTestId('endemic-focus-card');
     expect(focusCard).toBeDefined();
   });
-
-  it('opens and closes Bird Vision Detector modal when clicking AI button in header', () => {
-    render(<App />);
-
-    // Initially modal is closed
-    expect(screen.queryByTestId('bird-vision-modal')).toBeNull();
-
-    // Click Vision AI trigger in header
-    const visionBtn = screen.getByRole('button', { name: /Nhận diện/i });
-    expect(visionBtn).toBeDefined();
-    fireEvent.click(visionBtn);
-
-    // Modal opens
-    expect(screen.getByTestId('bird-vision-modal')).toBeDefined();
-    expect(screen.getByText(/Giám Định Loài Chim Bằng Thị Giác AI/i)).toBeDefined();
-    expect(screen.getByTestId('vision-dropzone')).toBeDefined();
-
-    // Close modal via close button
-    const closeBtn = screen.getByRole('button', { name: /Đóng cửa sổ/i });
-    fireEvent.click(closeBtn);
-
-    // Modal is removed from DOM
-    expect(screen.queryByTestId('bird-vision-modal')).toBeNull();
-  });
 });
