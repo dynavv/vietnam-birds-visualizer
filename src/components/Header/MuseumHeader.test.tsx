@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import React from 'react';
 import { MuseumHeader } from './MuseumHeader';
@@ -29,11 +29,12 @@ describe('MuseumHeader Component', () => {
 
     // 3 Tabs
     expect(screen.getByText('Bản đồ Sinh thái')).toBeDefined();
-    expect(screen.getByText('Bánh xe Phân loại')).toBeDefined();
-    expect(screen.getByText('Trình Giám tuyển')).toBeDefined();
+    expect(screen.getByText('Cây Phả hệ')).toBeDefined();
+    expect(screen.getByText('Cẩm nang Nhận dạng')).toBeDefined();
 
-    // Random button
+    // Random button & Search
     expect(screen.getByLabelText(/Khám phá ngẫu nhiên/i)).toBeDefined();
+    expect(screen.getByLabelText(/Tìm kiếm loài chim/i)).toBeDefined();
   });
 
   it('switches views when clicking tabs', () => {
@@ -45,10 +46,10 @@ describe('MuseumHeader Component', () => {
 
     expect(screen.getByTestId('current-view').textContent).toBe('map');
 
-    fireEvent.click(screen.getByText('Bánh xe Phân loại'));
+    fireEvent.click(screen.getByText('Cây Phả hệ'));
     expect(screen.getByTestId('current-view').textContent).toBe('sunburst');
 
-    fireEvent.click(screen.getByText('Trình Giám tuyển'));
+    fireEvent.click(screen.getByText('Cẩm nang Nhận dạng'));
     expect(screen.getByTestId('current-view').textContent).toBe('curator');
 
     fireEvent.click(screen.getByText('Bản đồ Sinh thái'));
@@ -82,5 +83,21 @@ describe('MuseumHeader Component', () => {
     fireEvent.click(brandBtn);
 
     expect(screen.getByTestId('current-view').textContent).toBe('map');
+  });
+
+  it('triggers onOpenVisionDetector callback when clicking Nhận Diện AI button', () => {
+    const onOpenVisionDetector = vi.fn();
+    render(
+      <TaxonomyProvider>
+        <MuseumHeader onOpenVisionDetector={onOpenVisionDetector} />
+      </TaxonomyProvider>
+    );
+
+    const visionBtn = screen.getByRole('button', { name: /Nhận diện/i });
+    expect(visionBtn).toBeDefined();
+    expect(screen.getByText('Nhận Diện AI')).toBeDefined();
+
+    fireEvent.click(visionBtn);
+    expect(onOpenVisionDetector).toHaveBeenCalledTimes(1);
   });
 });

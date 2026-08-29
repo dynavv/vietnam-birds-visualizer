@@ -28,7 +28,7 @@ describe('SearchFilterBar Component', () => {
     );
 
     expect(screen.getByPlaceholderText(/Tìm theo tên tiếng Việt/i)).toBeDefined();
-    expect(screen.getByText(/⭐ Chim Đặc hữu/i)).toBeDefined();
+    expect(screen.getByText(/Chim Đặc hữu/i)).toBeDefined();
     expect(screen.getByLabelText(/Lọc theo Bộ chim/i)).toBeDefined();
     expect(screen.getByLabelText(/Lọc theo Bậc bảo tồn IUCN/i)).toBeDefined();
     expect(screen.getByText(/Hiển thị/i)).toBeDefined();
@@ -59,7 +59,7 @@ describe('SearchFilterBar Component', () => {
       </TaxonomyProvider>
     );
 
-    const endemicBtn = screen.getByText(/⭐ Chim Đặc hữu/i);
+    const endemicBtn = screen.getByText(/Chim Đặc hữu/i);
     expect(screen.getByTestId('current-endemic').textContent).toBe('false');
 
     fireEvent.click(endemicBtn);

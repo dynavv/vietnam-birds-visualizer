@@ -7,13 +7,20 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     window.HTMLCanvasElement.prototype.getContext = () => null;
     window.HTMLMediaElement.prototype.play = vi.fn().mockResolvedValue(undefined);
     window.HTMLMediaElement.prototype.pause = vi.fn();
+    try {
+      if (typeof window !== 'undefined' && window.history) {
+        window.history.replaceState(null, '', '/');
+      }
+    } catch {
+      // Safe fallback
+    }
   });
 
   afterEach(() => {
     vi.restoreAllMocks();
   });
 
-  it('initializes the application in Map view with header, search bar, map overlays, and footer', () => {
+  it('initializes the application in Map view with header, fun facts ribbon, map overlays, and footer', () => {
     render(<App />);
 
     // Museum Header is rendered
@@ -21,9 +28,9 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     expect(screen.getAllByText('Avifauna of Vietnam').length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText(/Giám tuyển & Trực quan hóa Phân loại học/i).length).toBeGreaterThan(0);
 
-    // Search and filter bar is rendered
-    expect(screen.getByTestId('search-filter-bar')).toBeDefined();
-    expect(screen.getByPlaceholderText(/Tìm theo tên tiếng Việt, tên khoa học/i)).toBeDefined();
+    // Avian Fun Facts Ribbon is rendered
+    expect(screen.getByTestId('avian-fun-facts-ribbon')).toBeDefined();
+    expect(screen.getByText(/Kỳ thú/i)).toBeDefined();
 
     // Default View is Map View
     expect(screen.getByTestId('active-map-view')).toBeDefined();
@@ -34,11 +41,9 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     // Museum Footer with citations is rendered
     const footer = screen.getByTestId('museum-footer');
     expect(footer).toBeDefined();
-    expect(within(footer).getByText(/IOC World Bird List/i)).toBeDefined();
-    expect(within(footer).getByText(/Delacour & Jabouille/i)).toBeDefined();
-    expect(within(footer).getByText(/GS. TSKH. Võ Quý/i)).toBeDefined();
-    expect(within(footer).getByText(/BirdLife International/i)).toBeDefined();
-    expect(within(footer).getByText(/Xeno-canto Foundation/i)).toBeDefined();
+    expect(within(footer).getByText(/Giới thiệu/i)).toBeDefined();
+    expect(within(footer).getByText(/Nguồn dữ liệu & Danh pháp/i)).toBeDefined();
+    expect(within(footer).getByText(/Bản quyền & Tuyên bố/i)).toBeDefined();
   });
 
   it('switches between 3 views (Map -> Sunburst -> Curator -> Map) via Header tabs', () => {
@@ -50,7 +55,7 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     expect(screen.queryByTestId('active-curator-view')).toBeNull();
 
     // 1. Switch to Sunburst View
-    const sunburstTab = screen.getByRole('tab', { name: /Bánh xe Phân loại/i });
+    const sunburstTab = screen.getByRole('tab', { name: /Cây Phả hệ/i });
     fireEvent.click(sunburstTab);
 
     expect(screen.getByTestId('active-sunburst-view')).toBeDefined();
@@ -60,12 +65,12 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     expect(screen.getByTestId('quick-specimen-panel')).toBeDefined();
 
     // Toggle to tree mode
-    const treeBtn = screen.getByText('Cây Phân Nhánh');
+    const treeBtn = screen.getByText('Phả Hệ Phân Nhánh');
     fireEvent.click(treeBtn);
     expect(screen.getByTestId('cladogram-tree-view')).toBeDefined();
 
     // 2. Switch to Curator View
-    const curatorTab = screen.getByRole('tab', { name: /Trình Giám tuyển/i });
+    const curatorTab = screen.getByRole('tab', { name: /Cẩm nang Nhận dạng/i });
     fireEvent.click(curatorTab);
 
     expect(screen.queryByTestId('active-sunburst-view')).toBeNull();
@@ -88,7 +93,7 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     render(<App />);
 
     // Switch to Sunburst View
-    const sunburstTab = screen.getByRole('tab', { name: /Bánh xe Phân loại/i });
+    const sunburstTab = screen.getByRole('tab', { name: /Cây Phả hệ/i });
     fireEvent.click(sunburstTab);
     expect(screen.getByTestId('active-sunburst-view')).toBeDefined();
 
@@ -102,97 +107,52 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     expect(screen.getByTestId('specimen-plate')).toBeDefined();
   });
 
-  it('navigates from CuratorView back to Map and Sunburst using in-page action buttons', () => {
+  it('opens methodology modal when clicking footer links', () => {
     render(<App />);
 
-    // Switch to Curator View
-    const curatorTab = screen.getByRole('tab', { name: /Trình Giám tuyển/i });
-    fireEvent.click(curatorTab);
-    expect(screen.getByTestId('active-curator-view')).toBeDefined();
+    const footer = screen.getByTestId('museum-footer');
+    const aboutBtn = within(footer).getByText(/Giới thiệu/i);
+    fireEvent.click(aboutBtn);
 
-    // Click "Bản đồ EBA" inside CuratorView
-    const curatorMapBtn = screen.getByTitle('Xem vị trí phân bố trên Bản đồ Sinh thái EBA');
-    fireEvent.click(curatorMapBtn);
-    expect(screen.getByTestId('active-map-view')).toBeDefined();
-
-    // Go back to Curator View
-    fireEvent.click(curatorTab);
-    expect(screen.getByTestId('active-curator-view')).toBeDefined();
-
-    // Click "Bánh xe Phân loại" inside CuratorView
-    const curatorSunburstBtn = screen.getByTitle('Khám phá vị trí trên Bánh xe Phân loại học');
-    fireEvent.click(curatorSunburstBtn);
-    expect(screen.getByTestId('active-sunburst-view')).toBeDefined();
+    expect(screen.getByTestId('methodology-modal')).toBeDefined();
+    expect(screen.getByText(/Sứ Mệnh Giáo Dục & Tôn Vinh Thiên Nhiên Việt Nam/i)).toBeDefined();
   });
 
-  it('synchronizes trilingual search across the entire application and updates species count', () => {
+  it('triggers random species discovery upon clicking Khám phá ngẫu nhiên in header', () => {
     render(<App />);
 
-    const searchInput = screen.getByPlaceholderText(/Tìm theo tên tiếng Việt, tên khoa học/i) as HTMLInputElement;
-
-    // Search by Vietnamese query: "Khướu"
-    fireEvent.change(searchInput, { target: { value: 'Khướu' } });
-    expect(searchInput.value).toBe('Khướu');
-
-    // Count badge should be updated
-    const countBox = screen.getByText(/Hiển thị/i).parentElement;
-    expect(countBox).toBeDefined();
-
-    // Search by Scientific query: "Garrulax"
-    fireEvent.change(searchInput, { target: { value: 'Garrulax' } });
-    expect(searchInput.value).toBe('Garrulax');
-
-    // Clear search using clear button
-    const clearBtn = screen.getByLabelText('Xóa từ khóa tìm kiếm');
-    fireEvent.click(clearBtn);
-    expect(searchInput.value).toBe('');
-  });
-
-  it('filters species by Endemic toggle, Order dropdown, IUCN status, and resets filters', () => {
-    render(<App />);
-
-    // 1. Filter by Endemic Only
-    const endemicBtn = screen.getByRole('button', { name: /⭐ Chim Đặc hữu/i });
-    fireEvent.click(endemicBtn);
-    expect(endemicBtn.getAttribute('aria-pressed')).toBe('true');
-
-    // 2. Filter by Order dropdown
-    const orderSelect = screen.getByLabelText('Lọc theo Bộ chim') as HTMLSelectElement;
-    fireEvent.change(orderSelect, { target: { value: 'Passeriformes' } });
-    expect(orderSelect.value).toBe('Passeriformes');
-
-    // 3. Filter by IUCN status
-    const iucnSelect = screen.getByLabelText('Lọc theo Bậc bảo tồn IUCN') as HTMLSelectElement;
-    fireEvent.change(iucnSelect, { target: { value: 'EN' } });
-    expect(iucnSelect.value).toBe('EN');
-
-    // Reset button should now be visible
-    const resetBtn = screen.getByRole('button', { name: /Đặt lại tất cả bộ lọc/i });
-    expect(resetBtn).toBeDefined();
-
-    // Click reset button
-    fireEvent.click(resetBtn);
-
-    // Check all filters are reset
-    expect(endemicBtn.getAttribute('aria-pressed')).toBe('false');
-    expect(orderSelect.value).toBe('all');
-    expect(iucnSelect.value).toBe('all');
-  });
-
-  it('triggers random endemic species selection upon clicking Khám phá ngẫu nhiên in header', () => {
-    render(<App />);
-
-    const randomBtn = screen.getByRole('button', {
-      name: /Khám phá ngẫu nhiên một loài chim đặc hữu/i
-    });
+    const randomBtn = screen.getByLabelText(/Khám phá ngẫu nhiên một loài chim/i);
     expect(randomBtn).toBeDefined();
 
     // Click random button
     fireEvent.click(randomBtn);
 
-    // Endemic focus card should display an active endemic species
+    // Endemic focus card should display an active bird
     const focusCard = screen.getByTestId('endemic-focus-card');
     expect(focusCard).toBeDefined();
-    expect(within(focusCard).getAllByText(/ĐẶC HỮU/i).length).toBeGreaterThanOrEqual(1);
+  });
+
+  it('opens and closes Bird Vision Detector modal when clicking AI button in header', () => {
+    render(<App />);
+
+    // Initially modal is closed
+    expect(screen.queryByTestId('bird-vision-modal')).toBeNull();
+
+    // Click Vision AI trigger in header
+    const visionBtn = screen.getByRole('button', { name: /Nhận diện/i });
+    expect(visionBtn).toBeDefined();
+    fireEvent.click(visionBtn);
+
+    // Modal opens
+    expect(screen.getByTestId('bird-vision-modal')).toBeDefined();
+    expect(screen.getByText(/Giám Định Loài Chim Bằng Thị Giác AI/i)).toBeDefined();
+    expect(screen.getByTestId('vision-dropzone')).toBeDefined();
+
+    // Close modal via close button
+    const closeBtn = screen.getByRole('button', { name: /Đóng cửa sổ/i });
+    fireEvent.click(closeBtn);
+
+    // Modal is removed from DOM
+    expect(screen.queryByTestId('bird-vision-modal')).toBeNull();
   });
 });

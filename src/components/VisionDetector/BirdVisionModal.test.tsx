@@ -1,6 +1,5 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import React from 'react';
 import { BirdVisionModal } from './BirdVisionModal';
 import { TaxonomyProvider } from '../../context/TaxonomyContext';
 import * as birdVisionService from '../../services/birdVisionService';

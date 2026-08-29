@@ -3,14 +3,12 @@ import { analyzeBirdImage, parseGeminiResponse } from './birdVisionService';
 import type { BirdVisionResult } from '../utils/speciesMatcher';
 
 describe('birdVisionService', () => {
-  const originalEnv = process.env;
-
   beforeEach(() => {
     vi.restoreAllMocks();
   });
 
   afterEach(() => {
-    process.env = originalEnv;
+    vi.restoreAllMocks();
   });
 
   describe('parseGeminiResponse', () => {
@@ -172,17 +170,19 @@ describe('birdVisionService', () => {
 
   describe('analyzeBirdImage', () => {
     it('throws error when no API key is provided and env var is not set', async () => {
-      const oldEnv = import.meta.env.VITE_GEMINI_API_KEY;
-      // @ts-ignore
-      import.meta.env.VITE_GEMINI_API_KEY = '';
+      const oldEnv = (import.meta as any).env?.VITE_GEMINI_API_KEY;
+      if ((import.meta as any).env) {
+        (import.meta as any).env.VITE_GEMINI_API_KEY = '';
+      }
 
       try {
         await expect(analyzeBirdImage('sample-data-url', 'image/jpeg', '')).rejects.toThrow(
           /Chưa cấu hình VITE_GEMINI_API_KEY/i
         );
       } finally {
-        // @ts-ignore
-        import.meta.env.VITE_GEMINI_API_KEY = oldEnv;
+        if ((import.meta as any).env) {
+          (import.meta as any).env.VITE_GEMINI_API_KEY = oldEnv;
+        }
       }
     });
 
@@ -211,7 +211,7 @@ describe('birdVisionService', () => {
           ]
         })
       });
-      global.fetch = fetchMock;
+      globalThis.fetch = fetchMock;
 
       const dataUrl = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==';
       const result = await analyzeBirdImage(dataUrl, 'image/png', 'test-api-key-123');
@@ -261,7 +261,7 @@ describe('birdVisionService', () => {
           ]
         })
       });
-      global.fetch = fetchMock;
+      globalThis.fetch = fetchMock;
 
       const rawBase64 = 'rawBase64ImageDataStringWithoutPrefix';
       const result = await analyzeBirdImage(rawBase64, 'image/webp', 'custom-key');
@@ -274,7 +274,7 @@ describe('birdVisionService', () => {
     });
 
     it('throws descriptive error on API failure with HTTP status and message', async () => {
-      global.fetch = vi.fn().mockResolvedValue({
+      globalThis.fetch = vi.fn().mockResolvedValue({
         ok: false,
         status: 400,
         statusText: 'Bad Request',
@@ -287,7 +287,7 @@ describe('birdVisionService', () => {
     });
 
     it('throws descriptive error on network failure', async () => {
-      global.fetch = vi.fn().mockRejectedValue(new Error('Network error connecting to Gemini API'));
+      globalThis.fetch = vi.fn().mockRejectedValue(new Error('Network error connecting to Gemini API'));
 
       await expect(
         analyzeBirdImage('data:image/jpeg;base64,abc', 'image/jpeg', 'valid-key')

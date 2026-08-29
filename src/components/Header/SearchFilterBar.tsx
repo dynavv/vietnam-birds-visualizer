@@ -1,5 +1,5 @@
 import React, { useMemo, useCallback } from 'react';
-import { Search, X, Star, RotateCcw, ShieldAlert, Layers } from 'lucide-react';
+import { Search, X, Bird, RotateCcw, ShieldAlert, Layers } from 'lucide-react';
 import { useTaxonomy } from '../../context/TaxonomyContext';
 
 export interface SearchFilterBarProps {
@@ -102,6 +102,7 @@ export const SearchFilterBar: React.FC<SearchFilterBarProps> = ({ className = ''
           <button
             type="button"
             onClick={() => setOnlyEndemic(!onlyEndemic)}
+            aria-label="Chỉ hiển thị loài chim đặc hữu"
             aria-pressed={onlyEndemic}
             className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-medium transition-all ${
               onlyEndemic
@@ -109,12 +110,12 @@ export const SearchFilterBar: React.FC<SearchFilterBarProps> = ({ className = ''
                 : 'bg-paper-50 text-ink-700 hover:text-ink-900 border-paper-border hover:bg-paper-200/60'
             }`}
           >
-            <Star
+            <Bird
               className={`w-3.5 h-3.5 ${
-                onlyEndemic ? 'text-amber-600 fill-amber-500' : 'text-ink-400'
+                onlyEndemic ? 'text-amber-600 fill-amber-500/40' : 'text-ink-400'
               }`}
             />
-            <span>⭐ Chim Đặc hữu</span>
+            <span>Chim Đặc hữu</span>
           </button>
 
           {/* Order dropdown */}

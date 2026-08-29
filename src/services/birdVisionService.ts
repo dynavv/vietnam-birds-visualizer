@@ -95,7 +95,8 @@ export async function analyzeBirdImage(
   mimeType: string = 'image/jpeg',
   apiKeyOverride?: string
 ): Promise<BirdVisionResult> {
-  const apiKey = apiKeyOverride || (typeof import.meta !== 'undefined' && import.meta.env ? import.meta.env.VITE_GEMINI_API_KEY : '') || '';
+  const metaEnv = typeof import.meta !== 'undefined' ? (import.meta as any).env : undefined;
+  const apiKey = apiKeyOverride || (metaEnv ? metaEnv.VITE_GEMINI_API_KEY : '') || '';
 
   if (!apiKey || !apiKey.trim()) {
     throw new Error('Chưa cấu hình VITE_GEMINI_API_KEY trong hệ thống.');
