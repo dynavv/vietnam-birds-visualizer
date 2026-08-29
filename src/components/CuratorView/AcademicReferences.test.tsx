@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
-import { AcademicReferences } from './AcademicReferences';
+import { AcademicReferences, TaxonRegistriesCard } from './AcademicReferences';
 import { BirdSpecies } from '../../types/bird';
 
 const mockSpecies: BirdSpecies = {
@@ -41,32 +41,24 @@ const mockSpecies: BirdSpecies = {
   },
   academic: {
     iocTaxonCode: 'IOC-AV-PAS-TROCHALO',
-    avibaseId: 'AVIBASE-TROCHALOPTERON-NGOCLINHENSE',
-    iucnUrl: 'https://www.iucnredlist.org/species/mock',
-    gbifTaxonKey: 'https://www.gbif.org/species/mock',
-    primaryLiterature: [
-      {
-        authors: 'Eames, J. C., Le Trong Trai, & Nguyen Cu',
-        year: 1999,
-        title: 'A new species of Laughingthrush from Vietnam',
-        journalOrBook: "Bull. Brit. Orn. Club",
-        volumeOrPages: '119(4): 216-224'
-      }
-    ]
+    avibaseId: 'A37EB5E58B60CBA5',
+    iucnUrl: 'https://www.iucnredlist.org/species/22728591/131518026',
+    gbifTaxonKey: '6101121'
   }
 };
 
-describe('AcademicReferences Component', () => {
-  it('renders global registry links (IUCN, Avibase, GBIF)', () => {
+describe('AcademicReferences & TaxonRegistriesCard Component', () => {
+  it('renders global verified registry links (IUCN, Avibase, GBIF, iNaturalist)', () => {
     render(<AcademicReferences species={mockSpecies} />);
     expect(screen.getByText('IUCN Red List')).toBeDefined();
     expect(screen.getByText('Avibase Checklist')).toBeDefined();
     expect(screen.getByText('GBIF Biodiversity')).toBeDefined();
+    expect(screen.getByText('iNaturalist')).toBeDefined();
   });
 
-  it('renders primary literature citations', () => {
-    render(<AcademicReferences species={mockSpecies} />);
-    expect(screen.getByText(/Eames, J. C., Le Trong Trai/)).toBeDefined();
-    expect(screen.getByText(/"A new species of Laughingthrush from Vietnam."/)).toBeDefined();
+  it('renders correctly as standalone TaxonRegistriesCard', () => {
+    render(<TaxonRegistriesCard species={mockSpecies} />);
+    expect(screen.getByTestId('taxon-registries-card')).toBeDefined();
+    expect(screen.getByText('Mã Định Danh Cơ Sở Dữ Liệu Quốc Tế')).toBeDefined();
   });
 });

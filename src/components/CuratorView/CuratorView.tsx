@@ -17,7 +17,7 @@ import { SpecimenPlate } from './SpecimenPlate';
 import { CladeBadgeSequence } from './CladeBadgeSequence';
 import { MorphologyReport } from './MorphologyReport';
 import { RelatedSpeciesTabs } from './RelatedSpeciesTabs';
-import { TaxonRegistriesCard, PrimaryLiteratureCard } from './AcademicReferences';
+import { TaxonRegistriesCard } from './AcademicReferences';
 
 const VIETNAM_RED_LIST_NAMES: Record<string, string> = {
   CR: 'Cực kỳ nguy cấp (CR)',
@@ -297,9 +297,6 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
           <div className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card">
             <MorphologyReport species={species} />
           </div>
-
-          {/* Primary Literature & Research Citations */}
-          <PrimaryLiteratureCard species={species} />
         </div>
 
       </div>

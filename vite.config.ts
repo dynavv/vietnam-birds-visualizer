@@ -32,6 +32,9 @@ export default defineConfig({
           if (id.includes('node_modules/lucide-react/')) {
             return 'vendor-icons';
           }
+          if (id.includes('node_modules/@google/genai/')) {
+            return 'vendor-genai';
+          }
           if (
             id.includes('src/data/species.json') ||
             id.includes('src/data/taxonomy.json') ||

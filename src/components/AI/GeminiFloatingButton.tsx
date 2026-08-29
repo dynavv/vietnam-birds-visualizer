@@ -1,0 +1,65 @@
+import React, { useState } from 'react';
+import { Sparkles } from 'lucide-react';
+import { GeminiNaturalistModal, AITab } from './GeminiNaturalistModal';
+import { hasGeminiApiKey } from '../../services/geminiService';
+
+export interface GeminiFloatingButtonProps {
+  className?: string;
+}
+
+export const GeminiFloatingButton: React.FC<GeminiFloatingButtonProps> = ({ className = '' }) => {
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [initialTab, setInitialTab] = useState<AITab>('chat');
+
+  const openModal = (tab: AITab = 'chat') => {
+    setInitialTab(tab);
+    setModalOpen(true);
+  };
+
+  const isConfigured = hasGeminiApiKey();
+
+  return (
+    <>
+      <div
+        className={`fixed bottom-12 md:bottom-11 left-1/2 -translate-x-1/2 z-40 flex items-center justify-center pointer-events-auto ${className}`}
+        data-testid="gemini-floating-container"
+      >
+        <button
+          type="button"
+          onClick={() => openModal('chat')}
+          aria-label="Mở Trợ lý Điểu học Gemini AI"
+          title="Mở Trợ lý Điểu học Gemini AI (Hỏi đáp & Nhận diện ảnh)"
+          className="group relative w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-[#163813] via-[#1F4E1B] to-[#2B6825] hover:from-[#122E10] hover:to-[#22551D] text-paper-50 shadow-lg hover:shadow-2xl hover:shadow-natural-moss/50 border-2 border-emerald-400/50 hover:border-emerald-300 transition-all duration-300 transform hover:scale-110 active:scale-95 flex items-center justify-center cursor-pointer overflow-hidden"
+          data-testid="gemini-fab-button"
+        >
+          {/* Shimmer Ambient Sweep */}
+          <span
+            className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/25 to-transparent animate-shimmer-sweep pointer-events-none"
+          />
+
+          {/* Ambient Radiant Glow Ring */}
+          <span className="absolute -inset-1 rounded-full bg-amber-400/25 animate-ping opacity-75 pointer-events-none" />
+
+          {/* Sparkles Icon */}
+          <Sparkles className="w-5 h-5 text-amber-300 drop-shadow-sm transition-transform duration-300 group-hover:rotate-45 group-hover:scale-110" />
+
+          {/* Unconfigured Dot Badge */}
+          {!isConfigured && (
+            <span
+              title="Chưa cấu hình API Key"
+              className="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-amber-400 ring-2 ring-emerald-950"
+            />
+          )}
+        </button>
+      </div>
+
+      <GeminiNaturalistModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        initialTab={initialTab}
+      />
+    </>
+  );
+};
+
+export default GeminiFloatingButton;

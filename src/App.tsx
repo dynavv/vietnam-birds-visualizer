@@ -7,6 +7,7 @@ import { SunburstView } from "./components/SunburstView/SunburstView";
 import { CuratorView } from "./components/CuratorView/CuratorView";
 import { MuseumFooter } from "./components/Footer/MuseumFooter";
 import { DiscoveryToast } from "./components/Common/DiscoveryToast";
+import { GeminiFloatingButton } from "./components/AI/GeminiFloatingButton";
 
 export { MuseumFooter };
 
@@ -60,6 +61,9 @@ export const AppShell: React.FC = () => {
       <AvianFunFactsRibbon className="shrink-0" />
       <MainContent />
       <MuseumFooter className="shrink-0" />
+
+      {/* Floating Gemini AI Curator FAB */}
+      <GeminiFloatingButton />
 
       {/* Discovery Celebration Toast Notification */}
       {discoveryToastSpecies && (
