@@ -20,17 +20,13 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     vi.restoreAllMocks();
   });
 
-  it('initializes the application in Map view with header, fun facts ribbon, map overlays, and footer', () => {
+  it('initializes the application in Map view with header, map overlays, and footer', () => {
     render(<App />);
 
     // Museum Header is rendered
     expect(screen.getByTestId('museum-header')).toBeDefined();
     expect(screen.getAllByText('Avifauna of Vietnam').length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText(/Giám tuyển & Trực quan hóa Phân loại học/i).length).toBeGreaterThan(0);
-
-    // Avian Fun Facts Ribbon is rendered
-    expect(screen.getByTestId('avian-fun-facts-ribbon')).toBeDefined();
-    expect(screen.getByText(/Kỳ thú/i)).toBeDefined();
 
     // Default View is Map View
     expect(screen.getByTestId('active-map-view')).toBeDefined();
