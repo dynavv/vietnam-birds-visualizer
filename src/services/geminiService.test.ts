@@ -69,6 +69,20 @@ describe('geminiService Unit Tests', () => {
       expect(reply).toContain('Khướu Ngọc Linh');
       expect(mockGenerateContent).toHaveBeenCalledTimes(1);
     });
+
+    it('falls back to secondary model when primary model fails with 503', async () => {
+      setGeminiApiKey('AIzaSyValidTestKey');
+      // First call (gemini-3.7-flash) fails with 503
+      mockGenerateContent.mockRejectedValueOnce(new Error('503 This model is currently experiencing high demand'));
+      // Second call (fallback model) succeeds
+      mockGenerateContent.mockResolvedValueOnce({
+        text: 'Phản hồi từ mô hình dự phòng thành công.'
+      });
+
+      const reply = await chatWithNaturalist([], 'Chào bạn');
+      expect(reply).toBe('Phản hồi từ mô hình dự phòng thành công.');
+      expect(mockGenerateContent).toHaveBeenCalledTimes(2);
+    });
   });
 
   describe('identifyBirdImage', () => {

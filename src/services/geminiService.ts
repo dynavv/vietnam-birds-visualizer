@@ -11,6 +11,13 @@ import { GoogleGenAI } from '@google/genai';
 import type { BirdSpecies } from '../types/bird';
 
 export const GEMINI_MODEL_DEFAULT = 'gemini-3.7-flash';
+export const GEMINI_FALLBACK_MODELS = [
+  'gemini-3.5-flash-lite',
+  'gemini-3.5-flash',
+  'gemini-2.5-flash',
+  'gemini-2.0-flash',
+  'gemini-1.5-flash'
+];
 export const STORAGE_KEY_CUSTOM_API_KEY = 'agy_avifauna_gemini_api_key';
 
 export interface ChatMessage {
@@ -107,6 +114,34 @@ Về chuyên môn & phương pháp:
 `;
 
 /**
+ * Thực thi gọi Gemini API với cơ chế tự động fallback tuần tự xuống các model nhẹ hơn khi gặp sự cố (503 High Demand, 429, v.v.)
+ * Thứ tự ưu tiên: primaryModel -> gemini-3.5-flash-lite -> gemini-3.5-flash -> gemini-2.5-flash -> gemini-2.0-flash -> gemini-1.5-flash
+ */
+async function executeWithModelFallback<T>(
+  apiCall: (model: string) => Promise<T>,
+  primaryModel: string = GEMINI_MODEL_DEFAULT
+): Promise<T> {
+  const modelChain = [
+    primaryModel,
+    ...GEMINI_FALLBACK_MODELS.filter(m => m !== primaryModel)
+  ];
+
+  let lastError: unknown = null;
+
+  for (const model of modelChain) {
+    try {
+      return await apiCall(model);
+    } catch (err: unknown) {
+      lastError = err;
+      const errMsg = String((err as any)?.message || err || '');
+      console.warn(`[GeminiService] Model "${model}" gặp sự cố (${errMsg}). Đang tự động chuyển tiếp sang model tiếp theo trong chuỗi fallback...`);
+    }
+  }
+
+  throw lastError;
+}
+
+/**
  * Trò chuyện với Trợ lý Giám tuyển Điểu học
  */
 export async function chatWithNaturalist(
@@ -145,9 +180,9 @@ export async function chatWithNaturalist(
     parts: [{ text: newMessage }]
   });
 
-  try {
+  return executeWithModelFallback(async (activeModel) => {
     const response = await ai.models.generateContent({
-      model: modelName,
+      model: activeModel,
       contents: formattedContents,
       config: {
         systemInstruction,
@@ -157,10 +192,7 @@ export async function chatWithNaturalist(
     });
 
     return response.text || 'Xin lỗi, tôi chưa thể xử lý câu trả lời lúc này. Bạn vui lòng thử lại nhé.';
-  } catch (err: unknown) {
-    console.error('Gemini chat error:', err);
-    throw err;
-  }
+  }, modelName);
 }
 
 /**
@@ -210,9 +242,9 @@ YÊU CẦU: Trả về DUY NHẤT một JSON hợp lệ tuân thủ đúng cấu
 }
 `;
 
-  try {
+  return executeWithModelFallback(async (activeModel) => {
     const response = await ai.models.generateContent({
-      model: modelName,
+      model: activeModel,
       contents: [
         {
           parts: [
@@ -238,10 +270,7 @@ YÊU CẦU: Trả về DUY NHẤT một JSON hợp lệ tuân thủ đúng cấu
     const rawText = response.text || '{}';
     const parsed = JSON.parse(rawText) as BirdIdentificationResult;
     return parsed;
-  } catch (err: unknown) {
-    console.error('Gemini vision identification error:', err);
-    throw err;
-  }
+  }, modelName);
 }
 
 /**
@@ -272,9 +301,9 @@ Yêu cầu bài viết:
 - Trình bày dạng Markdown trang nhã, trau chuốt, giàu hình ảnh thơ mộng.
 `;
 
-  try {
+  return executeWithModelFallback(async (activeModel) => {
     const response = await ai.models.generateContent({
-      model: modelName,
+      model: activeModel,
       contents: [{ parts: [{ text: prompt }] }],
       config: {
         systemInstruction: NATURALIST_SYSTEM_INSTRUCTION,
@@ -283,8 +312,5 @@ Yêu cầu bài viết:
     });
 
     return response.text || 'Không thể tạo nhật ký thực địa lúc này.';
-  } catch (err: unknown) {
-    console.error('Gemini expedition log error:', err);
-    throw err;
-  }
+  }, modelName);
 }
