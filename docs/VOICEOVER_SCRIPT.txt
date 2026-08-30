@@ -1,0 +1,17 @@
+Chào mừng bạn đến với Avifauna of Vietnam — nền tảng số hóa tương tác giúp khám phá và bảo tồn các loài chim đặc hữu của Việt Nam. Hệ thống bắt đầu bằng Bản đồ sinh thái GIS phân chia theo sáu Vùng Chim Đặc Hữu do BirdLife International xác định.
+
+Khi chọn một vùng sinh thái như Tây Bắc Hoàng Liên Sơn, bản đồ tự động định vị và lọc ra các loài đặc hữu phân bố ở độ cao này như Khướu hông đỏ hay Họa mi đất mỏ dài.
+
+Chuyển sang Vùng Đất thấp miền Trung và chọn loài Niệc nâu, bảng thông tin bên phải cung cấp ngay sinh cảnh, độ cao phân bố và cho phép nghe trực tiếp tiếng hót thực địa từ thư viện Xeno-canto.
+
+Tại tab Cây Phả Hệ, bánh xe Sunburst và cây phân nhánh giúp bạn trực quan hóa năm cấp phân loại học, dễ dàng tra cứu nguồn gốc tiến hóa từ mười sáu Bộ chim đến từng loài.
+
+Chuyển sang Cẩm nang nhận dạng, ứng dụng cung cấp báo cáo giám tuyển hình thái học chi tiết về cấu trúc mỏ, màu lông, đối chiếu tọa độ quan sát thực tế từ iNaturalist và tình trạng Sách Đỏ IUCN.
+
+Tính năng Khám phá ngẫu nhiên giúp học tập sinh thái thú vị hơn qua các kiến thức kỳ thú, hỗ trợ tra cứu chéo sang các loài đặc hữu độc đáo như Khướu đá mun ở núi đá vôi.
+
+Điểm nhấn cốt lõi là Trợ lý Gemini AI Naturalist dùng mô hình Gemini 3.7 Flash — tự động nhận diện ngữ cảnh loài chim đang tra cứu để giải đáp sinh thái, nhận diện ảnh thực địa qua Multimodal Vision và tự động viết nhật ký dã ngoại.
+
+Avifauna of Vietnam được xây dựng với tinh thần Vibe Coding, triển khai trên Google Cloud Run với bản đồ khẳng định trọn vẹn chủ quyền Quần đảo Hoàng Sa và Trường Sa. Hy vọng ứng dụng sẽ mang lại cho bạn những trải nghiệm thú vị và thêm nhiều kiến thức bổ ích về thiên nhiên hoang dã Việt Nam. Xin cảm ơn bạn đã theo dõi!
+
+
