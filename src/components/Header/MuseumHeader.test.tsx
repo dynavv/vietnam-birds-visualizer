@@ -27,10 +27,10 @@ describe('MuseumHeader Component', () => {
     expect(screen.getByText('Avifauna of Vietnam')).toBeDefined();
     expect(screen.getByText(/Giám tuyển & Trực quan hóa Phân loại học/i)).toBeDefined();
 
-    // 3 Tabs (Desktop & Mobile)
-    expect(screen.getAllByText('Bản đồ Sinh thái').length).toBeGreaterThanOrEqual(1);
-    expect(screen.getAllByText('Cây Phả hệ').length).toBeGreaterThanOrEqual(1);
-    expect(screen.getAllByText('Cẩm nang Nhận dạng').length).toBeGreaterThanOrEqual(1);
+    // 3 Tabs
+    expect(screen.getByText('Bản đồ Sinh thái')).toBeDefined();
+    expect(screen.getByText('Cây Phả hệ')).toBeDefined();
+    expect(screen.getByText('Cẩm nang Nhận dạng')).toBeDefined();
 
     // Random button & Search & Discovery Counter
     expect(screen.getByLabelText(/Khám phá ngẫu nhiên/i)).toBeDefined();
@@ -47,23 +47,13 @@ describe('MuseumHeader Component', () => {
 
     expect(screen.getByTestId('current-view').textContent).toBe('map');
 
-    fireEvent.click(screen.getAllByText('Cây Phả hệ')[0]);
+    fireEvent.click(screen.getByText('Cây Phả hệ'));
     expect(screen.getByTestId('current-view').textContent).toBe('sunburst');
 
-    fireEvent.click(screen.getAllByText('Cẩm nang Nhận dạng')[0]);
+    fireEvent.click(screen.getByText('Cẩm nang Nhận dạng'));
     expect(screen.getByTestId('current-view').textContent).toBe('curator');
 
-    fireEvent.click(screen.getAllByText('Bản đồ Sinh thái')[0]);
-    expect(screen.getByTestId('current-view').textContent).toBe('map');
-
-    // Also test switching view via mobile shortLabel tab
-    fireEvent.click(screen.getByText('Phả hệ'));
-    expect(screen.getByTestId('current-view').textContent).toBe('sunburst');
-
-    fireEvent.click(screen.getByText('Cẩm nang'));
-    expect(screen.getByTestId('current-view').textContent).toBe('curator');
-
-    fireEvent.click(screen.getByText('Bản đồ'));
+    fireEvent.click(screen.getByText('Bản đồ Sinh thái'));
     expect(screen.getByTestId('current-view').textContent).toBe('map');
   });
 

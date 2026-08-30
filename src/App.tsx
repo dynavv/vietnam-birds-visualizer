@@ -7,6 +7,7 @@ import { CuratorView } from "./components/CuratorView/CuratorView";
 import { MuseumFooter } from "./components/Footer/MuseumFooter";
 import { DiscoveryToast } from "./components/Common/DiscoveryToast";
 import { GeminiFloatingButton } from "./components/AI/GeminiFloatingButton";
+import { MobileFullscreenGate } from "./components/Common/MobileFullscreenGate";
 
 export { MuseumFooter };
 
@@ -56,6 +57,9 @@ export const AppShell: React.FC = () => {
 
   return (
     <div className="h-screen h-[100dvh] max-h-screen bg-paper-50 flex flex-col font-sans text-ink-900 selection:bg-natural-moss/20 selection:text-natural-forest overflow-hidden relative">
+      {/* Fullscreen Notification Gate on Mobile & Tablet (< 1024px) */}
+      <MobileFullscreenGate />
+
       <MuseumHeader className="shrink-0" />
       <MainContent />
       <MuseumFooter className="shrink-0" />
