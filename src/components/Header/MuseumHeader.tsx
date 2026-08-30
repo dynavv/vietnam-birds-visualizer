@@ -261,17 +261,24 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
             </span>
           </button>
 
-          {/* Discovery Counter Badge (Placed directly to the right of Random Discovery button) */}
+          {/* Discovery Counter Badge (2-Row Compact Stacked Layout) */}
           <div
-            className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-paper-200/90 hover:bg-paper-200 border border-paper-border text-xs font-mono font-medium text-ink-700 shadow-2xs shrink-0 select-none transition-colors"
+            className="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-paper-200/90 hover:bg-paper-200 border border-paper-border text-ink-700 shadow-2xs shrink-0 select-none transition-colors"
             title={`Bộ sưu tập: Đã khám phá ${discoveredSpeciesIds.length} trên tổng số ${allSpecies.length} loài chim`}
             data-testid="header-discovery-counter"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse shrink-0" />
-            <span className="font-bold text-natural-forest">{discoveredSpeciesIds.length}</span>
-            <span className="text-ink-400 font-sans">/</span>
-            <span className="text-ink-600">{allSpecies.length}</span>
-            <span className="hidden md:inline text-[11px] font-sans text-ink-500">đã khám phá</span>
+            <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse shrink-0" />
+            <div className="flex flex-col text-left leading-none">
+              <div className="text-xs font-mono font-bold text-natural-forest whitespace-nowrap">
+                <span>{discoveredSpeciesIds.length}</span>
+                <span className="text-ink-400 font-normal">/</span>
+                <span>{allSpecies.length}</span>
+                <span className="ml-1 text-[11px] font-sans font-medium text-ink-700">loài</span>
+              </div>
+              <div className="text-[10px] font-sans text-ink-500 font-medium whitespace-nowrap mt-0.5">
+                đã khám phá
+              </div>
+            </div>
           </div>
         </div>
 
