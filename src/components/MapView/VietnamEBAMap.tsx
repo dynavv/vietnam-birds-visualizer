@@ -22,6 +22,20 @@ const VIETNAM_DEFAULT_ZOOM = 6;
 const VIETNAM_MIN_ZOOM = 6; // Zoom out toàn cảnh Việt Nam
 const VIETNAM_MAX_ZOOM = 13; // Zoom in cấp độ sinh cảnh vùng/khu bảo tồn (tránh hiểu lầm tọa độ)
 
+// Type-guard to validate that coordinates are valid non-NaN numbers
+export const isValidLatLng = (coords: unknown): coords is [number, number] => {
+  return (
+    Array.isArray(coords) &&
+    coords.length >= 2 &&
+    typeof coords[0] === 'number' &&
+    typeof coords[1] === 'number' &&
+    Number.isFinite(coords[0]) &&
+    Number.isFinite(coords[1]) &&
+    !isNaN(coords[0]) &&
+    !isNaN(coords[1])
+  );
+};
+
 // Phạm vi kéo mở rộng thoải mái cho toàn bộ vùng Tây Bắc, Đông Bắc, Biển Đông và Tây Nam Bộ
 const VIETNAM_MAX_BOUNDS: [[number, number], [number, number]] = [
   [4.0, 96.0], // Tây Nam (Vịnh Thái Lan, Cà Mau, Biển Tây)
@@ -175,17 +189,28 @@ const getSpeciesDivIcon = (species: BirdSpecies) => {
 
 // Helper to disperse overlapping markers in a spider radial pattern
 export const calculateSpiderOffset = (
-  coords: [number, number],
-  index: number,
-  totalAtCoord: number
+  coords: [number, number] | undefined | null,
+  index: number = 0,
+  totalAtCoord: number = 1
 ): [number, number] => {
-  if (totalAtCoord <= 1) return coords;
+  if (!isValidLatLng(coords)) {
+    return VIETNAM_CENTER;
+  }
+  if (!totalAtCoord || typeof totalAtCoord !== 'number' || !Number.isFinite(totalAtCoord) || totalAtCoord <= 1) {
+    return coords;
+  }
+  const safeIndex = (typeof index === 'number' && Number.isFinite(index)) ? index : 0;
   // Offset radius in degrees (~4-8km geographically)
-  const angle = (2 * Math.PI / totalAtCoord) * index;
-  const radius = 0.045 + (index % 2 === 1 ? 0.015 : 0);
+  const angle = (2 * Math.PI / totalAtCoord) * safeIndex;
+  const radius = 0.045 + (safeIndex % 2 === 1 ? 0.015 : 0);
   const latOffset = Math.sin(angle) * radius;
   const lngOffset = Math.cos(angle) * radius;
-  return [coords[0] + latOffset, coords[1] + lngOffset];
+  const newLat = coords[0] + latOffset;
+  const newLng = coords[1] + lngOffset;
+  if (!Number.isFinite(newLat) || !Number.isFinite(newLng) || isNaN(newLat) || isNaN(newLng)) {
+    return coords;
+  }
+  return [newLat, newLng];
 };
 
 // Inner Map Controller component to handle flyTo animations with cancellation
@@ -200,12 +225,13 @@ const MapFlyToController: React.FC<MapFlyToControllerProps> = ({ target }) => {
   const map = useMap();
 
   useEffect(() => {
-    if (target) {
+    if (target && isValidLatLng(target.coordinates)) {
+      const zoom = (typeof target.zoom === 'number' && Number.isFinite(target.zoom) && !isNaN(target.zoom)) ? target.zoom : VIETNAM_DEFAULT_ZOOM;
       try {
         if (map && (map as unknown as { _mapPane?: HTMLElement })._mapPane) {
           map.stop();
         }
-        map.flyTo(target.coordinates, target.zoom, {
+        map.flyTo(target.coordinates, zoom, {
           duration: 1.2,
           easeLinearity: 0.25
         });
@@ -283,7 +309,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
 
   // Fly to selected species whenever it changes
   useEffect(() => {
-    if (selectedSpecies?.distribution?.coordinates) {
+    if (isValidLatLng(selectedSpecies?.distribution?.coordinates)) {
       setFlyTarget({
         coordinates: selectedSpecies.distribution.coordinates,
         zoom: 9
@@ -294,10 +320,12 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
   // Handle region select from legend or map
   const handleSelectRegion = useCallback((region: EBARegion) => {
     setSelectedEBARegionId(prev => prev === region.id ? null : region.id);
-    setFlyTarget({
-      coordinates: region.coordinates,
-      zoom: region.zoomLevel
-    });
+    if (isValidLatLng(region.coordinates)) {
+      setFlyTarget({
+        coordinates: region.coordinates,
+        zoom: typeof region.zoomLevel === 'number' && Number.isFinite(region.zoomLevel) ? region.zoomLevel : 9
+      });
+    }
   }, []);
 
   // Handle reset to full Vietnam overview
@@ -360,7 +388,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         )}
 
         {/* Sovereignty Island Markers (Hoàng Sa & Trường Sa) */}
-        {SOVEREIGNTY_POINTS.map((point, idx) => (
+        {SOVEREIGNTY_POINTS.filter(pt => isValidLatLng(pt.coordinates)).map((point, idx) => (
           <Marker
             key={`sov-${idx}`}
             position={point.coordinates}
@@ -370,8 +398,9 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         ))}
 
         {/* 6 EBA Region Haloes & Center Markers */}
-        {ebaRegions.map((region, index) => {
+        {ebaRegions.filter(region => isValidLatLng(region.coordinates)).map((region, index) => {
           const isSelected = selectedEBARegionId === region.id;
+          const radius = (typeof region.radiusMeters === 'number' && Number.isFinite(region.radiusMeters)) ? region.radiusMeters : 50000;
 
           return (
             <React.Fragment key={region.id}>
@@ -379,7 +408,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
               {showEBACircles && (
                 <Circle
                   center={region.coordinates}
-                  radius={region.radiusMeters || 50000}
+                  radius={radius}
                   pathOptions={{
                     color: isSelected ? '#D97706' : '#2D5A27',
                     fillColor: isSelected ? '#F59E0B' : '#2D5A27',
@@ -419,15 +448,16 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
           // Precalculate coordinate groups for spider offset
           const coordCounts = new Map<string, number>();
           otherSpeciesList.forEach(s => {
-            if (s.distribution?.coordinates) {
-              const k = `${s.distribution.coordinates[0].toFixed(2)},${s.distribution.coordinates[1].toFixed(2)}`;
+            if (isValidLatLng(s.distribution?.coordinates)) {
+              const [lat, lng] = s.distribution.coordinates;
+              const k = `${lat.toFixed(2)},${lng.toFixed(2)}`;
               coordCounts.set(k, (coordCounts.get(k) || 0) + 1);
             }
           });
           const coordTrackers = new Map<string, number>();
 
           return otherSpeciesList.map(species => {
-            if (!species.distribution?.coordinates) return null;
+            if (!isValidLatLng(species.distribution?.coordinates)) return null;
             const originalCoords = species.distribution.coordinates;
             const k = `${originalCoords[0].toFixed(2)},${originalCoords[1].toFixed(2)}`;
             const total = coordCounts.get(k) || 1;
@@ -435,6 +465,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
             coordTrackers.set(k, currentIdx + 1);
 
             const displayCoords = calculateSpiderOffset(originalCoords, currentIdx, total);
+            if (!isValidLatLng(displayCoords)) return null;
 
             return (
               <Marker
@@ -488,7 +519,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         })()}
 
         {/* Currently Selected Species Pin (Highlighted / Animated) */}
-        {selectedSpecies?.distribution?.coordinates && (
+        {isValidLatLng(selectedSpecies?.distribution?.coordinates) && (
           <Marker
             position={selectedSpecies.distribution.coordinates}
             icon={getSelectedSpeciesDivIcon(selectedSpecies)}

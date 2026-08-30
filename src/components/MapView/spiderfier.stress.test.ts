@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { calculateSpiderOffset } from './VietnamEBAMap';
+import { calculateSpiderOffset, isValidLatLng } from './VietnamEBAMap';
 import { speciesData } from '../../data';
 import type { BirdSpecies } from '../../types/bird';
 
@@ -12,6 +12,30 @@ describe('Adversarial Stress Test: Coordinate Spiderfier & Coincident Pin Jitter
 
     const zero = calculateSpiderOffset(BASE_POINT, 0, 0);
     expect(zero).toEqual(BASE_POINT);
+  });
+
+  it('handles invalid, null, undefined, and NaN coordinates safely without throwing', () => {
+    expect(isValidLatLng(null)).toBe(false);
+    expect(isValidLatLng(undefined)).toBe(false);
+    expect(isValidLatLng([])).toBe(false);
+    expect(isValidLatLng([NaN, NaN])).toBe(false);
+    expect(isValidLatLng([16.0, NaN])).toBe(false);
+    expect(isValidLatLng([NaN, 107.5])).toBe(false);
+    expect(isValidLatLng(['16.0', '107.5'])).toBe(false);
+    expect(isValidLatLng([Infinity, 107.5])).toBe(false);
+    expect(isValidLatLng([16.0, 107.5])).toBe(true);
+
+    const fromNull = calculateSpiderOffset(null as any, 0, 5);
+    expect(Number.isFinite(fromNull[0])).toBe(true);
+    expect(Number.isFinite(fromNull[1])).toBe(true);
+
+    const fromNaN = calculateSpiderOffset([NaN, NaN] as any, 0, 5);
+    expect(Number.isFinite(fromNaN[0])).toBe(true);
+    expect(Number.isFinite(fromNaN[1])).toBe(true);
+
+    const fromUndefinedTotal = calculateSpiderOffset(BASE_POINT, 0, undefined as any);
+    expect(Number.isFinite(fromUndefinedTotal[0])).toBe(true);
+    expect(Number.isFinite(fromUndefinedTotal[1])).toBe(true);
   });
 
   it('2. Disperses coincident pins into distinct, non-overlapping coordinates for N=2..20', () => {
