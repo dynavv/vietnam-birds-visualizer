@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Feather, Monitor, Copy, Check, Sparkles } from 'lucide-react';
+import { Feather, Monitor, Copy, Check } from 'lucide-react';
 
 export interface MobileFullscreenGateProps {
   className?: string;
@@ -23,7 +23,7 @@ export const MobileFullscreenGate: React.FC<MobileFullscreenGateProps> = ({
 
   return (
     <div
-      className={`lg:hidden fixed inset-0 z-[9999] bg-[#FAF8F5] flex flex-col justify-between p-6 overflow-y-auto text-ink-900 font-sans ${className}`}
+      className={`sm:hidden fixed inset-0 z-[9999] bg-[#FAF8F5] flex flex-col justify-between p-6 overflow-y-auto text-ink-900 font-sans ${className}`}
       data-testid="mobile-fullscreen-gate"
     >
       {/* Top Header: Museum Brand */}
