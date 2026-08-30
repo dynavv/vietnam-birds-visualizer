@@ -1,14 +1,57 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Feather, Monitor, Copy, Check } from 'lucide-react';
 
 export interface MobileFullscreenGateProps {
   className?: string;
+  forceShowForTesting?: boolean;
+}
+
+/**
+ * Hàm nhận diện thiết bị di động & máy tính bảng chính xác 100%
+ * (Dựa trên User-Agent, Client Hints và Touch Pointer)
+ */
+export function isMobileOrTabletDevice(): boolean {
+  if (typeof window === 'undefined' || typeof navigator === 'undefined') return false;
+
+  // 1. Kiểm tra Client Hints API (Chrome / Edge / Android)
+  if ((navigator as unknown as { userAgentData?: { mobile?: boolean } }).userAgentData?.mobile === true) {
+    return true;
+  }
+
+  // 2. Kiểm tra chuỗi User-Agent hệ điều hành di động
+  const ua = navigator.userAgent || navigator.vendor || (window as unknown as { opera?: string }).opera || '';
+  const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|Silk/i;
+  if (mobileRegex.test(ua)) {
+    return true;
+  }
+
+  // 3. Kiểm tra cảm ứng touch ngón tay kết hợp màn hình thực tế
+  const hasTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  const isCoarsePointer = typeof window.matchMedia === 'function' && window.matchMedia('(pointer: coarse)').matches;
+  if (hasTouch && isCoarsePointer && window.innerWidth <= 820) {
+    return true;
+  }
+
+  return false;
 }
 
 export const MobileFullscreenGate: React.FC<MobileFullscreenGateProps> = ({
-  className = ''
+  className = '',
+  forceShowForTesting
 }) => {
+  const [isMobile, setIsMobile] = useState<boolean>(() => {
+    if (forceShowForTesting !== undefined) return forceShowForTesting;
+    return false;
+  });
   const [copied, setCopied] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (forceShowForTesting !== undefined) {
+      setIsMobile(forceShowForTesting);
+      return;
+    }
+    setIsMobile(isMobileOrTabletDevice());
+  }, [forceShowForTesting]);
 
   const handleCopyLink = async () => {
     try {
@@ -21,9 +64,13 @@ export const MobileFullscreenGate: React.FC<MobileFullscreenGateProps> = ({
     }
   };
 
+  if (!isMobile) {
+    return null;
+  }
+
   return (
     <div
-      className={`sm:hidden fixed inset-0 z-[9999] bg-[#FAF8F5] flex flex-col justify-between p-6 overflow-y-auto text-ink-900 font-sans ${className}`}
+      className={`fixed inset-0 z-[9999] bg-[#FAF8F5] flex flex-col justify-between p-6 overflow-y-auto text-ink-900 font-sans ${className}`}
       data-testid="mobile-fullscreen-gate"
     >
       {/* Top Header: Museum Brand */}

@@ -3,8 +3,13 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { MobileFullscreenGate } from './MobileFullscreenGate';
 
 describe('MobileFullscreenGate Component', () => {
-  it('renders fullscreen desktop recommendation with copy link button', () => {
-    render(<MobileFullscreenGate />);
+  it('returns null on desktop environments', () => {
+    render(<MobileFullscreenGate forceShowForTesting={false} />);
+    expect(screen.queryByTestId('mobile-fullscreen-gate')).toBeNull();
+  });
+
+  it('renders fullscreen desktop recommendation when active on mobile devices', () => {
+    render(<MobileFullscreenGate forceShowForTesting={true} />);
 
     expect(screen.getByTestId('mobile-fullscreen-gate')).toBeDefined();
     expect(screen.getByText('Avifauna of Vietnam')).toBeDefined();
@@ -21,7 +26,7 @@ describe('MobileFullscreenGate Component', () => {
       }
     });
 
-    render(<MobileFullscreenGate />);
+    render(<MobileFullscreenGate forceShowForTesting={true} />);
 
     const copyBtn = screen.getByText(/Sao chép liên kết để mở trên máy tính/i);
     fireEvent.click(copyBtn);
