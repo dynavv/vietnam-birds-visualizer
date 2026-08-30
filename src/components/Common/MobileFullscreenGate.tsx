@@ -102,8 +102,8 @@ export const MobileFullscreenGate: React.FC<MobileFullscreenGateProps> = ({
             </h2>
           </div>
 
-          <p className="text-xs leading-relaxed text-ink-700 font-sans text-justify">
-            Hệ thống trực quan hóa bảo tàng đa tầng (Bản đồ GIS 6 Vùng EBA, Cây Phả Hệ D3.js &amp; Cẩm Nang Giám Tuyển) yêu cầu không gian màn hình lớn để hiển thị trọn vẹn độ phân giải và tương tác phả hệ học.
+          <p className="text-xs leading-relaxed text-ink-700 font-sans text-center">
+            Hệ thống trực quan hóa bảo tàng yêu cầu không gian màn hình lớn để hiển thị trọn vẹn độ phân giải và trải nghiệm tương tác trực quan.
           </p>
 
           <div className="p-3 bg-natural-moss/5 rounded-xl border border-natural-moss/15 text-[11.5px] text-natural-forest font-medium">

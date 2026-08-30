@@ -11,7 +11,7 @@ describe('MobileNoticeBanner Component', () => {
     render(<MobileNoticeBanner />);
 
     expect(screen.getByTestId('mobile-notice-banner')).toBeDefined();
-    expect(screen.getByText(/Khuyến nghị trải nghiệm:/i)).toBeDefined();
+    expect(screen.getByText(/Khuyến nghị:/i)).toBeDefined();
     expect(screen.getByText(/Máy tính \(Desktop \/ Laptop\)/i)).toBeDefined();
   });
 

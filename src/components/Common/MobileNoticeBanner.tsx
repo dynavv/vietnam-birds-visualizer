@@ -54,7 +54,7 @@ export const MobileNoticeBanner: React.FC<MobileNoticeBannerProps> = ({
           <Monitor className="w-4 h-4" />
         </div>
         <p className="text-[11.5px] leading-tight text-paper-100 font-sans">
-          <span className="font-bold text-amber-300">Khuyến nghị trải nghiệm:</span> Ứng dụng bản đồ GIS &amp; Phả hệ D3.js hiển thị tối ưu nhất trên <strong className="text-paper-50 underline decoration-amber-400 underline-offset-2">Máy tính (Desktop / Laptop)</strong>. Bản tối ưu di động sẽ sớm được cập nhật trong tương lai!
+          <span className="font-bold text-amber-300">Khuyến nghị:</span> Ứng dụng bảo tàng hiển thị tối ưu nhất trên <strong className="text-paper-50 underline decoration-amber-400 underline-offset-2">Máy tính (Desktop / Laptop)</strong>. Bản tối ưu di động sẽ sớm được cập nhật trong tương lai!
         </p>
       </div>
 
