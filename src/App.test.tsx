@@ -54,7 +54,7 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     expect(screen.queryByTestId('active-curator-view')).toBeNull();
 
     // 1. Switch to Sunburst View
-    const sunburstTab = screen.getByRole('tab', { name: /Cây Phả hệ/i });
+    const sunburstTab = screen.getAllByRole('tab', { name: /Cây Phả hệ/i })[0];
     fireEvent.click(sunburstTab);
 
     expect(screen.getByTestId('active-sunburst-view')).toBeDefined();
@@ -69,7 +69,7 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     expect(screen.getByTestId('cladogram-tree-view')).toBeDefined();
 
     // 2. Switch to Curator View
-    const curatorTab = screen.getByRole('tab', { name: /Cẩm nang Nhận dạng/i });
+    const curatorTab = screen.getAllByRole('tab', { name: /Cẩm nang Nhận dạng/i })[0];
     fireEvent.click(curatorTab);
 
     expect(screen.queryByTestId('active-sunburst-view')).toBeNull();
@@ -81,7 +81,7 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     expect(screen.getByTestId('related-species-tabs')).toBeDefined();
 
     // 3. Switch back to Map View
-    const mapTab = screen.getByRole('tab', { name: /Bản đồ Sinh thái/i });
+    const mapTab = screen.getAllByRole('tab', { name: /Bản đồ Sinh thái/i })[0];
     fireEvent.click(mapTab);
 
     expect(screen.getByTestId('active-map-view')).toBeDefined();
@@ -92,7 +92,7 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     render(<App />);
 
     // Switch to Sunburst View
-    const sunburstTab = screen.getByRole('tab', { name: /Cây Phả hệ/i });
+    const sunburstTab = screen.getAllByRole('tab', { name: /Cây Phả hệ/i })[0];
     fireEvent.click(sunburstTab);
     expect(screen.getByTestId('active-sunburst-view')).toBeDefined();
 

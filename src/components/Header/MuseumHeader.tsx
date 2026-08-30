@@ -119,9 +119,9 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
           </div>
         </button>
 
-        {/* Center: 3-View Navigation Tabs */}
+        {/* Center: 3-View Navigation Tabs (Desktop & Tablet: hidden md:flex) */}
         <nav
-          className="flex items-center bg-paper-200/80 p-1 rounded-xl border border-paper-border text-xs font-medium shadow-inner shrink-0"
+          className="hidden md:flex items-center bg-paper-200/80 p-1 rounded-xl border border-paper-border text-xs font-medium shadow-inner shrink-0"
           role="tablist"
           aria-label="Chế độ xem trực quan hóa"
         >
@@ -153,12 +153,12 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
         </nav>
 
         {/* Right Actions: Search & Eye-Catching Random Discovery CTA */}
-        <div className="flex items-center gap-2.5 sm:gap-3 shrink-0 relative">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0 relative">
           
           {/* Expandable Live Search Bar */}
           <div className="relative">
             {isSearchOpen ? (
-              <div className="flex items-center bg-paper-50 border border-natural-moss/40 rounded-xl px-2.5 py-1.5 shadow-paper-card w-48 sm:w-64 transition-all duration-300">
+              <div className="flex items-center bg-paper-50 border border-natural-moss/40 rounded-xl px-2.5 py-1.5 shadow-paper-card w-44 sm:w-64 transition-all duration-300">
                 <Search className="w-3.5 h-3.5 text-natural-moss shrink-0 mr-1.5" />
                 <input
                   ref={searchInputRef}
@@ -195,7 +195,7 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
                 }}
                 title="Tìm kiếm loài chim (Ctrl+K)"
                 aria-label="Tìm kiếm loài chim"
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-paper-100 hover:bg-paper-200 text-ink-700 border border-paper-border text-xs transition-all cursor-pointer shadow-xs whitespace-nowrap"
+                className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-paper-100 hover:bg-paper-200 text-ink-700 border border-paper-border text-xs transition-all cursor-pointer shadow-xs whitespace-nowrap"
               >
                 <Search className="w-3.5 h-3.5 text-natural-moss shrink-0" />
                 <span className="hidden md:inline text-ink-600 font-sans whitespace-nowrap">Tìm kiếm</span>
@@ -244,7 +244,7 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
             onClick={handleRandomClick}
             aria-label="Khám phá ngẫu nhiên một loài chim"
             title="Khám phá ngẫu nhiên báu vật chim quý Việt Nam"
-            className="group relative inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-xl bg-gradient-to-r from-[#1B4317] via-[#245A20] to-[#2E6F28] hover:from-[#163813] hover:to-[#255C20] text-paper-50 active:scale-95 transition-all duration-300 text-xs font-semibold border border-emerald-400/30 hover:border-emerald-300/70 shadow-md hover:shadow-lg shadow-natural-moss/25 cursor-pointer overflow-hidden whitespace-nowrap shrink-0"
+            className="group relative inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-xl bg-gradient-to-r from-[#1B4317] via-[#245A20] to-[#2E6F28] hover:from-[#163813] hover:to-[#255C20] text-paper-50 active:scale-95 transition-all duration-300 text-xs font-semibold border border-emerald-400/30 hover:border-emerald-300/70 shadow-md hover:shadow-lg shadow-natural-moss/25 cursor-pointer overflow-hidden whitespace-nowrap shrink-0"
           >
             {/* Periodic Golden Shimmer Sweep Animation */}
             <span
@@ -252,18 +252,18 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
             />
 
             <Dices
-              className={`w-4 h-4 text-amber-300 transition-transform duration-500 shrink-0 ${
+              className={`w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 transition-transform duration-500 shrink-0 ${
                 diceRolling ? 'rotate-180 scale-125 text-yellow-200' : 'group-hover:rotate-45 group-hover:scale-110'
               }`}
             />
             <span className="tracking-wide whitespace-nowrap font-sans text-paper-50 drop-shadow-xs">
-              Khám phá ngẫu nhiên
+              <span className="hidden sm:inline">Khám phá </span>ngẫu nhiên
             </span>
           </button>
 
           {/* Discovery Counter Badge (2-Row Compact Stacked Layout) */}
           <div
-            className="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-paper-200/90 hover:bg-paper-200 border border-paper-border text-ink-700 shadow-2xs shrink-0 select-none transition-colors"
+            className="hidden sm:inline-flex items-center gap-2 px-2.5 sm:px-3 py-1 rounded-xl bg-paper-200/90 hover:bg-paper-200 border border-paper-border text-ink-700 shadow-2xs shrink-0 select-none transition-colors"
             title={`Bộ sưu tập: Đã khám phá ${discoveredSpeciesIds.length} trên tổng số ${allSpecies.length} loài chim`}
             data-testid="header-discovery-counter"
           >
@@ -283,6 +283,39 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
         </div>
 
       </div>
+
+      {/* Mobile-Only Dedicated Navigation Segment (md:hidden: 3 Equal Touch Columns) */}
+      <nav
+        className="md:hidden mt-2 grid grid-cols-3 gap-1 bg-paper-200/90 p-1 rounded-xl border border-paper-border text-xs font-medium shadow-inner w-full"
+        role="tablist"
+        aria-label="Chế độ xem trực quan hóa trên di động"
+      >
+        {NAV_TABS.map((tab) => {
+          const isActive = activeView === tab.id;
+          const Icon = tab.icon;
+
+          return (
+            <button
+              key={`mobile-${tab.id}`}
+              role="tab"
+              aria-selected={isActive}
+              onClick={() => setActiveView(tab.id)}
+              className={`flex items-center justify-center space-x-1.5 py-1.5 px-1 rounded-lg text-[11.5px] font-medium transition-all cursor-pointer whitespace-nowrap ${
+                isActive
+                  ? 'bg-paper-50 text-ink-900 shadow-xs font-bold border border-paper-border/80'
+                  : 'text-ink-600 hover:text-ink-900'
+              }`}
+            >
+              <Icon
+                className={`w-3.5 h-3.5 shrink-0 ${
+                  isActive ? 'text-natural-moss' : 'text-ink-500'
+                }`}
+              />
+              <span className="truncate font-sans">{tab.label}</span>
+            </button>
+          );
+        })}
+      </nav>
     </header>
   );
 };
