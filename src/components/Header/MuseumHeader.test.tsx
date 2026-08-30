@@ -55,6 +55,16 @@ describe('MuseumHeader Component', () => {
 
     fireEvent.click(screen.getAllByText('Bản đồ Sinh thái')[0]);
     expect(screen.getByTestId('current-view').textContent).toBe('map');
+
+    // Also test switching view via mobile shortLabel tab
+    fireEvent.click(screen.getByText('Phả hệ'));
+    expect(screen.getByTestId('current-view').textContent).toBe('sunburst');
+
+    fireEvent.click(screen.getByText('Cẩm nang'));
+    expect(screen.getByTestId('current-view').textContent).toBe('curator');
+
+    fireEvent.click(screen.getByText('Bản đồ'));
+    expect(screen.getByTestId('current-view').textContent).toBe('map');
   });
 
   it('triggers random endemic selection when clicking random button', () => {

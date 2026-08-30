@@ -55,7 +55,7 @@ export const AppShell: React.FC = () => {
   } = useTaxonomy();
 
   return (
-    <div className="min-h-screen md:h-screen md:max-h-screen bg-paper-50 flex flex-col font-sans text-ink-900 selection:bg-natural-moss/20 selection:text-natural-forest overflow-x-hidden md:overflow-hidden relative">
+    <div className="h-screen h-[100dvh] max-h-screen bg-paper-50 flex flex-col font-sans text-ink-900 selection:bg-natural-moss/20 selection:text-natural-forest overflow-hidden relative">
       <MuseumHeader className="shrink-0" />
       <MainContent />
       <MuseumFooter className="shrink-0" />

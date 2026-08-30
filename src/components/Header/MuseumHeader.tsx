@@ -3,12 +3,14 @@ import { Compass, TreePine, Feather, Dices, Search, X } from 'lucide-react';
 import { useTaxonomy, ViewMode } from '../../context/TaxonomyContext';
 
 export interface MuseumHeaderProps {
-  className?: string;}
+  className?: string;
+}
 
-interface NavTabItem {
+export interface NavTabItem {
   id: ViewMode;
   label: string;
-  sublabel?: string;
+  shortLabel: string;
+  sublabel: string;
   icon: React.ComponentType<{ className?: string }>;
 }
 
@@ -16,18 +18,21 @@ const NAV_TABS: NavTabItem[] = [
   {
     id: 'map',
     label: 'Bản đồ Sinh thái',
+    shortLabel: 'Bản đồ',
     sublabel: 'EBA Map',
     icon: Compass
   },
   {
     id: 'sunburst',
     label: 'Cây Phả hệ',
+    shortLabel: 'Phả hệ',
     sublabel: 'Phylogeny Tree',
     icon: TreePine
   },
   {
     id: 'curator',
     label: 'Cẩm nang Nhận dạng',
+    shortLabel: 'Cẩm nang',
     sublabel: 'Field Guide',
     icon: Feather
   }
@@ -311,7 +316,7 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
                   isActive ? 'text-natural-moss' : 'text-ink-500'
                 }`}
               />
-              <span className="truncate font-sans">{tab.label}</span>
+              <span className="truncate font-sans font-medium">{tab.shortLabel}</span>
             </button>
           );
         })}

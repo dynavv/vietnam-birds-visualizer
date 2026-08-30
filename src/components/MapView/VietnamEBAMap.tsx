@@ -253,6 +253,50 @@ const MapFlyToController: React.FC<MapFlyToControllerProps> = ({ target }) => {
   return null;
 };
 
+// Map Resize Observer & Dynamic Invalidate Controller for Mobile & Responsive containers
+const MapResizeController: React.FC = () => {
+  const map = useMap();
+
+  useEffect(() => {
+    // Initial invalidate after DOM layout stabilizes
+    const timer1 = setTimeout(() => {
+      try {
+        map.invalidateSize();
+      } catch {
+        // Safe fallback
+      }
+    }, 150);
+
+    const timer2 = setTimeout(() => {
+      try {
+        map.invalidateSize();
+      } catch {
+        // Safe fallback
+      }
+    }, 600);
+
+    const handleResize = () => {
+      try {
+        map.invalidateSize();
+      } catch {
+        // Safe fallback
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('orientationchange', handleResize);
+
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('orientationchange', handleResize);
+    };
+  }, [map]);
+
+  return null;
+};
+
 // Interactive Zoom In / Zoom Out controller using Leaflet map instance
 const MapZoomControls: React.FC = () => {
   const map = useMap();
@@ -361,13 +405,14 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         className="w-full h-full z-0"
         style={{ height: '100%', width: '100%', background: '#FAF8F5' }}
       >
-        {/* CartoDB Voyager TileLayer with authorized API key from environment */}
+        {/* CartoDB Voyager TileLayer */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-          url={`https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=${import.meta.env.VITE_CARTO_API_KEY || 'cb1_2fry_1_3e9fcd71ed08a90121c82244'}`}
+          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
           subdomains={['a', 'b', 'c', 'd']}
         />
 
+        <MapResizeController />
         <MapFlyToController target={flyTarget} />
         <MapZoomControls />
 
