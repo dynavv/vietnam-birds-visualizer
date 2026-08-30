@@ -1,7 +1,6 @@
 import React from "react";
 import { TaxonomyProvider, useTaxonomy } from "./context/TaxonomyContext";
 import { MuseumHeader } from "./components/Header/MuseumHeader";
-import { AvianFunFactsRibbon } from "./components/Header/AvianFunFactsRibbon";
 import { VietnamEBAMap } from "./components/MapView/VietnamEBAMap";
 import { SunburstView } from "./components/SunburstView/SunburstView";
 import { CuratorView } from "./components/CuratorView/CuratorView";
@@ -58,7 +57,6 @@ export const AppShell: React.FC = () => {
   return (
     <div className="min-h-screen md:h-screen md:max-h-screen bg-paper-50 flex flex-col font-sans text-ink-900 selection:bg-natural-moss/20 selection:text-natural-forest overflow-x-hidden md:overflow-hidden relative">
       <MuseumHeader className="shrink-0" />
-      <AvianFunFactsRibbon className="shrink-0" />
       <MainContent />
       <MuseumFooter className="shrink-0" />
 
