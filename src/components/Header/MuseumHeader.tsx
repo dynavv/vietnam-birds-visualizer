@@ -184,7 +184,7 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
                 className="fixed inset-0 z-40"
                 onClick={() => setIsMobileMenuOpen(false)}
               />
-              <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 w-56 min-w-[210px] max-w-[calc(100vw-24px)] bg-[#FAF8F5] border-2 border-paper-border rounded-xl shadow-2xl py-1.5 z-50 overflow-hidden animate-fadeIn">
+              <div className="absolute top-full mt-2 right-0 w-52 min-w-[200px] max-w-[calc(100vw-24px)] bg-[#FAF8F5] border-2 border-paper-border rounded-xl shadow-2xl py-1.5 z-50 overflow-hidden animate-fadeIn">
                 <div className="px-3 py-1 text-[10px] font-mono text-ink-500 uppercase tracking-wider border-b border-paper-border/60 bg-paper-100/70">
                   Chế độ xem
                 </div>

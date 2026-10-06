@@ -373,9 +373,14 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
     allSpecies
   } = useTaxonomy();
 
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+
   const [selectedEBARegionId, setSelectedEBARegionId] = useState<string | null>(null);
   const [showEBACircles, setShowEBACircles] = useState<boolean>(true);
-  const [showAllSpeciesPins, setShowAllSpeciesPins] = useState<boolean>(true);
+  const [showAllSpeciesPins, setShowAllSpeciesPins] = useState<boolean>(() => {
+    const isMob = typeof window !== 'undefined' && window.innerWidth < 768;
+    return !isMob;
+  });
   const [isGeminiModalOpen, setIsGeminiModalOpen] = useState<boolean>(false);
   const showNationalBoundary = true;
   const [flyTarget, setFlyTarget] = useState<{
@@ -405,14 +410,17 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         zoom: typeof region.zoomLevel === 'number' && Number.isFinite(region.zoomLevel) ? region.zoomLevel : 9
       });
     }
-  }, []);
+    if (isMobile) {
+      setShowAllSpeciesPins(true);
+    }
+  }, [isMobile]);
 
   // Handle reset to full Vietnam overview
   const handleResetOverview = () => {
     setSelectedEBARegionId(null);
     setIsMobileSpeciesCardOpen(false);
-    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
     if (isMobile) {
+      setShowAllSpeciesPins(false);
       setFlyTarget({
         coordinates: [16.0, 107.5],
         zoom: 5.2
@@ -449,8 +457,6 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
     if (!selectedSpecies) return filteredSpecies;
     return filteredSpecies.filter(s => s.id !== selectedSpecies.id);
   }, [filteredSpecies, selectedSpecies]);
-
-  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
   // Khi chon 1 loai chim tren mobile, tu dong thu gon EBA bottom sheet ve peek
   useEffect(() => {

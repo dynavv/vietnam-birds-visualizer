@@ -68,32 +68,34 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
       aria-label={`Thẻ mẫu vật giám tuyển loài ${species.vietnameseName}`}
     >
       {/* Top Header Bar */}
-      <div className="px-4 py-2 bg-paper-200/50 border-b border-paper-border flex items-center justify-between gap-2 shrink-0">
-        <div className="flex items-center gap-1.5 flex-wrap">
+      <div className="px-3 sm:px-4 py-2 bg-paper-200/50 border-b border-paper-border flex items-center justify-between gap-1.5 shrink-0">
+        <div className="flex items-center gap-1.5 shrink-0 min-w-0">
           {isHoverPreview ? (
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-natural-ochre/20 text-natural-ochre border border-natural-ochre/40 text-[10px] font-mono font-bold uppercase tracking-wider">
-              <Eye className="w-3 h-3" />
-              Xem nhanh
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-natural-ochre/20 text-natural-ochre border border-natural-ochre/40 text-[10px] font-mono font-bold uppercase tracking-wider whitespace-nowrap shrink-0">
+              <Eye className="w-3 h-3 shrink-0" />
+              <span>Xem nhanh</span>
             </span>
           ) : (
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-natural-moss/15 text-natural-forest border border-natural-moss/30 text-[10px] font-mono font-bold uppercase tracking-wider">
-              <Sparkles className="w-3 h-3 text-natural-moss" />
-              Mẫu vật Giám tuyển
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-natural-moss/15 text-natural-forest border border-natural-moss/30 text-[10px] font-mono font-bold uppercase tracking-wider whitespace-nowrap shrink-0">
+              <Sparkles className="w-3 h-3 text-natural-moss shrink-0" />
+              <span>Mẫu vật</span>
+              <span className="hidden sm:inline">Giám tuyển</span>
             </span>
           )}
 
-          {species.isEndemic && <EndemicBadge size="sm" scope={species.endemicScope} />}
+          {species.isEndemic && <EndemicBadge size="sm" compact scope={species.endemicScope} className="shrink-0" />}
         </div>
 
         <ConservationBadge
           status={species.conservation.iucn}
           vietnamRedList={species.conservation.vietnamRedList}
           size="sm"
+          className="shrink-0"
         />
       </div>
 
       {/* Main Scrollable Body */}
-      <div className="p-3 sm:p-4 space-y-3.5 flex-1 min-h-0 overflow-y-auto scrollbar-thin">
+      <div className="p-3 sm:p-4 space-y-3.5 flex-1 min-h-0 overflow-y-auto scrollbar-thin pb-16 sm:pb-4">
         {/* Classic Naturalist Artwork Plate */}
         <div className="relative group rounded-xl overflow-hidden border-2 border-paper-300 bg-paper-200/60 p-1.5 shadow-inner">
           <BirdPlateImage

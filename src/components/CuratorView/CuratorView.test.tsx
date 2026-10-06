@@ -80,10 +80,10 @@ describe('CuratorView Component', () => {
     );
 
     expect(screen.getByTestId('curator-view')).toBeDefined();
-    expect(screen.getByTestId('specimen-plate')).toBeDefined();
-    expect(screen.getByTestId('clade-badge-sequence')).toBeDefined();
-    expect(screen.getByTestId('related-species-tabs')).toBeDefined();
-    expect(screen.getByTestId('morphology-report')).toBeDefined();
+    expect(screen.getAllByTestId('specimen-plate').length).toBeGreaterThan(0);
+    expect(screen.getAllByTestId('clade-badge-sequence').length).toBeGreaterThan(0);
+    expect(screen.getAllByTestId('related-species-tabs').length).toBeGreaterThan(0);
+    expect(screen.getAllByTestId('morphology-report').length).toBeGreaterThan(0);
 
     // Verify trilingual nomenclature & taxonomy
     expect(screen.getAllByText('Khướu Ngọc Linh').length).toBeGreaterThan(0);
@@ -92,8 +92,8 @@ describe('CuratorView Component', () => {
 
     // Verify distribution details
     expect(screen.getAllByText(/Cao nguyên Kon Tum/i).length).toBeGreaterThan(0);
-    expect(screen.getByText('1.900m - 2.598m')).toBeDefined();
-    expect(screen.getByText(/Rừng lùn đỉnh núi mù sương/i)).toBeDefined();
+    expect(screen.getAllByText('1.900m - 2.598m').length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Rừng lùn đỉnh núi mù sương/i).length).toBeGreaterThan(0);
   });
 
   it('handles navigation triggers to Map and Sunburst views', () => {
@@ -112,6 +112,6 @@ describe('CuratorView Component', () => {
 
     expect(screen.getByTestId('curator-view')).toBeDefined();
     expect(screen.getByText('Cẩm Nang Nhận Dạng & Hình Thái Học')).toBeDefined();
-    expect(screen.getByTestId('specimen-plate')).toBeDefined();
+    expect(screen.getAllByTestId('specimen-plate').length).toBeGreaterThan(0);
   });
 });

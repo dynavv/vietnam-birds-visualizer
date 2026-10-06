@@ -75,10 +75,10 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     expect(screen.queryByTestId('active-sunburst-view')).toBeNull();
     expect(screen.getByTestId('active-curator-view')).toBeDefined();
     expect(screen.getByTestId('curator-view')).toBeDefined();
-    expect(screen.getByTestId('specimen-plate')).toBeDefined();
-    expect(screen.getByTestId('clade-badge-sequence')).toBeDefined();
-    expect(screen.getByTestId('morphology-report')).toBeDefined();
-    expect(screen.getByTestId('related-species-tabs')).toBeDefined();
+    expect(screen.getAllByTestId('specimen-plate').length).toBeGreaterThan(0);
+    expect(screen.getAllByTestId('clade-badge-sequence').length).toBeGreaterThan(0);
+    expect(screen.getAllByTestId('morphology-report').length).toBeGreaterThan(0);
+    expect(screen.getAllByTestId('related-species-tabs').length).toBeGreaterThan(0);
 
     // 3. Switch back to Map View
     const mapTab = screen.getByRole('tab', { name: /Bản đồ Sinh thái/i });
@@ -103,7 +103,7 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     // App should transition to CuratorView
     expect(screen.getByTestId('active-curator-view')).toBeDefined();
     expect(screen.getByTestId('curator-view')).toBeDefined();
-    expect(screen.getByTestId('specimen-plate')).toBeDefined();
+    expect(screen.getAllByTestId('specimen-plate').length).toBeGreaterThan(0);
   });
 
   it('opens methodology modal when clicking footer links', () => {

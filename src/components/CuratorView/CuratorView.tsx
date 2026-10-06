@@ -44,6 +44,205 @@ export interface CuratorViewProps {
   onViewSunburst?: () => void;
 }
 
+interface DistributionCardProps {
+  species: BirdSpecies;
+}
+
+const DistributionCard: React.FC<DistributionCardProps> = ({ species }) => {
+  return (
+    <section
+      className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 shadow-paper-card space-y-3.5"
+      aria-label="Phân bố địa lý và sinh cảnh tại Việt Nam"
+    >
+      <div className="flex items-center justify-between pb-2 border-b border-paper-border">
+        <h3 className="font-serif font-bold text-sm text-ink-900 flex items-center gap-2">
+          <Globe2 className="w-4 h-4 text-natural-moss" />
+          <span>Sinh Cảnh &amp; Phân Bố Tự Nhiên tại Việt Nam</span>
+        </h3>
+        <span className="text-[10px] font-mono text-ink-500 uppercase">EBA Matrix</span>
+      </div>
+
+      <div className="space-y-2.5 text-xs">
+        {/* EBA Region */}
+        <div className="flex items-start gap-2.5 text-ink-800">
+          <MapPin className="w-4 h-4 text-natural-terracotta mt-0.5 flex-shrink-0" />
+          <div>
+            <span className="font-semibold text-ink-700">Vùng Chim Đặc Hữu (EBA): </span>
+            <span className="text-ink-900 font-medium">{species.distribution.ebaRegion}</span>
+          </div>
+        </div>
+
+        {/* Elevation */}
+        <div className="flex items-center gap-2.5 text-ink-800">
+          <Mountain className="w-4 h-4 text-natural-bark flex-shrink-0" />
+          <span className="font-semibold text-ink-700">Độ cao phân bố: </span>
+          <span className="font-mono text-ink-900 bg-paper-200 px-2 py-0.5 rounded border border-paper-border">
+            {species.distribution.elevation || 'Chưa ghi nhận'}
+          </span>
+        </div>
+
+        {/* Coordinates */}
+        {species.distribution.coordinates && (
+          <div className="flex items-center gap-2.5 text-ink-800">
+            <Compass className="w-4 h-4 text-natural-indigo flex-shrink-0" />
+            <span className="font-semibold text-ink-700">Tọa độ mẫu vật: </span>
+            <span className="font-mono text-ink-900">
+              {species.distribution.coordinates[0]}°N, {species.distribution.coordinates[1]}°E
+            </span>
+          </div>
+        )}
+
+        {/* Locations */}
+        {species.distribution.locations && species.distribution.locations.length > 0 && (
+          <div className="flex items-start gap-2.5 text-ink-800 pt-1">
+            <Trees className="w-4 h-4 text-natural-moss mt-0.5 flex-shrink-0" />
+            <div>
+              <span className="font-semibold text-ink-700">Địa bàn quan sát: </span>
+              <span className="text-ink-900">{species.distribution.locations.join(', ')}</span>
+            </div>
+          </div>
+        )}
+
+        {/* Habitat Tags */}
+        {species.distribution.habitats && species.distribution.habitats.length > 0 && (
+          <div className="pt-2">
+            <span className="font-semibold text-ink-700 block mb-1.5">Sinh cảnh đặc trưng:</span>
+            <div className="flex flex-wrap gap-1.5">
+              {species.distribution.habitats.map((habitat, idx) => (
+                <span
+                  key={idx}
+                  className="inline-block px-2.5 py-1 bg-paper-200 text-[11px] text-ink-800 font-sans rounded-lg border border-paper-border"
+                >
+                  {habitat}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
+
+interface NomenclatureCardProps {
+  species: BirdSpecies;
+}
+
+const NomenclatureCard: React.FC<NomenclatureCardProps> = ({ species }) => {
+  return (
+    <section
+      className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card space-y-4"
+      aria-label="Thông tin danh pháp và tình trạng bảo tồn"
+    >
+      <div className="flex items-center justify-between gap-2 border-b border-paper-border pb-3">
+        <span className="font-mono text-[11px] uppercase font-bold text-natural-bark flex items-center gap-1">
+          <Sparkles className="w-3 h-3 text-natural-ochre" />
+          Hồ Sơ Mẫu Vật Điểu Học
+        </span>
+
+        <span className="font-mono text-[11px] text-ink-500 bg-paper-200/80 px-2 py-0.5 rounded border border-paper-border">
+          ID: {species.id}
+        </span>
+      </div>
+
+      {/* Trilingual Names */}
+      <div className="space-y-1.5">
+        <h2 className="font-serif text-2xl sm:text-3xl font-bold text-ink-900 tracking-tight leading-tight">
+          {species.vietnameseName}
+        </h2>
+
+        <p className="font-serif italic text-base sm:text-lg font-bold text-natural-forest">
+          {species.scientificName}
+        </p>
+
+        <p className="font-sans text-xs sm:text-sm text-ink-600 font-medium">
+          Tên tiếng Anh: <span className="text-ink-800 font-semibold">{species.englishName}</span>
+        </p>
+      </div>
+
+      {/* Badges Matrix */}
+      <div className="flex flex-wrap items-center gap-2 pt-1">
+        {species.isEndemic && <EndemicBadge size="md" scope={species.endemicScope} />}
+        <ConservationBadge
+          status={species.conservation.iucn}
+          vietnamRedList={species.conservation.vietnamRedList}
+          size="md"
+        />
+      </div>
+
+      {/* Conservation Status Card: Vietnam Red Data Book on Top, Hook Quote Below (No IUCN in text) */}
+      <div className="p-3.5 sm:p-4 rounded-xl bg-paper-50 border border-paper-border space-y-2 font-sans">
+        <div className="flex items-baseline gap-2 text-ink-900 flex-wrap">
+          <span className="font-bold text-sm text-natural-forest shrink-0">🇻🇳 Sách Đỏ Việt Nam:</span>
+          <span className="font-semibold text-sm text-ink-900">
+            {species.conservation.vietnamRedList
+              ? VIETNAM_RED_LIST_NAMES[species.conservation.vietnamRedList] || `Bậc ${species.conservation.vietnamRedList}`
+              : 'Nguy cơ thấp / Chưa xếp hạng (LC)'}
+          </span>
+        </div>
+
+        {species.conservation.description && (
+          <div className="pl-3 border-l-2 border-natural-ochre/80 text-ink-800 font-serif italic text-sm leading-relaxed">
+            "{cleanHookText(species.conservation.description)}"
+          </div>
+        )}
+
+        {/* Danh mục bảo vệ theo Nghị định & Chỉ thị Chính phủ (Chỉ hiển thị khi loài thuộc diện bảo vệ) */}
+        {(() => {
+          const legal = species.conservation.legalFramework;
+          const hasProtection = Boolean(
+            legal && (
+              legal.directive04Flagship ||
+              legal.decree84Group === 'IB' ||
+              legal.decree84Group === 'IIB' ||
+              legal.decree160Priority
+            )
+          );
+          if (!hasProtection || !legal) return null;
+
+          return (
+            <div className="pt-2 border-t border-paper-border/60 flex flex-wrap items-center gap-1.5 text-xs">
+              <span className="font-semibold text-ink-700">Danh mục bảo vệ:</span>
+              {legal.directive04Flagship && (
+                <span
+                  className="px-2 py-0.5 rounded-md bg-rose-100 text-rose-800 border border-rose-300 font-medium text-[11px]"
+                  title="Chỉ thị số 04/CT-TTg ngày 17/5/2022 của Thủ tướng Chính phủ"
+                >
+                  Chỉ thị 04/CT-TTg
+                </span>
+              )}
+              {legal.decree84Group === 'IB' && (
+                <span
+                  className="px-2 py-0.5 rounded-md bg-red-100 text-red-800 border border-red-300 font-medium text-[11px]"
+                  title="Nghị định 84/2021/NĐ-CP: Nhóm IB - Nghiêm cấm khai thác vì mục đích thương mại"
+                >
+                  Nhóm IB (Nghị định 84)
+                </span>
+              )}
+              {legal.decree84Group === 'IIB' && (
+                <span
+                  className="px-2 py-0.5 rounded-md bg-amber-100 text-amber-800 border border-amber-300 font-medium text-[11px]"
+                  title="Nghị định 84/2021/NĐ-CP: Nhóm IIB - Hạn chế khai thác vì mục đích thương mại"
+                >
+                  Nhóm IIB (Nghị định 84)
+                </span>
+              )}
+              {legal.decree160Priority && (
+                <span
+                  className="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 border border-emerald-300 font-medium text-[11px]"
+                  title="Nghị định 160/2013/NĐ-CP & 64/2019/NĐ-CP: Danh mục loài nguy cấp, quý, hiếm được ưu tiên bảo vệ"
+                >
+                  Ưu tiên bảo vệ (NĐ 160)
+                </span>
+              )}
+            </div>
+          );
+        })()}
+      </div>
+    </section>
+  );
+};
+
 export const CuratorView: React.FC<CuratorViewProps> = ({
   species: propSpecies,
   className = '',
@@ -118,7 +317,7 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
       {/* Scroll Anchor to top */}
       <div ref={topAnchorRef} aria-hidden="true" className="h-0 w-0 opacity-0 pointer-events-none" />
 
-      {/* Top Section: Header Banner (Setting identical to SunburstView) */}
+      {/* Top Section: Header Banner */}
       <div className="space-y-2 mb-2.5 shrink-0">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
           <div>
@@ -137,220 +336,56 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
         </div>
       </div>
 
-      {/* Main Balanced 2-Column Academic Editorial Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
-        
+      {/* Mobile 1-Column Editorial Layout (< lg) */}
+      <div className="space-y-5 lg:hidden">
+        {/* 1. SpecimenPlate */}
+        <SpecimenPlate species={species} />
+
+        {/* 2. NomenclatureCard */}
+        <NomenclatureCard species={species} />
+
+        {/* 3. MorphologyReport */}
+        <div className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card">
+          <MorphologyReport species={species} />
+        </div>
+
+        {/* 4. DistributionCard */}
+        <DistributionCard species={species} />
+
+        {/* 5. RelatedSpeciesTabs */}
+        <RelatedSpeciesTabs
+          currentSpecies={species}
+          allSpecies={allSpecies}
+        />
+
+        {/* 6. CladeBadgeSequence */}
+        <CladeBadgeSequence taxonomy={species.taxonomy} />
+
+        {/* 7. TaxonRegistriesCard */}
+        <TaxonRegistriesCard species={species} />
+      </div>
+
+      {/* Desktop Balanced 2-Column Academic Editorial Layout (>= lg) */}
+      <div className="hidden lg:grid lg:grid-cols-12 gap-5 items-start">
         {/* Left Column (Columns 1-6): Visual Plate, Ecology, Related Species & Taxon Registries */}
         <div className="lg:col-span-6 space-y-5">
-          {/* Specimen Illustration Plate */}
           <SpecimenPlate species={species} />
-
-          {/* Distribution & Ecological Habitat Card */}
-          <section
-            className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 shadow-paper-card space-y-3.5"
-            aria-label="Phân bố địa lý và sinh cảnh tại Việt Nam"
-          >
-            <div className="flex items-center justify-between pb-2 border-b border-paper-border">
-              <h3 className="font-serif font-bold text-sm text-ink-900 flex items-center gap-2">
-                <Globe2 className="w-4 h-4 text-natural-moss" />
-                <span>Sinh Cảnh &amp; Phân Bố Tự Nhiên tại Việt Nam</span>
-              </h3>
-              <span className="text-[10px] font-mono text-ink-500 uppercase">EBA Matrix</span>
-            </div>
-
-            <div className="space-y-2.5 text-xs">
-              {/* EBA Region */}
-              <div className="flex items-start gap-2.5 text-ink-800">
-                <MapPin className="w-4 h-4 text-natural-terracotta mt-0.5 flex-shrink-0" />
-                <div>
-                  <span className="font-semibold text-ink-700">Vùng Chim Đặc Hữu (EBA): </span>
-                  <span className="text-ink-900 font-medium">{species.distribution.ebaRegion}</span>
-                </div>
-              </div>
-
-              {/* Elevation */}
-              <div className="flex items-center gap-2.5 text-ink-800">
-                <Mountain className="w-4 h-4 text-natural-bark flex-shrink-0" />
-                <span className="font-semibold text-ink-700">Độ cao phân bố: </span>
-                <span className="font-mono text-ink-900 bg-paper-200 px-2 py-0.5 rounded border border-paper-border">
-                  {species.distribution.elevation || 'Chưa ghi nhận'}
-                </span>
-              </div>
-
-              {/* Coordinates */}
-              {species.distribution.coordinates && (
-                <div className="flex items-center gap-2.5 text-ink-800">
-                  <Compass className="w-4 h-4 text-natural-indigo flex-shrink-0" />
-                  <span className="font-semibold text-ink-700">Tọa độ mẫu vật: </span>
-                  <span className="font-mono text-ink-900">
-                    {species.distribution.coordinates[0]}°N, {species.distribution.coordinates[1]}°E
-                  </span>
-                </div>
-              )}
-
-              {/* Locations */}
-              {species.distribution.locations && species.distribution.locations.length > 0 && (
-                <div className="flex items-start gap-2.5 text-ink-800 pt-1">
-                  <Trees className="w-4 h-4 text-natural-moss mt-0.5 flex-shrink-0" />
-                  <div>
-                    <span className="font-semibold text-ink-700">Địa bàn quan sát: </span>
-                    <span className="text-ink-900">{species.distribution.locations.join(', ')}</span>
-                  </div>
-                </div>
-              )}
-
-              {/* Habitat Tags */}
-              {species.distribution.habitats && species.distribution.habitats.length > 0 && (
-                <div className="pt-2">
-                  <span className="font-semibold text-ink-700 block mb-1.5">Sinh cảnh đặc trưng:</span>
-                  <div className="flex flex-wrap gap-1.5">
-                    {species.distribution.habitats.map((habitat, idx) => (
-                      <span
-                        key={idx}
-                        className="inline-block px-2.5 py-1 bg-paper-200 text-[11px] text-ink-800 font-sans rounded-lg border border-paper-border"
-                      >
-                        {habitat}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-          </section>
-
-          {/* Related / Candidate Species Switcher Tabs */}
+          <DistributionCard species={species} />
           <RelatedSpeciesTabs
             currentSpecies={species}
             allSpecies={allSpecies}
           />
-
-          {/* Connected Evolutionary Phylogenetic Clade Badges */}
           <CladeBadgeSequence taxonomy={species.taxonomy} />
-
-          {/* Global Taxon Registries (IUCN, Avibase, GBIF, iNaturalist) */}
           <TaxonRegistriesCard species={species} />
         </div>
 
         {/* Right Column (Columns 7-12): Nomenclature, Morphology & Literature */}
         <div className="lg:col-span-6 space-y-5">
-          {/* Trilingual Nomenclature & Conservation Overview Card */}
-          <section
-            className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card space-y-4"
-            aria-label="Thông tin danh pháp và tình trạng bảo tồn"
-          >
-            <div className="flex items-center justify-between gap-2 border-b border-paper-border pb-3">
-              <span className="font-mono text-[11px] uppercase font-bold text-natural-bark flex items-center gap-1">
-                <Sparkles className="w-3 h-3 text-natural-ochre" />
-                Hồ Sơ Mẫu Vật Điểu Học
-              </span>
-
-              <span className="font-mono text-[11px] text-ink-500 bg-paper-200/80 px-2 py-0.5 rounded border border-paper-border">
-                ID: {species.id}
-              </span>
-            </div>
-
-            {/* Trilingual Names */}
-            <div className="space-y-1.5">
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-ink-900 tracking-tight leading-tight">
-                {species.vietnameseName}
-              </h2>
-
-              <p className="font-serif italic text-base sm:text-lg font-bold text-natural-forest">
-                {species.scientificName}
-              </p>
-
-              <p className="font-sans text-xs sm:text-sm text-ink-600 font-medium">
-                Tên tiếng Anh: <span className="text-ink-800 font-semibold">{species.englishName}</span>
-              </p>
-            </div>
-
-            {/* Badges Matrix */}
-            <div className="flex flex-wrap items-center gap-2 pt-1">
-              {species.isEndemic && <EndemicBadge size="md" scope={species.endemicScope} />}
-              <ConservationBadge
-                status={species.conservation.iucn}
-                vietnamRedList={species.conservation.vietnamRedList}
-                size="md"
-              />
-            </div>
-
-            {/* Conservation Status Card: Vietnam Red Data Book on Top, Hook Quote Below (No IUCN in text) */}
-            <div className="p-3.5 sm:p-4 rounded-xl bg-paper-50 border border-paper-border space-y-2 font-sans">
-              <div className="flex items-baseline gap-2 text-ink-900 flex-wrap">
-                <span className="font-bold text-sm text-natural-forest shrink-0">🇻🇳 Sách Đỏ Việt Nam:</span>
-                <span className="font-semibold text-sm text-ink-900">
-                  {species.conservation.vietnamRedList
-                    ? VIETNAM_RED_LIST_NAMES[species.conservation.vietnamRedList] || `Bậc ${species.conservation.vietnamRedList}`
-                    : 'Nguy cơ thấp / Chưa xếp hạng (LC)'}
-                </span>
-              </div>
-
-              {species.conservation.description && (
-                <div className="pl-3 border-l-2 border-natural-ochre/80 text-ink-800 font-serif italic text-sm leading-relaxed">
-                  "{cleanHookText(species.conservation.description)}"
-                </div>
-              )}
-
-              {/* Danh mục bảo vệ theo Nghị định & Chỉ thị Chính phủ (Chỉ hiển thị khi loài thuộc diện bảo vệ) */}
-              {(() => {
-                const legal = species.conservation.legalFramework;
-                const hasProtection = Boolean(
-                  legal && (
-                    legal.directive04Flagship ||
-                    legal.decree84Group === 'IB' ||
-                    legal.decree84Group === 'IIB' ||
-                    legal.decree160Priority
-                  )
-                );
-                if (!hasProtection || !legal) return null;
-
-                return (
-                  <div className="pt-2 border-t border-paper-border/60 flex flex-wrap items-center gap-1.5 text-xs">
-                    <span className="font-semibold text-ink-700">Danh mục bảo vệ:</span>
-                    {legal.directive04Flagship && (
-                      <span
-                        className="px-2 py-0.5 rounded-md bg-rose-100 text-rose-800 border border-rose-300 font-medium text-[11px]"
-                        title="Chỉ thị số 04/CT-TTg ngày 17/5/2022 của Thủ tướng Chính phủ"
-                      >
-                        Chỉ thị 04/CT-TTg
-                      </span>
-                    )}
-                    {legal.decree84Group === 'IB' && (
-                      <span
-                        className="px-2 py-0.5 rounded-md bg-red-100 text-red-800 border border-red-300 font-medium text-[11px]"
-                        title="Nghị định 84/2021/NĐ-CP: Nhóm IB - Nghiêm cấm khai thác vì mục đích thương mại"
-                      >
-                        Nhóm IB (Nghị định 84)
-                      </span>
-                    )}
-                    {legal.decree84Group === 'IIB' && (
-                      <span
-                        className="px-2 py-0.5 rounded-md bg-amber-100 text-amber-800 border border-amber-300 font-medium text-[11px]"
-                        title="Nghị định 84/2021/NĐ-CP: Nhóm IIB - Hạn chế khai thác vì mục đích thương mại"
-                      >
-                        Nhóm IIB (Nghị định 84)
-                      </span>
-                    )}
-                    {legal.decree160Priority && (
-                      <span
-                        className="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 border border-emerald-300 font-medium text-[11px]"
-                        title="Nghị định 160/2013/NĐ-CP & 64/2019/NĐ-CP: Danh mục loài nguy cấp, quý, hiếm được ưu tiên bảo vệ"
-                      >
-                        Ưu tiên bảo vệ (NĐ 160)
-                      </span>
-                    )}
-                  </div>
-                );
-              })()}
-            </div>
-          </section>
-
-          {/* Deep Morphological Analysis & Curatorial Report */}
+          <NomenclatureCard species={species} />
           <div className="bg-paper-100/95 border border-paper-border rounded-2xl p-5 sm:p-6 shadow-paper-card">
             <MorphologyReport species={species} />
           </div>
         </div>
-
       </div>
     </div>
   );

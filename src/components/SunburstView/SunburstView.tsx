@@ -32,7 +32,12 @@ export const SunburstView: React.FC<SunburstViewProps> = ({
     selectSpecies
   } = useTaxonomy();
 
-  const [chartMode, setChartMode] = useState<TaxonomyChartMode>('radial');
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  const [chartMode, setChartMode] = useState<TaxonomyChartMode>(() => {
+    const isMob = typeof window !== 'undefined' && window.innerWidth < 768;
+    return isMob ? 'tree' : 'radial';
+  });
+  const activeMode = isMobile ? 'tree' : chartMode;
   const [activeFocusNode, setActiveFocusNode] = useState<TaxonomyNode | null>(null);
 
   // Compute active phylogenetic lineage for the breadcrumb trail
@@ -86,8 +91,8 @@ export const SunburstView: React.FC<SunburstViewProps> = ({
             </p>
           </div>
 
-          {/* Mode Switcher: Radial Fan vs Cladogram Tree (Radial as Default) */}
-          <div className="flex items-center gap-2 self-start sm:self-auto flex-wrap shrink-0">
+          {/* Mode Switcher: Radial Fan vs Cladogram Tree (Desktop only: hidden md:flex) */}
+          <div className="hidden md:flex items-center gap-2 self-start sm:self-auto flex-wrap shrink-0">
             <div
               className="inline-flex p-1 rounded-xl bg-paper-200 border border-paper-border text-xs font-semibold shadow-inner"
               role="radiogroup"
@@ -141,7 +146,7 @@ export const SunburstView: React.FC<SunburstViewProps> = ({
         
         {/* Left 7-8 Columns: Visualization Canvas */}
         <div className="lg:col-span-7 xl:col-span-8 flex flex-col min-h-0 h-full">
-          {chartMode === 'tree' ? (
+          {activeMode === 'tree' ? (
             <div className="flex-1 min-h-0 h-[480px] sm:h-[560px] lg:h-full">
               <CladogramTreeView />
             </div>

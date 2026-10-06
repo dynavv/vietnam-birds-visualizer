@@ -170,6 +170,88 @@ describe('VietnamEBAMap Component', () => {
       window.innerWidth = originalInnerWidth;
     }
   });
+
+  it('initializes showAllSpeciesPins to false on mobile and true on desktop', () => {
+    const originalInnerWidth = window.innerWidth;
+    window.innerWidth = 375;
+    try {
+      const { unmount } = render(
+        <TaxonomyProvider>
+          <VietnamEBAMap />
+        </TaxonomyProvider>
+      );
+      // Trên mobile, mặc định các điểm loài tắt để không bị dồn ứ -> nút mang nhãn 'Hiện tất cả điểm loài'
+      expect(screen.getByLabelText('Hiện tất cả điểm loài')).toBeDefined();
+      unmount();
+
+      // Trên desktop, mặc định các điểm loài bật -> nút mang nhãn 'Ẩn các điểm loài'
+      window.innerWidth = 1024;
+      render(
+        <TaxonomyProvider>
+          <VietnamEBAMap />
+        </TaxonomyProvider>
+      );
+      expect(screen.getByLabelText('Ẩn các điểm loài')).toBeDefined();
+    } finally {
+      window.innerWidth = originalInnerWidth;
+    }
+  });
+
+  it('automatically enables species pins when selecting an EBA region on mobile', () => {
+    const originalInnerWidth = window.innerWidth;
+    window.innerWidth = 375;
+    try {
+      render(
+        <TaxonomyProvider>
+          <VietnamEBAMap />
+        </TaxonomyProvider>
+      );
+
+      // Ban đầu ở chế độ mobile: điểm loài bị tắt
+      expect(screen.getByLabelText('Hiện tất cả điểm loài')).toBeDefined();
+
+      // Mở bottom sheet và chọn vùng EBA Cao nguyên Đà Lạt
+      fireEvent.click(screen.getByTestId('bottom-sheet-expand-to-half'));
+      const dalatCard = screen.getByTestId('mobile-eba-region-card-dalat-plateau');
+      const dalatBtn = dalatCard.querySelector('button');
+      if (dalatBtn) fireEvent.click(dalatBtn);
+
+      // Điểm loài tự động bật -> nút chuyển sang 'Ẩn các điểm loài'
+      expect(screen.getByLabelText('Ẩn các điểm loài')).toBeDefined();
+    } finally {
+      window.innerWidth = originalInnerWidth;
+    }
+  });
+
+  it('automatically resets species pins to false when clicking Toàn cảnh on mobile', () => {
+    const originalInnerWidth = window.innerWidth;
+    window.innerWidth = 375;
+    try {
+      render(
+        <TaxonomyProvider>
+          <VietnamEBAMap />
+        </TaxonomyProvider>
+      );
+
+      // Mở bottom sheet và chọn vùng EBA
+      fireEvent.click(screen.getByTestId('bottom-sheet-expand-to-half'));
+      const dalatCard = screen.getByTestId('mobile-eba-region-card-dalat-plateau');
+      const dalatBtn = dalatCard.querySelector('button');
+      if (dalatBtn) fireEvent.click(dalatBtn);
+
+      // Điểm loài đã được bật
+      expect(screen.getByLabelText('Ẩn các điểm loài')).toBeDefined();
+
+      // Bấm nút Toàn cảnh
+      const resetBtn = screen.getByLabelText('Toàn cảnh');
+      fireEvent.click(resetBtn);
+
+      // Điểm loài tự động reset về tắt (thoáng đãng)
+      expect(screen.getByLabelText('Hiện tất cả điểm loài')).toBeDefined();
+    } finally {
+      window.innerWidth = originalInnerWidth;
+    }
+  });
 });
 
 
