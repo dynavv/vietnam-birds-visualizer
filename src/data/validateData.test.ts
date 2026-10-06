@@ -22,30 +22,55 @@ describe('Vietnam Avifauna Data Integrity & Taxonomy Suite', () => {
     expect(idSet.size).toBe(speciesList.length);
   });
 
-  it('should include at least 12 endemic species of Vietnam', () => {
+  it('should include all 13 strict endemic species of Vietnam and 5 Indochina endemics with accurate scopes', () => {
     const endemics = speciesList.filter(s => s.isEndemic);
-    expect(endemics.length).toBeGreaterThanOrEqual(12);
+    expect(endemics.length).toBe(18);
 
-    // Verify key iconic Vietnamese endemics are present
-    const keyEndemicIds = [
+    const strictVn = speciesList.filter(s => s.endemicScope === 'vietnam');
+    expect(strictVn.length).toBe(13);
+
+    const indochina = speciesList.filter(s => s.endemicScope === 'indochina');
+    expect(indochina.length).toBe(5);
+
+    // Verify all 13 strict Vietnamese endemics are present
+    const strictVietnamEndemicIds = [
       'trochalopteron-ngoclinhense',
       'ianthocincla-konkakinhensis',
       'liochicla-langbianis',
       'trochalopteron-yersini',
-      'actinodura-sodangorum',
-      'lophura-edwardsi',
-      'polyplectron-germaini',
       'chloris-monguilloti',
-      'macronus-kelleyi',
+      'lophura-edwardsi',
       'rimator-pasquieri',
+      'cutia-legalleni',
+      'garrulax-annamensis',
+      'schoeniparus-klossi',
+      'prinia-rocki',
+      'locustella-idonea',
+      'tropicoperdix-tonkinensis'
+    ];
+
+    // Verify 5 Indochinese endemics are present
+    const indochinaEndemicIds = [
+      'actinodura-sodangorum',
+      'polyplectron-germaini',
       'stachyris-herberti',
+      'macronus-kelleyi',
       'rheinardia-ocellata'
     ];
 
     const speciesIdMap = new Set(speciesList.map(s => s.id));
-    for (const endemicId of keyEndemicIds) {
+    for (const endemicId of [...strictVietnamEndemicIds, ...indochinaEndemicIds]) {
       expect(speciesIdMap.has(endemicId)).toBe(true);
     }
+
+    const pasquieri = speciesList.find(s => s.id === 'rimator-pasquieri');
+    expect(pasquieri?.vietnameseName).toBe('Khướu đất họng trắng');
+
+    const formosum = speciesList.find(s => s.id === 'trochalopteron-formosum-greenwayi');
+    expect(formosum?.vietnameseName).toBe('Khướu cánh đỏ');
+
+    const cutia = speciesList.find(s => s.id === 'cutia-legalleni');
+    expect(cutia?.vietnameseName).toBe('Khướu hông đỏ');
   });
 
   it('should validate all required fields for every species', () => {
@@ -73,6 +98,13 @@ describe('Vietnam Avifauna Data Integrity & Taxonomy Suite', () => {
       expect(species.conservation).toBeDefined();
       expect(['CR', 'EN', 'VU', 'NT', 'LC']).toContain(species.conservation.iucn);
       expect(species.conservation.description).toBeTruthy();
+
+      // Legal Conservation Framework (Decree 84, Decree 160, Directive 04)
+      expect(species.conservation.legalFramework).toBeDefined();
+      const legal = species.conservation.legalFramework!;
+      expect(['IB', 'IIB', 'none']).toContain(legal.decree84Group);
+      expect(typeof legal.decree160Priority).toBe('boolean');
+      expect(typeof legal.directive04Flagship).toBe('boolean');
 
       // Morphological Analysis
       expect(species.morphologicalAnalysis).toBeDefined();
@@ -147,8 +179,8 @@ describe('Vietnam Avifauna Data Integrity & Taxonomy Suite', () => {
     expect(leafSpeciesIds.length).toBe(speciesList.length);
   });
 
-  it('should validate all 6 EBA regions and verify all keySpeciesIds exist in species.json', () => {
-    expect(ebasList.length).toBe(6);
+  it('should validate all 7 EBA regions and verify all keySpeciesIds exist in species.json', () => {
+    expect(ebasList.length).toBe(7);
     const validSpeciesIds = new Set(speciesList.map(s => s.id));
 
     const expectedEbaIds = [
@@ -157,7 +189,8 @@ describe('Vietnam Avifauna Data Integrity & Taxonomy Suite', () => {
       'annam-lowlands',
       'hoang-lien-son',
       'cochinchina',
-      'northeast-mountains'
+      'northeast-mountains',
+      'lower-mekong-basin'
     ];
 
     const actualEbaIds = ebasList.map(e => e.id);
@@ -190,4 +223,23 @@ describe('Vietnam Avifauna Data Integrity & Taxonomy Suite', () => {
       expect(eba.habitats.length).toBeGreaterThan(0);
     }
   });
+
+  it('should validate national legal conservation framework (Decree 84, Decree 160, Directive 04)', () => {
+    const nd84IB = speciesList.filter(s => s.conservation.legalFramework?.decree84Group === 'IB');
+    const nd84IIB = speciesList.filter(s => s.conservation.legalFramework?.decree84Group === 'IIB');
+    const nd160 = speciesList.filter(s => s.conservation.legalFramework?.decree160Priority);
+    const ct04 = speciesList.filter(s => s.conservation.legalFramework?.directive04Flagship);
+
+    expect(nd84IB.length).toBe(22);
+    expect(nd84IIB.length).toBe(25);
+    expect(nd160.length).toBe(16);
+    expect(ct04.length).toBe(3);
+
+    // Verify key flagship species under Directive 04
+    const ct04SpeciesIds = ct04.map(s => s.id);
+    expect(ct04SpeciesIds).toContain('antigone-antigone'); // Sếu đầu đỏ
+    expect(ct04SpeciesIds).toContain('platalea-minor');    // Cò thìa mặt đen
+    expect(ct04SpeciesIds).toContain('calidris-pygmaea');  // Rẽ mỏ thìa
+  });
 });
+

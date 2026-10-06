@@ -1,0 +1,3 @@
+# Bỏ qua các file dự thảo tạm thời trong thư mục drafts
+candidate-species.json
+*.tmp

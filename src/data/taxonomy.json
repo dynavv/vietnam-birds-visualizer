@@ -24,7 +24,7 @@
               "children": [
                 {
                   "name": "Trochalopteron formosum greenwayi",
-                  "vietnameseName": "Khướu hông đỏ",
+                  "vietnameseName": "Khướu cánh đỏ",
                   "rank": "species",
                   "color": "#2D5A27",
                   "speciesId": "trochalopteron-formosum-greenwayi"
@@ -71,6 +71,13 @@
                   "rank": "species",
                   "color": "#2D5A27",
                   "speciesId": "garrulax-chinensis"
+                },
+                {
+                  "name": "Garrulax annamensis",
+                  "vietnameseName": "Khướu ngực đốm",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "garrulax-annamensis"
                 }
               ]
             },
@@ -116,6 +123,21 @@
                   "rank": "species",
                   "color": "#2D5A27",
                   "speciesId": "actinodura-sodangorum"
+                }
+              ]
+            },
+            {
+              "name": "Cutia",
+              "vietnameseName": "Chi Cutia",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Cutia legalleni",
+                  "vietnameseName": "Khướu hông đỏ",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "cutia-legalleni"
                 }
               ]
             }
@@ -173,7 +195,7 @@
               "children": [
                 {
                   "name": "Cyornis rubeculoides",
-                  "vietnameseName": "Đớp ruồi cằm đen",
+                  "vietnameseName": "Đớp ruồi cằm xanh",
                   "rank": "species",
                   "color": "#2D5A27",
                   "speciesId": "cyornis-rubeculoides"
@@ -234,10 +256,25 @@
               "children": [
                 {
                   "name": "Rimator pasquieri",
-                  "vietnameseName": "Họa mi đất mỏ dài",
+                  "vietnameseName": "Khướu đất họng trắng",
                   "rank": "species",
                   "color": "#2D5A27",
                   "speciesId": "rimator-pasquieri"
+                }
+              ]
+            },
+            {
+              "name": "Schoeniparus",
+              "vietnameseName": "Chi Schoeniparus",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Schoeniparus klossi",
+                  "vietnameseName": "Khướu bụi gáy đen",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "schoeniparus-klossi"
                 }
               ]
             }
@@ -403,6 +440,75 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Cisticolidae",
+          "vietnameseName": "Họ Chiền chiện",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Prinia",
+              "vietnameseName": "Chi Prinia",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Prinia rocki",
+                  "vietnameseName": "Chiền chiện núi An Nam",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "prinia-rocki"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Locustellidae",
+          "vietnameseName": "Họ Chích bụi",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Locustella",
+              "vietnameseName": "Chi Locustella",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Locustella idonea",
+                  "vietnameseName": "Chích bụi Đà Lạt",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "locustella-idonea"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Emberizidae",
+          "vietnameseName": "Họ Sẻ đồng",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Emberiza",
+              "vietnameseName": "Chi Emberiza",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Emberiza aureola",
+                  "vietnameseName": "Sẻ đồng ngực vàng",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "emberiza-aureola"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -525,7 +631,7 @@
               "children": [
                 {
                   "name": "Pelargopsis capensis",
-                  "vietnameseName": "Sả mỏ rộng",
+                  "vietnameseName": "Bồng chanh lớn",
                   "rank": "species",
                   "color": "#0284C7",
                   "speciesId": "pelargopsis-capensis"
@@ -609,7 +715,7 @@
               "children": [
                 {
                   "name": "Picus rabieri",
-                  "vietnameseName": "Gõ kiến xanh hông đỏ",
+                  "vietnameseName": "Gõ kiến đầu đỏ",
                   "rank": "species",
                   "color": "#7C2D12",
                   "speciesId": "picus-rabieri"
@@ -624,7 +730,7 @@
               "children": [
                 {
                   "name": "Chrysocolaptes guttacristatus",
-                  "vietnameseName": "Gõ kiến tam giác",
+                  "vietnameseName": "Gõ kiến vàng lớn",
                   "rank": "species",
                   "color": "#7C2D12",
                   "speciesId": "chrysocolaptes-guttacristatus"
@@ -689,6 +795,13 @@
                   "rank": "species",
                   "color": "#0D9488",
                   "speciesId": "pseudibis-davisoni"
+                },
+                {
+                  "name": "Pseudibis gigantea",
+                  "vietnameseName": "Cò quăm lớn",
+                  "rank": "species",
+                  "color": "#0D9488",
+                  "speciesId": "pseudibis-gigantea"
                 }
               ]
             },
@@ -903,6 +1016,21 @@
                   "speciesId": "gallus-gallus"
                 }
               ]
+            },
+            {
+              "name": "Tropicoperdix",
+              "vietnameseName": "Chi Tropicoperdix",
+              "rank": "genus",
+              "color": "#C2593F",
+              "children": [
+                {
+                  "name": "Tropicoperdix tonkinensis",
+                  "vietnameseName": "Gà so Bắc Bộ",
+                  "rank": "species",
+                  "color": "#C2593F",
+                  "speciesId": "tropicoperdix-tonkinensis"
+                }
+              ]
             }
           ]
         }
@@ -977,6 +1105,43 @@
                   "rank": "species",
                   "color": "#4B5563",
                   "speciesId": "elanus-caeruleus"
+                }
+              ]
+            },
+            {
+              "name": "Sarcogyps",
+              "vietnameseName": "Chi Sarcogyps",
+              "rank": "genus",
+              "color": "#4B5563",
+              "children": [
+                {
+                  "name": "Sarcogyps calvus",
+                  "vietnameseName": "Kền kền đầu đỏ",
+                  "rank": "species",
+                  "color": "#4B5563",
+                  "speciesId": "sarcogyps-calvus"
+                }
+              ]
+            },
+            {
+              "name": "Gyps",
+              "vietnameseName": "Chi Gyps",
+              "rank": "genus",
+              "color": "#4B5563",
+              "children": [
+                {
+                  "name": "Gyps tenuirostris",
+                  "vietnameseName": "Kền kền mỏ hẹp",
+                  "rank": "species",
+                  "color": "#4B5563",
+                  "speciesId": "gyps-tenuirostris"
+                },
+                {
+                  "name": "Gyps bengalensis",
+                  "vietnameseName": "Kền kền Bengal",
+                  "rank": "species",
+                  "color": "#4B5563",
+                  "speciesId": "gyps-bengalensis"
                 }
               ]
             }
@@ -1065,10 +1230,17 @@
               "children": [
                 {
                   "name": "Leptoptilos javanicus",
-                  "vietnameseName": "Già đới cổ hung",
+                  "vietnameseName": "Già đẫy nhỏ",
                   "rank": "species",
                   "color": "#059669",
                   "speciesId": "leptoptilos-javanicus"
+                },
+                {
+                  "name": "Leptoptilos dubius",
+                  "vietnameseName": "Già đẫy lớn",
+                  "rank": "species",
+                  "color": "#059669",
+                  "speciesId": "leptoptilos-dubius"
                 }
               ]
             }
@@ -1337,6 +1509,37 @@
                   "rank": "species",
                   "color": "#78350F",
                   "speciesId": "caprimulgus-macrurus"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Charadriiformes",
+      "vietnameseName": "Bộ Choi choi",
+      "rank": "order",
+      "color": "#2D5A27",
+      "children": [
+        {
+          "name": "Scolopacidae",
+          "vietnameseName": "Họ Dẽ",
+          "rank": "family",
+          "color": "#2D5A27",
+          "children": [
+            {
+              "name": "Calidris",
+              "vietnameseName": "Chi Calidris",
+              "rank": "genus",
+              "color": "#2D5A27",
+              "children": [
+                {
+                  "name": "Calidris pygmaea",
+                  "vietnameseName": "Rẽ mỏ thìa",
+                  "rank": "species",
+                  "color": "#2D5A27",
+                  "speciesId": "calidris-pygmaea"
                 }
               ]
             }

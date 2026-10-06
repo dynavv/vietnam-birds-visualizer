@@ -22,7 +22,13 @@
     "conservation": {
       "iucn": "EN",
       "vietnamRedList": "EN",
-      "description": "Đặc hữu hẹp của đỉnh núi Ngọc Linh và vùng phụ cận. Bị đe dọa nghiêm trọng bởi suy giảm sinh cảnh rừng lùn núi cao."
+      "description": "Đặc hữu hẹp của đỉnh núi Ngọc Linh và vùng phụ cận. Bị đe dọa nghiêm trọng bởi suy giảm sinh cảnh rừng lùn núi cao.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": true,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Loài khướu cỡ trung bình tuyệt đẹp với dải cánh màu vàng kim rực rỡ tương phản mạnh với bộ lông màu nâu hạt dẻ và chỏm đầu xám tro.",
@@ -42,7 +48,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Cao nguyên Kon Tum / Dãy Ngọc Linh & Kon Ka Kinh",
+      "ebaRegion": "Cao nguyên Kon Tum",
       "elevation": "1.900m - 2.598m",
       "habitats": [
         "Rừng lùn đỉnh núi mù sương",
@@ -101,7 +107,8 @@
           "volumeOrPages": "pp. 70-291, Lynx Edicions"
         }
       ]
-    }
+    },
+    "endemicScope": "vietnam"
   },
   {
     "id": "ianthocincla-konkakinhensis",
@@ -126,7 +133,13 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "VU",
-      "description": "Loài được phát hiện năm 1999 tại Vườn Quốc Gia Kon Ka Kinh, ghi dấu mốc quan trọng cho ngành điểu học Việt Nam."
+      "description": "Loài được phát hiện năm 1999 tại Vườn Quốc Gia Kon Ka Kinh, ghi dấu mốc quan trọng cho ngành điểu học Việt Nam.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Bộ lông có hoa văn vảy phức tạp màu nâu xám, nổi bật với mảng che tai màu hạt dẻ hung đỏ rực rỡ.",
@@ -146,7 +159,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Cao nguyên Kon Tum / Dãy Ngọc Linh & Kon Ka Kinh",
+      "ebaRegion": "Cao nguyên Kon Tum",
       "elevation": "1.200m - 1.750m",
       "habitats": [
         "Rừng kín thường xanh mưa ẩm nhiệt đới núi trung bình",
@@ -197,7 +210,8 @@
           "doiOrUrl": "https://www.biodiversitylibrary.org/part/109765"
         }
       ]
-    }
+    },
+    "endemicScope": "vietnam"
   },
   {
     "id": "liochicla-langbianis",
@@ -222,7 +236,13 @@
     "conservation": {
       "iucn": "EN",
       "vietnamRedList": "EN",
-      "description": "Biểu tượng điểu học của Cao nguyên Lâm Viên với quần thể phân bố rất hẹp quanh khu vực Bidoup - Núi Bà."
+      "description": "Biểu tượng điểu học của Cao nguyên Lâm Viên với quần thể phân bố rất hẹp quanh khu vực Bidoup - Núi Bà.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Loài mi đặc hữu duyên dáng với chỏm đầu xám bạc, sọc mắt đen tuyền sắc nét, lưng nâu hạt dẻ vằn đen hình ngọn giáo và bụng trắng ngà lốm đốm sườn.",
@@ -242,7 +262,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "ebaRegion": "Cao nguyên Đà Lạt",
       "elevation": "1.400m - 2.200m",
       "habitats": [
         "Rừng thường xanh trên núi",
@@ -300,7 +320,8 @@
           "doiOrUrl": "https://doi.org/10.1017/S095927090000122X"
         }
       ]
-    }
+    },
+    "endemicScope": "vietnam"
   },
   {
     "id": "trochalopteron-yersini",
@@ -325,7 +346,13 @@
     "conservation": {
       "iucn": "EN",
       "vietnamRedList": "EN",
-      "description": "Đặt tên vinh danh bác sĩ Alexandre Yersin, cư trú tại các đỉnh núi cao sương mù dày đặc của dãy Bidoup và Hòn Bà."
+      "description": "Đặt tên vinh danh bác sĩ Alexandre Yersin, cư trú tại các đỉnh núi cao sương mù dày đặc của dãy Bidoup và Hòn Bà.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình to khỏe, đầu đen tuyền, má xám bạc sáng lóa, yếm ngực cam hạt dẻ và viền lông cánh vàng cam óng ánh.",
@@ -345,7 +372,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "ebaRegion": "Cao nguyên Đà Lạt",
       "elevation": "1.500m - 2.400m",
       "habitats": [
         "Rừng rêu trên núi cao",
@@ -410,7 +437,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "vietnam"
   },
   {
     "id": "actinodura-sodangorum",
@@ -435,7 +463,13 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "VU",
-      "description": "Đặt tên theo người Xơ Đăng (Sodang) bản địa tại vùng núi Ngọc Linh, sinh sống tại các thảm rừng nguyên sinh trên núi."
+      "description": "Đặt tên theo người Xơ Đăng (Sodang) bản địa tại vùng núi Ngọc Linh, sinh sống tại các thảm rừng nguyên sinh trên núi.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Đặc trưng bởi mào đầu ngắn màu đen tuyền, cánh và đuôi có những dải vằn ngang đen trắng tinh xảo như phím đàn dương cầm.",
@@ -455,7 +489,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Cao nguyên Kon Tum / Dãy Ngọc Linh & Kon Ka Kinh",
+      "ebaRegion": "Cao nguyên Kon Tum",
       "elevation": "1.000m - 2.400m",
       "habitats": [
         "Rừng kín thường xanh mưa mùa núi cao",
@@ -507,7 +541,8 @@
           "doiOrUrl": "https://doi.org/10.1111/j.1474-919X.1999.tb04257.x"
         }
       ]
-    }
+    },
+    "endemicScope": "indochina"
   },
   {
     "id": "lophura-edwardsi",
@@ -531,7 +566,13 @@
     "conservation": {
       "iucn": "CR",
       "vietnamRedList": "CR",
-      "description": "Loài gà lôi đặc hữu huyền thoại của dải đất thấp miền Trung, biểu tượng bảo tồn thiên nhiên quốc tế."
+      "description": "Loài gà lôi đặc hữu huyền thoại của dải đất thấp miền Trung, biểu tượng bảo tồn thiên nhiên quốc tế.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Chim trống toàn thân màu xanh lam ánh thép rực rỡ, mào lông đầu trắng tinh dựng đứng và vùng da mặt quanh mắt đỏ tươi.",
@@ -551,7 +592,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng Đất thấp miền Trung",
+      "ebaRegion": "Vùng đất thấp Trung Bộ",
       "elevation": "50m - 300m",
       "habitats": [
         "Rừng thường xanh đất thấp mưa ẩm",
@@ -608,7 +649,8 @@
           "volumeOrPages": "Tome I, pp. 248-254"
         }
       ]
-    }
+    },
+    "endemicScope": "vietnam"
   },
   {
     "id": "polyplectron-germaini",
@@ -632,7 +674,13 @@
     "conservation": {
       "iucn": "NT",
       "vietnamRedList": "VU",
-      "description": "Đặc hữu vùng rừng đất thấp Nam Trung Bộ và Nam Bộ, là niềm tự hào của Vườn Quốc Gia Cát Tiên."
+      "description": "Đặc hữu vùng rừng đất thấp Nam Trung Bộ và Nam Bộ, là niềm tự hào của Vườn Quốc Gia Cát Tiên.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Bộ lông màu nâu đen điểm vô số đốm mắt màu xanh lục - tím óng ánh trên cánh và đuôi xòe hình quạt tuyệt đẹp.",
@@ -652,7 +700,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "50m - 600m",
       "habitats": [
         "Rừng kín nửa rụng lá ẩm nhiệt đới",
@@ -715,7 +763,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "indochina"
   },
   {
     "id": "chloris-monguilloti",
@@ -740,7 +789,13 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "LR",
-      "description": "Loài sẻ đặc hữu thích nghi hoàn hảo với sinh cảnh rừng thông ba lá đặc trưng của cao nguyên Đà Lạt."
+      "description": "Loài sẻ đặc hữu thích nghi hoàn hảo với sinh cảnh rừng thông ba lá đặc trưng của cao nguyên Đà Lạt.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Kích thước nhỏ nhắn, đầu màu đen huyền, họng và ngực màu vàng chanh tươi sáng, cánh có vệt vàng rực rỡ khi bay lượn.",
@@ -760,7 +815,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "ebaRegion": "Cao nguyên Đà Lạt",
       "elevation": "1.000m - 1.900m",
       "habitats": [
         "Rừng thông ba lá (Pinus kesiya)",
@@ -811,7 +866,8 @@
           "volumeOrPages": "47: 8-22"
         }
       ]
-    }
+    },
+    "endemicScope": "vietnam"
   },
   {
     "id": "macronus-kelleyi",
@@ -836,7 +892,13 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "LR",
-      "description": "Phổ biến ở các tầng cây bụi rừng đất thấp Nam Đông Dương và miền Trung Việt Nam."
+      "description": "Phổ biến ở các tầng cây bụi rừng đất thấp Nam Đông Dương và miền Trung Việt Nam.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân nhỏ nhanh nhẹn, đỉnh đầu màu nâu hạt dẻ, má xám bạc và ức có các vệt sọc mảnh màu ô-liu.",
@@ -856,7 +918,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "50m - 800m",
       "habitats": [
         "Tầng dưới tán rừng thường xanh đất thấp",
@@ -921,12 +983,13 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "indochina"
   },
   {
     "id": "rimator-pasquieri",
     "scientificName": "Rimator pasquieri",
-    "vietnameseName": "Họa mi đất mỏ dài",
+    "vietnameseName": "Khướu đất họng trắng",
     "englishName": "White-throated Wren-Babbler",
     "taxonomy": {
       "clade": [
@@ -946,7 +1009,13 @@
     "conservation": {
       "iucn": "EN",
       "vietnamRedList": "EN",
-      "description": "Loài chim mặt đất kỳ dị với chiếc mỏ dài cong đặc hữu của vùng núi Fansipan và dãy Hoàng Liên Sơn."
+      "description": "Loài chim mặt đất kỳ dị với chiếc mỏ dài cong đặc hữu của vùng núi Fansipan và dãy Hoàng Liên Sơn.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Đuôi cực ngắn gần như cụt, mỏ dài cong mảnh khảnh dùng để luồn sâu vào thảm rêu và vỏ cây tìm sâu bọ, họng trắng tinh.",
@@ -966,7 +1035,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "ebaRegion": "Vùng núi Hoàng Liên Sơn",
       "elevation": "1.400m - 2.300m",
       "habitats": [
         "Rừng rêu thường xanh ôn đới núi cao",
@@ -1017,7 +1086,12 @@
           "volumeOrPages": "11: 611-699"
         }
       ]
-    }
+    },
+    "aliases": [
+      "Khướu đất Pasquier",
+      "Họa mi đất mỏ dài"
+    ],
+    "endemicScope": "vietnam"
   },
   {
     "id": "stachyris-herberti",
@@ -1042,7 +1116,13 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "LR",
-      "description": "Chuyên biệt sinh cảnh hoàn toàn trên các vách đá vôi karst hiểm trở tại miền Trung Việt Nam."
+      "description": "Chuyên biệt sinh cảnh hoàn toàn trên các vách đá vôi karst hiểm trở tại miền Trung Việt Nam.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Toàn bộ lông màu nâu tro xám đen như than mun, ngực và họng nhạt màu hơn, móng chân to khỏe bám vách đá dốc đứng.",
@@ -1062,7 +1142,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng Đất thấp miền Trung",
+      "ebaRegion": "Vùng đất thấp Trung Bộ",
       "elevation": "100m - 600m",
       "habitats": [
         "Vách đá vôi Karst rậm rạp",
@@ -1127,12 +1207,13 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "indochina"
   },
   {
     "id": "trochalopteron-formosum-greenwayi",
     "scientificName": "Trochalopteron formosum greenwayi",
-    "vietnameseName": "Khướu hông đỏ",
+    "vietnameseName": "Khướu cánh đỏ",
     "englishName": "Red-winged Laughingthrush",
     "taxonomy": {
       "clade": [
@@ -1148,11 +1229,17 @@
       "genus": "Trochalopteron",
       "species": "T. formosum"
     },
-    "isEndemic": true,
+    "isEndemic": false,
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "LR",
-      "description": "Phân loài đặc hữu Tây Bắc Việt Nam với đôi cánh màu đỏ thắm lộng lẫy trên sườn núi Fansipan."
+      "description": "Phân loài đặc hữu Tây Bắc Việt Nam với đôi cánh màu đỏ thắm lộng lẫy trên sườn núi Fansipan.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình đầy đặn, mảng cánh và đuôi có màu đỏ thắm ánh son rực rỡ, đỉnh đầu màu xám có vảy đen tinh tế.",
@@ -1172,7 +1259,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "ebaRegion": "Vùng núi Hoàng Liên Sơn",
       "elevation": "1.800m - 2.800m",
       "habitats": [
         "Rừng đỗ quyên núi cao",
@@ -1235,7 +1322,11 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none",
+    "aliases": [
+      "Khướu hông đỏ"
+    ]
   },
   {
     "id": "trochalopteron-milnei-sharpei",
@@ -1256,11 +1347,17 @@
       "genus": "Trochalopteron",
       "species": "T. milnei"
     },
-    "isEndemic": true,
+    "isEndemic": false,
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "LR",
-      "description": "Một trong những loài khướu sặc sỡ nhất núi rừng Bắc Bộ và Tây Bắc Việt Nam."
+      "description": "Một trong những loài khướu sặc sỡ nhất núi rừng Bắc Bộ và Tây Bắc Việt Nam.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Mũ đầu màu đỏ son sáng chói, má trắng bạc, toàn bộ cánh và đuôi màu đỏ thắm tương phản lông lưng xám vảy đen.",
@@ -1280,7 +1377,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "ebaRegion": "Vùng núi Hoàng Liên Sơn",
       "elevation": "1.500m - 2.500m",
       "habitats": [
         "Rừng thường xanh trên núi cao",
@@ -1343,7 +1440,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "psittiparus-bakeri",
@@ -1364,11 +1462,17 @@
       "genus": "Psittiparus",
       "species": "P. bakeri"
     },
-    "isEndemic": true,
+    "isEndemic": false,
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "LR",
-      "description": "Đặc trưng bởi chiếc mỏ vẹt dày cộm chuyên tách thân tre nứa tìm ấu trùng bọ cánh cứng."
+      "description": "Đặc trưng bởi chiếc mỏ vẹt dày cộm chuyên tách thân tre nứa tìm ấu trùng bọ cánh cứng.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Đầu to màu hung đỏ, chiếc mỏ dẹt màu ngà như mỏ vẹt, thân hình tròn trĩnh đuôi dài thích nghi thảm tre nứa núi cao.",
@@ -1388,7 +1492,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "ebaRegion": "Cao nguyên Đà Lạt",
       "elevation": "1.200m - 2.100m",
       "habitats": [
         "Thảm rừng tre nứa núi cao",
@@ -1451,7 +1555,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "rheinardia-ocellata",
@@ -1475,7 +1580,13 @@
     "conservation": {
       "iucn": "CR",
       "vietnamRedList": "CR",
-      "description": "Loài trĩ huyền bí của dãy Trường Sơn với chiếc đuôi dài nhất trong thế giới loài chim hoang dã (lên tới 1.7m)."
+      "description": "Loài trĩ huyền bí của dãy Trường Sơn với chiếc đuôi dài nhất trong thế giới loài chim hoang dã (lên tới 1.7m).",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình tráng lệ với bộ lông đen mun rắc hàng ngàn đốm trắng sao sa, mào lông dài dựng đứng và đuôi dài vô song uốn lượn.",
@@ -1495,7 +1606,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng Đất thấp miền Trung",
+      "ebaRegion": "Vùng đất thấp Trung Bộ",
       "elevation": "100m - 1.500m",
       "habitats": [
         "Rừng nguyên sinh thường xanh ẩm Trường Sơn",
@@ -1560,7 +1671,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "indochina"
   },
   {
     "id": "garrulax-canorus",
@@ -1584,7 +1696,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Ca sĩ rừng già phương Bắc nổi tiếng với giọng hót thánh thót, đa cung bậc và viền mắt trắng kéo dài ra sau như lông mi."
+      "description": "Ca sĩ rừng già phương Bắc nổi tiếng với giọng hót thánh thót, đa cung bậc và viền mắt trắng kéo dài ra sau như lông mi.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu nâu vàng ô-liu, ức có vệt sọc dọc mờ, nổi tiếng với viền mắt trắng kéo dài về phía sau gáy như nét vẽ điêu khắc.",
@@ -1604,7 +1722,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "ebaRegion": "Vùng núi Đông Bắc",
       "elevation": "200m - 1.500m",
       "habitats": [
         "Rừng thứ sinh cây bụi",
@@ -1667,13 +1785,17 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "cyornis-rubeculoides",
     "scientificName": "Cyornis rubeculoides",
-    "vietnameseName": "Đớp ruồi cằm đen",
+    "vietnameseName": "Đớp ruồi cằm xanh",
     "englishName": "Blue-throated Blue Flycatcher",
+    "aliases": [
+      "Đớp ruồi cằm đen"
+    ],
     "taxonomy": {
       "clade": [
         "Aves",
@@ -1691,7 +1813,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Loài đớp ruồi rừng nhiệt đới tuyệt đẹp với bộ lông xanh biếc sapphire và ngực màu cam tươi."
+      "description": "Loài đớp ruồi rừng nhiệt đới tuyệt đẹp với bộ lông xanh biếc sapphire và ngực màu cam tươi.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Mặt lưng màu xanh lam đậm ánh kim, ngực màu cam rực rỡ tương phản với cằm màu xanh đen và bụng trắng.",
@@ -1711,7 +1839,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "50m - 1.200m",
       "habitats": [
         "Rừng thường xanh mưa ẩm",
@@ -1774,7 +1902,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "aethopyga-saturata",
@@ -1798,7 +1927,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Loài chim hút mật vùng núi cao sặc sỡ với họng đen ánh tím than và hai sợi lông đuôi giữa dài thướt tha."
+      "description": "Loài chim hút mật vùng núi cao sặc sỡ với họng đen ánh tím than và hai sợi lông đuôi giữa dài thướt tha.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình nhỏ nhắn như ngón tay, ngực và họng đen tuyền ánh tím kim loại, vệt hông vàng chanh sáng chói và lưng đỏ thẫm.",
@@ -1818,7 +1953,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "ebaRegion": "Vùng núi Hoàng Liên Sơn",
       "elevation": "1.000m - 2.600m",
       "habitats": [
         "Rừng thường xanh trên núi",
@@ -1881,7 +2016,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "lanius-schach",
@@ -1905,7 +2041,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Tay săn mồi dũng mãnh của trảng cỏ với chiếc mỏ móc khoằm và chiếc mặt nạ đen uy quyền."
+      "description": "Tay săn mồi dũng mãnh của trảng cỏ với chiếc mỏ móc khoằm và chiếc mặt nạ đen uy quyền.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Đầu và mặt nạ màu đen bóng, lưng và hông màu hung cam ấm, mỏ có móc khoằm sắc bén như chim săn mồi.",
@@ -1925,7 +2067,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 1.200m",
       "habitats": [
         "Đồng cỏ trống",
@@ -1988,7 +2130,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "pitta-moluccensis",
@@ -2012,7 +2155,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Viên ngọc sắc màu lộng lẫy dưới nền rừng nhiệt đới với mảng cánh xanh coban và bụng đỏ son."
+      "description": "Viên ngọc sắc màu lộng lẫy dưới nền rừng nhiệt đới với mảng cánh xanh coban và bụng đỏ son.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Viên ngọc rừng nhiệt đới với lưng xanh ngọc, mảng cánh xanh coban phát sáng, bụng vàng hung và vệt đỏ thắm ở hậu môn.",
@@ -2032,7 +2181,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 800m",
       "habitats": [
         "Rừng kín thường xanh ẩm",
@@ -2095,7 +2244,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "oriolus-chinensis",
@@ -2119,7 +2269,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Biểu tượng hoàng gia trong văn hóa cổ truyền Việt Nam với bộ lông vàng óng ả và tiếng hót mê ly."
+      "description": "Biểu tượng hoàng gia trong văn hóa cổ truyền Việt Nam với bộ lông vàng óng ả và tiếng hót mê ly.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Toàn thân màu vàng hoàng yến rực rỡ, mỏ hồng san hô, dải lông đen hình móng ngựa vắt qua gáy nối liền hai bên mắt.",
@@ -2139,7 +2295,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 1.000m",
       "habitats": [
         "Vòm tán rừng thưa",
@@ -2203,7 +2359,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "copsychus-malabaricus",
@@ -2227,7 +2384,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nghệ sĩ hót tài ba của rừng rậm nhiệt đới với chiếc đuôi dài thướt tha và bụng đỏ hung."
+      "description": "Nghệ sĩ hót tài ba của rừng rậm nhiệt đới với chiếc đuôi dài thướt tha và bụng đỏ hung.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Đầu và lưng đen nhánh ánh thép bóng mượt, ngực và bụng màu cam đỏ hạt dẻ ấm áp, mảng hông trắng tuyết và đuôi cực dài.",
@@ -2247,7 +2410,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "50m - 900m",
       "habitats": [
         "Rừng thứ sinh tre nứa",
@@ -2310,7 +2473,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "dicrurus-paradiseus",
@@ -2334,7 +2498,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Bậc thầy bắt chước âm thanh với hai sợi lông đuôi dài mang hình lá cờ uốn lượn kỳ ảo khi bay lượn."
+      "description": "Bậc thầy bắt chước âm thanh với hai sợi lông đuôi dài mang hình lá cờ uốn lượn kỳ ảo khi bay lượn.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Toàn thân màu đen ánh kim xanh tím rực rỡ, mào lông cong ngược về sau trên trán và hai chiếc đuôi cờ dài uốn lượn trong gió.",
@@ -2354,7 +2524,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "50m - 1.200m",
       "habitats": [
         "Tầng tán rừng nhiệt đới mưa ẩm",
@@ -2371,12 +2541,12 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/381289317/large.jpg",
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/381289317/large.jpeg",
       "artist": "(c) sunnyjosef, some rights reserved (CC BY), uploaded by sunnyjosef",
       "sourceBook": "iNaturalist Biodiversity Archive",
       "plateNumber": "INAT-23",
       "year": "1931",
-      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/381289317/medium.jpg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/381289317/medium.jpeg",
       "license": "CC BY 4.0",
       "observationUrl": "https://www.inaturalist.org/observations/209930810"
     },
@@ -2417,7 +2587,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "garrulax-chinensis",
@@ -2441,7 +2612,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Khướu rừng đá vôi với mảng má trắng tinh khiết nổi bật trên nền họng đen tuyền và tiếng hót vang dội."
+      "description": "Khướu rừng đá vôi với mảng má trắng tinh khiết nổi bật trên nền họng đen tuyền và tiếng hót vang dội.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xám ô-liu, họng và trán màu đen tuyền, hai bên má có mảng trắng muốt như phấn vôi sáng chói.",
@@ -2461,7 +2638,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "ebaRegion": "Vùng núi Đông Bắc",
       "elevation": "100m - 1.400m",
       "habitats": [
         "Rừng rậm trên núi đá vôi",
@@ -2524,7 +2701,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "psarisomus-dalhousiae",
@@ -2548,7 +2726,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Kiệt tác màu sắc của thiên nhiên với chiếc mũ phi công xanh - vàng, thân xanh lục bảo và đuôi xanh biếc dài."
+      "description": "Kiệt tác màu sắc của thiên nhiên với chiếc mũ phi công xanh - vàng, thân xanh lục bảo và đuôi xanh biếc dài.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh lục bảo non, đỉnh đầu đen có đốm xanh da trời và vàng nghệ như chiếc mũ bảo hiểm phi công, chiếc đuôi xanh coban dài thon.",
@@ -2568,7 +2752,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "ebaRegion": "Vùng núi Đông Bắc",
       "elevation": "400m - 1.800m",
       "habitats": [
         "Tầng tán rừng nguyên sinh thường xanh",
@@ -2632,7 +2816,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "lophura-diardi",
@@ -2656,7 +2841,13 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "VU",
-      "description": "Loài gà lôi tráng lệ với mảng hông màu đỏ tía rực như than hồng và đuôi cong cong hình lưỡi liềm cong vút."
+      "description": "Loài gà lôi tráng lệ với mảng hông màu đỏ tía rực như than hồng và đuôi cong cong hình lưỡi liềm cong vút.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xám tro vân mịn, mảng lưng dưới màu vàng rơm và hông đỏ tía rực lửa, mào đầu xoăn đen tím và mặt đỏ tươi.",
@@ -2676,7 +2867,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "50m - 600m",
       "habitats": [
         "Rừng thường xanh và nửa rụng lá đất thấp",
@@ -2739,7 +2930,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "polyplectron-bicalcaratum",
@@ -2763,7 +2955,13 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "VU",
-      "description": "Chim trống sở hữu bộ cánh đốm mắt xanh lục ngọc bích lấp lánh như khổng tước thu nhỏ."
+      "description": "Chim trống sở hữu bộ cánh đốm mắt xanh lục ngọc bích lấp lánh như khổng tước thu nhỏ.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xám tro rắc hạt mịn, phủ dày đặc các đốm mắt tròn màu xanh lục ngọc bích óng ánh viền trắng và đen trên đuôi và cánh.",
@@ -2783,7 +2981,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "ebaRegion": "Vùng núi Đông Bắc",
       "elevation": "100m - 1.200m",
       "habitats": [
         "Rừng nguyên sinh ẩm thường xanh",
@@ -2846,7 +3044,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "arborophila-brunneopectus",
@@ -2869,7 +3068,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Loài gà so duyên dáng của thảm mục rừng thường xanh với tiếng hót đối ca rộn rã lúc bình minh."
+      "description": "Loài gà so duyên dáng của thảm mục rừng thường xanh với tiếng hót đối ca rộn rã lúc bình minh.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân tròn mập, trán và lông mày màu hung vàng, họng trắng viền đen hạt tiêu và ức có mảng màu nâu hạt dẻ đậm.",
@@ -2889,7 +3094,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Cao nguyên Kon Tum / Dãy Ngọc Linh & Kon Ka Kinh",
+      "ebaRegion": "Cao nguyên Kon Tum",
       "elevation": "500m - 1.800m",
       "habitats": [
         "Thảm mục lá rừng thường xanh trên núi",
@@ -2952,7 +3157,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "gallus-gallus",
@@ -2975,7 +3181,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Tổ tiên hoang dã của loài gà nhà toàn cầu, rực rỡ với mào cờ đỏ tươi và đôi dái tai màu trắng tuyết."
+      "description": "Tổ tiên hoang dã của loài gà nhà toàn cầu, rực rỡ với mào cờ đỏ tươi và đôi dái tai màu trắng tuyết.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Chim trống oai vệ với lông cổ màu vàng cam óng ả, lưng đỏ sẫm, đuôi xanh đen ánh kim cong vút và dái tai màu trắng tinh khiết.",
@@ -2995,7 +3207,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 1.500m",
       "habitats": [
         "Rừng thứ sinh",
@@ -3013,14 +3225,16 @@
       ]
     },
     "illustration": {
-      "imageUrl": "https://static.inaturalist.org/photos/65623665/medium.jpeg",
-      "artist": "(c) Carlos N. G. Bocos, all rights reserved, uploaded by Carlos N. G. Bocos",
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/659008607/large.jpg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/659008607/medium.jpg",
+      "artist": "(c) Peter Ericsson, some rights reserved (CC BY-NC)",
       "sourceBook": "iNaturalist Biodiversity Archive",
       "plateNumber": "INAT-29",
-      "year": "1931",
-      "thumbnailUrl": "https://static.inaturalist.org/photos/65623665/medium.jpeg",
+      "year": "2024",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/879"
+      "observationUrl": "https://www.inaturalist.org/taxa/882",
+      "photoLocation": "VQG Cát Tiên, Việt Nam",
+      "isShotInVietnam": true
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1153683/download",
@@ -3059,7 +3273,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "buceros-bicornis",
@@ -3084,7 +3299,13 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "EN",
-      "description": "Chúa tể vòm tán rừng nhiệt đới với chiếc mũ sừng khổng lồ màu vàng rực và sải cánh khổng lồ dài 1.5m."
+      "description": "Chúa tể vòm tán rừng nhiệt đới với chiếc mũ sừng khổng lồ màu vàng rực và sải cánh khổng lồ dài 1.5m.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình to lớn đồ sộ, chiếc mỏ vàng khổng lồ đội mũ sừng hai sừng phía trước, dải cánh đen trắng và đuôi trắng có dải băng đen lớn.",
@@ -3104,7 +3325,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "50m - 1.000m",
       "habitats": [
         "Rừng già nguyên sinh đất thấp với nhiều cây đa cổ thụ",
@@ -3161,7 +3382,8 @@
           "volumeOrPages": "pp. 176-183"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "rhyticeros-undulatus",
@@ -3186,7 +3408,13 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "VU",
-      "description": "Nổi tiếng với túi da họng màu vàng chanh có dải vạch đen ngang và gốc mỏ có nhiều nếp nhăn lượn sóng."
+      "description": "Nổi tiếng với túi da họng màu vàng chanh có dải vạch đen ngang và gốc mỏ có nhiều nếp nhăn lượn sóng.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu đen tuyền, đuôi trắng tinh hoàn toàn, chim trống có đầu hung đỏ, túi họng vàng chói và gốc mỏ có các nếp gấp lượn sóng.",
@@ -3206,7 +3434,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "50m - 1.200m",
       "habitats": [
         "Rừng thường xanh mưa ẩm nhiệt đới",
@@ -3269,7 +3497,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "anorrhinus-tickelli",
@@ -3293,7 +3522,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "NT",
-      "description": "Loài niệc sống theo bầy đàn gia đình gắn kết, hỗ trợ nhau ấp trứng và nuôi con trong hốc cây cổ thụ."
+      "description": "Loài niệc sống theo bầy đàn gia đình gắn kết, hỗ trợ nhau ấp trứng và nuôi con trong hốc cây cổ thụ.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu nâu xám sẫm, họng và ngực chim trống màu nâu hung vàng, mỏ màu vàng ngà có chóp đuôi trắng nhạt.",
@@ -3313,7 +3548,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng Đất thấp miền Trung",
+      "ebaRegion": "Vùng đất thấp Trung Bộ",
       "elevation": "100m - 1.000m",
       "habitats": [
         "Rừng nguyên sinh ẩm thường xanh dãy Trường Sơn"
@@ -3375,7 +3610,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "upupa-epops",
@@ -3399,7 +3635,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nổi tiếng với chiếc mào lông xòe hình quạt chấm đen và tiếng kêu trầm ấm 'úp-úp-úp' lúc trưa hè."
+      "description": "Nổi tiếng với chiếc mào lông xòe hình quạt chấm đen và tiếng kêu trầm ấm 'úp-úp-úp' lúc trưa hè.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu hồng nâu hạt dẻ, cánh và đuôi có các dải vằn đen trắng rộng tương phản mạnh, mào lông đầu xòe quạt và mỏ dài mảnh cong nhẹ.",
@@ -3419,7 +3661,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 800m",
       "habitats": [
         "Vườn cây ven làng quê",
@@ -3484,7 +3726,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "megaceryle-lugubris",
@@ -3508,7 +3751,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Khổng lồ trong thế giới bói cá Việt Nam với chiếc mào lông bờm xù hoa râm và tài lao vút bắt cá suối ghềnh."
+      "description": "Khổng lồ trong thế giới bói cá Việt Nam với chiếc mào lông bờm xù hoa râm và tài lao vút bắt cá suối ghềnh.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình to lớn, bộ lông hoa râm vằn đen trắng như áo dệt thổ cẩm, mào lông đầu dựng đứng bờm xờm và chiếc mỏ đen sắc như mũi giáo.",
@@ -3528,7 +3777,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "ebaRegion": "Vùng núi Hoàng Liên Sơn",
       "elevation": "300m - 1.800m",
       "habitats": [
         "Sông suối ghềnh thác nước chảy xiết vùng núi",
@@ -3591,13 +3840,18 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "pelargopsis-capensis",
     "scientificName": "Pelargopsis capensis",
-    "vietnameseName": "Sả mỏ rộng",
+    "vietnameseName": "Bồng chanh lớn",
     "englishName": "Stork-billed Kingfisher",
+    "aliases": [
+      "Sả mỏ bồng",
+      "Sả mỏ rộng"
+    ],
     "taxonomy": {
       "clade": [
         "Aves",
@@ -3615,7 +3869,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Đồ sộ với chiếc mỏ đỏ thắm khổng lồ như mỏ hạc, lưng xanh ngọc biếc và tiếng kêu cười vang vọng mặt nước."
+      "description": "Đồ sộ với chiếc mỏ đỏ thắm khổng lồ như mỏ hạc, lưng xanh ngọc biếc và tiếng kêu cười vang vọng mặt nước.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Đầu màu nâu xám, ức và bụng màu vàng nghệ rực rỡ, lưng xanh ngọc ánh lam chói lọi và mỏ đỏ tươi như ớt chín.",
@@ -3635,7 +3895,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng hạ lưu sông Mê Kông",
       "elevation": "0m - 500m",
       "habitats": [
         "Bờ sông suối rừng ngập nước",
@@ -3699,7 +3959,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "halcyon-pileata",
@@ -3723,7 +3984,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Mũ đầu đen nhung, cổ áo trắng tinh khiết và lưng xanh tím than tím biếc tuyệt mỹ."
+      "description": "Mũ đầu đen nhung, cổ áo trắng tinh khiết và lưng xanh tím than tím biếc tuyệt mỹ.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": true,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Đỉnh đầu đen nhung tuyền, vòng cổ màu trắng tinh, lưng và cánh màu xanh tím coban đậm đà, mỏ và chân màu đỏ thắm.",
@@ -3743,7 +4010,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 400m",
       "habitats": [
         "Cửa sông ven biển ngập mặn",
@@ -3806,7 +4073,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "alcedo-hercules",
@@ -3830,7 +4098,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "NT",
-      "description": "Loài bồng chanh lớn nhất thế giới, cư ngụ bí ẩn dọc các khe suối rừng nguyên sinh rậm rạp miền núi phía Bắc."
+      "description": "Loài bồng chanh lớn nhất thế giới, cư ngụ bí ẩn dọc các khe suối rừng nguyên sinh rậm rạp miền núi phía Bắc.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh coban ánh kim sáng rực, ngực và bụng màu cam đỏ rực lửa, dải lưng giữa màu xanh ngọc bích phát quang.",
@@ -3850,7 +4124,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "ebaRegion": "Vùng núi Hoàng Liên Sơn",
       "elevation": "200m - 1.200m",
       "habitats": [
         "Khe suối đá ngầm trong rừng nguyên sinh rậm rạp",
@@ -3913,7 +4187,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "coracias-affinis",
@@ -3937,7 +4212,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "'Vũ công nhào lộn' không trung với đôi cánh xanh ngọc lấp lánh và vũ điệu nhào lộn cuốn hút mùa ghép đôi."
+      "description": "'Vũ công nhào lộn' không trung với đôi cánh xanh ngọc lấp lánh và vũ điệu nhào lộn cuốn hút mùa ghép đôi.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Đầu và lưng màu xanh ô-liu xám, ngực màu tím tím than đậm, cánh ngoài màu xanh lơ phát sáng như ngọc bích khi sải rộng.",
@@ -3957,7 +4238,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 700m",
       "habitats": [
         "Rừng khộp rụng lá Tây Nguyên",
@@ -4020,7 +4301,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "psilopogon-haemacephalus",
@@ -4044,7 +4326,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "'Thợ rèn đồng' tí hon với nhịp gõ đều đặn 'tuk-tuk-tuk' vang vọng khắp vườn cây và trán đỏ rực."
+      "description": "'Thợ rèn đồng' tí hon với nhịp gõ đều đặn 'tuk-tuk-tuk' vang vọng khắp vườn cây và trán đỏ rực.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh lục cỏ, trán và yếm ngực đỏ tươi như ruby, họng vàng chanh, ức có vệt sọc xanh đậm, mỏ cứng chắc.",
@@ -4064,7 +4352,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 800m",
       "habitats": [
         "Vườn cây đô thị",
@@ -4129,7 +4417,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "psilopogon-faber",
@@ -4153,7 +4442,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Cư dân vòm tán rừng đá vôi miền Bắc với đỉnh đầu đen huyền bí và họng đỏ son rực rỡ."
+      "description": "Cư dân vòm tán rừng đá vôi miền Bắc với đỉnh đầu đen huyền bí và họng đỏ son rực rỡ.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân xanh ngọc bích, mũ đầu đen tuyền, trán có đốm đỏ son, họng và sau gáy điểm sắc xanh da trời và đỏ thắm.",
@@ -4173,7 +4468,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "ebaRegion": "Vùng núi Đông Bắc",
       "elevation": "200m - 1.200m",
       "habitats": [
         "Rừng nguyên sinh thường xanh trên núi đá vôi",
@@ -4236,13 +4531,17 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "picus-rabieri",
     "scientificName": "Picus rabieri",
-    "vietnameseName": "Gõ kiến xanh hông đỏ",
+    "vietnameseName": "Gõ kiến đầu đỏ",
     "englishName": "Red-collared Woodpecker",
+    "aliases": [
+      "Gõ kiến xanh hông đỏ"
+    ],
     "taxonomy": {
       "clade": [
         "Aves",
@@ -4261,7 +4560,13 @@
     "conservation": {
       "iucn": "NT",
       "vietnamRedList": "VU",
-      "description": "Loài gõ kiến tuyệt đẹp của dải rừng Đông Dương với vòng cổ màu đỏ thắm bao quanh cổ áo xanh lục."
+      "description": "Loài gõ kiến tuyệt đẹp của dải rừng Đông Dương với vòng cổ màu đỏ thắm bao quanh cổ áo xanh lục.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh ô-liu đậm, toàn bộ đầu và cổ áo bao bọc bởi lớp lông màu đỏ son rực lửa kéo dài từ gáy xuống tận ức.",
@@ -4281,7 +4586,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng Đất thấp miền Trung",
+      "ebaRegion": "Vùng đất thấp Trung Bộ",
       "elevation": "50m - 700m",
       "habitats": [
         "Rừng nguyên sinh thường xanh đất thấp",
@@ -4347,13 +4652,17 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "chrysocolaptes-guttacristatus",
     "scientificName": "Chrysocolaptes guttacristatus",
-    "vietnameseName": "Gõ kiến tam giác",
+    "vietnameseName": "Gõ kiến vàng lớn",
     "englishName": "Greater Flameback",
+    "aliases": [
+      "Gõ kiến tam giác"
+    ],
     "taxonomy": {
       "clade": [
         "Aves",
@@ -4371,7 +4680,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "'Ngọn lửa rừng xanh' với lưng màu vàng kim óng ánh, mào đỏ son rực rỡ và tiếng cười giòn tan."
+      "description": "'Ngọn lửa rừng xanh' với lưng màu vàng kim óng ánh, mào đỏ son rực rỡ và tiếng cười giòn tan.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu vàng kim óng ả, mào lông đầu đỏ chói dựng đứng, mặt có các dải sọc trắng đen song song, ức có vảy đen trắng tinh tế.",
@@ -4391,7 +4706,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 1.000m",
       "habitats": [
         "Rừng khộp rụng lá",
@@ -4455,7 +4770,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "ictinaetus-malaiensis",
@@ -4480,7 +4796,13 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "VU",
-      "description": "Bóng ma đen tuyền lướt êm ru trên ngọn cây vòm rừng núi cao với sải cánh rộng hình chữ V đặc trưng."
+      "description": "Bóng ma đen tuyền lướt êm ru trên ngọn cây vòm rừng núi cao với sải cánh rộng hình chữ V đặc trưng.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Toàn thân phủ màu đen tuyền như nhung, sáp mỏ và chân màu vàng chanh sáng rực, móng vuốt chân duỗi thẳng thích nghi cướp tổ chim non.",
@@ -4500,7 +4822,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "ebaRegion": "Cao nguyên Đà Lạt",
       "elevation": "500m - 2.400m",
       "habitats": [
         "Vòm rừng nguyên sinh trên núi cao",
@@ -4563,7 +4885,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "spilornis-cheela",
@@ -4587,7 +4910,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Sát thủ săn rắn chuyên nghiệp với đôi mắt vàng sáng rực như hổ phách và dải băng trắng rộng dưới cánh."
+      "description": "Sát thủ săn rắn chuyên nghiệp với đôi mắt vàng sáng rực như hổ phách và dải băng trắng rộng dưới cánh.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu nâu sẫm lốm đốm sao trắng ở ức và bụng, mào xòe sau gáy lấm tấm chấm trắng, dải băng trắng to bản chạy dọc cánh và đuôi khi bay.",
@@ -4607,7 +4936,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 1.500m",
       "habitats": [
         "Rừng thường xanh và rừng ngập nước",
@@ -4670,7 +4999,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "pernis-ptilorhynchus",
@@ -4694,7 +5024,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Khắc tinh của các tổ ong rừng nhờ lớp vảy lông cứng như áo giáp bảo vệ mặt khỏi ngòi đốt độc."
+      "description": "Khắc tinh của các tổ ong rừng nhờ lớp vảy lông cứng như áo giáp bảo vệ mặt khỏi ngòi đốt độc.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Đầu nhỏ thon cổ dài như bồ câu, lớp lông mặt phủ vảy mịn chống ong đốt, mào lông nhỏ ở gáy và đuôi có hai dải băng đen sẫm.",
@@ -4714,7 +5050,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "ebaRegion": "Vùng núi Đông Bắc",
       "elevation": "100m - 1.500m",
       "habitats": [
         "Rừng rụng lá và rừng thường xanh",
@@ -4777,7 +5113,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "elanus-caeruleus",
@@ -4801,7 +5138,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "'Thiên thần săn chuột' của đồng cỏ với bộ lông trắng muốt, vai đen nhánh và đôi mắt đỏ rực như đá ruby."
+      "description": "'Thiên thần săn chuột' của đồng cỏ với bộ lông trắng muốt, vai đen nhánh và đôi mắt đỏ rực như đá ruby.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Toàn thân trắng tinh khiết pha xám bạc nhẹ ở lưng, mảng vai đen tuyền nổi bật, mắt màu đỏ ruby rực lửa, khả năng đập cánh treo mình đứng yên giữa không trung.",
@@ -4821,7 +5164,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng hạ lưu sông Mê Kông",
       "elevation": "0m - 600m",
       "habitats": [
         "Đồng cỏ ngập nước",
@@ -4884,7 +5227,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "ketupa-zeylonensis",
@@ -4908,7 +5252,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Chúa tể săn cá ban đêm với đôi tai lông xòe ngang dũng mãnh, mắt vàng trợn tròn và ngón chân trần có gai nhọn bắt cá trơn."
+      "description": "Chúa tể săn cá ban đêm với đôi tai lông xòe ngang dũng mãnh, mắt vàng trợn tròn và ngón chân trần có gai nhọn bắt cá trơn.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình to lớn đồ sộ, lông màu nâu hung rằn ri sọc đen, đôi tai lông dài vểnh ngang và chân trần không có lông phủ để tránh ướt nước khi vồ cá.",
@@ -4928,7 +5278,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 1.000m",
       "habitats": [
         "Sông suối có cây rủ rậm rạp ven bờ",
@@ -4992,7 +5342,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "otus-lettia",
@@ -5016,7 +5367,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Cú mèo nhỏ bé ngụy trang hoàn hảo như vỏ cây khô với vòng khoang cổ màu vàng ngà sau gáy."
+      "description": "Cú mèo nhỏ bé ngụy trang hoàn hảo như vỏ cây khô với vòng khoang cổ màu vàng ngà sau gáy.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xám tro rằn ri như vỏ cây mục, vòng cổ màu vàng ngà nhạt vắt sau gáy tạo hình 'mặt giả' đánh lừa kẻ thù, đôi tai lông dựng đứng.",
@@ -5036,7 +5393,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "ebaRegion": "Vùng núi Đông Bắc",
       "elevation": "0m - 1.500m",
       "habitats": [
         "Vườn cây lá rộng",
@@ -5101,7 +5458,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "glaucidium-brodiei",
@@ -5125,7 +5483,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Loài cú nhỏ nhất Đông Dương (chỉ to bằng nắm tay) hoạt động cả ban ngày với 'đôi mắt giả' kỳ ảo sau gáy."
+      "description": "Loài cú nhỏ nhất Đông Dương (chỉ to bằng nắm tay) hoạt động cả ban ngày với 'đôi mắt giả' kỳ ảo sau gáy.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Kích thước tí hon, đầu tròn không có tai lông, sau gáy có hai đốm đen viền trắng tròn xoe y như đôi mắt thứ hai để răn đe kẻ thù từ phía sau.",
@@ -5145,7 +5509,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "ebaRegion": "Cao nguyên Đà Lạt",
       "elevation": "700m - 2.200m",
       "habitats": [
         "Rừng thường xanh trên núi cao",
@@ -5208,7 +5572,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "pseudibis-davisoni",
@@ -5233,7 +5598,13 @@
     "conservation": {
       "iucn": "CR",
       "vietnamRedList": "CR",
-      "description": "Một trong 50 loài chim hiếm nhất hành tinh với vòng cổ màu xanh lam sáng và mảng vai trắng muốt."
+      "description": "Một trong 50 loài chim hiếm nhất hành tinh với vòng cổ màu xanh lam sáng và mảng vai trắng muốt.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu nâu đen ánh thép, đầu trần trụi màu đen có vòng da cổ màu xanh da trời sáng rực, mảng lông vai màu trắng tinh nổi bật trên cánh đen.",
@@ -5253,7 +5624,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "10m - 200m",
       "habitats": [
         "Bãi bồi ngập nước mùa mưa",
@@ -5316,7 +5687,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "platalea-minor",
@@ -5341,7 +5713,13 @@
     "conservation": {
       "iucn": "EN",
       "vietnamRedList": "EN",
-      "description": "'Sứ giả mùa đông' của đất ngập nước ven biển Bắc Bộ với chiếc mỏ hình chiếc thìa kỳ lạ quét ngang mặt nước bắt tôm cá."
+      "description": "'Sứ giả mùa đông' của đất ngập nước ven biển Bắc Bộ với chiếc mỏ hình chiếc thìa kỳ lạ quét ngang mặt nước bắt tôm cá.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": true,
+        "directive04Flagship": true
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Toàn thân trắng tinh khôi, mảng da mặt trần trụi màu đen tuyền quanh mắt, chiếc mỏ dẹt to bè hình muỗng/thìa màu xám nhăn nheo.",
@@ -5361,7 +5739,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "ebaRegion": "Vùng núi Đông Bắc",
       "elevation": "0m - 20m",
       "habitats": [
         "Bãi triều cửa sông ven biển",
@@ -5424,13 +5802,19 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "leptoptilos-javanicus",
     "scientificName": "Leptoptilos javanicus",
-    "vietnameseName": "Già đới cổ hung",
+    "vietnameseName": "Già đẫy nhỏ",
     "englishName": "Lesser Adjutant",
+    "aliases": [
+      "Già đẫy",
+      "Cò súp",
+      "Già đay"
+    ],
     "taxonomy": {
       "clade": [
         "Aves",
@@ -5449,7 +5833,13 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "VU",
-      "description": "Loài hạc khổng lồ trầm ngâm của vùng đất ngập nước phương Nam với dáng đứng oai nghiêm như vị giáo sư già."
+      "description": "Loài hạc khổng lồ trầm ngâm của vùng đất ngập nước phương Nam với dáng đứng oai nghiêm như vị giáo sư già.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": true,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân cao lớn, lưng và cánh đen ánh kim xanh thép, đầu và cổ trần trụi da màu vàng hồng có vài sợi lông tơ thưa thớt, mỏ to dày màu ngà.",
@@ -5469,7 +5859,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng hạ lưu sông Mê Kông",
       "elevation": "0m - 100m",
       "habitats": [
         "Vùng đất ngập nước mùa lũ",
@@ -5533,7 +5923,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "gorsachius-melanolophus",
@@ -5557,7 +5948,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Cư dân bí ẩn hoạt động lúc chạng vạng trong rừng nhiệt đới với mào đen dài buông thõng và hoa văn rằn ri như vỏ cây."
+      "description": "Cư dân bí ẩn hoạt động lúc chạng vạng trong rừng nhiệt đới với mào đen dài buông thõng và hoa văn rằn ri như vỏ cây.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu nâu hạt dẻ ấm, cánh rằn ri vằn đen mịn, mào lông đen tuyền buông dài sau gáy và đôi mắt tròn xoe to màu vàng lục.",
@@ -5577,7 +5974,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "50m - 1.000m",
       "habitats": [
         "Rừng kín thường xanh ven suối ẩm",
@@ -5640,7 +6037,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "antigone-antigone",
@@ -5665,7 +6063,13 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "CR",
-      "description": "Loài chim bay cao nhất thế giới (cao tới 1.8m) với chiếc đầu đỏ rực rỡ và điệu múa uyên ương chung thủy suốt đời."
+      "description": "Loài chim bay cao nhất thế giới (cao tới 1.8m) với chiếc đầu đỏ rực rỡ và điệu múa uyên ương chung thủy suốt đời.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": true,
+        "directive04Flagship": true
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân cao lớn thanh thoát màu xám bạc, đầu và cổ trên trần trụi da màu đỏ tươi rực lửa, đỉnh đầu có mảng da xám tro và đôi chân dài miên man màu hồng.",
@@ -5685,7 +6089,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng hạ lưu sông Mê Kông",
       "elevation": "0m - 50m",
       "habitats": [
         "Đồng cỏ bàng (Eleocharis)",
@@ -5748,7 +6152,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "rallina-fasciata",
@@ -5772,7 +6177,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Cuốc rừng duyên dáng với đầu và ngực màu đỏ hung hạt dẻ, bụng vằn đen trắng như ngựa vằn và đôi chân đỏ tươi."
+      "description": "Cuốc rừng duyên dáng với đầu và ngực màu đỏ hung hạt dẻ, bụng vằn đen trắng như ngựa vằn và đôi chân đỏ tươi.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": true,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Đầu, cổ và ngực màu đỏ hung hạt dẻ ấm áp, bụng và sườn có các dải sọc vằn đen trắng xen kẽ nổi bật, đôi chân đỏ thắm.",
@@ -5792,7 +6203,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 600m",
       "habitats": [
         "Đầm lầy ẩm ướt",
@@ -5856,7 +6267,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "porphyrio-poliocephalus",
@@ -5880,7 +6292,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Chú chim đầm lầy rực rỡ với bộ lông xanh tím biếc, mỏ và mảng sừng trán đỏ tươi cùng đôi chân dài thoăn thoắt trên lá sen."
+      "description": "Chú chim đầm lầy rực rỡ với bộ lông xanh tím biếc, mỏ và mảng sừng trán đỏ tươi cùng đôi chân dài thoăn thoắt trên lá sen.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": true,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh lam tím ánh ngọc bích, đầu màu xám bạc, mào sừng trán và mỏ màu đỏ thắm, dưới đuôi có mảng lông trắng muốt giật giật khi bước đi.",
@@ -5900,7 +6318,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng hạ lưu sông Mê Kông",
       "elevation": "0m - 200m",
       "habitats": [
         "Đầm sen súng",
@@ -5964,7 +6382,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "caloenas-nicobarica",
@@ -5989,7 +6408,13 @@
     "conservation": {
       "iucn": "NT",
       "vietnamRedList": "VU",
-      "description": "Họ hàng gần nhất còn sống của loài chim Dodo huyền thoại với bộ lông cổ dài ánh kim cầu vồng rực rỡ tại Côn Đảo."
+      "description": "Họ hàng gần nhất còn sống của loài chim Dodo huyền thoại với bộ lông cổ dài ánh kim cầu vồng rực rỡ tại Côn Đảo.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh lục ánh đồng lấp lánh như cầu vồng kim loại, lông bờm cổ dài thượt thướt tha, đuôi ngắn màu trắng tuyết và cục sừng tròn trên gốc mỏ.",
@@ -6009,7 +6434,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 100m",
       "habitats": [
         "Rừng nguyên sinh hải đảo nhiệt đới",
@@ -6072,7 +6497,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "ducula-badia",
@@ -6096,7 +6522,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Khổng lồ trong họ bồ câu rừng núi với tiếng kêu 'ù-ùm' trầm ấm vang dội khắp thung lũng sương mù."
+      "description": "Khổng lồ trong họ bồ câu rừng núi với tiếng kêu 'ù-ùm' trầm ấm vang dội khắp thung lũng sương mù.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình to lớn đồ sộ, lưng và cánh màu nâu hạt dẻ hung đỏ đậm đà, đầu và ngực màu xám hồng thanh nhã, đuôi đen có dải xám ở chóp.",
@@ -6116,7 +6548,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Cao nguyên Đà Lạt / Lâm Viên",
+      "ebaRegion": "Cao nguyên Đà Lạt",
       "elevation": "600m - 2.200m",
       "habitats": [
         "Rừng thường xanh trên núi cao",
@@ -6179,7 +6611,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "treron-apicauda",
@@ -6203,7 +6636,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Loài bồ câu xanh tuyệt mỹ vùng núi cao với hai sợi lông đuôi giữa vuốt dài nhọn hoắt như mũi tên."
+      "description": "Loài bồ câu xanh tuyệt mỹ vùng núi cao với hai sợi lông đuôi giữa vuốt dài nhọn hoắt như mũi tên.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu xanh đọt chuối tươi mát, ngực phớt vàng cam dịu dàng, hai cọng lông đuôi giữa vươn dài nhọn hoắt, mỏ màu xanh lơ gốc mỏ phớt đỏ.",
@@ -6223,7 +6662,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "ebaRegion": "Vùng núi Hoàng Liên Sơn",
       "elevation": "800m - 2.000m",
       "habitats": [
         "Vòm tán rừng thường xanh núi cao",
@@ -6286,7 +6725,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "asarcornis-scutulata",
@@ -6310,7 +6750,13 @@
     "conservation": {
       "iucn": "EN",
       "vietnamRedList": "CR",
-      "description": "'Bóng ma rừng ngập nước' bí ẩn cư ngụ trong các đầm lầy nguyên sơ âm u của VQG Cát Tiên và Tây Nguyên."
+      "description": "'Bóng ma rừng ngập nước' bí ẩn cư ngụ trong các đầm lầy nguyên sơ âm u của VQG Cát Tiên và Tây Nguyên.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân hình to lớn sẫm màu đen bóng ánh lục, đầu và cổ lấm tấm trắng đen, mảng bao cánh màu trắng tinh khiết phát sáng khi bay.",
@@ -6330,7 +6776,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "50m - 400m",
       "habitats": [
         "Đầm lầy nước đọng trong rừng già nguyên sinh",
@@ -6393,7 +6839,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "aix-galericulata",
@@ -6417,7 +6864,13 @@
     "conservation": {
       "iucn": "LC",
       "vietnamRedList": "VU",
-      "description": "Tuyệt tác sắc màu phương Đông và biểu tượng vĩnh cửu của tình yêu đôi lứa thủy chung."
+      "description": "Tuyệt tác sắc màu phương Đông và biểu tượng vĩnh cửu của tình yêu đôi lứa thủy chung.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Chim trống là bản giao hưởng màu sắc rực rỡ với mào lông tím - xanh, đôi 'cánh buồm' màu cam dựng đứng ở lưng và chiếc mỏ đỏ san hô.",
@@ -6437,7 +6890,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "ebaRegion": "Vùng núi Đông Bắc",
       "elevation": "50m - 1.000m",
       "habitats": [
         "Hồ nước ngọt vùng núi có rừng bao bọc",
@@ -6500,7 +6953,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "hierococcyx-sparverioides",
@@ -6524,7 +6978,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "'Kẻ giả dạng chim ưng' với tiếng kêu não nùng vang dội khắp núi rừng lúc đêm khuya mùa hạ."
+      "description": "'Kẻ giả dạng chim ưng' với tiếng kêu não nùng vang dội khắp núi rừng lúc đêm khuya mùa hạ.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Hình dáng và bộ lông sao chép hoàn hảo loài chim ưng với lưng xám tro, ức vằn đen trắng và mắt có vòng vàng sáng giúp xua đuổi chim chủ nhà khi đẻ trứng nhờ.",
@@ -6544,7 +7004,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
+      "ebaRegion": "Vùng núi Hoàng Liên Sơn",
       "elevation": "500m - 2.200m",
       "habitats": [
         "Tầng tán rừng thường xanh trên núi",
@@ -6607,7 +7067,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "carpococcyx-renauldi",
@@ -6632,7 +7093,13 @@
     "conservation": {
       "iucn": "VU",
       "vietnamRedList": "VU",
-      "description": "Loài cu cu chạy đất khổng lồ tuyệt đẹp với chiếc mỏ đỏ san hô, da mặt tím xanh và đôi chân dài thoăn thoắt."
+      "description": "Loài cu cu chạy đất khổng lồ tuyệt đẹp với chiếc mỏ đỏ san hô, da mặt tím xanh và đôi chân dài thoăn thoắt.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân to lớn đuôi dài màu xanh tím than ánh kim, ngực màu xám bạc tương phản với bụng đen, mỏ và chân đỏ san hô tươi tắn, da mặt xanh tím.",
@@ -6652,7 +7119,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng Đất thấp miền Trung",
+      "ebaRegion": "Vùng đất thấp Trung Bộ",
       "elevation": "50m - 900m",
       "habitats": [
         "Rừng kín thường xanh mưa ẩm nhiệt đới",
@@ -6716,7 +7183,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "centropus-sinensis",
@@ -6740,7 +7208,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Âm thanh quen thuộc 'bịp-bịp' của đồng quê Việt Nam với đôi cánh màu hung đỏ hạt dẻ và mắt đỏ rực."
+      "description": "Âm thanh quen thuộc 'bịp-bịp' của đồng quê Việt Nam với đôi cánh màu hung đỏ hạt dẻ và mắt đỏ rực.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu đen ánh tím than, cánh màu nâu hạt dẻ hung đỏ sáng, đôi mắt đỏ rực như than hồng và chiếc đuôi đen dài bóng mượt.",
@@ -6760,7 +7234,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 1.200m",
       "habitats": [
         "Bụi rậm ngập nước",
@@ -6824,7 +7298,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "harpactes-erythrocephalus",
@@ -6848,7 +7323,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Viên hồng ngọc lộng lẫy của rừng nhiệt đới với đầu và bụng màu đỏ thắm rực rỡ và vòng mắt xanh coban."
+      "description": "Viên hồng ngọc lộng lẫy của rừng nhiệt đới với đầu và bụng màu đỏ thắm rực rỡ và vòng mắt xanh coban.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Đầu và toàn bộ bụng màu đỏ thắm chói lọi, vòng cổ màu trắng mảnh, lưng màu nâu quế ấm áp, vòng mi mắt trần màu xanh coban kỳ ảo.",
@@ -6868,7 +7349,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "ebaRegion": "Vùng núi Đông Bắc",
       "elevation": "300m - 1.800m",
       "habitats": [
         "Tầng giữa rừng nguyên sinh ẩm nhiệt đới",
@@ -6932,7 +7413,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "harpactes-oreskios",
@@ -6956,7 +7438,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Nuốc rừng đất thấp với ức màu cam rực lửa chuyển dần sang vàng chanh tươi sáng ở bụng."
+      "description": "Nuốc rừng đất thấp với ức màu cam rực lửa chuyển dần sang vàng chanh tươi sáng ở bụng.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Đầu màu xanh ô-liu ánh vàng, ngực màu cam tươi rực rỡ, bụng màu vàng chanh, lưng nâu hạt dẻ và vòng mắt màu xanh lơ.",
@@ -6976,7 +7464,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "50m - 1.000m",
       "habitats": [
         "Rừng thường xanh đất thấp",
@@ -7039,7 +7527,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "microhierax-melanoleucos",
@@ -7063,7 +7552,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Loài chim săn mồi tí hon nhất thế giới (chỉ dài 15cm) nhưng săn bướm và chuồn chuồn với tốc độ tên lửa."
+      "description": "Loài chim săn mồi tí hon nhất thế giới (chỉ dài 15cm) nhưng săn bướm và chuồn chuồn với tốc độ tên lửa.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu đen bóng tương phản với bụng và họng trắng tinh khiết, mặt nạ đen vắt qua mắt, mỏ quặp sắc lẻm như đại bàng thu nhỏ.",
@@ -7083,7 +7578,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+      "ebaRegion": "Vùng núi Đông Bắc",
       "elevation": "100m - 1.000m",
       "habitats": [
         "Khoảng rừng trống ven sông",
@@ -7146,7 +7641,8 @@
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
         }
       ]
-    }
+    },
+    "endemicScope": "none"
   },
   {
     "id": "caprimulgus-macrurus",
@@ -7170,7 +7666,13 @@
     "isEndemic": false,
     "conservation": {
       "iucn": "LC",
-      "description": "Bậc thầy tàng hình với tiếng gõ đều đặn 'chúc-chúc-chúc' như tiếng đóng cọc vào đêm trăng thanh."
+      "description": "Bậc thầy tàng hình với tiếng gõ đều đặn 'chúc-chúc-chúc' như tiếng đóng cọc vào đêm trăng thanh.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
     },
     "morphologicalAnalysis": {
       "overview": "Thân màu nâu xám rằn ri như lá khô mục, miệng rộng hoác có ria mép dài bắt côn trùng khi bay đêm, đuôi dài có chóp trắng lớn ở góc đuôi.",
@@ -7190,7 +7692,7 @@
       ]
     },
     "distribution": {
-      "ebaRegion": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
       "elevation": "0m - 1.200m",
       "habitats": [
         "Đường mòn ven rừng",
@@ -7252,6 +7754,1348 @@
           "title": "IOC World Bird List (v14.1)",
           "journalOrBook": "International Ornithological Union",
           "doiOrUrl": "https://doi.org/10.14344/IOC.ML.14.1"
+        }
+      ]
+    },
+    "endemicScope": "none"
+  },
+  {
+    "id": "cutia-legalleni",
+    "scientificName": "Cutia legalleni",
+    "vietnameseName": "Khướu hông đỏ",
+    "englishName": "Vietnamese Cutia",
+    "aliases": [
+      "Khướu hông đỏ Việt Nam",
+      "Cutia hông đỏ"
+    ],
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Leiothrichidae",
+      "familyVietnamese": "Họ Khướu",
+      "genus": "Cutia",
+      "species": "C. legalleni"
+    },
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "conservation": {
+      "iucn": "NT",
+      "vietnamRedList": "VU",
+      "description": "Loài đặc hữu hẹp của Cao nguyên Langbiang/Đà Lạt. Bị đe dọa bởi thu hẹp sinh cảnh rừng nguyên sinh trên núi cao.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài chim cỡ trung bình có hoa văn sặc sỡ, nổi bật với mặt nạ đen, lưng nâu hung và hai bên sườn có các dải vệt hung đỏ xen kẽ sọc đen trắng.",
+      "diagnosticFeatures": [
+        {
+          "part": "Vệt sườn đỏ hạt dẻ",
+          "description": "Hai bên sườn phủ các mảng màu hung đỏ tươi đặc trưng, khác biệt hoàn toàn với Cutia vằn (Cutia nipalensis)."
+        },
+        {
+          "part": "Mặt nạ đen & đỉnh đầu xám",
+          "description": "Dải vệt đen tuyền che trùm từ mỏ qua mắt, tương phản với đỉnh đầu màu xám tro lam nhạt."
+        },
+        {
+          "part": "Thân dưới vằn đen trắng",
+          "description": "Ngực và bụng màu trắng tinh với các vệt rằn ngang đen nhánh sắc nét."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Đà Lạt",
+      "elevation": "1.200m - 2.100m",
+      "habitats": [
+        "Rừng thường xanh trên núi cao",
+        "Rừng lá rộng hỗn giao thông rụng lá"
+      ],
+      "locations": [
+        "VQG Bidoup Núi Bà (Lâm Đồng)",
+        "Đèo Cổng Trời",
+        "Đèo Lạc Dương"
+      ],
+      "coordinates": [
+        12.18,
+        108.53
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/253075714/large.jpg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/253075714/medium.jpg",
+      "artist": "(c) Martin Walsh, some rights reserved (CC BY-NC-ND)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-72773",
+      "year": "2023",
+      "license": "cc-by-nc-nd",
+      "observationUrl": "https://www.inaturalist.org/taxa/72773",
+      "photoLocation": "VQG Bidoup Núi Bà, Lâm Đồng",
+      "isShotInVietnam": true
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/161819/download",
+      "duration": "0:25",
+      "recordist": "Klemens Steiof",
+      "location": "Mt Langbian, Da Lat, Lam Dong",
+      "xcId": "161819",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/161819"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-CUTIA",
+      "avibaseId": "B75DF97A5E66EFB5",
+      "iucnUrl": "https://www.iucnredlist.org/species/22734493/95087834",
+      "gbifTaxonKey": "5844898",
+      "primaryLiterature": [
+        {
+          "authors": "Collar, N. J.",
+          "year": 2006,
+          "title": "A partial revision of the Asian babblers (Timaliidae)",
+          "journalOrBook": "Forktail",
+          "volumeOrPages": "22: 85-112"
+        }
+      ]
+    }
+  },
+  {
+    "id": "garrulax-annamensis",
+    "scientificName": "Garrulax annamensis",
+    "vietnameseName": "Khướu ngực đốm",
+    "englishName": "Orange-breasted Laughingthrush",
+    "aliases": [
+      "Khướu An Nam",
+      "Khướu ngực cam"
+    ],
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Leiothrichidae",
+      "familyVietnamese": "Họ Khướu",
+      "genus": "Garrulax",
+      "species": "G. annamensis"
+    },
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "VU",
+      "description": "Đặc hữu của Cao nguyên Đà Lạt. Phân bố cục bộ tại các thung lũng ẩm và rừng thường xanh sườn núi.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài khướu cỡ vừa tuyệt đẹp với vệt mày và toàn bộ vùng ngực màu cam tươi tắn viền vệt đen, cổ họng đen thẫm.",
+      "diagnosticFeatures": [
+        {
+          "part": "Ngực cam viền sọc",
+          "description": "Ngực phủ màu cam tươi pha các vệt đen mảnh dọc, phân biệt rõ rệt với Khướu ngực đốm (Garrulax merulinus)."
+        },
+        {
+          "part": "Họng đen nhánh",
+          "description": "Cổ họng có mảng lông màu đen than sắc nét tạo độ tương phản mạnh mẽ với màu cam của ngực."
+        },
+        {
+          "part": "Vệt mày cam sáng",
+          "description": "Dải mày màu cam nhạt kéo dài phía trên mắt tạo điểm nhấn biểu cảm độc đáo."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Đà Lạt",
+      "elevation": "900m - 1.800m",
+      "habitats": [
+        "Rừng thường xanh trên núi",
+        "Rừng thứ sinh nhiều lùm bụi ven suối ẩm"
+      ],
+      "locations": [
+        "VQG Bidoup Núi Bà (Lâm Đồng)",
+        "Thung lũng Tà Nung",
+        "Đèo Ngoạn Mục"
+      ],
+      "coordinates": [
+        11.95,
+        108.44
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://static.inaturalist.org/photos/55236823/large.jpg",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/55236823/medium.jpg",
+      "artist": "(c) David Beadle, all rights reserved",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-72869",
+      "year": "2019",
+      "license": "all-rights-reserved",
+      "observationUrl": "https://www.inaturalist.org/taxa/72869",
+      "photoLocation": "Đà Lạt, Lâm Đồng",
+      "isShotInVietnam": true
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/983131/download",
+      "duration": "0:30",
+      "recordist": "Xeno-canto Field Archive",
+      "location": "Da Lat Plateau, Lam Dong",
+      "xcId": "983131",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/983131"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-GARRU",
+      "avibaseId": "6507A259BDCC7DBF",
+      "iucnUrl": "https://www.iucnredlist.org/species/22734490/95087640",
+      "gbifTaxonKey": "2493399",
+      "primaryLiterature": [
+        {
+          "authors": "Collar, N. J.",
+          "year": 2006,
+          "title": "A partial revision of the Asian babblers (Timaliidae)",
+          "journalOrBook": "Forktail",
+          "volumeOrPages": "22: 85-112"
+        }
+      ]
+    }
+  },
+  {
+    "id": "schoeniparus-klossi",
+    "scientificName": "Schoeniparus klossi",
+    "vietnameseName": "Khướu bụi gáy đen",
+    "englishName": "Black-crowned Fulvetta",
+    "aliases": [
+      "Khướu mỏ quặp gáy đen",
+      "Alcippe klossi"
+    ],
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Pellorneidae",
+      "familyVietnamese": "Họ Khướu đất",
+      "genus": "Schoeniparus",
+      "species": "S. klossi"
+    },
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "LR",
+      "description": "Loài đặc hữu hẹp của Cao nguyên Langbiang, hoạt động nhanh nhẹn theo bầy đàn trong tầng cây bụi rậm rạp.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài chim nhỏ thuộc họ Pellorneidae với chỏm đầu và gáy màu đen tuyền tương phản với vệt mày trắng dài và thân dưới hạt dẻ ấm áp.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đỉnh đầu đen tuyền",
+          "description": "Đỉnh đầu và gáy phủ màu đen nhánh bóng bẩy đặc trưng tạo nhận diện không thể nhầm lẫn."
+        },
+        {
+          "part": "Vệt mày trắng dài",
+          "description": "Đường viền mày trắng tuyết kéo dài từ trước mắt vắt ngang ra sau gáy."
+        },
+        {
+          "part": "Cánh và đuôi nâu hạt dẻ",
+          "description": "Lông cánh sơ cấp và đuôi mang sắc nâu đỏ hạt dẻ ấm tương phản lưng xám ô-liu."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Đà Lạt",
+      "elevation": "1.200m - 2.400m",
+      "habitats": [
+        "Rừng thường xanh trên núi cao",
+        "Rừng hỗn giao thông ba lá - lá rộng"
+      ],
+      "locations": [
+        "VQG Bidoup Núi Bà (Lâm Đồng)",
+        "Cao nguyên Langbiang",
+        "KBT Đa Nhim"
+      ],
+      "coordinates": [
+        12.09,
+        108.66
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://static.inaturalist.org/photos/55239371/large.jpg",
+      "thumbnailUrl": "https://static.inaturalist.org/photos/55239371/medium.jpg",
+      "artist": "(c) David Beadle, all rights reserved",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-145000",
+      "year": "2019",
+      "license": "all-rights-reserved",
+      "observationUrl": "https://www.inaturalist.org/taxa/145000",
+      "photoLocation": "VQG Bidoup Núi Bà, Lâm Đồng",
+      "isShotInVietnam": true
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/26529/download",
+      "duration": "0:21",
+      "recordist": "David Edwards",
+      "location": "Langbian, Da Lat, Lam Dong",
+      "xcId": "26529",
+      "license": "CC BY-NC-ND 2.5",
+      "observationUrl": "https://xeno-canto.org/26529"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-SCHOEN",
+      "avibaseId": "6C0FEFD489F5747C",
+      "iucnUrl": "https://www.iucnredlist.org/species/22716617/94502598",
+      "gbifTaxonKey": "7341399",
+      "primaryLiterature": [
+        {
+          "authors": "Robinson, H. C. & Kloss, C. B.",
+          "year": 1919,
+          "title": "On Birds from South Annam and Cochin China",
+          "journalOrBook": "Ibis",
+          "volumeOrPages": "61(4): 565-625"
+        }
+      ]
+    }
+  },
+  {
+    "id": "prinia-rocki",
+    "scientificName": "Prinia rocki",
+    "vietnameseName": "Chiền chiện núi An Nam",
+    "englishName": "Annam Prinia",
+    "aliases": [
+      "Chiền chiện An Nam",
+      "Chiền chiện núi Langbiang",
+      "Chiền chiện Đà Lạt",
+      "Dalat Prinia",
+      "Prinia atrogularis rocki"
+    ],
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Cisticolidae",
+      "familyVietnamese": "Họ Chiền chiện",
+      "genus": "Prinia",
+      "species": "P. rocki"
+    },
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "LR",
+      "description": "Đặc hữu của vùng núi cao nguyên Nam Trung Bộ, sinh sống chủ yếu trong các trảng cỏ cao và bìa rừng thông.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài chim nhỏ sống trong bụi rậm với đuôi dài mảnh thường vểnh cao, ngực có các vệt sọc đen nâu dày đặc và họng nhạt màu.",
+      "diagnosticFeatures": [
+        {
+          "part": "Vệt sọc ngực dày đặc",
+          "description": "Ngực có các vệt sọc đen nâu chạy dọc rõ nét và dày hơn đáng kể so với các phân loài phía Bắc."
+        },
+        {
+          "part": "Đuôi dài bậc thang",
+          "description": "Đuôi dài xếp tầng đặc trưng thường giật vểnh khi kiếm mồi trong bụi cỏ rậm."
+        },
+        {
+          "part": "Lưng nâu ô-liu",
+          "description": "Thân trên màu xám nâu ô-liu ấm áp giúp ngụy trang hoàn hảo giữa cành cây khô."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Đà Lạt",
+      "elevation": "1.000m - 2.200m",
+      "habitats": [
+        "Trảng cỏ và cây bụi núi cao",
+        "Bìa rừng thông ba lá và nương rẫy cũ"
+      ],
+      "locations": [
+        "VQG Bidoup Núi Bà (Lâm Đồng)",
+        "Khu vực Đan Kia - Suối Vàng",
+        "Đèo Prenn"
+      ],
+      "coordinates": [
+        11.98,
+        108.4
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/525982576/large.jpg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/525982576/medium.jpg",
+      "artist": "(c) quy_hoang, some rights reserved (CC BY-NC)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-1287020",
+      "year": "2024",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/1287020",
+      "photoLocation": "Đà Lạt, Lâm Đồng",
+      "isShotInVietnam": true
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/983132/download",
+      "duration": "0:28",
+      "recordist": "Xeno-canto Field Archive",
+      "location": "Da Lat, Lam Dong",
+      "xcId": "983132",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/983132"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-PRINIA",
+      "avibaseId": "6C31D8068285DDE7",
+      "iucnUrl": "https://www.iucnredlist.org/species/103777085/104192667",
+      "gbifTaxonKey": "10747209",
+      "primaryLiterature": [
+        {
+          "authors": "Alström, P., et al.",
+          "year": 2019,
+          "title": "A multifaceted approach to delimiting species in the Prinia atrogularis complex",
+          "journalOrBook": "Ibis",
+          "volumeOrPages": "162(2): 542-563"
+        }
+      ]
+    }
+  },
+  {
+    "id": "locustella-idonea",
+    "scientificName": "Locustella idonea",
+    "vietnameseName": "Chích bụi Đà Lạt",
+    "englishName": "Dalat Bush Warbler",
+    "aliases": [
+      "Bradypterus idoneus",
+      "Chích bụi Nam Bộ"
+    ],
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Locustellidae",
+      "familyVietnamese": "Họ Chích bụi",
+      "genus": "Locustella",
+      "species": "L. idonea"
+    },
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "conservation": {
+      "iucn": "LC",
+      "vietnamRedList": "LR",
+      "description": "Tách loài từ Bradypterus mandelli / Locustella mandelli. Đặc hữu ẩn kín trong thảm thực vật thấp của Cao nguyên Langbiang.",
+      "legalFramework": {
+        "decree84Group": "none",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài chích bụi màu nâu hạt dẻ ấm áp, cực kỳ kín đáo, thường chỉ phát hiện được qua tiếng hót đặc trưng máy móc lặp đi lặp lại.",
+      "diagnosticFeatures": [
+        {
+          "part": "Lưng nâu hung ấm",
+          "description": "Toàn bộ thân trên màu nâu hạt dẻ đồng nhất từ chỏm đầu xuống đến mút lông đuôi."
+        },
+        {
+          "part": "Họng trắng điểm đốm nhỏ",
+          "description": "Họng và ngực trên có các đốm nâu mờ nhỏ li ti trên nền trắng ngà trang nhã."
+        },
+        {
+          "part": "Lông bao đuôi dài",
+          "description": "Lông bao dưới đuôi dài màu nâu gỉ sắt với mút nhạt màu, đuôi tròn xoè thấp khi nhảy bụi."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Đà Lạt",
+      "elevation": "1.400m - 2.200m",
+      "habitats": [
+        "Bụi rậm ngập nắng ven bìa rừng thông",
+        "Thảm dương xỉ và cỏ cao núi cao sương mù"
+      ],
+      "locations": [
+        "VQG Bidoup Núi Bà (Lâm Đồng)",
+        "Đỉnh Langbiang",
+        "Đèo Tà Nung"
+      ],
+      "coordinates": [
+        12.04,
+        108.43
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/105772570/large.jpeg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/105772570/medium.jpeg",
+      "artist": "(c) Christoph Moning, some rights reserved (CC BY)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-827405",
+      "year": "2020",
+      "license": "cc-by",
+      "observationUrl": "https://www.inaturalist.org/taxa/827405",
+      "photoLocation": "Lang Biang, Lâm Đồng",
+      "isShotInVietnam": true
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/1150467/download",
+      "duration": "0:24",
+      "recordist": "Xeno-canto Field Archive",
+      "location": "Bidoup Nui Ba NP, Lam Dong",
+      "xcId": "1150467",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/1150467"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-PAS-LOCUST",
+      "avibaseId": "958B5C06FBF98F53",
+      "iucnUrl": "https://www.iucnredlist.org/species/103798547/104153926",
+      "gbifTaxonKey": "8078696",
+      "primaryLiterature": [
+        {
+          "authors": "Alström, P., et al.",
+          "year": 2015,
+          "title": "Integrative taxonomy of the Russet Bush Warbler Locustella mandelli complex",
+          "journalOrBook": "Ibis",
+          "volumeOrPages": "157(4): 665-680"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tropicoperdix-tonkinensis",
+    "scientificName": "Tropicoperdix tonkinensis",
+    "vietnameseName": "Gà so Bắc Bộ",
+    "englishName": "Tonkin Partridge",
+    "aliases": [
+      "Arborophila tonkinensis",
+      "Gà so Tonkin"
+    ],
+    "taxonomy": {
+      "clade": [
+        "Aves",
+        "Neognathae",
+        "Galloanserae"
+      ],
+      "order": "Galliformes",
+      "orderVietnamese": "Bộ Gà",
+      "family": "Phasianidae",
+      "familyVietnamese": "Họ Trĩ",
+      "genus": "Tropicoperdix",
+      "species": "T. tonkinensis"
+    },
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "conservation": {
+      "iucn": "NT",
+      "vietnamRedList": "VU",
+      "description": "Loài gà so đặc hữu của miền Bắc và Bắc Trung Bộ Việt Nam. Cực kỳ quý hiếm, sống lẩn khuất dưới tán rừng nhiệt đới đất thấp và núi đá vôi.",
+      "legalFramework": {
+        "decree84Group": "IIB",
+        "decree160Priority": false,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài gà so cỡ nhỏ có hoa văn nâu xám phức tạp, cổ họng và ngực có dải vòng nâu hạt dẻ xen vệt trắng đen nổi bật.",
+      "diagnosticFeatures": [
+        {
+          "part": "Vòng ngực kép tương phản",
+          "description": "Vòng ngực trên màu hạt dẻ ấm áp kết hợp với các vệt sọc đen trắng sắc sảo ở cổ dưới."
+        },
+        {
+          "part": "Chân màu vàng lục nhạt",
+          "description": "Chân không cựa, ngón dài thon gọn thích nghi di chuyển nhanh dưới thảm lá mục rừng mưa nhiệt đới."
+        },
+        {
+          "part": "Thân trên vằn vảy ngụy trang",
+          "description": "Lưng và cánh có các vân vảy đen và nâu gỉ sắt tạo khả năng ngụy trang hoàn hảo trên nền đất rừng."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng núi Đông Bắc",
+      "elevation": "100m - 1.000m",
+      "habitats": [
+        "Rừng nguyên sinh thường xanh đất thấp",
+        "Rừng trên núi đá vôi Karst ẩm"
+      ],
+      "locations": [
+        "VQG Bến En (Thanh Hóa)",
+        "VQG Cúc Phương (Ninh Bình)",
+        "KBT Thiên nhiên Kẻ Gỗ (Hà Tĩnh)"
+      ],
+      "coordinates": [
+        19.62,
+        105.52
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/465032451/large.jpeg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/465032451/medium.jpeg",
+      "artist": "(c) Marc Thibault, some rights reserved (CC BY-NC)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "plateNumber": "INAT-1290434",
+      "year": "2024",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/taxa/1290434",
+      "photoLocation": "Miền Bắc Việt Nam",
+      "isShotInVietnam": true
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-AV-GAL-TROPICO",
+      "avibaseId": "148679A814AEB4BC",
+      "iucnUrl": "https://www.iucnredlist.org/species/22678768/92787864",
+      "gbifTaxonKey": "9406086",
+      "primaryLiterature": [
+        {
+          "authors": "Delacour, J.",
+          "year": 1927,
+          "title": "New birds from Indo-China",
+          "journalOrBook": "Bulletin of the British Ornithologists' Club",
+          "volumeOrPages": "47: 151-170"
+        }
+      ]
+    }
+  },
+  {
+    "id": "pseudibis-gigantea",
+    "scientificName": "Pseudibis gigantea",
+    "vietnameseName": "Cò quăm lớn",
+    "englishName": "Giant Ibis",
+    "aliases": [
+      "Cò quắm lớn",
+      "Cò quăm Đông Dương"
+    ],
+    "taxonomy": {
+      "clade": [
+        "Neoaves"
+      ],
+      "order": "Pelecaniformes",
+      "orderVietnamese": "Bộ Bồ nông",
+      "family": "Threskiornithidae",
+      "familyVietnamese": "Họ Cò quăm",
+      "genus": "Pseudibis",
+      "species": "Pseudibis gigantea"
+    },
+    "isEndemic": false,
+    "endemicScope": "none",
+    "conservation": {
+      "iucn": "CR",
+      "vietnamRedList": "CR",
+      "description": "Xếp hạng Cực kỳ nguy cấp (CR) trong Sách Đỏ Việt Nam và Danh mục động vật rừng nguy cấp, quý, hiếm (Nghị định 84/2021/NĐ-CP Nhóm IB). Từng ghi nhận tại vùng đất ngập nước Nam Bộ và rừng khộp Tây Nguyên, hiện chỉ còn những ghi nhận phân bố rải rác cực kỳ hiếm hoi do mất sinh cảnh đầm lầy tự nhiên.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài cò quăm có tầm vóc lớn nhất thế giới (chiều dài 102–106 cm), mang phong thái cổ kính với bộ lông nâu thẫm ánh xám đục, đầu trần trụi phủ lớp da sần sùi màu chì và mỏ cong dài đặc trưng.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đầu và gáy",
+          "description": "Đầu và phần trên cổ trần hoàn toàn, da màu xám xỉn với các dải nếp gấp ngang màu sẫm rõ nét ở phía sau gáy."
+        },
+        {
+          "part": "Cánh và lông bao",
+          "description": "Lông thân nâu sẫm, lông bao cánh trên có dải màu xám bạc ánh thép nổi bật khi bay liệng hoặc lúc sải cánh."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Kon Tum",
+      "elevation": "Dưới 200m",
+      "habitats": [
+        "Vùng đầm lầy trảng cỏ ngập nước",
+        "Rừng khộp rụng lá theo mùa xen kẽ hồ nước tự nhiên"
+      ],
+      "locations": [
+        "Khu bảo tồn thiên nhiên Yok Đôn, Đắk Lắk"
+      ],
+      "coordinates": [
+        13.15,
+        107.6
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/640769754/large.jpg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/640769754/medium.jpg",
+      "artist": "(c) arlehk, some rights reserved (CC-BY-NC)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/observations/351155262",
+      "photoLocation": "",
+      "isShotInVietnam": false,
+      "hasValidPhoto": true
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/983624/download",
+      "duration": "0:32",
+      "recordist": "Arnoud B. van den Berg (Xeno-canto Field Archive)",
+      "location": "Siem Pang, Cambodia (Mekong Basin)",
+      "xcId": "983624",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/983624"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-PSEUDIBIS-",
+      "avibaseId": "F12CC0610AA89673",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Pseudibis%20gigantea&searchType=species",
+      "gbifTaxonKey": "2480779",
+      "primaryLiterature": [
+        {
+          "authors": "Bộ Khoa học và Công nghệ & Viện Hàn lâm KH&CN Việt Nam",
+          "year": 2007,
+          "title": "Sách Đỏ Việt Nam - Phần I: Động vật (Lớp Chim - Aves)",
+          "journalOrBook": "Nhà xuất bản Khoa học tự nhiên và Công nghệ, Hà Nội",
+          "volumeOrPages": "Trang 180-260"
+        },
+        {
+          "authors": "Chính phủ Việt Nam",
+          "year": 2021,
+          "title": "Nghị định 84/2021/NĐ-CP về Quản lý thực vật rừng, động vật rừng nguy cấp, quý, hiếm (Nhóm IB)",
+          "journalOrBook": "Công báo Nước Cộng hòa Xã hội Chủ nghĩa Việt Nam",
+          "volumeOrPages": "Phụ lục Danh mục loài"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sarcogyps-calvus",
+    "scientificName": "Sarcogyps calvus",
+    "vietnameseName": "Kền kền đầu đỏ",
+    "englishName": "Red-headed Vulture",
+    "aliases": [
+      "Kền kền chúa",
+      "Ó tai"
+    ],
+    "taxonomy": {
+      "clade": [
+        "Neoaves"
+      ],
+      "order": "Accipitriformes",
+      "orderVietnamese": "Bộ Ưng",
+      "family": "Accipitridae",
+      "familyVietnamese": "Họ Ưng",
+      "genus": "Sarcogyps",
+      "species": "Sarcogyps calvus"
+    },
+    "isEndemic": false,
+    "endemicScope": "none",
+    "conservation": {
+      "iucn": "CR",
+      "vietnamRedList": "CR",
+      "description": "Xếp hạng Cực kỳ nguy cấp (CR) trong Sách Đỏ Việt Nam và Danh mục động vật rừng nguy cấp, quý, hiếm (Nghị định 84/2021/NĐ-CP Nhóm IB). Từng giữ vai trò thiên địch dọn sạch xác động vật tại các sinh cảnh rừng khộp Tây Nguyên, hiện chịu suy giảm nghiêm trọng từ sự sụt giảm thú móng guốc lớn hoang dã.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài kền kền cỡ trung bình-lớn (chiều dài 76–86 cm), sở hữu diện mạo uy nghi với phần đầu và cổ trần màu đỏ tươi nổi bật, hai bên cổ buông hai nếp yếm da trần độc đáo cùng bộ lông thân đen tuyền tương phản.",
+      "diagnosticFeatures": [
+        {
+          "part": "Đầu và yếm da tai",
+          "description": "Đầu và cổ trần không có lông, lớp da màu đỏ cam đến đỏ thắm rực rỡ với hai nếp yếm da trần rủ xuống hai bên cổ tựa đôi tai."
+        },
+        {
+          "part": "Bộ lông và yếm ức",
+          "description": "Lông thân chủ đạo màu đen tuyền tương phản với dải lông tơ trắng muốt ở gốc cổ và hai mảng lông trắng hai bên hông."
+        },
+        {
+          "part": "Âm học và cơ quan phát âm",
+          "description": "Tương tự các loài kền kền Cựu Thế giới, loài này không có cơ quan phát âm (minh quản) phát triển; chúng giao tiếp chủ yếu qua tiếng rít hơi vòm họng (guttural hiss) khi tranh mồi."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Kon Tum",
+      "elevation": "100 - 800m",
+      "habitats": [
+        "Rừng khộp rụng lá thưa",
+        "Trảng cây bụi vùng đồi núi thấp"
+      ],
+      "locations": [
+        "Khu vực rừng rụng lá khộp Tây Nguyên"
+      ],
+      "coordinates": [
+        12.9,
+        107.8
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/739909236/large.jpg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/739909236/medium.jpg",
+      "artist": "(c) roger_e_n_smith, some rights reserved (CC-BY-NC)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/observations/403018286",
+      "photoLocation": "",
+      "isShotInVietnam": false,
+      "hasValidPhoto": true
+    },
+    "audioCall": null,
+    "academic": {
+      "iocTaxonCode": "IOC-SARCOGYPS-",
+      "avibaseId": "21D7169D28644CD4",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Sarcogyps%20calvus&searchType=species",
+      "gbifTaxonKey": "2480717",
+      "primaryLiterature": [
+        {
+          "authors": "Bộ Khoa học và Công nghệ & Viện Hàn lâm KH&CN Việt Nam",
+          "year": 2007,
+          "title": "Sách Đỏ Việt Nam - Phần I: Động vật (Lớp Chim - Aves)",
+          "journalOrBook": "Nhà xuất bản Khoa học tự nhiên và Công nghệ, Hà Nội",
+          "volumeOrPages": "Trang 180-260"
+        },
+        {
+          "authors": "Chính phủ Việt Nam",
+          "year": 2021,
+          "title": "Nghị định 84/2021/NĐ-CP về Quản lý thực vật rừng, động vật rừng nguy cấp, quý, hiếm (Nhóm IB)",
+          "journalOrBook": "Công báo Nước Cộng hòa Xã hội Chủ nghĩa Việt Nam",
+          "volumeOrPages": "Phụ lục Danh mục loài"
+        }
+      ]
+    }
+  },
+  {
+    "id": "gyps-tenuirostris",
+    "scientificName": "Gyps tenuirostris",
+    "vietnameseName": "Kền kền mỏ hẹp",
+    "englishName": "Slender-billed Vulture",
+    "aliases": [],
+    "taxonomy": {
+      "clade": [
+        "Neoaves"
+      ],
+      "order": "Accipitriformes",
+      "orderVietnamese": "Bộ Ưng",
+      "family": "Accipitridae",
+      "familyVietnamese": "Họ Ưng",
+      "genus": "Gyps",
+      "species": "Gyps tenuirostris"
+    },
+    "isEndemic": false,
+    "endemicScope": "none",
+    "conservation": {
+      "iucn": "CR",
+      "vietnamRedList": "CR",
+      "description": "Xếp hạng Cực kỳ nguy cấp (CR) trong Sách Đỏ Việt Nam và Danh mục động vật rừng nguy cấp, quý, hiếm (Nghị định 84/2021/NĐ-CP Nhóm IB). Là loài kền kền chuyên biệt của rừng thưa Nam Á và Đông Dương, hiện đứng trước rủi ro tuyệt chủng cao nhất trong số các loài chim ăn xác thối khu vực.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài kền kền có vóc dáng mảnh khảnh (chiều dài 80–95 cm) với chiếc mỏ dài thon hẹp khác biệt, phần cổ dài uốn lượn phủ da nhăn màu xám đen và bờm lông cổ xơ xác tối màu.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mỏ và cấu trúc đầu",
+          "description": "Mỏ dài, hẹp ngang và thanh mảnh rõ rệt so với các loài cùng chi; đầu và cổ đen nhăn nheo, hầu như không có lớp lông tơ che phủ."
+        },
+        {
+          "part": "Lông thân và lưng",
+          "description": "Lưng và cánh màu nâu xám xỉn, lông ngực và bụng có các vệt sợi nhạt màu, vòng lông viền quanh chân cổ màu nâu nhạt."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Cao nguyên Kon Tum",
+      "elevation": "100 - 600m",
+      "habitats": [
+        "Rừng thưa rụng lá lá rộng",
+        "Khu vực đồng cỏ bán tự nhiên"
+      ],
+      "locations": [
+        "Khu bảo tồn thiên nhiên Yok Đôn và vùng đồi núi Tây Nguyên"
+      ],
+      "coordinates": [
+        13.2,
+        107.75
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/737659106/large.jpg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/737659106/medium.jpg",
+      "artist": "(c) Rajib Rudra Tariang, some rights reserved (CC-BY-NC)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/observations/401872246",
+      "photoLocation": "",
+      "isShotInVietnam": false,
+      "hasValidPhoto": true
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/899521/download",
+      "duration": "0:18",
+      "recordist": "Ramit Singal (Xeno-canto Field Archive)",
+      "location": "Assam, India (Indo-Burma border)",
+      "xcId": "899521",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/899521"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-GYPS-TENUI",
+      "avibaseId": "11324DC80E8BBB9F",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Gyps%20tenuirostris&searchType=species",
+      "gbifTaxonKey": "4850076",
+      "primaryLiterature": [
+        {
+          "authors": "Bộ Khoa học và Công nghệ & Viện Hàn lâm KH&CN Việt Nam",
+          "year": 2007,
+          "title": "Sách Đỏ Việt Nam - Phần I: Động vật (Lớp Chim - Aves)",
+          "journalOrBook": "Nhà xuất bản Khoa học tự nhiên và Công nghệ, Hà Nội",
+          "volumeOrPages": "Trang 180-260"
+        },
+        {
+          "authors": "Chính phủ Việt Nam",
+          "year": 2021,
+          "title": "Nghị định 84/2021/NĐ-CP về Quản lý thực vật rừng, động vật rừng nguy cấp, quý, hiếm (Nhóm IB)",
+          "journalOrBook": "Công báo Nước Cộng hòa Xã hội Chủ nghĩa Việt Nam",
+          "volumeOrPages": "Phụ lục Danh mục loài"
+        }
+      ]
+    }
+  },
+  {
+    "id": "gyps-bengalensis",
+    "scientificName": "Gyps bengalensis",
+    "vietnameseName": "Kền kền Bengal",
+    "englishName": "White-rumped Vulture",
+    "aliases": [
+      "Kền kền mông trắng",
+      "Kền kền lưng trắng"
+    ],
+    "taxonomy": {
+      "clade": [
+        "Neoaves"
+      ],
+      "order": "Accipitriformes",
+      "orderVietnamese": "Bộ Ưng",
+      "family": "Accipitridae",
+      "familyVietnamese": "Họ Ưng",
+      "genus": "Gyps",
+      "species": "Gyps bengalensis"
+    },
+    "isEndemic": false,
+    "endemicScope": "none",
+    "conservation": {
+      "iucn": "CR",
+      "vietnamRedList": "CR",
+      "description": "Xếp hạng Cực kỳ nguy cấp (CR) trong Sách Đỏ Việt Nam và Nghị định 84/2021/NĐ-CP Nhóm IB. Từng là loài kền kền phổ biến khắp các cánh rừng rụng lá khô Đông Dương, quần thể sụt giảm nghiêm trọng trong nửa sau thế kỷ 20 và hiện cực kỳ hiếm thấy.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": false,
+        "directive04Flagship": false
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài chim ăn xác thối cỡ trung bình (chiều dài 75–85 cm), nổi bật với mảng lông hông trắng tinh khôi tương phản mạnh mẽ với thân mình đen thẫm, tạo thành dấu hiệu nhận dạng chuẩn xác khi bay liệng.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mảng trắng ở hông và lưng",
+          "description": "Hông và lưng dưới phủ lớp lông trắng muốt nổi bật, tạo thành mảng tương phản rõ nét với cánh và đuôi đen khi quan sát từ trên cao."
+        },
+        {
+          "part": "Đầu và vòng cổ",
+          "description": "Đầu và cổ trần màu xám đen, gốc cổ được bao quanh bởi một vòng bờm lông tơ màu trắng bạc mềm mại."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đất thấp Nam Bộ",
+      "elevation": "Dưới 500m",
+      "habitats": [
+        "Rừng rụng lá nhiệt đới",
+        "Khu vực đồng cỏ bìa rừng"
+      ],
+      "locations": [
+        "Rừng bán thường xanh và trảng cỏ Nam Bộ"
+      ],
+      "coordinates": [
+        11.8,
+        107.2
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/742633644/large.jpg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/742633644/medium.jpg",
+      "artist": "(c) lorrainerowan, some rights reserved (CC-BY-NC)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/observations/404392317",
+      "photoLocation": "",
+      "isShotInVietnam": false,
+      "hasValidPhoto": true
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/1090513/download",
+      "duration": "0:25",
+      "recordist": "Pratap Singh (Xeno-canto Field Archive)",
+      "location": "Panna Tiger Reserve, India",
+      "xcId": "1090513",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/1090513"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-GYPS-BENGA",
+      "avibaseId": "FC2346E6EF324F85",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Gyps%20bengalensis&searchType=species",
+      "gbifTaxonKey": "2480383",
+      "primaryLiterature": [
+        {
+          "authors": "Bộ Khoa học và Công nghệ & Viện Hàn lâm KH&CN Việt Nam",
+          "year": 2007,
+          "title": "Sách Đỏ Việt Nam - Phần I: Động vật (Lớp Chim - Aves)",
+          "journalOrBook": "Nhà xuất bản Khoa học tự nhiên và Công nghệ, Hà Nội",
+          "volumeOrPages": "Trang 180-260"
+        },
+        {
+          "authors": "Chính phủ Việt Nam",
+          "year": 2021,
+          "title": "Nghị định 84/2021/NĐ-CP về Quản lý thực vật rừng, động vật rừng nguy cấp, quý, hiếm (Nhóm IB)",
+          "journalOrBook": "Công báo Nước Cộng hòa Xã hội Chủ nghĩa Việt Nam",
+          "volumeOrPages": "Phụ lục Danh mục loài"
+        }
+      ]
+    }
+  },
+  {
+    "id": "leptoptilos-dubius",
+    "scientificName": "Leptoptilos dubius",
+    "vietnameseName": "Già đẫy lớn",
+    "englishName": "Greater Adjutant",
+    "aliases": [],
+    "taxonomy": {
+      "clade": [
+        "Neoaves"
+      ],
+      "order": "Ciconiiformes",
+      "orderVietnamese": "Bộ Hạc",
+      "family": "Ciconiidae",
+      "familyVietnamese": "Họ Hạc",
+      "genus": "Leptoptilos",
+      "species": "Leptoptilos dubius"
+    },
+    "isEndemic": false,
+    "endemicScope": "none",
+    "conservation": {
+      "iucn": "EN",
+      "vietnamRedList": "CR",
+      "description": "Xếp hạng Cực kỳ nguy cấp (CR) trong Sách Đỏ Việt Nam và Nghị định 84/2021/NĐ-CP Nhóm IB (EN toàn cầu). Loài hạc khổng lồ với số lượng toàn cầu chỉ còn khoảng trên 1.000 cá thể; tại Việt Nam thỉnh thoảng chỉ còn những cá thể lang thang ghé các vùng trũng đất ngập nước Tây Nam Bộ.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": true,
+        "directive04Flagship": false
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Một trong những loài hạc cao lớn và đường bệ nhất thế giới chim (chiều cao 145–150 cm, sải cánh lên đến 250 cm), sở hữu chiếc mỏ hình nêm đồ sộ màu ngà và túi hầu da trần buông dài dưới cổ.",
+      "diagnosticFeatures": [
+        {
+          "part": "Mỏ và túi hầu",
+          "description": "Mỏ khổng lồ hình nêm tam giác màu vàng sáp; túi da trần trước cổ màu vàng cam có thể dài tới 30 cm buông thõng và phồng to khi biểu diễn."
+        },
+        {
+          "part": "Bộ lông và cánh",
+          "description": "Lưng và cánh màu xám đen ánh thép, bụng màu trắng ngà; lông bao cánh lớn có dải xám bạc sáng tạo đường viền cánh tương phản."
+        },
+        {
+          "part": "Âm học và cơ học mỏ",
+          "description": "Loài hạc này không có cơ quan phát âm (minh quản) chức năng để hót; chúng giao tiếp chủ yếu qua tiếng gõ mỏ lách cách dồn dập (mandible clapping) vang xa hàng trăm mét."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng hạ lưu sông Mê Kông",
+      "elevation": "Dưới 50m",
+      "habitats": [
+        "Đầm lầy ngập nước nước ngọt",
+        "Đồng trũng và bãi bồi ven sông"
+      ],
+      "locations": [
+        "Vùng đất ngập nước Đồng Tháp Mười, Kiên Giang"
+      ],
+      "coordinates": [
+        10.7,
+        105.5
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/739955387/large.jpg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/739955387/medium.jpg",
+      "artist": "(c) roger_e_n_smith, some rights reserved (CC-BY-NC)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/observations/403040901",
+      "photoLocation": "",
+      "isShotInVietnam": false,
+      "hasValidPhoto": true
+    },
+    "audioCall": null,
+    "academic": {
+      "iocTaxonCode": "IOC-LEPTOPTILO",
+      "avibaseId": "81E1FC1CBA6C9F7F",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Leptoptilos%20dubius&searchType=species",
+      "gbifTaxonKey": "2481945",
+      "primaryLiterature": [
+        {
+          "authors": "Bộ Khoa học và Công nghệ & Viện Hàn lâm KH&CN Việt Nam",
+          "year": 2007,
+          "title": "Sách Đỏ Việt Nam - Phần I: Động vật (Lớp Chim - Aves)",
+          "journalOrBook": "Nhà xuất bản Khoa học tự nhiên và Công nghệ, Hà Nội",
+          "volumeOrPages": "Trang 180-260"
+        },
+        {
+          "authors": "Chính phủ Việt Nam",
+          "year": 2021,
+          "title": "Nghị định 84/2021/NĐ-CP về Quản lý thực vật rừng, động vật rừng nguy cấp, quý, hiếm (Nhóm IB)",
+          "journalOrBook": "Công báo Nước Cộng hòa Xã hội Chủ nghĩa Việt Nam",
+          "volumeOrPages": "Phụ lục Danh mục loài"
+        }
+      ]
+    }
+  },
+  {
+    "id": "calidris-pygmaea",
+    "scientificName": "Calidris pygmaea",
+    "vietnameseName": "Rẽ mỏ thìa",
+    "englishName": "Spoon-billed Sandpiper",
+    "aliases": [
+      "Dẽ mỏ thìa"
+    ],
+    "taxonomy": {
+      "clade": [
+        "Neoaves"
+      ],
+      "order": "Charadriiformes",
+      "orderVietnamese": "Bộ Choi choi",
+      "family": "Scolopacidae",
+      "familyVietnamese": "Họ Dẽ",
+      "genus": "Calidris",
+      "species": "Calidris pygmaea"
+    },
+    "isEndemic": false,
+    "endemicScope": "none",
+    "conservation": {
+      "iucn": "CR",
+      "vietnamRedList": "CR",
+      "description": "Xếp hạng Cực kỳ nguy cấp (CR) toàn cầu (IUCN) và Danh lục Đỏ VAST. Một trong những loài chim di cư ven biển quý hiếm và nguy cấp nhất hành tinh, với các điểm dừng chân trú đông trọng yếu tại bãi bồi Vườn quốc gia Xuân Thủy (Nam Định) và Gò Công (Tiền Giang).",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": true,
+        "isEaafpMigratory": true,
+        "directive04Flagship": true
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài dẽ nhỏ bé (chiều dài 14–16 cm) mang cấu trúc hình thái độc nhất vô nhị trong giới điểu học: chóp mỏ dẹt rộng ngang hình chiếc thìa, chuyên hóa hoàn hảo cho tập tính quét bùn tìm kiếm sinh vật phù du.",
+      "diagnosticFeatures": [
+        {
+          "part": "Chóp mỏ hình thìa",
+          "description": "Đầu chót mỏ mở rộng sang hai bên tạo thành phiến dẹt hình thìa xúc độc đáo, dùng để lia ngang trên mặt bùn lỏng đón bắt giáp xác nhỏ."
+        },
+        {
+          "part": "Bộ lông mùa đông",
+          "description": "Mặt lưng màu xám tro trang nhã với các viền lông trắng mịn, trán và toàn bộ phần bụng dưới trắng tinh khiết, chân ngắn màu đen."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đất thấp Trung Bộ",
+      "elevation": "0m",
+      "habitats": [
+        "Bãi bồi bùn cát ven biển",
+        "Vùng đầm lầy ngập mặn và ruộng muối"
+      ],
+      "locations": [
+        "Vườn quốc gia Xuân Thủy, Nam Định"
+      ],
+      "coordinates": [
+        20.25,
+        106.55
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/742753651/large.jpg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/742753651/medium.jpg",
+      "artist": "(c) Yishen Xiao, some rights reserved (CC-BY-NC)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/observations/404454270",
+      "photoLocation": "",
+      "isShotInVietnam": false,
+      "hasValidPhoto": true
+    },
+    "audioCall": {
+      "audioUrl": "https://xeno-canto.org/1038170/download",
+      "duration": "0:15",
+      "recordist": "Tang Ke (Xeno-canto Field Archive)",
+      "location": "Rudong Mudflats, Jiangsu (East Asian Flyway)",
+      "xcId": "1038170",
+      "license": "CC BY-NC-SA 4.0",
+      "observationUrl": "https://xeno-canto.org/1038170"
+    },
+    "academic": {
+      "iocTaxonCode": "IOC-CALIDRIS-P",
+      "avibaseId": "3FC8CA50CC50BAAD",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Calidris%20pygmaea&searchType=species",
+      "gbifTaxonKey": "10658506",
+      "primaryLiterature": [
+        {
+          "authors": "Bộ Khoa học và Công nghệ & Viện Hàn lâm KH&CN Việt Nam",
+          "year": 2007,
+          "title": "Sách Đỏ Việt Nam - Phần I: Động vật (Lớp Chim - Aves)",
+          "journalOrBook": "Nhà xuất bản Khoa học tự nhiên và Công nghệ, Hà Nội",
+          "volumeOrPages": "Trang 180-260"
+        },
+        {
+          "authors": "Chính phủ Việt Nam",
+          "year": 2021,
+          "title": "Nghị định 84/2021/NĐ-CP về Quản lý thực vật rừng, động vật rừng nguy cấp, quý, hiếm (Nhóm IB)",
+          "journalOrBook": "Công báo Nước Cộng hòa Xã hội Chủ nghĩa Việt Nam",
+          "volumeOrPages": "Phụ lục Danh mục loài"
+        }
+      ]
+    }
+  },
+  {
+    "id": "emberiza-aureola",
+    "scientificName": "Emberiza aureola",
+    "vietnameseName": "Sẻ đồng ngực vàng",
+    "englishName": "Yellow-breasted Bunting",
+    "aliases": [],
+    "taxonomy": {
+      "clade": [
+        "Neoaves"
+      ],
+      "order": "Passeriformes",
+      "orderVietnamese": "Bộ Sẻ",
+      "family": "Emberizidae",
+      "familyVietnamese": "Họ Sẻ đồng",
+      "genus": "Emberiza",
+      "species": "Emberiza aureola"
+    },
+    "isEndemic": false,
+    "endemicScope": "none",
+    "conservation": {
+      "iucn": "CR",
+      "vietnamRedList": "CR",
+      "description": "Xếp hạng Cực kỳ nguy cấp (CR) toàn cầu (IUCN) và Danh lục Đỏ VAST. Từng là một trong những loài chim di cư mùa đông quen thuộc trên các đồng lúa miền Bắc và Bắc Trung Bộ, quần thể suy giảm đột ngột trong những thập kỷ qua và đang được bảo vệ nghiêm ngặt trên toàn tuyến bay Đông Á.",
+      "legalFramework": {
+        "decree84Group": "IB",
+        "decree160Priority": false,
+        "isEaafpMigratory": true,
+        "directive04Flagship": false
+      }
+    },
+    "morphologicalAnalysis": {
+      "overview": "Loài sẻ đồng thanh mảnh (chiều dài 14–15 cm), con trống mùa sinh sản khoác bộ lông rực rỡ với ức bụng vàng tươi, dải đai ngực màu hạt dẻ ấm áp và mặt đen tuyền sắc sảo.",
+      "diagnosticFeatures": [
+        {
+          "part": "Ức và bụng",
+          "description": "Bụng và ngực màu vàng chanh tươi sáng, phân tách với họng bởi một dải đai hẹp màu nâu hạt dẻ ở chim trống trưởng thành."
+        },
+        {
+          "part": "Cánh và lưng",
+          "description": "Lưng màu nâu hạt dẻ sẫm kẻ sọc đen, lông bao cánh sở hữu mảng trắng rộng nổi bật tạo điểm nhấn quang học rõ nét."
+        },
+        {
+          "part": "Đặc điểm âm học và bảo tồn",
+          "description": "Loài có tiếng hót véo von; tuy nhiên các bản ghi âm trực tiếp trên thư viện quốc tế Xeno-canto hiện được giới hạn tải mở (Restricted) nhằm phòng ngừa việc sử dụng loa phát âm thanh để giăng bẫy chim tự nhiên."
+        }
+      ]
+    },
+    "distribution": {
+      "ebaRegion": "Vùng đất thấp Trung Bộ",
+      "elevation": "0 - 300m",
+      "habitats": [
+        "Cánh đồng lúa sau thu hoạch",
+        "Vùng cỏ ngập nước và bãi sậy ven sông"
+      ],
+      "locations": [
+        "Đồng bằng sông Hồng và duyên hải miền Trung"
+      ],
+      "coordinates": [
+        20.9,
+        105.8
+      ]
+    },
+    "illustration": {
+      "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/743577996/large.jpg",
+      "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/743577996/medium.jpg",
+      "artist": "(c) Shanda Huang, some rights reserved (CC-BY-NC)",
+      "sourceBook": "iNaturalist Biodiversity Archive",
+      "license": "cc-by-nc",
+      "observationUrl": "https://www.inaturalist.org/observations/404877902",
+      "photoLocation": "",
+      "isShotInVietnam": false,
+      "hasValidPhoto": true
+    },
+    "audioCall": null,
+    "academic": {
+      "iocTaxonCode": "IOC-EMBERIZA-A",
+      "avibaseId": "7574C0E53A34CCFD",
+      "iucnUrl": "https://www.iucnredlist.org/search?query=Emberiza%20aureola&searchType=species",
+      "gbifTaxonKey": "2491518",
+      "primaryLiterature": [
+        {
+          "authors": "Bộ Khoa học và Công nghệ & Viện Hàn lâm KH&CN Việt Nam",
+          "year": 2007,
+          "title": "Sách Đỏ Việt Nam - Phần I: Động vật (Lớp Chim - Aves)",
+          "journalOrBook": "Nhà xuất bản Khoa học tự nhiên và Công nghệ, Hà Nội",
+          "volumeOrPages": "Trang 180-260"
+        },
+        {
+          "authors": "Chính phủ Việt Nam",
+          "year": 2021,
+          "title": "Nghị định 84/2021/NĐ-CP về Quản lý thực vật rừng, động vật rừng nguy cấp, quý, hiếm (Nhóm IB)",
+          "journalOrBook": "Công báo Nước Cộng hòa Xã hội Chủ nghĩa Việt Nam",
+          "volumeOrPages": "Phụ lục Danh mục loài"
         }
       ]
     }

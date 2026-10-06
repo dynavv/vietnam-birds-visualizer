@@ -1,0 +1,1897 @@
+[
+  {
+    "id": "trochalopteron-ngoclinhense",
+    "scientificName": "Trochalopteron ngoclinhense",
+    "vietnameseName": "Khướu Ngọc Linh",
+    "englishName": "Golden-winged Laughingthrush",
+    "aliases": [],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Passeriformes",
+    "family": "Leiothrichidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "6101121",
+    "avibaseId": "A37EB5E58B60CBA5",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": true,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "ianthocincla-konkakinhensis",
+    "scientificName": "Ianthocincla konkakinhensis",
+    "vietnameseName": "Khướu Kon Ka Kinh",
+    "englishName": "Chestnut-eared Laughingthrush",
+    "aliases": [],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Passeriformes",
+    "family": "Leiothrichidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "7411687",
+    "avibaseId": "566F8C8C529D965A",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "liochicla-langbianis",
+    "scientificName": "Laniellus langbianis",
+    "vietnameseName": "Mi Langbiang",
+    "englishName": "Grey-crowned Crocias",
+    "aliases": [],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Passeriformes",
+    "family": "Leiothrichidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "9390237",
+    "avibaseId": "D8B781BA0E7321F5",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "trochalopteron-yersini",
+    "scientificName": "Trochalopteron yersini",
+    "vietnameseName": "Khướu đầu đen má xám",
+    "englishName": "Yersin's Laughingthrush",
+    "aliases": [],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Passeriformes",
+    "family": "Leiothrichidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "6101122",
+    "avibaseId": "C798D90149654C02",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "actinodura-sodangorum",
+    "scientificName": "Actinodura sodangorum",
+    "vietnameseName": "Khướu vằn đầu đen",
+    "englishName": "Black-crowned Barwing",
+    "aliases": [],
+    "isEndemic": true,
+    "endemicScope": "indochina",
+    "order": "Passeriformes",
+    "family": "Leiothrichidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5788984",
+    "avibaseId": "E5AD68C4DF5205FF",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "lophura-edwardsi",
+    "scientificName": "Lophura edwardsi",
+    "vietnameseName": "Gà lôi lam mào trắng",
+    "englishName": "Edwards's Pheasant",
+    "aliases": [],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5227960",
+    "avibaseId": "7F93B0675875E230",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "polyplectron-germaini",
+    "scientificName": "Polyplectron germaini",
+    "vietnameseName": "Gà tiền mặt đỏ",
+    "englishName": "Germain's Peacock-Pheasant",
+    "aliases": [],
+    "isEndemic": true,
+    "endemicScope": "indochina",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2474078",
+    "avibaseId": "9BB6A6B4D6A606F3",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "chloris-monguilloti",
+    "scientificName": "Chloris monguilloti",
+    "vietnameseName": "Sẻ thông họng vàng",
+    "englishName": "Vietnamese Greenfinch",
+    "aliases": [],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Passeriformes",
+    "family": "Fringillidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "6093200",
+    "avibaseId": "8875A64470CD0749",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "macronus-kelleyi",
+    "scientificName": "Mixornis kelleyi",
+    "vietnameseName": "Chích chạch má xám",
+    "englishName": "Grey-faced Tit-Babbler",
+    "aliases": [],
+    "isEndemic": true,
+    "endemicScope": "indochina",
+    "order": "Passeriformes",
+    "family": "Timaliidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "7581340",
+    "avibaseId": "2804840DEE8E6A0B",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "rimator-pasquieri",
+    "scientificName": "Rimator pasquieri",
+    "vietnameseName": "Khướu đất họng trắng",
+    "englishName": "White-throated Wren-Babbler",
+    "aliases": [
+      "Khướu đất Pasquier",
+      "Họa mi đất mỏ dài"
+    ],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Passeriformes",
+    "family": "Pellorneidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5788967",
+    "avibaseId": "8E29E9C510F38307",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "stachyris-herberti",
+    "scientificName": "Stachyris herberti",
+    "vietnameseName": "Khướu đá mun",
+    "englishName": "Sooty Babbler",
+    "aliases": [],
+    "isEndemic": true,
+    "endemicScope": "indochina",
+    "order": "Passeriformes",
+    "family": "Timaliidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2493422",
+    "avibaseId": "14D824462C74AE03",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "trochalopteron-formosum-greenwayi",
+    "scientificName": "Trochalopteron formosum greenwayi",
+    "vietnameseName": "Khướu cánh đỏ",
+    "englishName": "Red-winged Laughingthrush",
+    "aliases": [
+      "Khướu hông đỏ"
+    ],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Leiothrichidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "8272298",
+    "avibaseId": "2C87AFACCFC02D67",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "trochalopteron-milnei-sharpei",
+    "scientificName": "Trochalopteron milnei sharpei",
+    "vietnameseName": "Khướu đuôi đỏ",
+    "englishName": "Red-tailed Laughingthrush",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Leiothrichidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "7755506",
+    "avibaseId": "3F5E062B3F312BDA",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "psittiparus-bakeri",
+    "scientificName": "Psittiparus bakeri",
+    "vietnameseName": "Khướu mỏ dẹt to",
+    "englishName": "Rufous-headed Parrotbill",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Paradoxornithidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "6100913",
+    "avibaseId": "C89C9217A9ECCE9C",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "rheinardia-ocellata",
+    "scientificName": "Rheinardia ocellata",
+    "vietnameseName": "Trĩ sao",
+    "englishName": "Crested Argus",
+    "aliases": [],
+    "isEndemic": true,
+    "endemicScope": "indochina",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2473776",
+    "avibaseId": "77CB201DDFCC3109",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "garrulax-canorus",
+    "scientificName": "Garrulax canorus",
+    "vietnameseName": "Họa mi",
+    "englishName": "Chinese Hwamei",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Leiothrichidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2493479",
+    "avibaseId": "71D4A2090891D13C",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "cyornis-rubeculoides",
+    "scientificName": "Cyornis rubeculoides",
+    "vietnameseName": "Đớp ruồi cằm xanh",
+    "englishName": "Blue-throated Blue Flycatcher",
+    "aliases": [
+      "Đớp ruồi cằm đen"
+    ],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Muscicapidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2492434",
+    "avibaseId": "AFB7FD39275123D2",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "aethopyga-saturata",
+    "scientificName": "Aethopyga saturata",
+    "vietnameseName": "Hút mật họng đen",
+    "englishName": "Black-throated Sunbird",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Nectariniidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2484682",
+    "avibaseId": "663E27928E6181F5",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "lanius-schach",
+    "scientificName": "Lanius schach",
+    "vietnameseName": "Bách thanh đầu đen",
+    "englishName": "Long-tailed Shrike",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Laniidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "9273219",
+    "avibaseId": "69FC190B",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "pitta-moluccensis",
+    "scientificName": "Pitta moluccensis",
+    "vietnameseName": "Đuôi cụt cánh xanh",
+    "englishName": "Blue-winged Pitta",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Pittidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2489520",
+    "avibaseId": "AA127B894EAD689E",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "oriolus-chinensis",
+    "scientificName": "Oriolus chinensis",
+    "vietnameseName": "Vàng anh gáy đen",
+    "englishName": "Black-naped Oriole",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Oriolidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "9750846",
+    "avibaseId": "CC216A71A3F24E79",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "copsychus-malabaricus",
+    "scientificName": "Copsychus malabaricus",
+    "vietnameseName": "Chích chòe lửa",
+    "englishName": "White-rumped Shama",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Muscicapidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2492675",
+    "avibaseId": "0E5168F9",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "dicrurus-paradiseus",
+    "scientificName": "Dicrurus paradiseus",
+    "vietnameseName": "Chèo bẻo đuôi cờ",
+    "englishName": "Greater Racket-tailed Drongo",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Dicruridae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2493969",
+    "avibaseId": "2042CD4209B252E5",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "garrulax-chinensis",
+    "scientificName": "Garrulax chinensis",
+    "vietnameseName": "Khướu bạc má",
+    "englishName": "Black-throated Laughingthrush",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Leiothrichidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2493448",
+    "avibaseId": "C7221A3D80B22C99",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "psarisomus-dalhousiae",
+    "scientificName": "Psarisomus dalhousiae",
+    "vietnameseName": "Mỏ rộng xanh",
+    "englishName": "Long-tailed Broadbill",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "family": "Eurylaimidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2484526",
+    "avibaseId": "63944E031BC7D37B",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "lophura-diardi",
+    "scientificName": "Lophura diardi",
+    "vietnameseName": "Gà lôi hông tía",
+    "englishName": "Siamese Fireback",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5227987",
+    "avibaseId": "6805AC5A7415198C",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "polyplectron-bicalcaratum",
+    "scientificName": "Polyplectron bicalcaratum",
+    "vietnameseName": "Gà tiền mặt vàng",
+    "englishName": "Grey Peacock-Pheasant",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2474079",
+    "avibaseId": "824E5471AC97F6CD",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "arborophila-brunneopectus",
+    "scientificName": "Arborophila brunneopectus",
+    "vietnameseName": "Gà so họng trắng",
+    "englishName": "Brown-breasted Partridge",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2473629",
+    "avibaseId": "B05BB1498F89112D",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "gallus-gallus",
+    "scientificName": "Gallus gallus",
+    "vietnameseName": "Gà rừng tai trắng",
+    "englishName": "Red Junglefowl",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "9326020",
+    "avibaseId": "3749777E14C923E9",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "buceros-bicornis",
+    "scientificName": "Buceros bicornis",
+    "vietnameseName": "Hồng hoàng",
+    "englishName": "Great Hornbill",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Bucerotiformes",
+    "family": "Bucerotidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2476012",
+    "avibaseId": "A9D587B9931AD694",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "rhyticeros-undulatus",
+    "scientificName": "Rhyticeros undulatus",
+    "vietnameseName": "Niệc mỏ vằn",
+    "englishName": "Wreathed Hornbill",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Bucerotiformes",
+    "family": "Bucerotidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2475916",
+    "avibaseId": "3C98DDBC",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "anorrhinus-tickelli",
+    "scientificName": "Anorrhinus tickelli",
+    "vietnameseName": "Niệc nâu",
+    "englishName": "Tickell's Brown Hornbill",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Bucerotiformes",
+    "family": "Bucerotidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2475927",
+    "avibaseId": "8454CE686FB04E6B",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "upupa-epops",
+    "scientificName": "Upupa epops",
+    "vietnameseName": "Đầu rìu",
+    "englishName": "Eurasian Hoopoe",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Bucerotiformes",
+    "family": "Upupidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2498415",
+    "avibaseId": "FA2F9125",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "megaceryle-lugubris",
+    "scientificName": "Megaceryle lugubris",
+    "vietnameseName": "Bói cá lớn",
+    "englishName": "Crested Kingfisher",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Coraciiformes",
+    "family": "Alcedinidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2475476",
+    "avibaseId": "BE8DC16C2498D5D0",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "pelargopsis-capensis",
+    "scientificName": "Pelargopsis capensis",
+    "vietnameseName": "Bồng chanh lớn",
+    "englishName": "Stork-billed Kingfisher",
+    "aliases": [
+      "Sả mỏ bồng",
+      "Sả mỏ rộng"
+    ],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Coraciiformes",
+    "family": "Alcedinidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5228417",
+    "avibaseId": "2B0E883A7691DF70",
+    "ebaRegion": "Vùng hạ lưu sông Mê Kông",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "halcyon-pileata",
+    "scientificName": "Halcyon pileata",
+    "vietnameseName": "Sả đầu đen",
+    "englishName": "Black-capped Kingfisher",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Coraciiformes",
+    "family": "Alcedinidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5228310",
+    "avibaseId": "6B292CA05BDA4273",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": true,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "alcedo-hercules",
+    "scientificName": "Alcedo hercules",
+    "vietnameseName": "Bồng chanh rừng",
+    "englishName": "Blyth's Kingfisher",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Coraciiformes",
+    "family": "Alcedinidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2475519",
+    "avibaseId": "56A1C8E5B82959EF",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "coracias-affinis",
+    "scientificName": "Coracias affinis",
+    "vietnameseName": "Sả rừng",
+    "englishName": "Indochinese Roller",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Coraciiformes",
+    "family": "Coraciidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "10963770",
+    "avibaseId": "E931F073AAC6F085",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "psilopogon-haemacephalus",
+    "scientificName": "Psilopogon haemacephalus",
+    "vietnameseName": "Cu rốc đầu đỏ",
+    "englishName": "Coppersmith Barbet",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Piciformes",
+    "family": "Megalaimidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "7691806",
+    "avibaseId": "2B7AC50ED78F524F",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "psilopogon-faber",
+    "scientificName": "Psilopogon faber",
+    "vietnameseName": "Cu rốc đầu đen",
+    "englishName": "Chinese Barbet",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Piciformes",
+    "family": "Megalaimidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "7501799",
+    "avibaseId": "FF5877D770D7F51E",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "picus-rabieri",
+    "scientificName": "Picus rabieri",
+    "vietnameseName": "Gõ kiến đầu đỏ",
+    "englishName": "Red-collared Woodpecker",
+    "aliases": [
+      "Gõ kiến xanh hông đỏ"
+    ],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Piciformes",
+    "family": "Picidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2478511",
+    "avibaseId": "B8B84180A8AC837E",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "chrysocolaptes-guttacristatus",
+    "scientificName": "Chrysocolaptes guttacristatus",
+    "vietnameseName": "Gõ kiến vàng lớn",
+    "englishName": "Greater Flameback",
+    "aliases": [
+      "Gõ kiến tam giác"
+    ],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Piciformes",
+    "family": "Picidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "7387276",
+    "avibaseId": "B82693BCD2372924",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "ictinaetus-malaiensis",
+    "scientificName": "Ictinaetus malaiensis",
+    "vietnameseName": "Đại bàng đen",
+    "englishName": "Black Eagle",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5229198",
+    "avibaseId": "28D7E7CCE03B9442",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "spilornis-cheela",
+    "scientificName": "Spilornis cheela",
+    "vietnameseName": "Diều hoa Miến Điện",
+    "englishName": "Crested Serpent Eagle",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2480433",
+    "avibaseId": "3EEEE78AD951A97B",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "pernis-ptilorhynchus",
+    "scientificName": "Pernis ptilorhynchus",
+    "vietnameseName": "Diều ăn ong",
+    "englishName": "Crested Honey Buzzard",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5793241",
+    "avibaseId": "1192205BDCBB11D2",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "elanus-caeruleus",
+    "scientificName": "Elanus caeruleus",
+    "vietnameseName": "Diều trắng",
+    "englishName": "Black-winged Kite",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2480372",
+    "avibaseId": "97C47F3E1BA4129A",
+    "ebaRegion": "Vùng hạ lưu sông Mê Kông",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "ketupa-zeylonensis",
+    "scientificName": "Ketupa zeylonensis",
+    "vietnameseName": "Dù dì phương Đông",
+    "englishName": "Brown Fish Owl",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Strigiformes",
+    "family": "Strigidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5232229",
+    "avibaseId": "CFDF9E89DD4CE1D4",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "otus-lettia",
+    "scientificName": "Otus lettia",
+    "vietnameseName": "Cú mèo khoang cổ",
+    "englishName": "Collared Scops Owl",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Strigiformes",
+    "family": "Strigidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "7340196",
+    "avibaseId": "DAC707E07C7C1838",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "glaucidium-brodiei",
+    "scientificName": "Glaucidium brodiei",
+    "vietnameseName": "Cú vọ mặt hung",
+    "englishName": "Collared Owlet",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Strigiformes",
+    "family": "Strigidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5232113",
+    "avibaseId": "BD6F35612B009315",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "pseudibis-davisoni",
+    "scientificName": "Pseudibis davisoni",
+    "vietnameseName": "Cò quăm cánh xanh",
+    "englishName": "White-shouldered Ibis",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Pelecaniformes",
+    "family": "Threskiornithidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2480777",
+    "avibaseId": "9FDF4A2E30DEDDC6",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "platalea-minor",
+    "scientificName": "Platalea minor",
+    "vietnameseName": "Cò thìa mặt đen",
+    "englishName": "Black-faced Spoonbill",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Pelecaniformes",
+    "family": "Threskiornithidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2480805",
+    "avibaseId": "DFD1DDFF11A7DE43",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": true,
+      "directive04Flagship": true
+    }
+  },
+  {
+    "id": "leptoptilos-javanicus",
+    "scientificName": "Leptoptilos javanicus",
+    "vietnameseName": "Già đẫy nhỏ",
+    "englishName": "Lesser Adjutant",
+    "aliases": [
+      "Già đẫy",
+      "Cò súp",
+      "Già đay"
+    ],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Ciconiiformes",
+    "family": "Ciconiidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2481947",
+    "avibaseId": "749071549152A82B",
+    "ebaRegion": "Vùng hạ lưu sông Mê Kông",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": true,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "gorsachius-melanolophus",
+    "scientificName": "Gorsachius melanolophus",
+    "vietnameseName": "Vạc rừng",
+    "englishName": "Malayan Night Heron",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2480841",
+    "avibaseId": "DC10105A2C4B24A4",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "antigone-antigone",
+    "scientificName": "Antigone antigone",
+    "vietnameseName": "Sếu đầu đỏ",
+    "englishName": "Sarus Crane",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Gruiformes",
+    "family": "Gruidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "9606460",
+    "avibaseId": "8D891DB7520688E0",
+    "ebaRegion": "Vùng hạ lưu sông Mê Kông",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": true,
+      "directive04Flagship": true
+    }
+  },
+  {
+    "id": "rallina-fasciata",
+    "scientificName": "Rallina fasciata",
+    "vietnameseName": "Cuốc ngực nâu",
+    "englishName": "Red-legged Crake",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Gruiformes",
+    "family": "Rallidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2474481",
+    "avibaseId": "1DFAA1B704669A12",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": true,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "porphyrio-poliocephalus",
+    "scientificName": "Porphyrio poliocephalus",
+    "vietnameseName": "Trích cồ",
+    "englishName": "Grey-headed Swamphen",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Gruiformes",
+    "family": "Rallidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5739284",
+    "avibaseId": "C2397CB5DBBA145C",
+    "ebaRegion": "Vùng hạ lưu sông Mê Kông",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": true,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "caloenas-nicobarica",
+    "scientificName": "Caloenas nicobarica",
+    "vietnameseName": "Bồ câu Nicobar",
+    "englishName": "Nicobar Pigeon",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Columbiformes",
+    "family": "Columbidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5231891",
+    "avibaseId": "0FFC77EF1BC55357",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "ducula-badia",
+    "scientificName": "Ducula badia",
+    "vietnameseName": "Gầm ghì lưng hung",
+    "englishName": "Mountain Imperial Pigeon",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Columbiformes",
+    "family": "Columbidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2495993",
+    "avibaseId": "FD2D7608F56A1F76",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "treron-apicauda",
+    "scientificName": "Treron apicauda",
+    "vietnameseName": "Cu xanh đuôi nhọn",
+    "englishName": "Pin-tailed Green Pigeon",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Columbiformes",
+    "family": "Columbidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2495726",
+    "avibaseId": "CB6653B400E3BD5C",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "asarcornis-scutulata",
+    "scientificName": "Asarcornis scutulata",
+    "vietnameseName": "Vịt cánh trắng",
+    "englishName": "White-winged Duck",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2498183",
+    "avibaseId": "FDB6503BA6873DFA",
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "aix-galericulata",
+    "scientificName": "Aix galericulata",
+    "vietnameseName": "Vịt uyên ương",
+    "englishName": "Mandarin Duck",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2498388",
+    "avibaseId": "E1714A09EA1DFD1D",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "hierococcyx-sparverioides",
+    "scientificName": "Hierococcyx sparverioides",
+    "vietnameseName": "Cu cu vằn",
+    "englishName": "Large Hawk-Cuckoo",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Cuculiformes",
+    "family": "Cuculidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "7340214",
+    "avibaseId": "CC033E8154BF486F",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "carpococcyx-renauldi",
+    "scientificName": "Carpococcyx renauldi",
+    "vietnameseName": "Phướn đất mỏ đỏ",
+    "englishName": "Coral-billed Ground Cuckoo",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Cuculiformes",
+    "family": "Cuculidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2496390",
+    "avibaseId": "15594C1714C05135",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "centropus-sinensis",
+    "scientificName": "Centropus sinensis",
+    "vietnameseName": "Bìm bịp lớn",
+    "englishName": "Greater Coucal",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Cuculiformes",
+    "family": "Cuculidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5232005",
+    "avibaseId": "F5F991ACE09A8601",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "harpactes-erythrocephalus",
+    "scientificName": "Harpactes erythrocephalus",
+    "vietnameseName": "Nuốc bụng đỏ",
+    "englishName": "Red-headed Trogon",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Trogoniformes",
+    "family": "Trogonidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5232031",
+    "avibaseId": "B8B765D8D01C96E7",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "harpactes-oreskios",
+    "scientificName": "Harpactes oreskios",
+    "vietnameseName": "Nuốc bụng vàng",
+    "englishName": "Orange-breasted Trogon",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Trogoniformes",
+    "family": "Trogonidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5232055",
+    "avibaseId": "F663214EC2B901F8",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "microhierax-melanoleucos",
+    "scientificName": "Microhierax melanoleucos",
+    "vietnameseName": "Cắt nhỏ bụng trắng",
+    "englishName": "Pied Falconet",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Falconiformes",
+    "family": "Falconidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2481079",
+    "avibaseId": "767A595EA44683EA",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "caprimulgus-macrurus",
+    "scientificName": "Caprimulgus macrurus",
+    "vietnameseName": "Cú muỗi đuôi dài",
+    "englishName": "Large-tailed Nightjar",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Caprimulgiformes",
+    "family": "Caprimulgidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2496890",
+    "avibaseId": "04DDADF0515EECDA",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "cutia-legalleni",
+    "scientificName": "Cutia legalleni",
+    "vietnameseName": "Khướu hông đỏ",
+    "englishName": "Vietnamese Cutia",
+    "aliases": [
+      "Khướu hông đỏ Việt Nam",
+      "Cutia hông đỏ"
+    ],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Passeriformes",
+    "family": "Leiothrichidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "5844898",
+    "avibaseId": "B75DF97A5E66EFB5",
+    "ebaRegion": "Cao nguyên Đà Lạt",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "garrulax-annamensis",
+    "scientificName": "Garrulax annamensis",
+    "vietnameseName": "Khướu ngực đốm",
+    "englishName": "Orange-breasted Laughingthrush",
+    "aliases": [
+      "Khướu An Nam",
+      "Khướu ngực cam"
+    ],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Passeriformes",
+    "family": "Leiothrichidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "2493399",
+    "avibaseId": "6507A259BDCC7DBF",
+    "ebaRegion": "Cao nguyên Đà Lạt",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "schoeniparus-klossi",
+    "scientificName": "Schoeniparus klossi",
+    "vietnameseName": "Khướu bụi gáy đen",
+    "englishName": "Black-crowned Fulvetta",
+    "aliases": [
+      "Khướu mỏ quặp gáy đen",
+      "Alcippe klossi"
+    ],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Passeriformes",
+    "family": "Pellorneidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "7341399",
+    "avibaseId": "6C0FEFD489F5747C",
+    "ebaRegion": "Cao nguyên Đà Lạt",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "prinia-rocki",
+    "scientificName": "Prinia rocki",
+    "vietnameseName": "Chiền chiện núi An Nam",
+    "englishName": "Annam Prinia",
+    "aliases": [
+      "Chiền chiện An Nam",
+      "Chiền chiện núi Langbiang",
+      "Chiền chiện Đà Lạt",
+      "Dalat Prinia",
+      "Prinia atrogularis rocki"
+    ],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Passeriformes",
+    "family": "Cisticolidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "10747209",
+    "avibaseId": "6C31D8068285DDE7",
+    "ebaRegion": "Cao nguyên Đà Lạt",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "locustella-idonea",
+    "scientificName": "Locustella idonea",
+    "vietnameseName": "Chích bụi Đà Lạt",
+    "englishName": "Dalat Bush Warbler",
+    "aliases": [
+      "Bradypterus idoneus",
+      "Chích bụi Nam Bộ"
+    ],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Passeriformes",
+    "family": "Locustellidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "8078696",
+    "avibaseId": "958B5C06FBF98F53",
+    "ebaRegion": "Cao nguyên Đà Lạt",
+    "legalFramework": {
+      "decree84Group": "none",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "tropicoperdix-tonkinensis",
+    "scientificName": "Tropicoperdix tonkinensis",
+    "vietnameseName": "Gà so Bắc Bộ",
+    "englishName": "Tonkin Partridge",
+    "aliases": [
+      "Arborophila tonkinensis",
+      "Gà so Tonkin"
+    ],
+    "isEndemic": true,
+    "endemicScope": "vietnam",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Avibase Checklist v2024 / IOC v14.1",
+    "gbifTaxonKey": "9406086",
+    "avibaseId": "148679A814AEB4BC",
+    "legalFramework": {
+      "decree84Group": "IIB",
+      "decree160Priority": false,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "pseudibis-gigantea",
+    "scientificName": "Pseudibis gigantea",
+    "vietnameseName": "Cò quăm lớn",
+    "englishName": "Giant Ibis",
+    "aliases": [
+      "Cò quắm lớn",
+      "Cò quăm Đông Dương"
+    ],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Pelecaniformes",
+    "orderVietnamese": "Bộ Bồ nông",
+    "family": "Threskiornithidae",
+    "familyVietnamese": "Họ Cò quăm",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Sách Đỏ Việt Nam 2007 (CR) / Nghị định 84/2021/NĐ-CP (Nhóm IB)",
+    "gbifTaxonKey": "2480779",
+    "avibaseId": "F12CC0610AA89673",
+    "iucn": "CR",
+    "vietnamRedList": "CR",
+    "conservationDescription": "Xếp hạng Cực kỳ nguy cấp (CR) trong Sách Đỏ Việt Nam và Danh mục động vật rừng nguy cấp, quý, hiếm (Nghị định 84/2021/NĐ-CP Nhóm IB). Từng ghi nhận tại vùng đất ngập nước Nam Bộ và rừng khộp Tây Nguyên, hiện chỉ còn những ghi nhận phân bố rải rác cực kỳ hiếm hoi do mất sinh cảnh đầm lầy tự nhiên.",
+    "morphologyOverview": "Loài cò quăm có tầm vóc lớn nhất thế giới (chiều dài 102–106 cm), mang phong thái cổ kính với bộ lông nâu thẫm ánh xám đục, đầu trần trụi phủ lớp da sần sùi màu chì và mỏ cong dài đặc trưng.",
+    "diagnosticFeatures": [
+      {
+        "part": "Đầu và gáy",
+        "description": "Đầu và phần trên cổ trần hoàn toàn, da màu xám xỉn với các dải nếp gấp ngang màu sẫm rõ nét ở phía sau gáy."
+      },
+      {
+        "part": "Cánh và lông bao",
+        "description": "Lông thân nâu sẫm, lông bao cánh trên có dải màu xám bạc ánh thép nổi bật khi bay liệng hoặc lúc sải cánh."
+      }
+    ],
+    "ebaRegion": "Cao nguyên Kon Tum",
+    "elevation": "Dưới 200m",
+    "habitats": [
+      "Vùng đầm lầy trảng cỏ ngập nước",
+      "Rừng khộp rụng lá theo mùa xen kẽ hồ nước tự nhiên"
+    ],
+    "locations": [
+      "Khu bảo tồn thiên nhiên Yok Đôn, Đắk Lắk"
+    ],
+    "coordinates": [
+      13.15,
+      107.6
+    ],
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "sarcogyps-calvus",
+    "scientificName": "Sarcogyps calvus",
+    "vietnameseName": "Kền kền đầu đỏ",
+    "englishName": "Red-headed Vulture",
+    "aliases": [
+      "Kền kền chúa",
+      "Ó tai"
+    ],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Accipitriformes",
+    "orderVietnamese": "Bộ Ưng",
+    "family": "Accipitridae",
+    "familyVietnamese": "Họ Ưng",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Sách Đỏ Việt Nam 2007 (CR) / Nghị định 84/2021/NĐ-CP (Nhóm IB)",
+    "gbifTaxonKey": "2480717",
+    "avibaseId": "21D7169D28644CD4",
+    "iucn": "CR",
+    "vietnamRedList": "CR",
+    "conservationDescription": "Xếp hạng Cực kỳ nguy cấp (CR) trong Sách Đỏ Việt Nam và Danh mục động vật rừng nguy cấp, quý, hiếm (Nghị định 84/2021/NĐ-CP Nhóm IB). Từng giữ vai trò thiên địch dọn sạch xác động vật tại các sinh cảnh rừng khộp Tây Nguyên, hiện chịu suy giảm nghiêm trọng từ sự sụt giảm thú móng guốc lớn hoang dã.",
+    "morphologyOverview": "Loài kền kền cỡ trung bình-lớn (chiều dài 76–86 cm), sở hữu diện mạo uy nghi với phần đầu và cổ trần màu đỏ tươi nổi bật, hai bên cổ buông hai nếp yếm da trần độc đáo cùng bộ lông thân đen tuyền tương phản.",
+    "diagnosticFeatures": [
+      {
+        "part": "Đầu và yếm da tai",
+        "description": "Đầu và cổ trần không có lông, lớp da màu đỏ cam đến đỏ thắm rực rỡ với hai nếp yếm da trần rủ xuống hai bên cổ tựa đôi tai."
+      },
+      {
+        "part": "Bộ lông và yếm ức",
+        "description": "Lông thân chủ đạo màu đen tuyền tương phản với dải lông tơ trắng muốt ở gốc cổ và hai mảng lông trắng hai bên hông."
+      },
+      {
+        "part": "Âm học và cơ quan phát âm",
+        "description": "Tương tự các loài kền kền Cựu Thế giới, loài này không có cơ quan phát âm (minh quản) phát triển; chúng giao tiếp chủ yếu qua tiếng rít hơi vòm họng (guttural hiss) khi tranh mồi."
+      }
+    ],
+    "ebaRegion": "Cao nguyên Kon Tum",
+    "elevation": "100 - 800m",
+    "habitats": [
+      "Rừng khộp rụng lá thưa",
+      "Trảng cây bụi vùng đồi núi thấp"
+    ],
+    "locations": [
+      "Khu vực rừng rụng lá khộp Tây Nguyên"
+    ],
+    "coordinates": [
+      12.9,
+      107.8
+    ],
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "gyps-tenuirostris",
+    "scientificName": "Gyps tenuirostris",
+    "vietnameseName": "Kền kền mỏ hẹp",
+    "englishName": "Slender-billed Vulture",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Accipitriformes",
+    "orderVietnamese": "Bộ Ưng",
+    "family": "Accipitridae",
+    "familyVietnamese": "Họ Ưng",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Sách Đỏ Việt Nam 2007 (CR) / Nghị định 84/2021/NĐ-CP (Nhóm IB)",
+    "gbifTaxonKey": "4850076",
+    "avibaseId": "11324DC80E8BBB9F",
+    "iucn": "CR",
+    "vietnamRedList": "CR",
+    "conservationDescription": "Xếp hạng Cực kỳ nguy cấp (CR) trong Sách Đỏ Việt Nam và Danh mục động vật rừng nguy cấp, quý, hiếm (Nghị định 84/2021/NĐ-CP Nhóm IB). Là loài kền kền chuyên biệt của rừng thưa Nam Á và Đông Dương, hiện đứng trước rủi ro tuyệt chủng cao nhất trong số các loài chim ăn xác thối khu vực.",
+    "morphologyOverview": "Loài kền kền có vóc dáng mảnh khảnh (chiều dài 80–95 cm) với chiếc mỏ dài thon hẹp khác biệt, phần cổ dài uốn lượn phủ da nhăn màu xám đen và bờm lông cổ xơ xác tối màu.",
+    "diagnosticFeatures": [
+      {
+        "part": "Mỏ và cấu trúc đầu",
+        "description": "Mỏ dài, hẹp ngang và thanh mảnh rõ rệt so với các loài cùng chi; đầu và cổ đen nhăn nheo, hầu như không có lớp lông tơ che phủ."
+      },
+      {
+        "part": "Lông thân và lưng",
+        "description": "Lưng và cánh màu nâu xám xỉn, lông ngực và bụng có các vệt sợi nhạt màu, vòng lông viền quanh chân cổ màu nâu nhạt."
+      }
+    ],
+    "ebaRegion": "Cao nguyên Kon Tum",
+    "elevation": "100 - 600m",
+    "habitats": [
+      "Rừng thưa rụng lá lá rộng",
+      "Khu vực đồng cỏ bán tự nhiên"
+    ],
+    "locations": [
+      "Khu bảo tồn thiên nhiên Yok Đôn và vùng đồi núi Tây Nguyên"
+    ],
+    "coordinates": [
+      13.2,
+      107.75
+    ],
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "gyps-bengalensis",
+    "scientificName": "Gyps bengalensis",
+    "vietnameseName": "Kền kền Bengal",
+    "englishName": "White-rumped Vulture",
+    "aliases": [
+      "Kền kền mông trắng",
+      "Kền kền lưng trắng"
+    ],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Accipitriformes",
+    "orderVietnamese": "Bộ Ưng",
+    "family": "Accipitridae",
+    "familyVietnamese": "Họ Ưng",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Sách Đỏ Việt Nam 2007 (CR) / Nghị định 84/2021/NĐ-CP (Nhóm IB)",
+    "gbifTaxonKey": "2480383",
+    "avibaseId": "FC2346E6EF324F85",
+    "iucn": "CR",
+    "vietnamRedList": "CR",
+    "conservationDescription": "Xếp hạng Cực kỳ nguy cấp (CR) trong Sách Đỏ Việt Nam và Nghị định 84/2021/NĐ-CP Nhóm IB. Từng là loài kền kền phổ biến khắp các cánh rừng rụng lá khô Đông Dương, quần thể sụt giảm nghiêm trọng trong nửa sau thế kỷ 20 và hiện cực kỳ hiếm thấy.",
+    "morphologyOverview": "Loài chim ăn xác thối cỡ trung bình (chiều dài 75–85 cm), nổi bật với mảng lông hông trắng tinh khôi tương phản mạnh mẽ với thân mình đen thẫm, tạo thành dấu hiệu nhận dạng chuẩn xác khi bay liệng.",
+    "diagnosticFeatures": [
+      {
+        "part": "Mảng trắng ở hông và lưng",
+        "description": "Hông và lưng dưới phủ lớp lông trắng muốt nổi bật, tạo thành mảng tương phản rõ nét với cánh và đuôi đen khi quan sát từ trên cao."
+      },
+      {
+        "part": "Đầu và vòng cổ",
+        "description": "Đầu và cổ trần màu xám đen, gốc cổ được bao quanh bởi một vòng bờm lông tơ màu trắng bạc mềm mại."
+      }
+    ],
+    "ebaRegion": "Vùng đất thấp Nam Bộ",
+    "elevation": "Dưới 500m",
+    "habitats": [
+      "Rừng rụng lá nhiệt đới",
+      "Khu vực đồng cỏ bìa rừng"
+    ],
+    "locations": [
+      "Rừng bán thường xanh và trảng cỏ Nam Bộ"
+    ],
+    "coordinates": [
+      11.8,
+      107.2
+    ],
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": false,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "leptoptilos-dubius",
+    "scientificName": "Leptoptilos dubius",
+    "vietnameseName": "Già đẫy lớn",
+    "englishName": "Greater Adjutant",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Ciconiiformes",
+    "orderVietnamese": "Bộ Hạc",
+    "family": "Ciconiidae",
+    "familyVietnamese": "Họ Hạc",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / Sách Đỏ Việt Nam 2007 (CR) / Nghị định 84/2021/NĐ-CP (Nhóm IB)",
+    "gbifTaxonKey": "2481945",
+    "avibaseId": "81E1FC1CBA6C9F7F",
+    "iucn": "EN",
+    "vietnamRedList": "CR",
+    "conservationDescription": "Xếp hạng Cực kỳ nguy cấp (CR) trong Sách Đỏ Việt Nam và Nghị định 84/2021/NĐ-CP Nhóm IB (EN toàn cầu). Loài hạc khổng lồ với số lượng toàn cầu chỉ còn khoảng trên 1.000 cá thể; tại Việt Nam thỉnh thoảng chỉ còn những cá thể lang thang ghé các vùng trũng đất ngập nước Tây Nam Bộ.",
+    "morphologyOverview": "Một trong những loài hạc cao lớn và đường bệ nhất thế giới chim (chiều cao 145–150 cm, sải cánh lên đến 250 cm), sở hữu chiếc mỏ hình nêm đồ sộ màu ngà và túi hầu da trần buông dài dưới cổ.",
+    "diagnosticFeatures": [
+      {
+        "part": "Mỏ và túi hầu",
+        "description": "Mỏ khổng lồ hình nêm tam giác màu vàng sáp; túi da trần trước cổ màu vàng cam có thể dài tới 30 cm buông thõng và phồng to khi biểu diễn."
+      },
+      {
+        "part": "Bộ lông và cánh",
+        "description": "Lưng và cánh màu xám đen ánh thép, bụng màu trắng ngà; lông bao cánh lớn có dải xám bạc sáng tạo đường viền cánh tương phản."
+      },
+      {
+        "part": "Âm học và cơ học mỏ",
+        "description": "Loài hạc này không có cơ quan phát âm (minh quản) chức năng để hót; chúng giao tiếp chủ yếu qua tiếng gõ mỏ lách cách dồn dập (mandible clapping) vang xa hàng trăm mét."
+      }
+    ],
+    "ebaRegion": "Vùng hạ lưu sông Mê Kông",
+    "elevation": "Dưới 50m",
+    "habitats": [
+      "Đầm lầy ngập nước nước ngọt",
+      "Đồng trũng và bãi bồi ven sông"
+    ],
+    "locations": [
+      "Vùng đất ngập nước Đồng Tháp Mười, Kiên Giang"
+    ],
+    "coordinates": [
+      10.7,
+      105.5
+    ],
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": true,
+      "directive04Flagship": false
+    }
+  },
+  {
+    "id": "calidris-pygmaea",
+    "scientificName": "Calidris pygmaea",
+    "vietnameseName": "Rẽ mỏ thìa",
+    "englishName": "Spoon-billed Sandpiper",
+    "aliases": [
+      "Dẽ mỏ thìa"
+    ],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Charadriiformes",
+    "orderVietnamese": "Bộ Choi choi",
+    "family": "Scolopacidae",
+    "familyVietnamese": "Họ Dẽ",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / IUCN Red List (CR) / Danh lục Đỏ VAST",
+    "gbifTaxonKey": "10658506",
+    "avibaseId": "3FC8CA50CC50BAAD",
+    "iucn": "CR",
+    "vietnamRedList": "CR",
+    "conservationDescription": "Xếp hạng Cực kỳ nguy cấp (CR) toàn cầu (IUCN) và Danh lục Đỏ VAST. Một trong những loài chim di cư ven biển quý hiếm và nguy cấp nhất hành tinh, với các điểm dừng chân trú đông trọng yếu tại bãi bồi Vườn quốc gia Xuân Thủy (Nam Định) và Gò Công (Tiền Giang).",
+    "morphologyOverview": "Loài dẽ nhỏ bé (chiều dài 14–16 cm) mang cấu trúc hình thái độc nhất vô nhị trong giới điểu học: chóp mỏ dẹt rộng ngang hình chiếc thìa, chuyên hóa hoàn hảo cho tập tính quét bùn tìm kiếm sinh vật phù du.",
+    "diagnosticFeatures": [
+      {
+        "part": "Chóp mỏ hình thìa",
+        "description": "Đầu chót mỏ mở rộng sang hai bên tạo thành phiến dẹt hình thìa xúc độc đáo, dùng để lia ngang trên mặt bùn lỏng đón bắt giáp xác nhỏ."
+      },
+      {
+        "part": "Bộ lông mùa đông",
+        "description": "Mặt lưng màu xám tro trang nhã với các viền lông trắng mịn, trán và toàn bộ phần bụng dưới trắng tinh khiết, chân ngắn màu đen."
+      }
+    ],
+    "ebaRegion": "Vùng đất thấp Trung Bộ",
+    "elevation": "0m",
+    "habitats": [
+      "Bãi bồi bùn cát ven biển",
+      "Vùng đầm lầy ngập mặn và ruộng muối"
+    ],
+    "locations": [
+      "Vườn quốc gia Xuân Thủy, Nam Định"
+    ],
+    "coordinates": [
+      20.25,
+      106.55
+    ],
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": true,
+      "isEaafpMigratory": true,
+      "directive04Flagship": true
+    }
+  },
+  {
+    "id": "emberiza-aureola",
+    "scientificName": "Emberiza aureola",
+    "vietnameseName": "Sẻ đồng ngực vàng",
+    "englishName": "Yellow-breasted Bunting",
+    "aliases": [],
+    "isEndemic": false,
+    "endemicScope": "none",
+    "order": "Passeriformes",
+    "orderVietnamese": "Bộ Sẻ",
+    "family": "Emberizidae",
+    "familyVietnamese": "Họ Sẻ đồng",
+    "authority": "VAST (GS. Võ Quý) / Craik & Minh 2018 / IUCN Red List (CR) / Danh lục Đỏ VAST",
+    "gbifTaxonKey": "2491518",
+    "avibaseId": "7574C0E53A34CCFD",
+    "iucn": "CR",
+    "vietnamRedList": "CR",
+    "conservationDescription": "Xếp hạng Cực kỳ nguy cấp (CR) toàn cầu (IUCN) và Danh lục Đỏ VAST. Từng là một trong những loài chim di cư mùa đông quen thuộc trên các đồng lúa miền Bắc và Bắc Trung Bộ, quần thể suy giảm đột ngột trong những thập kỷ qua và đang được bảo vệ nghiêm ngặt trên toàn tuyến bay Đông Á.",
+    "morphologyOverview": "Loài sẻ đồng thanh mảnh (chiều dài 14–15 cm), con trống mùa sinh sản khoác bộ lông rực rỡ với ức bụng vàng tươi, dải đai ngực màu hạt dẻ ấm áp và mặt đen tuyền sắc sảo.",
+    "diagnosticFeatures": [
+      {
+        "part": "Ức và bụng",
+        "description": "Bụng và ngực màu vàng chanh tươi sáng, phân tách với họng bởi một dải đai hẹp màu nâu hạt dẻ ở chim trống trưởng thành."
+      },
+      {
+        "part": "Cánh và lưng",
+        "description": "Lưng màu nâu hạt dẻ sẫm kẻ sọc đen, lông bao cánh sở hữu mảng trắng rộng nổi bật tạo điểm nhấn quang học rõ nét."
+      },
+      {
+        "part": "Đặc điểm âm học và bảo tồn",
+        "description": "Loài có tiếng hót véo von; tuy nhiên các bản ghi âm trực tiếp trên thư viện quốc tế Xeno-canto hiện được giới hạn tải mở (Restricted) nhằm phòng ngừa việc sử dụng loa phát âm thanh để giăng bẫy chim tự nhiên."
+      }
+    ],
+    "ebaRegion": "Vùng đất thấp Trung Bộ",
+    "elevation": "0 - 300m",
+    "habitats": [
+      "Cánh đồng lúa sau thu hoạch",
+      "Vùng cỏ ngập nước và bãi sậy ven sông"
+    ],
+    "locations": [
+      "Đồng bằng sông Hồng và duyên hải miền Trung"
+    ],
+    "coordinates": [
+      20.9,
+      105.8
+    ],
+    "legalFramework": {
+      "decree84Group": "IB",
+      "decree160Priority": false,
+      "isEaafpMigratory": true,
+      "directive04Flagship": false
+    }
+  }
+]

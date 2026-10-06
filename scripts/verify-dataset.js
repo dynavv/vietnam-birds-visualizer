@@ -23,8 +23,10 @@ console.log('🌿 AVIFAUNA OF VIETNAM — BÁO CÁO TOÀN VẸN DỮ LIỆU');
 console.log('='.repeat(55));
 
 console.log(`• Tổng số loài: ${species.length} loài`);
-const endemics = species.filter(s => s.isEndemic);
-console.log(`• Loài đặc hữu Việt Nam: ${endemics.length} loài (${((endemics.length / species.length) * 100).toFixed(1)}%)`);
+const strictVn = species.filter(s => s.endemicScope === 'vietnam');
+const indochina = species.filter(s => s.endemicScope === 'indochina');
+console.log(`• Loài đặc hữu Việt Nam (Strict): ${strictVn.length} loài (${((strictVn.length / species.length) * 100).toFixed(1)}%)`);
+console.log(`• Loài đặc hữu Đông Dương (Near-endemic): ${indochina.length} loài (${((indochina.length / species.length) * 100).toFixed(1)}%)`);
 
 // Orders breakdown
 const orderCounts = {};
@@ -49,6 +51,17 @@ console.log('\n🛡️ Phân bổ Bậc Bảo tồn (IUCN Red List):');
 Object.entries(iucnCounts).forEach(([status, count]) => {
   console.log(`  - IUCN [${status}]: ${count} loài`);
 });
+
+// Legal Conservation Framework breakdown (Nghị định & Chỉ thị Chính phủ)
+const nd84IB = species.filter(s => s.conservation?.legalFramework?.decree84Group === 'IB');
+const nd84IIB = species.filter(s => s.conservation?.legalFramework?.decree84Group === 'IIB');
+const nd160 = species.filter(s => s.conservation?.legalFramework?.decree160Priority);
+const ct04 = species.filter(s => s.conservation?.legalFramework?.directive04Flagship);
+console.log('\n🏛️ Danh mục Bảo vệ Pháp lý (Chính phủ Việt Nam):');
+console.log(`  - Nghị định 84/2021/NĐ-CP (Nhóm IB - Nghiêm cấm thương mại): ${nd84IB.length} loài`);
+console.log(`  - Nghị định 84/2021/NĐ-CP (Nhóm IIB - Hạn chế khai thác): ${nd84IIB.length} loài`);
+console.log(`  - Nghị định 160/2013/NĐ-CP (Loài ưu tiên bảo vệ): ${nd160.length} loài`);
+console.log(`  - Chỉ thị 04/CT-TTg (Loài chim di cư cờ đầu): ${ct04.length} loài`);
 
 // Photo attribution health
 const inatPhotos = species.filter(s => s.illustration?.imageUrl?.includes('inaturalist'));

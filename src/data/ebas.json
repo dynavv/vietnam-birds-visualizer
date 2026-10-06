@@ -2,9 +2,9 @@
   {
     "id": "hoang-lien-son",
     "code": "s073",
-    "name": "Hoang Lien Son & Northwest Mountains",
-    "vietnameseName": "Vùng núi Tây Bắc & Hoàng Liên Sơn / Fansipan",
-    "description": "Nóc nhà Đông Dương với đỉnh Fansipan (3.143m), đặc trưng bởi các loài chim mang nguồn gốc Himalaya cổ và đặc hữu bản địa như Họa mi đất mỏ dài, Khướu hông đỏ, Khướu đuôi đỏ và Bồng chanh rừng.",
+    "name": "Hoang Lien Son Mountains",
+    "vietnameseName": "Vùng núi Hoàng Liên Sơn",
+    "description": "Nóc nhà Đông Dương với đỉnh Fansipan (3.143m), đặc trưng bởi các loài chim mang nguồn gốc Himalaya cổ và đặc hữu bản địa như Khướu đất họng trắng, Khướu cánh đỏ, Khướu đuôi đỏ và Bồng chanh rừng.",
     "coordinates": [
       22.35,
       103.82
@@ -28,8 +28,8 @@
   {
     "id": "northeast-mountains",
     "code": "s074",
-    "name": "Northeast Limestone Mountains",
-    "vietnameseName": "Vùng núi Đông Bắc & Đá vôi Bắc Bộ",
+    "name": "Northeast Mountains",
+    "vietnameseName": "Vùng núi Đông Bắc",
     "description": "Vùng núi đá vôi cổ trùng điệp từ Ninh Bình, Hòa Bình đến Ba Bể, lưu vực sông gấm và rừng nguyên sinh cận nhiệt đới với sự xuất hiện của Cu rốc đầu đen, Khướu bạc má, Mỏ rộng xanh và Nuốc bụng đỏ.",
     "coordinates": [
       21.35,
@@ -45,7 +45,8 @@
       "polyplectron-bicalcaratum",
       "harpactes-erythrocephalus",
       "microhierax-melanoleucos",
-      "platalea-minor"
+      "platalea-minor",
+      "tropicoperdix-tonkinensis"
     ],
     "habitats": [
       "Rừng thường xanh trên núi đá vôi Karst Ba Bể",
@@ -55,9 +56,9 @@
   },
   {
     "id": "annam-lowlands",
-    "code": "EBA 142",
+    "code": "EBA 143",
     "name": "Annamese Lowlands",
-    "vietnameseName": "Vùng Đất thấp miền Trung",
+    "vietnameseName": "Vùng đất thấp Trung Bộ",
     "description": "Dải rừng nhiệt đới mưa mùa đất thấp kéo dài dọc chân dãy Trường Sơn từ Hà Tĩnh đến Thừa Thiên Huế, nơi cư trú của Gà lôi lam mào trắng cực kỳ nguy cấp, Trĩ sao đuôi dài vô song và Khướu đá mun trên núi đá vôi.",
     "coordinates": [
       16.9,
@@ -81,9 +82,9 @@
   },
   {
     "id": "kontum-plateau",
-    "code": "EBA 144",
+    "code": "EBA",
     "name": "Kon Tum Plateau",
-    "vietnameseName": "Cao nguyên Kon Tum / Dãy Ngọc Linh & Kon Ka Kinh",
+    "vietnameseName": "Cao nguyên Kon Tum",
     "description": "Khối núi granite kỳ vĩ miền Trung với đỉnh Ngọc Linh cao 2.598m, trung tâm đa dạng sinh học và phát sinh loài của các loài Khướu đặc hữu Việt Nam như Khướu Ngọc Linh, Khướu Kon Ka Kinh và Khướu vằn đầu đen.",
     "coordinates": [
       14.7,
@@ -105,9 +106,9 @@
   },
   {
     "id": "dalat-plateau",
-    "code": "EBA 143",
+    "code": "EBA 145",
     "name": "Da Lat Plateau",
-    "vietnameseName": "Cao nguyên Đà Lạt / Lâm Viên",
+    "vietnameseName": "Cao nguyên Đà Lạt",
     "description": "Vùng núi cao Nam Tây Nguyên nổi tiếng với rừng thông ba lá đặc trưng xen lẫn rừng thường xanh trên núi và khí hậu á nhiệt đới sương mù, nơi lưu giữ các loài chim đặc hữu quý hiếm bậc nhất Đông Dương như Mi Langbiang, Khướu đầu đen má xám và Sẻ thông họng vàng.",
     "coordinates": [
       12.1,
@@ -121,7 +122,12 @@
       "chloris-monguilloti",
       "psittiparus-bakeri",
       "ictinaetus-malaiensis",
-      "glaucidium-brodiei"
+      "glaucidium-brodiei",
+      "cutia-legalleni",
+      "garrulax-annamensis",
+      "schoeniparus-klossi",
+      "prinia-rocki",
+      "locustella-idonea"
     ],
     "habitats": [
       "Rừng lá kim thông ba lá (Pinus kesiya)",
@@ -131,10 +137,10 @@
   },
   {
     "id": "cochinchina",
-    "code": "EBA 145",
-    "name": "Cochinchina & Southern Lowlands",
-    "vietnameseName": "Vùng đồng bằng & rừng đất thấp Nam Bộ",
-    "description": "Hệ sinh thái rừng đất thấp Đồng Nai kết hợp đồng cỏ ngập nước và rừng ngập mặn Cà Mau, nơi nuôi dưỡng các báu vật tự nhiên như Gà tiền mặt đỏ, Gà lôi hông tía, Cò quăm cánh xanh, Sếu đầu đỏ và Vịt cánh trắng.",
+    "code": "EBA 144",
+    "name": "South Vietnamese Lowlands",
+    "vietnameseName": "Vùng đất thấp Nam Bộ",
+    "description": "Hệ sinh thái rừng đất thấp Đồng Nai và Đông Nam Bộ (VQG Cát Tiên, Chiến khu Đ, Bù Gia Mập), nơi cư trú của các loài chim rừng nhiệt đới quý hiếm như Gà tiền mặt đỏ, Gà lôi hông tía, Cò quăm cánh xanh, Hồng hoàng và Vịt cánh trắng.",
     "coordinates": [
       11.2,
       106.9
@@ -147,14 +153,40 @@
       "lophura-diardi",
       "buceros-bicornis",
       "pseudibis-davisoni",
-      "antigone-antigone",
+      "rhyticeros-undulatus",
       "asarcornis-scutulata",
       "caloenas-nicobarica"
     ],
     "habitats": [
       "Rừng kín nửa rụng lá ẩm nhiệt đới Cát Tiên",
-      "Vùng đất ngập nước bàng năng Tràm Chim",
-      "Rừng ngập mặn phù sa ven biển Côn Đảo - Cà Mau"
+      "Rừng thường xanh đất thấp Mã Đà và Bù Gia Mập",
+      "Rừng nguyên sinh hải đảo nhiệt đới Côn Đảo"
+    ]
+  },
+  {
+    "id": "lower-mekong-basin",
+    "code": "EAAFP",
+    "name": "Lower Mekong Basin",
+    "vietnameseName": "Vùng hạ lưu sông Mê Kông",
+    "description": "Vùng đồng bằng châu thổ sông Cửu Long và các lung bàu ngập nước Đồng Tháp Mười, Kiên Giang, trạm dừng chân trọng yếu trên Tuyến đường bay chim nước di cư tuyến Úc - Đông Á (EAAFP), nơi sinh sống của Sếu đầu đỏ, Già đẫy lớn, Già đẫy nhỏ và Trích cồ.",
+    "coordinates": [
+      10.72,
+      105.55
+    ],
+    "radiusMeters": 85000,
+    "zoomLevel": 9,
+    "keySpeciesIds": [
+      "antigone-antigone",
+      "leptoptilos-dubius",
+      "leptoptilos-javanicus",
+      "porphyrio-poliocephalus",
+      "elanus-caeruleus",
+      "pelargopsis-capensis"
+    ],
+    "habitats": [
+      "Đồng cỏ bàng (Eleocharis) và lung ngập nước Tràm Chim",
+      "Rừng tràm ngập phèn U Minh và Đồng Tháp Mười",
+      "Đồng trũng phù sa và bãi bồi ven sông Tiền, sông Hậu"
     ]
   }
 ]

@@ -72,17 +72,29 @@ export interface AcademicIdentifiers {
   primaryLiterature?: AcademicReference[];
 }
 
+export interface LegalConservationFramework {
+  decree84Group?: 'IB' | 'IIB' | 'none';
+  decree160Priority?: boolean;
+  isEaafpMigratory?: boolean;
+  directive04Flagship?: boolean;
+}
+
+export type EndemicScope = 'vietnam' | 'indochina' | 'none';
+
 export interface BirdSpecies {
   id: string;
   scientificName: string;
   vietnameseName: string;
   englishName: string;
+  aliases?: string[];
   taxonomy: TaxonomicHierarchy;
   isEndemic: boolean;
+  endemicScope?: EndemicScope;
   conservation: {
     iucn: IUCNStatus;
     vietnamRedList?: VietnamRedListStatus;
     description: string;
+    legalFramework?: LegalConservationFramework;
   };
   morphologicalAnalysis: MorphologicalAnalysis;
   distribution: GeographicDistribution;
