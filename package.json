@@ -8,7 +8,15 @@
     "build": "tsc && vite build",
     "lint": "tsc --noEmit",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "node scripts/test-summary.js",
+    "test:full": "vitest run",
+    "test:data": "vitest run src/data/validateData.test.ts",
+    "data:verify": "node scripts/verify-dataset.js",
+    "data:audit": "node scripts/data-pipeline/audit-species-input.js",
+    "species:harvest": "node scripts/data-pipeline/harvest-species.js",
+    "species:verify": "node scripts/data-pipeline/verify-species-candidate.js",
+    "species:commit": "node scripts/data-pipeline/commit-species-candidate.js",
+    "species:add": "node scripts/data-pipeline/add-species.js"
   },
   "dependencies": {
     "@google/genai": "^2.19.0",

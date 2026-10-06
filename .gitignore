@@ -33,3 +33,13 @@ dist-ssr
 .turbo
 coverage
 .eslintcache
+
+# Media & trailer demo assets (Lưu trữ ngoài, không phục vụ web runtime)
+public/*.mp4
+public/*.mp3
+public/*.wav
+public/trailer-preview/
+
+# Data pipeline draft temporary files
+scripts/data-pipeline/drafts/candidate-species.json
+

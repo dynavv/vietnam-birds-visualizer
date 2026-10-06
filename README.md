@@ -1,13 +1,13 @@
-# Avifauna of Vietnam (Trực quan hóa Điểu học Việt Nam) 🕊️🇻🇳
+# Avifauna of Vietnam (Bản đồ sinh thái chim Việt Nam) 🕊️🇻🇳
 
-Bảo tàng số hóa tương tác chuyên sâu về khu hệ chim hoang dã Việt Nam, kết hợp hệ thống thông tin địa lý sinh thái (GIS Mapping) của 6 Vùng Chim Đặc Hữu (EBAs), cây phả hệ phát sinh chủng loại (Phylogenetic Tree) D3.js và cẩm nang giám tuyển hình thái học.
+Bảo tàng số hóa tương tác chuyên sâu về khu hệ chim hoang dã Việt Nam, kết hợp hệ thống thông tin địa lý sinh thái (GIS Mapping) của 07 Vùng Chim Đặc Hữu (EBAs), cây phả hệ phát sinh chủng loại (Phylogenetic Tree) D3.js và cẩm nang giám tuyển hình thái học.
 
 ---
 
 ## 🌟 Tính Năng Cốt Lõi (Core Features)
 
-1. **🗺️ Bản Đồ Sinh Thái 6 Vùng Chim Đặc Hữu (EBA GIS Map)**:
-   - Bản đồ tương tác Leaflet (CartoDB Voyager) với đường ranh giới chủ quyền và 6 Vùng Chim Đặc Hữu (EBAs) tại Việt Nam.
+1. **🗺️ Bản Đồ Sinh Thái 07 Vùng Chim Đặc Hữu (EBA GIS Map)**:
+   - Bản đồ tương tác Leaflet (CartoDB Voyager) với đường ranh giới chủ quyền và 07 Vùng Chim Đặc Hữu (EBAs) tại Việt Nam (theo Chỉ thị 04/CT-TTg & BirdLife International).
    - Định vị tọa độ thực địa, sinh cảnh rừng nhiệt đới, độ cao phân bố và thuật toán phân tán điểm trùng tọa độ (Spider Radial Offset).
    - Thẻ báu vật chim đặc hữu tích hợp phát âm thanh tiếng hót tự nhiên (Xeno-canto) và bộ đếm hành trình khám phá.
 

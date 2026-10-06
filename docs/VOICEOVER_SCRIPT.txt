@@ -1,8 +1,8 @@
-Chào mừng bạn đến với Avifauna of Vietnam — nền tảng số hóa tương tác giúp khám phá và bảo tồn các loài chim đặc hữu của Việt Nam. Hệ thống bắt đầu bằng Bản đồ sinh thái GIS phân chia theo sáu Vùng Chim Đặc Hữu do BirdLife International xác định.
+Chào mừng bạn đến với Avifauna of Vietnam — Bản đồ sinh thái chim Việt Nam giúp khám phá và bảo tồn các loài chim đặc hữu của nước ta. Hệ thống bắt đầu bằng Bản đồ sinh thái GIS phân chia theo 07 Vùng Chim Đặc Hữu do BirdLife International và Chỉ thị 04/CT-TTg xác định.
 
-Khi chọn một vùng sinh thái như Tây Bắc Hoàng Liên Sơn, bản đồ tự động định vị và lọc ra các loài đặc hữu phân bố ở độ cao này như Khướu hông đỏ hay Họa mi đất mỏ dài.
+Khi chọn một vùng sinh thái như Vùng núi Hoàng Liên Sơn, bản đồ tự động định vị và lọc ra các loài đặc hữu phân bố ở độ cao này như Khướu hông đỏ hay Họa mi đất mỏ dài.
 
-Chuyển sang Vùng Đất thấp miền Trung và chọn loài Niệc nâu, bảng thông tin bên phải cung cấp ngay sinh cảnh, độ cao phân bố và cho phép nghe trực tiếp tiếng hót thực địa từ thư viện Xeno-canto.
+Chuyển sang Vùng đất thấp Trung Bộ và chọn loài Niệc nâu, bảng thông tin bên phải cung cấp ngay sinh cảnh, độ cao phân bố và cho phép nghe trực tiếp tiếng hót thực địa từ thư viện Xeno-canto.
 
 Tại tab Cây Phả Hệ, bánh xe Sunburst và cây phân nhánh giúp bạn trực quan hóa năm cấp phân loại học, dễ dàng tra cứu nguồn gốc tiến hóa từ mười sáu Bộ chim đến từng loài.
 

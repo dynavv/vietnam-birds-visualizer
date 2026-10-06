@@ -25,8 +25,8 @@
    - *"Xin chào Ban giám khảo AI Riser Vietnam 2026! Tôi xin giới thiệu dự án **Avifauna of Vietnam** — Bảo tàng số hóa tương tác và trợ lý AI giám tuyển dành cho hơn 60 loài chim quý hiếm và báu vật đặc hữu của Việt Nam."*
    - Chiếu giao diện trang chủ phong cách bảo tàng tự nhiên học cổ điển.
 
-2. **00:20 - 00:50 (Bản đồ GIS 6 Vùng EBA & Cây Phả Hệ D3.js)**:
-   - *"Ứng dụng tích hợp bản đồ GIS 6 Vùng Chim Đặc Hữu (EBAs) với thuật toán phân tán điểm trùng tọa độ Spider Radial Offset và khẳng định chủ quyền Quần đảo Hoàng Sa, Trường Sa."*
+2. **00:20 - 00:50 (Bản đồ GIS 07 Vùng EBA & Cây Phả Hệ D3.js)**:
+   - *"Ứng dụng tích hợp bản đồ GIS 07 Vùng Chim Đặc Hữu (EBAs theo Chỉ thị 04/CT-TTg) với thuật toán phân tán điểm trùng tọa độ Spider Radial Offset và khẳng định chủ quyền Quần đảo Hoàng Sa, Trường Sa."*
    - Bấm chuyển sang tab Cây Phả hệ: *"Bánh xe Sunburst D3.js trực quan hóa 5 cấp bậc phân loại từ 16 Bộ đến từng loài."*
 
 3. **00:50 - 01:25 (Điểm nhấn Google Gemini AI Integration)**:
@@ -48,7 +48,7 @@
 Được truyền cảm hứng từ kho tàng đa dạng sinh học vô giá của đất nước, tôi đã xây dựng "Avifauna of Vietnam" — Bảo tàng số hóa tương tác & Trợ lý Điểu học thông minh ứng dụng Google Gemini AI và Google Cloud Run.
 
 🌟 Điểm nổi bật của dự án:
-1. 🗺️ Bản đồ GIS Sinh thái 6 Vùng Chim Đặc Hữu (EBAs) do BirdLife International xác định tại Việt Nam, tích hợp khẳng định chủ quyền Quần đảo Hoàng Sa & Trường Sa.
+1. 🗺️ Bản đồ GIS Sinh thái 07 Vùng Chim Đặc Hữu (EBAs) do BirdLife International & Chỉ thị 04/CT-TTg xác định tại Việt Nam, tích hợp khẳng định chủ quyền Quần đảo Hoàng Sa & Trường Sa.
 2. 🌳 Cây phả hệ phát sinh chủng loại D3.js trực quan hóa 16 Bộ và 40+ Họ chim Việt Nam chuẩn IOC World Bird List.
 3. 🧠 Trợ lý Giám tuyển Gemini AI (Google AI Studio): Hỗ trợ hỏi đáp tập tính sinh thái chuyên sâu, phân tích nhận diện ảnh chim thực địa đa phương thức (Multimodal Vision) và tự động ghi chép nhật ký dã ngoại.
 

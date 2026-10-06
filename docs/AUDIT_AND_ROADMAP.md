@@ -1,12 +1,12 @@
 # BÁO CÁO KIỂM TOÁN CHUYÊN SÂU & LỘ TRÌNH PHÁT TRIỂN (AUDIT & ROADMAP)
-## Dự án: Vietnam Birds Visualizer — Trực quan hóa Hệ Điểu học & Bảo tồn Chim Việt Nam
+## Dự án: Avifauna of Vietnam — Bản đồ sinh thái chim Việt Nam
 
 ---
 
 ## 1. TỔNG QUAN DỰ ÁN (EXECUTIVE SUMMARY)
 
 **Vietnam Birds Visualizer** là ứng dụng chuyên khảo tự nhiên học và trực quan hóa dữ liệu đa chiều về 60+ loài chim tiêu biểu và đặc hữu tại Việt Nam. Ứng dụng tích hợp 3 góc nhìn tương tác chuyên sâu:
-1. **Bản đồ GIS Sinh thái (VietnamEBAMap)**: Trực quan hóa 6 Vùng Chim Đặc hữu (Endemic Bird Areas - EBAs do BirdLife International xác định) cùng các tọa độ ghi nhận loài thực địa.
+1. **Bản đồ GIS Sinh thái (VietnamEBAMap)**: Trực quan hóa 07 Vùng Chim Đặc hữu (Endemic Bird Areas - EBAs theo Chỉ thị 04/CT-TTg & BirdLife International) cùng các tọa độ ghi nhận loài thực địa.
 2. **Bánh xe Phân loại học D3 (SunburstWheel & CladogramTreeView)**: Trực quan hóa cây phát sinh chủng loại 16 Bộ, Họ, Chi và Loài chim theo hệ thống phân loại chuẩn quốc tế (IOC World Bird List & Clements).
 3. **Phòng Giám tuyển Mẫu vật (CuratorView)**: Trình bày bản khắc cổ điển (Archival Specimen Plate), báo cáo giải phẫu hình thái, âm thanh tiếng hót thực địa (Xeno-canto) và tài liệu trích dẫn khoa học chuẩn mực.
 
@@ -27,7 +27,7 @@ Quá trình kiểm toán kỹ thuật toàn diện (Adversarial Audit) đã phá
   - `resolveAcademicRefLink`: Chuẩn hóa DOI (`10.` / `doi:10.`) thành canonical URL `https://doi.org/...`. Tự động nhận diện tài liệu cổ Đông Dương (Delacour, Jabouille) để fallback sang tra cứu Thư viện Di sản Đa dạng Sinh học (Biodiversity Heritage Library - BHL), và tài liệu hiện đại sang Google Scholar.
 
 #### 2. Lỗi Mất Giao diện trên Tablet (Viewport Blackout - BUG-01)
-- **Hiện tượng**: Bảng chú giải 6 Vùng Chim Đặc hữu (`EBARegionLegend`) bị biến mất trên màn hình tablet (chiều rộng 768px - 1023px).
+- **Hiện tượng**: Bảng chú giải 07 Vùng Chim Đặc hữu (`EBARegionLegend`) bị biến mất trên màn hình tablet (chiều rộng 768px - 1023px).
 - **Nguyên nhân**: Lớp điều kiện hiển thị bị đặt nhầm `hidden lg:block` thay vì cho phép tablet hiển thị.
 - **Giải pháp**: Đổi breakpoint sang `hidden md:block` trên `VietnamEBAMap.tsx`, giúp hiển thị hoàn hảo trên iPad, Android tablet và màn hình trung bình.
 
@@ -126,5 +126,12 @@ Quá trình kiểm toán kỹ thuật toàn diện (Adversarial Audit) đã phá
 ### Giai đoạn 3: Trải nghiệm Ngoại tuyến & Đóng gói PWA (Q1/2027)
 - Cấu hình Service Worker và IndexedDB lưu trữ cục bộ dữ liệu loài và hình ảnh vector, cho phép các nhà điểu học tra cứu thực địa không cần kết nối mạng.
 
+### Giai đoạn 4: Mở rộng Toàn diện Danh lục Chim Việt Nam (~920+ loài) (Q2/2027)
+- Triển khai Pipeline 2 giai đoạn với Hàng rào Kiểm định Chốt chặn (2-Stage Ingestion & Quality Gatekeeper):
+  + Thu thập tự động qua GBIF, iNaturalist Research Grade, Xeno-canto vào vùng đệm Staging (`candidate-species.json`).
+  + Hàng rào 4 bài test bắt buộc: Tên tiếng Việt đối soát Tam diện (chống AI hallucination); Ảnh 100% đúng loài và HTTP 200 OK; Liên kết học thuật hợp lệ; Cây phân loại đồng bộ.
+  + Chỉ nạp nguyên tử vào `species.json` và `taxonomy.json` khi đạt 100% PASS, tự động rollback nếu test hồi quy thất bại.
+
 ---
 *Tài liệu được biên soạn và kiểm chứng độc lập bởi Đội ngũ Kỹ thuật Bảo tàng Tự nhiên học Điểu học Việt Nam.*
+
