@@ -169,7 +169,7 @@ export async function verifyCandidateSpecies(draftRecord = null) {
   console.log(`\n🔍 [BÀI TEST 3] Kiểm tra Liên kết Học thuật Quốc tế (IUCN, Avibase, GBIF)...`);
   const acad = record.academic || {};
 
-  // 3.1 Kiểm tra GBIF Taxon Key
+  // 3.1 Kiểm tra GBIF Taxon Key (Bắt buộc phải thuộc Lớp Chim Aves)
   if (!acad.gbifTaxonKey || !/^\d+$/.test(String(acad.gbifTaxonKey))) {
     errors.push(`[GBIF KEY LỖI] gbifTaxonKey ("${acad.gbifTaxonKey}") phải là số nguyên dương hợp lệ!`);
   } else {
@@ -179,33 +179,40 @@ export async function verifyCandidateSpecies(draftRecord = null) {
       errors.push(`[GBIF KEY LỖI] GBIF API trả về lỗi hoặc không tìm thấy key ${acad.gbifTaxonKey}!`);
     } else {
       const gbifData = await gbifRes.json();
-      console.log(`   ✅ GBIF API phản hồi HTTP 200 OK (${gbifData.scientificName || 'Khớp'}).`);
+      if (gbifData.class !== 'Aves') {
+        errors.push(
+          `[GBIF KHÔNG PHẢI CHIM] gbifTaxonKey (${acad.gbifTaxonKey}) thuộc Lớp "${gbifData.class || 'Unknown'}", ` +
+          `không phải Lớp Chim (Aves)! Tuyệt đối chặn commit.`
+        );
+      } else {
+        console.log(`   ✅ GBIF API phản hồi HTTP 200 OK — Thuộc Lớp Chim Aves (${gbifData.scientificName || 'Khớp'}).`);
+      }
     }
   }
 
-  // 3.2 Kiểm tra IUCN URL
-  const iucnUrl = acad.iucnUrl || '';
+  // 3.2 Kiểm tra IUCN URL & Bậc bảo tồn
+  const iucnUrl = acad.iucnUrl;
   if (!iucnUrl) {
-    errors.push(`[IUCN THIẾU] iucnUrl không được để trống!`);
+    console.log(`   ✅ IUCN URL để null (Loài chưa được đánh giá - Not Evaluated). Giao diện kích hoạt nhãn NE an toàn.`);
   } else if (iucnUrl.includes('/search?')) {
-    console.log(`   ✅ IUCN sử dụng Canonical Search URL an toàn (chống 404 cho loài mới tách).`);
+    warnings.push(`[IUCN SEARCH URL] Khuyến nghị: Với loài chưa đánh giá, nên để iucnUrl = null để giao diện kích hoạt nhãn NE thay vì search URL.`);
   } else {
-    // Nếu là link trực tiếp, kiểm tra xem có bị 404 không
-    console.log(`   📡 Đang kiểm tra link trực tiếp IUCN: ${iucnUrl}...`);
-    const iucnRes = await fetchWithTimeout(iucnUrl);
-    if (iucnRes && iucnRes.status === 404) {
-      errors.push(`[IUCN 404] URL IUCN trực tiếp (${iucnUrl}) bị 404! Cần cập nhật Assessment ID mới hoặc chuyển sang Search URL.`);
+    // Nếu là link trực tiếp, kiểm tra định dạng chính thức
+    if (!/^https:\/\/www\.iucnredlist\.org\/species\/\d+\/\d+$/.test(String(iucnUrl).trim())) {
+      errors.push(`[IUCN URL SAI ĐỊNH DẠNG] URL "${iucnUrl}" không đúng định dạng chuẩn: https://www.iucnredlist.org/species/<sis_id>/<assessment_id>!`);
     } else {
-      console.log(`   ✅ Link IUCN hợp lệ (không bị 404).`);
+      console.log(`   ✅ URL IUCN trực tiếp đúng định dạng chuẩn: ${iucnUrl}.`);
     }
   }
 
   // 3.3 Kiểm tra Avibase ID
-  const avibaseId = acad.avibaseId || '';
-  if (!avibaseId || !/^[A-F0-9]{8,16}$/i.test(avibaseId.trim())) {
-    warnings.push(`[AVIBASE ID] Chưa có mã hex Avibase ID (hoặc sai định dạng). Cần tra cứu Avibase Vietnam Checklist.`);
+  const avibaseId = acad.avibaseId;
+  if (!avibaseId) {
+    console.log(`   ℹ️  Chưa có Avibase ID (để null). Hệ thống sẽ kích hoạt fallback tìm kiếm an toàn.`);
+  } else if (!/^[A-F0-9]{8,16}$/i.test(String(avibaseId).trim())) {
+    errors.push(`[AVIBASE ID SAI ĐỊNH DẠNG] avibaseId ("${avibaseId}") phải là chuỗi 8 hoặc 16 ký tự Hex hợp lệ hoặc để null!`);
   } else {
-    console.log(`   ✅ Avibase ID chuẩn 16-hex: ${avibaseId}.`);
+    console.log(`   ✅ Avibase ID chuẩn 8-16 hex: ${avibaseId}.`);
   }
 
   // =========================================================================

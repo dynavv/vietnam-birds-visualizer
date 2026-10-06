@@ -31,6 +31,22 @@ if (!fs.existsSync(DRAFTS_DIR)) {
   fs.mkdirSync(DRAFTS_DIR, { recursive: true });
 }
 
+// Đọc token IUCN API v4 từ môi trường hoặc .env.local
+function getIucnToken() {
+  const envPaths = [
+    path.resolve(__dirname, '../../.env.local'),
+    path.resolve(__dirname, '../../.env')
+  ];
+  for (const p of envPaths) {
+    if (fs.existsSync(p)) {
+      const content = fs.readFileSync(p, 'utf8');
+      const m = content.match(/VITE_IUCN_API_TOKEN=([^\r\n]+)/);
+      if (m) return m[1].trim();
+    }
+  }
+  return process.env.VITE_IUCN_API_TOKEN || null;
+}
+
 // Hàm fetch có timeout và User-Agent
 async function fetchJson(url, timeoutMs = 8000) {
   try {
@@ -73,14 +89,19 @@ export async function harvestSpeciesData(targetScientificName) {
     console.log(`  ⚠️  CẢNH BÁO: Loài "${cleanName}" CHƯA CÓ trong Master Registry! Cần bổ sung tên chuẩn trước khi commit.`);
   }
 
-  // 2. Thu thập từ GBIF Taxonomy API
-  console.log(`📡 [2/5] Truy vấn GBIF Taxonomy Backbone API...`);
-  const gbifData = await fetchJson(`https://api.gbif.org/v1/species/match?name=${encodeURIComponent(cleanName)}`);
+  // 2. Thu thập từ GBIF Taxonomy API (Khóa Lớp Chim Aves)
+  console.log(`📡 [2/5] Truy vấn GBIF Taxonomy Backbone API (Khóa Lớp Chim Aves)...`);
+  const gbifData = await fetchJson(`https://api.gbif.org/v1/species/match?name=${encodeURIComponent(cleanName)}&class=Aves`);
   
-  const order = gbifData?.order || masterRecord?.order || 'Passeriformes';
-  const family = gbifData?.family || masterRecord?.family || 'Leiothrichidae';
-  const genus = gbifData?.genus || cleanName.split(' ')[0] || '';
-  const gbifTaxonKey = gbifData?.usageKey ? String(gbifData.usageKey) : (masterRecord?.gbifTaxonKey || '');
+  const isAves = gbifData?.class === 'Aves';
+  if (gbifData && !isAves) {
+    console.log(`  ⚠️  CẢNH BÁO GBIF: Kết quả match trả về Lớp "${gbifData.class}", không phải Lớp Chim (Aves)! Bỏ qua key.`);
+  }
+
+  const order = (isAves ? gbifData?.order : null) || masterRecord?.order || 'Passeriformes';
+  const family = (isAves ? gbifData?.family : null) || masterRecord?.family || 'Leiothrichidae';
+  const genus = (isAves ? gbifData?.genus : null) || cleanName.split(' ')[0] || '';
+  const gbifTaxonKey = (isAves && gbifData?.usageKey) ? String(gbifData.usageKey) : (masterRecord?.gbifTaxonKey || '');
   console.log(`  ✅ GBIF Key: ${gbifTaxonKey} | Bộ: ${order} | Họ: ${family} | Chi: ${genus}`);
 
   // 3. Thu thập từ iNaturalist Research Grade API (Áp dụng Hàng rào Ảnh 3 Lớp)
@@ -207,10 +228,55 @@ export async function harvestSpeciesData(targetScientificName) {
     console.log(`  ⚠️  Chưa tìm thấy bản thu âm Xeno-canto phù hợp.`);
   }
 
-  // 5. Chuẩn bị liên kết học thuật (IUCN & Avibase)
-  console.log(`📡 [5/5] Chuẩn bị liên kết học thuật (IUCN Red List & Avibase)...`);
-  const iucnSearchUrl = `https://www.iucnredlist.org/search?query=${encodeURIComponent(cleanName)}&searchType=species`;
-  const avibaseId = masterRecord?.avibaseId || '';
+  // 5. Thu thập liên kết học thuật chính thức (IUCN API v4 & Avibase)
+  console.log(`📡 [5/5] Truy vấn IUCN Red List API v4 & Avibase...`);
+  const iucnToken = getIucnToken();
+  let officialIucnUrl = null;
+  let iucnStatus = masterRecord?.iucn || 'LC';
+
+  const nameParts = cleanName.split(' ');
+  const genusName = nameParts[0];
+  const speciesNamePart = nameParts.slice(1).join(' ');
+
+  if (iucnToken && genusName && speciesNamePart) {
+    try {
+      const iucnApiUrl = `https://api.iucnredlist.org/api/v4/taxa/scientific_name?genus_name=${encodeURIComponent(genusName)}&species_name=${encodeURIComponent(speciesNamePart)}`;
+      const res = await fetch(iucnApiUrl, {
+        headers: {
+          'User-Agent': 'VietnamBirdsVisualizer-Pipeline/1.0',
+          'Authorization': `Bearer ${iucnToken}`
+        },
+        signal: AbortSignal.timeout(8000)
+      });
+      if (res.ok) {
+        const iucnData = await res.json();
+        const assessments = iucnData?.assessments || [];
+        const latest = assessments.find(a => a.latest) || assessments[0];
+        if (latest) {
+          officialIucnUrl = latest.url;
+          if (latest.red_list_category_code) {
+            iucnStatus = latest.red_list_category_code;
+          }
+          console.log(`  ✅ Đã lấy URL đánh giá chính thức từ IUCN API v4: ${officialIucnUrl} (Bậc: ${iucnStatus})`);
+        }
+      } else if (res.status === 404) {
+        console.log(`  ℹ️  Loài "${cleanName}" chưa có hồ sơ trên IUCN Red List API v4 (Not Evaluated). Thiết lập iucnUrl = null để kích hoạt nhãn NE an toàn.`);
+      } else {
+        console.log(`  ⚠️  IUCN API v4 phản hồi HTTP ${res.status}.`);
+      }
+    } catch (e) {
+      console.log(`  ⚠️  Lỗi truy vấn IUCN API v4: ${e.message}`);
+    }
+  }
+
+  const avibaseId = (masterRecord?.avibaseId && /^[A-F0-9]{8,16}$/i.test(masterRecord.avibaseId.trim())) 
+    ? masterRecord.avibaseId.trim() 
+    : null;
+  if (avibaseId) {
+    console.log(`  ✅ Avibase ID chuẩn: ${avibaseId}`);
+  } else {
+    console.log(`  ℹ️  Chưa có Avibase ID được xác minh. Để null để kích hoạt fallback tìm kiếm an toàn.`);
+  }
 
   // Xây dựng bản ghi dự thảo hoàn chỉnh theo interface BirdSpecies
   const candidateRecord = {
@@ -231,7 +297,7 @@ export async function harvestSpeciesData(targetScientificName) {
     isEndemic: !!masterRecord?.isEndemic,
     endemicScope: masterRecord?.endemicScope || 'none',
     conservation: {
-      iucn: masterRecord?.iucn || 'CR',
+      iucn: iucnStatus,
       vietnamRedList: masterRecord?.vietnamRedList || 'CR',
       description: masterRecord?.conservationDescription || `Loài thuộc nhóm Cực kỳ nguy cấp (CR) trong Sách Đỏ Việt Nam và Danh mục động vật rừng nguy cấp, quý, hiếm (Nghị định 84/2021/NĐ-CP Nhóm IB).`,
       legalFramework: masterRecord?.legalFramework ? {
@@ -263,7 +329,7 @@ export async function harvestSpeciesData(targetScientificName) {
     academic: {
       iocTaxonCode: `IOC-${slugId.toUpperCase().slice(0, 10)}`,
       avibaseId: avibaseId,
-      iucnUrl: iucnSearchUrl,
+      iucnUrl: officialIucnUrl,
       gbifTaxonKey: gbifTaxonKey,
       primaryLiterature: masterRecord?.primaryLiterature || [
         {
