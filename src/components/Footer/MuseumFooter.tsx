@@ -27,7 +27,7 @@ export const MuseumFooter: React.FC<MuseumFooterProps> = ({ className = '' }) =>
           <div className="flex items-center gap-2 text-ink-700 text-center md:text-left">
             <Sparkles className="w-3.5 h-3.5 text-natural-moss shrink-0 hidden sm:inline" />
             <p>
-              <strong className="font-serif font-bold text-ink-900">Avifauna of Vietnam</strong> &copy; {new Date().getFullYear()} — Dự án Giáo dục &amp; Lưu trữ Số Đa dạng Sinh học (Phi Lợi Nhuận)
+              <strong className="font-serif font-bold text-ink-900">Avifauna of Vietnam</strong> &copy; {new Date().getFullYear()} — Dự án Giáo dục &amp; Bảo tồn Đa dạng Sinh học (Phi Lợi Nhuận)
             </p>
           </div>
 

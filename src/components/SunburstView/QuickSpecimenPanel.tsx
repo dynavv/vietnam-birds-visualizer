@@ -82,7 +82,7 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
             </span>
           )}
 
-          {species.isEndemic && <EndemicBadge size="sm" />}
+          {species.isEndemic && <EndemicBadge size="sm" scope={species.endemicScope} />}
         </div>
 
         <ConservationBadge

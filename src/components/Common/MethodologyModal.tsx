@@ -11,7 +11,8 @@ import {
   ShieldCheck,
   Heart,
   MessageSquarePlus,
-  Send
+  Send,
+  Compass
 } from 'lucide-react';
 
 export type MethodologyTab = 'about' | 'data' | 'licensing';
@@ -85,23 +86,23 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-10 bg-stone-900/60 backdrop-blur-sm animate-fadeIn"
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 md:p-10 bg-black/70 backdrop-blur-md animate-fadeIn"
       data-testid="methodology-modal"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-4xl max-h-[90vh] bg-paper-50 rounded-2xl border-2 border-paper-border shadow-2xl overflow-hidden flex flex-col"
+        className="relative w-full max-w-4xl max-h-[85dvh] sm:max-h-[90vh] bg-paper-50 rounded-2xl border-2 border-paper-border shadow-2xl overflow-hidden flex flex-col my-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="flex flex-col gap-3 px-6 py-4 bg-paper-100/95 border-b border-paper-border">
+        <div className="flex flex-col gap-3 px-4 sm:px-6 py-3.5 sm:py-4 bg-paper-100/95 border-b border-paper-border shrink-0">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className="p-2 rounded-xl bg-natural-moss/10 text-natural-moss border border-natural-moss/20">
                 <Library className="w-5 h-5" />
               </div>
               <div>
-                <h2 className="font-serif text-lg sm:text-xl font-bold text-ink-900">
+                <h2 className="font-serif text-lg sm:text-xl font-bold text-ink-900 line-clamp-1 sm:line-clamp-none">
                   Hồ Sơ Dự Án, Nguồn Học Thuật &amp; Bản Quyền
                 </h2>
                 <p className="text-[11px] sm:text-xs text-ink-600 font-sans mt-0.5">
@@ -112,7 +113,7 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="p-1.5 rounded-lg hover:bg-paper-200 text-ink-600 transition-colors cursor-pointer"
+              className="min-w-[36px] min-h-[36px] flex items-center justify-center p-2 rounded-xl hover:bg-paper-200 text-ink-700 transition-colors cursor-pointer shrink-0"
               aria-label="Đóng cửa sổ"
             >
               <X className="w-5 h-5" />
@@ -120,7 +121,7 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
           </div>
 
           {/* Tab Navigation Switcher */}
-          <div className="flex items-center gap-1.5 pt-1 border-t border-paper-border/60">
+          <div className="flex items-center gap-1.5 pt-1 border-t border-paper-border/60 overflow-x-auto scrollbar-none shrink-0">
             <button
               type="button"
               onClick={() => setActiveTab('about')}
@@ -163,7 +164,7 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
         </div>
 
         {/* Modal Scrollable Body */}
-        <div className="p-6 overflow-y-auto space-y-5 text-xs sm:text-sm text-ink-800 font-sans leading-relaxed">
+        <div className="flex-1 min-h-0 p-4 sm:p-6 overflow-y-auto space-y-5 text-xs sm:text-sm text-ink-800 font-sans leading-relaxed overscroll-contain">
           
           {/* TAB 1: VỀ DỰ ÁN (ABOUT) */}
           {activeTab === 'about' && (
@@ -174,16 +175,16 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
                   <h3>Sứ Mệnh Giáo Dục &amp; Tôn Vinh Thiên Nhiên Việt Nam</h3>
                 </div>
                 <p className="text-ink-700 leading-relaxed">
-                  <strong>Avifauna of Vietnam</strong> là dự án số hóa bảo tàng tự nhiên học tương tác, phi thương mại, được xây dựng nhằm mục đích giới thiệu và nâng cao nhận thức về thế giới các loài chim hoang dã phong phú của Việt Nam đến với đông đảo học sinh, sinh viên, các nhà nghiên cứu và công chúng yêu thiên nhiên.
+                  <strong>Avifauna of Vietnam</strong> là dự án số hóa bảo tàng tự nhiên học tương tác, phi thương mại, được xây dựng nhằm mục đích giới thiệu và nâng cao nhận thức về muôn loài chim hoang dã phong phú của Việt Nam đến với đông đảo học sinh, sinh viên và cộng đồng yêu thiên nhiên.
                 </p>
                 <p className="text-ink-700 leading-relaxed">
-                  Ứng dụng kết hợp giữa hệ thống bản đồ địa lý sinh thái (GIS Mapping) của 6 Vùng Chim Đặc Hữu (EBAs), cây phả hệ phát sinh chủng loại (Phylogenetic Tree) và cẩm nang nhận dạng hình thái chi tiết nhằm mang lại trải nghiệm khám phá khoa học trực quan, trang nhã và cuốn hút nhất.
+                  Ứng dụng kết hợp giữa hệ thống bản đồ địa lý sinh thái (GIS Mapping) của 07 Vùng Chim Đặc Hữu (EBAs), cây phả hệ phát sinh chủng loại (Phylogenetic Tree) và cẩm nang nhận dạng hình thái chi tiết nhằm mang lại trải nghiệm khám phá khoa học trực quan, trang nhã và cuốn hút nhất.
                 </p>
               </section>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                 <div className="p-3.5 rounded-xl bg-paper-100 border border-paper-border space-y-1">
-                  <h4 className="font-serif font-bold text-ink-900 text-xs sm:text-sm">🗺️ 6 Vùng Đặc Hữu (EBAs)</h4>
+                  <h4 className="font-serif font-bold text-ink-900 text-xs sm:text-sm">🗺️ 07 Vùng Đặc Hữu (EBAs)</h4>
                   <p className="text-[11px] sm:text-xs text-ink-600">Định vị địa bàn cư trú, ranh giới sinh thái và tọa độ chính xác của các loài đặc hữu.</p>
                 </div>
                 <div className="p-3.5 rounded-xl bg-paper-100 border border-paper-border space-y-1">
@@ -371,7 +372,7 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
                   <li className="flex items-start space-x-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
                     <div>
-                      <strong>BirdLife International &amp; Viện Sinh thái và Tài nguyên Sinh vật (VAST)</strong>: Dữ liệu phân vùng 6 EBAs và các nghiên cứu mô tả loài đặc hữu mới tại Ngọc Linh, Kon Ka Kinh, Hoàng Liên Sơn.
+                      <strong>BirdLife International &amp; Viện Sinh thái và Tài nguyên Sinh vật (VAST)</strong>: Dữ liệu phân vùng 07 EBAs (theo Chỉ thị 04/CT-TTg của Thủ tướng Chính phủ và BirdLife International) cùng các nghiên cứu mô tả loài đặc hữu mới tại Ngọc Linh, Kon Ka Kinh, Hoàng Liên Sơn.
                     </div>
                   </li>
                 </ul>
@@ -402,10 +403,20 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
                 </p>
               </section>
 
+              <section className="p-4 rounded-xl bg-paper-100 border border-paper-border space-y-2">
+                <div className="flex items-center space-x-2 text-natural-forest font-serif font-bold text-base">
+                  <Compass className="w-5 h-5" />
+                  <h3>3. Dữ Liệu Bản Đồ Địa Lý &amp; Không Gian (GIS &amp; Basemaps)</h3>
+                </div>
+                <p className="text-ink-700 leading-relaxed">
+                  Lớp bản đồ nền địa lý sinh thái sử dụng dữ liệu không gian mở từ cộng đồng <strong>OpenStreetMap</strong> (giấy phép ODbL) và phong cách trực quan hóa từ <strong>CARTO Basemaps</strong> theo tiêu chuẩn nghiên cứu và giáo dục phi thương mại.
+                </p>
+              </section>
+
               <section className="p-4 rounded-xl bg-amber-50/80 border border-amber-200/80 text-xs text-amber-950 flex items-start space-x-3">
                 <Award className="w-5 h-5 text-amber-800 mt-0.5 shrink-0" />
                 <div>
-                  <strong>Tuyên bố Phi Thương Mại &amp; Miễn Trừ Trách Nhiệm (Non-Commercial Disclaimer):</strong> Toàn bộ nội dung của dự án phục vụ 100% cho mục đích nghiên cứu, học tập và giáo dục cộng đồng. Mọi nhãn hiệu, danh pháp khoa học và dữ liệu phân bố đều thuộc về các cơ quan chủ quản tương ứng (BirdLife International, IUCN, IOC World Bird List, Xeno-canto, iNaturalist).
+                  <strong>Tuyên bố Phi Thương Mại &amp; Miễn Trừ Trách Nhiệm (Non-Commercial Disclaimer):</strong> Toàn bộ nội dung của dự án phục vụ 100% cho mục đích nghiên cứu, học tập và giáo dục cộng đồng. Mọi nhãn hiệu, danh pháp khoa học và dữ liệu phân bố đều thuộc về các cơ quan chủ quản tương ứng (BirdLife International, IUCN, IOC World Bird List, Xeno-canto, iNaturalist, OpenStreetMap, CARTO).
                 </div>
               </section>
             </div>

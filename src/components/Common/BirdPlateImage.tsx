@@ -8,6 +8,8 @@ interface BirdPlateImageProps {
   imageClassName?: string;
   aspectRatio?: 'square' | 'plate' | 'cover';
   onClick?: () => void;
+  priority?: boolean;
+  preferThumbnail?: boolean;
 }
 
 // Bảng màu lông đặc trưng theo từng Bộ chim để vẽ bản khắc tự nhiên học
@@ -32,11 +34,17 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
   className = '',
   imageClassName = '',
   aspectRatio = 'square',
-  onClick
+  onClick,
+  priority = false,
+  preferThumbnail = false
 }) => {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
+  const [thumbLoaded, setThumbLoaded] = useState<boolean>(false);
+  const [useFallbackToRaw, setUseFallbackToRaw] = useState<boolean>(false);
   const [useThumbnailFallback, setUseThumbnailFallback] = useState<boolean>(false);
   const [dynamicPhoto, setDynamicPhoto] = useState<ResolvedPhotoInfo | null>(null);
+  const [altUrl, setAltUrl] = useState<string | null>(null);
+  const [attemptedAlt, setAttemptedAlt] = useState<boolean>(false);
   const [attemptedDynamic, setAttemptedDynamic] = useState<boolean>(false);
   const [hasAllErrors, setHasAllErrors] = useState<boolean>(false);
 
@@ -46,8 +54,12 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
   // Reset lifecycle states whenever species or URLs change
   React.useEffect(() => {
     setIsLoaded(false);
+    setThumbLoaded(false);
+    setUseFallbackToRaw(false);
     setUseThumbnailFallback(false);
     setDynamicPhoto(null);
+    setAltUrl(null);
+    setAttemptedAlt(false);
     setAttemptedDynamic(false);
     setHasAllErrors(false);
   }, [species.id, rawImageUrl, thumbnailUrl]);
@@ -72,23 +84,73 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
     }
   };
 
+  // Helper to generate alternative file extension (.jpg <-> .jpeg) or CDN domain for iNaturalist
+  const getAlternativeUrl = (url?: string): string | null => {
+    if (!url || !url.includes('inaturalist')) return null;
+    if (url.includes('.jpeg')) {
+      return url.replace('.jpeg', '.jpg');
+    }
+    if (url.includes('.jpg') && !url.includes('.jpeg')) {
+      return url.replace('.jpg', '.jpeg');
+    }
+    if (url.includes('inaturalist-open-data.s3.amazonaws.com')) {
+      return url.replace('inaturalist-open-data.s3.amazonaws.com', 'static.inaturalist.org');
+    }
+    return null;
+  };
+
   // Determine current active image source
   let currentSrc = '';
-  if (dynamicPhoto) {
+  if (altUrl) {
+    currentSrc = altUrl;
+  } else if (dynamicPhoto) {
     currentSrc = dynamicPhoto.imageUrl || dynamicPhoto.thumbnailUrl;
-  } else if (!useThumbnailFallback && rawImageUrl) {
-    currentSrc = rawImageUrl;
-  } else if (thumbnailUrl) {
-    currentSrc = thumbnailUrl;
+  } else if (preferThumbnail) {
+    if (!useFallbackToRaw && thumbnailUrl) {
+      currentSrc = thumbnailUrl;
+    } else if (rawImageUrl) {
+      currentSrc = rawImageUrl;
+    }
+  } else {
+    if (!useThumbnailFallback && rawImageUrl) {
+      currentSrc = rawImageUrl;
+    } else if (thumbnailUrl) {
+      currentSrc = thumbnailUrl;
+    }
   }
 
   const canAttemptImage = Boolean(currentSrc) && !hasAllErrors;
 
   const handleImageError = () => {
-    if (!useThumbnailFallback && thumbnailUrl && thumbnailUrl !== rawImageUrl) {
+    if (preferThumbnail && !useFallbackToRaw && rawImageUrl && rawImageUrl !== thumbnailUrl) {
+      setUseFallbackToRaw(true);
+      setIsLoaded(false);
+    } else if (!preferThumbnail && !useThumbnailFallback && thumbnailUrl && thumbnailUrl !== rawImageUrl) {
       // Step 2: Try static thumbnail
       setUseThumbnailFallback(true);
       setIsLoaded(false);
+    } else if (!attemptedAlt) {
+      // Step 2.5: Try alternative file extension (.jpg <-> .jpeg) or CDN domain
+      const alt = getAlternativeUrl(rawImageUrl || thumbnailUrl);
+      setAttemptedAlt(true);
+      if (alt && alt !== rawImageUrl && alt !== thumbnailUrl) {
+        setAltUrl(alt);
+        setIsLoaded(false);
+      } else if (!attemptedDynamic && species.scientificName) {
+        setAttemptedDynamic(true);
+        resolveDynamicPhoto(species.scientificName).then((resolved) => {
+          if (resolved) {
+            setDynamicPhoto(resolved);
+            setIsLoaded(false);
+          } else {
+            setHasAllErrors(true);
+          }
+        }).catch(() => {
+          setHasAllErrors(true);
+        });
+      } else {
+        setHasAllErrors(true);
+      }
     } else if (!attemptedDynamic && species.scientificName) {
       // Step 3: Self-Healing Dynamic Resolver via iNaturalist / Wikipedia
       setAttemptedDynamic(true);
@@ -114,29 +176,48 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
       className={`relative w-full overflow-hidden bg-paper-100 border border-paper-border rounded-lg ${getAspectRatioClass()} ${className}`}
       data-testid={`bird-plate-${species.id}`}
     >
+      {/* 0. Underlay progressive thumbnail (hiển thị mờ tức thì trong lúc bản nét cao đang nạp) */}
+      {!preferThumbnail && thumbnailUrl && rawImageUrl && currentSrc === rawImageUrl && !isLoaded && !hasAllErrors && (
+        <img
+          src={thumbnailUrl}
+          alt=""
+          aria-hidden="true"
+          className={`absolute inset-0 w-full h-full object-cover object-[center_25%] filter blur-[3px] scale-105 transition-opacity duration-300 pointer-events-none ${
+            thumbLoaded ? 'opacity-85' : 'opacity-0'
+          } ${imageClassName}`}
+          loading="eager"
+          onLoad={() => setThumbLoaded(true)}
+        />
+      )}
+
       {/* 1. Main Image / Secondary Thumbnail (nếu có URL hợp lệ và chưa lỗi hoàn toàn) */}
       {canAttemptImage && (
         <img
           key={`${species.id}-${currentSrc}`}
           src={currentSrc}
           alt={`Minh họa loài ${species.vietnameseName} (${species.scientificName})`}
-          className={`w-full h-full object-cover object-[center_25%] transition-all duration-500 ${
+          className={`w-full h-full object-cover object-[center_25%] transition-all duration-500 relative z-10 ${
             isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           } ${imageClassName}`}
-          loading="lazy"
+          loading={priority ? 'eager' : 'lazy'}
+          {...(priority ? { fetchpriority: 'high' } : {})}
           onLoad={() => setIsLoaded(true)}
           onError={handleImageError}
         />
       )}
 
-      {/* 2. Naturalist Botanical Vector Plate Artwork (Hiển thị khi ảnh đang tải hoặc ảnh lỗi/chưa có ảnh) */}
-      {(!canAttemptImage || !isLoaded) && (
+      {/* 2. Naturalist Botanical Vector Plate Artwork & Shimmer Skeleton (Hiển thị khi ảnh đang tải hoặc ảnh lỗi/chưa có ảnh) */}
+      {(!canAttemptImage || (!isLoaded && !thumbLoaded)) && (
         <div
           className={`absolute inset-0 flex flex-col items-center justify-between p-3 select-none transition-opacity duration-300 ${
-            isLoaded && canAttemptImage ? 'opacity-0 pointer-events-none' : 'opacity-100'
+            (isLoaded || thumbLoaded) && canAttemptImage ? 'opacity-0 pointer-events-none' : 'opacity-100'
           }`}
           style={{ backgroundColor: '#FAF7F0' }}
         >
+          {/* Subtle Shimmer Ray during loading */}
+          {!isLoaded && canAttemptImage && (
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-stone-200/40 to-transparent -translate-x-full animate-pulse pointer-events-none" />
+          )}
           {/* Double Archival Plate Inset Border */}
           <div className="absolute inset-1.5 border border-stone-300/80 rounded pointer-events-none" />
           <div className="absolute inset-2 border border-dashed border-stone-200/90 rounded pointer-events-none" />

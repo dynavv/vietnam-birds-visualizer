@@ -266,7 +266,7 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
 
             {/* Badges Matrix */}
             <div className="flex flex-wrap items-center gap-2 pt-1">
-              {species.isEndemic && <EndemicBadge size="md" />}
+              {species.isEndemic && <EndemicBadge size="md" scope={species.endemicScope} />}
               <ConservationBadge
                 status={species.conservation.iucn}
                 vietnamRedList={species.conservation.vietnamRedList}
@@ -290,6 +290,58 @@ export const CuratorView: React.FC<CuratorViewProps> = ({
                   "{cleanHookText(species.conservation.description)}"
                 </div>
               )}
+
+              {/* Danh mục bảo vệ theo Nghị định & Chỉ thị Chính phủ (Chỉ hiển thị khi loài thuộc diện bảo vệ) */}
+              {(() => {
+                const legal = species.conservation.legalFramework;
+                const hasProtection = Boolean(
+                  legal && (
+                    legal.directive04Flagship ||
+                    legal.decree84Group === 'IB' ||
+                    legal.decree84Group === 'IIB' ||
+                    legal.decree160Priority
+                  )
+                );
+                if (!hasProtection || !legal) return null;
+
+                return (
+                  <div className="pt-2 border-t border-paper-border/60 flex flex-wrap items-center gap-1.5 text-xs">
+                    <span className="font-semibold text-ink-700">Danh mục bảo vệ:</span>
+                    {legal.directive04Flagship && (
+                      <span
+                        className="px-2 py-0.5 rounded-md bg-rose-100 text-rose-800 border border-rose-300 font-medium text-[11px]"
+                        title="Chỉ thị số 04/CT-TTg ngày 17/5/2022 của Thủ tướng Chính phủ"
+                      >
+                        Chỉ thị 04/CT-TTg
+                      </span>
+                    )}
+                    {legal.decree84Group === 'IB' && (
+                      <span
+                        className="px-2 py-0.5 rounded-md bg-red-100 text-red-800 border border-red-300 font-medium text-[11px]"
+                        title="Nghị định 84/2021/NĐ-CP: Nhóm IB - Nghiêm cấm khai thác vì mục đích thương mại"
+                      >
+                        Nhóm IB (Nghị định 84)
+                      </span>
+                    )}
+                    {legal.decree84Group === 'IIB' && (
+                      <span
+                        className="px-2 py-0.5 rounded-md bg-amber-100 text-amber-800 border border-amber-300 font-medium text-[11px]"
+                        title="Nghị định 84/2021/NĐ-CP: Nhóm IIB - Hạn chế khai thác vì mục đích thương mại"
+                      >
+                        Nhóm IIB (Nghị định 84)
+                      </span>
+                    )}
+                    {legal.decree160Priority && (
+                      <span
+                        className="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 border border-emerald-300 font-medium text-[11px]"
+                        title="Nghị định 160/2013/NĐ-CP & 64/2019/NĐ-CP: Danh mục loài nguy cấp, quý, hiếm được ưu tiên bảo vệ"
+                      >
+                        Ưu tiên bảo vệ (NĐ 160)
+                      </span>
+                    )}
+                  </div>
+                );
+              })()}
             </div>
           </section>
 

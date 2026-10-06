@@ -25,7 +25,7 @@ describe('MuseumHeader Component', () => {
     );
 
     expect(screen.getByText('Avifauna of Vietnam')).toBeDefined();
-    expect(screen.getByText(/Giám tuyển & Trực quan hóa Phân loại học/i)).toBeDefined();
+    expect(screen.getByText(/Bản đồ sinh thái chim Việt Nam/i)).toBeDefined();
 
     // 3 Tabs
     expect(screen.getByText('Bản đồ Sinh thái')).toBeDefined();
@@ -99,5 +99,45 @@ describe('MuseumHeader Component', () => {
     fireEvent.click(searchBtn);
     const searchInput = screen.getByPlaceholderText(/Tìm tên chim/i);
     expect(searchInput).toBeDefined();
+  });
+
+  it('toggles mobile view dropdown selector and switches views', () => {
+    render(
+      <TaxonomyProvider>
+        <TestHeaderContainer />
+      </TaxonomyProvider>
+    );
+
+    const selectorBtn = screen.getByLabelText('Chọn chế độ xem');
+    expect(selectorBtn).toBeDefined();
+
+    // Click to open dropdown
+    fireEvent.click(selectorBtn);
+
+    // Dropdown contains options
+    const mobileDropdown = screen.getByText('Chế độ xem');
+    expect(mobileDropdown).toBeDefined();
+
+    // Click "Cây Phả hệ" inside dropdown
+    const options = screen.getAllByText('Cây Phả hệ');
+    // First is desktop nav, second is mobile dropdown item
+    const dropdownOption = options[options.length - 1];
+    fireEvent.click(dropdownOption);
+
+    expect(screen.getByTestId('current-view').textContent).toBe('sunburst');
+  });
+
+  it('opens methodology modal when clicking mobile info (i) button', () => {
+    render(
+      <TaxonomyProvider>
+        <TestHeaderContainer />
+      </TaxonomyProvider>
+    );
+
+    const infoBtn = screen.getByLabelText('Thông tin phương pháp luận và bản quyền');
+    expect(infoBtn).toBeDefined();
+
+    fireEvent.click(infoBtn);
+    expect(screen.getByTestId('methodology-modal')).toBeDefined();
   });
 });

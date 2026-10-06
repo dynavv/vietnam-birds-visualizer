@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Compass, TreePine, Feather, Dices, Search, X } from 'lucide-react';
+import { Compass, TreePine, Feather, Dices, Search, X, ChevronDown, Info } from 'lucide-react';
 import { useTaxonomy, ViewMode } from '../../context/TaxonomyContext';
+import { MethodologyModal } from '../Common/MethodologyModal';
 
 export interface MuseumHeaderProps {
   className?: string;
@@ -54,6 +55,8 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
 
   const [diceRolling, setDiceRolling] = useState<boolean>(false);
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  const [isInfoModalOpen, setIsInfoModalOpen] = useState<boolean>(false);
   const searchInputRef = useRef<HTMLInputElement | null>(null);
 
   const handleRandomClick = () => {
@@ -92,26 +95,29 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
       .slice(0, 6);
   }, [allSpecies, searchQuery]);
 
+  const currentTab = NAV_TABS.find(t => t.id === activeView) || NAV_TABS[0];
+  const CurrentIcon = currentTab.icon;
+
   return (
     <header
-      className={`border-b border-paper-border bg-paper-100/95 backdrop-blur-md px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 sticky top-0 z-40 shadow-paper-card w-full ${className}`}
+      className={`border-b border-paper-border bg-paper-100/95 backdrop-blur-md px-3 sm:px-6 md:px-8 py-2 sm:py-3 sticky top-0 z-40 shadow-paper-card w-full ${className}`}
       data-testid="museum-header"
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 md:gap-6 flex-nowrap w-full">
+      <div className="max-w-7xl mx-auto flex items-center justify-between gap-2 sm:gap-4 md:gap-6 flex-nowrap w-full">
         
         {/* Brand / Emblem & Title — Click to return to MainPage (EBA Map) */}
         <button
           type="button"
           onClick={() => setActiveView('map')}
           aria-label="Quay về trang chính Bản đồ Sinh thái EBA"
-          className="flex items-center space-x-3 shrink-0 text-left group cursor-pointer transition-all hover:opacity-95 outline-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 active:outline-none select-none border-0 bg-transparent p-0"
+          className="flex items-center space-x-2 sm:space-x-3 shrink-0 text-left group cursor-pointer transition-all hover:opacity-95 outline-none select-none border-0 bg-transparent p-0"
         >
-          <div className="p-2 bg-natural-moss/10 group-hover:bg-natural-moss/20 rounded-xl text-natural-moss border border-natural-moss/20 shadow-xs flex items-center justify-center transition-colors shrink-0">
-            <Feather className="w-5 h-5 transform -rotate-12 group-hover:scale-110 transition-transform" />
+          <div className="p-1.5 sm:p-2 bg-natural-moss/10 group-hover:bg-natural-moss/20 rounded-xl text-natural-moss border border-natural-moss/20 shadow-xs flex items-center justify-center transition-colors shrink-0">
+            <Feather className="w-4 h-4 sm:w-5 sm:h-5 transform -rotate-12 group-hover:scale-110 transition-transform" />
           </div>
           <div className="flex flex-col justify-center min-w-0">
-            <div className="flex items-center gap-2 whitespace-nowrap">
-              <h1 className="text-base sm:text-lg md:text-xl font-serif font-bold text-ink-900 tracking-wide group-hover:text-natural-forest transition-colors whitespace-nowrap">
+            <div className="flex items-center gap-1.5 sm:gap-2 whitespace-nowrap">
+              <h1 className="text-sm sm:text-lg md:text-xl font-serif font-bold text-ink-900 tracking-wide group-hover:text-natural-forest transition-colors whitespace-nowrap">
                 Avifauna of Vietnam
               </h1>
               <span className="hidden lg:inline-block px-1.5 py-0.5 rounded text-[9.5px] uppercase font-mono font-semibold tracking-wider bg-natural-moss/10 text-natural-moss border border-natural-moss/20 whitespace-nowrap">
@@ -119,14 +125,14 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
               </span>
             </div>
             <p className="text-[10px] sm:text-[11px] text-ink-600 font-sans tracking-wide uppercase font-medium whitespace-nowrap hidden sm:block">
-              Giám tuyển &amp; Trực quan hóa Phân loại học Chim Việt Nam
+              Bản đồ sinh thái chim Việt Nam
             </p>
           </div>
         </button>
 
-        {/* Center: 3-View Navigation Tabs */}
+        {/* Center Desktop: 3-View Navigation Tabs (Hidden on mobile) */}
         <nav
-          className="flex items-center bg-paper-200/80 p-1 rounded-xl border border-paper-border text-xs font-medium shadow-inner shrink-0"
+          className="hidden md:flex items-center bg-paper-200/80 p-1 rounded-xl border border-paper-border text-xs font-medium shadow-inner shrink-0"
           role="tablist"
           aria-label="Chế độ xem trực quan hóa"
         >
@@ -157,8 +163,60 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
           })}
         </nav>
 
-        {/* Right Actions: Search & Eye-Catching Random Discovery CTA */}
-        <div className="flex items-center gap-2 sm:gap-3 shrink-0 relative">
+        {/* Center Mobile: View Selector Dropdown Button */}
+        <div className="flex md:hidden items-center relative">
+          <button
+            type="button"
+            onClick={() => setIsMobileMenuOpen(prev => !prev)}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-paper-200/90 hover:bg-paper-200 border border-paper-border text-xs font-semibold text-ink-900 shadow-2xs cursor-pointer select-none"
+            aria-label="Chọn chế độ xem"
+            aria-expanded={isMobileMenuOpen}
+          >
+            <CurrentIcon className="w-3.5 h-3.5 text-natural-moss shrink-0" />
+            <span className="font-sans whitespace-nowrap">{currentTab.shortLabel}</span>
+            <ChevronDown className={`w-3.5 h-3.5 text-ink-500 transition-transform duration-200 ${isMobileMenuOpen ? 'rotate-180' : ''}`} />
+          </button>
+
+          {/* Mobile Dropdown Panel */}
+          {isMobileMenuOpen && (
+            <>
+              <div
+                className="fixed inset-0 z-40"
+                onClick={() => setIsMobileMenuOpen(false)}
+              />
+              <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 w-56 min-w-[210px] max-w-[calc(100vw-24px)] bg-[#FAF8F5] border-2 border-paper-border rounded-xl shadow-2xl py-1.5 z-50 overflow-hidden animate-fadeIn">
+                <div className="px-3 py-1 text-[10px] font-mono text-ink-500 uppercase tracking-wider border-b border-paper-border/60 bg-paper-100/70">
+                  Chế độ xem
+                </div>
+                {NAV_TABS.map(tab => {
+                  const isActive = activeView === tab.id;
+                  const Icon = tab.icon;
+                  return (
+                    <button
+                      key={tab.id}
+                      type="button"
+                      onClick={() => {
+                        setActiveView(tab.id);
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className={`w-full flex items-center gap-2 px-3 py-2 text-left text-xs font-medium transition-colors cursor-pointer ${
+                        isActive
+                          ? 'bg-natural-moss/15 text-natural-forest font-semibold'
+                          : 'text-ink-700 hover:bg-paper-200/60'
+                      }`}
+                    >
+                      <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-natural-moss' : 'text-ink-500'}`} />
+                      <span className="font-sans whitespace-nowrap text-xs font-semibold">{tab.label}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          )}
+        </div>
+
+        {/* Right Desktop Actions: Search & Random Discovery CTA & Discovery Counter (Hidden on mobile) */}
+        <div className="hidden md:flex items-center gap-2 sm:gap-3 shrink-0 relative">
           
           {/* Expandable Live Search Bar */}
           <div className="relative">
@@ -174,7 +232,6 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
                   className="w-full bg-transparent text-xs text-ink-900 placeholder:text-ink-400 outline-none border-none p-0 whitespace-nowrap"
                   autoFocus
                 />
-                {/* Single Smart X Button: Clears query if text exists, closes if empty */}
                 <button
                   type="button"
                   onClick={() => {
@@ -233,8 +290,12 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
                       </div>
                     </div>
                     {sp.isEndemic && (
-                      <span className="text-[9px] px-1.5 py-0.2 bg-natural-amber/15 text-natural-amber font-semibold rounded shrink-0">
-                        Đặc hữu
+                      <span className={`text-[9px] px-1.5 py-0.2 font-semibold rounded shrink-0 ${
+                        sp.endemicScope === 'indochina'
+                          ? 'bg-emerald-100 text-emerald-800'
+                          : 'bg-natural-amber/15 text-natural-amber'
+                      }`}>
+                        {sp.endemicScope === 'indochina' ? 'Đông Dương' : 'Đặc hữu VN'}
                       </span>
                     )}
                   </button>
@@ -286,7 +347,105 @@ export const MuseumHeader: React.FC<MuseumHeaderProps> = ({
           </div>
         </div>
 
+        {/* Right Mobile Actions: Search + Info (i) */}
+        <div className="flex md:hidden items-center gap-1.5 shrink-0">
+          <button
+            type="button"
+            onClick={() => {
+              setIsSearchOpen(prev => !prev);
+              if (!isSearchOpen) {
+                setTimeout(() => searchInputRef.current?.focus(), 50);
+              }
+            }}
+            aria-label="Tra cứu chim nhanh"
+            className="p-1.5 rounded-lg bg-paper-200/80 hover:bg-paper-300 text-ink-700 border border-paper-border cursor-pointer shadow-2xs"
+            title="Tra cứu chim nhanh"
+          >
+            <Search className="w-4 h-4 text-natural-moss" />
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setIsInfoModalOpen(true)}
+            aria-label="Thông tin phương pháp luận và bản quyền"
+            className="p-1.5 rounded-lg bg-paper-200/80 hover:bg-paper-300 text-ink-700 border border-paper-border cursor-pointer shadow-2xs"
+            title="Giới thiệu & Bản quyền"
+          >
+            <Info className="w-4 h-4 text-natural-forest" />
+          </button>
+        </div>
+
       </div>
+
+      {/* Mobile Live Search Bar (Toggles when search button is clicked on mobile) */}
+      {isSearchOpen && (
+        <div className="md:hidden pt-2 pb-1 relative">
+          <div className="flex items-center bg-paper-50 border border-natural-moss/40 rounded-xl px-2.5 py-1.5 shadow-paper-card w-full">
+            <Search className="w-3.5 h-3.5 text-natural-moss shrink-0 mr-1.5" />
+            <input
+              ref={searchInputRef}
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Nhập tên loài..."
+              className="w-full bg-transparent text-xs text-ink-900 placeholder:text-ink-400 outline-none border-none p-0"
+              autoFocus
+            />
+            <button
+              type="button"
+              onClick={() => {
+                if (searchQuery) setSearchQuery('');
+                else setIsSearchOpen(false);
+              }}
+              className="p-0.5 text-ink-400 hover:text-ink-800 shrink-0"
+              aria-label="Đóng tìm kiếm mobile"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+          </div>
+
+          {/* Quick Search Live Dropdown Results on Mobile */}
+          {searchResults.length > 0 && (
+            <div className="absolute top-full mt-1.5 left-0 right-0 bg-[#FAF8F5] border-2 border-paper-border rounded-xl shadow-2xl py-1 z-50 overflow-hidden max-h-60 overflow-y-auto">
+              <div className="px-3 py-1 text-[10px] font-mono text-ink-500 uppercase tracking-wider border-b border-paper-border/60 flex justify-between bg-paper-100/70">
+                <span>Kết quả ({searchResults.length})</span>
+                <span>Nhấn để xem</span>
+              </div>
+              {searchResults.map(sp => (
+                <button
+                  key={sp.id}
+                  type="button"
+                  onClick={() => {
+                    selectSpecies(sp.id);
+                    setIsSearchOpen(false);
+                  }}
+                  className="w-full text-left px-3 py-2 hover:bg-natural-moss/10 flex items-center justify-between gap-2 border-b border-paper-border/40 last:border-0 transition-colors cursor-pointer"
+                >
+                  <div className="min-w-0">
+                    <div className="font-serif font-bold text-xs text-ink-900 truncate">
+                      {sp.vietnameseName}
+                    </div>
+                    <div className="text-[10px] font-serif italic text-natural-forest truncate">
+                      {sp.scientificName}
+                    </div>
+                  </div>
+                  {sp.isEndemic && (
+                    <span className="text-[9px] px-1.5 py-0.2 font-semibold rounded shrink-0 bg-natural-amber/15 text-natural-amber">
+                      Đặc hữu
+                    </span>
+                  )}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Methodology Modal (Triggered by (i) button) */}
+      <MethodologyModal
+        isOpen={isInfoModalOpen}
+        onClose={() => setIsInfoModalOpen(false)}
+      />
     </header>
   );
 };

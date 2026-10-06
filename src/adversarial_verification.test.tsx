@@ -40,7 +40,7 @@ describe('Adversarial Verification Suite — Challenger 2', () => {
       expect(legacyLgBlock).toBeNull();
     });
 
-    it('allows expanding all 6 EBA regions and interacting on tablet layout without blackout', () => {
+    it('allows expanding all 7 EBA regions and interacting on tablet layout without blackout', () => {
       render(
         <TaxonomyProvider initialView="map">
           <VietnamEBAMap />
@@ -52,14 +52,15 @@ describe('Adversarial Verification Suite — Challenger 2', () => {
 
       const legendScope = within(legend);
 
-      // Check all 6 EBAs inside the Legend
+      // Check all 7 EBAs inside the Legend
       const regionNames = [
         /Cao nguyên Đà Lạt/i,
         /Cao nguyên Kon Tum/i,
-        /Vùng Đất thấp miền Trung/i,
-        /Vùng núi Tây Bắc/i,
-        /Vùng đồng bằng & rừng đất thấp Nam Bộ/i,
-        /Vùng núi Đông Bắc/i
+        /Vùng đất thấp Trung Bộ/i,
+        /Vùng núi Hoàng Liên Sơn/i,
+        /Vùng đất thấp Nam Bộ/i,
+        /Vùng núi Đông Bắc/i,
+        /Vùng hạ lưu sông Mê Kông/i
       ];
 
       for (const regionRegex of regionNames) {
@@ -83,7 +84,7 @@ describe('Adversarial Verification Suite — Challenger 2', () => {
       );
 
       expect(screen.getByText('Vùng Chim Đặc hữu Việt Nam')).toBeDefined();
-      expect(screen.getByText(/6 EBAs • BirdLife International/i)).toBeDefined();
+      expect(screen.getByText(/7 EBAs • BirdLife International/i)).toBeDefined();
 
       rerender(
         <TaxonomyProvider>

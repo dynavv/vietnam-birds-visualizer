@@ -34,7 +34,7 @@ describe('TaxonomyContext & useTaxonomy Hook', () => {
     expect(result.current.allSpecies.length).toBeGreaterThanOrEqual(50);
     expect(result.current.filteredSpecies.length).toBe(result.current.allSpecies.length);
     expect(result.current.taxonomyTree.name).toBe('Aves');
-    expect(result.current.ebaRegions.length).toBe(6);
+    expect(result.current.ebaRegions.length).toBe(7); // 07 Vùng chim đặc hữu theo Chỉ thị 04/CT-TTg
 
     expect(result.current.selectedSpeciesId).toBeTruthy();
     expect(result.current.selectedSpecies).not.toBeNull();

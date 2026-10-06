@@ -7,7 +7,7 @@ describe('MuseumFooter Component', () => {
     render(<MuseumFooter />);
     expect(screen.getByTestId('museum-footer')).toBeDefined();
     expect(screen.getByText(/Avifauna of Vietnam/)).toBeDefined();
-    expect(screen.getByText(/Dự án Giáo dục & Lưu trữ Số/)).toBeDefined();
+    expect(screen.getByText(/Dự án Giáo dục & Bảo tồn Đa dạng Sinh học/)).toBeDefined();
 
     expect(screen.getByText('Giới thiệu')).toBeDefined();
     expect(screen.getByText('Nguồn dữ liệu & Danh pháp')).toBeDefined();

@@ -172,7 +172,7 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
               <span className="hidden sm:inline text-[11px] font-serif italic text-ink-600">
                 Naturalist Archive of Vietnam
               </span>
-              {species.isEndemic && <EndemicBadge size="sm" />}
+              {species.isEndemic && <EndemicBadge size="sm" scope={species.endemicScope} />}
             </div>
 
             <div className="flex items-center gap-2">
@@ -225,7 +225,11 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
 
             {/* Archival Museum Seal Stamp in Corner */}
             <div className="absolute top-3 left-3 bg-paper-100/85 backdrop-blur-xs border border-paper-border px-2 py-0.5 rounded text-[9px] font-mono tracking-wider text-ink-600 uppercase select-none pointer-events-none z-20">
-              ★ INDOCHINA SPECIMEN
+              {species.endemicScope === 'vietnam'
+                ? '★ VIETNAM SPECIMEN'
+                : species.endemicScope === 'indochina'
+                ? '★ INDOCHINA SPECIMEN'
+                : '★ NATIVE SPECIMEN'}
             </div>
           </div>
 

@@ -43,4 +43,14 @@ describe('EndemicBadge Component', () => {
     render(<EndemicBadge compact />);
     expect(screen.getByText('Đặc hữu')).toBeDefined();
   });
+
+  it('renders Indochinese endemic label when scope is indochina', () => {
+    render(<EndemicBadge scope="indochina" />);
+    expect(screen.getByText('Đặc hữu Đông Dương')).toBeDefined();
+  });
+
+  it('renders compact Indochinese endemic label', () => {
+    render(<EndemicBadge scope="indochina" compact />);
+    expect(screen.getByText('Đông Dương')).toBeDefined();
+  });
 });

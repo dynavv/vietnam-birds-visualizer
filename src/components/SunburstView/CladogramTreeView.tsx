@@ -222,11 +222,15 @@ export const CladogramTreeViewComponent: React.FC<CladogramTreeViewProps> = ({ c
                                   <div className="flex items-center gap-1.5 flex-shrink-0 ml-2">
                                     {bird?.isEndemic && (
                                       <span
-                                        className="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded bg-natural-ochre/20 text-natural-amber text-[10px] font-bold"
-                                        title="Loài đặc hữu Việt Nam"
+                                        className={`inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded text-[10px] font-bold ${
+                                          bird.endemicScope === 'indochina'
+                                            ? 'bg-emerald-100 text-emerald-800'
+                                            : 'bg-natural-ochre/20 text-natural-amber'
+                                        }`}
+                                        title={bird.endemicScope === 'indochina' ? 'Loài đặc hữu Đông Dương' : 'Loài đặc hữu Việt Nam'}
                                       >
                                         <Sparkles className="w-2.5 h-2.5" />
-                                        <span>Đặc hữu</span>
+                                        <span>{bird.endemicScope === 'indochina' ? 'Đông Dương' : 'Đặc hữu'}</span>
                                       </span>
                                     )}
                                     {bird?.conservation?.vietnamRedList && (

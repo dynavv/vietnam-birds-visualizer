@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import {
   getGeminiApiKey,
   setGeminiApiKey,
@@ -27,6 +27,11 @@ describe('geminiService Unit Tests', () => {
   beforeEach(() => {
     window.localStorage.clear();
     mockGenerateContent.mockReset();
+    vi.stubEnv('VITE_GEMINI_API_KEY', '');
+  });
+
+  afterEach(() => {
+    vi.unstubAllEnvs();
   });
 
   describe('API Key Management', () => {

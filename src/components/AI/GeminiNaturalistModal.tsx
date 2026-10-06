@@ -27,8 +27,7 @@ import {
   setGeminiApiKey,
   hasGeminiApiKey,
   ChatMessage,
-  BirdIdentificationResult,
-  GEMINI_MODEL_DEFAULT
+  BirdIdentificationResult
 } from '../../services/geminiService';
 
 export type AITab = 'chat' | 'vision' | 'journal' | 'settings';
@@ -214,14 +213,9 @@ export const GeminiNaturalistModal: React.FC<GeminiNaturalistModalProps> = ({
               <Sparkles className="w-5 h-5 text-amber-300 animate-pulse" />
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <h2 id="gemini-modal-title" className="font-serif font-bold text-base sm:text-lg text-ink-900">
-                  Gemini Avian Naturalist
-                </h2>
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-mono font-semibold bg-emerald-100 text-emerald-800 border border-emerald-300">
-                  Google AI Studio • {GEMINI_MODEL_DEFAULT}
-                </span>
-              </div>
+              <h2 id="gemini-modal-title" className="font-serif font-bold text-base sm:text-lg text-ink-900">
+                Gemini Avian Naturalist
+              </h2>
               <p className="text-[11px] text-ink-600 font-sans">
                 Trợ lý Điểu học &amp; Nhận diện Đa phương thức Chim Hoang dã Việt Nam
               </p>
@@ -365,10 +359,10 @@ export const GeminiNaturalistModal: React.FC<GeminiNaturalistModalProps> = ({
                       </button>
                       <button
                         type="button"
-                        onClick={() => handleSendMessage('Hãy giải thích ý nghĩa sinh thái của 6 Vùng Chim Đặc Hữu (EBAs) tại Việt Nam theo tiêu chuẩn BirdLife International.')}
+                        onClick={() => handleSendMessage('Hãy giải thích ý nghĩa sinh thái của 07 Vùng Chim Đặc Hữu (EBAs) tại Việt Nam theo Chỉ thị 04/CT-TTg và BirdLife International.')}
                         className="w-full text-left p-2.5 rounded-xl bg-paper-100 hover:bg-natural-moss/10 border border-paper-border hover:border-natural-moss/40 text-xs text-ink-800 transition-all cursor-pointer shadow-2xs"
                       >
-                        🗺️ Ý nghĩa của 6 Vùng Chim Đặc Hữu (EBAs) tại Việt Nam
+                        🗺️ Ý nghĩa của 07 Vùng Chim Đặc Hữu (EBAs) tại Việt Nam
                       </button>
                       <button
                         type="button"

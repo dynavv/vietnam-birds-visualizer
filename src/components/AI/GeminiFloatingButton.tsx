@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { Sparkles } from 'lucide-react';
 import { GeminiNaturalistModal, AITab } from './GeminiNaturalistModal';
 import { hasGeminiApiKey } from '../../services/geminiService';
+import { useTaxonomy } from '../../context/TaxonomyContext';
 
 export interface GeminiFloatingButtonProps {
   className?: string;
 }
 
 export const GeminiFloatingButton: React.FC<GeminiFloatingButtonProps> = ({ className = '' }) => {
+  const { activeView } = useTaxonomy();
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [initialTab, setInitialTab] = useState<AITab>('chat');
 
@@ -21,7 +23,7 @@ export const GeminiFloatingButton: React.FC<GeminiFloatingButtonProps> = ({ clas
   return (
     <>
       <div
-        className={`fixed bottom-12 md:bottom-11 left-1/2 -translate-x-1/2 z-40 flex items-center justify-center pointer-events-auto ${className}`}
+        className={`fixed z-20 md:z-40 pointer-events-auto flex items-center justify-center md:bottom-11 md:left-1/2 md:-translate-x-1/2 md:right-auto ${activeView === 'map' ? 'hidden md:flex' : 'bottom-4 right-3 left-auto translate-x-0'} ${className}`}
         data-testid="gemini-floating-container"
       >
         <button

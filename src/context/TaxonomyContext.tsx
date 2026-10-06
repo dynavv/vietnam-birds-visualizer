@@ -28,7 +28,7 @@ function generateShuffledDeck(speciesList: BirdSpecies[]): string[] {
 export interface TaxonomyContextType {
   selectedSpeciesId: string;
   selectedSpecies: BirdSpecies | null;
-  selectSpecies: (id: string) => void;
+  selectSpecies: (id: string | null) => void;
   activeView: ViewMode;
   setActiveView: (view: ViewMode) => void;
   hoveredTaxonNode: TaxonomyNode | null;
@@ -89,14 +89,47 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
     return [];
   });
 
-  // Non-repeating shuffle queue state
+  // Non-repeating shuffle queue state with automatic reconciliation for newly added species
   const [shufflePool, setShufflePool] = useState<string[]>(() => {
+    const allValidIds = new Set(allSpeciesData.map(s => s.id));
     try {
       if (typeof window !== 'undefined' && window.localStorage) {
         const raw = window.localStorage.getItem(STORAGE_KEY_SHUFFLE_POOL);
         if (raw) {
           const parsed = JSON.parse(raw);
-          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            // Filter out orphan/stale IDs not in current dataset
+            const validParsed = parsed.filter(id => allValidIds.has(id));
+
+            // Identify newly added species not in pool and not yet discovered
+            const existingInPool = new Set(validParsed);
+            let discoveredSet = new Set<string>();
+            try {
+              const rawDiscovered = window.localStorage.getItem(STORAGE_KEY_DISCOVERED);
+              if (rawDiscovered) {
+                const parsedDiscovered = JSON.parse(rawDiscovered);
+                if (Array.isArray(parsedDiscovered)) {
+                  discoveredSet = new Set(parsedDiscovered);
+                }
+              }
+            } catch {
+              // Ignore discovered parsing error
+            }
+
+            const newlyAddedSpecies = allSpeciesData
+              .map(s => s.id)
+              .filter(id => !existingInPool.has(id) && !discoveredSet.has(id));
+
+            if (newlyAddedSpecies.length > 0) {
+              // Prepend newly added species so users encounter fresh additions promptly
+              const shuffledNew = [...newlyAddedSpecies].sort(() => Math.random() - 0.5);
+              const reconciled = [...shuffledNew, ...validParsed];
+              window.localStorage.setItem(STORAGE_KEY_SHUFFLE_POOL, JSON.stringify(reconciled));
+              return reconciled;
+            }
+
+            if (validParsed.length > 0) return validParsed;
+          }
         }
       }
     } catch {
@@ -207,8 +240,9 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
     return initial;
   });
 
-  const selectSpecies = useCallback((id: string) => {
-    setSelectedSpeciesIdState(id);
+  const selectSpecies = useCallback((id: string | null) => {
+    setSelectedSpeciesIdState(id || '');
+    if (!id) return;
     markSpeciesDiscovered(id);
     syncHistoryState(activeView, id, false);
     try {
@@ -376,6 +410,41 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
       });
     }
   }, [selectedSpecies]);
+
+  // Smart Thumbnail Preloader: Âm thầm nạp trước ảnh thumbnail của các loài tiếp theo trong shuffle deck
+  React.useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const preloadThumbnails = () => {
+      // Lấy 6 loài tiếp theo trong bộ bài ngẫu nhiên để nạp trước
+      const nextBatch = shufflePool.slice(0, 6);
+      nextBatch.forEach(id => {
+        const sp = allSpeciesData.find(s => s.id === id);
+        const thumb = sp?.illustration?.thumbnailUrl || sp?.illustration?.imageUrl;
+        if (thumb) {
+          const img = new Image();
+          img.src = thumb;
+        }
+      });
+    };
+
+    // Chờ mạng và CPU rảnh rỗi mới tải ngầm
+    if ('requestIdleCallback' in window) {
+      const winWithIdle = window as Window & {
+        requestIdleCallback: (cb: () => void) => number;
+        cancelIdleCallback: (handle: number) => void;
+      };
+      const handle = winWithIdle.requestIdleCallback(preloadThumbnails);
+      return () => {
+        if ('cancelIdleCallback' in window) {
+          winWithIdle.cancelIdleCallback(handle);
+        }
+      };
+    } else {
+      const timer = setTimeout(preloadThumbnails, 800);
+      return () => clearTimeout(timer);
+    }
+  }, [shufflePool]);
 
   const toggleExpandedNode = useCallback((nodeName: string) => {
     setExpandedNodes(prev => {

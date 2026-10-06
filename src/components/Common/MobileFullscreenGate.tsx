@@ -133,7 +133,7 @@ export const MobileFullscreenGate: React.FC<MobileFullscreenGateProps> = ({
 
       {/* Bottom Footer */}
       <footer className="text-center text-[11px] text-ink-500 pb-2">
-        <p>Avifauna of Vietnam © 2026 — Dự án Giáo dục &amp; Lưu trữ Số Đa dạng Sinh học</p>
+        <p>Avifauna of Vietnam © 2026 — Dự án Giáo dục &amp; Bảo tồn Đa dạng Sinh học (Phi Lợi Nhuận)</p>
         <p className="text-[10px] text-ink-400 mt-0.5">Google AI Studio • Build with Google AI</p>
       </footer>
     </div>

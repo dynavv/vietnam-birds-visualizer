@@ -177,4 +177,16 @@ describe('BirdPlateImage Component', () => {
     const imgB = screen.getByRole('img');
     expect(imgB.getAttribute('src')).toBe('https://valid.example.com/b.jpg');
   });
+
+  it('supports priority={true} with loading="eager"', () => {
+    render(<BirdPlateImage species={mockSpecies} priority={true} />);
+    const img = screen.getByRole('img');
+    expect(img.getAttribute('loading')).toBe('eager');
+  });
+
+  it('supports preferThumbnail={true} prioritizing thumbnailUrl', () => {
+    render(<BirdPlateImage species={mockSpecies} preferThumbnail={true} />);
+    const img = screen.getByRole('img');
+    expect(img.getAttribute('src')).toBe('https://example.com/trochalopteron-thumb.jpg');
+  });
 });

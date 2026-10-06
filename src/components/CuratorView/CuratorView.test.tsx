@@ -35,7 +35,7 @@ describe('CuratorView Component', () => {
       ]
     },
     distribution: {
-      ebaRegion: 'Cao nguyên Kon Tum / Dãy Ngọc Linh',
+      ebaRegion: 'Cao nguyên Kon Tum',
       elevation: '1.900m - 2.598m',
       habitats: ['Rừng lùn đỉnh núi mù sương', 'Thảm tre nứa'],
       locations: ['KBT Thiên nhiên Ngọc Linh'],
