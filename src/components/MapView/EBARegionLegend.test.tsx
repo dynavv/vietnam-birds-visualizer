@@ -16,7 +16,7 @@ const TestLegendConsumer: React.FC<{ onSelectRegion?: (r: EBARegion) => void }> 
 };
 
 describe('EBARegionLegend Component', () => {
-  it('renders all 6 Endemic Bird Areas (EBAs) in Vietnam', () => {
+  it('renders all 7 Endemic Bird Areas (EBAs) in Vietnam', () => {
     render(
       <TaxonomyProvider>
         <EBARegionLegend />
@@ -24,15 +24,16 @@ describe('EBARegionLegend Component', () => {
     );
 
     expect(screen.getByText('Vùng Chim Đặc hữu Việt Nam')).toBeDefined();
-    expect(screen.getByText(/6 EBAs • BirdLife International/i)).toBeDefined();
+    expect(screen.getByText(/7 EBAs • BirdLife International/i)).toBeDefined();
 
-    // Check 6 EBA Region names
-    expect(screen.getByText(/Cao nguyên Đà Lạt \/ Lâm Viên/i)).toBeDefined();
+    // Check 7 EBA Region names
+    expect(screen.getByText(/Cao nguyên Đà Lạt/i)).toBeDefined();
     expect(screen.getByText(/Cao nguyên Kon Tum/i)).toBeDefined();
-    expect(screen.getByText(/Vùng Đất thấp miền Trung/i)).toBeDefined();
-    expect(screen.getByText(/Vùng núi Tây Bắc & Hoàng Liên Sơn/i)).toBeDefined();
-    expect(screen.getByText(/Vùng đồng bằng & rừng đất thấp Nam Bộ/i)).toBeDefined();
-    expect(screen.getByText(/Vùng núi Đông Bắc & Đá vôi Bắc Bộ/i)).toBeDefined();
+    expect(screen.getByText(/Vùng đất thấp Trung Bộ/i)).toBeDefined();
+    expect(screen.getByText(/Vùng núi Hoàng Liên Sơn/i)).toBeDefined();
+    expect(screen.getByText(/Vùng đất thấp Nam Bộ/i)).toBeDefined();
+    expect(screen.getByText(/Vùng núi Đông Bắc/i)).toBeDefined();
+    expect(screen.getByText(/Vùng hạ lưu sông Mê Kông/i)).toBeDefined();
   });
 
   it('expands region details when clicking a region card', () => {
@@ -42,7 +43,7 @@ describe('EBARegionLegend Component', () => {
       </TaxonomyProvider>
     );
 
-    const dalatBtn = screen.getByText(/Cao nguyên Đà Lạt \/ Lâm Viên/i);
+    const dalatBtn = screen.getByText(/Cao nguyên Đà Lạt/i);
     fireEvent.click(dalatBtn);
 
     // After expanding, check description and habitats
@@ -60,7 +61,7 @@ describe('EBARegionLegend Component', () => {
     );
 
     // Expand Da Lat Plateau
-    const dalatBtn = screen.getByText(/Cao nguyên Đà Lạt \/ Lâm Viên/i);
+    const dalatBtn = screen.getByText(/Cao nguyên Đà Lạt/i);
     fireEvent.click(dalatBtn);
 
     // Find a key species item (e.g. Sẻ thông họng vàng / Mi Langbiang)
@@ -84,7 +85,7 @@ describe('EBARegionLegend Component', () => {
       </TaxonomyProvider>
     );
 
-    const dalatBtn = screen.getByText(/Cao nguyên Đà Lạt \/ Lâm Viên/i);
+    const dalatBtn = screen.getByText(/Cao nguyên Đà Lạt/i);
     fireEvent.click(dalatBtn);
 
     const zoomBtn = screen.getByText(/Phóng to vùng/i);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { TaxonomyProvider, useTaxonomy } from "./context/TaxonomyContext";
 import { MuseumHeader } from "./components/Header/MuseumHeader";
 import { VietnamEBAMap } from "./components/MapView/VietnamEBAMap";
@@ -7,7 +7,7 @@ import { CuratorView } from "./components/CuratorView/CuratorView";
 import { MuseumFooter } from "./components/Footer/MuseumFooter";
 import { DiscoveryToast } from "./components/Common/DiscoveryToast";
 import { GeminiFloatingButton } from "./components/AI/GeminiFloatingButton";
-import { MobileFullscreenGate } from "./components/Common/MobileFullscreenGate";
+// import { MobileFullscreenGate } from "./components/Common/MobileFullscreenGate";
 
 export { MuseumFooter };
 
@@ -55,14 +55,46 @@ export const AppShell: React.FC = () => {
     allSpecies
   } = useTaxonomy();
 
+  useEffect(() => {
+    const updateAppHeight = () => {
+      const height = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+      document.documentElement.style.setProperty('--app-height', `${height}px`);
+    };
+
+    updateAppHeight();
+
+    if (typeof window !== 'undefined') {
+      if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', updateAppHeight);
+        window.visualViewport.addEventListener('scroll', updateAppHeight);
+      }
+      window.addEventListener('resize', updateAppHeight);
+      window.addEventListener('orientationchange', updateAppHeight);
+    }
+
+    return () => {
+      if (typeof window !== 'undefined') {
+        if (window.visualViewport) {
+          window.visualViewport.removeEventListener('resize', updateAppHeight);
+          window.visualViewport.removeEventListener('scroll', updateAppHeight);
+        }
+        window.removeEventListener('resize', updateAppHeight);
+        window.removeEventListener('orientationchange', updateAppHeight);
+      }
+    };
+  }, []);
+
   return (
-    <div className="h-screen h-[100dvh] max-h-screen bg-paper-50 flex flex-col font-sans text-ink-900 selection:bg-natural-moss/20 selection:text-natural-forest overflow-hidden relative">
-      {/* Fullscreen Notification Gate on Mobile & Tablet (< 1024px) */}
-      <MobileFullscreenGate />
+    <div
+      className="w-full bg-paper-50 flex flex-col font-sans text-ink-900 selection:bg-natural-moss/20 selection:text-natural-forest overflow-hidden relative"
+      style={{ height: 'var(--app-height, 100dvh)', maxHeight: 'var(--app-height, 100dvh)' }}
+    >
+      {/* Tạm gỡ MobileFullscreenGate theo yêu cầu kiểm thử trên thiết bị di động */}
+      {/* <MobileFullscreenGate /> */}
 
       <MuseumHeader className="shrink-0" />
       <MainContent />
-      <MuseumFooter className="shrink-0" />
+      <MuseumFooter className="shrink-0 hidden md:block" />
 
       {/* Floating Gemini AI Curator FAB */}
       <GeminiFloatingButton />

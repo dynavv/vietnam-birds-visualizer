@@ -62,10 +62,12 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
   const doesSelectedSpeciesBelongTo = (region: EBARegion): boolean => {
     if (!selectedSpecies) return false;
     if (region.keySpeciesIds.includes(selectedSpecies.id)) return true;
+    const regionId = region.id.toLowerCase();
     const regionNameLower = region.name.toLowerCase();
     const regionVnLower = region.vietnameseName.toLowerCase();
     const speciesEbaLower = (selectedSpecies.distribution.ebaRegion || '').toLowerCase();
-    return speciesEbaLower.includes(regionNameLower) ||
+    return speciesEbaLower === regionId ||
+      speciesEbaLower.includes(regionNameLower) ||
       speciesEbaLower.includes(regionVnLower) ||
       regionVnLower.includes(speciesEbaLower);
   };
@@ -74,7 +76,7 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
     <div
       className={`bg-paper-100/90 backdrop-blur-xl border border-paper-border/80 rounded-2xl shadow-2xl shadow-ink-900/10 ring-1 ring-black/[0.04] overflow-hidden transition-all duration-300 w-full flex flex-col max-h-full ${className}`}
       data-testid="eba-region-legend"
-      aria-label="Danh mục 6 Vùng Chim Đặc hữu Việt Nam"
+      aria-label="Danh mục 7 Vùng Chim Đặc hữu Việt Nam"
     >
       {/* Header */}
       <div className="px-3.5 py-2.5 sm:px-4 sm:py-3 flex items-center justify-between border-b border-paper-border/70 bg-paper-200/50 shrink-0">
@@ -87,7 +89,7 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
               Vùng Chim Đặc hữu Việt Nam
             </h3>
             <p className="text-[10px] text-ink-500 font-mono font-medium uppercase tracking-wider">
-              6 EBAs • BirdLife International
+              {ebaRegions.length} EBAs • BirdLife International
             </p>
           </div>
         </div>
@@ -138,7 +140,7 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
                     className="w-full px-3.5 py-2.5 flex items-start justify-between gap-2.5 text-left focus:outline-none focus:bg-paper-200/60 transition-colors cursor-pointer"
                     aria-expanded={isExpanded}
                   >
-                    <div className="flex items-start gap-2.5 min-w-0">
+                    <div className="flex items-start gap-2.5 min-w-0 flex-1">
                       {/* Region Index Badge */}
                       <span className={`flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-mono font-bold mt-0.5 ${
                         isExpanded
@@ -150,31 +152,33 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
                         {index + 1}
                       </span>
 
-                      <div className="min-w-0">
-                        <div className="flex items-center gap-1.5 flex-wrap">
-                          <h4 className="font-serif font-bold text-sm text-ink-900 leading-snug">
-                            {region.vietnameseName}
-                          </h4>
-                          {region.code && (
-                            <span className="px-1.5 py-0.2 rounded text-[9.5px] font-mono font-bold uppercase bg-natural-amber/15 text-natural-amber border border-natural-amber/30">
-                              {region.code}
-                            </span>
-                          )}
+                      <div className="min-w-0 flex-1">
+                        {/* Dòng 1: Tên tiếng Việt (chính, in đậm) */}
+                        <h4 className="font-serif font-bold text-sm text-ink-900 leading-snug">
+                          {region.vietnameseName}
+                        </h4>
+
+                        {/* Dòng 2: Tên tiếng Anh */}
+                        <div className="flex items-center gap-1.5 mt-0.5 flex-wrap">
+                          <p className="text-[11.5px] text-ink-500 font-sans italic leading-snug">
+                            {region.name}
+                          </p>
                           {hasCurrentSpecies && (
-                            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-sans font-medium bg-natural-moss/15 text-natural-forest border border-natural-moss/25">
+                            <span className="inline-flex items-center gap-1 px-1.5 py-0.2 rounded text-[9.5px] font-sans font-medium bg-natural-moss/15 text-natural-forest border border-natural-moss/25">
                               <Sparkles className="w-2.5 h-2.5 text-natural-ochre" />
                               Loài đang chọn
                             </span>
                           )}
                         </div>
-                        
-                        <p className="text-[11px] text-ink-500 font-sans italic truncate">
-                          {region.name}
-                        </p>
                       </div>
                     </div>
 
                     <div className="flex items-center gap-1.5 flex-shrink-0 mt-0.5">
+                      {region.code && (
+                        <span className="px-1.5 py-0.5 rounded text-[9.5px] font-mono font-bold uppercase bg-natural-amber/15 text-natural-amber border border-natural-amber/30">
+                          {region.code}
+                        </span>
+                      )}
                       <span className="text-[10px] font-mono font-medium px-1.5 py-0.5 rounded bg-paper-100 text-ink-600 border border-paper-border">
                         {region.keySpeciesIds.length} loài
                       </span>

@@ -31,7 +31,7 @@ const mockBird: BirdSpecies = {
     ]
   },
   distribution: {
-    ebaRegion: 'Cao nguyên Kon Tum / Dãy Ngọc Linh',
+    ebaRegion: 'Cao nguyên Kon Tum',
     elevation: '1.900m - 2.598m',
     habitats: ['Rừng lùn đỉnh núi mù sương', 'Thảm tre nứa núi cao'],
     locations: ['KBT Thiên nhiên Ngọc Linh', 'Núi Ngọc Phan'],
@@ -80,7 +80,7 @@ describe('EndemicFocusCard Component', () => {
 
     // Ecological & distribution
     expect(screen.getByText('1.900m - 2.598m')).toBeDefined();
-    expect(screen.getByText('Cao nguyên Kon Tum / Dãy Ngọc Linh')).toBeDefined();
+    expect(screen.getByText('Cao nguyên Kon Tum')).toBeDefined();
     expect(screen.getByText(/KBT Thiên nhiên Ngọc Linh/i)).toBeDefined();
     expect(screen.getByText('Rừng lùn đỉnh núi mù sương')).toBeDefined();
 

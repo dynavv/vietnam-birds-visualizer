@@ -26,7 +26,7 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
     // Museum Header is rendered
     expect(screen.getByTestId('museum-header')).toBeDefined();
     expect(screen.getAllByText('Avifauna of Vietnam').length).toBeGreaterThanOrEqual(1);
-    expect(screen.getAllByText(/Giám tuyển & Trực quan hóa Phân loại học/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Bản đồ sinh thái chim Việt Nam/i).length).toBeGreaterThan(0);
 
     // Avian Fun Facts Ribbon is removed for cleaner map viewport
     expect(screen.queryByTestId('avian-fun-facts-ribbon')).toBeNull();

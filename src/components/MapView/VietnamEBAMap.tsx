@@ -8,19 +8,24 @@ import {
   Trees,
   Plus,
   Minus,
-  ChevronRight
+  ChevronRight,
+  Sparkles
 } from 'lucide-react';
 import type { BirdSpecies, EBARegion } from '../../types/bird';
 import { useTaxonomy } from '../../context/TaxonomyContext';
 import { vietnamBoundaryData } from '../../data';
 import { EndemicFocusCard } from './EndemicFocusCard';
 import { EBARegionLegend } from './EBARegionLegend';
+import { EBAMobileBottomSheet, type SheetSnapPoint } from './EBAMobileBottomSheet';
+import { MobileFloatingSpeciesCard } from './MobileFloatingSpeciesCard';
+import { GeminiNaturalistModal } from '../AI/GeminiNaturalistModal';
 
 // Center, zoom and bounds defaults for Vietnam overview
 const VIETNAM_CENTER: [number, number] = [16.0, 107.5];
 const VIETNAM_DEFAULT_ZOOM = 6;
-const VIETNAM_MIN_ZOOM = 6; // Zoom out toàn cảnh Việt Nam
+const VIETNAM_MIN_ZOOM = 4.5; // Zoom out toàn cảnh Việt Nam bao quát trọn vẹn biển đảo
 const VIETNAM_MAX_ZOOM = 13; // Zoom in cấp độ sinh cảnh vùng/khu bảo tồn (tránh hiểu lầm tọa độ)
+const VIETNAM_FULL_BOUNDS: [[number, number], [number, number]] = [[6.8, 102.0], [23.8, 116.5]];
 
 // Type-guard to validate that coordinates are valid non-NaN numbers
 export const isValidLatLng = (coords: unknown): coords is [number, number] => {
@@ -216,25 +221,53 @@ export const calculateSpiderOffset = (
 // Inner Map Controller component to handle flyTo animations with cancellation
 interface MapFlyToControllerProps {
   target: {
-    coordinates: [number, number];
-    zoom: number;
+    coordinates?: [number, number];
+    zoom?: number;
+    bounds?: [[number, number], [number, number]];
   } | null;
+  isMobileOffset?: boolean;
 }
 
-const MapFlyToController: React.FC<MapFlyToControllerProps> = ({ target }) => {
+const MapFlyToController: React.FC<MapFlyToControllerProps> = ({ target, isMobileOffset = false }) => {
   const map = useMap();
 
   useEffect(() => {
-    if (target && isValidLatLng(target.coordinates)) {
+    if (!target) return;
+
+    if (target.bounds) {
+      try {
+        if (map && (map as unknown as { _mapPane?: HTMLElement })._mapPane) {
+          map.stop();
+        }
+        map.fitBounds(target.bounds, { padding: [15, 15], maxZoom: 7, animate: true, duration: 1.2 });
+      } catch {
+        // Safe fallback if map is being initialized
+      }
+      return;
+    }
+
+    if (target.coordinates && isValidLatLng(target.coordinates)) {
       const zoom = (typeof target.zoom === 'number' && Number.isFinite(target.zoom) && !isNaN(target.zoom)) ? target.zoom : VIETNAM_DEFAULT_ZOOM;
       try {
         if (map && (map as unknown as { _mapPane?: HTMLElement })._mapPane) {
           map.stop();
         }
-        map.flyTo(target.coordinates, zoom, {
-          duration: 1.2,
-          easeLinearity: 0.25
-        });
+        if (isMobileOffset && typeof map.project === 'function' && typeof map.unproject === 'function') {
+          const point = map.project(target.coordinates, zoom);
+          const mapSizeY = map.getSize ? map.getSize().y : 0;
+          const offsetY = mapSizeY * 0.22; // Đẩy tâm camera xuống 22% để target nằm chính giữa 54% nửa trên màn hình
+          const adjustedPoint = L.point(point.x, point.y + offsetY);
+          const adjustedLatLng = map.unproject(adjustedPoint, zoom);
+          map.flyTo(adjustedLatLng, zoom, {
+            duration: 1.0,
+            easeLinearity: 0.25
+          });
+        } else {
+          map.flyTo(target.coordinates, zoom, {
+            duration: 1.0,
+            easeLinearity: 0.25
+          });
+        }
       } catch {
         // Safe fallback if map is being initialized
       }
@@ -248,7 +281,7 @@ const MapFlyToController: React.FC<MapFlyToControllerProps> = ({ target }) => {
         // Safe fallback if map unmounted
       }
     };
-  }, [map, target]);
+  }, [map, target, isMobileOffset]);
 
   return null;
 };
@@ -336,20 +369,22 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
     selectedSpecies,
     selectSpecies,
     filteredSpecies,
-    ebaRegions
+    ebaRegions,
+    allSpecies
   } = useTaxonomy();
 
   const [selectedEBARegionId, setSelectedEBARegionId] = useState<string | null>(null);
   const [showEBACircles, setShowEBACircles] = useState<boolean>(true);
   const [showAllSpeciesPins, setShowAllSpeciesPins] = useState<boolean>(true);
+  const [isGeminiModalOpen, setIsGeminiModalOpen] = useState<boolean>(false);
   const showNationalBoundary = true;
   const [flyTarget, setFlyTarget] = useState<{
-    coordinates: [number, number];
-    zoom: number;
+    coordinates?: [number, number];
+    zoom?: number;
+    bounds?: [[number, number], [number, number]];
   } | null>(null);
-
-  // Mobile drawer tabs: 'card' | 'legend' | 'map'
-  const [mobileTab, setMobileTab] = useState<'card' | 'legend' | 'map'>('map');
+  const [mobileSheetSnap, setMobileSheetSnap] = useState<SheetSnapPoint>('peek');
+  const [isMobileSpeciesCardOpen, setIsMobileSpeciesCardOpen] = useState<boolean>(false);
 
   // Fly to selected species whenever it changes
   useEffect(() => {
@@ -375,11 +410,39 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
   // Handle reset to full Vietnam overview
   const handleResetOverview = () => {
     setSelectedEBARegionId(null);
-    setFlyTarget({
-      coordinates: VIETNAM_CENTER,
-      zoom: VIETNAM_DEFAULT_ZOOM
-    });
+    setIsMobileSpeciesCardOpen(false);
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+    if (isMobile) {
+      setFlyTarget({
+        coordinates: [16.0, 107.5],
+        zoom: 5.2
+      });
+    } else {
+      setFlyTarget({
+        bounds: VIETNAM_FULL_BOUNDS
+      });
+    }
   };
+
+  // Tự động căn chỉnh lại tâm bản đồ về chính giữa toàn màn hình khi bấm X thu gọn tab về peek
+  useEffect(() => {
+    if (mobileSheetSnap === 'peek') {
+      if (isValidLatLng(selectedSpecies?.distribution?.coordinates)) {
+        setFlyTarget({
+          coordinates: selectedSpecies.distribution.coordinates,
+          zoom: 9
+        });
+      } else if (selectedEBARegionId) {
+        const region = ebaRegions.find(r => r.id === selectedEBARegionId);
+        if (region && isValidLatLng(region.coordinates)) {
+          setFlyTarget({
+            coordinates: region.coordinates,
+            zoom: typeof region.zoomLevel === 'number' && Number.isFinite(region.zoomLevel) ? region.zoomLevel : 9
+          });
+        }
+      }
+    }
+  }, [mobileSheetSnap, selectedSpecies, selectedEBARegionId, ebaRegions]);
 
   // Group species without selected species to avoid duplicate marker
   const otherSpeciesList = useMemo(() => {
@@ -387,9 +450,18 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
     return filteredSpecies.filter(s => s.id !== selectedSpecies.id);
   }, [filteredSpecies, selectedSpecies]);
 
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+
+  // Khi chon 1 loai chim tren mobile, tu dong thu gon EBA bottom sheet ve peek
+  useEffect(() => {
+    if (selectedSpecies && isMobile) {
+      setMobileSheetSnap('peek');
+    }
+  }, [selectedSpecies, isMobile]);
+
   return (
     <div
-      className={`relative w-full h-full flex-1 min-h-[480px] md:min-h-0 overflow-hidden bg-paper-100 ${className}`}
+      className={`relative w-full h-full flex-1 min-h-0 overflow-hidden bg-paper-100 ${className}`}
       data-testid="vietnam-eba-map"
     >
       {/* Leaflet MapContainer */}
@@ -402,6 +474,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         maxBoundsViscosity={0.2}
         scrollWheelZoom={true}
         zoomControl={false}
+        attributionControl={false}
         className="w-full h-full z-0"
         style={{ height: '100%', width: '100%', background: '#FAF8F5' }}
       >
@@ -413,7 +486,10 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         />
 
         <MapResizeController />
-        <MapFlyToController target={flyTarget} />
+        <MapFlyToController
+          target={flyTarget}
+          isMobileOffset={isMobile && mobileSheetSnap !== 'peek'}
+        />
         <MapZoomControls />
 
         {/* High-visibility Vietnam National Boundary Layer */}
@@ -442,7 +518,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
           />
         ))}
 
-        {/* 6 EBA Region Haloes & Center Markers */}
+        {/* 7 EBA Region Haloes & Center Markers */}
         {ebaRegions.filter(region => isValidLatLng(region.coordinates)).map((region, index) => {
           const isSelected = selectedEBARegionId === region.id;
           const radius = (typeof region.radiusMeters === 'number' && Number.isFinite(region.radiusMeters)) ? region.radiusMeters : 50000;
@@ -518,46 +594,55 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
                 position={displayCoords}
                 icon={getSpeciesDivIcon(species)}
                 eventHandlers={{
-                  click: () => selectSpecies(species.id)
+                  click: () => {
+                    selectSpecies(species.id);
+                    if (isMobile) setIsMobileSpeciesCardOpen(true);
+                  }
                 }}
               >
-                <Popup className="naturalist-map-popup">
-                  <div className="p-1 max-w-[200px] text-ink-900 space-y-1.5">
-                    {species.illustration?.imageUrl && (
-                      <img
-                        src={species.illustration.imageUrl}
-                        alt={species.vietnameseName}
-                        className="w-full h-20 object-cover rounded border border-paper-border"
-                      />
-                    )}
-                    <div>
-                      <h4 className="font-serif font-bold text-xs leading-snug">
-                        {species.vietnameseName}
-                      </h4>
-                      <p className="font-serif italic text-[11px] text-natural-forest">
-                        {species.scientificName}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      {species.isEndemic && (
-                        <span className="text-[10px] px-1 py-0.2 bg-natural-ochre/20 text-natural-amber font-semibold rounded">
-                          Đặc hữu VN
-                        </span>
+                {!isMobile && (
+                  <Popup className="naturalist-map-popup">
+                    <div className="p-1 max-w-[200px] text-ink-900 space-y-1.5">
+                      {species.illustration?.imageUrl && (
+                        <img
+                          src={species.illustration.imageUrl}
+                          alt={species.vietnameseName}
+                          className="w-full h-20 object-cover rounded border border-paper-border"
+                        />
                       )}
-                      <span className="text-[10px] px-1 py-0.2 bg-paper-200 text-ink-700 rounded font-mono font-bold">
-                        {species.conservation.iucn}
-                      </span>
+                      <div>
+                        <h4 className="font-serif font-bold text-xs leading-snug">
+                          {species.vietnameseName}
+                        </h4>
+                        <p className="font-serif italic text-[11px] text-natural-forest">
+                          {species.scientificName}
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        {species.isEndemic && (
+                          <span className={`text-[10px] px-1 py-0.2 font-semibold rounded ${
+                            species.endemicScope === 'indochina'
+                              ? 'bg-emerald-100 text-emerald-800 border border-emerald-300/60'
+                              : 'bg-natural-ochre/20 text-natural-amber'
+                          }`}>
+                            {species.endemicScope === 'indochina' ? 'Đông Dương' : 'Đặc hữu VN'}
+                          </span>
+                        )}
+                        <span className="text-[10px] px-1 py-0.2 bg-paper-200 text-ink-700 rounded font-mono font-bold">
+                          {species.conservation.iucn}
+                        </span>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => selectSpecies(species.id)}
+                        className="w-full mt-1 py-1 px-2 bg-natural-moss text-paper-50 rounded text-[10px] font-semibold flex items-center justify-center gap-1 hover:bg-natural-forest"
+                      >
+                        <span>Xem hồ sơ</span>
+                        <ChevronRight className="w-3 h-3" />
+                      </button>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => selectSpecies(species.id)}
-                      className="w-full mt-1 py-1 px-2 bg-natural-moss text-paper-50 rounded text-[10px] font-semibold flex items-center justify-center gap-1 hover:bg-natural-forest"
-                    >
-                      <span>Xem hồ sơ</span>
-                      <ChevronRight className="w-3 h-3" />
-                    </button>
-                  </div>
-                </Popup>
+                  </Popup>
+                )}
               </Marker>
             );
           });
@@ -569,45 +654,56 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
             position={selectedSpecies.distribution.coordinates}
             icon={getSelectedSpeciesDivIcon(selectedSpecies)}
             zIndexOffset={1000}
+            eventHandlers={{
+              click: () => {
+                if (isMobile) setIsMobileSpeciesCardOpen(true);
+              }
+            }}
           >
-            <Popup className="naturalist-map-popup" autoPan={false}>
-              <div className="p-1.5 max-w-[220px] text-ink-900 space-y-1.5">
-                <div className="flex items-center justify-between gap-1">
-                  <span className="text-[10px] font-mono text-natural-moss font-semibold uppercase tracking-wider">
-                    Đang quan sát
-                  </span>
-                  {selectedSpecies.isEndemic && (
-                    <span className="text-[10px] px-1 py-0.2 bg-natural-ochre/20 text-natural-amber font-semibold rounded">
-                      Đặc hữu
+            {!isMobile && (
+              <Popup className="naturalist-map-popup" autoPan={false}>
+                <div className="p-1.5 max-w-[220px] text-ink-900 space-y-1.5">
+                  <div className="flex items-center justify-between gap-1">
+                    <span className="text-[10px] font-mono text-natural-moss font-semibold uppercase tracking-wider">
+                      Đang quan sát
                     </span>
+                    {selectedSpecies.isEndemic && (
+                      <span className={`text-[10px] px-1 py-0.2 font-semibold rounded ${
+                        selectedSpecies.endemicScope === 'indochina'
+                          ? 'bg-emerald-100 text-emerald-800 border border-emerald-300/60'
+                          : 'bg-natural-ochre/20 text-natural-amber'
+                      }`}>
+                        {selectedSpecies.endemicScope === 'indochina' ? 'Đặc hữu Đông Dương' : 'Đặc hữu VN'}
+                      </span>
+                    )}
+                  </div>
+                  {selectedSpecies.illustration?.imageUrl && (
+                    <img
+                      src={selectedSpecies.illustration.imageUrl}
+                      alt={selectedSpecies.vietnameseName}
+                      className="w-full h-24 object-cover rounded border border-paper-border"
+                    />
                   )}
+                  <div>
+                    <h4 className="font-serif font-bold text-sm leading-snug">
+                      {selectedSpecies.vietnameseName}
+                    </h4>
+                    <p className="font-serif italic text-xs text-natural-forest">
+                      {selectedSpecies.scientificName}
+                    </p>
+                  </div>
+                  <div className="text-[11px] text-ink-600 font-sans">
+                    {selectedSpecies.distribution.elevation} • {selectedSpecies.distribution.ebaRegion}
+                  </div>
                 </div>
-                {selectedSpecies.illustration?.imageUrl && (
-                  <img
-                    src={selectedSpecies.illustration.imageUrl}
-                    alt={selectedSpecies.vietnameseName}
-                    className="w-full h-24 object-cover rounded border border-paper-border"
-                  />
-                )}
-                <div>
-                  <h4 className="font-serif font-bold text-sm leading-snug">
-                    {selectedSpecies.vietnameseName}
-                  </h4>
-                  <p className="font-serif italic text-xs text-natural-forest">
-                    {selectedSpecies.scientificName}
-                  </p>
-                </div>
-                <div className="text-[11px] text-ink-600 font-sans">
-                  {selectedSpecies.distribution.elevation} • {selectedSpecies.distribution.ebaRegion}
-                </div>
-              </div>
-            </Popup>
+              </Popup>
+            )}
           </Marker>
         )}
       </MapContainer>
 
       {/* Floating Left Panel: EBA Region Legend (Desktop & Tablet: md:flex) */}
-      <div className="hidden md:flex flex-col absolute top-3 left-3 bottom-14 max-h-[calc(100%-56px)] z-10 w-80 lg:w-[360px] pointer-events-auto">
+      <div className="hidden md:flex flex-col absolute top-3 left-3 bottom-14 max-h-[calc(100%-56px)] z-10 w-[340px] lg:w-[375px] pointer-events-auto">
         <EBARegionLegend
           selectedRegionId={selectedEBARegionId}
           onSelectRegion={handleSelectRegion}
@@ -619,28 +715,10 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
         <EndemicFocusCard />
       </div>
 
-      {/* Mobile Drawer Floating Panel */}
-      <div className="md:hidden absolute bottom-14 left-2 right-2 z-20 pointer-events-auto max-h-[60vh] overflow-y-auto">
-        {mobileTab === 'card' && (
-          <EndemicFocusCard className="w-full" />
-        )}
-        {mobileTab === 'legend' && (
-          <EBARegionLegend
-            className="w-full"
-            selectedRegionId={selectedEBARegionId}
-            onSelectRegion={(reg) => {
-              handleSelectRegion(reg);
-              setMobileTab('map');
-            }}
-          />
-        )}
-      </div>
-
-      {/* Bottom Controls Bar (Map Tools & Mobile Tabs) */}
-      <div className="absolute bottom-2.5 left-3 right-3 z-10 flex items-center justify-between gap-2 pointer-events-none">
-        
-        {/* Left Map Controls: Low profile and ultra-compact */}
-        <div className="flex items-center gap-1.5 pointer-events-auto bg-paper-100/95 backdrop-blur-md p-1 rounded-xl border border-paper-border shadow-paper-card text-xs">
+      {/* Bottom Map Controls: Positioned bottom-[68px] on mobile (above 48px floating peek card), md:bottom-2.5 on desktop */}
+      <div className="absolute bottom-[68px] md:bottom-2.5 left-3 right-3 md:right-auto md:w-auto flex items-center justify-between md:justify-start pointer-events-none z-20 md:z-10">
+        {/* Left Control Group */}
+        <div className="pointer-events-auto flex items-center gap-1.5 bg-paper-100/95 backdrop-blur-md p-1 rounded-xl border border-paper-border shadow-paper-card text-xs">
           <button
             type="button"
             onClick={handleResetOverview}
@@ -681,33 +759,54 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
           </button>
         </div>
 
-        {/* Center: Mobile Navigation Buttons */}
-        <div className="flex md:hidden items-center gap-1 pointer-events-auto bg-paper-100/90 backdrop-blur-md p-1 rounded-xl border border-paper-border shadow-paper-card text-xs">
+        {/* Right Mobile Avian AI Button (Mobile only: md:hidden) */}
+        <div className="flex md:hidden items-center pointer-events-auto">
           <button
             type="button"
-            onClick={() => setMobileTab(mobileTab === 'card' ? 'map' : 'card')}
-            className={`px-2.5 py-1 rounded-lg font-medium transition-all ${
-              mobileTab === 'card'
-                ? 'bg-natural-moss text-paper-50 shadow-sm'
-                : 'text-ink-700 hover:bg-paper-200'
-            }`}
+            data-testid="map-avian-ai-btn"
+            onClick={() => setIsGeminiModalOpen(true)}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-paper-100/95 backdrop-blur-md border border-paper-border hover:border-natural-moss/40 text-ink-800 hover:text-natural-forest text-xs font-semibold shadow-paper-card cursor-pointer transition-all active:scale-95"
+            aria-label="Mở Avian AI"
           >
-            Hồ sơ loài
-          </button>
-          <button
-            type="button"
-            onClick={() => setMobileTab(mobileTab === 'legend' ? 'map' : 'legend')}
-            className={`px-2.5 py-1 rounded-lg font-medium transition-all ${
-              mobileTab === 'legend'
-                ? 'bg-natural-moss text-paper-50 shadow-sm'
-                : 'text-ink-700 hover:bg-paper-200'
-            }`}
-          >
-            6 Vùng EBA
+            <Sparkles className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+            <span>Avian AI</span>
           </button>
         </div>
-
       </div>
+
+      {/* Mobile Floating Species Card (Mobile only: md:hidden) */}
+      {selectedSpecies && isMobileSpeciesCardOpen && (
+        <MobileFloatingSpeciesCard
+          species={selectedSpecies}
+          onClose={() => {
+            setIsMobileSpeciesCardOpen(false);
+            selectSpecies(null);
+          }}
+        />
+      )}
+
+      {/* Mobile Bottom Sheet: Interactive 3-stage sheet (Mobile only: md:hidden) */}
+      <EBAMobileBottomSheet
+        className="md:hidden"
+        regions={ebaRegions}
+        allSpecies={allSpecies}
+        selectedRegionId={selectedEBARegionId}
+        selectedSpecies={selectedSpecies}
+        onSelectRegion={handleSelectRegion}
+        onSelectSpecies={(sp) => {
+          selectSpecies(sp.id);
+          if (isMobile) setIsMobileSpeciesCardOpen(true);
+        }}
+        onResetOverview={handleResetOverview}
+        snapPoint={mobileSheetSnap}
+        onSnapChange={setMobileSheetSnap}
+      />
+
+      {/* Gemini Naturalist Modal for Mobile Map View */}
+      <GeminiNaturalistModal
+        isOpen={isGeminiModalOpen}
+        onClose={() => setIsGeminiModalOpen(false)}
+      />
     </div>
   );
 };

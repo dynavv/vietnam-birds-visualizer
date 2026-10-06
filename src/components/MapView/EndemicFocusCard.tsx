@@ -120,13 +120,45 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
       <div className="px-3 py-2 sm:px-3.5 sm:py-2.5 flex items-center justify-between border-b border-paper-border/70 bg-paper-200/50 shrink-0">
         <div className="flex items-center gap-1.5 flex-wrap min-w-0">
           {species.isEndemic && (
-            <EndemicBadge size="sm" />
+            <EndemicBadge size="sm" scope={species.endemicScope} />
           )}
           <ConservationBadge
             status={species.conservation.iucn}
             vietnamRedList={species.conservation.vietnamRedList}
             size="sm"
           />
+          {species.conservation.legalFramework?.directive04Flagship && (
+            <span
+              className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-rose-100 text-rose-800 border border-rose-300 shadow-2xs"
+              title="Loài cờ đầu được đích danh bảo vệ theo Chỉ thị 04/CT-TTg của Thủ tướng Chính phủ"
+            >
+              Chỉ thị 04
+            </span>
+          )}
+          {species.conservation.legalFramework?.decree84Group === 'IB' && (
+            <span
+              className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-red-100 text-red-700 border border-red-300"
+              title="Nhóm IB - Nghị định 84/2021/NĐ-CP: Nghiêm cấm khai thác vì mục đích thương mại"
+            >
+              Nhóm IB
+            </span>
+          )}
+          {species.conservation.legalFramework?.decree84Group === 'IIB' && (
+            <span
+              className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-amber-100 text-amber-800 border border-amber-300"
+              title="Nhóm IIB - Nghị định 84/2021/NĐ-CP: Hạn chế khai thác vì mục đích thương mại"
+            >
+              Nhóm IIB
+            </span>
+          )}
+          {species.conservation.legalFramework?.decree160Priority && (
+            <span
+              className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-amber-100 text-amber-800 border border-amber-300"
+              title="Nghị định 160/2013/NĐ-CP: Loài nguy cấp, quý, hiếm được ưu tiên bảo vệ"
+            >
+              Ưu tiên bảo vệ
+            </span>
+          )}
         </div>
 
         <div className="flex items-center gap-1 flex-shrink-0">
@@ -171,6 +203,12 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
                 handleSwitchToCurator();
               }
             }}
+            onMouseEnter={() => {
+              if (species?.illustration?.imageUrl) {
+                const prefetchImg = new Image();
+                prefetchImg.src = species.illustration.imageUrl;
+              }
+            }}
             title={`Nhấp để mở Cẩm nang nhận dạng chi tiết của loài ${species.vietnameseName}`}
             aria-label={`Nhấp để xem hồ sơ cẩm nang loài ${species.vietnameseName}`}
             className="relative group rounded-xl overflow-hidden border border-paper-border hover:border-natural-moss/60 bg-paper-200/40 p-1 shadow-inner shrink-0 ring-1 ring-black/[0.03] cursor-pointer transition-all duration-300 active:scale-[0.99]"
@@ -179,6 +217,8 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
             <BirdPlateImage
               species={species}
               aspectRatio="cover"
+              priority={true}
+              preferThumbnail={true}
               className="w-full aspect-[16/10] min-h-[145px] max-h-[180px] rounded-lg"
               imageClassName="group-hover:scale-105 transition-transform duration-500"
             />
