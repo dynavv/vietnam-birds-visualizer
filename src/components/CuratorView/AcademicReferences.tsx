@@ -14,6 +14,8 @@ export interface TaxonRegistriesCardProps {
 }
 
 export const TaxonRegistriesCard: React.FC<TaxonRegistriesCardProps> = React.memo(({ species, className = '' }) => {
+  const hasValidIucn = Boolean(species.academic?.iucnUrl && !species.academic.iucnUrl.includes('/search?'));
+
   return (
     <section
       className={`bg-paper-100/95 border border-paper-border rounded-2xl p-5 shadow-paper-card space-y-3.5 ${className}`}
@@ -29,19 +31,37 @@ export const TaxonRegistriesCard: React.FC<TaxonRegistriesCardProps> = React.mem
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-        {/* IUCN Link */}
-        <a
-          href={getIucnUrl(species)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-between p-2.5 rounded-xl bg-paper-200/60 hover:bg-paper-200 border border-paper-border transition-all text-xs group cursor-pointer shadow-2xs"
-        >
-          <div>
-            <span className="font-semibold text-ink-900 block">IUCN Red List</span>
-            <span className="text-ink-500 text-[11px]">Hồ sơ đánh giá bảo tồn</span>
+        {/* IUCN Link or Static Evaluated Notice */}
+        {hasValidIucn ? (
+          <a
+            href={getIucnUrl(species)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-between p-2.5 rounded-xl bg-paper-200/60 hover:bg-paper-200 border border-paper-border transition-all text-xs group cursor-pointer shadow-2xs"
+          >
+            <div>
+              <span className="font-semibold text-ink-900 block">IUCN Red List</span>
+              <span className="text-ink-500 text-[11px]">Hồ sơ đánh giá bảo tồn</span>
+            </div>
+            <ExternalLink className="w-3.5 h-3.5 text-ink-400 group-hover:text-natural-terracotta transition-colors shrink-0" />
+          </a>
+        ) : (
+          <div
+            className="flex items-center justify-between p-2.5 rounded-xl bg-paper-200/40 border border-paper-border/60 text-xs cursor-default select-none shadow-2xs"
+            title="Loài mới tách phân loại học. IUCN chưa thực hiện kỳ đánh giá độc lập."
+          >
+            <div>
+              <div className="flex items-center gap-1.5">
+                <span className="font-semibold text-ink-900">IUCN Red List</span>
+                <span className="px-1 py-0.2 rounded bg-paper-300/60 text-ink-500 font-mono text-[10px]">NE</span>
+              </div>
+              <span className="text-ink-400 text-[11px] block">Chưa đánh giá (Not Evaluated)</span>
+            </div>
+            <span className="text-[10px] font-medium text-ink-400 bg-paper-200/80 px-1.5 py-0.5 rounded border border-paper-border/50 shrink-0">
+              Chưa có
+            </span>
           </div>
-          <ExternalLink className="w-3.5 h-3.5 text-ink-400 group-hover:text-natural-terracotta transition-colors shrink-0" />
-        </a>
+        )}
 
         {/* Avibase Link */}
         <a

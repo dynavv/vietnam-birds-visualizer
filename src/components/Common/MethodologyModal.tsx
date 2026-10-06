@@ -175,13 +175,38 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
                   <h3>Sứ Mệnh Giáo Dục &amp; Tôn Vinh Thiên Nhiên Việt Nam</h3>
                 </div>
                 <p className="text-ink-700 leading-relaxed">
-                  <strong>Avifauna of Vietnam</strong> là dự án số hóa bảo tàng tự nhiên học tương tác, phi thương mại, được xây dựng nhằm mục đích giới thiệu và nâng cao nhận thức về muôn loài chim hoang dã phong phú của Việt Nam đến với đông đảo học sinh, sinh viên và cộng đồng yêu thiên nhiên.
+                  <strong>Avifauna of Vietnam</strong> là dự án số hóa tự nhiên học phi thương mại, tôn vinh và nâng cao nhận thức bảo tồn muôn loài chim hoang dã của Việt Nam.
                 </p>
                 <p className="text-ink-700 leading-relaxed">
-                  Ứng dụng kết hợp giữa hệ thống bản đồ địa lý sinh thái (GIS Mapping) của 07 Vùng Chim Đặc Hữu (EBAs), cây phả hệ phát sinh chủng loại (Phylogenetic Tree) và cẩm nang nhận dạng hình thái chi tiết nhằm mang lại trải nghiệm khám phá khoa học trực quan, trang nhã và cuốn hút nhất.
+                  Nền tảng tích hợp bản đồ sinh thái 07 vùng EBA, cây phả hệ tiến hóa và cẩm nang hình thái học giúp cộng đồng tiếp cận tri thức điểu học trực quan, chuẩn xác.
                 </p>
               </section>
 
+              {/* Key Highlights Metrics Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                <div className="p-3 rounded-xl bg-paper-100 border border-paper-border text-center flex flex-col justify-center items-center">
+                  <span className="font-serif font-bold text-xl sm:text-2xl text-natural-forest">81</span>
+                  <span className="text-xs font-semibold text-ink-900 mt-0.5">Loài Mẫu Vật</span>
+                  <span className="text-[11px] text-ink-600 font-sans mt-0.5">Điểu học Việt Nam</span>
+                </div>
+                <div className="p-3 rounded-xl bg-paper-100 border border-paper-border text-center flex flex-col justify-center items-center">
+                  <span className="font-serif font-bold text-sm sm:text-base text-natural-forest leading-tight">17 Bộ • 36 Họ</span>
+                  <span className="text-xs font-semibold text-ink-900 mt-0.5">69 Chi phân loại</span>
+                  <span className="text-[11px] text-ink-600 font-sans mt-0.5">Chuẩn IOC v14.2</span>
+                </div>
+                <div className="p-3 rounded-xl bg-paper-100 border border-paper-border text-center flex flex-col justify-center items-center">
+                  <span className="font-serif font-bold text-xl sm:text-2xl text-natural-terracotta">18</span>
+                  <span className="text-xs font-semibold text-ink-900 mt-0.5">Loài Đặc Hữu</span>
+                  <span className="text-[11px] text-ink-600 font-sans mt-0.5">13 đặc hữu VN + 5 Đông Dương</span>
+                </div>
+                <div className="p-3 rounded-xl bg-paper-100 border border-paper-border text-center flex flex-col justify-center items-center">
+                  <span className="font-serif font-bold text-xl sm:text-2xl text-natural-moss">07</span>
+                  <span className="text-xs font-semibold text-ink-900 mt-0.5">Vùng EBA</span>
+                  <span className="text-[11px] text-ink-600 font-sans mt-0.5">BirdLife International</span>
+                </div>
+              </div>
+
+              {/* 3 Trụ Cột Tính Năng */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                 <div className="p-3.5 rounded-xl bg-paper-100 border border-paper-border space-y-1">
                   <h4 className="font-serif font-bold text-ink-900 text-xs sm:text-sm">🗺️ 07 Vùng Đặc Hữu (EBAs)</h4>
@@ -189,7 +214,7 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
                 </div>
                 <div className="p-3.5 rounded-xl bg-paper-100 border border-paper-border space-y-1">
                   <h4 className="font-serif font-bold text-ink-900 text-xs sm:text-sm">🌳 Cây Phả Hệ Trực Quan</h4>
-                  <p className="text-[11px] sm:text-xs text-ink-600">Khám phá mối quan hệ tiến hóa từ Lớp Chim (Aves) đến 16 Bộ, Họ, Chi và từng Loài.</p>
+                  <p className="text-[11px] sm:text-xs text-ink-600">Khám phá mối quan hệ tiến hóa từ Lớp Chim (Aves) đến 17 Bộ, Họ, Chi và từng Loài theo chuẩn IOC v14.2.</p>
                 </div>
                 <div className="p-3.5 rounded-xl bg-paper-100 border border-paper-border space-y-1">
                   <h4 className="font-serif font-bold text-ink-900 text-xs sm:text-sm">📖 Cẩm Nang Nhận Dạng</h4>

@@ -186,15 +186,24 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
         <div className="flex items-center justify-between gap-1 text-[11px] text-ink-600 bg-paper-50 p-2 rounded-lg border border-paper-border">
           <span className="font-semibold text-ink-700 text-[10px] uppercase font-mono">Tra cứu:</span>
           <div className="flex items-center gap-1">
-            <a
-              href={getIucnUrl(species)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-1.5 py-0.5 rounded bg-paper-200 hover:bg-natural-moss/20 hover:text-natural-moss font-mono text-[10px] transition-colors"
-              title="IUCN Red List"
-            >
-              IUCN ↗
-            </a>
+            {species.academic?.iucnUrl && !species.academic.iucnUrl.includes('/search?') ? (
+              <a
+                href={getIucnUrl(species)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-1.5 py-0.5 rounded bg-paper-200 hover:bg-natural-moss/20 hover:text-natural-moss font-mono text-[10px] transition-colors"
+                title="IUCN Red List"
+              >
+                IUCN ↗
+              </a>
+            ) : (
+              <span
+                className="px-1.5 py-0.5 rounded bg-paper-200/40 text-ink-400 font-mono text-[10px] cursor-not-allowed select-none"
+                title="Chưa có đánh giá riêng trên IUCN (Not Evaluated)"
+              >
+                IUCN (NE)
+              </span>
+            )}
             <a
               href={getAvibaseUrl(species)}
               target="_blank"

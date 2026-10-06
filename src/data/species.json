@@ -301,8 +301,8 @@
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-LANIELL",
       "avibaseId": "D8B781BA0E7321F5",
-      "iucnUrl": "https://www.iucnredlist.org/species/22716690/225551755",
-      "gbifTaxonKey": "9390237",
+      "iucnUrl": "https://www.iucnredlist.org/species/22716690/111108713",
+      "gbifTaxonKey": "10842921",
       "primaryLiterature": [
         {
           "authors": "Gyldenstolpe, N.",
@@ -7852,9 +7852,9 @@
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-CUTIA",
-      "avibaseId": "B75DF97A5E66EFB5",
-      "iucnUrl": "https://www.iucnredlist.org/species/22734493/95087834",
-      "gbifTaxonKey": "5844898",
+      "avibaseId": "A4D1F1C1645D3B23",
+      "iucnUrl": "https://www.iucnredlist.org/species/22734578/156291691",
+      "gbifTaxonKey": "7340448",
       "primaryLiterature": [
         {
           "authors": "Collar, N. J.",
@@ -7959,9 +7959,9 @@
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-GARRU",
-      "avibaseId": "6507A259BDCC7DBF",
-      "iucnUrl": "https://www.iucnredlist.org/species/22734490/95087640",
-      "gbifTaxonKey": "2493399",
+      "avibaseId": "B502C63704255140",
+      "iucnUrl": "https://www.iucnredlist.org/species/22734468/223389570",
+      "gbifTaxonKey": "5788987",
       "primaryLiterature": [
         {
           "authors": "Collar, N. J.",
@@ -8066,9 +8066,9 @@
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-SCHOEN",
-      "avibaseId": "6C0FEFD489F5747C",
-      "iucnUrl": "https://www.iucnredlist.org/species/22716617/94502598",
-      "gbifTaxonKey": "7341399",
+      "avibaseId": "BEA21CCAE8424BC4",
+      "iucnUrl": "https://www.iucnredlist.org/species/22734588/95091140",
+      "gbifTaxonKey": "6090215",
       "primaryLiterature": [
         {
           "authors": "Robinson, H. C. & Kloss, C. B.",
@@ -8176,9 +8176,9 @@
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-PRINIA",
-      "avibaseId": "6C31D8068285DDE7",
-      "iucnUrl": "https://www.iucnredlist.org/species/103777085/104192667",
-      "gbifTaxonKey": "10747209",
+      "avibaseId": null,
+      "iucnUrl": null,
+      "gbifTaxonKey": "10700407",
       "primaryLiterature": [
         {
           "authors": "Alström, P., et al.",
@@ -8283,9 +8283,9 @@
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-LOCUST",
-      "avibaseId": "958B5C06FBF98F53",
-      "iucnUrl": "https://www.iucnredlist.org/species/103798547/104153926",
-      "gbifTaxonKey": "8078696",
+      "avibaseId": "AACE84D149F4F5A8",
+      "iucnUrl": null,
+      "gbifTaxonKey": "9059696",
       "primaryLiterature": [
         {
           "authors": "Alström, P., et al.",
@@ -8380,9 +8380,9 @@
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-GAL-TROPICO",
-      "avibaseId": "148679A814AEB4BC",
-      "iucnUrl": "https://www.iucnredlist.org/species/22678768/92787864",
-      "gbifTaxonKey": "9406086",
+      "avibaseId": "65B17B0703831D89",
+      "iucnUrl": "https://www.iucnredlist.org/species/22727383/199156601",
+      "gbifTaxonKey": "11371950",
       "primaryLiterature": [
         {
           "authors": "Delacour, J.",
@@ -8478,7 +8478,7 @@
     "academic": {
       "iocTaxonCode": "IOC-PSEUDIBIS-",
       "avibaseId": "F12CC0610AA89673",
-      "iucnUrl": "https://www.iucnredlist.org/search?query=Pseudibis%20gigantea&searchType=species",
+      "iucnUrl": "https://www.iucnredlist.org/species/22697536/134200680",
       "gbifTaxonKey": "2480779",
       "primaryLiterature": [
         {
@@ -8578,7 +8578,7 @@
     "academic": {
       "iocTaxonCode": "IOC-SARCOGYPS-",
       "avibaseId": "21D7169D28644CD4",
-      "iucnUrl": "https://www.iucnredlist.org/search?query=Sarcogyps%20calvus&searchType=species",
+      "iucnUrl": "https://www.iucnredlist.org/species/22695254/205031246",
       "gbifTaxonKey": "2480717",
       "primaryLiterature": [
         {
@@ -8679,7 +8679,7 @@
     "academic": {
       "iocTaxonCode": "IOC-GYPS-TENUI",
       "avibaseId": "11324DC80E8BBB9F",
-      "iucnUrl": "https://www.iucnredlist.org/search?query=Gyps%20tenuirostris&searchType=species",
+      "iucnUrl": "https://www.iucnredlist.org/species/22729460/204781113",
       "gbifTaxonKey": "4850076",
       "primaryLiterature": [
         {
@@ -8783,7 +8783,7 @@
     "academic": {
       "iocTaxonCode": "IOC-GYPS-BENGA",
       "avibaseId": "FC2346E6EF324F85",
-      "iucnUrl": "https://www.iucnredlist.org/search?query=Gyps%20bengalensis&searchType=species",
+      "iucnUrl": "https://www.iucnredlist.org/species/22695194/204618615",
       "gbifTaxonKey": "2480383",
       "primaryLiterature": [
         {
@@ -8880,7 +8880,7 @@
     "academic": {
       "iocTaxonCode": "IOC-LEPTOPTILO",
       "avibaseId": "81E1FC1CBA6C9F7F",
-      "iucnUrl": "https://www.iucnredlist.org/search?query=Leptoptilos%20dubius&searchType=species",
+      "iucnUrl": "https://www.iucnredlist.org/species/22697721/229597779",
       "gbifTaxonKey": "2481945",
       "primaryLiterature": [
         {
@@ -8983,7 +8983,7 @@
     "academic": {
       "iocTaxonCode": "IOC-CALIDRIS-P",
       "avibaseId": "3FC8CA50CC50BAAD",
-      "iucnUrl": "https://www.iucnredlist.org/search?query=Calidris%20pygmaea&searchType=species",
+      "iucnUrl": "https://www.iucnredlist.org/species/22693452/154738156",
       "gbifTaxonKey": "10658506",
       "primaryLiterature": [
         {
@@ -9080,7 +9080,7 @@
     "academic": {
       "iocTaxonCode": "IOC-EMBERIZA-A",
       "avibaseId": "7574C0E53A34CCFD",
-      "iucnUrl": "https://www.iucnredlist.org/search?query=Emberiza%20aureola&searchType=species",
+      "iucnUrl": "https://www.iucnredlist.org/species/22720966/166424599",
       "gbifTaxonKey": "2491518",
       "primaryLiterature": [
         {

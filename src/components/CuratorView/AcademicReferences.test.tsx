@@ -61,4 +61,39 @@ describe('AcademicReferences & TaxonRegistriesCard Component', () => {
     expect(screen.getByTestId('taxon-registries-card')).toBeDefined();
     expect(screen.getByText('Mã Định Danh Cơ Sở Dữ Liệu Quốc Tế')).toBeDefined();
   });
+
+  it('renders not evaluated (NE) placeholder when IUCN URL is missing or null without external anchor', () => {
+    const unassessedSpecies: BirdSpecies = {
+      ...mockSpecies,
+      academic: {
+        ...mockSpecies.academic,
+        iucnUrl: undefined
+      }
+    };
+
+    render(<AcademicReferences species={unassessedSpecies} />);
+    expect(screen.getByText('Chưa đánh giá (Not Evaluated)')).toBeDefined();
+    expect(screen.getByText('NE')).toBeDefined();
+    expect(screen.getByText('Chưa có')).toBeDefined();
+
+    const iucnLinks = screen.queryAllByRole('link', { name: /IUCN Red List/i });
+    expect(iucnLinks.length).toBe(0);
+  });
+
+  it('renders not evaluated (NE) placeholder when IUCN URL is a generic search fallback', () => {
+    const searchSpecies: BirdSpecies = {
+      ...mockSpecies,
+      academic: {
+        ...mockSpecies.academic,
+        iucnUrl: 'https://www.iucnredlist.org/search?query=Prinia%20rocki&searchType=species'
+      }
+    };
+
+    render(<AcademicReferences species={searchSpecies} />);
+    expect(screen.getByText('Chưa đánh giá (Not Evaluated)')).toBeDefined();
+    expect(screen.getByText('NE')).toBeDefined();
+
+    const iucnLinks = screen.queryAllByRole('link', { name: /IUCN Red List/i });
+    expect(iucnLinks.length).toBe(0);
+  });
 });
