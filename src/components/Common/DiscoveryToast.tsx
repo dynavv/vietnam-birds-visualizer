@@ -37,7 +37,7 @@ export const DiscoveryToast: React.FC<DiscoveryToastProps> = ({
     <aside
       role="status"
       aria-label="Thông báo khám phá loài mới"
-      className={`fixed top-16 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300 pointer-events-auto ${
+      className={`hidden md:block fixed top-16 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300 pointer-events-auto ${
         isVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 -translate-y-3 scale-95 pointer-events-none"
       }`}
       data-testid="discovery-toast"

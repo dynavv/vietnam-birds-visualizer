@@ -57,7 +57,10 @@ describe("DiscoveryToast Component", () => {
       />
     );
 
-    expect(screen.getByTestId("discovery-toast")).toBeDefined();
+    const toastEl = screen.getByTestId("discovery-toast");
+    expect(toastEl).toBeDefined();
+    expect(toastEl.className).toContain("hidden");
+    expect(toastEl.className).toContain("md:block");
     expect(screen.getByText("✨ Đã Khám Phá Loài Mới!")).toBeDefined();
     expect(screen.getByText("12/68")).toBeDefined();
     expect(screen.getByText("Gà lôi Lam mào trắng")).toBeDefined();
