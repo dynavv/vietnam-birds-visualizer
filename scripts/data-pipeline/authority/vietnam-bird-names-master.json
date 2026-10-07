@@ -1165,9 +1165,11 @@
   {
     "id": "ducula-badia",
     "scientificName": "Ducula badia",
-    "vietnameseName": "Gầm ghì lưng hung",
+    "vietnameseName": "Gầm ghì lưng nâu",
     "englishName": "Mountain Imperial Pigeon",
-    "aliases": [],
+    "aliases": [
+      "Gầm ghì lưng hung"
+    ],
     "isEndemic": false,
     "endemicScope": "none",
     "order": "Columbiformes",

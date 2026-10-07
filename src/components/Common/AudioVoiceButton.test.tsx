@@ -20,15 +20,15 @@ describe('AudioVoiceButton Component', () => {
     vi.restoreAllMocks();
   });
 
-  it('renders disabled / placeholder state when no audioInfo is provided (no autoplay)', () => {
-    render(<AudioVoiceButton audioInfo={null} />);
-    expect(screen.getByText(/Bản thu đang cập nhật/i)).toBeDefined();
+  it('renders null when audioInfo is null (hidden completely)', () => {
+    const { container } = render(<AudioVoiceButton audioInfo={null} />);
+    expect(container.firstChild).toBeNull();
     expect(playMock).not.toHaveBeenCalled();
   });
 
-  it('renders icon-only placeholder when audio is missing', () => {
-    render(<AudioVoiceButton audioInfo={null} variant="icon-only" />);
-    expect(screen.getByLabelText(/Bản thu đang cập nhật/i)).toBeDefined();
+  it('renders null when audioInfo has empty audioUrl', () => {
+    const { container } = render(<AudioVoiceButton audioInfo={{ audioUrl: '' } as any} />);
+    expect(container.firstChild).toBeNull();
     expect(playMock).not.toHaveBeenCalled();
   });
 

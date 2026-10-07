@@ -6,7 +6,7 @@ interface BirdPlateImageProps {
   species: BirdSpecies;
   className?: string;
   imageClassName?: string;
-  aspectRatio?: 'square' | 'plate' | 'cover';
+  aspectRatio?: 'square' | 'plate' | 'cover' | 'video';
   onClick?: () => void;
   priority?: boolean;
   preferThumbnail?: boolean;
@@ -40,6 +40,7 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
 }) => {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const [thumbLoaded, setThumbLoaded] = useState<boolean>(false);
+  const [localFailed, setLocalFailed] = useState<boolean>(false);
   const [useFallbackToRaw, setUseFallbackToRaw] = useState<boolean>(false);
   const [useThumbnailFallback, setUseThumbnailFallback] = useState<boolean>(false);
   const [dynamicPhoto, setDynamicPhoto] = useState<ResolvedPhotoInfo | null>(null);
@@ -50,11 +51,19 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
 
   const rawImageUrl = species.illustration?.imageUrl;
   const thumbnailUrl = species.illustration?.thumbnailUrl;
+  const localPlateUrl = species.illustration?.localPlateUrl;
+  const localThumbnailUrl = species.illustration?.localThumbnailUrl;
+
+  const hasLocal = Boolean(localPlateUrl || localThumbnailUrl);
+  const localSource = preferThumbnail
+    ? (localThumbnailUrl || localPlateUrl)
+    : (localPlateUrl || localThumbnailUrl);
 
   // Reset lifecycle states whenever species or URLs change
   React.useEffect(() => {
     setIsLoaded(false);
     setThumbLoaded(false);
+    setLocalFailed(false);
     setUseFallbackToRaw(false);
     setUseThumbnailFallback(false);
     setDynamicPhoto(null);
@@ -62,7 +71,7 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
     setAttemptedAlt(false);
     setAttemptedDynamic(false);
     setHasAllErrors(false);
-  }, [species.id, rawImageUrl, thumbnailUrl]);
+  }, [species.id, localPlateUrl, localThumbnailUrl, rawImageUrl, thumbnailUrl]);
 
   const orderName = species.taxonomy?.order || 'Passeriformes';
   const palette = ORDER_COLOR_PALETTES[orderName] || {
@@ -78,6 +87,8 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
         return 'aspect-[3/4]';
       case 'cover':
         return 'aspect-[16/10]';
+      case 'video':
+        return 'aspect-video';
       case 'square':
       default:
         return 'aspect-square';
@@ -99,12 +110,14 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
     return null;
   };
 
-  // Determine current active image source
+  // Determine current active image source (Local-First -> Remote -> Alt -> Dynamic)
   let currentSrc = '';
   if (altUrl) {
     currentSrc = altUrl;
   } else if (dynamicPhoto) {
     currentSrc = dynamicPhoto.imageUrl || dynamicPhoto.thumbnailUrl;
+  } else if (hasLocal && !localFailed && localSource) {
+    currentSrc = localSource;
   } else if (preferThumbnail) {
     if (!useFallbackToRaw && thumbnailUrl) {
       currentSrc = thumbnailUrl;
@@ -120,13 +133,36 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
   }
 
   const canAttemptImage = Boolean(currentSrc) && !hasAllErrors;
+  const underlayThumbSrc = localThumbnailUrl || thumbnailUrl;
 
   const handleImageError = () => {
-    if (preferThumbnail && !useFallbackToRaw && rawImageUrl && rawImageUrl !== thumbnailUrl) {
+    // Stage 1: Fallback from Local to Remote
+    if (hasLocal && !localFailed) {
+      setLocalFailed(true);
+      setIsLoaded(false);
+      const hasRemoteUrl = Boolean(rawImageUrl || thumbnailUrl);
+      if (!hasRemoteUrl) {
+        if (!attemptedDynamic && species.scientificName) {
+          setAttemptedDynamic(true);
+          resolveDynamicPhoto(species.scientificName).then((resolved) => {
+            if (resolved) {
+              setDynamicPhoto(resolved);
+              setIsLoaded(false);
+            } else {
+              setHasAllErrors(true);
+            }
+          }).catch(() => {
+            setHasAllErrors(true);
+          });
+        } else {
+          setHasAllErrors(true);
+        }
+      }
+    } else if (preferThumbnail && !useFallbackToRaw && rawImageUrl && rawImageUrl !== thumbnailUrl) {
       setUseFallbackToRaw(true);
       setIsLoaded(false);
     } else if (!preferThumbnail && !useThumbnailFallback && thumbnailUrl && thumbnailUrl !== rawImageUrl) {
-      // Step 2: Try static thumbnail
+      // Step 2: Try static remote thumbnail
       setUseThumbnailFallback(true);
       setIsLoaded(false);
     } else if (!attemptedAlt) {
@@ -177,15 +213,16 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
       data-testid={`bird-plate-${species.id}`}
     >
       {/* 0. Underlay progressive thumbnail (hiển thị mờ tức thì trong lúc bản nét cao đang nạp) */}
-      {!preferThumbnail && thumbnailUrl && rawImageUrl && currentSrc === rawImageUrl && !isLoaded && !hasAllErrors && (
+      {!preferThumbnail && underlayThumbSrc && currentSrc && currentSrc !== underlayThumbSrc && !isLoaded && !hasAllErrors && (
         <img
-          src={thumbnailUrl}
+          src={underlayThumbSrc}
           alt=""
           aria-hidden="true"
           className={`absolute inset-0 w-full h-full object-cover object-[center_25%] filter blur-[3px] scale-105 transition-opacity duration-300 pointer-events-none ${
             thumbLoaded ? 'opacity-85' : 'opacity-0'
           } ${imageClassName}`}
           loading="eager"
+          decoding="async"
           onLoad={() => setThumbLoaded(true)}
         />
       )}
@@ -200,6 +237,7 @@ export const BirdPlateImageComponent: React.FC<BirdPlateImageProps> = ({
             isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           } ${imageClassName}`}
           loading={priority ? 'eager' : 'lazy'}
+          decoding="async"
           {...(priority ? { fetchpriority: 'high' } : {})}
           onLoad={() => setIsLoaded(true)}
           onError={handleImageError}

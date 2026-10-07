@@ -19,6 +19,7 @@ import { EBARegionLegend } from './EBARegionLegend';
 import { EBAMobileBottomSheet, type SheetSnapPoint } from './EBAMobileBottomSheet';
 import { MobileFloatingSpeciesCard } from './MobileFloatingSpeciesCard';
 import { GeminiNaturalistModal } from '../AI/GeminiNaturalistModal';
+import { BirdPlateImage } from '../Common/BirdPlateImage';
 
 // Center, zoom and bounds defaults for Vietnam overview
 const VIETNAM_CENTER: [number, number] = [16.0, 107.5];
@@ -609,13 +610,12 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
                 {!isMobile && (
                   <Popup className="naturalist-map-popup">
                     <div className="p-1 max-w-[200px] text-ink-900 space-y-1.5">
-                      {species.illustration?.imageUrl && (
-                        <img
-                          src={species.illustration.imageUrl}
-                          alt={species.vietnameseName}
-                          className="w-full h-20 object-cover rounded border border-paper-border"
-                        />
-                      )}
+                      <BirdPlateImage
+                        species={species}
+                        preferThumbnail={true}
+                        aspectRatio="video"
+                        className="w-full h-20 object-cover rounded border border-paper-border"
+                      />
                       <div>
                         <h4 className="font-serif font-bold text-xs leading-snug">
                           {species.vietnameseName}
@@ -683,13 +683,12 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
                       </span>
                     )}
                   </div>
-                  {selectedSpecies.illustration?.imageUrl && (
-                    <img
-                      src={selectedSpecies.illustration.imageUrl}
-                      alt={selectedSpecies.vietnameseName}
-                      className="w-full h-24 object-cover rounded border border-paper-border"
-                    />
-                  )}
+                  <BirdPlateImage
+                    species={selectedSpecies}
+                    preferThumbnail={true}
+                    aspectRatio="video"
+                    className="w-full h-24 object-cover rounded border border-paper-border"
+                  />
                   <div>
                     <h4 className="font-serif font-bold text-sm leading-snug">
                       {selectedSpecies.vietnameseName}

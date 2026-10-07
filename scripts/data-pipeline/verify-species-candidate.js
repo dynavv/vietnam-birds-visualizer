@@ -3,7 +3,7 @@
  * 
  * GIAI ĐOẠN 2: HÀNG RÀO KIỂM TOÁN CHẶT CHẼ (QUALITY GATEKEEPER AUDIT)
  * 
- * Thực thi 5 bài kiểm tra chốt chặn nghiêm ngặt đối với bản ghi dự thảo:
+ * Thực thi 6 bài kiểm tra chốt chặn nghiêm ngặt đối với bản ghi dự thảo:
  * scripts/data-pipeline/drafts/candidate-species.json
  * 
  * 🔍 BÀI TEST 1: Tên tiếng Việt & Chống AI Hallucination (Khớp 1:1 Master Registry)
@@ -11,6 +11,7 @@
  * 🔍 BÀI TEST 3: Liên kết học thuật quốc tế (IUCN 200 OK, Avibase hex ID, GBIF API 200)
  * 🔍 BÀI TEST 4: Cấu trúc phân loại & Tọa độ phân bố tại Việt Nam
  * 🔍 BÀI TEST 5: Danh mục Bảo vệ Pháp lý của Chính phủ (Nghị định 84/2021/NĐ-CP, Nghị định 160/2013/NĐ-CP, Chỉ thị 04/CT-TTg)
+ * 🔍 BÀI TEST 6: Dữ liệu Âm thanh thực địa (Xác thực HTTP HEAD, Content-Type, Content-Disposition, Khóa tải & Taxon Mismatch)
  * 
  * CHỈ KHI 100% CÁC BÀI TEST ĐỀU PASS THÌ MỚI ĐỦ ĐIỀU KIỆN ĐỂ COMMIT VÀO DATABASE!
  */
@@ -25,11 +26,13 @@ const __dirname = path.dirname(__filename);
 const DRAFT_FILE = path.resolve(__dirname, 'drafts/candidate-species.json');
 const MASTER_PATH = path.resolve(__dirname, 'authority/vietnam-bird-names-master.json');
 
-async function fetchWithTimeout(url, timeoutMs = 7000) {
+async function fetchWithTimeout(url, timeoutMs = 7000, options = {}) {
   try {
+    const defaultHeaders = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36' };
     const res = await fetch(url, {
-      headers: { 'User-Agent': 'VietnamBirdsVisualizer-Gatekeeper/1.0' },
-      signal: AbortSignal.timeout(timeoutMs)
+      headers: { ...defaultHeaders, ...(options.headers || {}) },
+      signal: AbortSignal.timeout(timeoutMs),
+      ...options
     });
     return res;
   } catch {
@@ -304,6 +307,48 @@ export async function verifyCandidateSpecies(draftRecord = null) {
       warnings.push(
         `[NGHI VẤN XẾP HẠNG] Loài có bậc bảo tồn LC nhưng lại được gán Nhóm IB (Nghiêm cấm khai thác thương mại). Vui lòng kiểm tra lại tính chính xác.`
       );
+    }
+  }
+
+  // =========================================================================
+  // BÀI TEST 6: HÀNG RÀO XÁC THỰC DỮ LIỆU ÂM THANH (AUDIO CALL VALIDATION)
+  // =========================================================================
+  console.log(`\n🔍 [BÀI TEST 6] Kiểm tra Dữ liệu Âm thanh (Audio Call Gatekeeper)...`);
+  if (!record.audioCall) {
+    console.log(`   ℹ️ Loài không có bản thu âm (audioCall: null). Hợp lệ (cho phép đối với loài hiếm/restricted).`);
+  } else {
+    const audioCall = record.audioCall;
+    if (!audioCall.audioUrl || typeof audioCall.audioUrl !== 'string' || !audioCall.audioUrl.trim()) {
+      errors.push(`[AUDIO URL THIẾU] Trường audioCall.audioUrl bị thiếu hoặc không hợp lệ!`);
+    } else {
+      console.log(`   📡 Đang gửi HTTP HEAD kiểm tra âm thanh: ${audioCall.audioUrl}...`);
+      const audioRes = await fetchWithTimeout(audioCall.audioUrl, 8000, { method: 'HEAD' });
+      if (!audioRes || !audioRes.ok) {
+        errors.push(`[AUDIO HTTP ERROR] URL âm thanh (${audioCall.audioUrl}) không phản hồi HTTP hợp lệ (status: ${audioRes ? audioRes.status : 'TIMEOUT/ERR'})!`);
+      } else {
+        const contentType = (audioRes.headers.get('content-type') || '').toLowerCase();
+        const contentDisp = audioRes.headers.get('content-disposition') || '';
+        const isAudioType = contentType.includes('audio');
+        const hasContentDisp = /filename=/i.test(contentDisp) || contentDisp.trim().length > 0;
+
+        if (contentType.includes('text/html') || (!isAudioType && !hasContentDisp)) {
+          errors.push(`[AUDIO RESTRICTED / CHẶN TẢI]: Loài bị Xeno-canto khóa tải do chính sách bảo vệ chim hót chống săn trộm, yêu cầu chuyển sang audioCall: null.`);
+        } else {
+          // Lấy tên chi và loài từ record.scientificName
+          const nameParts = (record.scientificName || '').trim().toLowerCase().split(/\s+/);
+          const genus = nameParts[0] || '';
+          const species = nameParts[1] || '';
+
+          const dispDecoded = decodeURIComponent(contentDisp).toLowerCase();
+          const matchesTaxon = (genus && dispDecoded.includes(genus)) || (species && dispDecoded.includes(species));
+
+          if (!matchesTaxon) {
+            errors.push(`[AUDIO TAXON MISMATCH - SAI LOÀI ÂM THANH]: Tệp không khớp danh pháp loài.`);
+          } else {
+            console.log(`   ✅ Tệp âm thanh hợp lệ và khớp chính xác danh pháp loài.`);
+          }
+        }
+      }
     }
   }
 

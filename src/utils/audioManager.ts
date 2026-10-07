@@ -11,6 +11,8 @@ export interface AudioPlaybackState {
   isLoading: boolean;
   isError: boolean;
   currentUrl: string | null;
+  speciesId: string | null;
+  isLocalSource: boolean;
   durationFormatted: string;
 }
 
@@ -19,9 +21,11 @@ export type AudioStateListener = (state: AudioPlaybackState) => void;
 class AudioManager {
   private audioElement: HTMLAudioElement | null = null;
   private currentUrl: string | null = null;
+  private currentSpeciesId: string | null = null;
   private isPlayingState = false;
   private isLoadingState = false;
   private isErrorState = false;
+  private isLocalSourceState = false;
   private durationFormattedState = '';
   private listeners: Set<AudioStateListener> = new Set();
 
@@ -37,12 +41,15 @@ class AudioManager {
       isLoading: this.isLoadingState,
       isError: this.isErrorState,
       currentUrl: this.currentUrl,
+      speciesId: this.currentSpeciesId,
+      isLocalSource: this.isLocalSourceState,
       durationFormatted: this.durationFormattedState
     };
   }
 
-  public isPlaying(url?: string): boolean {
+  public isPlaying(url?: string, speciesId?: string): boolean {
     if (!this.isPlayingState) return false;
+    if (speciesId) return this.currentSpeciesId === speciesId;
     if (url) return this.currentUrl === url;
     return true;
   }
@@ -107,20 +114,26 @@ class AudioManager {
     this.isLoadingState = false;
     this.isErrorState = false;
     this.currentUrl = null;
+    this.currentSpeciesId = null;
+    this.isLocalSourceState = false;
     this.durationFormattedState = '';
     this.notify();
   }
 
-  public async play(url: string): Promise<void> {
+  public async play(url: string, speciesId?: string): Promise<void> {
     if (!url) return;
 
-    // If same URL and already playing, nothing to do
-    if (this.currentUrl === url && this.isPlayingState && this.audioElement) {
+    const isSameTrack = speciesId
+      ? this.currentSpeciesId === speciesId
+      : this.currentUrl === url;
+
+    // If same track and already playing, nothing to do
+    if (isSameTrack && this.isPlayingState && this.audioElement) {
       return;
     }
 
-    // If same URL and paused, resume
-    if (this.currentUrl === url && this.audioElement && !this.isPlayingState) {
+    // If same track and paused, resume
+    if (isSameTrack && this.audioElement && !this.isPlayingState) {
       try {
         this.isLoadingState = true;
         this.isErrorState = false;
@@ -136,16 +149,41 @@ class AudioManager {
       }
     }
 
-    // Different URL: Stop previous audio and initialize new audio
+    // Different track: Stop previous audio and initialize new audio
     this.clearAudio();
     this.currentUrl = url;
+    this.currentSpeciesId = speciesId || null;
     this.isLoadingState = true;
     this.isPlayingState = false;
     this.isErrorState = false;
+    this.durationFormattedState = '';
+
+    const hasLocal = Boolean(speciesId);
+    this.isLocalSourceState = hasLocal;
+    const localSrc = hasLocal ? `/audio/${speciesId}.mp3` : '';
+    const initialSrc = hasLocal ? localSrc : url;
+
     this.notify();
 
-    const audio = new Audio(url);
+    const audio = new Audio(initialSrc);
     audio.preload = 'auto';
+
+    let isFallingBack = false;
+
+    const doFallback = () => {
+      if (isFallingBack || !this.isLocalSourceState || !url) {
+        return false;
+      }
+      isFallingBack = true;
+      this.isLocalSourceState = false;
+      console.warn(`AudioManager: local audio source failed (${localSrc}), falling back to remote stream: ${url}`);
+      this.notify();
+      audio.src = url;
+      audio.play().catch((err: unknown) => {
+        this.handlePlayError(err, url);
+      });
+      return true;
+    };
 
     const onPlay = () => {
       this.isLoadingState = false;
@@ -171,14 +209,11 @@ class AudioManager {
     };
 
     const onError = () => {
-      // If primary external stream failed, try fallback reliable stream once
-      if (this.currentUrl && !this.currentUrl.includes('739091')) {
-        console.warn(`AudioManager: primary stream failed for ${this.currentUrl}, switching to resilient stream...`);
-        this.currentUrl = 'https://xeno-canto.org/739091/download';
-        audio.src = this.currentUrl;
-        audio.play().catch((err) => {
-          this.handlePlayError(err, this.currentUrl || '');
-        });
+      if (this.isLocalSourceState && url) {
+        doFallback();
+        return;
+      }
+      if (isFallingBack && hasLocal && audio.src !== url) {
         return;
       }
       this.isPlayingState = false;
@@ -218,6 +253,12 @@ class AudioManager {
       this.isLoadingState = false;
       this.notify();
     } catch (err: unknown) {
+      if (isFallingBack) {
+        return;
+      }
+      if (doFallback()) {
+        return;
+      }
       this.handlePlayError(err, url);
     }
   }
@@ -235,15 +276,15 @@ class AudioManager {
       // Normal user interaction interruption, do NOT set error state
       this.isPlayingState = false;
       this.notify();
+      return;
     } else {
-      if (url && !url.includes('739091') && this.audioElement) {
-        console.warn(`AudioManager: playback error for ${url}, switching to resilient stream...`);
-        this.currentUrl = 'https://xeno-canto.org/739091/download';
-        this.audioElement.src = this.currentUrl;
-        this.audioElement.play().catch(() => {
-          this.isErrorState = true;
-          this.isPlayingState = false;
-          this.notify();
+      if (this.isLocalSourceState && url && this.audioElement) {
+        console.warn(`AudioManager: playback error for local source, falling back to remote stream: ${url}`);
+        this.isLocalSourceState = false;
+        this.notify();
+        this.audioElement.src = url;
+        this.audioElement.play().catch((remoteErr: unknown) => {
+          this.handlePlayError(remoteErr, url);
         });
         return;
       }
@@ -254,11 +295,11 @@ class AudioManager {
     }
   }
 
-  public async toggle(url: string): Promise<void> {
-    if (this.isPlaying(url)) {
+  public async toggle(url: string, speciesId?: string): Promise<void> {
+    if (this.isPlaying(url, speciesId)) {
       this.pause();
     } else {
-      await this.play(url);
+      await this.play(url, speciesId);
     }
   }
 }

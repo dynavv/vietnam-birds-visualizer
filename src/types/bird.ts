@@ -36,6 +36,8 @@ export interface GeographicDistribution {
 export interface IllustrationInfo {
   imageUrl: string;
   thumbnailUrl?: string;
+  localPlateUrl?: string;
+  localThumbnailUrl?: string;
   artist: string;
   sourceBook?: string;
   plateNumber?: string;

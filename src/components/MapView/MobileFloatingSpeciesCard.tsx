@@ -1,6 +1,7 @@
 import React from 'react';
 import { Bird, X, MapPin, Compass, Trees } from 'lucide-react';
 import type { BirdSpecies } from '../../types/bird';
+import { BirdPlateImage } from '../Common/BirdPlateImage';
 
 export interface MobileFloatingSpeciesCardProps {
   species: BirdSpecies;
@@ -51,9 +52,10 @@ export const MobileFloatingSpeciesCard: React.FC<MobileFloatingSpeciesCardProps>
       <div className="flex-1 overflow-y-auto overscroll-contain touch-pan-y p-3 space-y-2.5 text-xs">
         {species.illustration?.imageUrl && (
           <div className="relative rounded-xl overflow-hidden border border-paper-border shadow-xs bg-paper-200/40">
-            <img
-              src={species.illustration.imageUrl}
-              alt={species.vietnameseName}
+            <BirdPlateImage
+              species={species}
+              preferThumbnail={true}
+              aspectRatio="video"
               className="w-full h-36 object-cover"
             />
             {species.illustration.artist && (

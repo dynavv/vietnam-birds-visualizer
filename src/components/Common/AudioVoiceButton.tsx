@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Volume2, VolumeX, Pause, Play, AlertCircle, Loader2 } from 'lucide-react';
+import { Volume2, Pause, Play, AlertCircle, Loader2 } from 'lucide-react';
 import type { AudioCallInfo } from '../../types/bird';
 import { audioManager, AudioPlaybackState } from '../../utils/audioManager';
 
 export interface AudioVoiceButtonProps {
   audioInfo?: AudioCallInfo | null;
+  speciesId?: string;
   birdName?: string;
   size?: 'sm' | 'md' | 'lg';
   variant?: 'pill' | 'card' | 'icon-only';
@@ -32,6 +33,7 @@ const SIZE_CONFIG = {
 
 export const AudioVoiceButtonComponent: React.FC<AudioVoiceButtonProps> = ({
   audioInfo,
+  speciesId,
   birdName,
   size = 'md',
   variant = 'pill',
@@ -48,7 +50,9 @@ export const AudioVoiceButtonComponent: React.FC<AudioVoiceButtonProps> = ({
     return unsubscribe;
   }, []);
 
-  const isCurrentAudio = audioInfo?.audioUrl ? playbackState.currentUrl === audioInfo.audioUrl : false;
+  const isCurrentAudio = speciesId
+    ? playbackState.speciesId === speciesId
+    : (audioInfo?.audioUrl ? playbackState.currentUrl === audioInfo.audioUrl : false);
   const isPlaying = isCurrentAudio && playbackState.isPlaying;
   const isLoading = isCurrentAudio && playbackState.isLoading;
   const isError = isCurrentAudio && playbackState.isError;
@@ -62,35 +66,15 @@ export const AudioVoiceButtonComponent: React.FC<AudioVoiceButtonProps> = ({
         return;
       }
 
-      await audioManager.toggle(audioInfo.audioUrl);
+      await audioManager.toggle(audioInfo.audioUrl, speciesId);
     },
-    [audioInfo?.audioUrl]
+    [audioInfo?.audioUrl, speciesId]
   );
 
 
   // If no audio info or empty URL
   if (!audioInfo || !audioInfo.audioUrl) {
-    if (variant === 'icon-only') {
-      return (
-        <span
-          className={`inline-flex items-center justify-center p-1.5 rounded-full text-ink-muted/60 bg-paper-200/50 cursor-not-allowed ${className}`}
-          title="Bản thu đang cập nhật"
-          aria-label="Bản thu đang cập nhật"
-        >
-          <VolumeX className={config.iconSize} />
-        </span>
-      );
-    }
-
-    return (
-      <div
-        className={`inline-flex items-center rounded-lg border border-dashed border-paper-border text-ink-muted bg-paper-100/60 select-none ${config.btnPadding} ${className}`}
-        title="Bản thu âm thanh đang cập nhật"
-      >
-        <VolumeX className={`${config.iconSize} text-ink-muted/70 flex-shrink-0`} />
-        <span className="font-sans text-xs italic">Bản thu đang cập nhật</span>
-      </div>
-    );
+    return null;
   }
 
   // Wave visualizer bars

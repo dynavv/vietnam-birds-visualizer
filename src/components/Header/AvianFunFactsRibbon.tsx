@@ -528,7 +528,7 @@ const AVIAN_FACTS: AvianFact[] = [
   },
   {
     "speciesId": "ducula-badia",
-    "speciesName": "Gầm ghì lưng hung",
+    "speciesName": "Gầm ghì lưng nâu",
     "scientificName": "Ducula badia",
     "fact": "Thân hình to lớn đồ sộ, lưng và cánh màu nâu hạt dẻ hung đỏ đậm đà, đầu và ngực màu xám hồng thanh nhã, đuôi đen có dải xám ở chóp.",
     "eba": "Cao nguyên Đà Lạt",

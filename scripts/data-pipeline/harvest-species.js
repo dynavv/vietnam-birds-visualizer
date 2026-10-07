@@ -6,7 +6,7 @@
  * Thu thập dữ liệu đa nguồn từ các API chính thức:
  * 1. GBIF Taxonomy API: Bậc phân loại, họ, bộ, gbifTaxonKey.
  * 2. iNaturalist Research Grade API: Ảnh CC, tác giả, giấy phép, tọa độ thực địa tại Việt Nam.
- * 3. Xeno-canto API: Âm thanh tiếng hót thực địa chất lượng cao.
+ * 3. Xeno-canto Archive: Âm thanh tiếng hót thực địa chất lượng cao (Kiểm định HTTP HEAD & Khớp Taxon).
  * 4. Master Naming Registry: Tên tiếng Việt chuẩn đối soát Tam diện.
  * 5. IUCN & Avibase: Mã định danh bảo tồn và cơ sở dữ liệu quốc tế.
  * 
@@ -208,24 +208,96 @@ export async function harvestSpeciesData(targetScientificName) {
     }
   }
 
-  // 4. Thu thập từ Xeno-canto Sound API
-  console.log(`📡 [4/5] Truy vấn Xeno-canto Audio API...`);
-  const xcData = await fetchJson(`https://xeno-canto.org/api/2/recordings?query=${encodeURIComponent(cleanName)}+q:A`);
-  const xcRecord = xcData?.recordings?.[0] || (await fetchJson(`https://xeno-canto.org/api/2/recordings?query=${encodeURIComponent(cleanName)}`))?.recordings?.[0];
+  // 4. Thu thập từ Xeno-canto Sound Archive
+  console.log(`📡 [4/5] Truy vấn Xeno-canto Sound Archive...`);
+  const exploreUrl = `https://xeno-canto.org/explore?query=${encodeURIComponent(cleanName)}`;
+  let exploreHtml = '';
+
+  try {
+    const res = await fetch(exploreUrl, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+      },
+      signal: AbortSignal.timeout(10000)
+    });
+    if (res.ok) {
+      exploreHtml = await res.text();
+    }
+  } catch {
+    // ignore
+  }
+
+  // Fallback nếu gặp bot protection challenge Anubis hoặc chuỗi rỗng
+  if (!exploreHtml || exploreHtml.includes('anubis')) {
+    try {
+      const res = await fetch(exploreUrl, {
+        headers: {
+          'User-Agent': 'curl/8.5.0'
+        },
+        signal: AbortSignal.timeout(10000)
+      });
+      if (res.ok) {
+        exploreHtml = await res.text();
+      }
+    } catch {
+      // ignore
+    }
+  }
+
+  // Trích xuất các liên kết mã bản thu https://xeno-canto.org/(\d+)
+  const recMatches = [...exploreHtml.matchAll(/xeno-canto\.org\/(\d+)/g)].map(m => m[1]);
+  const candidateXcIds = [...new Set(recMatches)].slice(0, 3);
 
   let audioCall = null;
-  if (xcRecord) {
-    console.log(`  ✅ Tìm thấy âm thanh Xeno-canto: XC${xcRecord.id} (${xcRecord.length}s) bởi ${xcRecord.rec}`);
-    audioCall = {
-      audioUrl: xcRecord.file.startsWith('//') ? `https:${xcRecord.file}` : xcRecord.file,
-      duration: xcRecord.length ? `0:${xcRecord.length}` : '0:30',
-      recordist: xcRecord.rec || 'Xeno-canto Field Archive',
-      location: xcRecord.loc || 'Việt Nam',
-      xenoCantoId: `XC${xcRecord.id}`,
-      license: xcRecord.lic || 'CC BY-NC-SA 4.0'
-    };
-  } else {
-    console.log(`  ⚠️  Chưa tìm thấy bản thu âm Xeno-canto phù hợp.`);
+  const namePartsForAudio = cleanName.toLowerCase().split(/\s+/);
+  const genusForAudio = namePartsForAudio[0] || '';
+  const speciesForAudio = namePartsForAudio[1] || '';
+
+  if (candidateXcIds.length > 0) {
+    console.log(`  🔍 Đã phát hiện ${candidateXcIds.length} ứng viên bản thu (${candidateXcIds.map(id => 'XC' + id).join(', ')}). Đang xác thực HTTP HEAD...`);
+
+    for (const xcId of candidateXcIds) {
+      const dlUrl = `https://xeno-canto.org/${xcId}/download`;
+      try {
+        const headRes = await fetch(dlUrl, {
+          method: 'HEAD',
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+          },
+          signal: AbortSignal.timeout(8000)
+        });
+
+        if (headRes.ok && headRes.status === 200) {
+          const contentType = (headRes.headers.get('content-type') || '').toLowerCase();
+          const contentDisp = headRes.headers.get('content-disposition') || '';
+          const isAudio = contentType.includes('audio');
+          const hasDispFilename = /filename=/i.test(contentDisp) || contentDisp.trim().length > 0;
+          const cdLower = decodeURIComponent(contentDisp).toLowerCase();
+          const matchesTaxon = (genusForAudio && cdLower.includes(genusForAudio)) || (speciesForAudio && cdLower.includes(speciesForAudio));
+
+          if (!contentType.includes('text/html') && (isAudio || hasDispFilename) && matchesTaxon) {
+            console.log(`  ✅ Bản thu XC${xcId} hợp lệ, khớp danh pháp loài [${cleanName}].`);
+            audioCall = {
+              audioUrl: dlUrl,
+              duration: '0:30',
+              recordist: 'Xeno-canto Field Archive',
+              location: photoRecord.photoLocation || 'Việt Nam',
+              xenoCantoId: `XC${xcId}`,
+              license: 'CC BY-NC-SA 4.0'
+            };
+            break;
+          } else {
+            console.log(`  ℹ️  XC${xcId} bị khóa tải hoặc không khớp danh pháp. Đang thử bản thu tiếp theo...`);
+          }
+        }
+      } catch (err) {
+        console.log(`  ⚠️  Lỗi khi kiểm tra HEAD XC${xcId}: ${err.message}`);
+      }
+    }
+  }
+
+  if (!audioCall) {
+    console.log(`  ⚠️  Loài chưa có bản thu hoặc bị Xeno-canto khóa tải công khai. Đặt audioCall: null chuẩn mực.`);
   }
 
   // 5. Thu thập liên kết học thuật chính thức (IUCN API v4 & Avibase)

@@ -108,5 +108,76 @@ describe('AudioManager Singleton', () => {
     expect(errorSpy).toHaveBeenCalled();
     errorSpy.mockRestore();
   });
+
+  it('prioritizes local audio source /audio/{speciesId}.mp3 when speciesId is provided', async () => {
+    const remoteUrl = 'https://xeno-canto.org/sounds/uploaded/sample.mp3';
+    const speciesId = 'pitta-elliotii';
+
+    await audioManager.play(remoteUrl, speciesId);
+
+    const state = audioManager.getState();
+    expect(state.speciesId).toBe(speciesId);
+    expect(state.currentUrl).toBe(remoteUrl);
+    expect(state.isLocalSource).toBe(true);
+    expect(audioManager.isPlaying(remoteUrl, speciesId)).toBe(true);
+    expect(audioManager.isPlaying(undefined, speciesId)).toBe(true);
+    expect(audioManager.isPlaying(remoteUrl)).toBe(true);
+  });
+
+  it('falls back automatically to remoteUrl when local source triggers error event', async () => {
+    const remoteUrl = 'https://xeno-canto.org/sounds/uploaded/sample.mp3';
+    const speciesId = 'pitta-elliotii';
+
+    const warnSpy = vi.spyOn(console, 'warn').mockImplementation(() => {});
+
+    let createdAudio: HTMLAudioElement | null = null;
+    const originalAudio = window.Audio;
+    window.Audio = vi.fn().mockImplementation(function (src?: string) {
+      const audioInstance = new originalAudio(src);
+      createdAudio = audioInstance;
+      return audioInstance;
+    }) as unknown as typeof Audio;
+
+    await audioManager.play(remoteUrl, speciesId);
+
+    expect(createdAudio).not.toBeNull();
+    expect(audioManager.getState().isLocalSource).toBe(true);
+
+    createdAudio!.dispatchEvent(new Event('error'));
+
+    const state = audioManager.getState();
+    expect(state.isLocalSource).toBe(false);
+    expect(createdAudio!.src).toContain(remoteUrl);
+    expect(warnSpy).toHaveBeenCalled();
+
+    window.Audio = originalAudio;
+    warnSpy.mockRestore();
+  });
+
+  it('marks isError = true if remote fallback also fails', async () => {
+    const remoteUrl = 'https://xeno-canto.org/sounds/uploaded/broken.mp3';
+    const speciesId = 'pitta-elliotii';
+
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+
+    let createdAudio: HTMLAudioElement | null = null;
+    const originalAudio = window.Audio;
+    window.Audio = vi.fn().mockImplementation(function (src?: string) {
+      const audioInstance = new originalAudio(src);
+      createdAudio = audioInstance;
+      return audioInstance;
+    }) as unknown as typeof Audio;
+
+    await audioManager.play(remoteUrl, speciesId);
+
+    createdAudio!.dispatchEvent(new Event('error'));
+    expect(audioManager.getState().isLocalSource).toBe(false);
+
+    createdAudio!.dispatchEvent(new Event('error'));
+    expect(audioManager.getState().isError).toBe(true);
+    expect(audioManager.getState().isPlaying).toBe(false);
+
+    window.Audio = originalAudio;
+  });
 });
 

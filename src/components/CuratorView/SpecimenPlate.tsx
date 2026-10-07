@@ -39,10 +39,15 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
     initialPanY: 0
   });
 
-  // Reset image error when species changes
+  const [lightboxSrc, setLightboxSrc] = useState<string>(() => (
+    species?.illustration?.localPlateUrl || species?.illustration?.imageUrl || ''
+  ));
+
+  // Reset image error and source when species changes
   useEffect(() => {
     setImageError(false);
-  }, [species?.id, species?.illustration?.imageUrl]);
+    setLightboxSrc(species?.illustration?.localPlateUrl || species?.illustration?.imageUrl || '');
+  }, [species?.id, species?.illustration?.imageUrl, species?.illustration?.localPlateUrl]);
 
   // Handle ESC key to close Lightbox
   useEffect(() => {
@@ -189,6 +194,7 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
 
               <AudioVoiceButton
                 audioInfo={species.audioCall}
+                speciesId={species.id}
                 birdName={species.vietnameseName}
                 variant="pill"
                 size="sm"
@@ -390,12 +396,19 @@ export const SpecimenPlate: React.FC<SpecimenPlateProps> = ({
                 transform: `translate(${panOffset.x}px, ${panOffset.y}px) scale(${zoomScale})`
               }}
             >
-              {!imageError && species.illustration?.imageUrl ? (
+              {!imageError && lightboxSrc ? (
                 <img
-                  src={species.illustration.imageUrl}
+                  src={lightboxSrc}
                   alt={`Bản phóng to ${species.vietnameseName}`}
                   className="max-w-[85vw] max-h-[70vh] object-contain rounded-lg shadow-2xl border-4 border-paper-200"
                   draggable={false}
+                  onError={() => {
+                    if (lightboxSrc === species.illustration?.localPlateUrl && species.illustration?.imageUrl) {
+                      setLightboxSrc(species.illustration.imageUrl);
+                    } else {
+                      setImageError(true);
+                    }
+                  }}
                 />
               ) : (
                 <div className="p-12 bg-paper-100 rounded-2xl text-center text-ink-600 space-y-2">

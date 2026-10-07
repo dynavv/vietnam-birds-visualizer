@@ -131,15 +131,18 @@ export const QuickSpecimenPanel: React.FC<QuickSpecimenPanelProps> = ({
         </div>
 
         {/* Audio Player */}
-        <div>
-          <AudioVoiceButton
-            audioInfo={species.audioCall}
-            birdName={species.vietnameseName}
-            variant="pill"
-            size="md"
-            className="w-full justify-center shadow-sm"
-          />
-        </div>
+        {species.audioCall?.audioUrl && (
+          <div>
+            <AudioVoiceButton
+              audioInfo={species.audioCall}
+              speciesId={species.id}
+              birdName={species.vietnameseName}
+              variant="pill"
+              size="md"
+              className="w-full justify-center shadow-sm"
+            />
+          </div>
+        )}
 
         {/* Curatorial & Morphological Reasoning */}
         {species.morphologicalAnalysis && (

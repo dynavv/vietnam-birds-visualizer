@@ -420,7 +420,7 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
       const nextBatch = shufflePool.slice(0, 6);
       nextBatch.forEach(id => {
         const sp = allSpeciesData.find(s => s.id === id);
-        const thumb = sp?.illustration?.thumbnailUrl || sp?.illustration?.imageUrl;
+        const thumb = sp?.illustration?.localThumbnailUrl || sp?.illustration?.localPlateUrl || sp?.illustration?.thumbnailUrl || sp?.illustration?.imageUrl;
         if (thumb) {
           const img = new Image();
           img.src = thumb;

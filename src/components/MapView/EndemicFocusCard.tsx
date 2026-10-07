@@ -204,9 +204,10 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
               }
             }}
             onMouseEnter={() => {
-              if (species?.illustration?.imageUrl) {
+              const prefetchSrc = species?.illustration?.localPlateUrl || species?.illustration?.imageUrl;
+              if (prefetchSrc) {
                 const prefetchImg = new Image();
-                prefetchImg.src = species.illustration.imageUrl;
+                prefetchImg.src = prefetchSrc;
               }
             }}
             title={`Nhấp để mở Cẩm nang nhận dạng chi tiết của loài ${species.vietnameseName}`}
@@ -288,15 +289,18 @@ export const EndemicFocusCard: React.FC<EndemicFocusCardProps> = ({
           </div>
 
           {/* Natural Voice Audio Button */}
-          <div className="pt-1">
-            <AudioVoiceButton
-              audioInfo={species.audioCall}
-              birdName={species.vietnameseName}
-              variant="pill"
-              size="md"
-              className="w-full justify-center shadow-sm"
-            />
-          </div>
+          {species.audioCall?.audioUrl && (
+            <div className="pt-1">
+              <AudioVoiceButton
+                audioInfo={species.audioCall}
+                speciesId={species.id}
+                birdName={species.vietnameseName}
+                variant="pill"
+                size="md"
+                className="w-full justify-center shadow-sm"
+              />
+            </div>
+          )}
 
           {/* Morphological Overview Note Box */}
           {species.morphologicalAnalysis?.overview && (

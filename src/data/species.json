@@ -74,17 +74,11 @@
       "license": "cc-by",
       "observationUrl": "https://www.inaturalist.org/taxa/339872",
       "photoLocation": "Khối núi Ngọc Linh, Kon Tum",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/trochalopteron-ngoclinhense.jpg",
+      "localThumbnailUrl": "/plates/thumbs/trochalopteron-ngoclinhense.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/291847/download",
-      "duration": "0:28",
-      "recordist": "Frank Lambert (Xeno-canto Field Archive)",
-      "location": "KBT Thiên nhiên Ngọc Linh, Kon Tum",
-      "xcId": "291847",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/291847"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
       "avibaseId": "A37EB5E58B60CBA5",
@@ -184,17 +178,11 @@
       "license": "cc-by",
       "observationUrl": "https://www.inaturalist.org/taxa/339830",
       "photoLocation": "VQG Kon Ka Kinh, Gia Lai",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/ianthocincla-konkakinhensis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/ianthocincla-konkakinhensis.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/382910/download",
-      "duration": "0:32",
-      "recordist": "Jonathan C. Eames (Xeno-canto Field Archive)",
-      "location": "VQG Kon Ka Kinh, Gia Lai",
-      "xcId": "382910",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/382910"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-IANTHOCI",
       "avibaseId": "566F8C8C529D965A",
@@ -287,17 +275,11 @@
       "sourceBook": "iNaturalist Research Grade",
       "observationUrl": "https://www.inaturalist.org/taxa/1289431",
       "photoLocation": "Cao nguyên Langbiang, Lâm Đồng",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/liochicla-langbianis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/liochicla-langbianis.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/392184/download",
-      "duration": "0:25",
-      "recordist": "Craig Robson (Xeno-canto Field Archive)",
-      "location": "VQG Bidoup Núi Bà, Lâm Đồng",
-      "xcId": "392184",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/392184"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-LANIELL",
       "avibaseId": "D8B781BA0E7321F5",
@@ -398,17 +380,11 @@
       "license": "cc-by",
       "observationUrl": "https://www.inaturalist.org/taxa/339873",
       "photoLocation": "Hòn Bà, Khánh Hòa",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/trochalopteron-yersini.jpg",
+      "localThumbnailUrl": "/plates/thumbs/trochalopteron-yersini.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/482910/download",
-      "duration": "0:30",
-      "recordist": "Nick Dymond (Xeno-canto Field Archive)",
-      "location": "Cao nguyên Lâm Viên, Bidoup",
-      "xcId": "482910",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/482910"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-TROCHALO",
       "avibaseId": "C798D90149654C02",
@@ -515,7 +491,9 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/72457",
       "photoLocation": "Đắk Glei, Kon Tum",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/actinodura-sodangorum.jpg",
+      "localThumbnailUrl": "/plates/thumbs/actinodura-sodangorum.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/902193/download",
@@ -616,17 +594,11 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/66143865/medium.jpg",
       "license": "cc-by-sa",
-      "observationUrl": "https://www.inaturalist.org/taxa/1093"
+      "observationUrl": "https://www.inaturalist.org/taxa/1093",
+      "localPlateUrl": "/plates/lophura-edwardsi.jpg",
+      "localThumbnailUrl": "/plates/thumbs/lophura-edwardsi.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/198234/download",
-      "duration": "0:15",
-      "recordist": "WPA Avian Field Archive",
-      "location": "Khu vực Đất thấp miền Trung Việt Nam",
-      "xcId": "198234",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/198234"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-GAL-LOPHURA-",
       "avibaseId": "7F93B0675875E230",
@@ -724,7 +696,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/264334869/medium.jpeg",
       "license": "cc-by-nc-nd",
-      "observationUrl": "https://www.inaturalist.org/taxa/1192"
+      "observationUrl": "https://www.inaturalist.org/taxa/1192",
+      "localPlateUrl": "/plates/polyplectron-germaini.jpg",
+      "localThumbnailUrl": "/plates/thumbs/polyplectron-germaini.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/981686/download",
@@ -841,7 +815,9 @@
       "license": "cc-by-nd",
       "observationUrl": "https://www.inaturalist.org/taxa/145359",
       "photoLocation": "Đà Lạt, Lâm Đồng",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/chloris-monguilloti.jpg",
+      "localThumbnailUrl": "/plates/thumbs/chloris-monguilloti.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/986021/download",
@@ -944,7 +920,9 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/339775",
       "photoLocation": "Tân Phú, Đồng Nai",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/macronus-kelleyi.jpg",
+      "localThumbnailUrl": "/plates/thumbs/macronus-kelleyi.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/126379/download",
@@ -1061,17 +1039,11 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/339807",
       "photoLocation": "Sa Pa, Lào Cai",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/rimator-pasquieri.jpg",
+      "localThumbnailUrl": "/plates/thumbs/rimator-pasquieri.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/482019/download",
-      "duration": "0:20",
-      "recordist": "Per Alström (Xeno-canto Field Archive)",
-      "location": "Dãy Hoàng Liên Sơn / Fansipan, Sa Pa",
-      "xcId": "482019",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/482019"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-RIMATOR-",
       "avibaseId": "8E29E9C510F38307",
@@ -1168,7 +1140,9 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/15524",
       "photoLocation": "Phong Nha, Bố Trạch, Quảng Bình",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/stachyris-herberti.jpg",
+      "localThumbnailUrl": "/plates/thumbs/stachyris-herberti.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/914097/download",
@@ -1283,7 +1257,9 @@
       "sourceBook": "iNaturalist Research Grade",
       "observationUrl": "https://www.inaturalist.org/taxa/339874",
       "photoLocation": "Đèo Ô Quy Hồ, Lai Châu",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/trochalopteron-formosum-greenwayi.jpg",
+      "localThumbnailUrl": "/plates/thumbs/trochalopteron-formosum-greenwayi.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1169931/download",
@@ -1401,7 +1377,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/507949093/medium.jpg",
       "license": "cc-by",
-      "observationUrl": "https://www.inaturalist.org/taxa/731791"
+      "observationUrl": "https://www.inaturalist.org/taxa/731791",
+      "localPlateUrl": "/plates/trochalopteron-milnei-sharpei.jpg",
+      "localThumbnailUrl": "/plates/thumbs/trochalopteron-milnei-sharpei.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/739091/download",
@@ -1516,7 +1494,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/57545890/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/1586092"
+      "observationUrl": "https://www.inaturalist.org/taxa/1586092",
+      "localPlateUrl": "/plates/psittiparus-bakeri.jpg",
+      "localThumbnailUrl": "/plates/thumbs/psittiparus-bakeri.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1073588/download",
@@ -1632,7 +1612,9 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/1196",
       "photoLocation": "Khu vực Tây Nguyên, Kon Tum",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/rheinardia-ocellata.jpg",
+      "localThumbnailUrl": "/plates/thumbs/rheinardia-ocellata.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1137850/download",
@@ -1746,17 +1728,11 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/26597643/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/15156"
+      "observationUrl": "https://www.inaturalist.org/taxa/15156",
+      "localPlateUrl": "/plates/garrulax-canorus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/garrulax-canorus.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/739091/download",
-      "duration": "0:28",
-      "recordist": "Craig Robson (Xeno-canto Field Archive)",
-      "location": "Miền Bắc Việt Nam & Đông Á",
-      "xcId": "739091",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/739091"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-GARRULAX",
       "avibaseId": "71D4A2090891D13C",
@@ -1863,7 +1839,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/167518573/medium.jpeg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/578349"
+      "observationUrl": "https://www.inaturalist.org/taxa/578349",
+      "localPlateUrl": "/plates/cyornis-rubeculoides.jpg",
+      "localThumbnailUrl": "/plates/thumbs/cyornis-rubeculoides.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1107136/download",
@@ -1977,7 +1955,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/59895093/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/13416"
+      "observationUrl": "https://www.inaturalist.org/taxa/13416",
+      "localPlateUrl": "/plates/aethopyga-saturata.jpg",
+      "localThumbnailUrl": "/plates/thumbs/aethopyga-saturata.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1161992/download",
@@ -2091,17 +2071,11 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/349298427/medium.jpeg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/12035"
+      "observationUrl": "https://www.inaturalist.org/taxa/12035",
+      "localPlateUrl": "/plates/lanius-schach.jpg",
+      "localThumbnailUrl": "/plates/thumbs/lanius-schach.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/883921/download",
-      "duration": "0:34",
-      "recordist": "Xeno-canto Field Archive",
-      "location": "Đồng bằng & đồi cây thưa miền Bắc",
-      "xcId": "883921",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/883921"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-LANIUS-S",
       "avibaseId": "69FC190B",
@@ -2205,7 +2179,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/182302378/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/14415"
+      "observationUrl": "https://www.inaturalist.org/taxa/14415",
+      "localPlateUrl": "/plates/pitta-moluccensis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/pitta-moluccensis.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1155009/download",
@@ -2320,17 +2296,11 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/542108404/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/7867"
+      "observationUrl": "https://www.inaturalist.org/taxa/7867",
+      "localPlateUrl": "/plates/oriolus-chinensis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/oriolus-chinensis.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/732104/download",
-      "duration": "0:26",
-      "recordist": "Xeno-canto Field Archive",
-      "location": "Rừng thứ sinh & vườn cây Bắc Bộ",
-      "xcId": "732104",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/732104"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-ORIOLUS-",
       "avibaseId": "CC216A71A3F24E79",
@@ -2434,17 +2404,11 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/279082/medium.jpg",
       "license": "cc-by-nc-sa",
-      "observationUrl": "https://www.inaturalist.org/taxa/204490"
+      "observationUrl": "https://www.inaturalist.org/taxa/204490",
+      "localPlateUrl": "/plates/copsychus-malabaricus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/copsychus-malabaricus.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/712903/download",
-      "duration": "0:45",
-      "recordist": "Xeno-canto Field Archive",
-      "location": "VQG Cát Tiên & Đông Nam Bộ",
-      "xcId": "712903",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/712903"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-COPSYCHU",
       "avibaseId": "0E5168F9",
@@ -2548,7 +2512,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/381289317/medium.jpeg",
       "license": "CC BY 4.0",
-      "observationUrl": "https://www.inaturalist.org/observations/209930810"
+      "observationUrl": "https://www.inaturalist.org/observations/209930810",
+      "localPlateUrl": "/plates/dicrurus-paradiseus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/dicrurus-paradiseus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1166145/download",
@@ -2662,17 +2628,11 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/53830068/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/1289402"
+      "observationUrl": "https://www.inaturalist.org/taxa/1289402",
+      "localPlateUrl": "/plates/garrulax-chinensis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/garrulax-chinensis.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/892104/download",
-      "duration": "0:38",
-      "recordist": "Xeno-canto Field Archive",
-      "location": "VQG Cúc Phương, Ninh Bình",
-      "xcId": "892104",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/892104"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-GARRULAX",
       "avibaseId": "C7221A3D80B22C99",
@@ -2777,7 +2737,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/266086767/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/8947"
+      "observationUrl": "https://www.inaturalist.org/taxa/8947",
+      "localPlateUrl": "/plates/psarisomus-dalhousiae.jpg",
+      "localThumbnailUrl": "/plates/thumbs/psarisomus-dalhousiae.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1164626/download",
@@ -2891,17 +2853,11 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/255263566/medium.jpeg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/1114"
+      "observationUrl": "https://www.inaturalist.org/taxa/1114",
+      "localPlateUrl": "/plates/lophura-diardi.jpg",
+      "localThumbnailUrl": "/plates/thumbs/lophura-diardi.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/654812/download",
-      "duration": "0:18",
-      "recordist": "Xeno-canto Field Archive",
-      "location": "VQG Cát Tiên, Đồng Nai",
-      "xcId": "654812",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/654812"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-GAL-LOPHURA-",
       "avibaseId": "6805AC5A7415198C",
@@ -3005,7 +2961,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/256427010/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/1186"
+      "observationUrl": "https://www.inaturalist.org/taxa/1186",
+      "localPlateUrl": "/plates/polyplectron-bicalcaratum.jpg",
+      "localThumbnailUrl": "/plates/thumbs/polyplectron-bicalcaratum.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1067489/download",
@@ -3118,7 +3076,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/14923794/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/777"
+      "observationUrl": "https://www.inaturalist.org/taxa/777",
+      "localPlateUrl": "/plates/arborophila-brunneopectus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/arborophila-brunneopectus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1080919/download",
@@ -3234,7 +3194,9 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/882",
       "photoLocation": "VQG Cát Tiên, Việt Nam",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/gallus-gallus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/gallus-gallus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1153683/download",
@@ -3349,7 +3311,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/13353681/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/5536"
+      "observationUrl": "https://www.inaturalist.org/taxa/5536",
+      "localPlateUrl": "/plates/buceros-bicornis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/buceros-bicornis.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1164805/download",
@@ -3458,7 +3422,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/301434/medium.JPG",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/514339"
+      "observationUrl": "https://www.inaturalist.org/taxa/514339",
+      "localPlateUrl": "/plates/rhyticeros-undulatus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/rhyticeros-undulatus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/380755/download",
@@ -3571,7 +3537,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/38848435/medium.jpg",
       "license": "pd",
-      "observationUrl": "https://www.inaturalist.org/taxa/5544"
+      "observationUrl": "https://www.inaturalist.org/taxa/5544",
+      "localPlateUrl": "/plates/anorrhinus-tickelli.jpg",
+      "localThumbnailUrl": "/plates/thumbs/anorrhinus-tickelli.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1089858/download",
@@ -3687,7 +3655,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60494705/medium.jpg",
       "license": "cc-by-nc-sa",
-      "observationUrl": "https://www.inaturalist.org/taxa/20969"
+      "observationUrl": "https://www.inaturalist.org/taxa/20969",
+      "localPlateUrl": "/plates/upupa-epops.jpg",
+      "localThumbnailUrl": "/plates/thumbs/upupa-epops.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1164666/download",
@@ -3801,7 +3771,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/74731596/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/2556"
+      "observationUrl": "https://www.inaturalist.org/taxa/2556",
+      "localPlateUrl": "/plates/megaceryle-lugubris.jpg",
+      "localThumbnailUrl": "/plates/thumbs/megaceryle-lugubris.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/864418/download",
@@ -3920,7 +3892,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/233705452/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/2366"
+      "observationUrl": "https://www.inaturalist.org/taxa/2366",
+      "localPlateUrl": "/plates/pelargopsis-capensis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/pelargopsis-capensis.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1107123/download",
@@ -4034,7 +4008,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/59859225/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/2353"
+      "observationUrl": "https://www.inaturalist.org/taxa/2353",
+      "localPlateUrl": "/plates/halcyon-pileata.jpg",
+      "localThumbnailUrl": "/plates/thumbs/halcyon-pileata.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1073298/download",
@@ -4148,7 +4124,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/347337928/medium.jpg",
       "license": "cc-by",
-      "observationUrl": "https://www.inaturalist.org/taxa/2610"
+      "observationUrl": "https://www.inaturalist.org/taxa/2610",
+      "localPlateUrl": "/plates/alcedo-hercules.jpg",
+      "localThumbnailUrl": "/plates/thumbs/alcedo-hercules.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/324634/download",
@@ -4262,7 +4240,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/197472135/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/485365"
+      "observationUrl": "https://www.inaturalist.org/taxa/485365",
+      "localPlateUrl": "/plates/coracias-affinis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/coracias-affinis.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1073527/download",
@@ -4378,7 +4358,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/184439367/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/367521"
+      "observationUrl": "https://www.inaturalist.org/taxa/367521",
+      "localPlateUrl": "/plates/psilopogon-haemacephalus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/psilopogon-haemacephalus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1166816/download",
@@ -4492,7 +4474,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/261553110/medium.jpg",
       "license": "CC BY-NC 4.0",
-      "observationUrl": "https://www.inaturalist.org/observations/151321458"
+      "observationUrl": "https://www.inaturalist.org/observations/151321458",
+      "localPlateUrl": "/plates/psilopogon-faber.jpg",
+      "localThumbnailUrl": "/plates/thumbs/psilopogon-faber.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1067790/download",
@@ -4613,7 +4597,9 @@
       "license": "cc-by",
       "observationUrl": "https://www.inaturalist.org/taxa/18327",
       "photoLocation": "VQG Cúc Phương, Ninh Bình",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/picus-rabieri.jpg",
+      "localThumbnailUrl": "/plates/thumbs/picus-rabieri.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/856728/download",
@@ -4731,7 +4717,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/347130896/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/201081"
+      "observationUrl": "https://www.inaturalist.org/taxa/201081",
+      "localPlateUrl": "/plates/chrysocolaptes-guttacristatus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/chrysocolaptes-guttacristatus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1105179/download",
@@ -4846,7 +4834,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/30653128/medium.jpg",
       "license": "cc-by-sa",
-      "observationUrl": "https://www.inaturalist.org/taxa/367472"
+      "observationUrl": "https://www.inaturalist.org/taxa/367472",
+      "localPlateUrl": "/plates/ictinaetus-malaiensis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/ictinaetus-malaiensis.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/929496/download",
@@ -4960,7 +4950,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/483635244/medium.jpeg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/5158"
+      "observationUrl": "https://www.inaturalist.org/taxa/5158",
+      "localPlateUrl": "/plates/spilornis-cheela.jpg",
+      "localThumbnailUrl": "/plates/thumbs/spilornis-cheela.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1094944/download",
@@ -5074,7 +5066,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/292463004/medium.jpeg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/144458"
+      "observationUrl": "https://www.inaturalist.org/taxa/144458",
+      "localPlateUrl": "/plates/pernis-ptilorhynchus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/pernis-ptilorhynchus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1071701/download",
@@ -5188,7 +5182,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/183749378/medium.jpeg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/5275"
+      "observationUrl": "https://www.inaturalist.org/taxa/5275",
+      "localPlateUrl": "/plates/elanus-caeruleus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/elanus-caeruleus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/352477/download",
@@ -5303,7 +5299,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/638539387/medium.jpg",
       "license": "cc-by",
-      "observationUrl": "https://www.inaturalist.org/taxa/20343"
+      "observationUrl": "https://www.inaturalist.org/taxa/20343",
+      "localPlateUrl": "/plates/ketupa-zeylonensis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/ketupa-zeylonensis.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/953276/download",
@@ -5419,7 +5417,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/44097511/medium.jpg",
       "license": "cc-by-nd",
-      "observationUrl": "https://www.inaturalist.org/taxa/144586"
+      "observationUrl": "https://www.inaturalist.org/taxa/144586",
+      "localPlateUrl": "/plates/otus-lettia.jpg",
+      "localThumbnailUrl": "/plates/thumbs/otus-lettia.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1093722/download",
@@ -5533,16 +5533,18 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/110503572/medium.jpg",
       "license": "cc-by",
-      "observationUrl": "https://www.inaturalist.org/taxa/1286804"
+      "observationUrl": "https://www.inaturalist.org/taxa/1286804",
+      "localPlateUrl": "/plates/glaucidium-brodiei.jpg",
+      "localThumbnailUrl": "/plates/thumbs/glaucidium-brodiei.jpg"
     },
     "audioCall": {
-      "audioUrl": "https://xeno-canto.org/719203/download",
-      "duration": "0:30",
-      "recordist": "Xeno-canto Field Archive",
-      "location": "VQG Tam Đảo, Vĩnh Phúc",
-      "xcId": "719203",
+      "audioUrl": "https://xeno-canto.org/985943/download",
+      "duration": "0:48",
+      "recordist": "Agris Celmins (Xeno-canto)",
+      "location": "Hồ Tuyền Lâm, Đà Lạt, Lâm Đồng",
+      "xcId": "985943",
       "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/719203"
+      "observationUrl": "https://xeno-canto.org/985943"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-STR-GLAUCIDI",
@@ -5648,7 +5650,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/178251484/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/3762"
+      "observationUrl": "https://www.inaturalist.org/taxa/3762",
+      "localPlateUrl": "/plates/pseudibis-davisoni.jpg",
+      "localThumbnailUrl": "/plates/thumbs/pseudibis-davisoni.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/991194/download",
@@ -5763,7 +5767,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/365947667/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/3729"
+      "observationUrl": "https://www.inaturalist.org/taxa/3729",
+      "localPlateUrl": "/plates/platalea-minor.jpg",
+      "localThumbnailUrl": "/plates/thumbs/platalea-minor.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/134758/download",
@@ -5884,7 +5890,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/470186346/medium.jpg",
       "license": "cc0",
-      "observationUrl": "https://www.inaturalist.org/taxa/4749"
+      "observationUrl": "https://www.inaturalist.org/taxa/4749",
+      "localPlateUrl": "/plates/leptoptilos-javanicus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/leptoptilos-javanicus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/156243/download",
@@ -5998,7 +6006,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60995427/medium.jpeg",
       "license": "cc0",
-      "observationUrl": "https://www.inaturalist.org/taxa/5043"
+      "observationUrl": "https://www.inaturalist.org/taxa/5043",
+      "localPlateUrl": "/plates/gorsachius-melanolophus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/gorsachius-melanolophus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/631379/download",
@@ -6113,7 +6123,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13313330/medium.jpg",
       "license": "cc-by-nc-nd",
-      "observationUrl": "https://www.inaturalist.org/taxa/508044"
+      "observationUrl": "https://www.inaturalist.org/taxa/508044",
+      "localPlateUrl": "/plates/antigone-antigone.jpg",
+      "localThumbnailUrl": "/plates/thumbs/antigone-antigone.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1166821/download",
@@ -6228,7 +6240,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/217584625/medium.jpeg",
       "license": "cc-by-nc-nd",
-      "observationUrl": "https://www.inaturalist.org/taxa/288"
+      "observationUrl": "https://www.inaturalist.org/taxa/288",
+      "localPlateUrl": "/plates/rallina-fasciata.jpg",
+      "localThumbnailUrl": "/plates/thumbs/rallina-fasciata.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1154354/download",
@@ -6343,7 +6357,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/344911929/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/474332"
+      "observationUrl": "https://www.inaturalist.org/taxa/474332",
+      "localPlateUrl": "/plates/porphyrio-poliocephalus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/porphyrio-poliocephalus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1077335/download",
@@ -6458,7 +6474,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/57343379/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/3643"
+      "observationUrl": "https://www.inaturalist.org/taxa/3643",
+      "localPlateUrl": "/plates/caloenas-nicobarica.jpg",
+      "localThumbnailUrl": "/plates/thumbs/caloenas-nicobarica.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/654856/download",
@@ -6503,7 +6521,7 @@
   {
     "id": "ducula-badia",
     "scientificName": "Ducula badia",
-    "vietnameseName": "Gầm ghì lưng hung",
+    "vietnameseName": "Gầm ghì lưng nâu",
     "englishName": "Mountain Imperial Pigeon",
     "taxonomy": {
       "clade": [
@@ -6572,7 +6590,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/432540020/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/3246"
+      "observationUrl": "https://www.inaturalist.org/taxa/3246",
+      "localPlateUrl": "/plates/ducula-badia.jpg",
+      "localThumbnailUrl": "/plates/thumbs/ducula-badia.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1164810/download",
@@ -6686,7 +6706,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/9518803/medium.jpeg",
       "license": "cc-by-nc-nd",
-      "observationUrl": "https://www.inaturalist.org/taxa/3380"
+      "observationUrl": "https://www.inaturalist.org/taxa/3380",
+      "localPlateUrl": "/plates/treron-apicauda.jpg",
+      "localThumbnailUrl": "/plates/thumbs/treron-apicauda.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/992231/download",
@@ -6800,7 +6822,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/98380423/medium.png",
       "license": "cc-by-nc-sa",
-      "observationUrl": "https://www.inaturalist.org/taxa/513577"
+      "observationUrl": "https://www.inaturalist.org/taxa/513577",
+      "localPlateUrl": "/plates/asarcornis-scutulata.jpg",
+      "localThumbnailUrl": "/plates/thumbs/asarcornis-scutulata.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/409186/download",
@@ -6914,7 +6938,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/171955255/medium.jpg",
       "license": "cc-by",
-      "observationUrl": "https://www.inaturalist.org/taxa/7106"
+      "observationUrl": "https://www.inaturalist.org/taxa/7106",
+      "localPlateUrl": "/plates/aix-galericulata.jpg",
+      "localThumbnailUrl": "/plates/thumbs/aix-galericulata.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1137635/download",
@@ -7028,7 +7054,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/7458693/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/567164"
+      "observationUrl": "https://www.inaturalist.org/taxa/567164",
+      "localPlateUrl": "/plates/hierococcyx-sparverioides.jpg",
+      "localThumbnailUrl": "/plates/thumbs/hierococcyx-sparverioides.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1173196/download",
@@ -7144,7 +7172,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/107455999/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/1994"
+      "observationUrl": "https://www.inaturalist.org/taxa/1994",
+      "localPlateUrl": "/plates/carpococcyx-renauldi.jpg",
+      "localThumbnailUrl": "/plates/thumbs/carpococcyx-renauldi.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/991355/download",
@@ -7259,7 +7289,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/50398236/medium.jpg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/1677"
+      "observationUrl": "https://www.inaturalist.org/taxa/1677",
+      "localPlateUrl": "/plates/centropus-sinensis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/centropus-sinensis.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1151939/download",
@@ -7374,7 +7406,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/230370185/medium.jpg",
       "license": "CC BY-NC-ND 4.0",
-      "observationUrl": "https://www.inaturalist.org/observations/135092232"
+      "observationUrl": "https://www.inaturalist.org/observations/135092232",
+      "localPlateUrl": "/plates/harpactes-erythrocephalus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/harpactes-erythrocephalus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/988467/download",
@@ -7488,7 +7522,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/59781291/medium.jpeg",
       "license": "cc-by",
-      "observationUrl": "https://www.inaturalist.org/taxa/20825"
+      "observationUrl": "https://www.inaturalist.org/taxa/20825",
+      "localPlateUrl": "/plates/harpactes-oreskios.jpg",
+      "localThumbnailUrl": "/plates/thumbs/harpactes-oreskios.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1065959/download",
@@ -7602,7 +7638,9 @@
       "year": "1931",
       "thumbnailUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/198693685/medium.jpg",
       "license": "cc-by-sa",
-      "observationUrl": "https://www.inaturalist.org/taxa/4708"
+      "observationUrl": "https://www.inaturalist.org/taxa/4708",
+      "localPlateUrl": "/plates/microhierax-melanoleucos.jpg",
+      "localThumbnailUrl": "/plates/thumbs/microhierax-melanoleucos.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/815446/download",
@@ -7717,7 +7755,9 @@
       "year": "1931",
       "thumbnailUrl": "https://static.inaturalist.org/photos/347468920/medium.jpeg",
       "license": "cc-by-nc",
-      "observationUrl": "https://www.inaturalist.org/taxa/204476"
+      "observationUrl": "https://www.inaturalist.org/taxa/204476",
+      "localPlateUrl": "/plates/caprimulgus-macrurus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/caprimulgus-macrurus.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1170044/download",
@@ -7839,7 +7879,9 @@
       "license": "cc-by-nc-nd",
       "observationUrl": "https://www.inaturalist.org/taxa/72773",
       "photoLocation": "VQG Bidoup Núi Bà, Lâm Đồng",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/cutia-legalleni.jpg",
+      "localThumbnailUrl": "/plates/thumbs/cutia-legalleni.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/161819/download",
@@ -7946,17 +7988,11 @@
       "license": "all-rights-reserved",
       "observationUrl": "https://www.inaturalist.org/taxa/72869",
       "photoLocation": "Đà Lạt, Lâm Đồng",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/garrulax-annamensis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/garrulax-annamensis.jpg"
     },
-    "audioCall": {
-      "audioUrl": "https://xeno-canto.org/983131/download",
-      "duration": "0:30",
-      "recordist": "Xeno-canto Field Archive",
-      "location": "Da Lat Plateau, Lam Dong",
-      "xcId": "983131",
-      "license": "CC BY-NC-SA 4.0",
-      "observationUrl": "https://xeno-canto.org/983131"
-    },
+    "audioCall": null,
     "academic": {
       "iocTaxonCode": "IOC-AV-PAS-GARRU",
       "avibaseId": "B502C63704255140",
@@ -8053,7 +8089,9 @@
       "license": "all-rights-reserved",
       "observationUrl": "https://www.inaturalist.org/taxa/145000",
       "photoLocation": "VQG Bidoup Núi Bà, Lâm Đồng",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/schoeniparus-klossi.jpg",
+      "localThumbnailUrl": "/plates/thumbs/schoeniparus-klossi.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/26529/download",
@@ -8163,7 +8201,9 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/1287020",
       "photoLocation": "Đà Lạt, Lâm Đồng",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/prinia-rocki.jpg",
+      "localThumbnailUrl": "/plates/thumbs/prinia-rocki.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/983132/download",
@@ -8270,7 +8310,9 @@
       "license": "cc-by",
       "observationUrl": "https://www.inaturalist.org/taxa/827405",
       "photoLocation": "Lang Biang, Lâm Đồng",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/locustella-idonea.jpg",
+      "localThumbnailUrl": "/plates/thumbs/locustella-idonea.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1150467/download",
@@ -8376,7 +8418,9 @@
       "license": "cc-by-nc",
       "observationUrl": "https://www.inaturalist.org/taxa/1290434",
       "photoLocation": "Miền Bắc Việt Nam",
-      "isShotInVietnam": true
+      "isShotInVietnam": true,
+      "localPlateUrl": "/plates/tropicoperdix-tonkinensis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/tropicoperdix-tonkinensis.jpg"
     },
     "academic": {
       "iocTaxonCode": "IOC-AV-GAL-TROPICO",
@@ -8464,7 +8508,9 @@
       "observationUrl": "https://www.inaturalist.org/observations/351155262",
       "photoLocation": "",
       "isShotInVietnam": false,
-      "hasValidPhoto": true
+      "hasValidPhoto": true,
+      "localPlateUrl": "/plates/pseudibis-gigantea.jpg",
+      "localThumbnailUrl": "/plates/thumbs/pseudibis-gigantea.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/983624/download",
@@ -8572,7 +8618,9 @@
       "observationUrl": "https://www.inaturalist.org/observations/403018286",
       "photoLocation": "",
       "isShotInVietnam": false,
-      "hasValidPhoto": true
+      "hasValidPhoto": true,
+      "localPlateUrl": "/plates/sarcogyps-calvus.jpg",
+      "localThumbnailUrl": "/plates/thumbs/sarcogyps-calvus.jpg"
     },
     "audioCall": null,
     "academic": {
@@ -8665,7 +8713,9 @@
       "observationUrl": "https://www.inaturalist.org/observations/401872246",
       "photoLocation": "",
       "isShotInVietnam": false,
-      "hasValidPhoto": true
+      "hasValidPhoto": true,
+      "localPlateUrl": "/plates/gyps-tenuirostris.jpg",
+      "localThumbnailUrl": "/plates/thumbs/gyps-tenuirostris.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/899521/download",
@@ -8769,7 +8819,9 @@
       "observationUrl": "https://www.inaturalist.org/observations/404392317",
       "photoLocation": "",
       "isShotInVietnam": false,
-      "hasValidPhoto": true
+      "hasValidPhoto": true,
+      "localPlateUrl": "/plates/gyps-bengalensis.jpg",
+      "localThumbnailUrl": "/plates/thumbs/gyps-bengalensis.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1090513/download",
@@ -8874,7 +8926,9 @@
       "observationUrl": "https://www.inaturalist.org/observations/403040901",
       "photoLocation": "",
       "isShotInVietnam": false,
-      "hasValidPhoto": true
+      "hasValidPhoto": true,
+      "localPlateUrl": "/plates/leptoptilos-dubius.jpg",
+      "localThumbnailUrl": "/plates/thumbs/leptoptilos-dubius.jpg"
     },
     "audioCall": null,
     "academic": {
@@ -8969,7 +9023,9 @@
       "observationUrl": "https://www.inaturalist.org/observations/404454270",
       "photoLocation": "",
       "isShotInVietnam": false,
-      "hasValidPhoto": true
+      "hasValidPhoto": true,
+      "localPlateUrl": "/plates/calidris-pygmaea.jpg",
+      "localThumbnailUrl": "/plates/thumbs/calidris-pygmaea.jpg"
     },
     "audioCall": {
       "audioUrl": "https://xeno-canto.org/1038170/download",
@@ -9074,7 +9130,9 @@
       "observationUrl": "https://www.inaturalist.org/observations/404877902",
       "photoLocation": "",
       "isShotInVietnam": false,
-      "hasValidPhoto": true
+      "hasValidPhoto": true,
+      "localPlateUrl": "/plates/emberiza-aureola.jpg",
+      "localThumbnailUrl": "/plates/thumbs/emberiza-aureola.jpg"
     },
     "audioCall": null,
     "academic": {

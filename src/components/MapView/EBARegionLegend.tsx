@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import type { EBARegion, BirdSpecies } from '../../types/bird';
 import { useTaxonomy } from '../../context/TaxonomyContext';
+import { BirdPlateImage } from '../Common/BirdPlateImage';
 
 export interface EBARegionLegendProps {
   className?: string;
@@ -260,18 +261,12 @@ export const EBARegionLegendComponent: React.FC<EBARegionLegendProps> = ({
                                 <div className="flex items-center gap-2 min-w-0">
                                   {/* Small Thumbnail */}
                                   <div className="w-8 h-8 rounded-md overflow-hidden bg-paper-300 flex-shrink-0 border border-paper-border">
-                                    {species.illustration?.imageUrl ? (
-                                      <img
-                                        src={species.illustration.imageUrl}
-                                        alt={species.vietnameseName}
-                                        className="w-full h-full object-cover"
-                                        loading="lazy"
-                                      />
-                                    ) : (
-                                      <div className="w-full h-full flex items-center justify-center text-ink-400 font-mono text-[9px]">
-                                        AVI
-                                      </div>
-                                    )}
+                                    <BirdPlateImage
+                                      species={species}
+                                      preferThumbnail={true}
+                                      aspectRatio="square"
+                                      className="w-full h-full object-cover"
+                                    />
                                   </div>
 
                                   <div className="min-w-0">
