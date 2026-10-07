@@ -361,6 +361,28 @@ const MapZoomControls: React.FC = () => {
   );
 };
 
+// Map Click/Tap Outside Handler to auto-dismiss mobile cards
+interface MapTapOutsideHandlerProps {
+  onTapOutside: () => void;
+}
+
+const MapTapOutsideHandler: React.FC<MapTapOutsideHandlerProps> = ({ onTapOutside }) => {
+  const map = useMap();
+
+  useEffect(() => {
+    const handleMapClick = () => {
+      onTapOutside();
+    };
+
+    map.on('click', handleMapClick);
+    return () => {
+      map.off('click', handleMapClick);
+    };
+  }, [map, onTapOutside]);
+
+  return null;
+};
+
 export interface VietnamEBAMapProps {
   className?: string;
 }
@@ -369,6 +391,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
   const {
     selectedSpecies,
     selectSpecies,
+    setActiveView,
     filteredSpecies,
     ebaRegions,
     allSpecies
@@ -391,6 +414,16 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
   } | null>(null);
   const [mobileSheetSnap, setMobileSheetSnap] = useState<SheetSnapPoint>('peek');
   const [isMobileSpeciesCardOpen, setIsMobileSpeciesCardOpen] = useState<boolean>(false);
+
+  // Auto-close mobile species card when tapping outside on map background
+  const handleMapBackgroundClick = useCallback(() => {
+    if (isMobile) {
+      if (isMobileSpeciesCardOpen || selectedSpecies) {
+        setIsMobileSpeciesCardOpen(false);
+        selectSpecies(null);
+      }
+    }
+  }, [isMobile, isMobileSpeciesCardOpen, selectedSpecies, selectSpecies]);
 
   // Fly to selected species whenever it changes
   useEffect(() => {
@@ -497,6 +530,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
           target={flyTarget}
           isMobileOffset={isMobile && mobileSheetSnap !== 'peek'}
         />
+        <MapTapOutsideHandler onTapOutside={handleMapBackgroundClick} />
         <MapZoomControls />
 
         {/* High-visibility Vietnam National Boundary Layer */}
@@ -786,6 +820,10 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
           onClose={() => {
             setIsMobileSpeciesCardOpen(false);
             selectSpecies(null);
+          }}
+          onViewCurator={() => {
+            setIsMobileSpeciesCardOpen(false);
+            setActiveView('curator');
           }}
         />
       )}

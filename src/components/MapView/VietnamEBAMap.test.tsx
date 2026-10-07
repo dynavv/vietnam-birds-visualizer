@@ -171,6 +171,40 @@ describe('VietnamEBAMap Component', () => {
     }
   });
 
+  it('closes mobile floating species card when clicking/tapping the map background', () => {
+    const originalInnerWidth = window.innerWidth;
+    window.innerWidth = 375;
+    try {
+      render(
+        <TaxonomyProvider>
+          <VietnamEBAMap />
+        </TaxonomyProvider>
+      );
+
+      // Mở sheet và chọn loài để hiển thị popup
+      fireEvent.click(screen.getByTestId('bottom-sheet-expand-to-half'));
+      const dalatCard = screen.getByTestId('mobile-eba-region-card-dalat-plateau');
+      const dalatBtn = dalatCard.querySelector('button');
+      if (dalatBtn) fireEvent.click(dalatBtn);
+
+      const speciesChips = screen.getAllByText('Mi Langbiang');
+      fireEvent.click(speciesChips[speciesChips.length - 1]);
+      expect(screen.getByTestId('mobile-floating-species-card')).toBeDefined();
+
+      // Click vào nền bản đồ (Leaflet map container) -> tự động đóng popup
+      const mapContainer = screen.getByTestId('vietnam-eba-map').querySelector('.leaflet-container');
+      expect(mapContainer).not.toBeNull();
+      if (mapContainer) {
+        fireEvent.click(mapContainer);
+      }
+
+      // Thẻ mobile floating card phải được đóng
+      expect(screen.queryByTestId('mobile-floating-species-card')).toBeNull();
+    } finally {
+      window.innerWidth = originalInnerWidth;
+    }
+  });
+
   it('initializes showAllSpeciesPins to false on mobile and true on desktop', () => {
     const originalInnerWidth = window.innerWidth;
     window.innerWidth = 375;

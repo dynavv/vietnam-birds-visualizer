@@ -1,6 +1,7 @@
-import React, { createContext, useContext, useState, useMemo, useCallback } from 'react';
+import React, { createContext, useContext, useState, useMemo, useCallback, useEffect } from 'react';
 import type { BirdSpecies, TaxonomyNode, EBARegion } from '../types';
 import { speciesData as allSpeciesData, taxonomyData as taxonomyTreeData, ebasData as ebaRegionsData } from '../data';
+import { audioManager } from '../utils/audioManager';
 
 export type ViewMode = 'map' | 'sunburst' | 'curator';
 
@@ -369,6 +370,14 @@ export const TaxonomyProvider: React.FC<TaxonomyProviderProps> = ({
       markSpeciesDiscovered(selectedSpeciesId);
     }
   }, [selectedSpeciesId, markSpeciesDiscovered]);
+
+  // Stop audio playback if selected species changes or is cleared
+  useEffect(() => {
+    const playingSpeciesId = audioManager.getState().speciesId;
+    if (playingSpeciesId && playingSpeciesId !== selectedSpeciesId) {
+      audioManager.stop();
+    }
+  }, [selectedSpeciesId]);
 
   // Global Keyboard Shortcuts (R, 1, 2, 3, etc.)
   React.useEffect(() => {

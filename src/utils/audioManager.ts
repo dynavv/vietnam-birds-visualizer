@@ -32,7 +32,22 @@ class AudioManager {
   private cleanupListeners: (() => void) | null = null;
 
   constructor() {
-    // Singleton constructor
+    // Attach automatic background shutdown listeners safely
+    if (typeof document !== 'undefined') {
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden' && this.isPlayingState) {
+          this.pause();
+        }
+      });
+    }
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('pagehide', () => {
+        if (this.isPlayingState) {
+          this.pause();
+        }
+      });
+    }
   }
 
   public getState(): AudioPlaybackState {

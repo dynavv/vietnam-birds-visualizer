@@ -179,5 +179,45 @@ describe('AudioManager Singleton', () => {
 
     window.Audio = originalAudio;
   });
+
+  it('pauses playback when document visibilityState changes to hidden', async () => {
+    await audioManager.play('https://xeno-canto.org/sample.mp3');
+    expect(audioManager.isPlaying()).toBe(true);
+
+    const originalVisibilityState = document.visibilityState;
+    Object.defineProperty(document, 'visibilityState', {
+      configurable: true,
+      value: 'hidden',
+    });
+
+    document.dispatchEvent(new Event('visibilitychange'));
+
+    expect(audioManager.isPlaying()).toBe(false);
+    expect(pauseMock).toHaveBeenCalled();
+
+    Object.defineProperty(document, 'visibilityState', {
+      configurable: true,
+      value: originalVisibilityState,
+    });
+  });
+
+  it('does not pause playback if document visibilityState is visible', async () => {
+    await audioManager.play('https://xeno-canto.org/sample.mp3');
+    expect(audioManager.isPlaying()).toBe(true);
+
+    document.dispatchEvent(new Event('visibilitychange'));
+
+    expect(audioManager.isPlaying()).toBe(true);
+  });
+
+  it('pauses playback when window fires pagehide event', async () => {
+    await audioManager.play('https://xeno-canto.org/sample.mp3');
+    expect(audioManager.isPlaying()).toBe(true);
+
+    window.dispatchEvent(new Event('pagehide'));
+
+    expect(audioManager.isPlaying()).toBe(false);
+    expect(pauseMock).toHaveBeenCalled();
+  });
 });
 
