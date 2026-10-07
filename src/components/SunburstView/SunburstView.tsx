@@ -87,7 +87,7 @@ export const SunburstView: React.FC<SunburstViewProps> = ({
               </h1>
             </div>
             <p className="text-xs text-ink-600 font-sans mt-0.5 hidden sm:block">
-              Khám phá quan hệ phả hệ từ Lớp Chim (Aves) đến 16 Bộ, Họ, Chi và từng Loài
+              Khám phá quan hệ phả hệ từ Lớp Chim (Aves) đến {orderList.length} Bộ, Họ, Chi và từng Loài
             </p>
           </div>
 
@@ -153,13 +153,13 @@ export const SunburstView: React.FC<SunburstViewProps> = ({
           ) : (
             <div className="bg-paper-100/90 backdrop-blur-sm border border-paper-border rounded-2xl p-2.5 sm:p-3.5 shadow-paper-card flex flex-col justify-between items-center relative flex-1 min-h-0 h-full overflow-hidden">
               {/* Wheel Graphic Container */}
-              <div className="flex-1 min-h-0 w-full flex items-center justify-center relative p-1 overflow-hidden">
+              <div className="w-full h-full flex items-center justify-center relative p-1 overflow-hidden">
                 <SunburstWheel
                   data={taxonomyTree}
                   activeFocusNode={activeFocusNode}
                   onZoomNode={handleWheelZoom}
                   onSelectSpecies={selectSpecies}
-                  className="w-full max-h-full aspect-square"
+                  className="w-full h-full max-h-full max-w-full aspect-square"
                 />
               </div>
 
@@ -168,7 +168,7 @@ export const SunburstView: React.FC<SunburstViewProps> = ({
                 <div className="flex items-center justify-between gap-2 mb-1.5">
                   <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-wider font-bold text-ink-500 flex items-center gap-1">
                     <Layers className="w-3 h-3 text-natural-moss" />
-                    16 Bộ Chim Đặc Trưng (Bảng Màu Sinh Thái)
+                    {orderList.length} Bộ Chim Đặc Trưng (Bảng Màu Sinh Thái)
                   </span>
                   {activeFocusNode && activeFocusNode.name !== taxonomyTree.name && (
                     <button

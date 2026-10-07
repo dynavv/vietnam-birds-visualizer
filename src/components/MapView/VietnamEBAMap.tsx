@@ -9,7 +9,8 @@ import {
   Plus,
   Minus,
   ChevronRight,
-  Sparkles
+  Sparkles,
+  Dices
 } from 'lucide-react';
 import type { BirdSpecies, EBARegion } from '../../types/bird';
 import { useTaxonomy } from '../../context/TaxonomyContext';
@@ -391,6 +392,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
   const {
     selectedSpecies,
     selectSpecies,
+    selectRandomEndemic,
     setActiveView,
     filteredSpecies,
     ebaRegions,
@@ -406,6 +408,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
     return !isMob;
   });
   const [isGeminiModalOpen, setIsGeminiModalOpen] = useState<boolean>(false);
+  const [diceRolling, setDiceRolling] = useState<boolean>(false);
   const showNationalBoundary = true;
   const [flyTarget, setFlyTarget] = useState<{
     coordinates?: [number, number];
@@ -414,6 +417,18 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
   } | null>(null);
   const [mobileSheetSnap, setMobileSheetSnap] = useState<SheetSnapPoint>('peek');
   const [isMobileSpeciesCardOpen, setIsMobileSpeciesCardOpen] = useState<boolean>(false);
+
+  // Handle random endemic species discovery on mobile
+  const handleRandomClick = () => {
+    setDiceRolling(true);
+    selectRandomEndemic();
+    if (isMobile) {
+      setIsMobileSpeciesCardOpen(true);
+    }
+    setTimeout(() => {
+      setDiceRolling(false);
+    }, 450);
+  };
 
   // Auto-close mobile species card when tapping outside on map background
   const handleMapBackgroundClick = useCallback(() => {
@@ -755,7 +770,7 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
       </div>
 
       {/* Bottom Map Controls: Positioned bottom-[68px] on mobile (above 48px floating peek card), md:bottom-2.5 on desktop */}
-      <div className="absolute bottom-[68px] md:bottom-2.5 left-3 right-3 md:right-auto md:w-auto flex items-center justify-between md:justify-start pointer-events-none z-20 md:z-10">
+      <div className="absolute bottom-[68px] md:bottom-2.5 left-3 right-3 md:right-auto md:w-auto flex items-end justify-between md:justify-start pointer-events-none z-20 md:z-10">
         {/* Left Control Group */}
         <div className="pointer-events-auto flex items-center gap-1.5 bg-paper-100/95 backdrop-blur-md p-1 rounded-xl border border-paper-border shadow-paper-card text-xs">
           <button
@@ -798,8 +813,24 @@ export const VietnamEBAMap: React.FC<VietnamEBAMapProps> = ({ className = '' }) 
           </button>
         </div>
 
-        {/* Right Mobile Avian AI Button (Mobile only: md:hidden) */}
-        <div className="flex md:hidden items-center pointer-events-auto">
+        {/* Right Mobile Action Stack: Random Button floating above Avian AI (Mobile only: md:hidden) */}
+        <div className="flex md:hidden flex-col items-end gap-2 pointer-events-auto">
+          <button
+            type="button"
+            data-testid="map-mobile-random-btn"
+            onClick={handleRandomClick}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-paper-100/95 backdrop-blur-md border border-paper-border hover:border-natural-amber/40 text-ink-800 hover:text-natural-amber text-xs font-semibold shadow-paper-card cursor-pointer transition-all active:scale-95"
+            aria-label="Khám phá ngẫu nhiên"
+            title="Khám phá ngẫu nhiên một loài chim đặc hữu"
+          >
+            <Dices
+              className={`w-3.5 h-3.5 text-natural-amber shrink-0 transition-transform duration-500 ${
+                diceRolling ? 'rotate-180 scale-110' : ''
+              }`}
+            />
+            <span>Ngẫu nhiên</span>
+          </button>
+
           <button
             type="button"
             data-testid="map-avian-ai-btn"

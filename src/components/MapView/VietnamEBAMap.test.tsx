@@ -105,6 +105,28 @@ describe('VietnamEBAMap Component', () => {
     expect(screen.getByTestId('gemini-naturalist-modal')).toBeDefined();
   });
 
+  it('renders mobile random discovery button and triggers random species selection', () => {
+    const originalInnerWidth = window.innerWidth;
+    window.innerWidth = 375;
+    try {
+      render(
+        <TaxonomyProvider>
+          <VietnamEBAMap />
+        </TaxonomyProvider>
+      );
+
+      const randomBtn = screen.getByTestId('map-mobile-random-btn');
+      expect(randomBtn).toBeDefined();
+      expect(screen.getByText('Ngẫu nhiên')).toBeDefined();
+
+      fireEvent.click(randomBtn);
+      // Popup floating card opens when random button is clicked on mobile
+      expect(screen.getByTestId('mobile-floating-species-card')).toBeDefined();
+    } finally {
+      window.innerWidth = originalInnerWidth;
+    }
+  });
+
   it('does not render mobile floating species card by default and opens it on species select', () => {
     const originalInnerWidth = window.innerWidth;
     window.innerWidth = 375;

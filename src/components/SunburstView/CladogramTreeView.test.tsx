@@ -4,14 +4,14 @@ import { CladogramTreeView } from './CladogramTreeView';
 import { TaxonomyProvider } from '../../context/TaxonomyContext';
 
 describe('CladogramTreeView Component', () => {
-  it('renders 16 orders and collapsible node structure', () => {
+  it('renders orders and collapsible node structure', () => {
     render(
       <TaxonomyProvider>
         <CladogramTreeView />
       </TaxonomyProvider>
     );
 
-    expect(screen.getByText(/16 Bộ • 40\+ Họ/i)).toBeDefined();
+    expect(screen.getByText(/\d+ Bộ • 40\+ Họ/i)).toBeDefined();
     expect(screen.getByText('Bộ Sẻ')).toBeDefined();
     expect(screen.getByText('Bộ Gà')).toBeDefined();
   });

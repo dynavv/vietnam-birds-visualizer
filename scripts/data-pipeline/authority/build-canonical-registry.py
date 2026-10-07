@@ -142,7 +142,6 @@ SYNONYM_MAP = {
     'napothera pasquieri': 'rimator pasquieri',
     'paradoxornis bakeri': 'psittiparus bakeri',
     'pterorhinus chinensis': 'garrulax chinensis',
-    'taenioptynx brodiei': 'glaucidium brodiei',
     'porphyrio porphyrio': 'porphyrio poliocephalus',
     'arborophila tonkinensis': 'tropicoperdix tonkinensis',
     'gyps indicus': 'gyps tenuirostris',
@@ -259,6 +258,14 @@ for eng, avb_id, sci, vn, status in raw_rows:
             'directive04Flagship': False
         }
     
+    specimen_tax = specimen_match.get('taxonomy', {}) if specimen_match else {}
+    fallback_order = specimen_tax.get('order') or 'Passeriformes'
+    fallback_family = specimen_tax.get('family') or ''
+    fallback_family_en = specimen_tax.get('familyEnglish') or ''
+    resolved_order = ioc_rec.get('order') or fallback_order
+    resolved_family = ioc_rec.get('family') or fallback_family
+    resolved_family_en = ioc_rec.get('familyEnglish') or fallback_family_en
+    
     canonical_record = {
         'id': record_id,
         'scientificName': scientific_name,
@@ -268,9 +275,9 @@ for eng, avb_id, sci, vn, status in raw_rows:
         'isEndemic': is_endemic,
         'endemicScope': endemic_scope,
         'iucn': iucn_status,
-        'order': ioc_rec.get('order', 'Passeriformes'),
-        'family': ioc_rec.get('family', ''),
-        'familyEnglish': ioc_rec.get('familyEnglish', ''),
+        'order': resolved_order,
+        'family': resolved_family,
+        'familyEnglish': resolved_family_en,
         'genus': ioc_rec.get('genus', words[0]),
         'authority': ioc_rec.get('authority', ''),
         'breedingRange': ioc_rec.get('breedingRange', ''),
@@ -287,8 +294,8 @@ for eng, avb_id, sci, vn, status in raw_rows:
         'aliases': final_aliases,
         'isEndemic': is_endemic,
         'endemicScope': endemic_scope,
-        'order': ioc_rec.get('order', 'Passeriformes'),
-        'family': ioc_rec.get('family', ''),
+        'order': resolved_order,
+        'family': resolved_family,
         'authority': 'IOC World Bird List v14.2 / Avibase Vietnam Checklist v2024',
         'avibaseId': avb_id,
         'legalFramework': legal_framework

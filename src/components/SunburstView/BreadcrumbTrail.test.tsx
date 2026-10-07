@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { BreadcrumbTrail } from './BreadcrumbTrail';
-import { getTaxonomyLineage } from './taxonomyUtils';
+import { getTaxonomyLineage, getTaxonColor } from './taxonomyUtils';
 import type { TaxonomyNode } from '../../types/bird';
 
 const mockTaxonomyTree: TaxonomyNode = {
@@ -113,5 +113,38 @@ describe('BreadcrumbTrail Component', () => {
     // Non-existent
     const fallback = getTaxonomyLineage(mockTaxonomyTree, 'Unknown-Clade');
     expect(fallback.map(n => n.name)).toEqual(['Aves']);
+  });
+
+  it('synchronizes rank badge background colors with 1:1 wheel chromatic palette', () => {
+    const lineage = getTaxonomyLineage(mockTaxonomyTree, 'trochalopteron-ngoclinhense');
+    const { container } = render(<BreadcrumbTrail lineage={lineage} />);
+
+    const badges = container.querySelectorAll('span.font-mono.uppercase');
+    expect(badges.length).toBe(5);
+
+    lineage.forEach((_node, idx) => {
+      const badge = badges[idx] as HTMLElement;
+      expect(badge.style.backgroundColor).toBeDefined();
+      expect(badge.style.borderColor).toBe('rgba(255, 255, 255, 0.25)');
+      expect(badge.className).toContain('text-white');
+    });
+  });
+
+  it('evaluates getTaxonColor correctly across all hierarchical levels', () => {
+    const lineage = getTaxonomyLineage(mockTaxonomyTree, 'trochalopteron-ngoclinhense');
+
+    // Class
+    expect(getTaxonColor(lineage[0], lineage)).toBe('#1C1917');
+
+    // Order Passeriformes
+    expect(getTaxonColor(lineage[1], lineage)).toBe('#1E4D2B');
+
+    // Ciconiiformes
+    const storkNode: TaxonomyNode = { name: 'Ciconiiformes', rank: 'order' };
+    expect(getTaxonColor(storkNode)).toBe('#475569');
+
+    // Endemic species derives continuous color from genus, not hardcoded orange
+    expect(getTaxonColor(lineage[4], lineage, true)).toMatch(/^#[0-9A-Fa-f]{6}$/);
+    expect(getTaxonColor(lineage[4], lineage, true)).not.toBe('#D97706');
   });
 });

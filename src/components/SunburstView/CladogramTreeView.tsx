@@ -53,7 +53,7 @@ export const CladogramTreeViewComponent: React.FC<CladogramTreeViewProps> = ({ c
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-natural-moss animate-pulse" />
           <span className="font-mono text-xs uppercase font-bold text-ink-700 tracking-wider">
-            16 Bộ • 40+ Họ Điểu Học Việt Nam
+            {orders.length} Bộ • 40+ Họ Điểu Học Việt Nam
           </span>
         </div>
 

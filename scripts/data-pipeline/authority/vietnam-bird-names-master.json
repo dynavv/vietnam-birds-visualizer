@@ -6463,8 +6463,8 @@
     "aliases": [],
     "isEndemic": false,
     "endemicScope": "none",
-    "order": "Passeriformes",
-    "family": "",
+    "order": "Strigiformes",
+    "family": "Strigidae",
     "authority": "IOC World Bird List v14.2 / Avibase Vietnam Checklist v2024",
     "avibaseId": "8BB833BB44EB3BFC",
     "legalFramework": {
@@ -14369,7 +14369,7 @@
     "isEndemic": false,
     "endemicScope": "none",
     "order": "Passeriformes",
-    "family": "",
+    "family": "Paradoxornithidae",
     "authority": "IOC World Bird List v14.2 / Avibase Vietnam Checklist v2024",
     "avibaseId": "C89C9217A9ECCE9C",
     "legalFramework": {
@@ -15350,7 +15350,7 @@
     "isEndemic": true,
     "endemicScope": "vietnam",
     "order": "Passeriformes",
-    "family": "",
+    "family": "Pellorneidae",
     "authority": "IOC World Bird List v14.2 / Avibase Vietnam Checklist v2024",
     "avibaseId": "8E29E9C510F38307",
     "legalFramework": {
@@ -15737,7 +15737,7 @@
     "isEndemic": false,
     "endemicScope": "none",
     "order": "Passeriformes",
-    "family": "",
+    "family": "Leiothrichidae",
     "authority": "IOC World Bird List v14.2 / Avibase Vietnam Checklist v2024",
     "avibaseId": "48A456CC08BF8AAA",
     "legalFramework": {

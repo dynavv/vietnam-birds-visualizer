@@ -120,11 +120,11 @@ describe('App Integration & End-to-End Navigation Test Suite', () => {
   it('triggers random species discovery upon clicking Khám phá ngẫu nhiên in header', () => {
     render(<App />);
 
-    const randomBtn = screen.getByLabelText(/Khám phá ngẫu nhiên một loài chim/i);
-    expect(randomBtn).toBeDefined();
+    const randomBtns = screen.getAllByLabelText(/Khám phá ngẫu nhiên một loài chim/i);
+    expect(randomBtns.length).toBeGreaterThan(0);
 
     // Click random button
-    fireEvent.click(randomBtn);
+    fireEvent.click(randomBtns[0]);
 
     // Endemic focus card should display an active bird
     const focusCard = screen.getByTestId('endemic-focus-card');

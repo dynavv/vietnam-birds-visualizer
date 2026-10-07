@@ -102,4 +102,18 @@ describe('3-Tier Canonical Naming Firewall & Data Integrity', () => {
       }
     });
   });
+
+  it('Tier 4: Taxonomy clade depth - Every species in species.json must have clade array length >= 3', () => {
+    speciesList.forEach(sp => {
+      expect(
+        sp.taxonomy?.clade,
+        `Loài ${sp.id} (${sp.scientificName}) thiếu taxonomy.clade!`
+      ).toBeDefined();
+      expect(Array.isArray(sp.taxonomy.clade)).toBe(true);
+      expect(
+        sp.taxonomy.clade.length,
+        `Loài ${sp.id} (${sp.scientificName}) có clade length < 3: [${sp.taxonomy.clade.join(', ')}]`
+      ).toBeGreaterThanOrEqual(3);
+    });
+  });
 });

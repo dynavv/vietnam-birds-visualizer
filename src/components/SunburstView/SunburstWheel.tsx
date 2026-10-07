@@ -7,11 +7,15 @@ import {
 } from 'lucide-react';
 import type { TaxonomyNode, BirdSpecies } from '../../types/bird';
 import { useTaxonomy } from '../../context/TaxonomyContext';
+import { getTaxonColor } from './taxonomyUtils';
+
+export { ORDER_COLOR_MAP } from './taxonomyUtils';
 
 export interface SunburstWheelProps {
   data?: TaxonomyNode;
   width?: number;
   height?: number;
+  selectedSpeciesId?: string;
   onSelectSpecies?: (speciesId: string) => void;
   onHoverNode?: (node: TaxonomyNode | null) => void;
   onZoomNode?: (node: TaxonomyNode) => void;
@@ -34,30 +38,11 @@ interface SunburstHierarchyNode extends d3.HierarchyRectangularNode<TaxonomyNode
   };
 }
 
-// Heritage Naturalist Chromatics Palette for 16 Orders
-const ORDER_COLOR_MAP: Record<string, string> = {
-  Passeriformes: '#1E4D2B',    // British Racing / Forest Moss
-  Galliformes: '#C26700',      // Warm Amber Gold
-  Bucerotiformes: '#C2410C',   // Burnt Terracotta
-  Coraciiformes: '#0284C7',    // Sky Azure / Aegean
-  Piciformes: '#78350F',       // Antique Bark
-  Accipitriformes: '#991B1B',  // Crimson Clay
-  Falconiformes: '#881337',   // Claret Garnet
-  Strigiformes: '#3730A3',     // Midnight Indigo
-  Pelecaniformes: '#0F766E',   // Deep Ocean Teal
-  Gruiformes: '#047857',       // Jade Emerald
-  Columbiformes: '#475569',    // Heather Slate
-  Anseriformes: '#166534',     // Pine Laurel
-  Cuculiformes: '#B45309',     // Spiced Ochre
-  Trogoniformes: '#0D9488',    // Persian Green
-  Caprimulgiformes: '#713F12', // Tawny Chestnut
-  Charadriiformes: '#0369A1'   // Cerulean Blue
-};
-
 export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
   data: propData,
   width = 750,
   height = 750,
+  selectedSpeciesId: propSelectedSpeciesId,
   onSelectSpecies,
   onHoverNode,
   onZoomNode,
@@ -67,9 +52,12 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
   const {
     taxonomyTree,
     selectSpecies,
+    selectedSpeciesId: contextSelectedSpeciesId,
     setHoveredTaxonNode,
     allSpecies
   } = useTaxonomy();
+
+  const effectiveSelectedSpeciesId = propSelectedSpeciesId ?? contextSelectedSpeciesId;
 
   const svgRef = useRef<SVGSVGElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -193,50 +181,53 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
       .style('font-family', 'Cormorant Garamond, ui-serif, Georgia, serif')
       .append('g');
 
+    // SVG Background Circle for Center Hub
+    g.append('circle')
+      .attr('class', 'sunburst-center-circle cursor-pointer')
+      .attr('r', centerRadius * 0.96)
+      .attr('fill', '#FAF7F0')
+      .attr('stroke', '#4A7C59')
+      .attr('stroke-width', 2)
+      .on('click', () => { if (isZoomed) resetZoom(); });
+
     // Advanced Multi-Dimensional Hierarchical Color Resolver
     const getNodeColor = (d: SunburstHierarchyNode): string => {
-      const ancestors = d.ancestors();
-      const orderNode = ancestors.find(a => a.data.rank === 'order');
-      const orderName = orderNode ? orderNode.data.name : d.data.name;
-      const baseColor = ORDER_COLOR_MAP[orderName] || d.data.color || '#2D5A27';
+      const lineage = d.ancestors().reverse().map(a => a.data);
+      const isEndemic =
+        d.data.rank === 'species' && d.data.speciesId
+          ? Boolean(speciesMap.get(d.data.speciesId)?.isEndemic)
+          : false;
+      return getTaxonColor(d.data, lineage, isEndemic);
+    };
 
-      // 1. Order level: Pure base tone
-      if (d.data.rank === 'order') {
-        return baseColor;
-      }
+    const isSelectedArc = (d: SunburstHierarchyNode) =>
+      Boolean(
+        d.data.rank === 'species' &&
+        d.data.speciesId &&
+        d.data.speciesId === effectiveSelectedSpeciesId
+      );
 
-      // 2. Family level: Introduce sibling hue variance to prevent massive monotonic blocks
-      if (d.data.rank === 'family') {
-        const parent = d.parent;
-        const siblingIndex = parent && parent.children ? parent.children.indexOf(d) : 0;
-        const totalSiblings = parent && parent.children ? parent.children.length : 1;
-        const hueShift = totalSiblings > 1 ? (siblingIndex / (totalSiblings - 1) - 0.5) * 28 : 0;
-        const hsl = d3.hsl(baseColor);
-        hsl.h = (hsl.h + hueShift + 360) % 360;
-        hsl.l = Math.min(0.72, Math.max(0.28, hsl.l + 0.08));
-        return hsl.formatHex();
-      }
+    // Compute Lineage Glow from Order down to Species
+    const selectedNode = descendants.find(d => isSelectedArc(d));
+    const selectedAncestors = selectedNode ? selectedNode.ancestors() : [];
+    const selectedAncestorNames = new Set(selectedAncestors.map(a => a.data.name));
 
-      // 3. Genus level: Lighter tone
-      if (d.data.rank === 'genus') {
-        const familyNode = ancestors.find(a => a.data.rank === 'family');
-        const familyColor = familyNode ? getNodeColor(familyNode) : baseColor;
-        return d3.color(familyColor)?.brighter(0.35)?.formatHex() || baseColor;
-      }
+    const getArcStroke = (d: SunburstHierarchyNode) => {
+      if (isSelectedArc(d)) return '#F59E0B';
+      if (selectedAncestorNames.has(d.data.name)) return '#F59E0B';
+      return '#FAF7F0';
+    };
 
-      // 4. Species level: Endemic highlight or luminous specimen tint
-      if (d.data.rank === 'species') {
-        const sp = d.data.speciesId ? speciesMap.get(d.data.speciesId) : null;
-        if (sp?.isEndemic) {
-          // Warm gold endemic radiance
-          return '#D97706';
-        }
-        const genusNode = ancestors.find(a => a.data.rank === 'genus');
-        const genusColor = genusNode ? getNodeColor(genusNode) : baseColor;
-        return d3.color(genusColor)?.brighter(0.55)?.formatHex() || baseColor;
-      }
+    const getArcStrokeWidth = (d: SunburstHierarchyNode) => {
+      if (isSelectedArc(d)) return '3.5px';
+      if (selectedAncestorNames.has(d.data.name)) return '2px';
+      return d.data.rank === 'order' ? '1.2px' : '0.6px';
+    };
 
-      return baseColor;
+    const getArcFillOpacity = (d: SunburstHierarchyNode) => {
+      if (isSelectedArc(d)) return 1.0;
+      if (selectedAncestorNames.has(d.data.name)) return 0.98;
+      return 0.92;
     };
 
     // Render Arcs Group
@@ -252,10 +243,80 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
       .attr('data-name', d => d.data.name)
       .attr('data-species-id', d => d.data.speciesId || '')
       .attr('fill', d => getNodeColor(d))
-      .attr('fill-opacity', 0.92)
-      .attr('stroke', '#FAF7F0')
-      .attr('stroke-width', d => (d.data.rank === 'order' ? '1.2px' : '0.6px'))
+      .attr('fill-opacity', d => getArcFillOpacity(d))
+      .attr('stroke', d => getArcStroke(d))
+      .attr('stroke-width', d => getArcStrokeWidth(d))
       .attr('d', d => arc(d.current));
+
+    // Elevate lineage arcs and selected species arc above siblings
+    path.filter(d => selectedAncestorNames.has(d.data.name)).raise();
+    path.filter(d => isSelectedArc(d)).raise();
+
+    // Selected Species Outer Rim Pin Indicator Marker
+    let pinGroup: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
+
+    if (selectedNode && selectedNode.current.y0 >= 1 && selectedNode.current.y0 <= 4) {
+      const midAngle = (selectedNode.current.x0 + selectedNode.current.x1) / 2;
+      const outerR = getOuterRadius(selectedNode.current.y0);
+      const pinX = outerR * Math.sin(midAngle);
+      const pinY = -outerR * Math.cos(midAngle);
+
+      pinGroup = g.append('g')
+        .attr('class', 'sunburst-pin-marker pointer-events-none')
+        .attr('data-testid', 'selected-species-pin')
+        .attr('transform', `translate(${pinX}, ${pinY})`);
+
+      // Pulsing outer ripple halo
+      const halo = pinGroup.append('circle')
+        .attr('r', 6)
+        .attr('fill', '#F59E0B')
+        .attr('fill-opacity', 0.6);
+
+      halo.append('animate')
+        .attr('attributeName', 'r')
+        .attr('values', '6;20;6')
+        .attr('dur', '2.4s')
+        .attr('repeatCount', 'indefinite');
+
+      halo.append('animate')
+        .attr('attributeName', 'fill-opacity')
+        .attr('values', '0.6;0.05;0.6')
+        .attr('dur', '2.4s')
+        .attr('repeatCount', 'indefinite');
+
+      // Secondary ripple halo
+      const secondaryHalo = pinGroup.append('circle')
+        .attr('r', 4)
+        .attr('fill', '#F59E0B')
+        .attr('fill-opacity', 0.45);
+
+      secondaryHalo.append('animate')
+        .attr('attributeName', 'r')
+        .attr('values', '4;14;4')
+        .attr('dur', '2.4s')
+        .attr('begin', '0.6s')
+        .attr('repeatCount', 'indefinite');
+
+      secondaryHalo.append('animate')
+        .attr('attributeName', 'fill-opacity')
+        .attr('values', '0.55;0.05;0.55')
+        .attr('dur', '2.4s')
+        .attr('begin', '0.6s')
+        .attr('repeatCount', 'indefinite');
+
+      // Solid amber target disc with white outline and drop shadow (r: 7.5, stroke-width: 2.2)
+      pinGroup.append('circle')
+        .attr('r', 7.5)
+        .attr('fill', '#F59E0B')
+        .attr('stroke', '#FFFFFF')
+        .attr('stroke-width', 2.2)
+        .style('filter', 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4))');
+
+      // Bright central pinpoint (r: 3)
+      pinGroup.append('circle')
+        .attr('r', 3)
+        .attr('fill', '#FFFFFF');
+    }
 
     // Render Labels Group
     const labelGroup = g.append('g').attr('class', 'sunburst-labels').attr('pointer-events', 'none');
@@ -361,6 +422,22 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
         .transition(transition as unknown as d3.Transition<d3.BaseType, unknown, null, undefined>)
         .attr('opacity', d => (labelVisible(d.target) ? 1 : 0))
         .attrTween('transform', d => () => labelTransform(d.current));
+
+      if (pinGroup && selectedNode) {
+        const isTargetVisible = selectedNode.target.y0 >= 1 && selectedNode.target.y0 <= 4;
+        pinGroup
+          .transition(transition as unknown as d3.Transition<d3.BaseType, unknown, null, undefined>)
+          .attr('opacity', isTargetVisible ? 1 : 0)
+          .tween('pin-pos', () => {
+            return () => {
+              const currentAngle = (selectedNode.current.x0 + selectedNode.current.x1) / 2;
+              const r = getOuterRadius(selectedNode.current.y0);
+              const px = r * Math.sin(currentAngle);
+              const py = -r * Math.cos(currentAngle);
+              pinGroup?.attr('transform', `translate(${px}, ${py})`);
+            };
+          });
+      }
     }
 
     // Attach click events
@@ -380,12 +457,24 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
           setHoveredTaxonNode(d.data);
         }
 
-        // Highlight lineage on visible arcs only
+        // Highlight lineage on visible arcs only (preserving selected species lineage glow)
         path
           .filter(node => node.target.y0 >= 1 && node.target.y0 <= 4)
-          .attr('fill-opacity', node => (ancestorNames.includes(node.data.name) ? 1.0 : 0.25))
-          .attr('stroke', node => (ancestorNames.includes(node.data.name) ? '#FFFFFF' : '#FAF8F5'))
-          .attr('stroke-width', node => (ancestorNames.includes(node.data.name) ? '2px' : '0.8px'));
+          .attr('fill-opacity', node => {
+            if (ancestorNames.includes(node.data.name)) return 1.0;
+            if (selectedAncestorNames.has(node.data.name) || isSelectedArc(node)) return 0.98;
+            return 0.25;
+          })
+          .attr('stroke', node => {
+            if (isSelectedArc(node)) return '#F59E0B';
+            if (selectedAncestorNames.has(node.data.name)) return '#F59E0B';
+            return ancestorNames.includes(node.data.name) ? '#FFFFFF' : '#FAF8F5';
+          })
+          .attr('stroke-width', node => {
+            if (isSelectedArc(node)) return '3.5px';
+            if (selectedAncestorNames.has(node.data.name)) return '2px';
+            return ancestorNames.includes(node.data.name) ? '2px' : '0.8px';
+          });
       })
       .on('mouseleave', () => {
         setInternalHoveredNode(null);
@@ -399,9 +488,9 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
         // Restore normal opacity on visible arcs only
         path
           .filter(node => node.target.y0 >= 1 && node.target.y0 <= 4)
-          .attr('fill-opacity', 0.9)
-          .attr('stroke', '#FAF8F5')
-          .attr('stroke-width', d => (d.data.rank === 'order' ? '1.5px' : '0.8px'));
+          .attr('fill-opacity', node => getArcFillOpacity(node))
+          .attr('stroke', node => getArcStroke(node))
+          .attr('stroke-width', node => getArcStrokeWidth(node));
       });
 
     // Expose programmatic zoom handler to external callers
@@ -428,16 +517,17 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
         d3.select(svgRef.current).selectAll('*').interrupt();
       }
     };
-  }, [rawTreeData, width, height, radius, centerRadius, ringWidth, speciesMap, onSelectSpecies, onHoverNode, onZoomNode, selectSpecies, setHoveredTaxonNode]);
+  }, [rawTreeData, width, height, radius, centerRadius, ringWidth, speciesMap, effectiveSelectedSpeciesId, onSelectSpecies, onHoverNode, onZoomNode, selectSpecies, setHoveredTaxonNode, isZoomed, resetZoom]);
 
   // Center Circle Content Resolver
   const centerDisplay = useMemo(() => {
     const isRoot = !isZoomed || currentZoomNode.name === rawTreeData.name;
     if (isRoot) {
+      const orderCount = (rawTreeData.children || []).length;
       return {
         title: rawTreeData.vietnameseName || 'Lớp Chim',
         subtitle: rawTreeData.name || 'Aves',
-        badge: '16 Bộ Chim',
+        badge: `${orderCount} Bộ Chim`,
         hint: 'Nhấp nan quạt để phóng to'
       };
     }
@@ -451,10 +541,15 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
         ? 'Chi'
         : 'Loài';
 
+    const displayName = currentZoomNode.vietnameseName || currentZoomNode.name || '';
+    const badgeText = displayName.startsWith(rankLabel)
+      ? displayName
+      : `${rankLabel} ${displayName}`.trim();
+
     return {
-      title: currentZoomNode.vietnameseName || currentZoomNode.name,
+      title: displayName,
       subtitle: currentZoomNode.name,
-      badge: `${rankLabel} ${currentZoomNode.vietnameseName || ''}`,
+      badge: badgeText,
       hint: '‹ Nhấp tâm để thu nhỏ'
     };
   }, [isZoomed, currentZoomNode, rawTreeData]);
@@ -462,7 +557,7 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
   return (
     <div
       ref={containerRef}
-      className={`relative flex items-center justify-center w-full aspect-square max-w-[760px] mx-auto select-none ${className}`}
+      className={`relative flex items-center justify-center w-full h-full max-w-[760px] max-h-full aspect-square mx-auto select-none ${className}`}
       data-testid="sunburst-wheel-container"
     >
       {/* SVG Canvas */}
@@ -479,7 +574,7 @@ export const SunburstWheelComponent: React.FC<SunburstWheelProps> = ({
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex flex-col items-center justify-center text-center p-3 cursor-pointer transition-all duration-300 group z-10"
         style={{
           width: `${(centerRadius * 2 / (radius * 2)) * 100}%`,
-          height: `${(centerRadius * 2 / (radius * 2)) * 100}%`,
+          aspectRatio: '1 / 1',
           maxWidth: `${centerRadius * 1.9}px`,
           maxHeight: `${centerRadius * 1.9}px`
         }}

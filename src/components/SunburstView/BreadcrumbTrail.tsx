@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { ChevronRight, Home, Sparkles, Layers } from 'lucide-react';
 import type { TaxonomyNode, TaxonomyRank } from '../../types/bird';
+import { TaxonomyContext } from '../../context/TaxonomyContext';
+import { getTaxonColor } from './taxonomyUtils';
 
 export interface BreadcrumbTrailProps {
   lineage: TaxonomyNode[];
@@ -9,31 +11,26 @@ export interface BreadcrumbTrailProps {
   className?: string;
 }
 
-const RANK_LABELS: Record<TaxonomyRank, { labelVi: string; shortVi: string; badgeColor: string }> = {
+const RANK_LABELS: Record<TaxonomyRank, { labelVi: string; shortVi: string }> = {
   class: {
     labelVi: 'Lớp',
-    shortVi: 'Lớp',
-    badgeColor: 'bg-stone-800 text-stone-100 border-stone-700'
+    shortVi: 'Lớp'
   },
   order: {
     labelVi: 'Bộ',
-    shortVi: 'Bộ',
-    badgeColor: 'bg-emerald-900/90 text-emerald-100 border-emerald-700/80'
+    shortVi: 'Bộ'
   },
   family: {
     labelVi: 'Họ',
-    shortVi: 'Họ',
-    badgeColor: 'bg-amber-900/90 text-amber-100 border-amber-700/80'
+    shortVi: 'Họ'
   },
   genus: {
     labelVi: 'Chi',
-    shortVi: 'Chi',
-    badgeColor: 'bg-blue-900/90 text-blue-100 border-blue-700/80'
+    shortVi: 'Chi'
   },
   species: {
     labelVi: 'Loài',
-    shortVi: 'Loài',
-    badgeColor: 'bg-natural-terracotta text-paper-50 border-natural-terracotta/80'
+    shortVi: 'Loài'
   }
 };
 
@@ -42,6 +39,8 @@ export const BreadcrumbTrailComponent: React.FC<BreadcrumbTrailProps> = ({
   onNodeClick,
   className = ''
 }) => {
+  const taxonomy = useContext(TaxonomyContext);
+
   if (!lineage || lineage.length === 0) {
     return (
       <nav
@@ -66,9 +65,16 @@ export const BreadcrumbTrailComponent: React.FC<BreadcrumbTrailProps> = ({
         const isLast = index === lineage.length - 1;
         const rankInfo = RANK_LABELS[node.rank] || {
           labelVi: node.rank,
-          shortVi: node.rank,
-          badgeColor: 'bg-stone-700 text-stone-100 border-stone-600'
+          shortVi: node.rank
         };
+
+        const isSpeciesEndemic =
+          Boolean((node as any).isEndemic) ||
+          Boolean(
+            node.speciesId && taxonomy?.allSpecies?.find(s => s.id === node.speciesId)?.isEndemic
+          );
+
+        const nodeColor = getTaxonColor(node, lineage, isSpeciesEndemic);
 
         const isRoot = index === 0;
 
@@ -90,7 +96,11 @@ export const BreadcrumbTrailComponent: React.FC<BreadcrumbTrailProps> = ({
             >
               {/* Rank Badge */}
               <span
-                className={`inline-flex items-center justify-center px-1.5 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider font-bold border ${rankInfo.badgeColor}`}
+                className="inline-flex items-center justify-center px-1.5 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider font-bold text-white border shadow-xs"
+                style={{
+                  backgroundColor: nodeColor,
+                  borderColor: 'rgba(255, 255, 255, 0.25)'
+                }}
               >
                 {isRoot ? (
                   <Home className="w-2.5 h-2.5 mr-0.5" />

@@ -8491,7 +8491,10 @@
     ],
     "taxonomy": {
       "clade": [
-        "Neoaves"
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Phaethoquornithes"
       ],
       "order": "Pelecaniformes",
       "orderVietnamese": "Bộ Bồ nông",
@@ -8597,7 +8600,10 @@
     ],
     "taxonomy": {
       "clade": [
-        "Neoaves"
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Accipitrimorphae"
       ],
       "order": "Accipitriformes",
       "orderVietnamese": "Bộ Ưng",
@@ -8698,7 +8704,10 @@
     ],
     "taxonomy": {
       "clade": [
-        "Neoaves"
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Accipitrimorphae"
       ],
       "order": "Accipitriformes",
       "orderVietnamese": "Bộ Ưng",
@@ -8805,7 +8814,10 @@
     ],
     "taxonomy": {
       "clade": [
-        "Neoaves"
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Accipitrimorphae"
       ],
       "order": "Accipitriformes",
       "orderVietnamese": "Bộ Ưng",
@@ -8908,7 +8920,10 @@
     "aliases": [],
     "taxonomy": {
       "clade": [
-        "Neoaves"
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Ciconiimorphae"
       ],
       "order": "Ciconiiformes",
       "orderVietnamese": "Bộ Hạc",
@@ -9009,7 +9024,10 @@
     ],
     "taxonomy": {
       "clade": [
-        "Neoaves"
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Charadriiformes"
       ],
       "order": "Charadriiformes",
       "orderVietnamese": "Bộ Choi choi",
@@ -9112,7 +9130,10 @@
     "aliases": [],
     "taxonomy": {
       "clade": [
-        "Neoaves"
+        "Aves",
+        "Neognathae",
+        "Neoaves",
+        "Passerea"
       ],
       "order": "Passeriformes",
       "orderVietnamese": "Bộ Sẻ",
