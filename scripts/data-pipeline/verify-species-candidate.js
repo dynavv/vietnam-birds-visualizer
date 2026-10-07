@@ -66,7 +66,7 @@ export async function verifyCandidateSpecies(draftRecord = null) {
   if (!record.vietnameseName || record.vietnameseName.trim() === '') {
     errors.push(`[TÊN TIẾNG VIỆT] Trường vietnameseName bị trống! Bắt buộc phải có tên tiếng Việt chuẩn.`);
   } else {
-    // Đối soát với Master Registry (Tam diện đối soát: Craik & Minh 2018 + GS. Võ Quý / VAST)
+    // Đối soát với Master Registry (IOC World Bird List v14.2 + Avibase Vietnam Checklist)
     if (!fs.existsSync(MASTER_PATH)) {
       errors.push(`[TÊN TIẾNG VIỆT] Không tìm thấy Master Naming Registry (${MASTER_PATH})!`);
     } else {
@@ -75,15 +75,26 @@ export async function verifyCandidateSpecies(draftRecord = null) {
 
       if (!masterMatch) {
         errors.push(
-          `[AI HALLUCINATION DEFENSE] Loài "${record.scientificName}" CHƯA CÓ trong Master Registry! ` +
-          `Tuyệt đối không dùng tên tự dịch từ AI. Cần đối soát thủ công với Craik & Minh (2018) và bổ sung vào Master Registry trước.`
-        );
-      } else if (masterMatch.vietnameseName.trim() !== record.vietnameseName.trim()) {
-        errors.push(
-          `[LỆCH TÊN CHUẨN] Tên dự thảo "${record.vietnameseName}" không khớp với tên chuẩn trong Master Registry "${masterMatch.vietnameseName}"!`
+          `[NAMING FIREWALL] Loài "${record.scientificName}" CHƯA CÓ trong Master Registry (IOC World Bird List v14.2 / Avibase Vietnam Checklist v2024)! ` +
+          `Tuyệt đối không dùng tên tự dịch từ AI. Cần kiểm tra danh lục chuẩn và bổ sung vào Master Registry trước.`
         );
       } else {
-        console.log(`   ✅ Tên tiếng Việt: "${record.vietnameseName}" khớp 100% với Master Registry.`);
+        const candidateName = record.vietnameseName.trim();
+        const primaryName = (masterMatch.vietnameseName || '').trim();
+        const aliasList = Array.isArray(masterMatch.aliases) ? masterMatch.aliases.map(a => a.trim()) : [];
+        const isPrimaryMatch = candidateName === primaryName;
+        const isAliasMatch = aliasList.includes(candidateName);
+
+        if (isPrimaryMatch) {
+          console.log(`   ✅ Tên tiếng Việt: "${record.vietnameseName}" khớp tên chính thức trong Master Registry.`);
+        } else if (isAliasMatch) {
+          console.log(`   ✅ Tên tiếng Việt: "${record.vietnameseName}" khớp tên đồng danh (alias) trong Master Registry (Tên chính: "${primaryName}").`);
+        } else {
+          const validNames = [primaryName, ...aliasList].filter(Boolean).join(', ');
+          errors.push(
+            `[LỆCH TÊN CHUẨN] Tên dự thảo "${record.vietnameseName}" không khớp với tên chính thức hoặc đồng danh trong Master Registry! Các tên hợp lệ: [${validNames}]`
+          );
+        }
       }
     }
   }

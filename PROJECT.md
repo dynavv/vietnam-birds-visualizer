@@ -93,22 +93,25 @@ Quy tắc phân định vai trò giữa API chính thức và Web Search khi c�
    - **GBIF Biodiversity & iNaturalist**:
      + Kiểm định tự động 100% `gbifTaxonKey` qua GBIF API (`api.gbif.org/v1/species/{key}`) và `observationUrl` qua iNaturalist API (`api.inaturalist.org/v1/taxa/{id}`). Tuyệt đối không commit bản ghi khi API trả về lỗi hoặc taxon không tồn tại.
 
-6. **Quy trình 2 Giai đoạn Nạp Loài Mới & Hàng rào Chốt chặn (2-Stage Ingestion & Quality Gatekeeper Pipeline)**:
+6. **Quy trình 3 Giai đoạn Nạp Loài Mới & Hàng rào Chốt chặn (3-Stage Ingestion & Quality Gatekeeper Pipeline)**:
    - **Nguyên tắc cốt lõi (Zero Database Pollution)**: Dữ liệu thu thập từ các API tuyệt đối không ghi thẳng vào database chính (`species.json`), mà phải đi qua vùng đệm Staging dự thảo (`scripts/data-pipeline/drafts/candidate-species.json`).
    - **Giai đoạn 1: Thu thập API (API Harvester)**:
      + Lệnh: `npm run species:harvest -- --name="<Tên khoa học>"`
      + Thu thập đa nguồn: GBIF Taxonomy, iNaturalist Research Grade (CC, rank species, bộ lọc Việt Nam), Xeno-canto audio, IUCN canonical, Avibase checklist.
-   - **Giai đoạn 2: Hàng rào Kiểm toán Chốt chặn (4 Quality Gatekeeper Tests)**:
+   - **Giai đoạn 2: Hàng rào Kiểm toán 6 Chốt chặn (6 Quality Gatekeeper Tests)**:
      + Lệnh: `npm run species:verify`
-     + Test 1: Khớp 1:1 tên tiếng Việt trong Master Registry (Craik & Minh 2018 / VAST), chặn AI hallucination.
+     + Test 1: Khớp tên tiếng Việt chính thức hoặc đồng danh trong Master Registry (972 loài IOC v14.2 / Avibase), chặn AI hallucination.
      + Test 2: Ảnh 100% đúng loài, rank species, tuân thủ xuất xứ địa điểm (chụp tại VN -> có địa danh, ngoài VN -> rỗng), kiểm tra HTTP 200 OK của ảnh.
-     + Test 3: GBIF key phản hồi 200 từ API, IUCN không bị 404, Avibase ID chuẩn.
+     + Test 3: GBIF key phản hồi 200 từ API, IUCN không bị 404 (hỗ trợ null cho loài chưa đánh giá NE), Avibase ID chuẩn.
      + Test 4: Cây phân loại đầy đủ Bộ/Họ/Chi và tọa độ GPS hợp lệ tại Việt Nam.
-   - **Điều kiện Commit Nguyên tử (Atomic Commit & Regression Check)**:
+     + Test 5: Khung bảo vệ pháp lý hoàn chỉnh (Nghị định 84/2021/NĐ-CP, Nghị định 160/2013/NĐ-CP, Chỉ thị 04/CT-TTg).
+     + Test 6: Kiểm tra tệp âm thanh thực địa, Content-Disposition đúng taxon, tự động xử lý loài bị khóa tải bảo tồn.
+   - **Giai đoạn 3: Commit Nguyên tử & Kiểm thử Hồi quy (Atomic Commit & Regression Check)**:
      + Lệnh: `npm run species:commit`
      + CHỈ KHI và CHỈ KHI 100% các bài test đều PASS: Đồng bộ nguyên tử vào `species.json` và nhánh `taxonomy.json`, sau đó chạy `npm test`. Nếu phát hiện lỗi hồi quy ➔ Tự động ROLLBACK về nguyên trạng ban đầu!
    - **Lệnh All-in-One an toàn**:
      + `npm run species:add -- --name="<Tên khoa học>"` (chạy tuần tự Harvest ➔ Verify ➔ Commit có rollback).
+   - *Tài liệu hướng dẫn chuyên sâu cho Kỹ sư và AI:* Xem [docs/DATA_INGESTION_GUIDE.md](docs/DATA_INGESTION_GUIDE.md).
 
 7. **Quy chuẩn Âm học Sinh học, Văn phong Giám tuyển & Đồng bộ Khám phá (Bio-acoustics, Curator Voice & Shuffle Deck Protocols)**:
    - **Quy chuẩn Âm học Sinh học (Bio-acoustics Protocol)**:

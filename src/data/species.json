@@ -199,7 +199,10 @@
         }
       ]
     },
-    "endemicScope": "vietnam"
+    "endemicScope": "vietnam",
+    "aliases": [
+      "Khướu Konkakinh"
+    ]
   },
   {
     "id": "liochicla-langbianis",
@@ -1061,7 +1064,8 @@
     },
     "aliases": [
       "Khướu đất Pasquier",
-      "Họa mi đất mỏ dài"
+      "Họa mi đất mỏ dài",
+      "Khướu đuôi cụt"
     ],
     "endemicScope": "vietnam"
   },
@@ -1770,7 +1774,8 @@
     "vietnameseName": "Đớp ruồi cằm xanh",
     "englishName": "Blue-throated Blue Flycatcher",
     "aliases": [
-      "Đớp ruồi cằm đen"
+      "Đớp ruồi cằm đen",
+      "Đớp ruồi họng xanh"
     ],
     "taxonomy": {
       "clade": [
@@ -1997,7 +2002,10 @@
         }
       ]
     },
-    "endemicScope": "none"
+    "endemicScope": "none",
+    "aliases": [
+      "Hút mật ngực đỏ"
+    ]
   },
   {
     "id": "lanius-schach",
@@ -2330,7 +2338,10 @@
         }
       ]
     },
-    "endemicScope": "none"
+    "endemicScope": "none",
+    "aliases": [
+      "Vàng anh Trung Quốc"
+    ]
   },
   {
     "id": "copsychus-malabaricus",
@@ -2554,7 +2565,10 @@
         }
       ]
     },
-    "endemicScope": "none"
+    "endemicScope": "none",
+    "aliases": [
+      "Chèo bẻo cộ đuôi chẻ"
+    ]
   },
   {
     "id": "garrulax-chinensis",
@@ -2887,7 +2901,10 @@
         }
       ]
     },
-    "endemicScope": "none"
+    "endemicScope": "none",
+    "aliases": [
+      "Gà lôi hồng tía"
+    ]
   },
   {
     "id": "polyplectron-bicalcaratum",
@@ -4400,7 +4417,10 @@
         }
       ]
     },
-    "endemicScope": "none"
+    "endemicScope": "none",
+    "aliases": [
+      "Cu rốc cổ đỏ"
+    ]
   },
   {
     "id": "psilopogon-faber",
@@ -4524,7 +4544,8 @@
     "vietnameseName": "Gõ kiến đầu đỏ",
     "englishName": "Red-collared Woodpecker",
     "aliases": [
-      "Gõ kiến xanh hông đỏ"
+      "Gõ kiến xanh hông đỏ",
+      "Gõ kiến xanh cổ đỏ"
     ],
     "taxonomy": {
       "clade": [
@@ -4876,7 +4897,10 @@
         }
       ]
     },
-    "endemicScope": "none"
+    "endemicScope": "none",
+    "aliases": [
+      "Đại bàng Mã Lai"
+    ]
   },
   {
     "id": "spilornis-cheela",
@@ -5819,7 +5843,8 @@
     "aliases": [
       "Già đẫy",
       "Cò súp",
-      "Già đay"
+      "Già đay",
+      "Già đẩy Java"
     ],
     "taxonomy": {
       "clade": [
@@ -6165,7 +6190,10 @@
         }
       ]
     },
-    "endemicScope": "none"
+    "endemicScope": "none",
+    "aliases": [
+      "Sếu cổ trụi"
+    ]
   },
   {
     "id": "rallina-fasciata",
@@ -6282,7 +6310,10 @@
         }
       ]
     },
-    "endemicScope": "none"
+    "endemicScope": "none",
+    "aliases": [
+      "Gà nước họng nâu"
+    ]
   },
   {
     "id": "porphyrio-poliocephalus",
@@ -6399,7 +6430,10 @@
         }
       ]
     },
-    "endemicScope": "none"
+    "endemicScope": "none",
+    "aliases": [
+      "Xít"
+    ]
   },
   {
     "id": "caloenas-nicobarica",
@@ -6864,7 +6898,10 @@
         }
       ]
     },
-    "endemicScope": "none"
+    "endemicScope": "none",
+    "aliases": [
+      "Ngan cánh trắng"
+    ]
   },
   {
     "id": "aix-galericulata",
@@ -7096,7 +7133,10 @@
         }
       ]
     },
-    "endemicScope": "none"
+    "endemicScope": "none",
+    "aliases": [
+      "Chèo chẹo lớn"
+    ]
   },
   {
     "id": "carpococcyx-renauldi",
@@ -7915,7 +7955,8 @@
     "englishName": "Orange-breasted Laughingthrush",
     "aliases": [
       "Khướu An Nam",
-      "Khướu ngực cam"
+      "Khướu ngực cam",
+      "Khướu ngực hồng"
     ],
     "taxonomy": {
       "clade": [
@@ -8445,7 +8486,8 @@
     "englishName": "Giant Ibis",
     "aliases": [
       "Cò quắm lớn",
-      "Cò quăm Đông Dương"
+      "Cò quăm Đông Dương",
+      "Quắm lớn"
     ],
     "taxonomy": {
       "clade": [
@@ -8651,7 +8693,9 @@
     "scientificName": "Gyps tenuirostris",
     "vietnameseName": "Kền kền mỏ hẹp",
     "englishName": "Slender-billed Vulture",
-    "aliases": [],
+    "aliases": [
+      "Kền kền ấn độ"
+    ],
     "taxonomy": {
       "clade": [
         "Neoaves"
@@ -8756,7 +8800,8 @@
     "englishName": "White-rumped Vulture",
     "aliases": [
       "Kền kền mông trắng",
-      "Kền kền lưng trắng"
+      "Kền kền lưng trắng",
+      "Kền kền Măng Gan"
     ],
     "taxonomy": {
       "clade": [

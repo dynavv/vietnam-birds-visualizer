@@ -11,7 +11,7 @@ import {
   ShieldCheck,
   Heart,
   MessageSquarePlus,
-  Send,
+  ExternalLink,
   Compass
 } from 'lucide-react';
 
@@ -29,36 +29,6 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
   initialTab = 'about'
 }) => {
   const [activeTab, setActiveTab] = useState<MethodologyTab>(initialTab);
-  const [isFormOpen, setIsFormOpen] = useState<boolean>(false);
-  const [feedbackCategory, setFeedbackCategory] = useState<string>('errata');
-  const [feedbackContact, setFeedbackContact] = useState<string>('');
-  const [feedbackContent, setFeedbackContent] = useState<string>('');
-  const [feedbackSubmitted, setFeedbackSubmitted] = useState<boolean>(false);
-
-  const handleFeedbackSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!feedbackContent.trim()) return;
-
-    try {
-      if (typeof window !== 'undefined' && window.localStorage) {
-        const stored = window.localStorage.getItem('agy_avifauna_community_feedback') || '[]';
-        const list = JSON.parse(stored);
-        list.push({
-          id: `fb-${Date.now()}`,
-          category: feedbackCategory,
-          contact: feedbackContact.trim(),
-          content: feedbackContent.trim(),
-          timestamp: new Date().toISOString()
-        });
-        window.localStorage.setItem('agy_avifauna_community_feedback', JSON.stringify(list));
-      }
-    } catch {
-      // Safe fallback
-    }
-
-    setFeedbackSubmitted(true);
-    setFeedbackContent('');
-  };
 
   useEffect(() => {
     if (isOpen && initialTab) {
@@ -103,10 +73,10 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
               </div>
               <div>
                 <h2 className="font-serif text-lg sm:text-xl font-bold text-ink-900 line-clamp-1 sm:line-clamp-none">
-                  Hồ Sơ Dự Án, Nguồn Học Thuật &amp; Bản Quyền
+                  Hồ Sơ Dự Án &amp; Bản Quyền
                 </h2>
                 <p className="text-[11px] sm:text-xs text-ink-600 font-sans mt-0.5">
-                  Avifauna of Vietnam — Open Digital Humanities &amp; Biodiversity Educational Archive
+                  Avifauna of Vietnam — Bản đồ sinh thái chim Việt Nam
                 </p>
               </div>
             </div>
@@ -233,118 +203,18 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
                   Nhằm đảm bảo cơ sở dữ liệu Điểu học Việt Nam luôn chính xác, khách quan và cập nhật nhất, Ban Giám tuyển luôn trân trọng đón nhận mọi ý kiến đóng góp, đính chính danh pháp hoặc báo lỗi trải nghiệm từ cộng đồng.
                 </p>
 
-                {!isFormOpen && !feedbackSubmitted && (
-                  <div className="pt-1">
-                    <button
-                      type="button"
-                      onClick={() => setIsFormOpen(true)}
-                      className="inline-flex items-center gap-2 px-3.5 py-2 bg-paper-50 hover:bg-paper-200/80 text-natural-forest border border-natural-moss/30 hover:border-natural-moss font-semibold text-xs rounded-xl transition-all shadow-2xs hover:shadow-xs cursor-pointer group"
-                    >
-                      <MessageSquarePlus className="w-4 h-4 text-natural-moss group-hover:scale-110 transition-transform" />
-                      <span>Mở biểu mẫu gửi ý kiến đóng góp &amp; báo lỗi</span>
-                      <span className="text-natural-moss text-xs group-hover:translate-x-0.5 transition-transform">›</span>
-                    </button>
-                  </div>
-                )}
-
-                {isFormOpen && !feedbackSubmitted && (
-                  <div className="pt-2 border-t border-paper-border/60 space-y-2.5 animate-in fade-in-50 duration-200">
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-semibold text-ink-800">Điền thông tin đóng góp:</span>
-                      <button
-                        type="button"
-                        onClick={() => setIsFormOpen(false)}
-                        className="text-[11px] text-ink-500 hover:text-ink-800 underline cursor-pointer"
-                      >
-                        Thu gọn biểu mẫu
-                      </button>
-                    </div>
-
-                    <form onSubmit={handleFeedbackSubmit} className="space-y-2.5 pt-1">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                        <div>
-                          <label className="block text-[11px] font-semibold text-ink-700 mb-1">
-                            Chủ đề đóng góp <span className="text-red-500">*</span>
-                          </label>
-                          <select
-                            value={feedbackCategory}
-                            onChange={(e) => setFeedbackCategory(e.target.value)}
-                            className="w-full px-2.5 py-1.5 bg-paper-50 border border-paper-border rounded-lg text-xs text-ink-900 focus:ring-1 focus:ring-natural-moss focus:outline-none cursor-pointer"
-                          >
-                            <option value="errata">📖 Đính chính dữ liệu Điểu học (Tên, phân loại, sinh cảnh)</option>
-                            <option value="bug">🐛 Báo lỗi kỹ thuật / hiển thị giao diện</option>
-                            <option value="feature">💡 Đề xuất bổ sung loài chim / tính năng mới</option>
-                            <option value="media">📷 Đóng góp ảnh chụp hoặc tư liệu âm thanh</option>
-                            <option value="general">💬 Góp ý chung khác</option>
-                          </select>
-                        </div>
-
-                        <div>
-                          <label className="block text-[11px] font-semibold text-ink-700 mb-1">
-                            Họ tên hoặc Email liên hệ <span className="text-ink-400 font-normal">(Tùy chọn)</span>
-                          </label>
-                          <input
-                            type="text"
-                            placeholder="Ví dụ: nguyen.van.a@gmail.com"
-                            value={feedbackContact}
-                            onChange={(e) => setFeedbackContact(e.target.value)}
-                            className="w-full px-2.5 py-1.5 bg-paper-50 border border-paper-border rounded-lg text-xs text-ink-900 placeholder:text-ink-400 focus:ring-1 focus:ring-natural-moss focus:outline-none"
-                          />
-                        </div>
-                      </div>
-
-                      <div>
-                        <label className="block text-[11px] font-semibold text-ink-700 mb-1">
-                          Nội dung chi tiết <span className="text-red-500">*</span>
-                        </label>
-                        <textarea
-                          rows={3}
-                          required
-                          placeholder="Mô tả cụ thể thông tin bạn muốn đính chính hoặc sự cố bạn gặp phải..."
-                          value={feedbackContent}
-                          onChange={(e) => setFeedbackContent(e.target.value)}
-                          className="w-full px-2.5 py-1.5 bg-paper-50 border border-paper-border rounded-lg text-xs text-ink-900 placeholder:text-ink-400 focus:ring-1 focus:ring-natural-moss focus:outline-none resize-none"
-                        />
-                      </div>
-
-                      <div className="flex items-center justify-between pt-1">
-                        <p className="text-[10.5px] text-ink-500 italic">
-                          Dữ liệu được lưu trữ bảo mật cho mục đích hoàn thiện dự án.
-                        </p>
-                        <button
-                          type="submit"
-                          disabled={!feedbackContent.trim()}
-                          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-natural-forest hover:bg-natural-moss disabled:opacity-50 text-paper-50 font-medium text-xs rounded-lg transition-colors shadow-sm cursor-pointer"
-                        >
-                          <Send className="w-3.5 h-3.5" />
-                          <span>Gửi Đóng Góp</span>
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                )}
-
-                {feedbackSubmitted && (
-                  <div className="p-3.5 rounded-xl bg-emerald-50/90 border border-emerald-200 text-emerald-950 space-y-2 animate-in fade-in-50 duration-200">
-                    <div className="flex items-center gap-2 font-semibold text-xs sm:text-sm text-emerald-900">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                      <span>Cảm ơn bạn đã gửi đóng góp quý báu!</span>
-                    </div>
-                    <p className="text-xs text-emerald-800 leading-relaxed">
-                      Thông tin của bạn đã được ghi nhận. Ban Giám tuyển sẽ xem xét và cập nhật vào các phiên bản giám định tiếp theo.
-                    </p>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setFeedbackSubmitted(false);
-                        setIsFormOpen(false);
-                      }}
-                      className="text-xs text-emerald-700 underline hover:text-emerald-900 cursor-pointer pt-1 block"
-                    >
-                      Gửi thêm ý kiến khác
-                    </button>
-                  </div>
-                )}
+                <div className="pt-1">
+                  <a
+                    href="https://forms.gle/iuNeqrmxN7M4Yvgs9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-3.5 py-2 bg-paper-50 hover:bg-paper-200/80 text-natural-forest border border-natural-moss/30 hover:border-natural-moss font-semibold text-xs rounded-xl transition-all shadow-2xs hover:shadow-xs cursor-pointer group"
+                  >
+                    <MessageSquarePlus className="w-4 h-4 text-natural-moss group-hover:scale-110 transition-transform" />
+                    <span>Mở biểu mẫu gửi ý kiến đóng góp &amp; báo lỗi</span>
+                    <ExternalLink className="w-3.5 h-3.5 text-natural-moss group-hover:translate-x-0.5 transition-transform" />
+                  </a>
+                </div>
               </section>
             </div>
           )}
@@ -373,31 +243,25 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
               <section className="p-4 rounded-xl bg-paper-100 border border-paper-border space-y-3">
                 <div className="flex items-center space-x-2 text-natural-terracotta font-serif font-bold text-base">
                   <BookOpen className="w-5 h-5" />
-                  <h3>2. Tài Liệu Nghiên Cứu Điểu Học Kinh Điển</h3>
+                  <h3>2. Tài Liệu Tham Khảo</h3>
                 </div>
                 <ul className="space-y-2 text-ink-700">
                   <li className="flex items-start space-x-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
                     <div>
-                      <strong>GS. TSKH. Võ Quý &amp; TS. Nguyễn Cử (1975, 1981, 1995)</strong>: <em>Chim Việt Nam</em> (Tập I &amp; II) và <em>Danh lục Chim Việt Nam</em>. NXB Khoa học &amp; Kỹ thuật — Nền tảng danh pháp tiếng Việt.
+                      <strong>Danh mục bảo tồn quốc gia:</strong> Phân hạng bảo vệ theo <strong>Nghị định 84/2021/NĐ-CP</strong> (Nhóm IB, IIB), <strong>Nghị định 160/2013/NĐ-CP</strong>, <strong>Chỉ thị 04/CT-TTg</strong> của Thủ tướng Chính phủ và <strong>Sách Đỏ Việt Nam (2007)</strong>.
                     </div>
                   </li>
                   <li className="flex items-start space-x-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
                     <div>
-                      <strong>Richard Craik &amp; TS. Lê Mạnh Hùng (2018)</strong>: <em>Birds of Vietnam</em>. Helm Wildlife Guides — Cẩm nang thực địa và cập nhật địa bàn phân bố.
+                      <strong>BirdLife International &amp; Viện Sinh thái và Tài nguyên Sinh vật (VAST):</strong> Dữ liệu phân vùng 07 EBAs cùng các nghiên cứu mô tả loài đặc hữu mới tại Ngọc Linh, Kon Ka Kinh, Hoàng Liên Sơn.
                     </div>
                   </li>
                   <li className="flex items-start space-x-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
                     <div>
-                      <strong>Jean Delacour &amp; Pierre Jabouille (1931)</strong>: <em>Les Oiseaux de l'Indochine Française</em> (4 tập), Paris.
-                    </div>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
-                    <div>
-                      <strong>BirdLife International &amp; Viện Sinh thái và Tài nguyên Sinh vật (VAST)</strong>: Dữ liệu phân vùng 07 EBAs (theo Chỉ thị 04/CT-TTg của Thủ tướng Chính phủ và BirdLife International) cùng các nghiên cứu mô tả loài đặc hữu mới tại Ngọc Linh, Kon Ka Kinh, Hoàng Liên Sơn.
+                      <strong><em>Chim Việt Nam</em></strong>, <strong><em>Danh lục Chim Việt Nam</em></strong> (GS. TSKH. Võ Quý &amp; TS. Nguyễn Cử, 1975, 1981, 1995); <strong><em>Birds of Vietnam</em></strong> (Richard Craik &amp; TS. Lê Mạnh Hùng, 2018); <strong><em>Les Oiseaux de l'Indochine Française</em></strong> (Jean Delacour &amp; Pierre Jabouille, 1931).
                     </div>
                   </li>
                 </ul>
@@ -440,8 +304,13 @@ export const MethodologyModal: React.FC<MethodologyModalProps> = ({
 
               <section className="p-4 rounded-xl bg-amber-50/80 border border-amber-200/80 text-xs text-amber-950 flex items-start space-x-3">
                 <Award className="w-5 h-5 text-amber-800 mt-0.5 shrink-0" />
-                <div>
-                  <strong>Tuyên bố Phi Thương Mại &amp; Miễn Trừ Trách Nhiệm (Non-Commercial Disclaimer):</strong> Toàn bộ nội dung của dự án phục vụ 100% cho mục đích nghiên cứu, học tập và giáo dục cộng đồng. Mọi nhãn hiệu, danh pháp khoa học và dữ liệu phân bố đều thuộc về các cơ quan chủ quản tương ứng (BirdLife International, IUCN, IOC World Bird List, Xeno-canto, iNaturalist, OpenStreetMap, CARTO).
+                <div className="space-y-1.5 leading-relaxed">
+                  <p>
+                    <strong>Tuyên bố Miễn Trừ Trách Nhiệm &amp; Giá Trị Tham Khảo:</strong> Toàn bộ dữ liệu, mô tả và bản đồ phân bố trên nền tảng chỉ có giá trị cho mục đích tham khảo. Dù Ban Giám tuyển luôn nỗ lực đối soát từ các nguồn tài liệu tin cậy, thông tin vẫn có thể phát sinh sai sót, thiếu sót hoặc chưa kịp cập nhật theo biến động phân loại mới nhất. Chúng tôi luôn trân trọng đón nhận mọi ý kiến đóng góp, đính chính từ cộng đồng để ngày càng hoàn thiện hơn.
+                  </p>
+                  <p className="text-[11px] text-amber-900/80">
+                    Mọi nhãn hiệu, danh pháp khoa học và dữ liệu phân bố đều thuộc về các cơ quan chủ quản tương ứng (BirdLife International, IUCN, IOC World Bird List, Xeno-canto, iNaturalist, OpenStreetMap, CARTO).
+                  </p>
                 </div>
               </section>
             </div>

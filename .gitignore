@@ -27,6 +27,7 @@ dist-ssr
 *.sw?
 *.tmp
 *.bak
+*.zip
 
 # Temporary / Cache / Internal tools
 .superpowers

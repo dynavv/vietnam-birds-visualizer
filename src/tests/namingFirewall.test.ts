@@ -13,20 +13,30 @@ const masterList = masterRegistry as Array<{
 }>;
 
 describe('3-Tier Canonical Naming Firewall & Data Integrity', () => {
-  it('should have master registry containing exactly all species in the database', () => {
-    expect(masterList.length).toBe(speciesList.length);
+  it('should have master registry containing all 81 species in the database and comprehensive national checklist', () => {
+    expect(speciesList.length).toBe(81);
+    expect(masterList.length).toBeGreaterThanOrEqual(970);
     const masterIds = new Set(masterList.map(m => m.id));
     speciesList.forEach(sp => {
       expect(masterIds.has(sp.id), `Loài ${sp.id} (${sp.scientificName}) không tồn tại trong Master Registry!`).toBe(true);
     });
   });
 
-  it('Tier 1: Every species in species.json must strictly match the canonical Vietnamese name in master registry', () => {
-    const masterMap = new Map(masterList.map(m => [m.id, m.vietnameseName]));
+  it('Tier 1: Every species in species.json must strictly match the canonical or alias Vietnamese name in master registry', () => {
+    const masterMap = new Map(masterList.map(m => [m.id, m]));
     speciesList.forEach(sp => {
-      const canonicalName = masterMap.get(sp.id);
-      expect(canonicalName).toBeDefined();
-      expect(sp.vietnameseName).toBe(canonicalName);
+      const masterMatch = masterMap.get(sp.id);
+      expect(masterMatch, `Không tìm thấy loài ${sp.id} trong Master Registry!`).toBeDefined();
+      if (!masterMatch) return;
+      const validNames = [
+        masterMatch.vietnameseName,
+        ...((masterMatch as any).aliases || [])
+      ].map(name => name.trim().toLowerCase());
+      const currentName = sp.vietnameseName.trim().toLowerCase();
+      expect(
+        validNames.includes(currentName),
+        `Tên "${sp.vietnameseName}" của loài ${sp.id} không khớp với tên chuẩn ("${masterMatch.vietnameseName}") hoặc aliases (${JSON.stringify((masterMatch as any).aliases)}) trong Master Registry!`
+      ).toBe(true);
     });
   });
 

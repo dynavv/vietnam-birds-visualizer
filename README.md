@@ -66,6 +66,14 @@ npm test -- --run
 npm run build
 ```
 
+### 6. Thêm loài chim mới (Data Ingestion Pipeline):
+Nạp tự động loài mới qua hàng rào kiểm toán 6 chốt chặn:
+```bash
+npm run species:add -- --name="<Tên khoa học>"
+# Ví dụ: npm run species:add -- --name="Pitta nympha"
+```
+Xem hướng dẫn chi tiết tại [docs/DATA_INGESTION_GUIDE.md](docs/DATA_INGESTION_GUIDE.md).
+
 ---
 
 ## 📜 Bản Quyền & Trích Dẫn (Licensing & Citations)
